@@ -1,0 +1,22 @@
+state={
+	id=616
+	name="STATE_616"
+	impassable = yes
+	history={
+		owner = CHI
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+
+		}
+
+
+	}
+
+	provinces={
+		2087 4525 4783 5031   7511 7803 8055  8127 10629 10770 10899 10724 12331 12609 12750 12776 12880
+	}
+	manpower=2077600
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

@@ -1,0 +1,73 @@
+characters={
+	POR_antónio_de_oliveira_salazar={
+		name="António de Oliveira Salazar"
+		portraits={
+			civilian={
+				large="gfx/leaders/POR/portrait_por_antonio_de_oliveira_salazar.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POR_bento_gonçalves={
+		name="Bento Gonçalves"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POR_francisco_de_barcelos_rolão_preto={
+		name="Francisco de Barcelos Rolão Preto"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POR_josé_vicente_de_freitas={
+		name="José Vicente de Freitas"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_europe_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	POR_david_ribeiro={
+		name="David Ribeiro"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1951.1.1.12"
+			id=-1
+		}
+	}
+}

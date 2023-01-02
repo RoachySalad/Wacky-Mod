@@ -1,0 +1,18 @@
+scripted_gui = {
+
+	fra_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "fra_propaganda_campaigns_ui_window"
+
+		properties = {
+			fra_poster_slot_left = {
+				frame = FRA_poster_left_icon_frame
+			}
+			fra_poster_slot_center = {
+				frame = FRA_poster_center_icon_frame
+			}
+		}
+	}
+	
+}
+

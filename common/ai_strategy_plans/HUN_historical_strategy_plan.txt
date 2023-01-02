@@ -1,0 +1,37 @@
+Hungary_historical = {
+
+	enable = {
+		original_tag = HUN
+	}
+
+	ai_national_focuses = {
+        HUN_new_pm
+        HUN_status_quo
+        HUN_ban_fascists
+        HUN_expand_the_regency_powers
+        HUN_military_investments
+        HUN_secret_ballots
+        HUN_labour_reform
+        HUN_befriend_italy
+        HUN_italian_trade_deal
+        HUN_industrial_revitalization
+        HUN_reintegrate_the_railroads
+        HUN_support_domestic_industry
+        HUN_support_urbanization
+        HUN_institute_for_industrial_techniques
+        HUN_announce_the_gyor_program
+        HUN_domestic_arms_industry
+        HUN_renounce_the_treaty_of_trianon
+        HUN_reaffirm_territorial_claims
+        HUN_proclaim_greater_hungary
+        HUN_trade_deal_with_germany
+        HUN_joint_aluminum_mining_company
+        HUN_join_axis
+        HUN_german_cooperation
+        HUN_boost_hungarian_aviation_industry
+        HUN_autarky
+        HUN_synthetic_industry
+        HUN_secret_rearmament
+        HUN_bled_agreement
+	}
+}

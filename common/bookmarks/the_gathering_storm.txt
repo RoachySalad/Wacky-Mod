@@ -1,0 +1,404 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_form_the_popular_front
+				FRA_dirigisme
+				FRA_devalue_the_franc
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				new_deal
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_new_deal_2
+				USA_build_the_pentagon
+				USA_victory_plan
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				MTG_naval_treaty_adherent
+				ENG_the_sun_never_sets_idea_1
+				george_v
+			}
+			focuses = {
+				ENG_raf
+				ENG_britannia_waves
+				ENG_special_air_service
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				triumphant_will
+				GER_barbarossa
+				GER_mefo_bills_1
+			}
+			focuses = {
+				GER_luft_2
+				GER_danzig_or_war
+				GER_mobilise_reich
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				vittoria_mutilata
+				victor_emmanuel
+				ITA_mare_nostrum
+			}	
+			focuses = {
+				ITA_regia_marina
+				ITA_lessons_of_war
+				ITA_the_legions
+			}		
+		}
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_strengthen_the_divine_wind
+				JAP_strike_south_doctrine
+				JAP_warrior_spirit
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				trotskyite_plot_nsb
+				home_of_revolution
+				SOV_order_270_idea
+			}
+			focuses = {
+				SOV_the_centre
+				SOV_red_army
+				SOV_war_mobilisation
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		# minors from DLC ####
+		"CAN"={
+			minor = yes
+			history = "CAN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				CAN_great_depression_1
+				CAN_conscription_crisis
+				CAN_national_resources_mobilization_act
+			}
+			focuses = {
+				CAN_forced_quebec_conscription
+				CAN_compromise_with_quebec
+				CAN_aluminium_company_of_canada
+			}
+		}
+		"AST"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+				AST_rats_of_tobruk_idea
+				AST_invest_in_victory
+			}
+			focuses = {
+				AST_fight_work_or_perish
+				AST_squash_the_squanderbugs
+				AST_rats_of_tobruk
+			}
+		}
+		"NZL"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				NZL_bob_semple_tank
+				NZL_maori_conscription
+				NZL_stomp_out_pacifism
+			}
+			focuses = {
+				NZL_bob_semple_tank
+				NZL_think_big
+				NZL_maori_volunteers
+			}
+		}
+		"SAF"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag
+				SAF_history_of_segregation
+				SAF_cheap_labor_1
+			}
+			focuses = {
+				SAF_secure_interests_in_africa
+				SAF_south_african_steel
+				SAF_armor_effort
+			}
+		}
+		"RAJ"={
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				RAJ_agrarian_society
+				RAJ_princely_states
+				RAJ_risk_of_famine
+			}
+			focuses = {
+				RAJ_one_india
+				RAJ_indian_gurkhas
+				RAJ_the_smiling_buddha
+			}
+		}
+		"BRA"={
+			minor = yes
+			history = "BRA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				BRA_revolution_of_1930
+				BRA_great_depression_1
+				BRA_corruption_4
+			}
+			focuses = {
+				BRA_estado_novo
+				BRA_invite_foreign_investors
+				BRA_military_modernisation
+			}
+		}	
+		"MEX"={
+			minor = yes
+			history = "MEXICO_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				MEX_church_power_2
+				MEX_politicised_army
+				MEX_oil_concessions
+			}
+			focuses = {
+				MEX_focus_aztec_eagles
+				MEX_focus_hispanic_alliance
+				MEX_focus_smash_the_bureaucrats
+			}
+		}
+		"HOL"={
+			minor = yes
+			history = "NETHERLANDS_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				HOL_wilhelmina
+				HOL_shell_shocked_spectator_5
+				HOL_de_crisisjaren_5
+			}
+			focuses = {
+				HOL_continue_the_war_in_batavia
+				HOL_liberation
+				HOL_prepare_the_inundation_lines
+			}
+		}
+		"POL"={
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				POL_influx_of_exiles
+				POL_april_constitution_1
+				POL_looming_peasants_strike
+			}
+			focuses = {
+				POL_complete_april_constitution
+				POL_niech_zyje_opor
+				POL_the_four_year_plan
+			}
+		}
+		"CHI"={
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				CHI_army_corruption_1
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_scorched_earth_tactics
+				CHI_army_reform
+				CHI_invite_the_flying_tigers
+			}
+		}	
+		"MON"={
+			minor = yes
+			history = "MON_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				MON_nomad_0
+				MON_collectivisation_1
+				MON_spirit_of_genghis_idea
+			}
+			focuses = {
+				MON_follow_the_soviets
+				MON_spirit_of_genghis
+				MON_support_pan_mongolism
+			}
+		}	
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				HUN_treaty_of_triannon
+				HUN_hussar_legacy
+				HUN_modern_hussars
+			}
+			focuses = {
+				HUN_proclaim_greater_hungary
+				HUN_secret_rearmament
+				HUN_renounce_the_treaty_of_trianon
+			}
+		}
+		"ROM"={
+			minor = yes
+			history = "ROM_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				ROM_king_carol_ii_hedonist
+				neutrality_idea
+				ROM_the_sentinel_of_the_motherland
+			}
+			focuses = {
+				ROM_all_parties_must_end
+				ROM_institute_royal_dictatorship
+				ROM_preserve_greater_romania
+			}
+		}		
+		"MAN"={
+			minor = yes
+			history = "MAN_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				MAN_banditry
+				MAN_kwantung_veto
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_expand_opium_plantations
+				MAN_the_two_emperors
+				MAN_claim_the_mandate
+			}
+		}
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				SPA_recovering_from_civil_war
+				SPA_carlism_1
+				SPR_political_violence
+			}
+			focuses = {
+				SPA_caudillo_of_spain
+				SPA_unite_iberia
+				SPA_iberian_pact
+			}
+		}
+		"BUL"={
+			minor = yes
+			history = "BUL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				BUL_second_national_catastrophe
+				BUL_army_restrictions
+				BUL_imro_01
+			}
+			focuses = {
+				BUL_the_tsars_regime
+				BUL_appoint_right_wing_ministers
+				BUL_greater_bulgaria
+			}
+		}		
+		"FIN"={
+			minor = yes
+			history = "FIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				sisu
+				FIN_lahti
+				FIN_winter_war
+			}
+			focuses = {
+				FIN_winter_war
+				FIN_motti
+				FIN_finish_mannerheim
+			}
+		}			
+		"SIA"={
+			minor = yes
+			history = "SIA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				SIA_kingdom_restored
+				SIA_golden_era
+				SIA_thai_empire
+			}
+			focuses = {
+				SIA_restore_the_kingdom
+				SIA_western_military
+				SIA_embrace_bushido
+			}
+		}
+		"YUG"={
+			minor = yes
+			history = "YUG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				anti_german_military
+				YUG_idea_croatian_opposition
+				YUG_idea_serbian_general_staff
+			}
+			focuses = {
+				YUG_establish_the_banovina_of_croatia
+				YUG_zmaj
+				YUG_greater_yugoslavia
+			}
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,19 @@
+state={
+	id=837
+	name="STATE_837"
+	provinces={
+		733 3712 3715 10481 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+		}
+		add_core_of = USA
+	}
+	state_category = rural
+	manpower=491524
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

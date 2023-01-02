@@ -1,0 +1,68 @@
+on_actions = {
+   on_startup = {
+		effect = {
+			every_country = { 
+				limit = { tag = GER }
+				country_event = { 
+					id = germany.mefoair 
+				}
+			}
+			every_country = { 
+				limit = { tag = MON }
+				country_event = { 
+					id = mongolia.start 
+				}
+			}	
+			every_country = { 
+				limit = { tag = ITA }
+				country_event = { 
+					id = italy.air 
+				}
+			}	
+			if = {
+				limit = {
+					is_historical_focus_on = no
+				}
+				every_country = { 
+					country_event = { 
+						id = startingevent.999
+					}
+				}	
+			}
+			if = {
+				limit = {
+					OR = {
+						VEN = { is_ai = no}
+						POR = { is_ai = no}
+						BEL = { is_ai = no}
+						LUX = { is_ai = no}
+						SWI = { is_ai = no}
+						AUS = { is_ai = no}
+						CZE = { is_ai = no}
+						SWE = { is_ai = no}
+						DEN = { is_ai = no}
+						NOR = { is_ai = no}
+						YUG = { is_ai = no}
+						GRE = { is_ai = no}
+						LIT = { is_ai = no}
+						LAT = { is_ai = no}
+						EST = { is_ai = no}
+						CHI = { is_ai = no}
+						INS = { is_ai = no}						
+						PHI = { is_ai = no}
+						MAL = { is_ai = no}
+						TUR = { is_ai = no}						
+						IRQ = { is_ai = no}
+						PER = { is_ai = no}
+					}
+				}
+				every_country = { 
+					country_event = { 
+						id = startingevent.1000
+					}
+				}
+			}
+		
+		}
+	}
+}

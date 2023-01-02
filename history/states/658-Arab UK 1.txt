@@ -1,0 +1,32 @@
+
+state={
+	id=658
+	name="STATE_658"
+	manpower = 170200
+	resources={
+		oil=800 # was: 6
+	}
+	
+	state_category = pastoral
+
+
+	history={
+		add_core_of = OMA
+		owner = ENG
+		victory_points = {
+			7960 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 4
+			7960 = {
+				naval_base = 3
+			}
+		}
+
+	}
+
+	provinces={
+		2048 7960 8108 10904 
+	}
+}

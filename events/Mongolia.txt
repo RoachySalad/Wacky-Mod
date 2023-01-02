@@ -1,0 +1,213 @@
+﻿###########################
+# Mongolia Events
+###########################
+
+add_namespace = mongolia
+
+country_event = {
+	id = mongolia.start
+	title = mongolia.start.t
+	desc = mongolia.start.d
+	picture = GFX_report_event_german_speech
+	
+	is_triggered_only = yes
+	
+	
+	fire_only_once = yes
+	
+ 	immediate = {		
+ 	}
+
+	option = {
+		name = mongolia.start.a
+		add_ideas = MON_nomad_1
+	}
+}
+
+
+
+country_event = {
+	id = mongolia.1
+	title = mongolia.1.t
+	desc = mongolia.1.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = mongolia.1.a
+		if = {
+			limit = {
+				country_exists = TAN
+			}
+			MON = {
+				annex_country = { target = TAN transfer_troops = yes }
+			}
+		}
+		else = {
+			MON = {
+				transfer_state = 329
+			}
+		}
+	}
+	option = { # Refuse
+		name = mongolia.1.b
+		ai_chance = { factor = 0 }
+		
+	}
+}
+
+country_event = {
+	id = mongolia.2
+	title = mongolia.2.t
+	desc = mongolia.2.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = mongolia.2.a
+		MON = {
+			annex_country = { target = SIK transfer_troops = yes }
+		}
+	}
+	option = { # Refuse
+		name = mongolia.2.b
+		ai_chance = { factor = 0 }
+		
+	}
+}
+
+country_event = {
+	id = mongolia.3
+	title = mongolia.3.t
+	desc = mongolia.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = mongolia.2.a
+		MON = {
+			remove_state_core = 761
+			transfer_state = 612
+			transfer_state = 611
+			transfer_state = 621
+			transfer_state = 756
+			set_truce = { target = JAP days = 1460 }
+		}
+		SOV = { 
+			set_truce = { target = JAP days = 1460 } 
+			add_opinion_modifier = { target = JAP modifier = ENG_imperial_trade }
+		}
+	}
+	option = { # Refuse
+		name = mongolia.2.b
+		ai_chance = { factor = 0 }
+		
+		MON = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+		SOV = {
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
+		}
+	}
+}
+
+# Mongolia demands Soviet land
+country_event = {
+	id = mongolia.4
+	title = mongolia.4.t
+	desc = mongolia.4.d
+	picture = GFX_report_event_stalin_02
+	
+	is_triggered_only = yes
+	
+	option = { # Accept demands
+		name = mongolia.4.a
+		SOV = {
+			563 = {
+				transfer_state_to = MON
+			}
+			remove_state_core = 563
+			564 = {
+				transfer_state_to = MON
+			}
+			remove_state_core = 564
+			566 = {
+				transfer_state_to = MON
+			}
+			remove_state_core = 566
+		}
+		MON = {
+			add_state_core = 563
+			add_state_core = 564
+			add_state_core = 566
+		}
+		MON = {
+			country_event = mongolia.5
+		}
+	}
+	option = { # Refuse
+		name = mongolia.4.b
+		ai_chance = { factor = 0 }
+		MON = {
+			country_event = mongolia.6
+		}
+	}
+}
+
+# Soviets accept
+country_event = {
+	id = mongolia.5
+	title = mongolia.5.t
+	desc = mongolia.5.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mongolia.5.a
+	}
+}
+
+# Soviets refuse
+country_event = {
+	id = mongolia.6
+	title = mongolia.6.t
+	desc = mongolia.6.d
+	picture = GFX_report_event_soviet_tanks_snow
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mongolia.6.a
+	}
+}
+
+# Mongolian trials
+country_event = {
+	id = mongolia.7
+	title = mongolia.7.t
+	desc = mongolia.7.d
+	picture = GFX_report_event_soviet_purge_speech
+	
+	is_triggered_only = yes
+	
+	option = { # Subjugate the buddhists
+		name = mongolia.7.a
+		set_country_flag = mongolia_subjugate_the_buddhists
+
+	}
+	option = { # Cooperate with the buddhists
+		name = mongolia.7.b
+		set_country_flag = mongolia_cooperate_with_buddhists
+	}
+}
+

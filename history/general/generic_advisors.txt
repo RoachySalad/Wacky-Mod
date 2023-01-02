@@ -1,0 +1,460 @@
+# For minor countries where advisors are not defined
+# Generate them from a generic template
+
+# Political advisors
+every_possible_country = {
+	limit = {
+		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = ROM tag = CHI tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL tag = SAI tag = IRE tag = BRA tag = NZL } }
+		# avoid generic advisors in temporary countries
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = { idea = communist_revolutionary characters = yes }
+		}
+		if = {
+			limit = { has_dlc = "Battle for the Bosporus" }
+			NOT = { tag = TUR tag = GRE }
+		}
+	}
+	generate_character = {
+		token_base = generic_communist_revolutionary # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { communist_revolutionary }
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_communist_revolutionary }
+		}
+	}
+}
+
+every_possible_country = {
+	limit = {
+		NOT = { OR = { tag = GER tag = ENG tag = SOV original_tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = CZE tag = PRC tag = MAN tag = MEX tag = HOL original_tag = SPR original_tag = POL tag = SAI} }
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = { idea = democratic_reformer characters = yes }
+		}
+		if = {
+			limit = { has_dlc = "Battle for the Bosporus" }
+			NOT = { tag = TUR tag = GRE }
+		}
+	}
+	generate_character = {
+		token_base = generic_democratic_reformer # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { democratic_reformer }
+			available = {
+				if = {
+					limit = { 
+						original_tag = NZL
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = NZL_strengthen_the_commonwealth
+					}
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_democratic_reformer }
+		}
+	}
+}
+
+every_possible_country = {
+	limit = {
+		NOT = { OR = { tag = HUN tag = GER tag = ENG tag = SOV tag = FRA tag = ITA tag = JAP tag = USA tag = AST tag = RAJ tag = CAN tag = SAF tag = ROM tag = CZE tag = PRC tag = CHI tag = MAN tag = MEX tag = HOL tag = SAI tag = IRE tag = BRA tag = NZL } }
+		is_dynamic_country = no
+		NOT = {
+			has_allowed_idea_with_traits = { idea = fascist_demagogue characters = yes }
+		}
+		if = {
+			limit = { has_dlc = "Battle for the Bosporus" }
+			NOT = { tag = TUR tag = GRE }
+		}
+	}
+	generate_character = {
+		token_base = generic_fascist_demagogue # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { fascist_demagogue }
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
+			}
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_generic_fascist_demagogue }
+		}
+	}
+}
+
+every_possible_country = {
+	limit = {
+		OR = { tag = GER tag = ITA tag = JAP tag = ROM tag = HUN tag = YUG tag = MAN tag = MEX }
+	}
+	generate_character = {
+		token_base = generic_paramilitary_leader # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { paramilitary_leader }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = GER tag = ITA tag = JAP tag = ROM tag = HUN tag = YUG tag = MAN tag = MEX }
+	}
+	generate_character = {
+		token_base = generic_reorganiser # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { reorganiser }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = FIN tag = BUL tag = POL tag = EST tag = LIT tag = HUN tag = ROM tag = YUG tag = CZE tag = BRA tag = MEX tag = SAI }
+	}
+	generate_character = {
+		token_base = generic_independence_symbol # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { independence_symbol }
+		}
+		portraits = { 
+			army = { small = GFX_idea_sholto_douglas }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = FIN tag = BUL tag = POL tag = EST tag = LIT tag = HUN tag = ROM tag = YUG tag = CZE tag = BRA tag = MEX tag = SAI }
+	}
+	generate_character = {
+		token_base = generic_war_hero # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { war_hero }
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = ENG tag = CAN tag = NZL tag = AST tag = SAF tag = RAJ tag = MEX tag = BRA tag = HOL tag = IRE tag = USA }
+	}
+	generate_character = {
+		token_base = generic_venture_capitalist # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { venture_capitalist }
+			available = {
+				if = {
+					limit = { 
+						has_government = democratic
+					}
+				}		
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_heisenberg }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = ENG tag = CAN tag = NZL tag = AST tag = SAF tag = RAJ tag = MEX tag = BRA tag = HOL tag = IRE tag = USA  }
+	}
+	generate_character = {
+		token_base = generic_press_mogul # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { press_mogul }
+			available = {
+				if = {
+					limit = { 
+						has_government = democratic
+					}
+				}		
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_dudley_pound }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = SOV tag = MON tag = MEX }
+	}
+	generate_character = {
+		token_base = generic_brutal_administrator # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { brutal_administrator }
+			available = {
+				if = {
+					limit = { 
+						has_government = communism
+					}
+				}		
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+}
+every_possible_country = {
+	limit = {
+		OR = { tag = SOV tag = MON tag = MEX }
+	}
+	generate_character = {
+		token_base = generic_state_planner # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { state_planner }
+			available = {
+				if = {
+					limit = { 
+						has_government = communism
+					}
+				}		
+			}
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+}
+# Generic Advisors
+every_possible_country = {
+	limit = {
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL original_tag = PHI original_tag = LUX original_tag = BEL}
+	}
+	generate_character = {
+		token_base = generic_silent_workhorse # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { silent_workhorse }
+		}
+		portraits = { 
+			army = { small = GFX_idea_heisenberg }
+		}
+	}
+	generate_character = {
+		token_base = generic_prince_of_terror # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { prince_of_terror }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+	generate_character = {
+		token_base = generic_popular_figurehead # token will be TAG_token_base
+		advisor = {
+			slot = political_advisor
+			traits = { popular_figurehead }
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+}
+# Generic Theorists
+every_possible_country = {
+	limit = {
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL original_tag = PHI original_tag = LUX original_tag = BEL}
+	}
+	generate_character = {
+		token_base = generic_military_theorist # token will be TAG_token_base
+		advisor = {
+			slot = theorist
+			traits = { military_theorist }
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+	generate_character = {
+		token_base = generic_naval_theorist # token will be TAG_token_base
+		advisor = {
+			slot = theorist
+			traits = { naval_theorist }
+		}
+		portraits = { 
+			army = { small = GFX_idea_heisenberg }
+		}
+	}
+	generate_character = {
+		token_base = generic_air_warfare_theorist # token will be TAG_token_base
+		advisor = {
+			slot = theorist
+			traits = { air_warfare_theorist }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+}
+# Generic High Command
+every_possible_country = {
+	limit = {
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL original_tag = PHI original_tag = LUX original_tag = BEL}
+	}
+	generate_character = {
+		token_base = generic_army_art # token will be TAG_token_base
+		advisor = {
+			slot = high_command
+			traits = { army_artillery_1 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+	generate_character = {
+		token_base = generic_army_log # token will be TAG_token_base
+		advisor = {
+			slot = high_command
+			traits = { army_logistics_2 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_heisenberg }
+		}
+	}
+	generate_character = {
+		token_base = generic_navy_fleet_log # token will be TAG_token_base
+		advisor = {
+			slot = high_command
+			traits = { navy_fleet_logistics_1 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+	generate_character = {
+		token_base = generic_air_air_combat_trainer # token will be TAG_token_base
+		advisor = {
+			slot = high_command
+			traits = { air_air_combat_training_2 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_dudley_pound }
+		}
+	}
+}
+# Generic Army Chief
+every_possible_country = {
+	limit = {
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL original_tag = PHI original_tag = LUX original_tag = BEL}
+	}
+	generate_character = {
+		token_base = generic_army_chief_off # token will be TAG_token_base
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_offensive_1 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_martial_valin }
+		}
+	}
+	generate_character = {
+		token_base = generic_army_chief_def # token will be TAG_token_base
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_defensive_1 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_heisenberg }
+		}
+	}
+
+}
+# Generic Navy Chief
+every_possible_country = {
+	limit = {
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL original_tag = PHI original_tag = LUX original_tag = BEL}
+	}
+	generate_character = {
+		token_base = generic_navy_chief_decisive_bat # token will be TAG_token_base
+		advisor = {
+			slot = navy_chief
+			traits = { navy_chief_decisive_battle_2 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+	generate_character = {
+		token_base = generic_navy_anti_submarine # token will be TAG_token_base
+		advisor = {
+			slot = navy_chief
+			traits = { navy_anti_submarine_2 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_dudley_pound }
+		}
+	}
+
+}
+# Generic Air Chief
+every_possible_country = {
+	limit = {
+		OR = { original_tag = SWE original_tag = NOR original_tag = IRQ original_tag = PER original_tag = AUS original_tag = SWI original_tag = VEN original_tag = ALB original_tag = IRAQ original_tag = IRAN original_tag = INS original_tag = MAL original_tag = PHI original_tag = LUX original_tag = BEL}
+	}
+	generate_character = {
+		token_base = generic_air_close_air_sup # token will be TAG_token_base
+		advisor = {
+			slot = air_chief
+			traits = { air_close_air_support_2 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+	generate_character = {
+		token_base = generic_air_chief_all_weather # token will be TAG_token_base
+		advisor = {
+			slot = air_chief
+			traits = { air_chief_all_weather_2 }
+		}
+		portraits = { 
+			army = { small = GFX_idea_viktor_schutze }
+		}
+	}
+
+}

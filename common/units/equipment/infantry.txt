@@ -1,0 +1,391 @@
+# All infantry equipment
+
+equipments = {
+
+	infantry_equipment = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			infantry_soft_upgrade
+			infantry_defence_upgrade
+		}
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.8
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 14
+		breakthrough = 1
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 0.2
+		ap_attack = 1
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 1.1
+		resources = {
+			steel = 10
+		}
+		
+	}
+
+	infantry_equipment_0 = {
+		year = 1918
+	
+		archetype = infantry_equipment
+		active = yes
+		priority = 05
+		visual_level = 0
+	}
+
+
+
+	# Regular infantry  1936
+	infantry_equipment_1 = {
+		year = 1936
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_0
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 16
+		breakthrough = 3
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 0.2
+		ap_attack = 2
+		air_attack = 0
+
+		build_cost_ic = 1.2
+	}
+
+	# Improved weapons  ~1939
+	infantry_equipment_2 = {
+		year = 1939
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_1
+		priority = 10
+		visual_level = 2
+		
+		#Defensive Abilities
+		defense = 18
+		breakthrough = 4
+
+		#Offensive Abilities
+		soft_attack = 7
+		hard_attack = 0.2
+		ap_attack = 3
+		air_attack = 0
+		
+		build_cost_ic = 1.5
+	}
+	
+	# Advanced weapons  ~1942
+	infantry_equipment_3 = {
+		year = 1942
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_2
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 5
+
+		#Offensive Abilities
+		soft_attack = 9
+		hard_attack = 0.2
+		ap_attack = 4
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 2
+	}
+	
+	infantry_equipment_4 = {
+		year = 1945
+	
+		archetype = infantry_equipment
+		parent = infantry_equipment_3
+		priority = 10
+		visual_level = 3
+		
+		#Defensive Abilities
+		defense = 24
+		breakthrough = 6
+
+		#Offensive Abilities
+		soft_attack = 14
+		hard_attack = 0.2
+		ap_attack = 5
+		air_attack = 0
+		
+		reliability = 0.8
+		build_cost_ic = 2.8
+	}
+	
+	squad_equipment = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_squad_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			infantry_hard_upgrade
+			infantry_break_upgrade
+		}
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.8
+		
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 2
+
+		#Offensive Abilities
+		soft_attack = 2
+		hard_attack = 0.4
+		ap_attack = 5
+		air_attack = 0.2
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 2.2
+		resources = {
+			steel = 10
+		}
+		
+	}
+
+	squad_equipment_0 = {
+		year = 1918
+	
+		active = yes
+		archetype = squad_equipment
+		priority = 05
+		visual_level = 0
+	}
+
+	squad_equipment_1 = {
+		year = 1938
+	
+		archetype = squad_equipment
+		parent = squad_equipment_0
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 4
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 2
+		ap_attack = 10
+		air_attack = 0.3
+
+		build_cost_ic = 2.4
+	}
+	
+	squad_equipment_2 = {
+		year = 1941
+	
+		archetype = squad_equipment
+		parent = squad_equipment_1
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 6
+
+		#Offensive Abilities
+		soft_attack = 5
+		hard_attack = 4
+		ap_attack = 20
+		air_attack = 0.4
+
+		build_cost_ic = 2.8
+	}
+	
+	squad_equipment_3 = {
+		year = 1944
+	
+		archetype = squad_equipment
+		parent = squad_equipment_2
+		priority = 10
+		visual_level = 1
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 6
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 6
+		ap_attack = 30
+		air_attack = 0.4
+
+		build_cost_ic = 3.2
+	}
+	
+	horse_equipment = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_horse_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.9
+		maximum_speed = 4
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.2
+		resources = {
+			steel = 5
+		}
+		
+	}
+
+	horse_equipment_0 = {
+		year = 1918
+	
+		archetype = horse_equipment
+		active = yes
+		priority = 05
+		visual_level = 0
+	}
+	
+	sf_equipment = {
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_sf_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+		}
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 0.4
+		
+		maximum_speed = 4
+		
+		defense = 2
+		breakthrough = 4
+		soft_attack = 1
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 4
+		resources = {
+			steel = 10
+			rubber = 5
+		}
+		
+	}
+
+	sf_equipment_0 = {
+		year = 1918
+	
+		archetype = sf_equipment
+		active = yes
+		priority = 05
+		visual_level = 0
+		
+	}
+	
+	radio_equipment = {
+		year = 1938
+		
+		is_archetype = yes
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+		}
+		
+		breakthrough = 2
+		soft_attack = 1
+		hard_attack = 0.5
+		defense = 4
+		air_attack = 0.2
+		
+		reliability = 0.75
+		
+		build_cost_ic = 2.9
+		
+		resources = {
+		    chromium = 5
+			aluminium = 10
+		}
+	}
+
+	radio_equipment_0 = {
+		year = 1938
+	
+		archetype = radio_equipment
+		priority = 05
+		visual_level = 0
+		
+	}
+}

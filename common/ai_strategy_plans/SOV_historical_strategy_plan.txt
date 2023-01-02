@@ -1,0 +1,155 @@
+SOV_historical_plan = {
+	name = "SOV historical plan"
+	desc = ""
+
+	enable = {
+		original_tag = SOV
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = SOV_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = SOV_AI_RANDOM_COMMUNIST_HISTORICAL
+			has_game_rule = {
+				rule = SOV_ai_behavior
+				option = HISTORICAL
+			}
+		}
+	}
+	abort = {
+		is_subject = yes
+	}
+
+	ai_national_focuses = {
+		SOV_germans_are_coming
+		SOV_fareast_reserves
+		SOV_frontline_mob
+		SOV_defend_moscow
+		SOV_defend_stalingrad
+		SOV_defend_leningrad
+		SOV_focus_forced_labour
+		SOV_coordinate_industry
+		SOV_keep_commissars_organization
+		SOV_study_our_losses
+		SOV_partisan_organisation
+		SOV_order_270
+		SOV_the_road_of_life
+		SOV_lessons_of_war
+		SOV_red_army
+		SOV_tankograd
+		SOV_guards
+		SOV_closed_city
+		SOV_technical_assistance
+		SOV_preemptive_invasion_of_iran
+		SOV_persian_corridor
+		SOV_american_tool_deliveries
+		SOV_war_mobilisation
+		SOV_allied_lend_lease
+		SOV_claims_on_baltic
+		SOV_baltic_security
+		SOV_claim_bessarabia
+		SOV_improve_stalin_line
+		SOV_dnieper_defences
+		SOV_plunder_new_conquests
+		SOV_molotov_line
+		SOV_socialist_realism
+		SOV_heavy_industry_expansion
+		SOV_auto_industry
+		SOV_the_path_of_marxism_leninism
+		SOV_the_centre
+		SOV_the_stalin_constitution
+		SOV_the_zinovyevite_terrorist_center
+		SOV_plant_expansion
+		SOV_society_urbanisation
+		SOV_socialism_in_one_country
+		SOV_the_anti_soviet_trotskyist_center
+		SOV_secure_the_administration
+		SOV_tolkach
+		SOV_the_collectivization_process
+		SOV_the_workers_dictatorship
+		SOV_the_military_conspiracy
+		SOV_steel
+		SOV_organization_centralization_discipline
+		SOV_behead_the_snake
+		SOV_petrochemical
+		SOV_the_bloc_of_rights_and_trotskyites
+		SOV_expand_the_agitprop
+		SOV_positive_heroism
+		SOV_stakhanovite
+		SOV_rare_metal
+		SOV_aluminium
+		SOV_finish_2_plan
+		SOV_start_3_plan
+		SOV_anti_fascist_diplomacy
+		SOV_pcdi
+		SOV_arms_factories
+		SOV_arms_factories2
+		SOV_ural_factories
+		SOV_ural_factories2
+		SOV_women
+		SOV_seize_assets
+		SOV_railway_3
+		SOV_socialist_science
+		SOV_progress_cult
+		SOV_extra_tech_slot
+		SOV_transpolar_flights
+		SOV_expand_the_aircraft_industry
+		SOV_increase_aircraft_production
+		SOV_stalins_cult_of_personality
+		SOV_railway_4
+		SOV_railway_2
+		SOV_siberia_1
+		SOV_railway_5
+		SOV_inheritor_of_the_mantle_of_lenin
+		SOV_capitals_of_socialism
+		SOV_modernize_aircraft_facilities
+		SOV_deep_operations
+		SOV_tank1
+		SOV_tank2
+		SOV_medium_tank1
+		SOV_medium_tank2
+		SOV_arty1
+		SOV_arty2
+		SOV_arty3
+		SOV_infantry1
+		SOV_infantry2
+		SOV_rehabilitated_army
+		SOV_stavka
+		SOV_brilliant_genius
+		SOV_leader_of_the_party_and_the_people
+		SOV_great_commander
+		SOV_father_of_nations
+		SOV_soviet_atomic_bomb_project
+		SOV_popov
+		SOV_ground_support
+		SOV_foster_flying_clubs
+		SOV_the_modern_war_in_the_skies
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+	traits = {
+		captain_of_industry = 10
+		popular_figurehead = 5
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

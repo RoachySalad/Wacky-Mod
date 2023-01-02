@@ -1,0 +1,490 @@
+equipments = {
+
+   # Light Tanks
+	ger_light_tank_chassis_p1 = {
+		abbreviation = "pz1"
+		visual_level = 0
+		year = 1934
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
+		maximum_speed = 6
+		build_cost_ic = 10
+		reliability = 0.85
+		armor_value = 10
+		defense = 4
+		breakthrough = 20
+	}
+
+	ger_light_tank_chassis_p2 = {
+		abbreviation = "pz2"
+		visual_level = 1
+		year = 1936
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
+		maximum_speed = 6
+		build_cost_ic = 11
+		reliability = 0.85
+		armor_value = 15
+		defense = 5
+		breakthrough = 25
+	}
+
+	ger_light_tank_chassis_p35 = {
+		abbreviation = "p35"
+		visual_level = 4
+		year = 1936
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 12
+		reliability = 0.85
+		armor_value = 20
+		defense = 4
+		breakthrough = 20
+	}
+
+	ger_light_tank_chassis_p38 = {
+		abbreviation = "p38"
+		visual_level = 5
+		year = 1938
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
+		maximum_speed = 6
+		build_cost_ic = 14
+		reliability = 0.85
+		armor_value = 30
+		defense = 5
+		breakthrough = 30
+	}
+
+	ger_light_tank_chassis_hetzer = {
+		abbreviation = "p38"
+		visual_level = 4
+		year = 1943
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_1
+					tank_armament_tier_2
+					tank_armament_tier_3
+					tank_armament_tier_4
+					tank_armament_tier_5
+					tank_armament_tier_6
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type_2
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		maximum_speed = 6
+		build_cost_ic = 20
+		reliability = 0.85
+		armor_value = 80
+		defense = 6
+		breakthrough = 45
+	}
+	
+	ger_light_tank_chassis_luchs = {
+		abbreviation = "luc"
+		visual_level = 2
+		year = 1941
+		archetype = light_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_light_turret_type_alt
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		maximum_speed = 6.5
+		build_cost_ic = 14
+		reliability = 0.85
+		armor_value = 30
+		defense = 6
+		breakthrough = 40
+	}
+
+   # Medium Tanks
+	ger_medium_tank_chassis_p4 = {
+		abbreviation = "pz4"
+		visual_level = 1
+		year = 1936
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{		
+				required = yes
+				allowed_module_categories = {
+					tank_medium_turret_type
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_4
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 20
+		reliability = 0.8
+		armor_value = 35
+		defense = 8
+		breakthrough = 40
+	}
+
+	ger_medium_tank_chassis_p3 = {
+		abbreviation = "pz3"
+		visual_level = 0
+		year = 1936
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{		
+				required = yes
+				allowed_module_categories = {
+					tank_medium_turret_type
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.8
+		armor_value = 30
+		defense = 6
+		breakthrough = 35
+	}
+
+	# Panther
+	ger_medium_tank_chassis_p5 = {
+		abbreviation = "pz5"
+		visual_level = 2
+		year = 1943
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_modern_turret_type
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		maximum_speed = 5.25
+		build_cost_ic = 36
+		reliability = 0.8
+		armor_value = 80
+		defense = 8
+		breakthrough = 55
+	}
+	
+	ger_medium_tank_chassis_e50 = {
+		abbreviation = "e50"
+		visual_level = 2
+		year = 1945
+		archetype = medium_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_1
+					tank_armament_tier_2
+					tank_armament_tier_3
+					tank_armament_tier_4
+					tank_armament_tier_5
+					tank_armament_tier_6
+					tank_armament_tier_7
+					tank_armament_tier_8		
+				}
+			}
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_modern_turret_type
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+		}
+		maximum_speed = 5.75
+		build_cost_ic = 44
+		reliability = 0.8
+		armor_value = 100
+		defense = 10
+		breakthrough = 60
+	}
+	
+   # Heavy Tanks	
+	ger_heavy_tank_chassis_neub = {
+		abbreviation = "nbf"
+		visual_level = 0
+		year = 1934
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = 	{
+			main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armament_tier_1
+				}
+			}
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type
+					tank_light_turret_type_alt
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = {
+				required = yes
+				allowed_module_categories = {
+					tank_secondary_turret
+				}
+			}
+			special_type_slot_3 = inherit
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 25
+		reliability = 0.7
+		armor_value = 15
+		defense = 6
+		breakthrough = 50
+	}
+
+	# Tiger
+	ger_heavy_tank_chassis_p6 = {
+		abbreviation = "pz6"
+		visual_level = 1
+		year = 1941
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 4.5
+		build_cost_ic = 38
+		reliability = 0.75
+		armor_value = 85
+		defense = 10
+		breakthrough = 70
+	}
+
+	# Tiger 2
+	ger_heavy_tank_chassis_p6_b = {
+		abbreviation = "p6b"
+		visual_level = 2
+		year = 1943
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = inherit
+		maximum_speed = 5.25
+		build_cost_ic = 44
+		reliability = 0.75
+		armor_value = 100
+		defense = 12
+		breakthrough = 80
+	}
+
+	# Lowe
+	ger_heavy_tank_chassis_p7 = {
+		abbreviation = "p6b"
+		visual_level = 2
+		year = 1943
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{
+				required = yes		
+				allowed_module_categories = {
+					tank_super_heavy_turret_type
+					tank_heavy_turret_type_1
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 48
+		reliability = 0.75
+		armor_value = 110
+		defense = 14
+		breakthrough = 85
+	}
+
+	ger_heavy_tank_chassis_e100 = {
+		abbreviation = "e10"
+		visual_level = 2
+		year = 1945
+		archetype = heavy_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{		
+				allowed_module_categories = {
+					tank_super_heavy_turret_type
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 50
+		reliability = 0.75
+		armor_value = 120
+		defense = 14
+		breakthrough = 90
+	}
+
+	wunder_super_heavy_tank_chassis = {
+		abbreviation = "SHT"
+		visual_level = 2
+		year = 1945
+		archetype = super_heavy_tank_chassis
+		priority = 2000
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{		
+				allowed_module_categories = {
+					tank_super_heavy_turret_type
+					tank_heavy_turret_type_1
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 52
+		reliability = 0.7
+		armor_value = 220
+		defense = 20
+		breakthrough = 100
+	}
+}

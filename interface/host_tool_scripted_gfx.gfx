@@ -1,0 +1,50 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_button_transparent"
+		texturefile = "gfx/interface/button_transparent.dds"
+	}
+    spriteType = {
+        name = "GFX_horst_help2"
+        texturefile = "gfx/horst_gui/horsttool/horst_help.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+	spriteType = {
+        name = "GFX_horst_civ_plus"
+        texturefile = "gfx/horst_gui/horsttool/horst_civ_plus.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	
+		spriteType = {
+        name = "GFX_horst_civ_pluss"
+        texturefile = "gfx/horst_gui/horsttool/horst_civ_pluss.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }	
+	spriteType = {
+        name = "GFX_horst_addcheat"
+        texturefile = "gfx/horst_gui/horsttool/horst_addcheat.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+    spriteType = {
+        name = "GFX_horst_help"
+        texturefile = "gfx/horst_gui/horsttool/horst_help.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+	spriteType = {
+        name = "GFX_horst_addpp"
+        texturefile = "gfx/horst_gui/horsttool/horst_addpp.dds"
+        effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+	spriteType = {
+		name = "GFX_horst_pingtool"
+		texturefile = "gfx/horst_gui/horsttool/horst_pingtool.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+    }
+   	spriteType = {
+   		name = "GFX_change_host_nation"
+   		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
+   	}
+   	spriteType = {
+   		name = "GFX_topbar_production_horst_tool"
+   		texturefile = "gfx/interface/topbar/toolbar/production_button.dds"
+   		noOfFrames = 2		
+   	}
+}

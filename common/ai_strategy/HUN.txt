@@ -1,0 +1,110 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+germany_ally_1 = {
+	enable = {
+		tag = HUN
+		has_country_flag = GER_second_vienna_award_HUN_north
+		country_exists = GER
+	}
+	abort = {
+		NOT = { country_exists = GER }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 100
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = 100
+	}	
+}
+germany_dont_ally_historical = {
+	enable = {
+		tag = HUN
+		is_historical_focus_on = yes
+		country_exists = GER
+	}
+	abort = {
+		is_in_faction_with = GER #got here somehow, might as well stay
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -200
+	}	
+}
+germany_ally_2 = {
+	enable = {
+		tag = HUN
+		has_country_flag = GER_second_vienna_award_HUN_all
+		country_exists = GER
+	}
+	abort = {
+		NOT = { country_exists = GER }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = 200
+	}	
+}
+
+germany_jerk = {
+	enable = {
+		tag = HUN
+		has_country_flag = GER_second_vienna_award_noland
+		country_exists = GER
+	}
+	abort = {
+		NOT = { country_exists = GER }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "GER"			
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"			
+		value = -200
+	}	
+}
+HUN_Eastern_front = {
+    enable = {
+        original_tag = HUN
+		date > 1941.1.1
+    }
+	abort = {
+
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ITA
+		value = 1000
+	}
+    ai_strategy = {
+		type = dont_defend_ally_borders
+		id = FIN
+		value = 1000
+	}
+}

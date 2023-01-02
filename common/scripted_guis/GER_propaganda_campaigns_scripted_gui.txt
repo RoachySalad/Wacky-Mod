@@ -1,0 +1,20 @@
+scripted_gui = {
+
+	ger_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "ger_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			ger_poster_slot_left = {
+				frame = GER_poster_left_icon_frame
+			}
+
+			ger_poster_slot_center = {
+				frame = GER_poster_center_icon_frame
+			}
+		}
+	}
+	
+}
+

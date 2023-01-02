@@ -1,0 +1,2679 @@
+FRA_vichy_france = {
+
+	FRA_scuttle_the_fleet = {
+
+		icon = generic_ignite_civil_war
+
+		available = {
+			has_government = fascism
+			NOT = {
+				GER = { divisions_in_state = { state = 21 size > 0 } }
+			}
+			has_country_flag = {
+				flag = case_anton
+				days > 2
+			}
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_government = fascism
+			has_country_flag = case_anton
+		}
+
+		complete_effect = {
+			set_country_flag = scuttled_fleet
+			destroy_ships = {
+				type = ship_hull_light
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_cruiser
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_heavy
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_carrier 
+				count = all
+			}
+			destroy_ships = {
+				type = ship_hull_submarine
+				count = all
+			}
+		}
+	}
+
+	FRA_case_anton_mission = {
+
+		icon = generic_tank
+
+		available = {
+			is_subject = no
+			has_war_with = GER
+		}
+
+		days_mission_timeout = 7
+		fire_only_once = yes
+
+		activation = {
+			original_tag = FRA
+			has_government = fascism
+			has_country_flag = case_anton
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = FRA_case_anton_mission_tt
+		}
+
+		is_good = no
+
+		timeout_effect = {
+			transfer_navy = { target = GER }
+			GER = { annex_country = { target = ROOT } }
+			if = {
+				limit = {
+					NOT = { has_country_flag = scuttled_fleet }
+				}
+				GER = { news_event = { id = wtt_news.23 hours = 6 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = scuttled_fleet
+				}
+				GER = { news_event = { id = wtt_news.24 hours = 6 } }
+			}
+			custom_effect_tooltip = GAME_OVER_TT
+		}
+	}
+
+	FRA_failsafe_join_axis = {
+		available = {
+			tag = VIC
+			any_state = {
+				NOT = { #algeria
+					state = 459
+					state = 460
+					state = 513
+				}
+				is_core_of = FRA
+				is_controlled_by = FRA #Free France has taken back some territory on the mainland
+			}
+			NOT = {
+				has_war_with = GER
+				is_in_faction_with = GER
+			}
+			date > 1942.6.1
+		}
+		visible = {
+			is_ai = yes #if you are not a member of the dev team - avert thy eyes, traveller, for thou hath gazed upon my shame
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		cost = 0
+		fire_only_once = yes
+		complete_effect = {
+			set_rule = { can_join_factions = yes }
+			GER = { add_to_faction = ROOT }
+		}
+	}
+}
+category_test_decisions = {
+	test_free_france = {
+		allowed = { original_tag = FRA }
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			load_focus_tree = free_french_focus
+		}
+	}
+	test_vichy_france = {
+		allowed = { original_tag = FRA }
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = FRA
+				save_event_target_as = france_vichy
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						OR = {
+							is_on_continent = africa
+							is_core_of = VIN
+							is_core_of = CAM
+							is_core_of = LAO
+							is_core_of = LEB
+							is_core_of = SYR
+						}
+					}
+					event_target:france_vichy = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						OR = {
+							state = 735
+							state = 21
+							state = 32
+							state = 20
+							state = 26
+							state = 22
+							state = 31
+							state = 25
+							state = 33
+						}
+					}
+					add_core_of = PREV
+					event_target:france_vichy = { transfer_state = PREV }
+				}
+				every_state = {
+					limit = {
+						is_controlled_by = ROOT
+						is_core_of = ROOT
+						NOT = {
+							is_controlled_by = event_target:france_vichy
+						}
+					}
+					add_core_of = PREV
+				}
+				set_capital = { state = 26 }
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					democratic = 0
+					neutrality = 20
+					fascism = 80
+					communism = 0
+				}
+				FRA = {
+					FRA_philippe_petain= {
+						set_nationality = event_target:france_vichy	
+					}
+				}
+				FRA_philippe_petain= {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+								
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				set_cosmetic_tag = FRA_VICHY
+				# create_country_leader = {
+				# 	name = "Philippe Pétain"
+				# 	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+				# 	picture = "Portrait_France_Philippe_Petain.dds"
+				# 	expire = "1965.1.1"
+				# 	ideology = fascism_ideology
+				# 	traits = {
+						
+				# 	}
+				# }
+				add_ideas = FRA_occupation_costs_4
+				load_focus_tree = vichy_french_focus
+				FRA = {
+					transfer_units_fraction = {
+						target = event_target:france_vichy
+						size = 0.9
+						stockpile_ratio = 0.7
+						army_ratio = 0.5
+						navy_ratio = 0.85
+						air_ratio = 1.0
+					}
+				}
+				change_tag_from = FRA
+			}
+		}
+	}
+}
+
+FRA_weapons_purchases_category = {
+	FRA_order_weapons_in_USA = {
+	icon = generic_prepare_civil_war
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 50
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_equipment = {
+					infantry_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2500
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -2 }
+			}
+		}
+	}
+	FRA_order_artillery_in_USA = {
+		icon = ger_military_buildup
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 75
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				has_equipment = {
+					artillery_equipment < 1
+				}
+				factor = 50
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 75
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+		}
+	}
+	FRA_order_fighters_in_USA = {
+		icon = generic_air
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					fighter_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = fighter_equipment
+				amount = 50
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+	FRA_order_bombers_in_USA = {
+		icon = generic_air
+		available = {
+			
+		}
+		visible = {
+			USA_can_sell_weapons_trigger = yes
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 100
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_equipment = {
+					tac_bomber_equipment < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				has_manpower < 10000 
+				factor = 0 #need to up conscription laws
+			}
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 5 }
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = tac_bomber_equipment
+				amount = 25
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -5 }
+			}
+		}
+	}
+}
+
+FRA_spanish_intervention_category = {
+	FRA_allow_covert_intervention = {
+		available = {  }
+
+		visible = { not = { has_country_flag = FRA_covert_intervention_allowed } }
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = scw_over
+				not = { has_country_flag = FRA_covert_intervention_allowed }
+			}
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_covert_intervention_allowed 
+			clr_country_flag = FRA_non_intervention
+			set_rule = { can_send_volunteers = yes }
+		}
+
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_stability < 0.55
+				factor = 0
+			}
+			modifier = {
+				has_stability < 0.8
+				factor = 0.5
+			}
+		}
+		days_remove = -1
+		modifier = {
+			stability_factor = -0.25
+			war_support_factor = 0.125
+			send_volunteers_tension = -0.9
+		}
+	}
+
+	FRA_ban_covert_intervention = {
+		available = { 
+			NOT = {
+				any_other_country = {
+					has_volunteers_amount_from = {
+						tag = ROOT
+						count > 0
+					}
+				}
+			}
+		}
+
+		visible = { has_country_flag = FRA_covert_intervention_allowed }
+
+		complete_effect = { 
+			clr_country_flag = FRA_covert_intervention_allowed 
+			#recall_volunteers_from = SPR
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				has_stability < 0.55
+				add = 5
+			}
+		}
+	}
+
+	# FRA_intervene_on_side_of_FROM = {
+	# 	available = { has_war_support > 0.25 }
+
+	# 	visible = { has_war = no }
+
+	# 	targets = { SPD SPA SPC SPB SPR }
+
+	# 	target_trigger = { 
+	# 		FROM = {
+	# 			original_tag = SPR
+	# 			has_government = ROOT
+	# 		}
+	# 	}
+
+	# 	complete_effect = { 
+	# 		every_country = {
+	# 			limit = { has_war_with = FROM }
+	# 			ROOT = {
+	# 				declare_war_on = {
+	# 					target = PREV
+	# 					type = topple_government
+	# 				}
+	# 			}
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				is_faction_leader = yes
+	# 			}
+	# 			add_to_faction = FROM
+	# 		}
+	# 		clr_country_flag = FRA_non_intervention
+	# 		if = {
+	# 			limit = {
+	# 				has_country_flag = FRA_covert_intervention_allowed
+	# 			}
+	# 			clr_country_flag = FRA_covert_intervention_allowed 
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_country_flag = FRA_volunteer_work_allowed
+	# 			}
+	# 			clr_country_flag = FRA_volunteer_work_allowed 
+	# 		}
+	# 		if = {
+	# 			limit = {
+	# 				has_country_flag = FRA_sending_weapons_allowed
+	# 			}
+	# 			clr_country_flag = FRA_sending_weapons_allowed 
+	# 		}
+	# 		if = { 
+	# 			limit = { has_country_flag = FRA_non_military_aid_allowed }
+	# 			clr_country_flag = FRA_non_military_aid_allowed
+	# 		}
+	# 		if = { 
+	# 			limit = { has_country_flag = FRA_arms_purchases_allowed }
+	# 			clr_country_flag = FRA_arms_purchases_allowed
+	# 		}
+			
+	# 	}
+
+	# 	cost = 25
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 0
+	# 		}
+	# 		modifier = {
+	# 			is_historical_focus_on = yes
+	# 			factor = 0
+	# 		}
+	# 	}
+		
+	# }
+}
+economy_decisions = {
+
+	FRA_revoke_the_matignon_agreements = {
+		visible = { has_idea = FRA_matignon_agreements }
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+
+		complete_effect = {
+			remove_ideas = FRA_matignon_agreements
+			if = {
+				limit = {
+					communism > 0.25
+				}
+				country_event = lar_france_political_violence.2
+			}
+		}
+	}
+
+}
+political_actions = {
+
+}
+VIC_concessions_to_the_germans = {
+	VIC_basing_rights = {
+		available = {
+
+		}
+		visible = {
+			has_any_occupation_cost_trigger = yes
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_idea = FRA_occupation_costs_4
+				factor = 5
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_3
+				factor = 2
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_2
+				factor = 1.5
+			}
+		}
+		complete_effect = {
+			give_military_access = GER
+			reduce_occupation_cost_effect = yes
+		}
+	}
+
+	VIC_produce_aircraft_parts = {
+		available = {}
+
+		visible = {
+			has_any_occupation_cost_trigger = yes
+		}
+
+		cost = 25
+
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_idea = FRA_occupation_costs_4
+				factor = 5
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_3
+				factor = 2
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_2
+				factor = 1.5
+			}
+		}
+		complete_effect = {
+			add_ideas = VIC_produce_aircraft_parts
+			GER = { add_ideas = VIC_aircraft_parts }
+			reduce_occupation_cost_effect = yes
+		}
+	}
+	VIC_send_guest_workers = {
+		available = {
+			
+		}
+		visible = { has_any_occupation_cost_trigger = yes }
+		cancel_trigger = {
+			not = { has_country_flag = VIC_send_guest_workers }
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_idea = FRA_occupation_costs_4
+				factor = 5
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_3
+				factor = 2
+			}
+			modifier = {
+				has_idea = FRA_occupation_costs_2
+				factor = 1.5
+			}
+		}
+		fire_only_once = yes
+		days_remove = -1
+		modifier = {
+			conscription_factor = -0.25
+		}
+		complete_effect = {
+			GER = { add_ideas = VIC_guest_workers }
+			reduce_occupation_cost_effect = yes
+			set_country_flag = VIC_send_guest_workers
+		}
+	}
+	VIC_recall_guest_workers = {
+		available = {
+			has_country_flag = VIC_send_guest_workers
+		}
+		visible = { 
+		 	has_country_flag = VIC_send_guest_workers
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				controls_state = 16
+				add = 10
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = { remove_ideas = VIC_guest_workers }
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 16
+					}
+				}
+				increase_occupation_cost_effect = yes
+			}
+			if = {
+				limit = {
+					controls_state = 16
+					has_idea = FRA_mandatory_work_service
+				}
+				remove_ideas = FRA_mandatory_work_service
+			}
+			clr_country_flag = VIC_send_guest_workers
+		}
+	}	
+}
+FRA_intervention_in_overseas_territories = {
+	FRA_promise_independence_to_north_africa = {
+		available = { 
+			NOT = {
+				FRA_controls_north_africa = yes
+			}
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_north_africa }
+
+		complete_effect = { 
+			set_country_flag = FRA_north_africa_promised_independence
+			custom_effect_tooltip = FRA_promise_independence_tt
+			random_list = {
+				20 = {
+					FRA_transfer_north_africa_effect = yes
+					every_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							OR = {
+								state = 461
+								state = 462
+								state = 459
+								state = 513
+								state = 460
+								state = 458
+								state = 665
+							}
+						}
+						add_compliance = 5
+					}
+				}
+				80 = {
+
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_prepare_coup_in_north_africa = {
+		available = { 
+			NOT = {
+				FRA_controls_north_africa = yes
+			}
+			has_intelligence_agency = yes
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_intervention_in_north_africa 
+		}
+
+		complete_effect = { 
+			set_country_flag = FRA_coup_in_north_africa_flag
+			custom_effect_tooltip = FRA_prepare_coup_tt
+			
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0 #at least until we know the AI can handle it
+		}
+	}
+	FRA_promise_independence_to_syria = {
+		available = { 
+			NOT = {
+				FRA_controls_syria = yes
+			} 
+			453 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			}
+			454 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			}
+			455 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			} 
+
+		} 
+
+		visible = {
+			has_completed_focus = FRA_intervention_in_syria 
+			NOT = {
+				FRA_controls_syria = yes
+			}
+		}
+
+		
+
+		complete_effect = { 
+			set_country_flag = FRA_syria_promised_independence
+			custom_effect_tooltip = FRA_promise_independence_tt
+			random_list = {
+				50 = {
+					FRA_transfer_syria_effect = yes
+					every_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							OR = {
+								state = 677
+								state = 680
+								state = 554
+								state = 553
+							}
+						}
+						add_compliance = 5
+					}
+				}
+				50 = {}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 3
+		}
+		
+	}
+	FRA_prepare_coup_in_syria = {
+		available = { 
+			NOT = {
+				FRA_controls_syria = yes
+			}
+			has_intelligence_agency = yes
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_intervention_in_syria 
+			NOT = {
+				FRA_controls_syria = yes
+			}
+			always = no
+		}
+
+		complete_effect = { 
+			custom_effect_tooltip = FRA_prepare_coup_tt
+			set_country_flag = FRA_coup_in_syria_flag
+		}
+		
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_invasion_in_syria = {
+		available = { 
+			NOT = {
+				FRA_controls_syria = yes
+			}
+			453 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			}
+			454 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			}
+			455 = {
+				CONTROLLER = {
+					tag = ENG					
+				}
+			} 
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_syria }
+
+		days_remove = 90
+
+		remove_effect = { 
+			FRA_transfer_syria_effect = yes
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 5
+		}
+		
+	}
+	FRA_promise_independence_to_indochina = {
+		available = {  
+			NOT = {
+				FRA_controls_indochina = yes
+			}
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_indochina }
+
+		
+
+		complete_effect = { 
+			set_country_flag = FRA_indochina_promised_independence
+			custom_effect_tooltip = FRA_promise_independence_tt
+			random_list = {
+				20 = {
+					FRA_transfer_indochina_effect = yes
+					every_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							OR = {
+								state = 671
+								state = 670
+								state = 286
+								state = 741
+							}
+						}
+						add_compliance = 5
+					}
+				}
+				80 = {}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_prepare_coup_in_indochina = {
+		available = { 
+			NOT = {
+				FRA_controls_indochina = yes
+			}
+			has_intelligence_agency = yes
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_intervention_in_indochina 
+		}
+
+		complete_effect = { 
+			custom_effect_tooltip = FRA_prepare_coup_tt
+			set_country_flag = FRA_coup_in_indochina_flag
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_invasion_in_indochina = {
+		available = { 
+			NOT = {
+				FRA_controls_indochina = yes
+			}
+			any_state = {
+				OR = {
+					state = 671
+					state = 670
+					state = 286
+					state = 741
+				}
+				any_neighbor_state = {
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			} 
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_indochina }
+
+		complete_effect = { 
+			random_state = { #find a neighbouring state of Syria that is controlled by an ally or ourselves
+				limit = {
+					OR = {
+						state = 671
+						state = 670
+						state = 286
+						state = 741
+					}
+					not = { is_controlled_by = ROOT }
+					any_neighbor_state = {
+						CONTROLLER = {
+							OR = {
+								tag = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				save_event_target_as = FRA_defender_state
+				random_neighbor_state = {
+					limit = {
+						CONTROLLER = {
+							OR = {
+								tag = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+					save_event_target_as = FRA_attacker_state
+				}
+				event_target:FRA_attacker_state = {
+				CONTROLLER = {
+					division_template = {
+						name = "Indochina Intervention Force" 	
+						division_names_group = FRA_INF_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }		
+							infantry = { x = 0 y = 1 }		
+							infantry = { x = 0 y = 2 }
+
+							infantry = { x = 1 y = 0 }		
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }		
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					event_target:FRA_attacker_state = { #set up attacker unit(s)
+						create_unit = {
+							division = "name = \"Indochina Force 1\" division_template = \"Indochina Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Indochina Force 2\" division_template = \"Indochina Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Indochina Force 3\" division_template = \"Indochina Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+					}
+				}
+			}
+			event_target:FRA_defender_state = { #set up defender unit(s)
+				CONTROLLER = {
+					division_template = {
+						name = "Indochina Defense Force" 	
+						division_names_group = FRA_INF_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }		
+							infantry = { x = 0 y = 1 }		
+							infantry = { x = 0 y = 2 }
+
+							infantry = { x = 1 y = 0 }		
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }		
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					event_target:FRA_defender_state = { #set up defenders
+						create_unit = {
+							division = "name = \"Indochina Defense Force 1\" division_template = \"Indochina Defense Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+					}
+				}
+			}
+			}
+			event_target:FRA_attacker_state = {
+				CONTROLLER = {
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = event_target:FRA_attacker_state
+							num_provinces = 4
+							on_win = FRA_indochina_intervention.1
+							on_lose = FRA_indochina_intervention.2
+							on_cancel = FRA_indochina_intervention.3
+						}
+						defender = {
+							state = event_target:FRA_defender_state
+							num_provinces = 4
+							on_win = FRA_indochina_intervention.2
+							on_lose = FRA_indochina_intervention.1
+							on_cancel = FRA_indochina_intervention.3
+						}
+					}
+				}
+			}
+
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 25
+	}
+	FRA_promise_independence_to_central_africa = {
+		available = {  
+			NOT = {
+				FRA_controls_central_africa = yes
+			}
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_central_africa }
+
+		
+
+		complete_effect = { 
+			set_country_flag = FRA_central_africa_promised_independence
+			custom_effect_tooltip = FRA_promise_independence_tt
+			random_list = {
+				25 = {
+					FRA_transfer_central_africa_effect = yes
+					every_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							OR = {
+								state = 772
+								state = 539
+								state = 773
+								state = 660
+								state = 774
+							}
+						}
+						add_compliance = 5
+					}
+				}
+				75 = {}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 3
+		}
+		
+	}
+	FRA_prepare_coup_in_central_africa = {
+		available = { 
+			NOT = {
+				FRA_controls_central_africa = yes
+			}
+			has_intelligence_agency = yes
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_intervention_in_central_africa 
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = FRA_prepare_coup_tt
+			set_country_flag = FRA_coup_in_central_africa_flag
+		}
+
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_invasion_in_central_africa = {
+		available = { 
+			NOT = {
+				FRA_controls_central_africa = yes
+			}
+			any_state = {
+				OR = {
+					state = 772
+					state = 539
+					state = 773
+					state = 660
+					state = 774
+				}
+				any_neighbor_state = {
+					CONTROLLER = {
+						OR = {
+							tag = ROOT
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			} 
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_central_africa }
+
+		complete_effect = { 
+			random_state = { #find a neighbouring state of Syria that is controlled by an ally or ourselves
+				limit = {
+					OR = {
+						state = 772
+						state = 539
+						state = 773
+						state = 660
+						state = 774
+					}
+					not = { is_controlled_by = ROOT }
+					any_neighbor_state = {
+						CONTROLLER = {
+							OR = {
+								tag = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				save_event_target_as = FRA_defender_state
+				random_neighbor_state = {
+					limit = {
+						CONTROLLER = {
+							OR = {
+								tag = ROOT
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+					save_event_target_as = FRA_attacker_state
+				}
+			}
+			event_target:FRA_attacker_state = {
+				CONTROLLER = {
+					division_template = {
+						name = "Central Africa Intervention Force" 	
+						division_names_group = FRA_INF_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }		
+							infantry = { x = 0 y = 1 }		
+							infantry = { x = 0 y = 2 }
+
+							infantry = { x = 1 y = 0 }		
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }		
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+							recon = { x = 0 y = 1 }
+						}
+					}
+					event_target:FRA_attacker_state = { #set up attacker unit(s)
+						create_unit = {
+							division = "name = \"Central Africa Force 1\" division_template = \"Central Africa Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Central Africa Force 2\" division_template = \"Central Africa Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Central Africa Force 3\" division_template = \"Central Africa Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Central Africa Force 4\" division_template = \"Central Africa Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+						create_unit = {
+							division = "name = \"Central Africa Force 5\" division_template = \"Central Africa Intervention Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+					}
+				}
+			}
+			event_target:FRA_defender_state = { #set up defender unit(s)
+				CONTROLLER = {
+					division_template = {
+						name = "Central Africa Defense Force" 	
+						division_names_group = FRA_INF_01
+						is_locked = yes
+						regiments = {
+							infantry = { x = 0 y = 0 }		
+							infantry = { x = 0 y = 1 }		
+							infantry = { x = 0 y = 2 }
+
+							infantry = { x = 1 y = 0 }		
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }		
+						}
+						support = {
+							engineer = { x = 0 y = 0 }
+						}
+					}
+					event_target:FRA_defender_state = { #set up defenders
+						create_unit = {
+							division = "name = \"Central Africa Defense Force 1\" division_template = \"Central Africa Defense Force\" start_experience_factor = 0.5"  
+							owner = PREV
+						}
+					}
+				}
+			}
+			event_target:FRA_attacker_state = {
+				CONTROLLER = {
+					start_border_war = {
+						change_state_after_war = no
+						attacker = {
+							state = event_target:FRA_attacker_state
+							num_provinces = 4
+							on_win = FRA_central_africa_intervention.1
+							on_lose = FRA_central_africa_intervention.2
+							on_cancel = FRA_central_africa_intervention.3
+						}
+						defender = {
+							state = event_target:FRA_defender_state
+							num_provinces = 4
+							on_win = FRA_central_africa_intervention.2
+							on_lose = FRA_central_africa_intervention.1
+							on_cancel = FRA_central_africa_intervention.3
+						}
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	FRA_promise_independence_to_west_africa = {
+		available = { 
+			NOT = {
+				FRA_controls_west_africa = yes
+			}
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_west_africa }
+
+		
+
+		complete_effect = { 
+			set_country_flag = FRA_west_africa_promised_independence
+			custom_effect_tooltip = FRA_promise_independence_tt
+			random_list = {
+				100 = {
+					FRA_transfer_western_africa_effect = yes
+					every_owned_state = {
+						limit = {
+							is_controlled_by = ROOT
+							OR = {
+								state = 557
+								state = 272
+								state = 556
+								state = 780
+								state = 779
+								state = 778
+								state = 781
+								state = 776
+							}
+						}
+						add_compliance = 5
+					}
+				}
+				0 = {}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_prepare_coup_in_west_africa = {
+		available = { 
+			NOT = {
+				FRA_controls_west_africa = yes
+			}
+			has_intelligence_agency = yes
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_intervention_in_west_africa 
+			always = no
+		}
+
+		complete_effect = { 
+			custom_effect_tooltip = FRA_prepare_coup_tt
+			set_country_flag = FRA_coup_in_west_africa_flag
+						
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	FRA_promise_independence_to_madagascar = {
+		available = {  
+			NOT = {
+				543 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+		} 
+
+		visible = { has_completed_focus = FRA_intervention_in_madagascar }
+
+		complete_effect = { 
+			set_country_flag = FRA_madagascar_promised_independence
+			custom_effect_tooltip = FRA_promise_independence_tt
+			random_list = {
+				100 = {
+					transfer_state = 543 
+					543 = {
+						add_compliance = 5
+					}
+					transfer_state = 706 
+					transfer_state = 708 
+					transfer_state = 713
+					transfer_state = 268 
+				}
+				0 = {}
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 3
+		}
+	}
+	FRA_prepare_coup_in_madagascar = {
+		available = { 
+			NOT = {
+				543 = {
+					OR = {
+						is_controlled_by = ROOT
+						CONTROLLER = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
+			has_intelligence_agency = yes
+		} 
+
+		visible = { 
+			has_completed_focus = FRA_intervention_in_madagascar
+			always = no
+		}
+
+		complete_effect = { 
+			custom_effect_tooltip = FRA_prepare_coup_tt
+			set_country_flag = FRA_coup_in_madagascar_flag
+			
+		}
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+FRA_decolonization = {
+	FRA_independence_for_syria_mission = {
+		available = {
+			country_exists = LEB
+			country_exists = SYR
+		}
+
+		activation = {
+			has_country_flag = FRA_syria_promised_independence
+			has_war = no
+			NOT = {
+				country_exists = SYR
+				country_exists = LEB
+			}
+			680 = { is_controlled_by = ROOT }
+			677 = { is_controlled_by = ROOT }
+			554 = { is_controlled_by = ROOT }
+			553 = { is_controlled_by = ROOT }
+		}
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = LEB
+						is_core_of = SYR
+					}
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_promised_independence_tt
+				}
+			}
+		}
+	}
+	FRA_independence_for_indochina_mission = {
+		available = {
+			country_exists = LAO
+			country_exists = CAM
+			country_exists = VIN
+		}
+
+		activation = {
+			has_country_flag = FRA_indochina_promised_independence
+			has_war = no
+			NOT = {
+				country_exists = CAM
+				country_exists = LAO
+				country_exists = VIN
+			}
+			671 = { is_controlled_by = ROOT }
+			670 = { is_controlled_by = ROOT }
+			286 = { is_controlled_by = ROOT }
+			741 = { is_controlled_by = ROOT }	
+		}
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = LAO
+						is_core_of = CAM
+						is_core_of = VIN
+					}
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_promised_independence_tt
+				}
+			}
+		}
+	}
+	FRA_independence_for_madagascar_mission = {
+		available = {
+			country_exists = MAD
+		}
+
+		activation = {
+			has_country_flag = FRA_madagascar_promised_independence
+			has_war = no
+			NOT = {
+				country_exists = MAD
+			}
+			543 = { is_controlled_by = ROOT }
+		}
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			543 = {
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_promised_independence_tt
+				}
+			}
+		}
+	}
+	FRA_independence_for_north_africa_mission = {
+		available = {
+			country_exists = ALG
+			country_exists = MOR
+			country_exists = TUN
+		}
+
+		activation = {
+			has_country_flag = FRA_north_africa_promised_independence
+			has_war = no
+			NOT = {
+				country_exists = MOR
+				country_exists = ALG
+				country_exists = TUN
+			}
+			461 = { is_controlled_by = ROOT }
+			462 = { is_controlled_by = ROOT }
+			459 = { is_controlled_by = ROOT }
+			513 = { is_controlled_by = ROOT }
+			460 = { is_controlled_by = ROOT }
+			458 = { is_controlled_by = ROOT }
+			665 = { is_controlled_by = ROOT }	
+		}
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = ALG
+						is_core_of = MOR
+						is_core_of = TUN
+					}
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_promised_independence_tt
+				}
+			}
+		}
+	}
+	FRA_independence_for_west_africa_mission = {
+		available = {
+			country_exists = NGR
+			country_exists = DAH
+			country_exists = TOG
+			country_exists = VOL
+			country_exists = IVO
+			country_exists = MLI
+			country_exists = GNA
+			country_exists = SEN
+			country_exists = MRT
+			
+		}
+
+		activation = {
+			has_country_flag = FRA_west_africa_promised_independence
+			has_war = no
+			NOT = {
+				country_exists = NGR
+				country_exists = DAH
+				country_exists = TOG
+				country_exists = VOL
+				country_exists = IVO
+				country_exists = MLI
+				country_exists = GNA
+				country_exists = SEN
+				country_exists = MRT
+			}
+			FRA_controls_west_africa = yes
+		}
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = NGR
+						is_core_of = DAH
+						is_core_of = TOG
+						is_core_of = VOL
+						is_core_of = IVO
+						is_core_of = MLI
+						is_core_of = GNA
+						is_core_of = SEN
+						is_core_of = MRT
+					}
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_promised_independence_tt
+				}
+			}
+		}
+	}
+	FRA_independence_for_central_africa_mission = {
+		available = {
+			country_exists = RCG
+			country_exists = GAB
+			country_exists = CAR
+			country_exists = CMR
+			country_exists = CHA
+			
+		}
+
+		activation = {
+			has_country_flag = FRA_central_africa_promised_independence
+			has_war = no
+			NOT = {
+				country_exists = RCG
+				country_exists = GAB
+				country_exists = CAR
+				country_exists = CMR
+				country_exists = CHA
+			}
+			FRA_controls_central_africa = yes
+		}
+
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = RCG
+						is_core_of = GAB
+						is_core_of = CAR
+						is_core_of = CMR
+						is_core_of = CHA
+					}
+				}
+				add_resistance_target = {
+					amount = 10
+					tooltip = FRA_promised_independence_tt
+				}
+			}
+		}
+	}
+}
+
+operations = {
+
+	FRA_integrate_north = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			FRA_controls_north_africa = yes
+		}
+
+		visible = {
+			has_completed_focus = FRA_appeal_to_overseas_territories
+		}
+		
+		complete_effect = {
+			FRA_transfer_north_africa_effect = yes
+		}
+	}
+	
+	FRA_move_capital = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = FRA
+		}
+		
+		available = {
+			FRA_controls_central_africa = yes
+		}
+
+		visible = {
+			has_completed_focus = FRA_appeal_to_overseas_territories
+			539 = {
+				is_capital = no
+			}
+
+		}
+		
+		complete_effect = {
+			set_capital =  { state = 539 }
+		}
+	}
+
+	FRA_develop_central_africa = {
+
+		icon = generic_nationalism
+
+		fire_only_once = yes
+
+		allowed = {
+			original_tag = FRA
+		}
+		available = {
+			FRA_controls_central_africa = yes
+		}	
+
+		visible = {
+			FRA_controls_central_africa = yes
+			has_completed_focus = FRA_appeal_to_overseas_territories
+		}
+		complete_effect = {
+			539 = {
+				add_building_construction = {
+					type = naval_base
+					level = 5
+					province = 5139
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+
+	FRA_move_capital_algiers ={
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = FRA
+		}
+		available = {
+			FRA_controls_north_africa = yes
+		}
+		visible = {
+			has_completed_focus = FRA_appeal_to_overseas_territories
+			459 = {
+				is_capital = no
+			}
+		}
+		complete_effect = {
+			set_capital =  { state = 459 }
+		}
+	}
+	
+}
+
+FRA_propaganda_campaigns = {
+	FRA_maginot_prop = { # ID = 2
+		priority = 18
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			has_war = yes
+			FRA = { controls_state = 28 }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			army_core_defence_factor = 0.05
+			dig_in_speed_factor = 0.5
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 2 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 2 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_bonds_prop = { # ID = 3
+		priority = 17
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			has_war = yes 
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			consumer_goods_factor = -0.025
+			political_power_gain = 0.10
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 3 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 3 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_air_force = { # ID = 4
+		priority = 16
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			air_advisor_cost_factor = -0.1
+			air_home_defence_factor = 0.1
+			air_paradrop_defence_factor = 0.1
+			air_training_xp_gain_factor = 0.2
+			air_untrained_pilots_penalty_factor = -0.1
+			experience_gain_air_factor = 0.2
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 4 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 4 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_steel_prop = { # ID = 5
+		priority = 15
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			NOT = {has_idea = civilian_economy}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			production_lack_of_resource_penalty_factor = -0.1
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = { TAG = VIC }
+				}
+				set_variable = { FRA_new_propaganda_campaign = 5 }
+				FRA_pick_propaganda_campaign_slot_effect = yes
+				add_ideas = FRA_gun_prop
+				hidden_effect = {
+					730 = {
+						set_variable = { SOV_steel_bonus = 0 }
+						set_variable = { SOV_aluminium_bonus = 0 }
+						set_variable = { SOV_chromium_bonus = 0 }
+						set_variable = { SOV_tungsten_bonus = 0 }
+					}
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+						}
+						730 = { add_to_variable = { SOV_steel_bonus = 10 } }
+					}
+
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+						}
+						730 = { add_to_variable = { SOV_aluminium_bonus = 10 } }
+					}
+
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						730 = { add_to_variable = { SOV_chromium_bonus = 10 } }
+					}
+
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+						}
+						730 = { add_to_variable = { SOV_tungsten_bonus = 10 } }
+					}
+				}
+
+				730 = {
+					add_dynamic_modifier = { modifier = SOV_increased_metals_production }
+				}
+			} else = {
+				set_variable = { FRA_new_propaganda_campaign = 5 }
+				FRA_pick_propaganda_campaign_slot_effect = yes
+				add_ideas = FRA_gun_prop
+				hidden_effect = {
+					22 = {
+						set_variable = { SOV_steel_bonus = 0 }
+						set_variable = { SOV_aluminium_bonus = 0 }
+						set_variable = { SOV_chromium_bonus = 0 }
+						set_variable = { SOV_tungsten_bonus = 0 }
+					}
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+							}
+						}
+						22 = { add_to_variable = { SOV_steel_bonus = 10 } }
+					}
+
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+							}
+						}
+						22 = { add_to_variable = { SOV_aluminium_bonus = 10 } }
+					}
+
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+							}
+						}
+						22 = { add_to_variable = { SOV_chromium_bonus = 10 } }
+					}
+
+					every_controlled_state = {
+						limit = {
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+							}
+						}
+						22 = { add_to_variable = { SOV_tungsten_bonus = 10 } }
+					}
+				}
+
+				22 = {
+					add_dynamic_modifier = { modifier = SOV_increased_metals_production }
+				}
+			}
+			
+
+			custom_effect_tooltip = SOV_propaganda_more_metal_tt
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 5 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			remove_ideas = FRA_gun_prop
+			if = {
+				limit = {
+					NOT = { TAG = VIC }
+				}
+				730 = {
+					remove_dynamic_modifier = { modifier = SOV_increased_metals_production }
+				}
+			} else = {
+				22 = {
+					remove_dynamic_modifier = { modifier = SOV_increased_metals_production }
+				}
+			}
+
+		}
+
+	}
+
+	FRA_men_prop = { # ID = 6
+		priority = 14
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			GER = { has_war = yes }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			war_support_factor = 0.1
+			mobilization_speed = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 6 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 6 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_intel_prop = { # ID = 7
+		priority = 13
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			threat > 0.10
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			intelligence_agency_defense = 0.5
+			operative_slot = 1
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 7 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 7 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_air_prop = { # ID = 8
+		priority = 12
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_government = fascism }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			air_attack_factor = 0.15
+			air_defence_factor = 0.15
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 8 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 8 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_inevitable_prop = { # ID = 9
+		priority = 11
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_government = fascism }
+			OR = {
+				16 = {
+					is_controlled_by = ROOT
+				}
+				15 = {
+					is_controlled_by = ROOT
+				}
+				14 = {
+					is_controlled_by = ROOT
+				}
+			}
+
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			army_core_defence_factor = 0.1
+			army_core_attack_factor = 0.1
+			supply_combat_penalties_on_core_factor = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 9 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 9 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_hammer_prop = { # ID = 10
+		priority = 10
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_government = fascism }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			industrial_capacity_factory = 0.075
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 10 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 10 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_eternal_prop = { # ID = 11
+		priority = 9
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_government = fascism }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		targeted_modifier = {
+			tag = ENG
+			trade_cost_for_target_factor = -0.2
+		}
+		targeted_modifier = {
+			tag = USA
+			trade_cost_for_target_factor = -0.2
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 11 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 11 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_vichy_prop = { # ID = 12
+		priority = 8
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_government = fascism }
+			VIC = { has_war = yes }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		targeted_modifier = {
+			tag = VIC
+			attack_bonus_against = 0.1
+		}
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 12 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 12 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	FRA_usa_prop = { # ID = 13
+		priority = 7
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		available = {
+			FRA_propaganda_poster_slot_available = yes
+			FRA = {
+				has_capitulated = yes
+			}
+			NOT = { has_government = fascism }
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			exiled_government_weekly_manpower = 500
+		}
+		targeted_modifier = {
+			tag = USA
+			license_production_speed = 0.15
+			license_tech_difference_speed = 0.15
+		}
+
+		complete_effect = {
+			set_variable = { FRA_new_propaganda_campaign = 13 }
+			FRA_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { FRA_propaganda_campaign_to_remove = 13 }
+			FRA_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+	
+  # Future Vichy Propaganda
+	# FRA_prop_13 = { # ID = 14
+	# 	priority = 6
+
+	# 	icon = eng_propaganda_campaigns
+
+	# 	allowed = {
+	# 		original_tag = FRA
+	# 	}
+
+	# 	available = {
+	# 		FRA_propaganda_poster_slot_available = yes
+	# 		FRA = {
+	# 			has_capitulated = yes
+	# 		}
+	# 		has_government = fascism
+	# 	}
+
+	# 	days_remove = 365
+
+	# 	days_re_enable = 360
+
+	# 	cost = 50
+
+	# 	modifier = {
+
+	# 	}
+
+	# 	complete_effect = {
+	# 		set_variable = { FRA_new_propaganda_campaign = 14 }
+	# 		FRA_pick_propaganda_campaign_slot_effect = yes
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_variable = { FRA_propaganda_campaign_to_remove = 14 }
+	# 		FRA_reset_propaganda_campaign_slot_effect = yes
+	#		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
+
+	# FRA_prop_14 = { # ID = 15
+	# 	priority = 5
+
+	# 	icon = eng_propaganda_campaigns
+
+	# 	allowed = {
+	# 		original_tag = FRA
+	# 	}
+
+	# 	available = {
+	# 		FRA_propaganda_poster_slot_available = yes
+	# 		FRA = {
+	# 			has_capitulated = yes
+	# 		}
+	# 		has_government = fascism
+	# 	}
+
+	# 	days_remove = 365
+
+	# 	days_re_enable = 360
+
+	# 	cost = 50
+
+	# 	modifier = {
+	# 	}
+
+	# 	complete_effect = {
+	# 		set_variable = { FRA_new_propaganda_campaign = 15 }
+	# 		FRA_pick_propaganda_campaign_slot_effect = yes
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_variable = { FRA_propaganda_campaign_to_remove = 15 }
+	# 		FRA_reset_propaganda_campaign_slot_effect = yes
+	#		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
+
+	# FRA_prop_15 = { # ID = 16
+	# 	priority = 4
+
+	# 	icon = eng_propaganda_campaigns
+
+	# 	allowed = {
+	# 		original_tag = FRA
+	# 	}
+
+	# 	available = {
+	# 		FRA_propaganda_poster_slot_available = yes
+	# 		FRA = {
+	# 			has_capitulated = yes
+	# 		}
+	# 		has_government = fascism
+	# 	}
+
+	# 	days_remove = 365
+
+	# 	days_re_enable = 360
+
+	# 	cost = 50
+
+	# 	modifier = {
+	# 	}
+
+	# 	complete_effect = {
+	# 		set_variable = { FRA_new_propaganda_campaign = 16 }
+	# 		FRA_pick_propaganda_campaign_slot_effect = yes
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_variable = { FRA_propaganda_campaign_to_remove = 16 }
+	# 		FRA_reset_propaganda_campaign_slot_effect = yes
+	#		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
+
+	# FRA_prop_16 = { # ID = 17
+	# 	priority = 3
+
+	# 	icon = eng_propaganda_campaigns
+
+	# 	allowed = {
+	# 		original_tag = FRA
+	# 	}
+
+	# 	available = {
+	# 		FRA_propaganda_poster_slot_available = yes
+	# 		FRA = {
+	# 			has_capitulated = yes
+	# 		}
+	# 		has_government = fascism
+	# 	}
+
+	# 	days_remove = 365
+
+	# 	days_re_enable = 360
+
+	# 	cost = 50
+
+	# 	modifier = {
+	# 	}
+
+	# 	complete_effect = {
+	# 		set_variable = { FRA_new_propaganda_campaign = 17 }
+	# 		FRA_pick_propaganda_campaign_slot_effect = yes
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_variable = { FRA_propaganda_campaign_to_remove = 17 }
+	# 		FRA_reset_propaganda_campaign_slot_effect = yes
+	#		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
+
+	# FRA_prop_17 = { # ID = 18
+	# 	priority = 2
+
+	# 	icon = eng_propaganda_campaigns
+
+	# 	allowed = {
+	# 		original_tag = FRA
+	# 	}
+
+	# 	available = {
+	# 		FRA_propaganda_poster_slot_available = yes
+	# 		FRA = {
+	# 			has_capitulated = yes
+	# 		}
+	# 		has_government = fascism
+	# 	}
+
+	# 	days_remove = 365
+
+	# 	days_re_enable = 360
+
+	# 	cost = 50
+
+	# 	modifier = {
+	# 	}
+
+	# 	complete_effect = {
+	# 		set_variable = { FRA_new_propaganda_campaign = 18 }
+	# 		FRA_pick_propaganda_campaign_slot_effect = yes
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_variable = { FRA_propaganda_campaign_to_remove = 18 }
+	# 		FRA_reset_propaganda_campaign_slot_effect = yes
+	#		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
+
+	# FRA_prop_18 = { # ID = 19
+	# 	priority = 1
+
+	# 	icon = eng_propaganda_campaigns
+
+	# 	allowed = {
+	# 		original_tag = FRA
+	# 	}
+
+	# 	available = {
+	# 		FRA_propaganda_poster_slot_available = yes
+	# 		FRA = {
+	# 			has_capitulated = yes
+	# 		}
+	# 		has_government = fascism
+	# 	}
+
+	# 	days_remove = 365
+
+	# 	days_re_enable = 360
+
+	# 	cost = 50
+
+	# 	modifier = {
+	# 	}
+
+	# 	complete_effect = {
+	# 		set_variable = { FRA_new_propaganda_campaign = 19 }
+	# 		FRA_pick_propaganda_campaign_slot_effect = yes
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_variable = { FRA_propaganda_campaign_to_remove = 19 }
+	# 		FRA_reset_propaganda_campaign_slot_effect = yes
+	#		hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+	# 	}
+	# }
+}

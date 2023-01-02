@@ -1,0 +1,43 @@
+ITA_threats = {
+    enable = {
+        original_tag = ITA
+        date < 1940.1.1
+    }
+	abort = {
+		date > 1940.1.1
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GER"
+		value = -300
+	}
+}
+
+ITA_Eastern_front = {
+    enable = {
+        original_tag = ITA
+    }
+	abort = {
+
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HUN
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = BUL
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ROM
+		value = 1000
+	}
+    ai_strategy = {
+		type = dont_defend_ally_borders
+		id = FIN
+		value = 1000
+	}
+}

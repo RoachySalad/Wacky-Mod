@@ -1,0 +1,19 @@
+state={
+	id=840
+	# Rhode Island
+	name="STATE_840"
+	provinces={
+		6909 9847 9850 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+	}
+	state_category = city
+	manpower=713346
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

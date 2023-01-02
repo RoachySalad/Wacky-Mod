@@ -1,0 +1,31 @@
+BRA_vargas_edicts = {
+	
+	priority = 10
+
+	icon = GFX_decision_category_generic_political_actions
+
+	picture = GFX_BRA_decision_category_vargas_edicts
+
+	allowed = {
+		tag = BRA
+	}
+
+	visible = {
+		tag = BRA
+	}
+}
+
+BRA_foreigner_investors = {
+	
+	icon = GFX_decision_category_gre_investment_decisions
+
+	priority = 5
+
+	allowed = {
+		tag = BRA
+	}
+
+	visible = {
+		has_completed_focus = BRA_invite_foreign_investors
+	}
+}

@@ -1,0 +1,15 @@
+Manchuko_Historical = {
+    enable = {
+        original_tag = MAN
+    }
+    ai_strategy = {
+		type = prepare_for_war
+		id = CHI
+		value = 100
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = PRC
+		value = 100
+	}
+}

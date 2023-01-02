@@ -1,0 +1,231 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = germany_share
+
+country_event = {
+	id = germany_share.1
+	title = germany_share.1.t
+	desc = germany_share.1.d
+	picture = GFX_report_event_german_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	immediate = {
+ 		set_country_flag = GER_send_rom	
+ 	}
+
+	option = {
+		name = germany_share.1.a
+		trigger = { 
+			any_unit_leader = {
+				has_id = 5
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 5 }
+			set_nationality = ROM
+		}
+	}
+	
+	option = {
+		name = germany_share.1.b
+		trigger = { 
+			any_unit_leader = {
+				has_id = 9
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 9 }
+			set_nationality = ROM
+		}
+	}
+	
+	option = {
+		name = germany_share.1.c
+		trigger = { 
+			any_unit_leader = {
+				has_id = 11
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 11 }
+			set_nationality = ROM
+		}
+	}
+	
+	option = {
+		name = germany_share.1.e
+		trigger = { 
+			any_unit_leader = {
+				has_id = 25
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 25 }
+			set_nationality = ROM
+		}
+	}
+	
+}
+
+country_event = {
+	id = germany_share.2
+	title = germany_share.2.t
+	desc = germany_share.2.d
+	picture = GFX_report_event_german_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	immediate = {
+ 		hidden_effect = {
+ 			set_country_flag = GER_send_hun
+ 		} 		
+ 	}
+
+	option = {
+		name = germany_share.2.a
+		trigger = { 
+			any_unit_leader = {
+				has_id = 6
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 6 }
+			set_nationality = HUN
+		}
+	}
+	
+	option = {
+		name = germany_share.2.b
+		trigger = { 
+			any_unit_leader = {
+				has_id = 13
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 13 }
+			set_nationality = HUN
+		}
+	}
+	
+	option = {
+		name = germany_share.2.c
+		trigger = { 
+			any_unit_leader = {
+				has_id = 17
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 17 }
+			set_nationality = HUN
+		}
+	}
+	
+	option = {
+		name = germany_share.2.e
+		trigger = { 
+			any_unit_leader = {
+				has_id = 22
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 22 }
+			set_nationality = HUN
+		}
+	}
+
+}
+
+country_event = {
+	id = germany_share.3
+	title = germany_share.3.t
+	desc = germany_share.3.d
+	picture = GFX_report_event_german_inspect_troops
+	
+	fire_only_once = no
+	
+	is_triggered_only = yes
+	
+	immediate = {
+ 		hidden_effect = {
+ 			set_country_flag = GER_send_ita
+ 		} 		
+ 	}
+
+	option = {
+		name = germany_share.3.a
+		trigger = { 
+			any_unit_leader = {
+				has_id = 4
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 4 }
+			set_nationality = ITA
+		}
+	}
+	
+	option = {
+		name = germany_share.3.b
+		trigger = { 
+			any_unit_leader = {
+				has_id = 18
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 18 }
+			set_nationality = ITA
+		}
+	}
+	
+	option = {
+		name = germany_share.3.c
+		trigger = { 
+			any_unit_leader = {
+				has_id = 17
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 17 }
+			set_nationality = ITA
+		}
+	}
+	
+	option = {
+		name = germany_share.3.e
+		trigger = { 
+			any_unit_leader = {
+				has_id = 11
+			} 
+		}
+		random_army_leader = { 
+			limit = { has_id = 11 }
+			set_nationality = ITA
+		}
+	}
+}
+
+country_event = {
+	id = germany_share.4
+	title = germany_share.4.t
+	desc = germany_share.4.d
+	picture = GFX_report_event_german_inspect_troops
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany_share.4.a
+		add_timed_idea = {
+		    idea = JAP_wunderwaffen_projekt
+		    days = 180
+		}
+	}
+}

@@ -1,0 +1,328 @@
+ideas = {
+
+	country = {
+		FIN_victorious_idea = {
+			
+			allowed = {
+				tag = FIN
+			}
+			
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+	
+		FIN_winter_war = {
+			
+			allowed = {
+				tag = FIN
+			}
+			
+			cancel = {
+				OR = {
+					has_war = no
+					surrender_progress > 0.3	
+				}
+				
+			}
+			
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				cas_damage_reduction = 0.25
+				army_speed_factor = 0.1 
+				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+				instant = yes
+				hard_attack = 2
+				ap_attack = 4
+				}
+			}
+			
+			equipment_bonus = {
+				anti_tank_equipment = {
+				instant = yes
+				hard_attack = 0.75
+				ap_attack = 1
+				}
+			}
+			
+			equipment_bonus = {
+				fighter_equipment = {
+				instant = yes
+				air_agility = 0.33
+				air_attack = 0.33
+				air_defence = 0.33
+				}
+			}
+		}
+	
+		FIN_revanchism = {
+			
+			allowed = {
+				tag = FIN
+			}
+			
+			cancel = {
+				146 = {
+					CONTROLLER = {
+						OR = {
+							tag = FIN
+							is_subject_of = FIN
+						}
+					}
+				}
+				147 = {
+					CONTROLLER = {
+						OR = {
+							tag = FIN
+							is_subject_of = FIN
+						}
+					}
+				}
+			}
+			
+			picture = FRA_national_mobilization_focus
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.10
+				army_core_defence_factor = 0.05
+				stability_weekly = -0.0025
+				war_support_weekly = 0.0025
+				custom_modifier_tooltip = FIN_revanchism_tt
+			}
+		}
+		
+		FIN_arms_purchases = {
+			
+			allowed = {
+				tag = FIN
+			}
+
+			removal_cost = -1
+			
+			picture = chi_hyper_inflation
+			
+			targeted_modifier = {
+				tag = GER
+				cic_to_target_factor = 0.2
+			}
+		}
+		
+		FIN_kitchens = {
+			
+			allowed = {
+				tag = FIN
+			}
+			
+			picture = generic_goods_red_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_loss_factor = -0.20
+				consumer_goods_factor = -0.05
+			}
+		}
+	
+		FIN_white_guard2 = {
+			
+			allowed = {
+				tag = FIN
+			}
+			
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.05
+				communism_drift = -0.20
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+	
+		FIN_white_guard1 = {
+			
+			allowed = {
+				tag = FIN
+			}
+			
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				communism_drift = -0.20
+			}
+		}
+	
+		FIN_lahti = {
+			
+			allowed = {
+				tag = FIN
+			}
+
+			removal_cost = -1
+			
+			picture = generic_war_preparation
+			
+			research_bonus = {
+				infantry_weapons = 0.20
+				artillery = 0.10
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.15
+				}
+			}
+		}
+	
+		sisu = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.10
+				attrition = -0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				neutrality_drift = 0.25
+			}
+		}
+		
+		sisu2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.20
+				attrition = -0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.25
+				neutrality_drift = 0.25
+			}
+		}
+		
+		sisu3 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = sisu
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.20
+				attrition = -0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.25
+				no_supply_grace = 48
+				out_of_supply_factor = -0.5
+				equipment_capture = 0.15
+				pocket_penalty = -0.25
+				neutrality_drift = 0.25
+				supply_consumption_factor = -0.20
+			}
+		}
+	}
+
+	# TECHNOLOGY
+
+	naval_manufacturer = { 
+		
+		designer = yes
+		
+		crichton = {
+			
+			picture = generic_naval_manufacturer_1
+
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			# submarine and defence ship production
+			
+			traits = { naval_manufacturer }
+		}
+	}
+	
+	aircraft_manufacturer = { 
+			
+		designer = yes
+		
+		
+		valtion_lentokonetehdas = {
+			
+			picture = generic_air_manufacturer_3
+
+			
+			allowed = {
+				original_tag = FIN
+			}
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			# assembled Junkers, fast bombers
+		
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}

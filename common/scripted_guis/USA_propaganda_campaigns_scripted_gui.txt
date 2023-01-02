@@ -1,0 +1,19 @@
+scripted_gui = {
+
+	usa_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "usa_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			usa_poster_slot_left = {
+				frame = USA_poster_left_icon_frame
+			}
+			usa_poster_slot_center = {
+				frame = USA_poster_center_icon_frame
+			}
+		}
+	}
+	
+}
+

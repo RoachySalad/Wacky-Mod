@@ -1,0 +1,1084 @@
+SS_recruitment = {
+	SS_recruitment_denmark = {
+
+		icon = generic_army_support
+
+		available = {
+			99 = {
+				CONTROLLER = {
+					OR = {
+						original_tag = GER
+						is_subject_of = GER
+					}
+				}
+			}
+			37 = {
+				CONTROLLER = {
+					OR = {
+						original_tag = GER
+						is_subject_of = GER
+					}
+				}
+			}
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.1
+		}
+	}
+	SS_recruitment_norway = {
+
+		icon = generic_army_support
+
+		available = {
+			110 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			142 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			143 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			144 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.2
+		}
+	}
+	SS_recruitment_netherlands = {
+
+		icon = generic_army_support
+
+		available = {		
+			36 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			7 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			35 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+				
+			
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.3
+		}
+	}
+	SS_recruitment_belgium = {
+
+		icon = generic_army_support
+
+		available = {
+			6 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			34 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}	
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.4
+		}
+	}
+	SS_recruitment_france = {
+
+		icon = generic_army_support
+
+		available = {
+			29 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			16 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			15 = {
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			14 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.5
+		}
+	}
+	SS_recruitment_estonia = {
+
+		icon = generic_army_support
+
+		available = {
+			13 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			191 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.6
+		}
+	}
+	SS_recruitment_latvia = {
+
+		icon = generic_army_support
+
+		available = {
+			12 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			190 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.7
+		}
+	}
+	SS_recruitment_lithuania = {
+
+		icon = generic_army_support
+
+		available = {
+			11 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+			189 = { 
+				CONTROLLER = { 
+					OR = { 
+						original_tag = GER 
+						is_subject_of = GER 
+					} 
+				} 
+			}
+		}
+		visible = {
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.8
+		}
+	}
+	SS_recruitment_himmler = {
+
+		icon = generic_army_support
+
+		available = {
+			
+		}
+		visible = {
+			has_country_leader = {
+				name = "Heinrich Himmler"
+				ruling_only = yes
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = ss_recruitment_event.999
+		}
+	}
+}
+
+SS_templates = {
+	SS_infantry_template_create = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+			division_template = {
+				name = "SS Waffen-Grenadier"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_infantry = { x = 0 y = 0 }
+					ss_infantry = { x = 0 y = 1 }
+					ss_infantry = { x = 0 y = 2 }
+					ss_infantry = { x = 0 y = 3 }
+
+					ss_infantry = { x = 1 y = 0 }
+					ss_infantry = { x = 1 y = 1 }
+					ss_infantry = { x = 1 y = 2 }
+					ss_infantry = { x = 1 y = 3 }
+
+					ss_infantry = { x = 2 y = 0 }
+					ss_infantry = { x = 2 y = 1 }
+					ss_infantry = { x = 2 y = 2 }
+					ss_infantry = { x = 2 y = 3 }
+					
+					ss_artillery_brigade = { x = 3 y = 0 }
+					ss_artillery_brigade = { x = 3 y = 1 }
+					ss_artillery_brigade = { x = 3 y = 2 }
+					ss_artillery_brigade = { x = 3 y = 3 }
+					
+					ss_anti_tank_brigade = { x = 4 y = 0 }
+					ss_anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Schwere Waffen-Grenadier"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_infantry = { x = 0 y = 0 }
+					ss_infantry = { x = 0 y = 1 }
+					ss_infantry = { x = 0 y = 2 }
+					ss_infantry = { x = 0 y = 3 }
+
+					ss_infantry = { x = 1 y = 0 }
+					ss_infantry = { x = 1 y = 1 }
+					ss_infantry = { x = 1 y = 2 }
+					ss_infantry = { x = 1 y = 3 }
+
+					ss_infantry = { x = 2 y = 0 }
+					ss_infantry = { x = 2 y = 1 }
+					ss_infantry = { x = 2 y = 2 }
+					ss_infantry = { x = 2 y = 3 }
+					
+					ss_heavy_artillery_brigade = { x = 3 y = 0 }
+					ss_heavy_artillery_brigade = { x = 3 y = 1 }
+					ss_heavy_artillery_brigade = { x = 3 y = 2 }
+					ss_heavy_artillery_brigade = { x = 3 y = 3 }
+					
+					ss_heavy_anti_tank_brigade = { x = 4 y = 0 }
+					ss_heavy_anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					heavy_anti_air = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			custom_effect_tooltip = SS_infantry_template_tt
+		}
+	}
+	SS_motorised_template_create = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+			division_template = {
+				name = "SS Motorisierte"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_motorized = { x = 0 y = 0 }
+					ss_motorized = { x = 0 y = 1 }
+					ss_motorized = { x = 0 y = 2 }
+					ss_motorized = { x = 0 y = 3 }
+
+					ss_motorized = { x = 1 y = 0 }
+					ss_motorized = { x = 1 y = 1 }
+					ss_motorized = { x = 1 y = 2 }
+					ss_motorized = { x = 1 y = 3 }
+
+					ss_motorized = { x = 2 y = 0 }
+					ss_motorized = { x = 2 y = 1 }
+					ss_motorized = { x = 2 y = 2 }
+					ss_motorized = { x = 2 y = 3 }
+					
+					ss_mot_artillery_brigade = { x = 3 y = 0 }
+					ss_mot_artillery_brigade = { x = 3 y = 1 }
+					ss_mot_artillery_brigade = { x = 3 y = 2 }
+					ss_mot_artillery_brigade = { x = 3 y = 3 }
+					
+					ss_mot_anti_tank_brigade = { x = 4 y = 0 }
+					ss_mot_anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					mot_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Panzergrenadier"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_mechanized = { x = 0 y = 0 }
+					ss_mechanized = { x = 0 y = 1 }
+					ss_mechanized = { x = 0 y = 2 }
+					ss_mechanized = { x = 0 y = 3 }
+
+					ss_mechanized = { x = 1 y = 0 }
+					ss_mechanized = { x = 1 y = 1 }
+					ss_mechanized = { x = 1 y = 2 }
+					ss_mechanized = { x = 1 y = 3 }
+
+					ss_mechanized = { x = 2 y = 0 }
+					ss_mechanized = { x = 2 y = 1 }
+					ss_mechanized = { x = 2 y = 2 }
+					ss_mechanized = { x = 2 y = 3 }
+					
+					ss_light_sp_artillery_brigade = { x = 3 y = 0 }
+					ss_light_sp_artillery_brigade = { x = 3 y = 1 }
+					ss_light_sp_artillery_brigade = { x = 3 y = 2 }
+					ss_light_sp_artillery_brigade = { x = 3 y = 3 }
+					
+					ss_light_tank_destroyer_brigade = { x = 4 y = 0 }
+					ss_light_tank_destroyer_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					light_sp_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Schwere Panzergrenadier"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_mechanized = { x = 0 y = 0 }
+					ss_mechanized = { x = 0 y = 1 }
+					ss_mechanized = { x = 0 y = 2 }
+					ss_mechanized = { x = 0 y = 3 }
+
+					ss_mechanized = { x = 1 y = 0 }
+					ss_mechanized = { x = 1 y = 1 }
+					ss_mechanized = { x = 1 y = 2 }
+					ss_mechanized = { x = 1 y = 3 }
+
+					ss_mechanized = { x = 2 y = 0 }
+					ss_mechanized = { x = 2 y = 1 }
+					ss_mechanized = { x = 2 y = 2 }
+					ss_mechanized = { x = 2 y = 3 }
+					
+					ss_medium_sp_artillery_brigade = { x = 3 y = 0 }
+					ss_medium_sp_artillery_brigade = { x = 3 y = 1 }
+					ss_medium_sp_artillery_brigade = { x = 3 y = 2 }
+					ss_medium_sp_artillery_brigade = { x = 3 y = 3 }
+					
+					ss_medium_tank_destroyer_brigade = { x = 4 y = 0 }
+					ss_medium_tank_destroyer_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					medium_sp_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			custom_effect_tooltip = SS_motorised_template_tt
+		}
+	}
+	SS_infantry_1 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Waffen-Grenadier"
+			NOT = { has_country_flag = SS_infantry_1_flag }
+		}
+		
+		complete_effect = {
+			set_country_flag = SS_infantry_1_flag
+			clr_country_flag = SS_infantry_2_flag
+			clr_country_flag = SS_infantry_3_flag
+			clr_country_flag = SS_infantry_4_flag
+			clr_country_flag = SS_infantry_5_flag
+			set_variable = {
+				var = SS_infantry_count
+				value = 1
+			}
+		}
+	}
+	SS_infantry_2 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Schwere Waffen-Grenadier"
+			NOT = { has_country_flag = SS_infantry_2_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_infantry_1_flag
+			set_country_flag = SS_infantry_2_flag
+			clr_country_flag = SS_infantry_3_flag
+			clr_country_flag = SS_infantry_4_flag
+			clr_country_flag = SS_infantry_5_flag
+			set_variable = {
+				var = SS_infantry_count
+				value = 2
+			}
+		}
+	}
+	SS_infantry_3 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Motorisierte"
+			NOT = { has_country_flag = SS_infantry_3_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_infantry_1_flag
+			clr_country_flag = SS_infantry_2_flag
+			set_country_flag = SS_infantry_3_flag
+			clr_country_flag = SS_infantry_4_flag
+			clr_country_flag = SS_infantry_5_flag
+			set_variable = {
+				var = SS_infantry_count
+				value = 3
+			}
+		}
+	}
+	SS_infantry_4 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Panzergrenadier"
+			NOT = { has_country_flag = SS_infantry_4_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_infantry_1_flag
+			clr_country_flag = SS_infantry_2_flag
+			clr_country_flag = SS_infantry_3_flag
+			set_country_flag = SS_infantry_4_flag
+			clr_country_flag = SS_infantry_5_flag
+			set_variable = {
+				var = SS_infantry_count
+				value = 4
+			}
+		}
+	}
+	SS_infantry_5 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {
+			has_template = "SS Schwere Panzergrenadier"
+			NOT = { has_country_flag = SS_infantry_5_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_infantry_1_flag
+			clr_country_flag = SS_infantry_2_flag
+			clr_country_flag = SS_infantry_3_flag
+			clr_country_flag = SS_infantry_4_flag
+			set_country_flag = SS_infantry_5_flag
+			set_variable = {
+				var = SS_infantry_count
+				value = 5
+			}
+		}
+	}
+	SS_medium_template_create = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+			division_template = {
+				name = "SS Panzer Division"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_medium_armor = { x = 0 y = 0 }
+					ss_medium_armor = { x = 0 y = 1 }
+					ss_medium_armor = { x = 0 y = 2 }
+					ss_medium_armor = { x = 0 y = 3 }
+
+					ss_medium_armor = { x = 1 y = 0 }
+					ss_medium_armor = { x = 1 y = 1 }
+					ss_medium_armor = { x = 1 y = 2 }
+
+					ss_motorized = { x = 2 y = 0 }
+					ss_motorized = { x = 2 y = 1 }
+					ss_motorized = { x = 2 y = 2 }
+					ss_motorized = { x = 2 y = 3 }
+					
+					ss_motorized = { x = 3 y = 0 }
+					ss_motorized = { x = 3 y = 1 }
+					ss_motorized = { x = 3 y = 2 }
+					
+					ss_mot_anti_tank_brigade = { x = 4 y = 0 }
+					ss_mot_anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					mot_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Panzer Division (n.A.)"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_medium_armor = { x = 0 y = 0 }
+					ss_medium_armor = { x = 0 y = 1 }
+					ss_medium_armor = { x = 0 y = 2 }
+					ss_medium_armor = { x = 0 y = 3 }
+
+					ss_medium_armor = { x = 1 y = 0 }
+					ss_medium_armor = { x = 1 y = 1 }
+					ss_medium_armor = { x = 1 y = 2 }
+
+					ss_mechanized = { x = 2 y = 0 }
+					ss_mechanized = { x = 2 y = 1 }
+					ss_mechanized = { x = 2 y = 2 }
+					ss_mechanized = { x = 2 y = 3 }
+					
+					ss_mechanized = { x = 3 y = 0 }
+					ss_mechanized = { x = 3 y = 1 }
+					ss_mechanized = { x = 3 y = 2 }
+					
+					ss_light_tank_destroyer_brigade = { x = 4 y = 0 }
+					ss_light_tank_destroyer_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					light_sp_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Panzer Division (vollgep.)"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_medium_armor = { x = 0 y = 0 }
+					ss_medium_armor = { x = 0 y = 1 }
+					ss_medium_armor = { x = 0 y = 2 }
+					ss_medium_armor = { x = 0 y = 3 }
+
+					ss_medium_armor = { x = 1 y = 0 }
+					ss_medium_armor = { x = 1 y = 1 }
+					ss_medium_armor = { x = 1 y = 2 }
+
+					ss_mechanized = { x = 2 y = 0 }
+					ss_mechanized = { x = 2 y = 1 }
+					ss_mechanized = { x = 2 y = 2 }
+					ss_mechanized = { x = 2 y = 3 }
+					
+					ss_mechanized = { x = 3 y = 0 }
+					ss_mechanized = { x = 3 y = 1 }
+					ss_mechanized = { x = 3 y = 2 }
+					
+					ss_medium_tank_destroyer_brigade = { x = 4 y = 0 }
+					ss_medium_tank_destroyer_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					medium_sp_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			custom_effect_tooltip = SS_medium_template_tt
+		}
+	}
+	SS_heavy_template_create = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+			division_template = {
+				name = "SS Schwere Panzer Division"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_heavy_armor = { x = 0 y = 0 }
+					ss_heavy_armor = { x = 0 y = 1 }
+					ss_heavy_armor = { x = 0 y = 2 }
+					ss_heavy_armor = { x = 0 y = 3 }
+
+					ss_heavy_armor = { x = 1 y = 0 }
+					ss_heavy_armor = { x = 1 y = 1 }
+					ss_heavy_armor = { x = 1 y = 2 }
+
+					ss_motorized = { x = 2 y = 0 }
+					ss_motorized = { x = 2 y = 1 }
+					ss_motorized = { x = 2 y = 2 }
+					ss_motorized = { x = 2 y = 3 }
+					
+					ss_motorized = { x = 3 y = 0 }
+					ss_motorized = { x = 3 y = 1 }
+					ss_motorized = { x = 3 y = 2 }
+					
+					ss_mot_anti_tank_brigade = { x = 4 y = 0 }
+					ss_mot_anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					mot_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Schwere Panzer Division (n.A.)"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_heavy_armor = { x = 0 y = 0 }
+					ss_heavy_armor = { x = 0 y = 1 }
+					ss_heavy_armor = { x = 0 y = 2 }
+					ss_heavy_armor = { x = 0 y = 3 }
+
+					ss_heavy_armor = { x = 1 y = 0 }
+					ss_heavy_armor = { x = 1 y = 1 }
+					ss_heavy_armor = { x = 1 y = 2 }
+
+					ss_mechanized = { x = 2 y = 0 }
+					ss_mechanized = { x = 2 y = 1 }
+					ss_mechanized = { x = 2 y = 2 }
+					ss_mechanized = { x = 2 y = 3 }
+					
+					ss_mechanized = { x = 3 y = 0 }
+					ss_mechanized = { x = 3 y = 1 }
+					ss_mechanized = { x = 3 y = 2 }
+					
+					ss_mot_anti_tank_brigade = { x = 4 y = 0 }
+					ss_mot_anti_tank_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					mot_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			division_template = {
+				name = "SS Schwere Panzer Division (vollgep.)"
+				priority = 2
+				division_names_group = GER_SS_01
+				is_locked = yes
+				regiments = {
+					ss_heavy_armor = { x = 0 y = 0 }
+					ss_heavy_armor = { x = 0 y = 1 }
+					ss_heavy_armor = { x = 0 y = 2 }
+					ss_heavy_armor = { x = 0 y = 3 }
+
+					ss_heavy_armor = { x = 1 y = 0 }
+					ss_heavy_armor = { x = 1 y = 1 }
+					ss_heavy_armor = { x = 1 y = 2 }
+
+					ss_mechanized = { x = 2 y = 0 }
+					ss_mechanized = { x = 2 y = 1 }
+					ss_mechanized = { x = 2 y = 2 }
+					ss_mechanized = { x = 2 y = 3 }
+					
+					ss_mechanized = { x = 3 y = 0 }
+					ss_mechanized = { x = 3 y = 1 }
+					ss_mechanized = { x = 3 y = 2 }
+					
+					ss_heavy_tank_destroyer_brigade = { x = 4 y = 0 }
+					ss_heavy_tank_destroyer_brigade = { x = 4 y = 1 }
+				}
+				support = {
+					ss_hq_company = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					mot_recon = { x = 0 y = 2 }
+					signal_company = { x = 0 y = 3 }
+					medium_sp_anti_air_brigade = { x = 1 y = 0 }
+					logistics_company = { x = 1 y = 1 }
+					logistics_company_mot = { x = 1 y = 2 }
+				}
+			}
+			custom_effect_tooltip = SS_heavy_template_tt
+		}
+	}
+	SS_armour_1 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Panzer Division"
+			NOT = { has_country_flag = SS_armour_1_flag }
+		}
+		
+		complete_effect = {
+			set_country_flag = SS_armour_1_flag
+			clr_country_flag = SS_armour_2_flag
+			clr_country_flag = SS_armour_3_flag
+			clr_country_flag = SS_armour_4_flag
+			clr_country_flag = SS_armour_5_flag
+			clr_country_flag = SS_armour_6_flag
+			set_variable = {
+				var = SS_armour_count
+				value = 1
+			}
+		}
+	}
+	SS_armour_2 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Panzer Division (n.A.)"
+			NOT = { has_country_flag = SS_armour_2_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_armour_1_flag
+			set_country_flag = SS_armour_2_flag
+			clr_country_flag = SS_armour_3_flag
+			clr_country_flag = SS_armour_4_flag
+			clr_country_flag = SS_armour_5_flag
+			clr_country_flag = SS_armour_6_flag
+			set_variable = {
+				var = SS_armour_count
+				value = 2
+			}
+		}
+	}
+	SS_armour_3 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Panzer Division (vollgep.)"
+			NOT = { has_country_flag = SS_armour_3_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_armour_1_flag
+			clr_country_flag = SS_armour_2_flag
+			set_country_flag = SS_armour_3_flag
+			clr_country_flag = SS_armour_4_flag
+			clr_country_flag = SS_armour_5_flag
+			clr_country_flag = SS_armour_6_flag
+			set_variable = {
+				var = SS_armour_count
+				value = 3
+			}
+		}
+	}
+	SS_armour_4 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+		
+		visible = {
+			has_template = "SS Schwere Panzer Division"
+			NOT = { has_country_flag = SS_armour_4_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_armour_1_flag
+			clr_country_flag = SS_armour_2_flag
+			clr_country_flag = SS_armour_3_flag
+			set_country_flag = SS_armour_4_flag
+			clr_country_flag = SS_armour_5_flag
+			clr_country_flag = SS_armour_6_flag
+			set_variable = {
+				var = SS_armour_count
+				value = 4
+			}
+		}
+	}
+	SS_armour_5 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {
+			has_template = "SS Schwere Panzer Division (n.A.)"
+			NOT = { has_country_flag = SS_armour_5_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_armour_1_flag
+			clr_country_flag = SS_armour_2_flag
+			clr_country_flag = SS_armour_3_flag
+			clr_country_flag = SS_armour_4_flag
+			set_country_flag = SS_armour_5_flag
+			clr_country_flag = SS_armour_6_flag
+			set_variable = {
+				var = SS_armour_count
+				value = 5
+			}
+		}
+	}
+	SS_armour_6 = {
+
+		icon = generic_army_support
+
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 0
+
+		visible = {
+			has_template = "SS Schwere Panzer Division (vollgep.)"
+			NOT = { has_country_flag = SS_armour_6_flag }
+		}
+		
+		complete_effect = {
+			clr_country_flag = SS_armour_1_flag
+			clr_country_flag = SS_armour_2_flag
+			clr_country_flag = SS_armour_3_flag
+			clr_country_flag = SS_armour_4_flag
+			clr_country_flag = SS_armour_5_flag
+			set_country_flag = SS_armour_6_flag
+			set_variable = {
+				var = SS_armour_count
+				value = 6
+			}
+		}
+	}
+}

@@ -1,0 +1,76 @@
+France_Historical = {
+    enable = {
+        original_tag = FRA
+    }
+    ai_national_focuses = {
+        FRA_begin_rearmament
+        FRA_form_the_popular_front
+        FRA_reform_the_labour_laws
+        FRA_review_foreign_policy
+        FRA_buy_time
+        FRA_intervention_in_spain
+        FRA_strengthen_government_support
+        FRA_nationalize_key_industry
+        FRA_form_the_state_arsenals
+        #FRA_reorganize_the_aviation_industry
+        FRA_general_work_council
+        FRA_national_champions
+        FRA_stimulate_the_dynamic_market
+        FRA_devalue_the_franc
+        FRA_invest_in_the_colonies
+        FRA_defensive_strategems
+        FRA_defensive_focus
+        FRA_dirigisme
+        FRA_methodical_battle
+        FRA_promote_entrepeneurship
+        FRA_invest_in_the_metropole
+        FRA_invest_in_west_africa
+        FRA_invest_in_syria
+        FRA_colonial_industry
+        FRA_fortification_focus
+        FRA_alpine_forts
+        FRA_go_with_britain
+        FRA_extend_the_maginot_line
+        FRA_army_reform
+        FRA_protect_the_rights_of_man
+        FRA_extra_research_slot_2
+        FRA_military_factories
+        FRA_the_blum_viollette_proposal
+        FRA_expand_the_citizenship
+        FRA_encourage_immigration
+        FRA_infantry_tanks
+        FRA_special_forces
+        FRA_global_integration
+        FRA_firepower_kills
+    }  
+}
+FRA_threats = {
+    enable = {
+        original_tag = FRA
+        has_war_with = GER
+        date > 1939.9.1
+    }
+    abort = {
+        always = no
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = GER
+        value = 40
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = BEL
+        value = 10
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = LUX
+        value = 3
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = ITA
+        value = 40
+    }
+}

@@ -1,0 +1,157 @@
+scripted_gui = {
+
+	usa_election_campaigns_ui = {
+		context_type = decision_category
+		window_name = "usa_election_campaigns_ui_window"
+
+		properties = {
+
+			usa_wa_slot = {
+				frame = USA_wa_frame
+			}
+			usa_or_slot = {
+				frame = USA_or_frame
+			}
+			usa_ca_slot = {
+				frame = USA_ca_frame
+			}
+			usa_nv_slot = {
+				frame = USA_nv_frame
+			}
+			usa_id_slot = {
+				frame = USA_id_frame
+			}
+			usa_mt_slot = {
+				frame = USA_mt_frame
+			}
+			usa_wy_slot = {
+				frame = USA_wy_frame
+			}
+			usa_ut_slot = {
+				frame = USA_ut_frame
+			}
+			usa_az_slot = {
+				frame = USA_az_frame
+			}
+			usa_nm_slot = {
+				frame = USA_nm_frame
+			}
+			usa_co_slot = {
+				frame = USA_co_frame
+			}
+			usa_nd_slot = {
+				frame = USA_nd_frame
+			}
+			usa_sd_slot = {
+				frame = USA_sd_frame
+			}
+			usa_ne_slot = {
+				frame = USA_ne_frame
+			}
+			usa_ks_slot = {
+				frame = USA_ks_frame
+			}
+			usa_ok_slot = {
+				frame = USA_ok_frame
+			}
+			usa_tx_slot = {
+				frame = USA_tx_frame
+			}
+			usa_mn_slot = {
+				frame = USA_mn_frame
+			}
+			usa_ia_slot = {
+				frame = USA_ia_frame
+			}
+			usa_mo_slot = {
+				frame = USA_mo_frame
+			}
+			usa_ar_slot = {
+				frame = USA_ar_frame
+			}
+			usa_la_slot = {
+				frame = USA_la_frame
+			}
+			usa_wi_slot = {
+				frame = USA_wi_frame
+			}
+			usa_il_slot = {
+				frame = USA_il_frame
+			}
+			usa_mi_slot = {
+				frame = USA_mi_frame
+			}
+			usa_in_slot = {
+				frame = USA_in_frame
+			}
+			usa_ky_slot = {
+				frame = USA_ky_frame
+			}
+			usa_fl_slot = {
+				frame = USA_fl_frame
+			}
+			usa_ga_slot = {
+				frame = USA_ga_frame
+			}
+			usa_al_slot = {
+				frame = USA_al_frame
+			}
+			usa_ms_slot = {
+				frame = USA_ms_frame
+			}
+			usa_tn_slot = {
+				frame = USA_tn_frame
+			}
+			usa_sc_slot = {
+				frame = USA_sc_frame
+			}
+			usa_nc_slot = {
+				frame = USA_nc_frame
+			}
+			usa_va_slot = {
+				frame = USA_va_frame
+			}
+			usa_wv_slot = {
+				frame = USA_wv_frame
+			}
+			usa_oh_slot = {
+				frame = USA_oh_frame
+			}
+			usa_pa_slot = {
+				frame = USA_pa_frame
+			}
+			usa_ny_slot = {
+				frame = USA_ny_frame
+			}
+			usa_nj_slot = {
+				frame = USA_nj_frame
+			}
+			usa_md_slot = {
+				frame = USA_md_frame
+			}
+			usa_de_slot = {
+				frame = USA_de_frame
+			}
+			usa_vt_slot = {
+				frame = USA_vt_frame
+			}
+			usa_me_slot = {
+				frame = USA_me_frame
+			}
+			usa_nh_slot = {
+				frame = USA_nh_frame
+			}
+			usa_ma_slot = {
+				frame = USA_ma_frame
+			}
+			usa_ct_slot = {
+				frame = USA_ct_frame
+			}
+			usa_ri_slot = {
+				frame = USA_ri_frame
+			}
+		}
+	}
+	
+}
+

@@ -1,0 +1,124 @@
+ideas = {
+
+	country = {
+	
+		IRE_ira_army_2 = {
+			
+			picture = MEX_politicised_army_2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.04
+				training_time_factor = -0.2
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+	
+		IRE_ira_army_1 = {
+			
+			picture = MEX_politicised_army_2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				training_time_factor = -0.2
+				army_morale_factor = 0.1
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+	
+		IRE_advisors = {
+			
+			picture = CZE_planning_bonus
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				planning_speed = 0.2
+				land_doctrine_cost_factor = -0.2
+			}
+		
+		}
+	
+		IRE_our_people = {
+			
+			picture = eng_imperial_conscription
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+	
+		IRE_ira_1 = {
+			
+			picture = prc_low_popular_support2
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				stability_factor = -0.2
+				political_power_cost = 0.4
+			}
+		}
+		
+		IRE_ira_2 = {
+			
+			picture = prc_low_popular_support
+			
+			allowed = {
+				always = no
+			}
+			
+			modifier = {
+				political_power_cost = 0.1
+			}
+		}
+		
+		IRE_anglo_trade_war = {
+			
+			picture = chi_hyper_inflation
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		IRE_repayment = {
+			
+			picture = ROM_king_carol_emptied_accounts
+			
+			allowed = {
+				always = no
+			}
+			
+			targeted_modifier = {
+				tag = ENG
+				cic_to_target_factor = 0.5
+			}
+		}
+	}
+
+	# TECHNOLOGY
+}

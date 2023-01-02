@@ -1,0 +1,428 @@
+﻿shared_focus = {
+	id = COM_commonwealth_command
+	icon = GFX_focus_eng_unite_the_anglosphere
+	x = 40
+	y = 0
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			tag = CAN
+		}
+	}
+	offset = {
+		x = -5
+		y = 0
+		trigger = {
+			tag = AST
+		}
+	}
+	offset = {
+		x = -5
+		y = 0
+		trigger = {
+			tag = NZL
+		}
+	}
+	offset = {
+		x = -11
+		y = 0
+		trigger = {
+			tag = SAF
+		}
+	}
+	offset = {
+		x = 3
+		y = 0
+		trigger = {
+			tag = RAJ
+		}
+	}
+	offset = {
+		x = 14
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+	offset = {
+		x = -16
+		y = 0
+		trigger = {
+			tag = IRE
+		}
+	}
+
+	cost = 5
+
+	available = {
+		threat > 0.1
+	}
+
+	bypass = {
+		
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = COM_continue_the_fight
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	prerequisite = { focus = COM_commonwealth_command }
+	x = -3
+	y = 1
+	relative_position_id = COM_commonwealth_command
+
+	cost = 5
+	
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 3 }
+		add_offsite_building = { type = arms_factory level = 3 }
+		add_legitimacy = 25
+	}
+}
+
+shared_focus = {
+	id = COM_royal_donations
+	icon = GFX_focus_generic_industry_3
+	prerequisite = { focus = COM_continue_the_fight }
+	x = -1
+	y = 1
+	relative_position_id = COM_continue_the_fight
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 5 }
+	}
+}
+
+shared_focus = {
+	id = COM_appeal_to_people
+	icon = GFX_goal_generic_propaganda
+	prerequisite = { focus = COM_royal_donations }
+	x = 0
+	y = 1
+	relative_position_id = COM_royal_donations
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 2 }
+		add_offsite_building = { type = arms_factory level = 5 }
+	}
+}
+
+shared_focus = {
+	id = COM_expatriate_volunteers
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = COM_continue_the_fight }
+	x = 1
+	y = 1
+	relative_position_id = COM_continue_the_fight
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_manpower = 50000
+	}
+}
+
+shared_focus = {
+	id = COM_resistance_contacts
+	icon = GFX_focus_generic_diplomatic_treaty
+	prerequisite = { focus = COM_expatriate_volunteers }
+	x = 0
+	y = 1
+	relative_position_id = COM_expatriate_volunteers
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_rebels_idea
+	}
+}
+
+shared_focus = {
+	id = COM_reclaim_homeland
+	icon = GFX_focus_prc_infiltration
+	prerequisite = { focus = COM_resistance_contacts }
+	prerequisite = { focus = COM_appeal_to_people }
+	x = -1
+	y = 1
+	relative_position_id = COM_resistance_contacts
+
+	cost = 5
+
+	available = {
+		has_capitulated = yes
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_timed_idea = {
+			idea = COM_national_uprising_idea
+			days = 365
+		}
+	}
+}
+
+shared_focus = {
+	id = COM_armed_forces_development
+	icon = GFX_focus_generic_manpower
+	prerequisite = { focus = COM_commonwealth_command }
+	x = 3
+	y = 1
+	relative_position_id = COM_commonwealth_command
+
+	cost = 5
+
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		army_experience = 50
+		air_experience = 50
+		navy_experience = 50
+	}
+}
+
+shared_focus = {
+	id = COM_invite_british_experts
+	icon = GFX_focus_chi_british_cooperation
+	prerequisite = { focus = COM_armed_forces_development }
+	x = -2
+	y = 1
+	relative_position_id = COM_armed_forces_development
+
+	cost = 5
+
+	allow_branch = {
+		NOT = {
+			tag = ENG
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_british_experts_idea
+	}
+}
+
+shared_focus = {
+	id = COM_employ_nuffield
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = { focus = COM_invite_british_experts }
+	x = -1
+	y = 1
+	relative_position_id = COM_invite_british_experts
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = com_nuffield
+	}
+}
+
+shared_focus = {
+	id = COM_employ_vauxhall
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = COM_invite_british_experts }
+	x = 1
+	y = 1
+	relative_position_id = COM_invite_british_experts
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = com_vauxhall
+	}
+}
+
+shared_focus = {
+	id = COM_contract_enfield
+	icon = GFX_focus_focus_fra_maquis
+	prerequisite = { focus = COM_invite_british_experts }
+	x = 0
+	y = 2
+	relative_position_id = COM_invite_british_experts
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = com_rsaf_enfield
+	}
+}
+
+shared_focus = {
+	id = COM_mission_to_usa
+	icon = GFX_focus_chi_mission_to_the_us
+	prerequisite = { focus = COM_armed_forces_development }
+	x = 2
+	y = 1
+	relative_position_id = COM_armed_forces_development
+
+	cost = 5
+	
+	available = {
+		is_in_faction_with = USA
+	}
+
+	offset = {
+		x = -2
+		y = 0
+		trigger = {
+			tag = ENG
+		}
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_usa_experts_idea
+	}
+}
+
+shared_focus = {
+	id = COM_american_trade_deal
+	icon = GFX_focus_mex_privatisation
+	prerequisite = { focus = COM_mission_to_usa }
+	x = -1
+	y = 1
+	relative_position_id = COM_mission_to_usa
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 4 }
+	}
+}
+
+shared_focus = {
+	id = COM_allied_supreme_command
+	icon = GFX_focus_usa_build_the_pentagon
+	prerequisite = { focus = COM_mission_to_usa }
+	x = 1
+	y = 1
+	relative_position_id = COM_mission_to_usa
+
+	cost = 5
+
+	available = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_ideas = COM_delegated_command_idea
+		USA = {
+			USA_supreme_command_level_up = yes
+		}
+	}
+}

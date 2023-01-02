@@ -1,0 +1,272 @@
+equipments = {
+
+	anti_air_equipment = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_anti_air_equipment		
+		type = {
+			anti_air
+			infantry #adding infantry type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_aa_upgrade
+			artillery_aa_ap_upgrade
+		}
+
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 1
+
+		#Offensive Abilities
+		soft_attack = 2
+		hard_attack = 2
+		ap_attack = 10
+		air_attack = 19
+
+		#Space taken in convoy
+		lend_lease_cost = 3
+		
+		build_cost_ic = 8
+		resources = {
+			steel = 20
+		}
+
+		
+	}
+
+	anti_air_equipment_1 = {
+		year = 1936
+
+		archetype = anti_air_equipment
+		priority = 80
+		visual_level = 0
+	}
+	
+	anti_air_equipment_2 = {
+		year = 1940
+
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_1
+		priority = 80
+		visual_level = 1
+		
+		soft_attack = 3
+		hard_attack = 3
+		ap_attack = 15
+		air_attack = 22
+
+		build_cost_ic = 9
+	}
+	
+	anti_air_equipment_3 = {
+		year = 1943
+
+		archetype = anti_air_equipment
+		parent = anti_air_equipment_2
+		priority = 80
+		visual_level = 2
+		
+		soft_attack = 4
+		hard_attack = 4
+		ap_attack = 20
+		air_attack = 25
+
+		build_cost_ic = 10
+	}
+	
+	heavy_anti_air_equipment = {
+		year = 1936
+
+		is_archetype = yes
+		picture = archetype_anti_air_equipment		
+		type = {
+			anti_air
+			infantry #adding infantry type
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_aa_upgrade
+			artillery_aa_ap_upgrade
+		}
+
+		#Misc Abilities
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 4
+		breakthrough = 1
+
+		#Offensive Abilities
+		soft_attack = 4
+		hard_attack = 12
+		ap_attack = 30
+		air_attack = 22
+
+		#Space taken in convoy
+		lend_lease_cost = 3
+		
+		build_cost_ic = 18
+		resources = {
+			steel = 30
+			tungsten = 10
+		}
+		
+	}
+
+	heavy_anti_air_equipment_0 = {
+		year = 1936
+
+		archetype = heavy_anti_air_equipment
+		priority = 80
+		visual_level = 0
+	}
+	
+	heavy_anti_air_equipment_1 = {
+		year = 1939
+
+		archetype = heavy_anti_air_equipment
+		parent = heavy_anti_air_equipment_0
+		priority = 80
+		visual_level = 1
+		
+		soft_attack = 6
+		hard_attack = 16
+		ap_attack = 45
+		air_attack = 28
+
+		build_cost_ic = 20
+	}
+	
+	heavy_anti_air_equipment_2 = {
+		year = 1942
+
+		archetype = heavy_anti_air_equipment
+		parent = heavy_anti_air_equipment_1
+		priority = 80
+		visual_level = 1
+		
+		soft_attack = 8
+		hard_attack = 20
+		ap_attack = 60
+		air_attack = 36
+
+		build_cost_ic = 24
+	}
+	
+	anti_air_equipment_sam = {
+		year = 1946
+
+		archetype = heavy_anti_air_equipment
+		parent = heavy_anti_air_equipment_2
+		priority = 800
+		visual_level = 2
+		
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 100
+
+		build_cost_ic = 80
+	}
+	
+	mot_anti_air_equipment = {
+		year = 1934
+
+		is_archetype = yes
+		picture = archetype_anti_air_equipment		
+		type = {
+			anti_air
+			infantry
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		upgrades = {
+			infantry_quality_upgrade
+			infantry_quantity_upgrade
+			artillery_aa_upgrade
+			artillery_aa_ap_upgrade
+		}
+
+		#Misc Abilities
+		reliability = 0.8
+		
+		maximum_speed = 8.0
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 2
+
+		#Offensive Abilities
+		soft_attack = 3
+		hard_attack = 3
+		ap_attack = 20
+		air_attack = 22
+		
+		hardness = 0.1
+
+		#Space taken in convoy
+		lend_lease_cost = 3
+		
+		build_cost_ic = 14
+		
+		fuel_consumption = 1.2
+		
+		resources = {
+			steel = 20
+			rubber = 20
+		}		
+	}
+
+	mot_anti_air_equipment_1 = {
+		year = 1940
+
+		archetype = mot_anti_air_equipment
+		priority = 80
+		visual_level = 0
+	}
+	
+	mot_anti_air_equipment_2 = {
+		year = 1942
+
+		archetype = mot_anti_air_equipment
+		parent = mot_anti_air_equipment_1
+		priority = 80
+		visual_level = 1
+		
+		soft_attack = 4
+		hard_attack = 4
+		ap_attack = 25
+		air_attack = 28
+		
+		hardness = 0.5
+		
+		armor_value = 15
+		
+		fuel_consumption = 2.4
+
+		build_cost_ic = 18
+		
+		resources = {
+			steel = 30
+			rubber = 20
+		}
+	}
+	
+}

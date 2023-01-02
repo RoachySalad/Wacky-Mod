@@ -1,0 +1,27 @@
+state={
+	id=81
+	name="STATE_81"
+	manpower=1519300
+	
+	
+	state_category = metropolis
+	
+	resources={
+		steel=1 # was: 126
+	}
+
+	history={
+		victory_points = {
+			6652 1
+		}
+		owner = ROM
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 7
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		637 3630 3645 6652 6667 11588 11605 11657 
+	}
+}

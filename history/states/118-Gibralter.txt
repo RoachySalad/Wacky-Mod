@@ -1,0 +1,29 @@
+state=
+{
+	id=118
+	name="STATE_118"
+	manpower=21372
+	
+	state_category = enclave
+	history={
+		set_state_flag = UK_controls
+		owner = ENG
+		victory_points = { 4135 10 }
+		buildings = {
+			infrastructure = 6
+			air_base = 2
+			4135 = {
+				naval_base = 5
+				coastal_bunker = 2
+			}
+			13228 = {
+				naval_base = 5
+				coastal_bunker = 2
+			}
+		}
+		add_core_of = ENG
+	}
+	provinces={
+		4135 13228
+	}
+}

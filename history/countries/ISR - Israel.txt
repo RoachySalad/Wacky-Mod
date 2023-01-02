@@ -1,0 +1,61 @@
+﻿capital = 554
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	fuel_silos = 1
+}
+
+set_convoys = 5
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 80
+	communism = 20
+}
+
+create_country_leader = {
+	name = "David Ben-Gurion"
+	desc = ""
+	picture = GFX_portrait_David_Ben_Gurion
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Itzhak Gaster"
+	desc = ""
+	picture = GFX_portrait_Itzhak_Gaster
+	ideology = fascism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Rudolf Szabó"
+	desc = ""
+	picture = GFX_portrait_Rudolf_Szabo
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Shmuel Mikunis"
+	desc = ""
+	picture = GFX_portrait_Shmuel_Mikunis
+	ideology = leninism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,17 @@
+﻿##### FRANCE #####
+l_english:
+  VIC_resistance_contacts:0 "Resistance contacts"
+  VIC_infantry1:0 "Infantry Modernisation"
+  VIC_artillery:0 "Artillery Modernisation"
+  VIC_infantry2:0 "Inovative Military Tactics"
+  VIC_trench_warfare:0 "New Doctrines"
+  VIC_german_support:0 "German Support"
+  VIC_german_training:0 "German Military Training"
+  VIC_axis_workers:0 "Axis Support"
+  VIC_synthetic_oil:0 "Synthetic Oil Pursuit"
+  VIC_coal_liquification:0 "Oil Processing"
+  VIC_synthetic_rubber:0 "Rubber Refining"
+  VIC_german_investments:0 "German Investment in Rubber Facilities"
+  VIC_mobile_tanks:0 "New Tanks"
+  VIC_learn_from_wehrmacht:0 "German Advisors"
+  VIC_cavalry_modernisation:0 "New Mechanized Battalions"

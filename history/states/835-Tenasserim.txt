@@ -1,0 +1,28 @@
+state={
+	id=835
+	name="STATE_835"
+	manpower = 722500
+	
+	state_category = town
+	
+	resources={
+		rubber=10 # was: 4
+	}
+
+	history={
+		add_core_of = BRM
+		owner = RAJ
+		victory_points = {
+			1296 1 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+
+	}
+
+	provinces={
+		12238 1403 4408 12125 7295 1315 1385 12292 1296 4275 10217
+	}
+}

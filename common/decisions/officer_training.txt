@@ -1,0 +1,539 @@
+officer_training = {
+
+	officer_incentive_leadership = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = inventive_leadership_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				skill < 4
+				NOT = {
+					OR = {
+						has_trait = naval_invader
+						has_trait = commando
+						has_trait = trickster
+					}
+				}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = inventive_leadership_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					skill < 4
+					NOT = {
+						OR = {
+							has_trait = naval_invader
+							has_trait = commando
+							has_trait = trickster
+						}
+					}
+				}
+				set_character_flag = officer_incentive_leadership_flag
+			}
+			custom_effect_tooltip = off_incentive_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_incentive_leadership_flag
+				}
+				random_list = {
+					33 = {
+						add_unit_leader_trait = naval_invader
+					}
+					33 = {
+						add_unit_leader_trait = commando
+					}
+					34 = {
+						add_unit_leader_trait = trickster
+					}
+				}
+				clr_character_flag = officer_incentive_leadership_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_best_of_the_best = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = best_of_the_best_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				skill < 3
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = best_of_the_best_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					skill < 3
+				}
+				set_character_flag = officer_best_of_the_best_flag
+			}
+			custom_effect_tooltip = off_best_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_best_of_the_best_flag
+				}
+				add_skill_level = 1
+				clr_character_flag = officer_incentive_leadership_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_bold_attack = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = bold_attack_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				attack_skill_level < 3
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = bold_attack_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					attack_skill_level < 3
+				}
+				set_character_flag = officer_bold_attack_flag
+			}
+			custom_effect_tooltip = off_bold_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_bold_attack_flag
+				}
+				add_attack = 1
+				clr_character_flag = officer_bold_attack_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_tenacious_defense = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = tenacious_defense_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				defense_skill_level < 3
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = tenacious_defense_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					defense_skill_level < 3
+				}
+				set_character_flag = officer_tenacious_defense_flag
+			}
+			custom_effect_tooltip = off_tenacious_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_tenacious_defense_flag
+				}
+				add_defense = 1
+				clr_character_flag = officer_tenacious_defense_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_meticulous_preparation = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = meticulous_preparation_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				planning_skill_level < 3
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = meticulous_preparation_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					planning_skill_level < 3
+				}
+				set_character_flag = officer_meticulous_preparation_flag
+			}
+			custom_effect_tooltip = off_meticulous_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_meticulous_preparation_flag
+				}
+				add_planning = 1
+				add_unit_leader_trait = organizer
+				clr_character_flag = officer_meticulous_preparation_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_theatre_training = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = theatre_training_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				skill < 3
+					NOT = {
+						OR = {
+							has_trait = desert_fox
+							has_trait = swamp_fox
+							has_trait = trait_mountaineer
+							has_trait = hill_fighter
+							has_trait = jungle_rat
+							has_trait = ranger
+							has_trait = urban_assault_specialist
+							has_trait = winter_specialist
+						}
+					}
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = theatre_training_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					skill < 3
+					NOT = {
+						OR = {
+							has_trait = desert_fox
+							has_trait = swamp_fox
+							has_trait = trait_mountaineer
+							has_trait = hill_fighter
+							has_trait = jungle_rat
+							has_trait = ranger
+							has_trait = urban_assault_specialist
+							has_trait = winter_specialist
+						}
+					}
+				}
+				set_character_flag = officer_theatre_training_flag
+			}
+			custom_effect_tooltip = off_theatre_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_theatre_training_flag
+				}
+				random_list = {
+					12.5 = {
+						add_unit_leader_trait = desert_fox
+					}
+					12.5 = {
+						add_unit_leader_trait = swamp_fox
+					}
+					12.5 = {
+						add_unit_leader_trait = trait_mountaineer
+					}
+					12.5 = {
+						add_unit_leader_trait = hill_fighter
+					}
+					12.5 = {
+						add_unit_leader_trait = jungle_rat
+					}
+					12.5 = {
+						add_unit_leader_trait = ranger
+					}
+					12.5 = {
+						add_unit_leader_trait = urban_assault_specialist
+					}
+					12.5 = {
+						add_unit_leader_trait = winter_specialist
+					}
+				}
+				clr_character_flag = officer_theatre_training_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_mass_assault_academy = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = mass_assault_academy_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				has_trait = infantry_officer
+				skill < 4
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = mass_assault_academy_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = infantry_officer
+					skill < 4
+				}
+				set_character_flag = officer_mass_assault_academy_flag
+			}
+			custom_effect_tooltip = off_mass_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_mass_assault_academy_flag
+				}
+				add_unit_leader_trait = infantry_leader
+				clr_character_flag = officer_mass_assault_academy_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_mobile_warfare_academy = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = mobile_warfare_academy_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				has_trait = armor_officer
+				skill < 4
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = mobile_warfare_academy_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					has_trait = armor_officer
+					skill < 4
+				}
+				set_character_flag = officer_mobile_warfare_academy_flag
+			}
+			custom_effect_tooltip = off_mobile_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_mobile_warfare_academy_flag
+				}
+				add_unit_leader_trait = panzer_leader
+				clr_character_flag = officer_mobile_warfare_academy_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+
+	officer_superior_firepower_academy = {
+
+		icon = ger_military_buildup
+
+		available = {
+			has_idea = superior_firepower_academy_spirit
+			NOT = { has_country_flag = officer_training_flag }
+			any_army_leader = {
+				skill < 4
+			}
+		}
+		
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		
+		days_remove = 365
+		
+		days_re_enable = 60
+
+		visible = {
+			has_idea = superior_firepower_academy_spirit					
+		}
+
+		complete_effect = {
+			set_country_flag = officer_training_flag
+			hidden_effect = {
+				add_command_power = -50
+			}
+			random_army_leader = {
+				limit = {
+					skill < 4
+				}
+				set_character_flag = officer_superior_firepower_academy_flag
+			}
+			custom_effect_tooltip = off_superior_tt
+		}
+
+		remove_effect = {
+			random_army_leader = {
+				limit = {
+					has_character_flag = officer_superior_firepower_academy_flag
+				}
+				add_unit_leader_trait = trait_engineer
+				clr_character_flag = officer_superior_firepower_academy_flag
+			}
+			clr_country_flag = officer_training_flag
+		}
+	}
+}

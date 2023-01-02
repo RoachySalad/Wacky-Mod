@@ -1,0 +1,35 @@
+air_wings = {
+
+					
+	126 = {
+		fighter_equipment_2 = {		
+		owner = "ENG" 
+		amount = 100
+		}
+		start_experience_factor = 1
+		name = "302 Dywizjon Myśliwski"
+		ace = { # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+			modifier = "fighter_genius"
+			name = "Wacław"
+			surname = "Król"
+			callsign = "Poznański"
+			
+		}
+
+		fighter_equipment_2 = {		
+		owner = "ENG" 
+		amount = 100
+		}
+		start_experience_factor = 1
+		name = "303rd  Fighter Squadron "
+		ace = { # Order is important. Ace will be assigned to the wing above (fighter_equipment_1).
+			modifier = "fighter_genius"
+			name = "Josef"
+			surname = "František"
+			callsign = "Tadeusz Kościuszko Warsaw"
+			
+		}
+			
+					
+	}
+}

@@ -1,0 +1,30 @@
+MAN_has_idea_MAN_intervene_in_china = {
+	if = {
+		limit = { has_idea = MAN_intervene_in_china_5 }
+		has_idea = MAN_intervene_in_china_5
+
+		else = {
+			if = {
+				limit = { has_idea = MAN_intervene_in_china_4 }
+				has_idea = MAN_intervene_in_china_4
+
+				else = {
+					if = {
+						limit = { has_idea = MAN_intervene_in_china_3 }
+						has_idea = MAN_intervene_in_china_3
+
+						else = {
+							if = {
+								limit = { has_idea = MAN_intervene_in_china_2 }
+								has_idea = MAN_intervene_in_china_2
+								else = {
+									has_idea = MAN_intervene_in_china_1
+								}	
+							}		
+						}
+					}		
+				}
+			}		
+		}
+	}
+}

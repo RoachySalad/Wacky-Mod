@@ -1,0 +1,21 @@
+scripted_gui = {
+
+	ita_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "ita_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			ita_poster_slot_left = {
+				frame = ITA_poster_left_icon_frame
+			}
+
+			ita_poster_slot_center = {
+				frame = ITA_poster_center_icon_frame
+			}
+			
+		}
+	}
+	
+}
+

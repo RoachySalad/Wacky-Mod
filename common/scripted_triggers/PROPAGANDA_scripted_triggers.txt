@@ -1,0 +1,65 @@
+#England
+ENG_propaganda_poster_slot_available = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_propaganda_poster_slot_available_tt
+		OR = {
+			check_variable = { ENG_poster_left_icon_frame = ENG_propaganda_empty_slot_index }
+			check_variable = { ENG_poster_center_icon_frame = ENG_propaganda_empty_slot_index }
+		}
+	}
+}
+
+#USA
+USA_propaganda_poster_slot_available = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_propaganda_poster_slot_available_tt
+		OR = {
+			check_variable = { USA_poster_left_icon_frame = USA_propaganda_empty_slot_index }
+			check_variable = { USA_poster_center_icon_frame = USA_propaganda_empty_slot_index }
+		}
+	}
+}
+
+#Japan
+JAP_propaganda_poster_slot_available = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_propaganda_poster_slot_available_tt
+		OR = {
+			check_variable = { JAP_poster_left_icon_frame = JAP_propaganda_empty_slot_index }
+			check_variable = { JAP_poster_center_icon_frame = JAP_propaganda_empty_slot_index }
+		}
+	}
+}
+
+#Italy
+ITA_propaganda_poster_slot_available = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_propaganda_poster_slot_available_tt
+		OR = {
+			check_variable = { ITA_poster_left_icon_frame = ITA_propaganda_empty_slot_index }
+			check_variable = { ITA_poster_center_icon_frame = ITA_propaganda_empty_slot_index }
+		}
+	}
+}
+
+#Germany
+GER_propaganda_poster_slot_available = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_propaganda_poster_slot_available_tt
+		OR = {
+			check_variable = { GER_poster_left_icon_frame = GER_propaganda_empty_slot_index }
+			check_variable = { GER_poster_center_icon_frame = GER_propaganda_empty_slot_index }
+		}
+	}
+}
+
+#France
+FRA_propaganda_poster_slot_available = {
+	custom_trigger_tooltip = {
+		tooltip = SOV_propaganda_poster_slot_available_tt
+		OR = {
+			check_variable = { FRA_poster_left_icon_frame = FRA_propaganda_empty_slot_index }
+			check_variable = { FRA_poster_center_icon_frame = FRA_propaganda_empty_slot_index }
+		}
+	}
+}

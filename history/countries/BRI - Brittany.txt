@@ -1,0 +1,91 @@
+﻿capital = 14
+
+#oob = ""
+
+set_research_slots = 3
+# Starting tech
+set_technology = {
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+		set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		basic_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		#basic_naval_mines = 1
+		#submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+	}
+}
+
+set_convoys = 20
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 20
+	fascism = 40
+	communism = 10
+	neutrality = 30
+}
+
+create_country_leader = {
+	name = "Yann-Morvan Gefflot"
+	picture = GFX_portrait_Yann_Morvan_Gefflot
+	expire = "1965.1.1"
+	ideology = stalinism
+}
+
+create_country_leader = {
+	name = "Morvan Marchal"
+	picture = GFX_portrait_Morvan_Marchal
+	expire = "1965.1.1"
+	ideology = socialism
+}
+
+create_country_leader = {
+	name = "Olier Mordrel"
+	picture = GFX_portrait_Olier_Mordrel
+	expire = "1965.1.1"
+	ideology = nazism
+}
+
+create_country_leader = {
+	name = "Maurice Duhamel"
+	picture = GFX_portrait_Maurice_Duhamel
+	expire = "1965.1.1"
+	ideology = centrism
+}

@@ -1,0 +1,20 @@
+state={
+	id=760
+	name="STATE_760"
+	provinces={
+		1838 4704 4843 7732 10839 12524 12598 12671 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = city
+	history={
+		owner = MON
+		add_core_of = SIK
+		add_extra_state_shared_building_slots = 14
+		buildings = {
+			infrastructure = 5
+			arms_factory = 10
+			industrial_complex = 10
+		}
+	}
+}

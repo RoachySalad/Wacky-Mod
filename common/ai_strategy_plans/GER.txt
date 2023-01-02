@@ -1,0 +1,248 @@
+German_historical = {
+	name = "German historical plan"
+	desc = "Essentially historical behaviour for Germany"
+
+	enable = {
+		original_tag = GER
+	}
+
+	ai_national_focuses = {
+		GER_volksturm
+		GER_defend_berlin
+		GER_rhineland
+		GER_four_year_plan
+		GER_autobahn
+		GER_civ_1
+		GER_civ_2
+		GER_org_todt
+		GER_oade
+		GER_steel_werke
+		GER_reichsarbeit
+		GER_abwehr
+		GER_extra_research
+		GER_luft
+		GER_fighter_effort
+		GER_heer
+		GER_bewegungskrieg
+		GER_panzer
+		GER_grosraumwirtschaft
+		GER_expand_mefo
+		# grab whicher was picked via descsion
+		GER_rearm_fast
+		GER_rearm_slow
+		GER_rearm_fast2
+		GER_rearm_slow2
+		GER_rearm_fast3
+		GER_rearm_slow3
+		# End Rearm
+		GER_anschluss
+		GER_demand_sudetenland
+		GER_rearmed_and_ready
+		GER_first_vienna_award
+		GER_end_of_czechoslovakia
+		GER_second_vienna_award
+		GER_mech
+		GER_cas_air_effort
+		GER_air_doc
+		GER_demand_memel
+		GER_autarky
+		GER_synthetic_rubber
+		GER_fighter_effort2
+		GER_cas_air_effort2
+		GER_luft_2
+		GER_auftragstaktik
+		GER_mol_rib_pact
+		#Danzig
+		GER_danzig_or_war
+		GER_align_hungary
+		GER_around_maginot
+		GER_war_with_france
+		GER_avenge_versailles
+		GER_plunder_west
+		GER_swiss_banks
+		GER_mobilise_reich
+		GER_coal_liquidization
+		GER_sweden_trade
+		GER_panzer2
+		GER_lessons_of_war
+		GER_reintegrate_east
+		GER_weserubung
+		GER_prepare_barb
+		GER_improved_command
+		GER_share_tanks
+		GER_west_research
+		GER_soviet_treaty
+		GER_reintegrate_luxemburg_and_alsace_lorraine
+		#Barb
+		GER_barb
+		GER_mobilise_reich
+		GER_total_war
+		GER_atlantikwall
+		GER_synthetic_rubber2
+		GER_make_wunderwaffe
+		GER_coal_liquidization
+		GER_appoint_speer
+	}
+
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 10
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 111
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = POL
+		value = 100
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = FRA
+		value = 60
+	}
+	ai_strategy = {
+        type = consider_weak
+        id = FRA
+        value = 10
+    }
+	ai_strategy = {
+        type = conquer
+        id = FRA
+        value = 10
+    }
+	ai_strategy = {
+        type = declare_war
+        id = FRA
+        value = 10
+    }
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = SPR
+		value = 100000
+	}
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 1
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HUN
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ITA
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ROM
+		value = 1000
+	}
+
+	focus_factors = {
+		GER_rhineland = 1.0
+		GER_war_with_france = 10000.0
+	}
+
+}
+GER_minor_allies = { #used to make minor European nations like Axis more
+	name = "Minor German Allies"
+
+	allowed = {
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+		}
+	}
+	enable = {
+		OR = {
+			has_government = fascism
+			fascism > 0.5
+		}
+		is_in_faction = no
+		GER = {
+			has_government = fascism
+		}
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+		}
+	}
+	abort = {
+		GER = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -500
+	}
+}

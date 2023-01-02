@@ -1,0 +1,779 @@
+BRA_vargas_edicts = {
+	
+	BRA_supress_extremist_groups = {
+
+		icon = GFX_decision_oppression
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_dissolve_the_legislature
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			tag = BRA
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 10
+
+
+		complete_effect = {
+			add_stability = 0.1
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+	}
+
+	BRA_fund_scientific_research = {
+
+		icon = GFX_decision_SOV_academy_of_sciences
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_dissolve_the_legislature
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			tag = BRA
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 10
+
+		modifier = {
+			research_speed_factor = 0.3
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+	}
+
+	BRA_placate_to_the_oligarchy = {
+
+		icon = GFX_decision_generic_political_discourse
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_dissolve_the_legislature
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			tag = BRA
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 10
+
+		modifier = {
+			political_power_factor = 0.5
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+	}
+
+	BRA_enact_new_resolution = {
+
+		icon = GFX_decision_eng_trade_unions_support
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_transfer_power_to_vargas
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			has_completed_focus = BRA_transfer_power_to_vargas
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 10
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	BRA_military_expansion = {
+
+		icon = GFX_decision_generic_military
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_give_power_to_the_military
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			has_completed_focus = BRA_give_power_to_the_military
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 20
+
+		modifier = {
+			experience_gain_army = 0.1
+			training_time_army_factor = -0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+	}
+
+	BRA_industry_revitalization = {
+
+		icon = GFX_decision_generic_construction
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_father_of_the_poor
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			has_completed_focus = BRA_father_of_the_poor
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 20
+
+		modifier = {
+			consumer_goods_factor = -0.05
+			production_speed_buildings_factor = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+	}
+
+	BRA_support_the_military_industry = {
+
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_balance_industry_and_military
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			has_completed_focus = BRA_balance_industry_and_military
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 20
+
+		modifier = {
+			industrial_capacity_factory = 0.1
+			production_speed_buildings_factor = -0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+			random_list = {
+			    50 = {
+			    	army_experience = 100
+			    }
+			    25 = {
+			    	add_war_support = 0.05
+			    }
+			    15 = {
+			        add_equipment_to_stockpile = {
+			            type = infantry_equipment
+			            amount = 1000
+			        }
+			    }
+			    10 = {
+			    	random_owned_controlled_state = {
+			    		add_extra_state_shared_building_slots = 2
+			    		add_building_construction = {
+			    			type = arms_factory
+			    			level = 2
+			    			instant_build = yes
+			    		}
+			    	}
+			    }
+			}
+		}
+	}
+	BRA_support_the_civilian_industry = {
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_balance_industry_and_military
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			has_completed_focus = BRA_balance_industry_and_military
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 20
+
+		modifier = {
+			industrial_capacity_factory = -0.1
+			production_speed_buildings_factor = 0.1
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+			random_list = {
+			    50 = {
+			    	add_political_power = 100
+			    }
+			    25 = {
+			    	add_stability = 0.05
+			    }
+			    15 = {
+			    	add_tech_bonus = {
+			    	    bonus = 0.5
+			    	    uses = 1
+			    	    category = industry
+			    	}
+			    }
+			    10 = {
+			    	random_owned_controlled_state = {
+			    		add_extra_state_shared_building_slots = 2
+			    		add_building_construction = {
+			    			type = industrial_complex
+			    			level = 2
+			    			instant_build = yes
+			    		}
+			    	}
+			    }
+			}
+		}
+	}
+
+	BRA_suppress_the_strikes = {
+
+		icon = GFX_decision_generic_political_rally
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_suppress_the_strikes
+				NOT = { has_country_flag = BRA_vargas_uses_edicts }
+			}
+		}
+
+		visible = {
+			AND = {
+				has_completed_focus = BRA_suppress_the_strikes
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		cost = 20
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_vargas_uses_edicts
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_vargas_uses_edicts
+			}
+			random_list = {
+			    33 = {
+			        add_stability = 0.05
+			    }
+			    33 = {
+			        add_stability = 0.1
+			    }
+			    33 = {
+			        add_stability = 0.25
+			    }
+			}
+		}
+	}
+}
+
+BRA_foreigner_investors = {
+	
+	BRA_invite_textile_investors = {
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_invite_foreign_investors
+				NOT = { has_country_flag = BRA_investments }
+			}
+		}
+
+		visible = {
+			AND = {
+				has_completed_focus = BRA_invite_foreign_investors
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 180
+		cost = 50
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_investments
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_investments
+			}
+			random_list = {
+			    33 = {
+			        random_owned_controlled_state = {
+			        	limit = {
+			        		free_building_slots = {
+			        			building = industrial_complex
+			        			size > 0
+			        			include_locked = yes
+			        		}
+			        	}
+			        	add_extra_state_shared_building_slots = 1
+			        	add_building_construction = {
+			        		type = industrial_complex
+			        		level = 1
+			        		instant_build = yes
+			        	}
+			        }
+			    }
+			    33 = {
+			        random_owned_controlled_state = {
+			        	limit = {
+			        		free_building_slots = {
+			        			building = industrial_complex
+			        			size > 1
+			        			include_locked = yes
+			        		}
+			        	}
+			        	add_extra_state_shared_building_slots = 2
+			        	add_building_construction = {
+			        		type = industrial_complex
+			        		level = 2
+			        		instant_build = yes
+			        	}
+			        }
+			    }
+			    33 = {
+			        random_owned_controlled_state = {
+			        	limit = {
+			        		free_building_slots = {
+			        			building = industrial_complex
+			        			size > 2
+			        			include_locked = yes
+			        		}
+			        	}
+			        	add_extra_state_shared_building_slots = 3
+			        	add_building_construction = {
+			        		type = industrial_complex
+			        		level = 3
+			        		instant_build = yes
+			        	}
+			        }
+			    }
+			}
+		}
+
+	}
+
+	BRA_invite_weaponry_investors = {
+
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_invite_foreign_investors
+				NOT = { has_country_flag = BRA_investments }
+			}
+		}
+
+		visible = {
+			AND = {
+				has_completed_focus = BRA_invite_foreign_investors
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 180
+		cost = 50
+
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_investments
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = BRA_investments
+			}
+			random_list = {
+			    33 = {
+			        random_owned_controlled_state = {
+			        	limit = {
+			        		free_building_slots = {
+			        			building = arms_factory
+			        			size > 0
+			        			include_locked = yes
+			        		}
+			        	}
+			        	add_extra_state_shared_building_slots = 1
+			        	add_building_construction = {
+			        		type = arms_factory
+			        		level = 1
+			        		instant_build = yes
+			        	}
+			        }
+			    }
+			    33 = {
+			        random_owned_controlled_state = {
+			        	limit = {
+			        		free_building_slots = {
+			        			building = arms_factory
+			        			size > 1
+			        			include_locked = yes
+			        		}
+			        	}
+			        	add_extra_state_shared_building_slots = 2
+			        	add_building_construction = {
+			        		type = arms_factory
+			        		level = 2
+			        		instant_build = yes
+			        	}
+			        }
+			    }
+			    33 = {
+			        random_owned_controlled_state = {
+			        	limit = {
+			        		free_building_slots = {
+			        			building = arms_factory
+			        			size > 2
+			        			include_locked = yes
+			        		}
+			        	}
+			        	add_extra_state_shared_building_slots = 3
+			        	add_building_construction = {
+			        		type = arms_factory
+			        		level = 3
+			        		instant_build = yes
+			        	}
+			        }
+			    }
+			}
+		}
+
+	}
+
+	BRA_invite_ford_to_brazil = {
+
+		icon = GFX_decision_generic_wreckers
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_invite_american_investors
+				NOT = { has_country_flag = BRA_investments }
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = BRA_invite_foreign_investors
+					NOT = { has_country_flag = BRA_investments }
+				}
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = 120
+
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+
+		targeted_modifier = {
+			tag = USA
+			consumer_goods_factor = -0.02
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_investments
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_invited_ford
+				clr_country_flag = BRA_investments
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = ford_motor_company_minas_gerais
+		}
+
+	}
+
+	BRA_invite_detroit_arsenal_to_brazil = {
+
+		icon = GFX_decision_generic_merge_plant_tank
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_invite_american_investors
+				NOT = { has_country_flag = BRA_investments }
+				USA = {
+					has_completed_focus = USA_main_battle_tanks
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = BRA_invite_american_investors
+					NOT = { has_country_flag = BRA_investments }
+				}
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = 120
+
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+
+		targeted_modifier = {
+			tag = USA
+			consumer_goods_factor = -0.02
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_investments
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_invited_detroit_arsenal
+				clr_country_flag = BRA_investments
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = sao_paulo_arsenal
+		}
+
+	}
+
+	BRA_invite_rsaf_to_brazil = {
+
+		icon = GFX_decision_generic_industry
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_invite_british_investors
+				NOT = { has_country_flag = BRA_investments }
+				ENG = {
+					has_completed_focus = ENG_enfield
+				}
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = BRA_invite_british_investors
+					NOT = { has_country_flag = BRA_investments }
+				}
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = 120
+
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+
+		targeted_modifier = {
+			tag = ENG
+			consumer_goods_factor = -0.02
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_investments
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_invited_rsaf
+				clr_country_flag = BRA_investments
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = rsaf_santa_catarina
+		}
+
+	}
+
+	BRA_invite_vauxhall_to_brazil = {
+
+		icon = GFX_decision_generic_tank
+
+		available = {
+			AND = {
+				has_completed_focus = BRA_invite_british_investors
+				NOT = { has_country_flag = BRA_investments }
+			}
+		}
+
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = BRA_invite_british_investors
+					NOT = { has_country_flag = BRA_investments }
+				}
+				is_debug = yes
+			}
+		}
+
+		fire_only_once = yes
+		days_remove = 120
+
+		modifier = {
+			consumer_goods_factor = 0.02
+		}
+
+		targeted_modifier = {
+			tag = ENG
+			consumer_goods_factor = -0.02
+		}
+
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_investments
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				set_country_flag = BRA_invited_vauxhall
+				clr_country_flag = BRA_investments
+			}
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = vauxhall
+		}
+
+	}
+}

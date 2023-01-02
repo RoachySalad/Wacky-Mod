@@ -1,0 +1,141 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Cossacks"					# Infantry Division
+
+	division_names_group = GER_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 1 y = 3 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 2 y = 2 }
+		cavalry = { x = 2 y = 3 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
+	}
+	support = {
+		hq_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 } 
+		signal_company = { x = 0 y = 1 } 
+		recon = { x = 0 y = 1 }
+	
+		logistics_company = { x = 1 y = 0 }
+		military_police = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		#name = "1st Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11405
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "2nd Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11405
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "3rd Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11405
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "4th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11405
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "5th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11405
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	
+	division = {
+		#name = "6th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "7th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "8th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "9th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+	division = {
+		#name = "10th Cossack Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11437
+		division_template = "Cossacks"
+		start_experience_factor = 0.7
+	}
+
+}

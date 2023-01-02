@@ -1,0 +1,27 @@
+state={
+	id=841
+	name="STATE_841"
+	provinces={
+		715 718 905 908 3710 3906 6732 
+	}
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			dockyard = 4
+			air_base = 10
+			6732 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = USA
+		victory_points = {
+			6732 20 
+		}
+	}
+	state_category = metropolis
+	manpower=4283721	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

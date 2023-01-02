@@ -1,0 +1,182 @@
+add_namespace = brazil
+
+# Brazilian referendum
+country_event = {
+	id = brazil.1
+	title = brazil.1.t
+	desc = brazil.1.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+	
+	# Don't do the referendum
+	option = {
+		name = brazil.1.a
+		add_stability = -0.05
+		add_war_support = 0.1
+	}
+
+	# Do the referendum
+	option = {
+		name = brazil.1.b
+		add_stability = 0.1
+		add_war_support = -0.05
+		hidden_effect = {
+			country_event = { id = brazil.2 days = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = brazil.2
+	title = brazil.2.t
+	desc = brazil.2.d
+	picture = GFX_report_event_generic_rally2
+
+	is_triggered_only = yes
+	
+	# Pretend it never happen
+	option = {
+		name = brazil.2.a
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = brazil.3
+
+	hidden = yes
+
+	trigger = {
+ 		FRA = {
+ 		 	has_war_with = GER
+ 			has_war_with = ITA
+ 			has_capitulated = yes
+ 		}
+	}
+
+	mean_time_to_happen = { days = 180 }
+
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			BRA = {
+				country_event = { id = brazil.4 days = 1 }
+			}
+		}
+	}
+	option = {}
+}
+
+country_event = {
+	id = brazil.4
+	title = brazil.4.t
+	desc = brazil.4.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	# Demand compensation
+	option = {
+		hidden_effect = {
+			GER = {
+				country_event = { id = brazil.5 days = 1 }
+			}
+		}
+		name = brazil.4.a
+	}
+
+	# Accept it and remember it
+	option = {
+		hidden_effect = {
+			set_country_flag = BRA_pacific_incident
+		}
+		name = brazil.4.b
+		add_stability = -0.05
+		add_war_support = 0.15
+	}
+}
+
+country_event = {
+	id = brazil.5
+	title = brazil.5.t
+	desc = brazil.5.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	# Brazil? Was?
+	option = {
+		name = brazil.5.a
+		hidden_effect = {
+			BRA = {
+			country_event = { id = brazil.6 days = 1 }
+				BRA = {
+					add_opinion_modifier = {
+						target = GER
+						modifier = embargo
+					}
+					add_opinion_modifier = {
+						target = ITA
+						modifier = embargo
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = brazil.6
+	title = brazil.6.t
+	desc = brazil.6.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	# Brazil? Was?
+	option = {
+		name = brazil.6.a
+		hidden_effect = {
+			BRA = {
+				set_country_flag = BRA_pacific_incident
+			}
+		}
+	}
+}
+
+country_event = {
+	id = brazil.7
+	title = brazil.7.t
+	desc = brazil.7.d
+	picture = GFX_report_event_sanation_left_victory
+
+	is_triggered_only = yes
+	
+	# Continue with Julio
+	option = {
+		name = brazil.7.a
+		add_stability = 0.1
+		add_popularity = {
+		    ideology = democratic
+		    popularity = 0.25
+		}
+	}
+
+	# A new face?
+	option = {
+		name = brazil.7.b
+		hidden_effect = {
+			set_country_leader_name = {
+				ideology = democratic
+				name = BRA_Pele
+			}
+			set_country_leader_portrait = {
+				ideology = democratic
+				portrait = GFX_Pele
+			}
+			swap_ruler_traits = { remove = lieutenant_of_industry add = el_uno }
+		}
+	}
+}

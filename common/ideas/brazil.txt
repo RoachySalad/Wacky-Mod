@@ -1,0 +1,589 @@
+ideas = {
+
+	country = {
+
+		BRA_cafe_com_leite = {
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				command_power_gain_mult = 0.15
+				local_resources_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+				trade_laws_cost_factor = 0.5
+				economy_cost_factor = 0.1
+				mobilization_laws_cost_factor = -0.5
+				industrial_capacity_factory = 0.1
+				stability_factor = -0.15
+				war_support_factor = 0.15
+			}
+		}
+
+		BRA_corruption_7 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.4
+				research_speed_factor = -0.3
+				political_advisor_cost_factor = 0.35
+				trade_laws_cost_factor = 0.35
+				mobilization_laws_cost_factor = 0.35
+				economy_cost_factor = 0.35
+				stability_weekly = -0.03
+			}
+		}		
+
+		BRA_corruption_6 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.35
+				research_speed_factor = -0.25
+				political_advisor_cost_factor = 0.3
+				trade_laws_cost_factor = 0.3
+				mobilization_laws_cost_factor = 0.3
+				economy_cost_factor = 0.3
+				stability_weekly = -0.03
+			}
+		}
+
+		BRA_corruption_5 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.3
+				research_speed_factor = -0.2
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				stability_weekly = -0.02
+			}
+		}
+
+		BRA_corruption_4 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.25
+				research_speed_factor = -0.15
+				political_advisor_cost_factor = 0.2
+				trade_laws_cost_factor = 0.2
+				mobilization_laws_cost_factor = 0.2
+				economy_cost_factor = 0.2
+				stability_weekly = -0.01
+			}
+		}
+
+		BRA_corruption_3 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.15
+				research_speed_factor = -0.10
+				political_advisor_cost_factor = 0.15
+				trade_laws_cost_factor = 0.15
+				mobilization_laws_cost_factor = 0.15
+				economy_cost_factor = 0.15
+				stability_weekly = -0.008
+			}
+		}
+
+		BRA_corruption_2 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.1
+				research_speed_factor = -0.05
+				political_advisor_cost_factor = 0.1
+				trade_laws_cost_factor = 0.1
+				mobilization_laws_cost_factor = 0.1
+				economy_cost_factor = 0.1
+				stability_weekly = -0.005
+			}
+		}
+
+		BRA_corruption_1 = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_power_factor = -0.05
+				research_speed_factor = -0.025
+				political_advisor_cost_factor = 0.05
+				trade_laws_cost_factor = 0.05
+				mobilization_laws_cost_factor = 0.05
+				economy_cost_factor = 0.05
+				stability_weekly = -0.0025
+			}
+		}
+
+		trade_treaty_BRA = {
+
+			picture = generic_license_production
+
+			allowed = {
+				OR = {
+					original_tag = USA
+					original_tag = ENG
+				}
+			}
+
+			targeted_modifier = {
+				tag = BRA
+				extra_trade_to_target_factor = 0.25
+				trade_cost_for_target_factor = -0.25
+			}
+
+		}
+	
+		BRA_revolution_of_1930 = {
+
+			picture = generic_purge
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				political_power_cost = 0.5
+			}
+		}
+
+		BRA_estado_novo = {
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -0.1
+				war_stability_factor = 0.1
+			}
+		}
+		
+		BRA_coffee_oligarchs = {
+
+			picture = MEX_callistas
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		
+		BRA_coffee_oligarchs_2 = {
+
+			picture = MEX_callistas
+			
+			name = BRA_coffee_oligarchs
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		
+		BRA_coffee_oligarchs_3 = {
+
+			picture = MEX_callistas
+			
+			name = BRA_coffee_oligarchs
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		BRA_great_depression_1 = {
+
+			picture = great_depression
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
+		
+		BRA_great_depression_2 = {
+
+			picture = great_depression
+			
+			name = BRA_great_depression_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+
+		BRA_politics_of_interior = {
+
+			picture = generic_agrarian_reform
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				political_advisor_cost_factor = -0.1
+				army_advisor_cost_factor = -0.1
+				local_resources_factor = 0.1
+				mobilization_speed = -0.1
+			}
+		}
+
+		BRA_british_cooperation = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				industrial_factory_donations = 5
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+
+		BRA_american_cooperation = {
+
+			picture = generic_morale_bonus
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				military_factory_donations = 5
+				global_building_slots_factor = 0.05
+				license_purchase_cost = -0.5
+				license_production_speed = 0.25
+			}
+		}
+
+		BRA_expanded_automotive = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			equipment_bonus = {
+				armored_car = {
+					build_cost_ic = -0.15 instant = yes
+					soft_attack = 0.1
+					breakthrough = 0.1
+				}
+			}
+		}
+
+		BRA_BEF_special_forces = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				special_forces_training_time_factor = -0.1
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+				special_forces_cap = 0.15
+			}
+		}
+
+		BRA_BEF_tanks = {
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			modifier = {
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.1
+				max_planning_factor = 0.1
+				org_loss_when_moving = -0.1
+				terrain_penalty_reduction = 0.05
+			}
+		}
+	}
+
+	industrial_concern = {
+
+		conselho_nacional_del_petroleo = {
+
+			picture = generic_refining_concern_1
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			available = {
+				has_completed_focus = BRA_expand_the_national_oil
+			}
+
+			modifier = {
+				base_fuel_gain_factor = 0.15
+				production_speed_fuel_silo_factor = 0.1
+				production_speed_synthetic_refinery_factor = 0.15
+				production_speed_synthetic_rubber_refinery_factor = 0.1
+			}
+
+			research_bonus = {
+				synth_resources = 0.2
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		departamento_administrativo_do_servico_publico = {
+
+			picture = generic_local_self_management
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			available = {
+				has_completed_focus = BRA_expand_the_administration_department
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+			}
+
+			research_bonus = {
+				industry = 0.2
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		companhia_siderurgica_nacional = {
+
+			picture = generic_exploit_mines
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			available = {
+				has_completed_focus = BRA_expand_the_metallurgic_industry
+			}
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				production_speed_steel_refinery_factor = 0.1
+				local_resources_factor = 0.15
+			}
+
+			research_bonus = {
+				industry = 0.2
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		fabrica_nacional_de_motores = {
+
+			picture = generic_motorized_equipment_manufacturer_2
+			
+			allowed = {
+				original_tag = BRA
+			}
+			
+			available = {
+				has_completed_focus = BRA_expand_the_automobile_industry
+			}
+
+			modifier = {
+				production_speed_anti_air_building_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_infrastructure_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+
+			research_bonus = {
+				industry = 0.2
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	tank_manufacturer = {
+
+		designer = yes
+
+		sao_paulo_arsenal = {
+			
+			picture = generic_industrial_concern_1
+
+			allowed = {
+				original_tag = BRA
+			}
+
+			available = {
+				has_country_flag = BRA_invited_detroit_arsenal
+			}
+
+			research_bonus = {
+				armor = 0.15
+			}
+			equipment_bonus = {
+				medium_tank_chassis = {
+					hard_attack = 0.1
+					build_cost_ic = -0.1
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.15
+				}
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		vauxhall = {
+
+			picture = vauxhall
+			
+			allowed = {
+				original_TAG = BRA
+			}
+
+			available = {
+				has_country_flag = BRA_invited_vauxhall
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = { medium_tank_manufacturer }
+			traits = { vauxhall_trait }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+
+	}
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		ford_motor_company_minas_gerais = {
+			
+			picture = ford_motor_company
+			
+			allowed = {
+				original_tag = BRA
+			}
+
+			available = {
+				has_country_flag = BRA_invited_ford
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		rsaf_santa_catarina = {
+
+			picture = rsaf_enfield
+			
+			allowed = {
+				original_TAG = BRA
+			}
+			
+			available = {
+				has_country_flag = BRA_invited_rsaf
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			
+			traits = { enfield }
+			
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+}

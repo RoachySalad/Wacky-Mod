@@ -1,0 +1,182 @@
+operations = {
+
+	HUN_reclaim_south = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			controls_state = 45
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			add_state_core = 45
+			remove_state_claim = 45
+			transfer_state = 45
+			add_state_claim = 109
+		}
+	}
+
+	HUN_reclaim_south_2 = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			controls_state = 82
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			add_state_core = 82		
+		}
+	}
+
+	HUN_reclaim_south_3 = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			controls_state = 764
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			transfer_state = 764
+			add_state_core = 764			
+		}
+	}
+	
+	HUN_reclaim_north = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			controls_state = 664
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			add_state_core = 664
+			remove_state_claim = 664
+			transfer_state = 664
+			add_state_claim = 71
+			add_state_claim = 73
+		}
+	}
+	
+	HUN_reclaim_north_2 = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			controls_state = 73
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			add_state_core = 73
+			remove_state_claim = 73
+		}
+	}
+	
+	HUN_reclaim_east = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			controls_state = 76
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			add_state_core = 76
+			remove_state_claim = 76
+			transfer_state = 76
+			add_state_claim = 71
+			add_state_claim = 73
+		}
+	}
+	
+	HUN_reclaim_east_2 = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			
+			controls_state = 83
+			controls_state = 84
+		}
+
+		visible = {
+			has_completed_focus = HUN_proclaim_greater_hungary
+		}
+		
+		complete_effect = {
+			
+			add_state_core = 83
+			remove_state_claim = 83
+			add_state_core = 84
+			remove_state_claim = 84
+		}
+	}
+}

@@ -1,0 +1,57 @@
+FIN_historical_strategy_plan = {
+
+	enable = {
+		original_tag = FIN
+	}
+    ai_national_focuses = {
+        FIN_winter_war
+        FIN_foreign_support
+        FIN_field_kitchens
+        FIN_land_reform
+        FIN_agriculture
+        FIN_industrial_subsidies
+        FIN_defence_spending
+        FIN_arms_workshops
+        FIN_defence_subsidies
+        FIN_technological_advancements
+        FIN_employ_lahti
+        FIN_mining
+        FIN_private_sector
+        FIN_light_industry
+        FIN_prepare_for_war
+        FIN_white_guard
+        FIN_ski_infantry
+        FIN_suomi
+        FIN_motti
+        FIN_reinforce_the_border
+        FIN_finish_mannerheim
+        FIN_aircraft_purchases
+        FIN_victorious
+        FIN_revanchism
+        FIN_axis_aid
+        FIN_axis_industry
+        FIN_axis_guns
+        FIN_axis_aircraft
+        FIN_stockpile_supplies
+        FIN_expand_white_guard
+        FIN_marshal_of_finland
+        FIN_join_axis
+        FIN_continuation
+    }
+
+  ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = 100
+	}
+  ai_strategy = {
+		type = ignore
+		id = NOR
+		value = 100
+	}
+  ai_strategy = {
+		type = dont_join_wars_with
+		id = NOR
+		value = 100
+	}
+}

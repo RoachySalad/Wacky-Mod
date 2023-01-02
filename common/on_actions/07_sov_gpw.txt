@@ -1,0 +1,53 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = SOV }
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							tag = GER
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = SOV_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = GER_controls
+				 	clr_state_flag = SOV_controls
+				}
+		 		SOV = {
+		 			SOV_great_patriotic_increase = yes 
+		 		}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = GER
+							tag = GER
+						}
+					}
+					ROOT = { tag = SOV }
+					FROM.FROM = {
+						has_state_flag = GER_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = SOV_controls 
+				 	clr_state_flag = GER_controls 
+				}
+		 		SOV = {
+		 			SOV_great_patriotic_decrease = yes 
+		 		}
+			}
+		}
+	}
+}

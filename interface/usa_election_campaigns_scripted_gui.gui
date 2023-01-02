@@ -1,0 +1,257 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "usa_election_campaigns_ui_window"
+		position = { x = 0 y = 00 }
+		size = { width = 100% height= 300 }
+
+				#BACKGROUND
+				iconType = {
+					name ="election_bg"
+					spriteType = "GFX_USA_election_bg"
+					position = { x=53 y=26 }
+				}
+
+				#STATES
+				iconType = {
+					name ="usa_wa_slot"
+					spriteType = "GFX_USA_election_strip_wa"
+					position = { x=77	 y=27 }
+				}
+				iconType = {
+					name ="usa_or_slot"
+					spriteType = "GFX_USA_election_strip_or"
+					position = { x=61	 y=50 }
+				}
+				iconType = {
+					name ="usa_ca_slot"
+					spriteType = "GFX_USA_election_strip_ca"
+					position = { x=57	 y=88 }
+				}
+				iconType = {
+					name ="usa_nv_slot"
+					spriteType = "GFX_USA_election_strip_nv"
+					position = { x=86	 y=96 }
+				}
+				iconType = {
+					name ="usa_id_slot"
+					spriteType = "GFX_USA_election_strip_id"
+					position = { x=112	 y=35 }
+				}
+				iconType = {
+					name ="usa_mt_slot"
+					spriteType = "GFX_USA_election_strip_mt"
+					position = { x=130	 y=36 }
+				}
+				iconType = {
+					name ="usa_wy_slot"
+					spriteType = "GFX_USA_election_strip_wy"
+					position = { x=151	 y=80 }
+				}
+				iconType = {
+					name ="usa_ut_slot"
+					spriteType = "GFX_USA_election_strip_ut"
+					position = { x=124	 y=106 }
+				}
+				iconType = {
+					name ="usa_az_slot"
+					spriteType = "GFX_USA_election_strip_az"
+					position = { x=111	 y=151 }
+				}
+				iconType = {
+					name ="usa_nm_slot"
+					spriteType = "GFX_USA_election_strip_nm"
+					position = { x=152	 y=156 }
+				}
+				iconType = {
+					name ="usa_co_slot"
+					spriteType = "GFX_USA_election_strip_co"
+					position = { x=162	 y=122 }
+				}
+				iconType = {
+					name ="usa_nd_slot"
+					spriteType = "GFX_USA_election_strip_nd"
+					position = { x=206	 y=46 }
+				}
+				iconType = {
+					name ="usa_sd_slot"
+					spriteType = "GFX_USA_election_strip_sd"
+					position = { x=204	 y=76 }
+				}
+				iconType = {
+					name ="usa_ne_slot"
+					spriteType = "GFX_USA_election_strip_ne"
+					position = { x=203	 y=106 }
+				}
+				iconType = {
+					name ="usa_ks_slot"
+					spriteType = "GFX_USA_election_strip_ks"
+					position = { x=213	 y=136 }
+				}
+				iconType = {
+					name ="usa_ok_slot"
+					spriteType = "GFX_USA_election_strip_ok"
+					position = { x=208	 y=165 }
+				}
+				iconType = {
+					name ="usa_tx_slot"
+					spriteType = "GFX_USA_election_strip_tx"
+					position = { x=173	 y=168 }
+				}
+				iconType = {
+					name ="usa_mn_slot"
+					spriteType = "GFX_USA_election_strip_mn"
+					position = { x=247	 y=47 }
+				}
+				iconType = {
+					name ="usa_ia_slot"
+					spriteType = "GFX_USA_election_strip_ia"
+					position = { x=257	 y=100 }
+				}
+				iconType = {
+					name ="usa_mo_slot"
+					spriteType = "GFX_USA_election_strip_mo"
+					position = { x=261	 y=130 }
+				}
+				iconType = {
+					name ="usa_ar_slot"
+					spriteType = "GFX_USA_election_strip_ar"
+					position = { x=272	 y=169 }
+				}
+				iconType = {
+					name ="usa_la_slot"
+					spriteType = "GFX_USA_election_strip_la"
+					position = { x=276	 y=206 }
+				}
+				iconType = {
+					name ="usa_wi_slot"
+					spriteType = "GFX_USA_election_strip_wi"
+					position = { x=283	 y=68 }
+				}
+				iconType = {
+					name ="usa_il_slot"
+					spriteType = "GFX_USA_election_strip_il"
+					position = { x=291	 y=108 }
+				}
+				iconType = {
+					name ="usa_mi_slot"
+					spriteType = "GFX_USA_election_strip_mi"
+					position = { x=302	 y=63 }
+				}
+				iconType = {
+					name ="usa_in_slot"
+					spriteType = "GFX_USA_election_strip_in"
+					position = { x=322	 y=115 }
+				}
+				iconType = {
+					name ="usa_ky_slot"
+					spriteType = "GFX_USA_election_strip_ky"
+					position = { x=313	 y=141 }
+				}
+				iconType = {
+					name ="usa_fl_slot"
+					spriteType = "GFX_USA_election_strip_fl"
+					position = { x=331	 y=217 }
+				}
+				iconType = {
+					name ="usa_ga_slot"
+					spriteType = "GFX_USA_election_strip_ga"
+					position = { x=343	 y=180 }
+				}
+				iconType = {
+					name ="usa_al_slot"
+					spriteType = "GFX_USA_election_strip_al"
+					position = { x=323	 y=182 }
+				}
+				iconType = {
+					name ="usa_ms_slot"
+					spriteType = "GFX_USA_election_strip_ms"
+					position = { x=298	 y=184 }
+				}
+				iconType = {
+					name ="usa_tn_slot"
+					spriteType = "GFX_USA_election_strip_tn"
+					position = { x=306	 y=163 }
+				}
+				iconType = {
+					name ="usa_sc_slot"
+					spriteType = "GFX_USA_election_strip_sc"
+					position = { x=360	 y=176 }
+				}
+				iconType = {
+					name ="usa_nc_slot"
+					spriteType = "GFX_USA_election_strip_nc"
+					position = { x=354	 y=155 }
+				}
+				iconType = {
+					name ="usa_va_slot"
+					spriteType = "GFX_USA_election_strip_va"
+					position = { x=358	 y=129 }
+				}
+				iconType = {
+					name ="usa_wv_slot"
+					spriteType = "GFX_USA_election_strip_wv"
+					position = { x=360	 y=123 }
+				}
+				iconType = {
+					name ="usa_oh_slot"
+					spriteType = "GFX_USA_election_strip_oh"
+					position = { x=340	 y=107 }
+				}
+				iconType = {
+					name ="usa_pa_slot"
+					spriteType = "GFX_USA_election_strip_pa"
+					position = { x=370	 y=103 }
+				}
+				iconType = {
+					name ="usa_ny_slot"
+					spriteType = "GFX_USA_election_strip_ny"
+					position = { x=375  y=70 }
+				}
+				iconType = {
+					name ="usa_nj_slot"
+					spriteType = "GFX_USA_election_strip_nj"
+					position = { x=409	 y=108 }
+				}
+				iconType = {
+					name ="usa_md_slot"
+					spriteType = "GFX_USA_election_strip_md"
+					position = { x=384	 y=126 }
+				}
+				iconType = {
+					name ="usa_de_slot"
+					spriteType = "GFX_USA_election_strip_de"
+					position = { x=411	 y=124 }
+				}
+				iconType = {
+					name ="usa_vt_slot"
+					spriteType = "GFX_USA_election_strip_vt"
+					position = { x=414	 y=69 }
+				}
+				iconType = {
+					name ="usa_me_slot"
+					spriteType = "GFX_USA_election_strip_me"
+					position = { x=430	 y=38 }
+				}
+				iconType = {
+					name ="usa_nh_slot"
+					spriteType = "GFX_USA_election_strip_nh"
+					position = { x=425	 y=64 }
+				}
+				iconType = {
+					name ="usa_ma_slot"
+					spriteType = "GFX_USA_election_strip_ma"
+					position = { x=421	 y=89 }
+				}
+				iconType = {
+					name ="usa_ct_slot"
+					spriteType = "GFX_USA_election_strip_ct"
+					position = { x=420	 y=96 }
+				}
+				iconType = {
+					name ="usa_ri_slot"
+					spriteType = "GFX_USA_election_strip_ri"
+					position = { x=433	 y=96 }
+				}
+
+}

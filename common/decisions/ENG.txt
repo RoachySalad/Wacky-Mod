@@ -1,0 +1,2802 @@
+ENG_imperial_conference_decision = {
+	
+	ENG_imperial_conference_decision = {
+
+		icon = generic_political_discourse
+		
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 60
+
+		fire_only_once = yes
+
+		activation = {
+			tag = ENG
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		cancel_if_not_visible = no
+
+		is_good = yes
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = imperial_conference_ends_tt
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+					}
+				}
+				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_opinion }
+				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_approved_resolution }
+			}
+		}
+	}
+	
+	ENG_discuss_appeasement = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+			has_war = no
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.95 hours = 2 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+			effect_tooltip = { 
+				add_war_support = 0.10
+				every_country = {
+					limit = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								tag = CAN
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = SAF
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = RAJ
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = AST
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = NZL
+							}
+						}
+					}
+					add_political_power = -25
+					add_war_support = 0.05
+					# add_opinion_modifier = {
+					# 	target = ROOT
+					# 	modifier = ENG_imperial_conference_approved_resolution
+					# }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	ENG_discuss_imperial_defense = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.83 hours = 2 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+			effect_tooltip = {
+				add_ideas = ENG_imperial_conference_defense_5
+				every_country = {
+					limit = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								tag = CAN
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = SAF
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = RAJ
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = AST
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = NZL
+							}
+						}
+					}
+					add_political_power = -25
+					add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
+					# add_opinion_modifier = {
+					# 	target = ROOT
+					# 	modifier = ENG_imperial_conference_approved_resolution
+					# }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	# ENG_discuss_imperial_trade = {
+
+	# 	icon = eng_trade_unions_support
+
+	# 	allowed = {
+	# 		tag = ENG
+	# 	}
+
+	# 	available = {
+	# 		NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+	# 	}
+
+	# 	cost = 50
+
+	# 	fire_only_once = yes
+
+	# 	visible = {
+	# 		has_completed_focus = ENG_imperial_conference
+	# 		has_country_flag = ENG_imperial_conference_timer_flag
+	# 	}
+
+	# 	complete_effect = {
+	# 		country_event = { id = mtg_britain.87 hours = 6 }
+	# 		set_country_flag = ENG_imperial_conference_discussion_in_progress
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 100
+	# 	}
+	# }
+
+	ENG_discuss_imperial_economy = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			NOT = { has_country_flag = ENG_imperial_conference_discussion_in_progress }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			has_completed_focus = ENG_imperial_conference
+			has_country_flag = ENG_imperial_conference_timer_flag
+		}
+
+		complete_effect = {
+			country_event = { id = mtg_britain.91 hours = 2 }
+			set_country_flag = ENG_imperial_conference_discussion_in_progress
+			effect_tooltip = {
+				add_ideas = ENG_imperial_conference_economy_5
+				every_country = {
+					limit = {
+						OR = {
+							AND = {
+								is_subject_of = ENG
+								tag = CAN
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = SAF
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = RAJ
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = AST
+							}
+							AND = {
+								is_subject_of = ENG
+								tag = NZL
+							}
+						}
+					}
+					add_political_power = -25
+					add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
+					# add_opinion_modifier = {
+					# 	target = ROOT
+					# 	modifier = ENG_imperial_conference_approved_resolution
+					# }
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+}
+
+political_actions = {
+
+	ENG_host_CZE_exile_government = {
+	
+		icon = generic
+	
+		allowed = {
+			has_dlc = "Man the Guns"
+			original_tag = ENG
+			
+		}
+		available = {
+			has_government = democratic
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+	
+		visible = {
+			CZE = {
+				exists = no
+			}
+		
+			CZE = {
+				is_government_in_exile = no
+			}
+		
+			9 = { CONTROLLER = { has_war_with = ROOT } }
+		}
+		complete_effect = {
+			CZE = {
+				become_exiled_in = {
+					target = ROOT
+					legitimacy = 50
+				}
+			}
+		}
+	}
+	
+	hold_blood_toil_tears_sweat_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_war_with = GER
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = blood_toil_tears_sweat_speech }
+			}
+			set_country_flag = blood_toil_tears_sweat_speech
+		}
+
+		ai_will_do = {
+			factor = 200 #Gotta allow the Americans to help
+		}
+	}
+
+	hold_fight_on_the_beaches_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_war_with = GER
+			is_in_faction_with = FRA
+			FRA = {
+				surrender_progress > 0.2
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_flag = blood_toil_tears_sweat_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = fight_on_the_beaches_speech }
+			}
+			set_country_flag = fight_on_the_beaches_speech
+		}
+
+		ai_will_do = {
+			factor = 200 #Gotta allow the Americans to help
+		}
+	}
+
+	hold_this_was_their_finest_hour_speech = {
+
+		icon = generic_political_discourse
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_government = democratic
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_war_with = GER
+			is_in_faction_with = FRA
+			FRA = { has_capitulated = yes }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			has_country_flag = fight_on_the_beaches_speech
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			if = {
+				limit = {
+					USA = {
+						exists = yes
+						has_war = no
+						has_government = ROOT
+					}
+				}
+				USA = { set_country_flag = this_was_their_finest_hour_speech }
+			}
+			set_country_flag = this_was_their_finest_hour_speech
+		}
+
+		ai_will_do = {
+			factor = 200 #Gotta allow the Americans to help
+		}
+	}
+
+	macdonald_proposal = {
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			IRE = { exists = yes }
+			NOT = { is_in_faction_with = IRE }
+			FRA = { has_capitulated = yes }
+			is_in_faction_with = FRA
+		}
+
+		cost = 50
+		
+		visible = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			IRE = { exists = yes }
+		}
+		
+		complete_effect = {
+			IRE = { country_event = { id = wtt_britain.24 } }
+			add_popularity = { ideology = democratic popularity = 0.03 }
+			add_stability = -0.05
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	ENG_seize_colonies = {
+
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war = yes
+			has_government = democratic
+			POR = {
+				has_war = yes
+				is_in_faction = no
+			}
+		}
+
+		cost = 0
+		
+		visible = {
+			has_war = yes
+			NOT = { has_war_with = POR }
+			country_exists = POR
+		}
+		
+		complete_effect = {
+			ENG = {
+				transfer_state = 796
+				transfer_state = 296
+				transfer_state = 702
+				transfer_state = 697
+				transfer_state = 721
+				transfer_state = 729
+			}
+			SAF = {
+				transfer_state = 540
+				transfer_state = 544
+			}
+			RAJ = {
+				transfer_state = 321
+			}
+			set_country_flag = ENG_seize_col
+		}
+	}
+	
+	ENG_invoke_the_alliance_of_1373 = {
+
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war = yes
+			has_government = democratic
+			POR = {
+				has_war = yes
+				is_in_faction = no
+			}
+			is_faction_leader = yes
+			NOT = { has_country_flag = ENG_seize_col }
+		}
+
+		cost = 0
+		
+		visible = {
+			has_war = yes
+			NOT = { has_war_with = POR }
+			country_exists = POR
+		}
+		
+		complete_effect = {
+			POR = { 
+				country_event = generic.5
+				remove_ideas = POR_neutrality_idea
+			}
+		}
+	}
+
+	ENG_request_azores_lease = {
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war = yes
+			has_government = democratic
+			POR = {
+				has_full_control_of_state = 698
+				OR = {
+					has_government = ROOT
+					has_government = neutrality
+				}
+			}
+			POR = { is_in_faction = no }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+			has_war = yes
+			POR = {
+				has_full_control_of_state = 698
+				NOT = { has_war_with = ROOT }
+			}
+		}
+		
+		complete_effect = {
+			POR = { country_event = wtt_britain_lease_azores.1 }
+		}
+	}
+
+	ENG_abdication_crisis = { # timer for the player to see when the event chain ends
+
+		icon = eng_abdication_crisis
+		
+		available = {
+			has_country_flag = ENG_abdication_crisis_changed_mind
+		}
+
+		days_mission_timeout = 200
+
+		fire_only_once = yes
+
+		activation = {
+			tag = ENG
+			OR = {
+				has_country_flag = ENG_abdication_crisis_normal_marriage
+				has_country_flag = ENG_abdication_crisis_morganatic_marriage
+			}
+		}
+
+		visible = {
+			tag = ENG
+			OR = {
+				has_country_flag = ENG_abdication_crisis_normal_marriage
+				has_country_flag = ENG_abdication_crisis_morganatic_marriage
+			}
+			NOT = { has_country_flag = edward_viii_married_wallis_simpson }
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+
+		complete_effect = {
+			
+		}
+
+		timeout_effect = {
+			country_event = { id = mtg_britain.5 }
+		}
+	}
+
+	ENG_britain_demands_treaty_compliance = { # ENG demanding scuttling of ships to maintain Washington Naval Treaty
+
+		icon = generic_naval
+		
+		available = {
+			if = {
+				limit = {
+					original_tag = USA
+				}
+				custom_trigger_tooltip = {
+					tooltip = ENG_britain_demands_treaty_compliance_tt_1
+					naval_strength_comparison = {
+						other = ENG
+						ratio < 1.01
+						sub_unit_def_weights = {
+							carrier = 1
+							battleship = 1
+							battle_cruiser = 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = JAP
+				}
+				custom_trigger_tooltip = {
+					tooltip = ENG_britain_demands_treaty_compliance_tt_2
+					naval_strength_comparison = {
+						other = ENG
+						ratio < 0.66
+						sub_unit_def_weights = {
+							carrier = 1
+							battleship = 1
+							battle_cruiser = 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { original_tag = USA }
+					NOT = { original_tag = JAP }
+				}
+				custom_trigger_tooltip = {
+					tooltip = ENG_britain_demands_treaty_compliance_tt_3
+					naval_strength_comparison = {
+						other = ENG
+						ratio < 0.36
+						sub_unit_def_weights = {
+							carrier = 1
+							battleship = 1
+							battle_cruiser = 1
+						}
+					}
+				}
+			}
+		}
+
+		days_mission_timeout = 60
+
+		fire_only_once = no
+
+		activation = {
+			has_country_flag = ENG_demanding_ship_reduction_flag
+		}
+
+		visible = {
+			has_country_flag = ENG_demanding_ship_reduction_flag
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = no
+
+		complete_effect = {
+			clr_country_flag = ENG_demanding_ship_reduction_flag
+			random_country = {
+				limit = {
+					original_tag = ENG
+				}
+				country_event = { id = mtg_britain.107 }
+			}
+		}
+
+		timeout_effect = {
+			clr_country_flag = ENG_demanding_ship_reduction_flag
+			random_country = {
+				limit = {
+					original_tag = ENG
+				}
+				country_event = { id = mtg_britain.108 }
+			}
+			effect_tooltip = {
+				ENG = {
+					create_wargoal = {
+						target = ROOT
+						type = puppet_wargoal_focus
+						expire = 0
+					}
+				}
+			}
+		}
+	}
+
+}
+
+operations = {
+
+	operation_fork = {
+
+		icon = generic_operation
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			ICE = { exists = yes }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			tag = ENG
+			has_war_with = GER
+			ICE = { exists = yes }
+			NOT = { ICE = { is_in_faction_with = ROOT } }
+		}
+		
+		complete_effect = {
+			annex_country = { target = ICE }
+		}
+	}
+
+	mers_el_kebir_raid = {
+
+		icon = generic_naval
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			has_government = democratic
+			has_war_with = GER
+			any_country = {
+				original_tag = FRA
+				has_government = fascism
+			}
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 1
+		}
+		
+		visible = {
+			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+			tag = ENG
+			has_government = democratic
+			has_war_with = GER
+			OR = {
+				AND = {
+					is_in_faction_with = FRA
+					FRA = { surrender_progress > 0.2 }
+				}
+				any_country = {
+					original_tag = FRA
+					has_government = fascism
+				}
+			}
+		}
+		
+		complete_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = FRA
+					has_government = fascism
+				}
+				country_event = { id = wtt_britain.25 hours = 5 }
+			}
+		}
+	}
+	
+	
+
+}
+
+special_projects = {
+
+	ENG_rifle_purchases = {
+		icon = generic_prepare_civil_war
+		available = {
+		
+			NOT = { has_country_flag = ENG_buying_equipment_flag }
+		}
+		visible = {
+			has_completed_focus = ENG_arms_purchases
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 8 }
+			}
+			set_country_flag = { flag = ENG_buying_equipment_flag value = 1 days = 90 }
+		}
+		
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		days_re_enable = 90
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 1000
+				
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -8 }
+			}
+		}
+	}
+
+	ENG_arty_purchases = {
+		icon = generic_prepare_civil_war
+		available = {
+		
+			NOT = { has_country_flag = ENG_buying_equipment_flag }
+		}
+		visible = {
+			has_completed_focus = ENG_arms_purchases
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 8 }
+			}
+			set_country_flag = { flag = ENG_buying_equipment_flag value = 1 days = 90 }
+		}
+		
+		modifier = {
+			civilian_factory_use = 8
+		}
+		
+		days_re_enable = 90
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 360
+				
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 360
+				
+			}
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -8 }
+			}
+		}
+	}
+
+	ENG_truck_purchases = {
+		icon = generic_prepare_civil_war
+		available = {
+		
+			NOT = { has_country_flag = ENG_buying_equipment_flag }
+		}
+		visible = {
+			has_completed_focus = ENG_arms_purchases
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 8 }
+			}
+			set_country_flag = { flag = ENG_buying_equipment_flag value = 1 days = 90 }
+		}
+		
+		modifier = {
+			civilian_factory_use = 10
+		}
+		
+		days_re_enable = 90
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1200
+				
+			}
+			
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -8 }
+			}
+		}
+	}
+
+	ENG_support_purchases = {
+		icon = generic_prepare_civil_war
+		available = {
+		
+			NOT = { has_country_flag = ENG_buying_equipment_flag }
+		}
+		visible = {
+			has_completed_focus = ENG_arms_purchases
+		}
+		
+		days_remove = 90
+		cost = 100
+		complete_effect = {
+			USA = {
+				add_offsite_building = { type = industrial_complex level = 8 }
+			}
+			set_country_flag = { flag = ENG_buying_equipment_flag value = 1 days = 90 }
+		}
+		
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		days_re_enable = 90
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				
+			}
+			add_equipment_to_stockpile = {
+				type = sf_equipment
+				amount = 800
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment_0
+				amount = 250
+			}
+			
+			USA = {
+				add_offsite_building = { type = industrial_complex level = -8 }
+			}
+		}
+	}
+
+}
+
+ENG_enforce_the_naval_treaties = {
+
+	ENG_demand_treaty_compliance = {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			tag = ENG
+		}
+
+		available = {
+			has_navy_size = {
+			    size > 14
+				archetype = ship_hull_heavy
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = USA
+					}
+				}
+				FROM = {
+					custom_trigger_tooltip = {
+						tooltip = ENG_demand_treaty_compliance_tt2
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 1
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+					}
+					NOT = { is_in_faction_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = JAP
+					}
+				}
+				FROM = {
+					custom_trigger_tooltip = {
+						tooltip = ENG_demand_treaty_compliance_tt3
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.65
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+					}
+					NOT = { is_in_faction_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						NOT = { original_tag = USA }
+						NOT = { original_tag = JAP }
+					}
+				}
+				FROM = {
+					custom_trigger_tooltip = {
+						tooltip = ENG_demand_treaty_compliance_tt4
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.35
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+					}
+					NOT = { is_in_faction_with = ROOT }
+					NOT = { has_war_with = ROOT }
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					AND = {
+						original_tag = USA
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.8
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+					AND = {
+						original_tag = JAP
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.5
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+					AND = {
+						NOT = { original_tag = USA }
+						NOT = { original_tag = JAP }
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.2
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+		}
+
+		cost = 50
+
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			original_tag = ENG
+			always = no
+			FROM = {
+				OR = {
+					AND = {
+						original_tag = USA
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.8
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+					AND = {
+						original_tag = JAP
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.5
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+					AND = {
+						NOT = { original_tag = USA }
+						NOT = { original_tag = JAP }
+						naval_strength_comparison = {
+							other = ENG
+							ratio > 0.2
+							sub_unit_def_weights = {
+								carrier = 1
+								battleship = 1
+								battle_cruiser = 1
+							}
+						}
+						NOT = { is_in_faction_with = ROOT }
+						NOT = { has_war_with = ROOT }
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			FROM = {
+				set_country_flag = ENG_demanding_ship_reduction_flag
+				activate_mission = ENG_britain_demands_treaty_compliance
+				country_event = { id = mtg_britain.106 hours = 6 }
+				custom_effect_tooltip = ENG_demand_treaty_compliance_tt
+			}
+		}
+
+	}
+
+}
+
+ENG_develop_the_empire = {
+
+	ENG_develop_ast = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			AST = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			AST = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = AST
+						is_core_of = AST
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = AST
+						is_core_of = AST
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_australia_focus
+				}
+			}
+		}
+	}
+	
+	ENG_develop_nzl = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			NZL = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			NZL = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = NZL
+						is_core_of = NZL
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = NZL
+						is_core_of = NZL
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_new_zealand_focus
+				}
+			}
+		}
+	}
+	
+	ENG_develop_can = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			CAN = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			CAN = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = CAN
+						is_core_of = CAN
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = CAN
+						is_core_of = CAN
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_canada_focus
+				}
+			}
+		}
+	}
+	
+	ENG_develop_saf = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			SAF = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			SAF = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = SAF
+						is_core_of = SAF
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = SAF
+						is_core_of = SAF
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_south_africa_focus
+				}
+			}
+		}
+	}
+	
+	ENG_develop_raj = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			RAJ = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_develop_colonies
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 8
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			RAJ = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_controlled_by = RAJ
+						is_core_of = RAJ
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_controlled_by = RAJ
+						is_core_of = RAJ
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_india_focus
+				}
+			}
+		}
+	}
+
+}
+
+ENG_persian_corridor = {
+
+	ENG_lease_guns = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			656 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			291 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			413 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			420 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			419 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			229 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			230 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			has_equipment = {
+				infantry_equipment > 5000
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_soviet_lend_lease
+		}
+		
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+		}
+		
+		days_re_enable = 60
+		
+		remove_effect = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = SOV
+			}
+		}
+	}
+	
+	ENG_lease_squad = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			656 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			291 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			413 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			420 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			419 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			229 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			230 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			has_equipment = {
+				squad_equipment > 500
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_soviet_lend_lease
+		}
+		
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+		}
+		
+		days_re_enable = 60
+		
+		remove_effect = {
+			send_equipment = {
+				equipment = squad_equipment
+				amount = 500
+				target = SOV
+			}
+		}
+	}
+	
+	ENG_lease_radios = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			656 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			291 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			413 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			420 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			419 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			229 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			230 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			has_equipment = {
+				radio_equipment > 500
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_soviet_lend_lease
+		}
+		
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+		}
+		
+		days_re_enable = 60
+		
+		remove_effect = {
+			send_equipment = {
+				equipment = radio_equipment
+				amount = 500
+				target = SOV
+			}
+		}
+	}
+	
+	ENG_lease_support = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			656 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			291 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			413 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			420 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			419 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			229 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			230 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			has_equipment = {
+				support_equipment > 500
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_soviet_lend_lease
+		}
+		
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+		}
+		
+		days_re_enable = 60
+		
+		remove_effect = {
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = SOV
+			}
+		}
+	}
+	
+	ENG_lease_trucks = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			656 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			291 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			413 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			420 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			419 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			229 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			230 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			has_equipment = {
+				motorized_equipment > 1000
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_soviet_lend_lease
+		}
+		
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+		}
+		
+		days_re_enable = 60
+		
+		remove_effect = {
+			send_equipment = {
+				equipment = motorized_equipment
+				amount = 1000
+				target = SOV
+			}
+		}
+	}
+	
+	ENG_lease_planes = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = ENG
+		}
+		available = {
+			656 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			291 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			413 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			412 = {
+				CONTROLLER = {
+					OR = {
+						tag = ENG
+						is_subject_of = ENG
+					}
+				}
+			}
+			420 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			419 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			229 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			230 = {
+				CONTROLLER = {
+					OR = {
+						tag = SOV
+						is_subject_of = SOV
+					}
+				}
+			}
+			has_equipment = {
+				fighter_equipment > 500
+			}
+		}
+		visible = {
+			has_completed_focus = ENG_soviet_lend_lease
+		}
+		
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+		}
+		
+		days_re_enable = 60
+		
+		remove_effect = {
+			send_equipment = {
+				equipment = fighter_equipment
+				amount = 500
+				target = SOV
+			}
+		}
+	}
+}
+
+ENG_special_research = {
+	ENG_prox_fuse = {
+	
+		icon = generic_construction
+
+		available = {
+			NOT = { has_country_flag = ENG_special_research_ongoing }
+			has_tech = improved_computing_machine
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = ENG_special_research_department
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			set_country_flag = ENG_prox_fuse_done
+		}
+		complete_effect = {
+			set_country_flag = { flag = ENG_researching_flag value = 1 days = 180 }
+		}
+	}
+	
+	ENG_tube_alloys = {
+	
+		icon = generic_construction
+
+		available = {
+			NOT = { has_country_flag = ENG_special_research_ongoing }
+			has_tech = computing_machine
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = ENG_special_research_department
+		}
+		days_remove = 365
+		modifier = {
+			civilian_factory_use = 10
+		}
+		remove_effect = {
+			set_technology = { atomic_research = 1 }
+		}
+		complete_effect = {
+			set_country_flag = { flag = ENG_researching_flag value = 1 days = 365 }
+		}
+	}
+	
+	ENG_tallboys = {
+	
+		icon = generic_construction
+
+		available = {
+			NOT = { has_country_flag = ENG_special_research_ongoing }
+			has_tech = strategic_bomber3
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = ENG_special_research_department
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			add_ideas = ENG_tallboys
+		}
+		complete_effect = {
+			set_country_flag = { flag = ENG_researching_flag value = 1 days = 180 }
+		}
+	}
+	
+	ENG_bouncing_bombs = {
+	
+		icon = generic_construction
+
+		available = {
+			NOT = { has_country_flag = ENG_special_research_ongoing }
+			has_tech = strategic_bomber2
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			has_completed_focus = ENG_special_research_department
+			always = no
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			
+		}
+		complete_effect = {
+			set_country_flag = { flag = ENG_researching_flag value = 1 days = 180 }
+		}
+	}
+}
+
+ENG_propaganda_campaigns = {
+	ENG_together_prop = { # ID = 2
+		priority = 12
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			research_sharing_per_country_bonus_factor = 0.5
+			command_power_gain_mult = 0.25
+			subjects_autonomy_gain = 0.5
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 2 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 2 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ENG_women_prop = { # ID = 3
+		priority = 11
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			production_factory_start_efficiency_factor = 0.1
+			line_change_production_efficiency_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 3 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 3 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ENG_finest_hour_prop = { # ID = 4
+		priority = 10
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_country_flag = this_was_their_finest_hour_speech
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			air_home_defence_factor = 0.25
+			army_core_attack_factor = 0.2
+			army_core_defence_factor = 0.2
+			minimum_training_level = -0.2
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 4 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 4 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ENG_careless_talk_prop = { # ID = 5
+		priority = 9
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			civilian_intel_to_others = -15
+			airforce_intel_to_others = -15
+			navy_intel_to_others = -15
+			army_intel_to_others = -15
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 5 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 5 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ENG_wings_victory_prop = { # ID = 6
+		priority = 8
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_raf
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			air_air_superiority_agility_factor = 0.05
+			air_interception_defence_factor = 0.05
+			air_mission_efficiency = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 6 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 6 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ENG_dig_victory_prop = { # ID = 7
+		priority = 7
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_war_cabinet
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			local_resources_factor = 0.1
+			min_export = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 7 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 7 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ENG_japan_prop = { # ID = 8
+		priority = 6
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_war_with = JAP
+			has_war_with = GER
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = 0.1
+		}
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = -0.1
+		}
+
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 8 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 8 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+	
+	ENG_oil_prop = { # ID = 9
+		priority = 5
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_inchindown_fuel
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			fuel_gain_factor = 0.20
+			air_fuel_consumption_factor = -0.10
+			army_fuel_consumption_factor = -0.10
+			navy_fuel_consumption_factor = -0.10
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 9 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 9 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+	
+	ENG_air_production_prop = { # ID = 10
+		priority = 4
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_completed_focus = ENG_air_production_group
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 10 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+			add_ideas = ENG_air_prod
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 10 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+			remove_ideas = ENG_air_prod
+		}
+	}
+	
+	ENG_blood_prop = { # ID = 11
+		priority = 3
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			experience_loss_factor = -0.10
+			army_morale_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 11 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 11 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+	
+	ENG_german_prop = { # ID = 12
+		priority = 2
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			has_war_with = GER
+			has_war_with = JAP
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = 0.1
+		}
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 12 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 12 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+	
+	ENG_war_savings_prop = { # ID = 13
+		priority = 1
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			ENG_propaganda_poster_slot_available = yes
+			date > 1942.1.1
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 25
+
+		modifier = {
+			consumer_goods_factor = -0.03
+		}
+
+		complete_effect = {
+			set_variable = { ENG_new_propaganda_campaign = 13 }
+			ENG_pick_propaganda_campaign_slot_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { ENG_propaganda_campaign_to_remove = 13 }
+			ENG_reset_propaganda_campaign_slot_effect = yes
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+}

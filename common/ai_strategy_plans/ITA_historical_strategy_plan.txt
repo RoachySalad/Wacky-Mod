@@ -1,0 +1,74 @@
+Italy_Historical = {
+    enable = {
+        original_tag = ITA
+    }
+    ai_national_focuses = {
+        ITA_proclaim_the_empire
+        ITA_rome_berlin_axis
+        ITA_denounce_the_sanctions
+        ITA_increase_trade
+        ITA_german_investments
+        ITA_german_trade
+        ITA_balkan_trade
+        ITA_intercontinental_trade
+        ITA_highway_expansion
+        ITA_light_industry
+        ITA_agricultural_expansion
+        ITA_railway_expansion
+        ITA_purchase_steel
+        ITA_romanian_cooperation
+        ITA_hungarian_trade
+        ITA_bulgarian_cooperation
+        ITA_steel_investments
+        ITA_purchase_oil
+        ITA_invest_oil
+        ITA_german_industrial_cooperation
+        ITA_integrate_economies
+        ITA_beretta
+        ITA_railway_expansion2
+        ITA_industry_nationalisation
+        ITA_heavy_industry
+        ITA_research_slot
+        ITA_albania_war_goal
+        ITA_8_million_bayonets
+        ITA_lessons_of_war
+        ITA_riforma_gentile
+        ITA_reinforce_loyalty
+        ITA_commando_supremo
+        ITA_blackshirt_militias
+        ITA_legacy_of_the_arditi
+        ITA_new_rifle
+        ITA_new_artillery
+        ITA_sf_expansion
+        ITA_alpini
+        ITA_trench_warfare
+        ITA_cavalry_modernisation
+        ITA_combined_arms
+        ITA_new_armour
+        ITA_bersaglieri
+        ITA_pact_of_steel
+        ITA_claims_on_france
+        ITA_new_land
+        ITA_slovenia_dalmatia_claims
+        ITA_victory_graecia
+        ITA_victory_syria
+        ITA_victory_mauretania
+        ITA_victory_gallia
+        ITA_victory_dalmatia
+        ITA_start_italianisation_yug
+        ITA_complete_italianisation_yug
+        ITA_start_italianisation_gre
+        ITA_complete_italianisation_gre
+        ITA_victory_aegyptus
+        ITA_mare_nostrum
+        ITA_start_italianisation_fra
+        ITA_complete_italianisation_fra
+        ITA_greece_war_goal
+    }
+
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = SPR
+		value = 100000
+	}
+}

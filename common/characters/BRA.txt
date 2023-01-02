@@ -1,0 +1,561 @@
+characters={
+	BRA_eurico_gaspar_dutra={
+		name="Eurico Gaspar Dutra"
+		advisor={
+			slot = army_chief
+			idea_token = BRA_eurico_gaspar_dutra
+			allowed  = {
+				original_tag  = BRA
+			}
+			traits  = {
+				army_chief_morale_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_3"
+			}
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	BRA_mascarenhas_de_morais={
+		name="Mascarenhas de Morais"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_south_america_generic_land_5.dds"
+			}
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
+			}
+		}
+		corps_commander={
+			traits={ jungle_rat }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	BRA_augusto_rademaker={
+		name="Augusto Rademaker"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_south_america_generic_navy_3.dds"
+			}
+			army={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	BRA_getúlio_vargas={
+		name="Getúlio Vargas"
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Portrait_Brazil_Getulio_Vargas.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ genial_anti_revolutionary }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_plínio_salgado={
+		name="Plínio Salgado"
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Portrait_Brazil_Plinio_Salgado.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_luís_carlos_prestes={
+		name="Luís Carlos Prestes"
+		portraits={
+			civilian={
+				large="gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_júlio_prestes={
+		name="Júlio Prestes"
+		portraits={
+			civilian={
+				large="gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ lieutenant_of_industry }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	BRA_agliberto_vieira={
+		advisor={
+			slot = high_command
+			idea_token = BRA_agliberto_vieira
+			ledger = navy 
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				navy_naval_air_defense_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_agliberto_vieira"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	BRA_eduardo_gomes={
+		advisor={
+			slot = theorist
+			idea_token = BRA_eduardo_gomes
+			ledger = air 
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				air_warfare_theorist 
+			}
+		}
+		name="BRA_eduardo_gomes"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	BRA_epaminondas_dos_santos={
+		advisor={
+			slot = high_command
+			idea_token = BRA_epaminondas_dos_santos
+			ledger = air 
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				air_air_combat_training_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_epaminondas_dos_santos"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	BRA_ismael_motta_paes={
+		advisor={
+			slot = air_chief
+			idea_token = BRA_ismael_motta_paes
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				air_chief_night_operations_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_ismael_motta_paes"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	BRA_lindolfo_collor={
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_lindolfo_collor
+			allowed = {
+				original_tag  = BRA
+			}
+			available = {
+				has_completed_focus = BRA_open_the_markets
+			}
+			traits  = {
+				financial_expert 
+			}
+		}
+		name="BRA_lindolfo_collor"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_3"
+			}
+		}
+	}
+	BRA_mark_clark={
+		advisor={
+			slot = high_command
+			idea_token = BRA_mark_clark
+			ledger = army 
+			allowed = {
+				original_tag  = BRA
+			}
+			available  = {
+				has_completed_focus  = BRA_american_advisors 
+			}
+			traits  = {
+				army_infantry_3 
+			}
+			cost = 150
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_mark_clark"
+		portraits={
+			army={
+				small="GFX_idea_mark_clark"
+			}
+		}
+	}
+	BRA_john_smith={
+		advisor={
+			slot = high_command
+			idea_token = BRA_john_smith
+			ledger = army 
+			allowed = {
+				original_tag  = BRA
+			}
+			available  = {
+				has_completed_focus = BRA_british_advisors 
+			}
+			traits  = {
+				army_commando_3 
+			}
+			cost = 150
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_john_smith"
+		portraits={
+			army={
+				small="GFX_idea_generic_military_advisor_europe_3"
+			}
+		}
+	}
+	BRA_salgado_filho={
+		advisor={
+			slot = air_chief
+			idea_token = BRA_salgado_filho
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				air_naval_strike_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_salgado_filho"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_1"
+			}
+		}
+	}
+	BRA_floriano_peixoto={
+		advisor={
+			slot = navy_chief
+			idea_token = BRA_floriano_peixoto
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				navy_chief_decisive_battle_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_floriano_peixoto"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_3"
+			}
+		}
+	}
+	BRA_francisco_mello={
+		advisor={
+			slot = high_command
+			idea_token = BRA_francisco_mello
+			ledger = air 
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				air_chief_ground_support_3 
+			}
+			cost = 150
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_francisco_mello"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_south_america_2"
+			}
+		}
+	}
+	BRA_aristides_guilhem={
+		advisor={
+			slot = navy_chief
+			idea_token = BRA_aristides_guilhem
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				navy_chief_naval_aviation_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_aristides_guilhem"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	BRA_estavao_alves_correa={
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_estavao_alves_correa
+			allowed = {
+				original_tag  = BRA
+			}
+			available  = {
+				has_completed_focus  = BRA_work_with_the_coffee_oligarchs 
+			}
+			traits  = {
+				coffee_oligarch 
+			}
+		}
+		name="BRA_estavao_alves_correa"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_2"
+			}
+		}
+	}
+	BRA_joao_baptista_de_morais={
+		advisor={
+			slot = army_chief
+			idea_token = BRA_joao_baptista_de_morais
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				army_chief_organizational_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_joao_baptista_de_morais"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_5"
+			}
+		}
+	}
+	BRA_artur_da_costa_e_silva={
+		advisor={
+			slot = high_command
+			idea_token = BRA_artur_da_costa_e_silva
+			ledger = army 
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				army_logistics_3 
+			}
+			cost = 150
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_artur_da_costa_e_silva"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_4"
+			}
+		}
+	}
+	BRA_jorge_martins={
+		advisor={
+			slot = navy_chief
+			idea_token = BRA_jorge_martins
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				navy_chief_commerce_raiding_2 
+			}
+			cost = 100
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		name="BRA_jorge_martins"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_south_america_1"
+			}
+		}
+	}
+	BRA_gustavo_campanema={
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_gustavo_campanema
+			allowed = {
+				original_tag  = BRA
+			}
+			available  = {
+				has_completed_focus  = BRA_dissolve_the_legislature 
+			}
+			traits  = {
+				technocrat 
+			}
+		}
+		name="BRA_gustavo_campanema"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_5"
+			}
+		}
+	}
+	BRA_washington_luis_pereira={
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_washington_luis_pereira
+			allowed = {
+				original_tag  = BRA
+			}
+			available  = {
+				has_completed_focus  = BRA_establish_the_republic 
+			}
+			traits  = {
+				silent_workhorse 
+			}
+		}
+		name="BRA_washington_luis_pereira"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_1"
+			}
+		}
+	}
+	BRA_osvaldo_aranha={
+		advisor={
+			slot = political_advisor
+			idea_token = BRA_osvaldo_aranha
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				popular_figurehead 
+			}
+		}
+		name="BRA_osvaldo_aranha"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_south_america_2"
+			}
+		}
+	}
+	BRA_newton_cavalcanti={
+		advisor={
+			slot = theorist
+			idea_token = BRA_newton_cavalcanti
+			ledger = army 
+			allowed = {
+				original_tag  = BRA
+			}
+			traits  = {
+				military_theorist 
+			}
+		}
+		name="BRA_newton_cavalcanti"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_south_america_1"
+			}
+		}
+	}
+	BRA_capy_bara={
+		name=BRA_capy_bara
+		portraits={
+			army={
+				large="GFX_portrait_capy_bara"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader invader_ii }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=329
+	name="STATE_329"
+	manpower = 85000
+	resources={
+		chromium=20 # was: 2
+	}
+	
+	state_category = town
+
+	history={
+		owner = MON
+		buildings = {
+			infrastructure = 2
+			arms_factory = 7
+			industrial_complex = 10
+		}
+		victory_points = {
+			10627 3
+		}
+		add_core_of = SIK
+		add_extra_state_shared_building_slots = 17
+	}
+
+	provinces={
+		1676 1877 4680 7703 7731 7804 7819 10597 10627 10646 12610 12625 
+	}
+}

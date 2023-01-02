@@ -1,0 +1,53 @@
+operations = {
+
+	MON_tribute = {
+
+		icon = generic_army_support
+
+		allowed = {
+			always = no
+		}
+		
+		available = {
+			330 = {
+				CONTROLLER = {
+					NOT = {
+						tag = MON
+					}
+				}
+			}
+		}
+
+		days_mission_timeout = 180
+
+		is_good = yes
+
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = MON
+			}
+			add_equipment_to_stockpile = {
+				type = squad_equipment
+				amount = 400
+				producer = MON
+			}
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = 2000
+				producer = MON
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 200
+				producer = MON
+			}
+			add_manpower = 10000
+			activate_mission = MON_tribute
+		}
+		
+	}
+	
+}
+

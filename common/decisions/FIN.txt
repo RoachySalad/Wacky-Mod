@@ -1,0 +1,172 @@
+operations = {
+
+	FIN_reclaim_territory = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = FIN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			SOV = {
+				owns_state = 146
+				owns_state = 147
+			}
+			has_full_control_of_state = 146
+			has_full_control_of_state = 147
+		}
+
+		visible = {
+			SOV = {
+				owns_state = 146
+				owns_state = 147
+			}
+		}
+		
+		complete_effect = {
+			add_political_power = 100
+			add_stability = 0.1
+			transfer_state = 147
+			transfer_state = 146
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	FIN_surrender_soviets = {
+		icon = generic_nationalism
+
+		allowed ={
+			original_tag = FIN
+
+		}
+
+		fire_only_once = yes
+		
+		visible = {
+			has_war_with = SOV
+			NOT = { has_country_flag = winter_war_finished  }
+		}
+
+		cancel_trigger = {
+			NOT = { has_war_with = SOV }
+		}
+
+		days_remove = 7
+
+		available = {
+			has_war_with = SOV
+			has_civil_war = no
+			is_in_faction = no
+			OR = {
+				casualties > 65000
+				surrender_progress > 0.20
+				NOT = {
+					146 = {
+						CONTROLLER = {
+							OR = {
+								tag = FIN
+								is_subject_of = FIN
+							}
+						}
+					}
+				}
+			}
+		}
+
+		remove_effect = {
+			SOV = {
+				white_peace = FIN
+				transfer_state = 146
+				transfer_state = 147
+			}
+			FIN = { set_country_flag = winter_war_finished }
+			diplomatic_relation = {
+				country = SOV
+				relation = non_aggression_pact
+			}
+			hidden_effect = {
+				MON = {
+					remove_ideas = MON_brothers_war
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 20
+		}
+	}
+	
+	FIN_victory_soviets = {
+		icon = generic_nationalism
+		allowed = {
+			original_tag = FIN
+		}
+		fire_only_once = yes
+		visible = {
+			has_war_with = SOV
+			NOT = { has_country_flag = winter_war_finished  }
+			
+		}
+		
+		cancel_trigger = {
+			NOT = { has_war_with = SOV }
+		}
+
+		available = {		
+			has_war_with = SOV
+			NOT = { has_war_with = GER }
+			OR = {
+				SOV = {
+					casualties > 350000
+				}
+				
+				195 = {
+					CONTROLLER = {
+						OR = {
+							tag = FIN
+							is_subject_of = FIN
+						}
+					}
+				}
+			}
+		}
+		days_remove = 7
+		remove_effect = {
+			hidden_effect = {
+				MON = {
+					remove_ideas = MON_brothers_war
+				}
+				SOV = {
+					add_days_mission_timeout = {
+						mission = SOV_winter_war
+						days = -300
+					}
+				}
+			}
+			effect_tooltip = {
+				SOV = {
+					white_peace = FIN
+				}
+				FIN = { set_country_flag = winter_war_finished }
+				diplomatic_relation = {
+					country = SOV
+					relation = non_aggression_pact
+				}
+				set_global_flag =  FIN_winter_victory
+
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+
+
+
+	}
+}
+

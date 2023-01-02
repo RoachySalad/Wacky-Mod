@@ -1,0 +1,29 @@
+add_namespace = startingevent
+
+# Non Historical AI
+news_event = {
+	id = startingevent.999
+	title = startingevent.999.t
+	desc = startingevent.999.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes	
+
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Player on AI Nation
+news_event = {
+	id = startingevent.1000
+	title = startingevent.1000.t
+	desc = startingevent.1000.d
+	picture = GFX_news_event_001
+
+	is_triggered_only = yes
+
+	option = {
+		name = startingevent.1000.a
+	}
+}

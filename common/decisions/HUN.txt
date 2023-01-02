@@ -1,0 +1,77 @@
+operations = {
+
+	HUN_adopt_toldi = {
+
+		icon = generic_tank
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			has_license = {
+				from = SWE
+				equipment = {
+					type = hun_light_tank_chassis_38m
+				}
+			}
+		}
+		
+		complete_effect = {
+			set_technology = { hun_light_tank_1 = 1 }
+		}
+	}
+	
+	# HUN_adopt_nimrod = {
+
+	# 	icon = generic_tank
+
+	# 	allowed = {
+	# 		original_tag = HUN
+	# 	}
+
+	# 	fire_only_once = yes
+		
+	# 	available = {
+	# 		has_license = {
+	# 			from = SWE
+	# 			equipment = {
+	# 				type = SWE_hun_light_spaa_equipment_1
+	# 			}
+	# 		}
+	# 	}
+		
+	# 	complete_effect = {
+	# 		set_technology = { SWE_hun_light_spaa_equipment_1 = 1 }
+	# 	}
+	# }
+	
+	HUN_adopt_turan = {
+
+		icon = generic_tank
+
+		allowed = {
+			original_tag = HUN
+		}
+
+		fire_only_once = yes
+		
+		available = {
+			has_license = {
+				from = GER
+				equipment = {
+					type = ger_light_tank_chassis_p35
+				}
+			}
+		}
+		
+		days_remove = 365
+		
+		remove_effect = {
+			set_technology = { hun_medium_tank_1 = 1 }
+		}
+	}
+}
+

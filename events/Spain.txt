@@ -1,0 +1,636 @@
+﻿###########################
+# Spanish Events
+###########################
+
+add_namespace = spain
+
+# Spanish Civil War
+country_event = {
+	id = spain.1
+	title = spain.1.t
+	desc = spain.1.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		tag = SPR
+		has_defensive_war = no
+		NOT = { has_government = fascism }
+		date > 1936.6.20 # Trigger at some point after 1936 elections
+		NOT = { has_dlc = "La Resistance" }
+	}
+
+	
+	
+	immediate = {
+		hidden_effect = {
+			remove_ideas = SPA_planned_uprising
+			every_state = {
+				limit = {
+					OR = {
+						state = 41
+						state = 165
+						state = 166
+						state = 167
+						state = 168
+						state = 169
+						state = 170
+						state = 171
+						state = 172
+						state = 173
+						state = 174
+						state = 175
+						state = 176
+						state = 788
+						state = 789
+						state = 790
+						state = 791
+						state = 792
+						state = 793
+						state = 794
+					}
+				}
+				add_province_modifier = {
+					static_modifiers = { unplanned_offensive }
+					province = {
+						all_provinces = yes
+					}
+				}
+				set_state_flag = SPR_unplanned_offensive_flag
+			}
+		}
+	}
+
+	option = { # Support Nationalists
+		name = spain.1.a
+		hidden_effect = {			
+			add_threat = 4
+			set_capital = { state = 176 }
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+				capital = 41
+				states = { 41 165 167 168 173 175 790 792 793 794 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				load_oob = "SPR_Civil_War"
+				set_equipment_fraction = 1.0
+				set_stability = 0.6
+				set_war_support = 0.8
+				#country_event = { id = spain.3 days = 1 }
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.40
+				}
+				add_ideas = SPR_death_before_surrender
+				add_ideas = SPR_disbanded_army_1
+				remove_ideas = SPR_political_violence
+				remove_ideas = SPR_national_strikes_3
+				remove_ideas = SPA_carlism_1
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+			
+			load_oob = "SPA_Civil_War"
+			set_equipment_fraction = 1.0
+			set_stability = 0.6
+			set_war_support = 0.5
+			add_ideas = SPA_death_before_surrender
+			remove_ideas = SPR_political_violence
+			remove_ideas = SPR_national_strikes_3
+			
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
+
+			#country_event = { id = spain.2 days = 7 }
+			ITA = {
+				add_timed_idea = { idea = SPA_spanish_civil_war_commitments days = 730 }
+				add_opinion_modifier = { target = ROOT modifier = SPA_spanish_civil_war_commitments }
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPA_the_army_of_africa
+				}
+				division_template = {
+					name = "División del Ejército de África"
+					template_counter = 4
+					division_names_group = SPR_INF_06
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0 }
+						artillery_brigade = { x = 3 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }
+					}
+				}
+				290 = {
+					create_unit = {
+						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+						owner = SPR
+					}
+					create_unit = {
+						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+						owner = SPR
+					}
+					create_unit = {
+						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+						owner = SPR
+					}
+					create_unit = {
+						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+						owner = SPR
+					}
+					create_unit = {
+						division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+						owner = SPR
+					}
+				}
+			}
+			create_field_marshal = {
+				name = "Francisco Franco"
+				id = 1108
+				gfx = "GFX_portrait_spain_francisco_franco"
+				traits = { organisational_leader logistics_wizard expert_delegator offensive_doctrine trait_SPA_nationalist_sympathies }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 4
+			}
+			create_corps_commander = {
+				name = "Mohamed Meziane"
+				id = 1109
+				gfx = "GFX_portrait_SPA_mohamed_meziane"
+				traits = { harsh_leader career_officer trait_SPA_nationalist_sympathies }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
+			create_corps_commander = { # Could fit for all 3 factions
+				name = "Gonzalo Queipo de Llano"
+				id = 1110
+				gfx = "GFX_portrait_SPA_gonzalo_queipo_de_llano"
+				traits = { infantry_officer trait_SPA_nationalist_sympathies }
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}		
+			create_field_marshal = {
+				name = "Emilio Mola"
+				id = 1111
+				gfx = "GFX_portrait_SPA_emilio_mola"
+				traits = { organisational_leader trait_cautious thorough_planner trait_SPA_nationalist_sympathies }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Juan Yagüe"
+				id = 1112
+				gfx = "GFX_portrait_SPA_juan_yague"
+				traits = { brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+				skill = 3
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			create_corps_commander = {
+				name = "Agustín Muñoz Grandes"
+				id = 1113
+				gfx = "GFX_portrait_SPA_augustin_muynoz_grandes"
+				traits = { infantry_officer trait_SPA_nationalist_sympathies }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 2	
+			}
+		}
+		custom_effect_tooltip = nationalists_chosen
+	}
+}
+
+# Nationalists: Seek Support
+country_event = {
+	id = spain.2
+	title = spain.2.t
+	desc = spain.2.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civil_war = yes
+		original_tag = SPR
+	}
+
+	option = {
+		name = spain.2.a
+		every_other_country = {
+			limit = {
+				has_government = fascism
+				NOT = { original_tag = SPR }
+			}
+			country_event = { id = spain.4 days = 1 }
+		}
+		if = {
+			limit = {
+				POR = { NOT = { has_government = communism } }
+			}
+			POR = { country_event = { id = spain.4 days = 1 } }
+		}
+	}
+
+	option = {
+		name = spain.2.b
+		add_political_power = 40
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Republicans: Seek Support
+country_event = {
+	id = spain.3
+	title = spain.2.t
+	desc = spain.3.d
+	picture = GFX_report_event_spain_civil_war_volunteers
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_civil_war = yes
+	}
+
+	option = {
+		name = spain.3.a
+		every_other_country = {
+			limit = {
+				has_government = communism
+				NOT = { tag = SPR }
+			}
+			country_event = { id = spain.5 days = 1 }
+		}
+		if = {
+			limit = {
+				MEX = { NOT = { has_government = fascism } }
+			}
+			MEX = { country_event = { id = spain.5 days = 1 } }
+		}
+	}
+
+	option = {
+		name = spain.3.b
+		add_political_power = 40
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Nationalist Spain Wants Our Help
+country_event = {
+	id = spain.4
+	title = spain.4.t
+	desc = spain.4.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = {
+		name = spain.4.a
+		set_country_flag = promised_help_nationalist_spain
+		custom_effect_tooltip = spain.4.a.tt
+	}
+
+	option = {
+		name = spain.4.b
+
+	}
+}
+
+# Republican Spain Wants Our Help
+country_event = {
+	id = spain.5
+	title = spain.5.t
+	desc = spain.5.d
+	picture = GFX_report_event_spain_civil_war_volunteers_02
+
+	is_triggered_only = yes
+
+	trigger = {
+		SPR = { has_civil_war = yes }
+	}
+
+	option = {
+		name = spain.5.a
+		set_country_flag = promised_help_republican_spain
+		custom_effect_tooltip = spain.4.a.tt
+	}
+
+	option = {
+		name = spain.5.b
+
+	}
+}
+
+# Nationalist Spain Appreciates our Help
+country_event = {
+	id = spain.6
+	title = spain.6.t
+	desc = spain.6.d
+	picture = GFX_report_event_finnish_letter
+
+	trigger = {
+		has_country_flag = promised_help_nationalist_spain
+		SPR = { has_civil_war = yes }
+		any_other_country = {
+			original_tag = SPR
+			has_government = fascism
+			ROOT = { is_lend_leasing = PREV }
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = spain.6.a
+		clr_country_flag = promised_help_nationalist_spain
+		random_other_country = {
+			limit = {
+				original_tag = SPR
+				has_government = fascism
+			}
+			add_opinion_modifier = { target = ROOT modifier = lend_leased_spanish_civil_war }
+		}
+	}
+}
+
+# Republican Spain Appreciates our Help
+country_event = {
+	id = spain.7
+	title = spain.7.t
+	desc = spain.7.d
+	picture = GFX_report_event_spain_civil_war_volunteers_01
+
+	trigger = {
+		has_country_flag = promised_help_republican_spain
+		SPR = { has_civil_war = yes }
+		is_lend_leasing = SPR
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = spain.7.a
+		clr_country_flag = promised_help_republican_spain
+		SPR = { add_opinion_modifier = { target = ROOT modifier = lend_leased_spanish_civil_war } }
+	}
+}
+
+# # Civil war over. Move Capital
+# country_event = {
+# 	id = spain.8
+# 	title = spain.8.t
+# 	desc = spain.8.d
+# 	picture = GFX_report_event_spain_civil_war_volunteers_01
+	
+# 	trigger = {
+# 		original_tag = SPR
+# 		OR = {
+# 			has_government = fascism
+# 			has_government = neutrality
+# 		}
+# 		has_global_flag = nationalist_victory
+# 		owns_state = 41
+# 	}
+
+# 	fire_only_once = yes
+
+# 	mean_time_to_happen = {
+# 		days = 2
+# 	}
+
+# 	option = {
+# 		ai_chance = { factor = 1 }
+# 		name = spain.8.a
+# 		set_capital = { state = 41 }
+# 		delete_unit_template_and_units = {
+# 			division_template = "Brigada Legionario"
+# 		}
+# 	}
+# 	option = {
+# 		ai_chance = { factor = 0 }
+# 		name = spain.8.b
+# 		delete_unit_template_and_units = {
+# 			division_template = "Brigada Legionario"
+# 		}
+# 	}
+# }
+
+# Election of 1936
+country_event = {
+	id = spain.9
+	title = spain.9.t
+	desc = spain.9.d
+	picture = GFX_report_event_election_vote
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPR
+		date < 1937.1.1
+	}
+
+	# Popular Front
+	option = {
+		ai_chance = { factor = 1 }
+		name = spain.9.a
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+}
+
+# Spanish Civil War if Franco is elected
+country_event = {
+	id = spain.10
+	title = spain.1.t
+	desc = spain.10.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = scw_over }
+		has_country_flag = SPR_communist_civil_war
+		has_defensive_war = no
+		date > 1936.2.16 # Trigger at some point after 1936 elections
+	}
+
+	mean_time_to_happen = {
+		days = 151	# Historical outbreak time after elections
+	}
+
+	option = { # Support Nationalists
+		name = spain.1.a
+		trigger = { is_ai = no }
+		hidden_effect = {
+			set_capital = { state = 176 }
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = communism
+				size = 0.5
+				capital = 41
+				states = { 41 165 167 168 173 175 790 792 793 794 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				load_oob = "SPR_Civil_War"
+				set_equipment_fraction = 0.7
+				set_stability = 0.8
+				set_war_support = 0.8
+				add_popularity = {
+					ideology = democratic
+					popularity = 0.35
+				}
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+
+			load_oob = "SPA_Civil_War"
+			set_equipment_fraction = 0.7
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_popularity = {
+				ideology = fascism
+				popularity = 1
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = communism
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
+		}
+		custom_effect_tooltip = nationalists_chosen
+	}
+	option = { # Support Republicans
+		name = spain.10.b
+		hidden_effect = {
+			start_civil_war = {
+				ideology = fascism
+				size = 0.5
+				capital = 176
+				states = { 166 169 170 171 172 174 176 177 178 290 297 699 788 789 791 }
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+				set_equipment_fraction = 0.7
+				set_stability = 0.9
+				set_war_support = 0.8
+				load_oob = "SPA_Civil_War"
+			}
+			news_event = { hours = 6 id = news.63 }
+			set_global_flag = spanish_civil_war
+
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			load_oob = "SPR_Civil_War"
+			set_equipment_fraction = 0.7
+			set_stability = 0.9
+			set_war_support = 0.8
+			add_popularity = {
+				ideology = fascism
+				popularity = -1
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.35
+			}
+			random_other_country = {
+				limit = {
+					original_tag = SPR
+					has_government = fascism
+				}
+				set_cosmetic_tag = SPR_civil_war
+			}
+		}
+		custom_effect_tooltip = republicans_chosen
+	}
+}
+
+#If Republicans win
+country_event = {
+	id = spain.111
+	title = spain.111.t
+	desc = spain.111.d
+	picture = GFX_report_event_spain_civil_war_soldiers
+	
+	fire_only_once = yes
+	trigger = {
+		has_government = communism
+		original_tag = SPR
+		has_global_flag = scw_over
+	}
+
+	option = {
+	name = spain.111.a 
+		remove_ideas = { SPR_death_before_surrender SPR_disbanded_army_1 }
+
+	}
+}

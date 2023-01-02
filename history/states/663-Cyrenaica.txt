@@ -1,0 +1,32 @@
+
+state={
+	id=663
+	name="STATE_663"
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 1
+			4060 = {
+				bunker = 2
+			}
+			1060 = {
+				bunker = 2
+			}
+			13245 = {
+				bunker = 2
+			}
+		}
+		add_core_of = LBA
+		victory_points = {
+			12079 5
+		}
+	}
+
+	provinces={
+		1060 1062 1186 4060 4063 4133 4200 7063 7139 7206 9977 10049 10785 11951 12025 12079 13078 13241 13245 13246 
+	}
+	manpower=8808
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

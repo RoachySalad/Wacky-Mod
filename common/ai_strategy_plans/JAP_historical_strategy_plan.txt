@@ -1,0 +1,107 @@
+Japanese_Historical = {
+    enable = {
+        original_tag = JAP
+    }
+    ai_national_focuses = {
+        JAP_secure_china
+        JAP_warrior_spirit
+        JAP_strengthen_the_divine_wind
+        JAP_arrest_the_traitors
+        JAP_purge_the_kodoha_faction
+        JAP_national_mobilization_law
+        JAP_guide_the_zaibatsus
+        JAP_expand_the_big_four
+        JAP_new_naval_estimates
+        JAP_control
+        JAP_nation_defence_state
+        JAP_kokura_arsenal
+        JAP_spiritual_mobilisation
+        JAP_austerity
+        JAP_war_ministry
+        JAP_expand_the_showa_steel_works
+        JAP_develop_aluminum_sources
+        JAP_prepare_expansion
+        JAP_combat_militarism
+        JAP_combat_gekokoju
+        JAP_new_shipyards
+        JAP_yasuda
+        JAP_liaison_conference
+        JAP_intervene_in_china
+        JAP_bank_loans
+        JAP_sumitomo
+        JAP_mining_expansion
+        JAP_promote_rivalry
+        JAP_light_industry_development
+        JAP_heavy_industry_development
+        JAP_control_the_army
+        JAP_technlogical_supremacy
+        JAP_appoint_tojo
+        JAP_supremacy_of_the_battlefleet
+        JAP_modern_subs
+        JAP_long_lance_torpedoes
+        JAP_mitsubishi_deal
+        JAP_mitsubishi_factories
+        JAP_mitsui
+        JAP_mitsui_dockyards
+        JAP_cruiser_modernization
+        JAP_escort_carriers
+        JAP_the_zero
+        JAP_unified_fighter_development
+        JAP_lessons_of_war
+        JAP_doctrine_lessons
+        JAP_infantry_lessons
+        JAP_air_innovations
+        JAP_strike_south_doctrine
+        JAP_pressure_siam
+        JAP_befriend_siam
+        JAP_expand_army
+        JAP_expand_marines
+        JAP_build_up_china
+        JAP_build_up_islands
+        JAP_modern_escorts
+        JAP_fleet_air_arm
+        JAP_bomber_modernization
+        JAP_strike_the_west
+    }
+
+    ai_strategy = {
+		type = prepare_for_war
+		id = CHI
+		value = 100
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = PRC
+		value = 100
+	}
+    ai_strategy = {
+        type = consider_weak
+        id = "CHI"
+        value = 20
+    }
+    ai_strategy = {
+        type = consider_weak
+        id = "PRC"
+        value = 20
+    }
+    ai_strategy = {
+		type = ignore
+		id = SOV
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = SPR
+		value = 100000
+	}
+    ai_strategy = {
+		type = invade
+		id = CHI
+		value = 50
+	}
+    ai_strategy = {
+		type = invade
+		id = PRC
+		value = 50
+	}
+
+}

@@ -1,0 +1,68 @@
+scripted_gui = {
+
+	axis_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "axis_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			axis_poster_slot = {
+				frame = AXIS_poster_center_icon_frame
+			}
+			
+		}
+	}
+
+	man_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "man_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			man_poster_slot = {
+				frame = MAN_poster_center_icon_frame
+			}
+			
+		}
+	}
+	
+	mon_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "mon_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			mon_poster_slot = {
+				frame = MON_poster_center_icon_frame
+			}
+			
+		}
+	}
+
+	allies_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "allies_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			allies_poster_slot = {
+				frame = ALLIES_poster_center_icon_frame
+			}
+			
+		}
+	}
+
+	com_propaganda_campaigns_ui = {
+		context_type = decision_category
+		window_name = "com_propaganda_campaigns_ui_window"
+
+		properties = {
+
+			com_poster_slot = {
+				frame = COM_poster_center_icon_frame
+			}
+			
+		}
+	}
+}
+

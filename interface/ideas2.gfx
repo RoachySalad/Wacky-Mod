@@ -1,0 +1,14 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_wasteland_economy"
+		texturefile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}	
+	SpriteType = {
+		name = "GFX_mtg_floating_harbors_medium"
+		texturefile = "gfx/interface/technologies/floating_harbor_equipment_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_osaka_artillery_arsenal"
+		texturefile = "gfx/interface/ideas/idea_osaka_army_arsenal.dds"
+	}
+}

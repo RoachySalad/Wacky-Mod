@@ -1,0 +1,1388 @@
+AXIS_propaganda_campaigns = {
+
+	AXIS_suppression_prop = { # ID = 2
+		priority = 6
+
+		icon = ger_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = ROM
+				original_tag = HUN
+				original_tag = BUL
+				original_tag = YUG
+				original_tag = SPR
+				#original_tag = VIC
+				original_tag = SIA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AXIS_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			compliance_gain = 0.01
+			resistance_target = -0.025
+		}
+
+		complete_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 2 }
+			set_country_flag = AXIS_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 1 }
+			clr_country_flag = AXIS_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	AXIS_industry_prop = { # ID = 3
+		priority = 5
+
+		icon = ger_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = ROM
+				original_tag = HUN
+				original_tag = BUL
+				original_tag = YUG
+				original_tag = SPR
+				#original_tag = VIC
+				original_tag = SIA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AXIS_running_prop
+			}
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+            industrial_capacity_factory = 0.025
+            production_lack_of_resource_penalty_factor = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 3 }
+			set_country_flag = AXIS_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 1 }
+			clr_country_flag = AXIS_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	AXIS_bombing_prop = { # ID = 4
+		priority = 4
+
+		icon = ger_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = ROM
+				original_tag = HUN
+				original_tag = BUL
+				original_tag = YUG
+				original_tag = SPR
+				#original_tag = VIC
+				original_tag = SIA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AXIS_running_prop
+			}
+			OR = {
+				has_war_with = ENG
+				has_war_with = USA
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+            industry_air_damage_factor = -0.125
+            static_anti_air_hit_chance_factor = 0.05
+            industry_repair_factor = 0.125
+		}
+
+		complete_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 4 }
+			set_country_flag = AXIS_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 1 }
+			clr_country_flag = AXIS_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	AXIS_veterans_prop = { # ID = 5
+		priority = 3
+
+		icon = ger_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = ROM
+				original_tag = HUN
+				original_tag = BUL
+				original_tag = YUG
+				original_tag = SPR
+				#original_tag = VIC
+				original_tag = SIA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AXIS_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+            experience_loss_factor = -0.05
+            experience_gain_army_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 5 }
+			set_country_flag = AXIS_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 1 }
+			clr_country_flag = AXIS_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	AXIS_research_prop = { # ID = 6
+		priority = 2
+
+		icon = ger_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = ROM
+				original_tag = HUN
+				original_tag = BUL
+				original_tag = YUG
+				original_tag = SPR
+				#original_tag = VIC
+				original_tag = SIA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AXIS_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+            research_speed_factor = 0.0375
+		}
+
+		complete_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 6 }
+			set_country_flag = AXIS_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 1 }
+			clr_country_flag = AXIS_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	AXIS_construction_prop = { # ID = 7
+		priority = 1
+
+		icon = ger_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = ROM
+				original_tag = HUN
+				original_tag = BUL
+				original_tag = YUG
+				original_tag = SPR
+				#original_tag = VIC
+				original_tag = SIA
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = AXIS_running_prop
+			}
+			GER = {
+				has_completed_focus = GER_reichsarbeit
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+            industry_free_repair_factor = 0.125
+            industry_repair_factor = 0.125
+            production_speed_infrastructure_factor = 0.075
+            production_speed_rail_way_factor = 0.075
+		}
+
+		complete_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 7 }
+			set_country_flag = AXIS_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { AXIS_poster_center_icon_frame = 1 }
+			clr_country_flag = AXIS_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+}
+
+MAN_propaganda_campaigns = {
+
+	MAN_china_prop = { # ID = 2
+		priority = 6
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MAN
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MAN_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			compliance_gain = 0.005
+			resistance_target = -0.025
+		}
+
+		complete_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 2 }
+			set_country_flag = MAN_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 1 }
+			clr_country_flag = MAN_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MAN_tech_prop = { # ID = 3
+		priority = 5
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MAN
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MAN_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			research_speed_factor = 0.0375
+		}
+
+		complete_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 3 }
+			set_country_flag = MAN_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 1 }
+			clr_country_flag = MAN_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MAN_air_prop = { # ID = 4
+		priority = 4
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MAN
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MAN_running_prop
+			}
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			air_power_projection_factor = 0.125
+			air_untrained_pilots_penalty_factor = -0.25
+		}
+
+		complete_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 4 }
+			set_country_flag = MAN_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 1 }
+			clr_country_flag = MAN_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MAN_tank_prop = { # ID = 5
+		priority = 3
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MAN
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MAN_running_prop
+			}
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			industrial_capacity_factory = 0.025
+			production_lack_of_resource_penalty_factor = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 5 }
+			set_country_flag = MAN_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 1 }
+			clr_country_flag = MAN_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MAN_strike_prop = { # ID = 6
+		priority = 2
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MAN
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MAN_running_prop
+			}
+			JAP = {
+				has_completed_focus = JAP_strike_the_west
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			navy_max_range_factor = 0.125
+			naval_strike = 0.05
+			naval_speed_factor = 0.05
+			naval_has_potf_in_combat_attack = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 6 }
+			set_country_flag = MAN_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 1 }
+			clr_country_flag = MAN_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MAN_bombing_prop = { # ID = 7
+		priority = 1
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MAN
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MAN_running_prop
+			}
+			OR = {
+				has_war_with = USA
+				has_war_with = ENG
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			industry_air_damage_factor = -0.125
+			static_anti_air_hit_chance_factor = 0.05
+			industry_repair_factor = 0.125
+		}
+
+		complete_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 7 }
+			set_country_flag = MAN_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MAN_poster_center_icon_frame = 1 }
+			clr_country_flag = MAN_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+}
+
+MON_propaganda_campaigns = {
+
+	MON_propaganda_motherland_calls = { # ID = 3
+		priority = 6
+
+		icon = sov_propaganda
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MON_running_prop
+			}
+			SOV = {
+				has_completed_focus = SOV_expand_the_agitprop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			training_time_factor = -0.1
+			minimum_training_level = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { MON_poster_center_icon_frame = 3 }
+			set_country_flag = MON_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MON_poster_center_icon_frame = 1 }
+			clr_country_flag = MON_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MON_propaganda_transport = { # ID = 8
+		priority = 5
+
+		icon = sov_propaganda
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MON_running_prop
+			}
+			SOV = {
+				has_completed_focus = SOV_expand_the_agitprop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			production_speed_supply_node_factor = 0.075
+			production_speed_rail_way_factor = 0.075
+			supply_consumption_factor = -0.05
+		}
+
+		complete_effect = {
+			set_variable = { MON_poster_center_icon_frame = 8 }
+			set_country_flag = MON_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MON_poster_center_icon_frame = 1 }
+			clr_country_flag = MON_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MON_propaganda_high_yield = { # ID = 11
+		priority = 4
+
+		icon = sov_propaganda
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MON_running_prop
+			}
+			surrender_progress < 0.15
+			SOV = {
+				has_completed_focus = SOV_expand_the_agitprop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			consumer_goods_factor = -0.025
+		}
+
+		complete_effect = {
+			set_variable = { MON_poster_center_icon_frame = 11 }
+			set_country_flag = MON_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MON_poster_center_icon_frame = 1 }
+			clr_country_flag = MON_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MON_propaganda_for_the_motherland = { # ID = 12
+		priority = 3
+
+		icon = sov_propaganda
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MON_running_prop
+			}
+			has_war = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+			SOV = {
+				has_completed_focus = SOV_collectivist_propaganda
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			experience_gain_army_factor = 0.075
+			command_power_gain_mult = 0.075
+			breakthrough_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { MON_poster_center_icon_frame = 12 }
+			set_country_flag = MON_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MON_poster_center_icon_frame = 1 }
+			clr_country_flag = MON_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MON_propaganda_knowledge = { # ID = 19
+		priority = 2
+
+		icon = sov_propaganda
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MON_running_prop
+			}
+			SOV = {
+				has_completed_focus = SOV_progress_cult
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			research_speed_factor = 0.025
+		}
+
+		complete_effect = {
+			set_variable = { MON_poster_center_icon_frame = 19 }
+			set_country_flag = MON_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MON_poster_center_icon_frame = 1 }
+			clr_country_flag = MON_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	MON_propaganda_stalin = { # ID = 23
+		priority = 1
+
+		icon = sov_propaganda
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = MON_running_prop
+			}
+			SOV = {
+				has_completed_focus = SOV_stalins_cult_of_personality
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			political_power_factor = 0.05
+			command_power_gain_mult = 0.05
+			war_support_weekly = 0.005
+			communism_drift = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { MON_poster_center_icon_frame = 23 }
+			set_country_flag = MON_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { MON_poster_center_icon_frame = 1 }
+			clr_country_flag = MON_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+}
+
+ALLIES_propaganda_campaigns = {
+
+	ALLIES_man_the_guns = { # ID = 2
+		priority = 6
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = HOL
+				original_tag = PHI
+				original_tag = NOR
+				original_tag = POL
+				#original_tag = INS
+				#original_tag = GRE
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ALLIES_running_prop
+			}
+			USA = {
+				has_completed_focus = USA_two_ocean_navy_act
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			industrial_capacity_dockyard = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 2 }
+			set_country_flag = ALLIES_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 1 }
+			clr_country_flag = ALLIES_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ALLIES_buy_extra_bonds = { # ID = 3
+		priority = 5
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = HOL
+				original_tag = PHI
+				original_tag = NOR
+				original_tag = POL
+				#original_tag = INS
+				#original_tag = GRE
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ALLIES_running_prop
+			}
+			USA = {
+				has_completed_focus = USA_the_giant_wakes
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			consumer_goods_factor = -0.0125
+		}
+
+		complete_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 3 }
+			set_country_flag = ALLIES_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 1 }
+			clr_country_flag = ALLIES_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ALLIES_keep_em_firing = { # ID = 4
+		priority = 4
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = HOL
+				original_tag = PHI
+				original_tag = NOR
+				original_tag = POL
+				#original_tag = INS
+				#original_tag = GRE
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ALLIES_running_prop
+			}
+			USA = {
+				has_completed_focus = USA_fair_labour_standards_act
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			industrial_capacity_factory = 0.0375
+		}
+
+		complete_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 4 }
+			set_country_flag = ALLIES_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 1 }
+			clr_country_flag = ALLIES_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ALLIES_united_we_are_strong = { # ID = 5
+		priority = 3
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = HOL
+				original_tag = PHI
+				original_tag = NOR
+				original_tag = POL
+				#original_tag = INS
+				#original_tag = GRE
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ALLIES_running_prop
+			}
+			is_in_faction = yes
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			stability_weekly = 0.0025
+			command_power_gain_mult = 0.125
+		}
+
+		complete_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 5 }
+			set_country_flag = ALLIES_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 1 }
+			clr_country_flag = ALLIES_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ALLIES_death_on_subs = { # ID = 6
+		priority = 2
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = HOL
+				original_tag = PHI
+				original_tag = NOR
+				original_tag = POL
+				#original_tag = INS
+				#original_tag = GRE
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ALLIES_running_prop
+			}
+			OR = {
+				has_war_with = GER
+				has_war_with = ITA
+				has_war_with = JAP
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			naval_detection = 0.125
+			convoy_escort_efficiency = 0.125
+			convoy_retreat_speed = 0.125
+		}
+
+		complete_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 6 }
+			set_country_flag = ALLIES_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 1 }
+			clr_country_flag = ALLIES_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	ALLIES_we_can_do_it  = { # ID = 7
+		priority = 1
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = MEX
+				original_tag = BRA
+				original_tag = HOL
+				original_tag = PHI
+				original_tag = NOR
+				original_tag = POL
+				#original_tag = INS
+				#original_tag = GRE
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = ALLIES_running_prop
+			}
+			USA = {
+				has_completed_focus = USA_wartime_industry
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			production_factory_efficiency_gain_factor = 0.05
+			line_change_production_efficiency_factor = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 7 }
+			set_country_flag = ALLIES_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { ALLIES_poster_center_icon_frame = 1 }
+			clr_country_flag = ALLIES_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+}
+
+COM_propaganda_campaigns = {
+	COM_together_prop = { # ID = 2
+		priority = 6
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = IRE
+				original_tag = SAF
+				original_tag = RAJ
+				original_tag = AST
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = COM_running_prop
+			}
+			ENG = {
+				has_completed_focus = ENG_commonwealth_ties
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			research_sharing_per_country_bonus_factor = 0.25
+			command_power_gain_mult = 0.125
+			autonomy_gain = 0.25
+		}
+
+		complete_effect = {
+			set_variable = { COM_poster_center_icon_frame = 2 }
+			set_country_flag = COM_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { COM_poster_center_icon_frame = 1 }
+			clr_country_flag = COM_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	COM_women_prop = { # ID = 3
+		priority = 5
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = IRE
+				original_tag = SAF
+				original_tag = RAJ
+				original_tag = AST
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = COM_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			production_factory_start_efficiency_factor = 0.05
+			line_change_production_efficiency_factor = 0.025
+		}
+
+		complete_effect = {
+			set_variable = { COM_poster_center_icon_frame = 3 }
+			set_country_flag = COM_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { COM_poster_center_icon_frame = 1 }
+			clr_country_flag = COM_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	COM_finest_hour_prop = { # ID = 4
+		priority = 4
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = IRE
+				original_tag = SAF
+				original_tag = RAJ
+				original_tag = AST
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = COM_running_prop
+			}
+			ENG = {
+				has_country_flag = this_was_their_finest_hour_speech
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			air_home_defence_factor = 0.125
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
+			minimum_training_level = -0.1
+		}
+
+		complete_effect = {
+			set_variable = { COM_poster_center_icon_frame = 4 }
+			set_country_flag = COM_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { COM_poster_center_icon_frame = 1 }
+			clr_country_flag = COM_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	COM_careless_talk_prop = { # ID = 5
+		priority = 3
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = IRE
+				original_tag = SAF
+				original_tag = RAJ
+				original_tag = AST
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = COM_running_prop
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			civilian_intel_to_others = -7.5
+			airforce_intel_to_others = -7.5
+			navy_intel_to_others = -7.5
+			army_intel_to_others = -7.5
+		}
+
+		complete_effect = {
+			set_variable = { COM_poster_center_icon_frame = 5 }
+			set_country_flag = COM_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { COM_poster_center_icon_frame = 1 }
+			clr_country_flag = COM_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	COM_wings_victory_prop = { # ID = 6
+		priority = 2
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = IRE
+				original_tag = SAF
+				original_tag = RAJ
+				original_tag = AST
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = COM_running_prop
+			}
+			ENG = {
+				has_completed_focus = ENG_raf
+			}
+			has_war = yes
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			air_air_superiority_agility_factor = 0.025
+			air_interception_defence_factor = 0.025
+			air_mission_efficiency = 0.05
+		}
+
+		complete_effect = {
+			set_variable = { COM_poster_center_icon_frame = 6 }
+			set_country_flag = COM_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { COM_poster_center_icon_frame = 1 }
+			clr_country_flag = COM_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+
+	COM_dig_victory_prop = { # ID = 7
+		priority = 1
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			OR = {
+				original_tag = CAN
+				original_tag = IRE
+				original_tag = SAF
+				original_tag = RAJ
+				original_tag = AST
+				original_tag = NZL
+			}
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = COM_running_prop
+			}
+			ENG = {
+				has_completed_focus = ENG_war_cabinet
+			}
+		}
+
+		days_remove = 365
+
+		days_re_enable = 360
+
+		cost = 50
+
+		modifier = {
+			local_resources_factor = 0.05
+			min_export = -0.05
+		}
+
+		complete_effect = {
+			set_variable = { COM_poster_center_icon_frame = 7 }
+			set_country_flag = COM_running_prop
+		}
+
+		remove_effect = {
+			set_variable = { COM_poster_center_icon_frame = 1 }
+			clr_country_flag = COM_running_prop
+			hidden_effect = { FROM = { country_event = { id = generic.26 hours = 1} } }
+		}
+	}
+}

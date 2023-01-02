@@ -1,0 +1,227 @@
+ideas = {
+
+	country = {
+		ALLIES_operation_overlord = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+
+			modifier = {
+				production_speed_naval_base_factor = 0.15
+				invasion_preparation = -0.2
+				naval_invasion_penalty = -0.1
+				naval_invasion_planning_bonus_speed = 0.2
+			}
+		}
+
+
+		ALLIES_operation_husky = {
+
+		allowed = {
+			always = no
+		}
+
+		allowed_civil_war = {
+			always = yes
+		}
+		
+		removal_cost = -1
+
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+
+		modifier = {
+			invasion_preparation = -0.2
+			naval_invasion_penalty = -0.1
+			naval_invasion_planning_bonus_speed = 0.2
+		}
+
+		}
+		ASN_ALLIES_lost_the_pacific = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = SPA
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = BUL
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = HUN
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = VIC
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = ROM
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+
+
+			modifier = {
+				invasion_preparation = 0.1
+				naval_invasion_planning_bonus_speed = -0.1
+			}
+		}
+		ASN_ALLIES_the_sun_never_sets_idea_1 = {
+
+			name = ASN_ALLIES_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+		
+		ASN_ALLIES_the_sun_never_sets_idea_2 = {
+
+			name = ASN_ALLIES_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+
+		
+		ASN_ALLIES_the_sun_never_sets_idea_3 = {
+
+			name = ASN_ALLIES_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+		ASN_ALLIES_the_sun_never_sets_idea_4 = {
+
+			name = ASN_ALLIES_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+		ASN_ALLIES_the_sun_never_sets_idea_5 = {
+
+			name = ASN_ALLIES_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+
+	}
+
+}
+

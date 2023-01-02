@@ -1,0 +1,108 @@
+defined_text = { # state
+	name = mark_state_tooltip
+
+	text = {
+		trigger = {
+			has_state_flag = marked_for_transfer
+		}
+		localization_key = mark_state_no
+	}
+	text = {
+		localization_key = mark_state_yes
+	}
+}
+defined_text = { # Country
+	name = GetLeftDesc
+	text = {
+		localization_key = POL_san_left_desc
+	}
+}
+
+defined_text = { # Country
+	name = GetRightDesc
+	text = {
+		localization_key = POL_san_right_desc
+	}
+}
+defined_text = { # global
+	name = transfer_states_tooltip
+
+	text = {
+		trigger = {
+			has_country_flag = transfer_enabled
+		}
+		localization_key = transfer_states_off
+	}
+	text = {
+		localization_key = transfer_states_on
+	}
+}
+
+defined_text = { # global
+	name = ST_TOOLTIP
+
+	text = {
+		trigger = {
+			has_country_flag = transfer_enabled
+		}
+		localization_key = ST_TOOLTIP_off
+	}
+	text = {
+		localization_key = ST_TOOLTIP_on
+	}
+}
+
+defined_text = { # global
+	name = mark_status
+
+	text = {
+		trigger = {
+			has_state_flag = marked_for_transfer
+		}
+		localization_key = mark_status_marked
+	}
+	text = {
+		localization_key = mark_status_unmarked
+	}
+}
+defined_text = { # global
+	name = cheat_selected
+	text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=0}
+			NOT={Root={has_country_flag=cheating}}
+		}
+		localization_key = CHEAT_SELECT
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {Root.selected_cheat=1}
+			Root={has_country_flag=cheating}}
+		}
+		localization_key = CHEAT1
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=2}
+		}
+		localization_key = CHEAT2
+	}
+	text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=3}
+		}
+		localization_key = CHEAT3
+	}
+		text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=4}
+		}
+		localization_key = CHEAT4
+	}
+			text = {
+		trigger = {
+			check_variable = {Root.selected_cheat=5}
+		}
+		localization_key = CHEAT5
+	}
+}
