@@ -9,7 +9,7 @@ prospect_for_resources = {
 		}
 		
 		available = {
-			has_completed_focus = ITA_oil_prospecting
+			has_completed_focus = ITA_denounce_the_sanctions
 			OR = {
 				NOT = { has_country_flag = ITA_lib_3 }
 				has_tech = excavation1
@@ -51,7 +51,7 @@ prospect_for_resources = {
 				clr_country_flag = ITA_lib_1
 				add_resource = {
 					type = oil
-					amount = 120
+					amount = 600
 					state = 450
 				}
 			}
@@ -63,7 +63,7 @@ prospect_for_resources = {
 				clr_country_flag = ITA_lib_2
 				add_resource = {
 					type = oil
-					amount = 140
+					amount = 1
 					state = 450
 				}
 			}
@@ -75,7 +75,7 @@ prospect_for_resources = {
 				clr_country_flag = ITA_lib_3
 				add_resource = {
 					type = oil
-					amount = 160
+					amount = 1
 					state = 450
 				}
 			}
@@ -87,7 +87,7 @@ prospect_for_resources = {
 				clr_country_flag = ITA_lib_4
 				add_resource = {
 					type = oil
-					amount = 180
+					amount = 1
 					state = 450
 				}
 			}
@@ -99,7 +99,7 @@ prospect_for_resources = {
 				clr_country_flag = ITA_lib_5
 				add_resource = {
 					type = oil
-					amount = 200
+					amount = 1
 					state = 450
 				}
 			}
@@ -107,7 +107,7 @@ prospect_for_resources = {
 				set_country_flag = ITA_lib_1
 				add_resource = {
 					type = oil
-					amount = 100
+					amount = 1
 					state = 450
 				}
 			}
