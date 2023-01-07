@@ -107,7 +107,7 @@ prospect_for_resources = {
 				set_country_flag = ITA_lib_1
 				add_resource = {
 					type = oil
-					amount = 1
+					amount = 450
 					state = 450
 				}
 			}
