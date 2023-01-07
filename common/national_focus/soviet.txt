@@ -5930,7 +5930,7 @@
 		id = SOV_new_ideas
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SOV_red_army }
-		mutually_exclusive = { focus = SOV_deep_operations }
+		mutually_exclusive = { focus = SOV_traditional_ideas }
 		x = 4
 		y = 1
 		cost = 5
