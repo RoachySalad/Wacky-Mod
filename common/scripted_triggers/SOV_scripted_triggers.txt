@@ -331,6 +331,7 @@ SOV_has_active_tank_designer_any = {
 			SOV_has_active_tank_designer_okmo = yes
 			SOV_has_active_tank_designer_mytishchy = yes
 			SOV_has_active_tank_designer_kirov = yes
+			SOV_has_active_tank_designer_SOV_tank_destroyer_board = yes
 		}
 	}
 }
@@ -348,6 +349,10 @@ SOV_has_active_tank_designer_morozov = {
 	}
 }
 
+
+
+
+
 SOV_has_active_tank_designer_astrov = {
 	OR = {
 		has_idea = SOV_astrov_design_bureau
@@ -360,6 +365,15 @@ SOV_has_active_tank_designer_astrov = {
 		has_idea = SOV_astrov_design_bureau_final
 	}
 }
+
+SOV_has_active_tank_designer_SOV_tank_destroyer_board = {
+	OR = {
+		has_idea = SOV_tank_destroyer_board
+	}
+}
+
+
+
 
 SOV_has_active_tank_designer_okmo = {
 	OR = {
