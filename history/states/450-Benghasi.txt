@@ -3,9 +3,7 @@ state={
 	id=450
 	name="STATE_450"
 	manpower = 82535
-	resources = {
-		oil = 50
-	}
+	
 	state_category = enclave
 
 	history={
