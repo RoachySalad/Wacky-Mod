@@ -9,3 +9,5 @@ Reinforcement max wait changed from 10 to 1
 france fix with Supply and Capital after capitulation
 
 rebalance the deep battle side of Russia's Focustree
+
+Armour designer rework on Germany and Sovjets
