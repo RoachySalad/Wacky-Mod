@@ -1810,9 +1810,8 @@ technologies = {
 	nkvd_tech = {
 
 		military_police = {
-			max_organisation = 40
-			default_morale = 0.2
-			casualty_trickleback = -0.2
+			max_organisation = 60
+			default_morale = 0.3
 		}
 		
 		allow = {
