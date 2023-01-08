@@ -289,46 +289,6 @@ FRA_controls_central_africa = {
 			}
 		}
 	}
-	718 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	295 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	538 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	768 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	769 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
 }
 FRA_has_inefficient_economy = {
 	OR = {
