@@ -174,12 +174,12 @@
  com_nuffield:0 "Nuffield Mech and Aero"
  vickers_armstrong_eng:0 "Nuffield Mech and Aeri"
  com_rsaf_enfield:0 "RSAF Enfield"
- nuffield_trait:0 "Cruiser Tank Manufacturer"
- vauxhall_trait:0 "Infantry Tank Manufacturer"
- cope_trait:0 "Cope Seethe"
- ENG_Heathy:0 "Heathy"
- cookie:0 "Cookie"
- game_master:0 "Game Master"
+ nuffield_trait:0 "Mech Manufacturer"
+ vauxhall_trait:0 "TD Specialisation"
+ cope_trait:0 "Cultural Diversity Manufacturer"
+ GER_opel_trait:0 "Sonderkraftfahrzeug Designer"
+
+
  #### DECISIONS ####
  ENG_develop_ast:0 "Develop Australia"
  ENG_develop_can:0 "Develop Canada"
