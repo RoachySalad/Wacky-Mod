@@ -1851,7 +1851,9 @@ technologies = {
 	}
 	
 	attritional_containment = {
-
+		category_light_infantry = {
+			max_organisation = 10
+		}
 		experience_loss_factor = -0.111
 
 		enable_tactic = tactic_elastic_defense
