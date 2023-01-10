@@ -730,7 +730,7 @@ ideas = {
 				original_tag = HUN
 			}
 			available = {
-				has_completed_focus = HUN_home_defence
+				has_completed_focus = HUN_home_defense
 			}
 			research_bonus = {
 				armor = 0.15
