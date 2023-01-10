@@ -266,7 +266,7 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				conscription_factor = 0.2
+				conscription_factor = 0.3
 			}
 		}
 
