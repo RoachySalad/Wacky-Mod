@@ -157,9 +157,6 @@ leader_traits = {
 					hardness = -0.05
 				}
 				mechanized_equipment = {
-					breakthrough = 0.05
-					build_cost_ic = -0.05
-					reliability = 0.05
 					maximum_speed = 0.1
 				}
 			}
