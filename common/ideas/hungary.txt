@@ -721,7 +721,25 @@ ideas = {
 				factor = 1
 			}
 		}
-
+		HUN_discord_sex_designer = {
+			name = discord_sex
+			
+			picture = henschel
+			cost = 150
+			allowed = {
+				original_tag = HUN
+			}
+			available = {
+				has_completed_focus = HUN_home_defence
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			traits = { discord_sex_trait }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		HUN_italian_tank_designer = {
 			name = fiat
 			
