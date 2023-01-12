@@ -745,9 +745,8 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	picture = tactic_guerrilla_tactics
 	countered_by = tactic_partisan_sweeps
 	
-	combat_width = -0.5
-	attacker = -0.7
-	defender = -0.6
+	attacker = -0.8
+	defender = -0.5
 }
 
 tactic_human_wave_tactics = { #People's army attacker tactic
