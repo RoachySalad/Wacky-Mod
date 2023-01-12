@@ -18,3 +18,4 @@ guerilla combat width changed
 
 tank 5% bonus removed in artillery tree
 
+inf nerf max strenght from 25 to 24.
