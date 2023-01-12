@@ -241,8 +241,8 @@ NDefines.NMilitary.OUT_OF_FUEL_EQUIPMENT_MULT = 0.25				-- ratio of the stats th
 NDefines.NMilitary.OUT_OF_FUEL_SPEED_MULT = 0.1					-- speed mult that armies get when out of fuel
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 240             	-- default capacity if not specified
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
-NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 2
-NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 1
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 10
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 5
 
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 120
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 120
