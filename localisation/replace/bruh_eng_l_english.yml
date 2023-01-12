@@ -230,6 +230,8 @@
  RAJ_famine_descsion_desc:0 "We must quickly solve this pending famine, before mass starvation ensues."
  RAJ_risk_of_famine_desc:2 "The Indian system of food production is very fragile. Even a small interruption might cause a collapse.\n§RIf we were to go to war in this current state, a famine is assured in short order.§!"
  ENG_annex_ire:0 "Annex Ireland"
+ ENG_invite_greece:0 "Invite Greece to the Allies"
+ ENG_invite_norway:0 "Invite Norway to the Allies"
  #### TOOLTIP ####
  ENG_home_guard_tt:0 "Create the Home Guard, Spawning §Y40 20 Width Garrison Divisions§! across the UK.\n§RIf we don't control all the states we won't get all 40 divisions§!"
  ENG_commandos_tt:0 "Enables §HCommando Improvements§!\n§HAll Marines:\n    Ampibious§!\n        £attack_texticon Attack: §G+10%§!\n        £movement_texticon Movement: §G+10%§!\n   £land_night_attack_texticon Land Night Attack: §G+20%§!\n   £specops_texticon  Special Forces Equipment Required: §R+5§!\n   £training_speed_texticon Training Time: §R20§!"
