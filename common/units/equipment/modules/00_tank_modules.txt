@@ -2012,13 +2012,10 @@ equipment_modules = {
 		forbid_equipment_type = flame
 
 		add_stats = {
-			build_cost_ic = 4
-			reliability = -0.15
-		}
-		
-		multiply_stats = {
-			build_cost_ic = 0.1
-		}
+			build_cost_ic = 2
+			reliability = -0.10
+			breakthrough = 5
+		}	
 	}
 
 	secondary_turret_hmg = {
