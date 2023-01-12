@@ -22,3 +22,6 @@ inf nerf max strenght from 25 to 24.
 
 tank designer rework
 
+td designer nerf
+
+M3 secandary turret Removed
