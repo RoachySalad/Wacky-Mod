@@ -27,3 +27,5 @@ td designer nerf
 M3 secandary turret Removed
 
 more manpower to australia
+
+GBP now gives the regular 10% experience loss
