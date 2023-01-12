@@ -1,4 +1,4 @@
-'ENG_imperial_conference_decision = {
+ENG_imperial_conference_decision = {
 	
 	ENG_imperial_conference_decision = {
 
