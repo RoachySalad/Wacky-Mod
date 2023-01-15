@@ -230,7 +230,7 @@ equipments = {
 		
 		resources = {
 			steel = 20
-			rubber = 20
+			rubber = 10
 		}		
 	}
 
@@ -265,7 +265,7 @@ equipments = {
 		
 		resources = {
 			steel = 30
-			rubber = 20
+			rubber = 10
 		}
 	}
 	
