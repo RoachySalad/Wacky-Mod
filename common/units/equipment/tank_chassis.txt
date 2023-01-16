@@ -369,7 +369,11 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			module = extra_ammo_storage
+			module = extra_ammo_storage1
+			count < 2
+		}
+		module_count_limit = {
+			module = extra_ammo_storage2
 			count < 2
 		}
 		module_count_limit = {

@@ -9,7 +9,6 @@ equipment_modules = {
 
 		add_stats = {
 			fuel_consumption = 2.5
-			maximum_speed = 1
 		}
 		multiply_stats = {
 			maximum_speed = 0.1
@@ -39,7 +38,6 @@ equipment_modules = {
 			reliability = -0.05
 		}
 		multiply_stats = {
-			build_cost_ic = 0.05
 			breakthrough = 0.1
 			defense = 0.1
 		}
@@ -71,11 +69,11 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = -0.1
+			hardness = -0.05
 		}
 		
 		multiply_stats = {
-			build_cost_ic = -0.1			
-			armor_value = -0.1
+			build_cost_ic = -0.05			
 		}
 	}
 
@@ -86,15 +84,15 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.1
+			hardness = 0.05
 		}
 		
 		multiply_stats = {
-			build_cost_ic = 0.1
-			armor_value = 0.1
+			build_cost_ic = 0.05
 			
 		}
 		build_cost_resources = {
-			chromium = 5
+			chromium = 10
 		}
 		dismantle_cost_ic = 1
 	}
@@ -268,25 +266,7 @@ equipment_modules = {
 
 	tank_light_turret_1 = { ## TIER 1 ##
 		abbreviation = "l1m"
-		category = tank_light_turret_type
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
-
-		add_stats = {
-			build_cost_ic = 2
-		}
-		
-		build_cost_resources = {
-			steel = 5
-		}
-		dismantle_cost_ic = 1
-	}
-
-	tank_light_turret_2 = { ## TIER 2 ##
-		abbreviation = "l2m"
-		category = tank_light_turret_type
+		category = tank_light_turret_type_1
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = anti_tank
@@ -294,6 +274,31 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_1
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 2
+		}
+		
+		build_cost_resources = {
+			steel = 4
+		}
+		dismantle_cost_ic = 1
+	}
+
+	tank_light_turret_2 = { ## TIER 2 ##
+		abbreviation = "l2m"
+		category = tank_light_turret_type_2
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_1
 				tank_armament_tier_2
 			}
 		}
@@ -304,14 +309,14 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 5
+			steel = 6
 		}
 		dismantle_cost_ic = 2
 	}
 
 	tank_light_turret_3 = { ## TIER 3 ##
 		abbreviation = "l3m"
-		category = tank_light_turret_type_alt
+		category = tank_light_turret_type_3
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = anti_tank
@@ -319,6 +324,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_1
 				tank_armament_tier_2
 				tank_armament_tier_3				
 			}
@@ -347,6 +353,7 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_1
 				tank_armament_tier_2
 				tank_armament_tier_3
 				tank_armament_tier_4		
@@ -367,36 +374,8 @@ equipment_modules = {
 	}
 
 
-	tank_light_turret_open = {  ## TIER 4 ##
+	tank_light_turret_open = {  ## TIER S1 ##
 		abbreviation = "l3m"
-		category = tank_light_turret_type_1
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = flame
-		forbid_equipment_type_exact_match = armor
-		
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_armament_tier_2
-				tank_armament_tier_3
-				tank_armament_tier_4
-			}
-		}
-
-		add_stats = {
-			build_cost_ic = 4
-			hardness = -0.2
-		}
-		
-		multiply_stats = {
-			armor_value = -0.25
-			build_cost_ic = -0.05
-			maximum_speed = 0.1
-		}
-		dismantle_cost_ic = 1
-	}
-
-	tank_light_turret_open_large = {  ## TIER 6 ##
-		abbreviation = "l3l"
 		category = tank_light_turret_type_5
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = flame
@@ -404,6 +383,42 @@ equipment_modules = {
 		
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_1
+				tank_armament_tier_2
+				tank_armament_tier_3
+				tank_armament_tier_4
+				tank_armament_tier_aa
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 2
+			hardness = -0.1
+		}
+		
+		multiply_stats = {
+			build_cost_ic = -0.1
+			air_attack = 0.1
+			breakthrough = -0.1
+		}
+		build_cost_resources = {
+			steel = 4
+		}
+		dismantle_cost_ic = 1
+	}
+
+	
+
+	tank_light_superstructure = { ## TIER S2 ##
+		abbreviation = "lfs"
+		category = tank_light_turret_type_6
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type_exact_match = armor
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_1
 				tank_armament_tier_2
 				tank_armament_tier_3
 				tank_armament_tier_4
@@ -412,22 +427,60 @@ equipment_modules = {
 			}
 		}
 
+		
 		add_stats = {
-			build_cost_ic = 7
+			build_cost_ic = 2
+		}
+
+		multiply_stats = {
+			breakthrough = -0.2
+			build_cost_ic = -0.1
+		}
+		build_cost_resources = {
+			steel = 6
+		}
+		dismantle_cost_ic = 2
+	}
+
+	tank_light_open_superstructure = { ## TIER S3 ##
+		abbreviation = "los"
+		category = tank_light_turret_type_7
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = flame
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_1
+				tank_armament_tier_2
+				tank_armament_tier_3
+				tank_armament_tier_4
+				tank_armament_tier_5
+				tank_armament_tier_6
+			}
+		}
+
+		
+		add_stats = {
+			build_cost_ic = 2
 			hardness = -0.2
 		}
-		
+
 		multiply_stats = {
-			armor_value = -0.25
-			build_cost_ic = -0.05
-			maximum_speed = 0.1
+			build_cost_ic = -0.1
+			breakthrough = -0.3
 		}
+		build_cost_resources = {
+			steel = 4
+		}
+
 		dismantle_cost_ic = 1
 	}
 
-	tank_light_superstructure = { ## TIER 4 ##
+
+	tank_light_superstructure_hetzer = { ## TIER S4 ##
 		abbreviation = "lfs"
-		category = tank_light_turret_type_2
+		category = tank_light_turret_type_8
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = artillery
@@ -435,63 +488,42 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_2
-				tank_armament_tier_3
-				tank_armament_tier_4
-			}
-		}
-
-		
-		add_stats = {
-			build_cost_ic = 1
-		}
-
-		multiply_stats = {
-			breakthrough = -0.15
-			armor_value = 0.05
-		}
-		build_cost_resources = {
-			steel = 5
-		}
-		dismantle_cost_ic = 2
-	}
-
-	tank_light_open_superstructure = { ## TIER 4 ##
-		abbreviation = "los"
-		category = tank_light_turret_type_3
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = flame
-		forbid_equipment_type = amphibious 
-
-		allowed_module_categories = {
-			main_armament_slot = {
+				tank_armament_tier_1
 				tank_armament_tier_2
 				tank_armament_tier_3
 				tank_armament_tier_4
 				tank_armament_tier_5
 				tank_armament_tier_6
+				tank_armament_tier_7
 			}
 		}
 
 		
 		add_stats = {
-			hardness = -0.35
+			build_cost_ic = 4
 		}
 
 		multiply_stats = {
-			armor_value = -0.5
+			breakthrough = -0.1
 			build_cost_ic = -0.1
-			breakthrough = -0.3
-			maximum_speed = 0.15
-			air_attack = -0.2
 		}
-		dismantle_cost_ic = 1
+		build_cost_resources = {
+			steel = 8
+		}
+		dismantle_cost_ic = 2
 	}
+
+
+
+
+
+
+
+
 
 	tank_medium_turret_1 = { ## TIER 4 ##
 		abbreviation = "m1m"
-		category = tank_medium_turret_type
+		category = tank_medium_turret_type_1
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = anti_tank
@@ -499,9 +531,6 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_1
-				tank_armament_tier_2
-				tank_armament_tier_3
 				tank_armament_tier_4
 			}
 		}
@@ -513,14 +542,14 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 5
+			steel = 8
 		}
 		dismantle_cost_ic = 3
 	}
 
 	tank_medium_turret_2 = { ## TIER 5 ##
 		abbreviation = "m2m"
-		category = tank_medium_turret_type
+		category = tank_medium_turret_type_2
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = anti_tank
@@ -528,50 +557,83 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_4
 				tank_armament_tier_5
 			}
 		}
 
-
-		add_stats = {
-			build_cost_ic = 7
-		}
-		
-		multiply_stats = {
-		}
-		build_cost_resources = {
-			steel = 8
-		}
-		dismantle_cost_ic = 3
-	}
-
-	tank_medium_turret_3 = { ## TIER 6 ##
-		abbreviation = "m3m"
-		category = tank_medium_turret_type_1
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = anti_tank
-		forbid_equipment_type = artillery
-
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_armament_tier_5
-				tank_armament_tier_6
-			}
-		}
 
 		add_stats = {
 			build_cost_ic = 8
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.05
 		}
 		build_cost_resources = {
-			steel = 8
+			steel = 10
 		}
 		dismantle_cost_ic = 3
 	}
+
+	tank_medium_turret_3 = { ## TIER 6 ##
+		abbreviation = "m3m"
+		category = tank_medium_turret_type_3
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_4
+				tank_armament_tier_5
+				tank_armament_tier_6
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 10
+		}
+		
+		multiply_stats = {
+		}
+		build_cost_resources = {
+			steel = 12
+		}
+		dismantle_cost_ic = 3
+	}
+
+	tank_medium_turret_4 = { ## TIER 7 ##
+		abbreviation = "m3m"
+		category = tank_medium_turret_type_4
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_4
+				tank_armament_tier_5
+				tank_armament_tier_6
+				tank_armament_tier_7
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 12
+		}
+		
+		multiply_stats = {
+		}
+		build_cost_resources = {
+			steel = 14
+		}
+		dismantle_cost_ic = 3
+	}
+
+
+
 
 	# tank_medium_turret_4 = { ## TIER 5 ##
 	# 	abbreviation = "m4m"
@@ -602,97 +664,76 @@ equipment_modules = {
 	# 	}
 	# }
 
-	tank_medium_turret_open = { ## TIER 7 ##
+	tank_medium_turret_open = { ## S1 ##
 		abbreviation = "mom"
-		category = tank_medium_turret_type_2
+		category = tank_medium_turret_type_5
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = flame
 		forbid_equipment_type_exact_match = armor
 		
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_4
 				tank_armament_tier_5
 				tank_armament_tier_6
+				tank_armament_tier_7
+				tank_armament_tier_heavy_aa
 			}
 		}
 
 		add_stats = {
 			build_cost_ic = 6
-			hardness = -0.15
+			hardness = -0.1
 		}
 		
 		multiply_stats = {
-			armor_value = -0.25
-			build_cost_ic = -0.05
-			maximum_speed = 0.1
+			build_cost_ic = -0.1
+			air_attack = 0.1
+			breakthrough = -0.1
 		}
 		build_cost_resources = {
-			steel = 5
+			steel = 8
 		}
 		dismantle_cost_ic = 3
 	}
 
-	tank_medium_superstructure = { ## TIER 6 ##
+	tank_medium_superstructure = { ## S2 ##
 		abbreviation = "mfs"
-		category = tank_medium_turret_type_3
+		category = tank_medium_turret_type_6
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_5
-				tank_armament_tier_6
-			}
-		}
-
-		
-		add_stats = {
-			build_cost_ic = 4
-		}
-
-		multiply_stats = {
-			breakthrough = -0.15
-			armor_value = 0.05
-		}
-		dismantle_cost_ic = 3
-	}
-
-	tank_large_medium_superstructure = { ## TIER 8 ##
-		abbreviation = "mfl"
-		category = tank_medium_turret_type_5
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
-		forbid_equipment_type_exact_match = armor
-
-		allowed_module_categories = {
-			main_armament_slot = {
+				tank_armament_tier_4
 				tank_armament_tier_5
 				tank_armament_tier_6
 				tank_armament_tier_7
 				tank_armament_tier_8
+				tank_armament_tier_9
 			}
 		}
 
 		
 		add_stats = {
-			build_cost_ic = 3
+			build_cost_ic = 6
 		}
 
-		multiply_stats = {
-			breakthrough = -0.15
-			armor_value = 0.10
-			maximum_speed = -0.15
+		mmultiply_stats = {
+			breakthrough = -0.2
+			build_cost_ic = -0.1
 		}
-		dismantle_cost_ic = 5
+		build_cost_resources = {
+			steel = 10
+		}
+		dismantle_cost_ic = 3
 	}
+
 	
-	
-	tank_medium_open_superstructure = { ## TIER 7 ##
+	tank_medium_open_superstructure = { ## S3 ##
 		abbreviation = "mos"
-		category = tank_medium_turret_type_4
+		category = tank_medium_turret_type_7
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type_exact_match = armor
 		forbid_equipment_type = flame
@@ -700,32 +741,76 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
+				tank_armament_tier_4
 				tank_armament_tier_5
 				tank_armament_tier_6
 				tank_armament_tier_7
 				tank_armament_tier_8
+				tank_armament_tier_9
 			}
 		}
 
 		
 		add_stats = {
-			hardness = -0.3
+			build_cost_ic = 6
+			hardness = -0.2
 		}
 
 		multiply_stats = {
-			armor_value = -0.5
+			breakthrough = -0.1
 			build_cost_ic = -0.1
-			breakthrough = -0.3
-			maximum_speed = 0.15
-			air_attack = -0.2
+		}
+		build_cost_resources = {
+			steel = 8
 		}
 		dismantle_cost_ic = 3
 
 	}
 
+	tank_medium_superstructure_E50 = { ## S4 ##
+		abbreviation = "mfl"
+		category = tank_medium_turret_type_8
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_4
+				tank_armament_tier_5
+				tank_armament_tier_6
+				tank_armament_tier_7
+				tank_armament_tier_8
+				tank_armament_tier_9
+			}
+		}
+
+		
+		add_stats = {
+			build_cost_ic = 8
+		}
+
+		multiply_stats = {
+			breakthrough = -0.1
+			build_cost_ic = -0.1
+		}
+		dismantle_cost_ic = 12
+	}
+
+
+
+
+
+
+
+
+
+
+
 	tank_heavy_turret_1 = { ## TIER 7 ##
 		abbreviation = "h2m"
-		category = tank_heavy_turret_type
+		category = tank_heavy_turret_type_1
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = anti_tank
@@ -743,14 +828,14 @@ equipment_modules = {
 		}
 
 		build_cost_resources = {
-			steel = 10
+			steel = 12
 		}
 		dismantle_cost_ic = 5
 	}
 
 	tank_heavy_turret_2 = { ## TIER 8 ##
 		abbreviation = "h3m"
-		category = tank_heavy_turret_type
+		category = tank_heavy_turret_type_2
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type = anti_tank
@@ -767,26 +852,49 @@ equipment_modules = {
 			build_cost_ic = 12
 		}
 
-		multiply_stats = {
-			maximum_speed = -0.05
-		}
 		build_cost_resources = {
-			steel = 15
+			steel = 14
 		}
 		dismantle_cost_ic = 5
 	}
 
-	tank_heavy_superstructure = { ## TIER 9 ##
+	tank_heavy_turret_3 = { ## TIER 9 ##
+		abbreviation = "h3m"
+		category = tank_heavy_turret_type_3
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_9
+			}
+		}
+
+		
+		add_stats = {
+			build_cost_ic = 14
+		}
+
+		build_cost_resources = {
+			steel = 16
+		}
+		dismantle_cost_ic = 5
+	}
+
+
+
+
+	tank_heavy_superstructure = { ## TIER S1 ##
 		abbreviation = "hfs"
-		category = tank_heavy_turret_type_1
+		category = tank_heavy_turret_type_4
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_armament_tier_5
-				tank_armament_tier_6
 				tank_armament_tier_7
 				tank_armament_tier_8
 				tank_armament_tier_9
@@ -795,19 +903,22 @@ equipment_modules = {
 
 		
 		add_stats = {
-			build_cost_ic = 6
+			build_cost_ic = 10
 		}
 
-		multiply_stats = {
-			breakthrough = -0.15
-			armor_value = 0.02
+		mmultiply_stats = {
+			breakthrough = -0.2
+			build_cost_ic = -0.1
+		}
+		build_cost_resources = {
+			steel = 14
 		}
 		dismantle_cost_ic = 5
 	}
 	
-	tank_heavy_open_superstructure = { ## TIER 8 ##
+	tank_heavy_open_superstructure = { ## S2 ##
 		abbreviation = "hos"
-		category = tank_heavy_turret_type_4
+		category = tank_heavy_turret_type_5
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type_exact_match = armor
 		forbid_equipment_type = flame
@@ -817,23 +928,31 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_armament_tier_7
 				tank_armament_tier_8
+				tank_armament_tier_9
 			}
 		}
 
 		
 		add_stats = {
-			hardness = -0.3
+			build_cost_ic = 10
+			hardness = -0.2
 		}
 
 		multiply_stats = {
-			armor_value = -0.5
+			breakthrough = -0.1
 			build_cost_ic = -0.1
-			breakthrough = -0.3
-			maximum_speed = 0.15
-			air_attack = -0.2
+		}
+		build_cost_resources = {
+			steel = 12
 		}
 		dismantle_cost_ic = 5
 	}
+
+
+
+
+
+
 
 	tank_super_heavy_turret = { ## TIER 9 ##
 		abbreviation = "s4m"
@@ -855,7 +974,6 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.15
 		}
 		build_cost_resources = {
 			steel = 20
@@ -891,7 +1009,6 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.1
 		}
 		build_cost_resources = {
 			steel = 15
@@ -933,49 +1050,7 @@ equipment_modules = {
 
 	### SMALL CAL ###
 
-	tank_auto_cannon = { ###1
-		abbreviation = "ac1"
-		category = tank_armament_tier_1
-		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
-			soft_attack = 22
-			hard_attack = 4
-			ap_attack = 15
-			build_cost_ic = 2
-		}
-		multiply_stats = {
-
-		}
-		
-		build_cost_resources = {
-			steel = 5
-		}
-		dismantle_cost_ic = 1
-	}
-
-	tank_small_gun_1 = { ###1
-		abbreviation = "sg1"
-		category = tank_armament_tier_1
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = anti_tank
-
-		add_stats = {
-			soft_attack = 16
-			hard_attack = 12
-			ap_attack = 25
-			build_cost_ic = 3.5
-		}
-		multiply_stats = {
-			
-		}
-		
-		build_cost_resources = {
-			steel = 5
-		}
-		dismantle_cost_ic = 1
-	}
-
+	
 	#ARMORED CAR WEAPONS AND REGRETS #GOD'S GREATEST FLOWERBOX ***************************************************************************************
 
 	tank_car_heavy_machine_gun = {
@@ -1136,6 +1211,59 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+
+
+
+
+
+
+
+
+
+	tank_auto_cannon = { ###1
+		abbreviation = "ac1"
+		category = tank_armament_tier_1
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 22
+			hard_attack = 4
+			ap_attack = 15
+			build_cost_ic = 2
+		}
+		multiply_stats = {
+
+		}
+		
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 1
+	}
+
+	tank_small_gun_1 = { ###1
+		abbreviation = "sg1"
+		category = tank_armament_tier_1
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+
+		add_stats = {
+			soft_attack = 16
+			hard_attack = 12
+			ap_attack = 25
+			build_cost_ic = 3.5
+		}
+		multiply_stats = {
+			
+		}
+		
+		build_cost_resources = {
+			steel = 5
+		}
+		dismantle_cost_ic = 1
+	}
+
+
 	
 	tank_small_gun_2 = { ###2
 		abbreviation = "sg2"
@@ -1151,7 +1279,6 @@ equipment_modules = {
 			build_cost_ic = 4
 		}
 		multiply_stats = {
-			maximum_speed = -0.025
 		}
 		
 		build_cost_resources = {
@@ -1175,7 +1302,6 @@ equipment_modules = {
 			build_cost_ic = 5
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
 		}
 		
 		build_cost_resources = {
@@ -1187,20 +1313,18 @@ equipment_modules = {
 
 	tank_small_gun_squeeze = { ###2
 		abbreviation = "sgs"
-		category = tank_armament_tier_2
+		category = tank_armament_tier_1
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_small_gun_2
 
 		add_stats = {
-			soft_attack = 18
-			hard_attack = 30
+			soft_attack = 10
+			hard_attack = 18
 			ap_attack = 55
 			build_cost_ic = 5
-			reliability = -0.05
 		}
 		multiply_stats = {
-			maximum_speed = -0.025
 		}
 		
 		build_cost_resources = {
@@ -1212,20 +1336,18 @@ equipment_modules = {
 
 	tank_small_gun_squeeze2 = { ###3
 		abbreviation = "sgs2"
-		category = tank_armament_tier_3
+		category = tank_armament_tier_2
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_small_gun_squeeze
 
 		add_stats = {
-			soft_attack = 22
-			hard_attack = 36
+			soft_attack = 16
+			hard_attack = 28
 			ap_attack = 70
 			build_cost_ic = 7
-			reliability = -0.05
 		}
 		multiply_stats = {
-			maximum_speed = -0.025
 		}
 		
 		build_cost_resources = {
@@ -1235,9 +1357,36 @@ equipment_modules = {
 		dismantle_cost_ic = 1
 	}
 
+	tank_med_gun_squeeze = { ###6
+		abbreviation = "mgs"
+		category = tank_armament_tier_3
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		parent = tank_med_hv_gun_1
+
+		add_stats = {
+			soft_attack = 22
+			hard_attack = 36
+			ap_attack = 90
+			build_cost_ic = 9
+		}
+		multiply_stats = {
+		}
+		
+		build_cost_resources = {
+			tungsten = 20
+			steel = 15
+		}
+		dismantle_cost_ic = 2
+	}
+
+
+
+
+
 	tank_anti_air_gun_1 = { ###2
 		abbreviation = "aa1"
-		category = tank_armament_tier_2
+		category = tank_armament_tier_aa
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -1261,7 +1410,7 @@ equipment_modules = {
 
 	tank_anti_air_gun_2 = { ###3
 		abbreviation = "aa2"
-		category = tank_armament_tier_3
+		category = tank_armament_tier_aa
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -1275,7 +1424,6 @@ equipment_modules = {
 			build_cost_ic = 5
 		}
 		multiply_stats = {
-			maximum_speed = -0.025
 		}
 		
 		build_cost_resources = {
@@ -1286,7 +1434,7 @@ equipment_modules = {
 
 	tank_anti_air_gun_3 = { ###5
 		abbreviation = "aa3"
-		category = tank_armament_tier_5
+		category = tank_armament_tier_aa
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -1300,7 +1448,6 @@ equipment_modules = {
 			build_cost_ic = 6
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
 		}
 		
 		build_cost_resources = {
@@ -1313,7 +1460,7 @@ equipment_modules = {
 
 	tank_art_gun_1 = { ###3
 		abbreviation = "ar1"
-		category = tank_armament_tier_3
+		category = tank_armament_tier_4
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
@@ -1323,7 +1470,6 @@ equipment_modules = {
 			build_cost_ic = 4
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
 		}
 		
 		build_cost_resources = {
@@ -1345,7 +1491,6 @@ equipment_modules = {
 			build_cost_ic = 6
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
 		}
 		
 		build_cost_resources = {
@@ -1367,7 +1512,6 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.125
 		}
 		
 		build_cost_resources = {
@@ -1389,7 +1533,6 @@ equipment_modules = {
 			build_cost_ic = 6
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
 		}
 		
 		build_cost_resources = {
@@ -1413,7 +1556,6 @@ equipment_modules = {
 			build_cost_ic = 7
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
 		}
 		
 		build_cost_resources = {
@@ -1437,7 +1579,6 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.125
 		}
 		
 		build_cost_resources = {
@@ -1461,7 +1602,6 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.125
 		}
 		
 		build_cost_resources = {
@@ -1473,19 +1613,18 @@ equipment_modules = {
 
 	tank_med_hv_gun_1 = { ###5
 		abbreviation = "mh1"
-		category = tank_armament_tier_5
+		category = tank_armament_tier_4
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_med_gun_2
 
 		add_stats = {
-			soft_attack = 28
-			hard_attack = 36
+			soft_attack = 29
+			hard_attack = 41
 			ap_attack = 60
 			build_cost_ic = 6.5
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
 		}
 		
 		build_cost_resources = {
@@ -1497,19 +1636,18 @@ equipment_modules = {
 
 	tank_med_hv_gun_2 = { ###6
 		abbreviation = "mh2"
-		category = tank_armament_tier_6
+		category = tank_armament_tier_5
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_med_hv_gun_1
 
 		add_stats = {
-			soft_attack = 32
-			hard_attack = 42
+			soft_attack = 31
+			hard_attack = 49
 			ap_attack = 80
 			build_cost_ic = 7.5
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
 		}
 		
 		build_cost_resources = {
@@ -1521,19 +1659,18 @@ equipment_modules = {
 
 	tank_med_hv_gun_3 = { ###7
 		abbreviation = "mh3"
-		category = tank_armament_tier_7
+		category = tank_armament_tier_6
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		parent = tank_med_hv_gun_2
 
 		add_stats = {
-			soft_attack = 36
-			hard_attack = 48
+			soft_attack = 33
+			hard_attack = 55
 			ap_attack = 95
 			build_cost_ic = 8.5
 		}
 		multiply_stats = {
-			maximum_speed = -0.125
 		}
 		
 		build_cost_resources = {
@@ -1543,54 +1680,6 @@ equipment_modules = {
 		dismantle_cost_ic = 2
 	}
 
-	tank_med_gun_squeeze = { ###6
-		abbreviation = "mgs"
-		category = tank_armament_tier_6
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = anti_tank
-		parent = tank_med_hv_gun_1
-
-		add_stats = {
-			soft_attack = 20
-			hard_attack = 40
-			ap_attack = 90
-			build_cost_ic = 9
-		}
-		multiply_stats = {
-			maximum_speed = -0.15
-		}
-		
-		build_cost_resources = {
-			tungsten = 20
-			steel = 15
-		}
-		dismantle_cost_ic = 2
-	}
-
-	tank_med_gun_squeeze2 = { ###7
-		abbreviation = "mgs2"
-		category = tank_armament_tier_7
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type_exact_match = armor
-		allow_equipment_type = anti_tank
-		parent = tank_med_gun_squeeze
-
-		add_stats = {
-			soft_attack = 24
-			hard_attack = 46
-			ap_attack = 100
-			build_cost_ic = 10
-		}
-		multiply_stats = {
-			maximum_speed = -0.15
-		}
-		
-		build_cost_resources = {
-			tungsten = 20
-			steel = 15
-		}
-		dismantle_cost_ic = 2
-	}
 
 	tank_med_cs_gun_1 = { ###4
 		abbreviation = "cs1"
@@ -1606,7 +1695,6 @@ equipment_modules = {
 			build_cost_ic = 6
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
 		}
 		
 		build_cost_resources = {
@@ -1630,7 +1718,6 @@ equipment_modules = {
 			build_cost_ic = 7
 		}
 		multiply_stats = {
-			maximum_speed = -0.075
 		}
 		
 		build_cost_resources = {
@@ -1654,7 +1741,6 @@ equipment_modules = {
 			build_cost_ic = 8
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
 		}
 		
 		build_cost_resources = {
@@ -1679,7 +1765,6 @@ equipment_modules = {
 			build_cost_ic = 12
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
 		}
 		
 		build_cost_resources = {
@@ -1705,7 +1790,6 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
 		}
 		build_cost_resources = {
 			tungsten = 15
@@ -1754,8 +1838,6 @@ equipment_modules = {
 			build_cost_ic = 15
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
-			breakthrough = -0.15
 		}
 		build_cost_resources = {
 			tungsten = 20
@@ -1780,8 +1862,6 @@ equipment_modules = {
 			build_cost_ic = 18
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
-			breakthrough = -0.15
 		}
 		build_cost_resources = {
 			tungsten = 20
@@ -1793,7 +1873,7 @@ equipment_modules = {
 	
 	tank_heavy_aa_gun_1 = { ###7
 		abbreviation = "haa"
-		category = tank_armament_tier_7
+		category = tank_armament_tier_heavy_aa
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -1806,7 +1886,6 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.2
 		}
 		build_cost_resources = {
 			steel = 10
@@ -1817,7 +1896,7 @@ equipment_modules = {
 
 	tank_heavy_aa_gun_2 = { ###7
 		abbreviation = "saa"
-		category = tank_armament_tier_7
+		category = tank_armament_tier_heavy_aa
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
@@ -1831,7 +1910,6 @@ equipment_modules = {
 			build_cost_ic = 18
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
 		}
 		build_cost_resources = {
 			steel = 15
@@ -1855,7 +1933,6 @@ equipment_modules = {
 			build_cost_ic = 12
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
 		}
 		build_cost_resources = {
 			steel = 10
@@ -1880,7 +1957,6 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.2
 		}
 		build_cost_resources = {
 			steel = 15
@@ -1902,7 +1978,6 @@ equipment_modules = {
 			build_cost_ic = 10
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
 		}
 		build_cost_resources = {
 			steel = 10
@@ -1925,7 +2000,6 @@ equipment_modules = {
 			build_cost_ic = 14
 		}
 		multiply_stats = {
-			maximum_speed = -0.3
 		}
 		build_cost_resources = {
 			steel = 15
@@ -1938,17 +2012,16 @@ equipment_modules = {
 
 	tank_rocket_launcher = { ###5
 		abbreviation = "rk1"
-		category = tank_armament_tier_5
+		category = tank_armament_tier_4
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 20
+			soft_attack = 30
 			build_cost_ic = 4
 		}
 		multiply_stats = {
-			maximum_speed = -0.05
 		}
 		build_cost_resources = {
 			steel = 5
@@ -1958,7 +2031,7 @@ equipment_modules = {
 
 	tank_rocket_cs = { ###9
 		abbreviation = "rcs"
-		category = tank_armament_tier_9
+		category = tank_armament_tier_7
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = flame
 		forbid_equipment_type_exact_match = armor
@@ -1967,7 +2040,6 @@ equipment_modules = {
 			build_cost_ic = 20
 		}
 		multiply_stats = {
-			maximum_speed = -0.25
 		}
 		build_cost_resources = {
 			steel = 15
@@ -1989,7 +2061,7 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			defense = 0.1
+			defense = 0.05
 			breakthrough = 0.1
 		}
 	}
@@ -2005,10 +2077,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			defense = 0.15
-			breakthrough = 0.15
-			soft_attack = 0.05
-			hard_attack = 0.05
+			defense = 0.1
+			breakthrough = 0.2
 		}
 	}
 
@@ -2023,10 +2093,8 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			defense = 0.2
-			breakthrough = 0.2
-			soft_attack = 0.1
-			hard_attack = 0.1
+			defense = 0.15
+			breakthrough = 0.3
 		}
 	}
 
@@ -2078,7 +2146,6 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.1
 		}
 	}
 
@@ -2094,7 +2161,6 @@ equipment_modules = {
 		}
 		
 		multiply_stats = {
-			maximum_speed = -0.2
 		}
 	}
 
@@ -2104,11 +2170,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 2
 		}
 		multiply_stats = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			soft_attack = 0.1
+			hard_attack = 0.1
+			build_cost_ic = 0.05
 		}
 
 	}
@@ -2119,9 +2185,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 0.25
-			defense = 2
-			breakthrough = 3
+			build_cost_ic = 0.5
+			defense = 3
+			breakthrough = 5
 		}
 		
 		multiply_stats = {
@@ -2129,16 +2195,30 @@ equipment_modules = {
 		}
 	}
 
-	extra_ammo_storage = {
+	extra_ammo_storage1 = {
 		abbreviation = "extra"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = -0.1
+			build_cost_ic = 1
+			reliability = -0.05
 		}
 		multiply_stats = {
 			soft_attack = 0.1
+		}
+	}
+
+	extra_ammo_storage2 = {
+		abbreviation = "extra"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 1
+			reliability = -0.05
+		}
+		multiply_stats = {
 			hard_attack = 0.1
 		}
 		
@@ -2151,7 +2231,7 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = 0.1
-			build_cost_ic = 3
+			build_cost_ic = 0.5
 		}
 		
 		multiply_stats = {
@@ -2165,10 +2245,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.05
-			armor_value = 2.5
+			reliability = 0.1
 			build_cost_ic = 2
-			breakthrough = 6
+			breakthrough = 10
 		}
 		
 		multiply_stats = {
@@ -2184,8 +2263,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			reliability = 0.05
-			build_cost_ic = 2
+			reliability = 0.25
+			build_cost_ic = 1
 		}
 
 		multiply_stats = {
@@ -2201,9 +2280,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 4
-			defense = 2
-			build_cost_ic = 2
+			soft_attack = 5
+			air_attack = 0.5
+			defense = 1
+			build_cost_ic = 1
 		}
 		
 		multiply_stats = {
@@ -2217,11 +2297,10 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 6
-			hard_attack = 2
+			soft_attack = 10
 			air_attack = 1
 			defense = 2
-			build_cost_ic = 3
+			build_cost_ic = 2
 		}
 		
 		multiply_stats = {
@@ -2237,9 +2316,8 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 10
 			breakthrough = 10
-			reliability = -0.1
-			hardness = -0.1
-			build_cost_ic = 3
+			reliability = -0.05
+			build_cost_ic = 1
 		}
 		
 		multiply_stats = {
@@ -2253,10 +2331,11 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			defense = 10
-			build_cost_ic = 2
+			defense = 5
+			entrenchment  = 0.5
+			build_cost_ic = 1
 		}
-		xp_cost = 1
+
 		multiply_stats = {
 			
 		}
@@ -2268,8 +2347,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 6
-			breakthrough = 8
+			soft_attack = 20
+			breakthrough = 5
 			build_cost_ic = 2
 		}
 		

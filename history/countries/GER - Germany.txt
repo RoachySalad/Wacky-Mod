@@ -29,7 +29,6 @@ set_technology = {
 	ger_light_tank_1 = 1
 	ger_light_tank_2 = 1
 	ger_p3_tank_1 = 1
-	ger_p4_tank_1 = 1
 	ger_heavy_tank_0 = 1
 	early_fighter = 1
 	fighter1 = 1

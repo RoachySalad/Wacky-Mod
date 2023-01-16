@@ -19,7 +19,8 @@ technologies = {
 			secondary_turret_small_cannon
 			secondary_turret_howitzer
 			smoke_launchers
-			extra_ammo_storage
+			extra_ammo_storage1
+			extra_ammo_storage2
 		}
 		
 		path = {
