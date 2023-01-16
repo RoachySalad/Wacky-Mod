@@ -275,7 +275,7 @@ equipment_modules = {
 		forbid_equipment_type = artillery
 
 		add_stats = {
-			build_cost_ic = 4
+			build_cost_ic = 2
 		}
 		
 		build_cost_resources = {
@@ -300,7 +300,7 @@ equipment_modules = {
 	
 		
 		add_stats = {
-			build_cost_ic = 1
+			build_cost_ic = 4
 		}
 		
 		build_cost_resources = {
@@ -336,6 +336,36 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1
 	}
+	
+	tank_light_turret_4 = { ## TIER 4 ##
+		abbreviation = "l4m"
+		category = tank_light_turret_type_4
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = anti_tank
+		forbid_equipment_type = artillery
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_2
+				tank_armament_tier_3
+				tank_armament_tier_4		
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 8
+		}
+
+		multiply_stats = {
+		}
+		
+		build_cost_resources = {
+			steel = 10
+		}
+		dismantle_cost_ic = 1
+	}
+
 
 	tank_light_turret_open = {  ## TIER 4 ##
 		abbreviation = "l3m"

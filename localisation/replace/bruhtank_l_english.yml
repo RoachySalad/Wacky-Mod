@@ -40,6 +40,7 @@
  EQ_MOD_CAT_tank_armament_tier_9_TITLE:0 "§6Advanced§! §RHeavy§! Armanents"
  EQ_MOD_CAT_tank_ac_turret_type_TITLE:0 "Armoured Car Turrets"
  EQ_MOD_CAT_tank_light_turret_type_alt_TITLE:0 "Advanced Light Turrets"
+ EQ_MOD_CAT_tank_light_turret_type_4_TITLE:0 "Medium Turrets"
  EQ_MOD_CAT_tank_light_turret_type_1_TITLE:0 "Open Turrets"
  EQ_MOD_CAT_tank_light_turret_type_2_TITLE:0 "Casemates"
  EQ_MOD_CAT_tank_light_turret_type_3_TITLE:0 "Open Superstructures"
@@ -167,6 +168,8 @@
  tank_light_turret_2_desc:0 "Enables Tier 2 §CImproved§! §YLight§! Armanents"
  tank_light_turret_3:0 "Light Turret III"
  tank_light_turret_3_desc:0 "Enables Tier 3 §6Advanced§! §YLight§! Armanents"
+ tank_light_turret_4:0 "Light Turret 4
+ tank_light_turret_4_desc:0 "Enables Tier 4 §6Advanced§! §YMedium§! Armanents"
  tank_light_turret_open:0 "Light Open Turret"
  tank_light_turret_open_desc:0 "Enables Tier 4 §3Basic§! §OMedium§! Armanents"
  tank_light_turret_open_large:0 "Light Open Large Turret"
