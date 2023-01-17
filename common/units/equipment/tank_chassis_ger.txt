@@ -360,7 +360,6 @@ equipments = {
 					tank_medium_turret_type_5
 					tank_medium_turret_type_6
 					tank_medium_turret_type_7
-					tank_medium_turret_type_8
 				}
 			}
 			armor_type_slot = inherit

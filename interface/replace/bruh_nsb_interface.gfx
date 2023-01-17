@@ -39,6 +39,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_turret_3.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_light_turret_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_turret_4.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_light_turret_open"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
 	}
@@ -63,6 +67,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_light_superstructure_hetzer"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_heavy_superstructure_spg"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
 	}
@@ -83,20 +91,37 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_4.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_turret_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_4.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_open"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_open_superstructure"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_superstructure.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_medium_superstructure"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_turret_type_6"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_medium_turret_type_7"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_superstructure.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_large_medium_superstructure"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_superstructure.dds"
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_medium_open_superstructure"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+		name = "GFX_EMI_tank_medium_superstructure_E50"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_superstructure_navy"
@@ -377,7 +402,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type_1"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_turret_1.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type_5"
@@ -385,11 +410,31 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_turret_2.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_turret_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_turret_type_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_turret_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_turret_type_6"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_turret_type_7"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_turret_type_8"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_superstructure_hetzer"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_light_turret_type_zis"
@@ -402,7 +447,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_1"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_2.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_1.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_alt"
@@ -410,19 +455,19 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_2.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_3.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_5"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_superstructure.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_turret.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_4"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_troop_carrier.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/med_turret_4.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_turret_type_navy"

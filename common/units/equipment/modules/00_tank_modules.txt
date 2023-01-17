@@ -462,13 +462,12 @@ equipment_modules = {
 
 		
 		add_stats = {
-			build_cost_ic = 2
 			hardness = -0.2
 		}
 
 		multiply_stats = {
-			build_cost_ic = -0.1
-			breakthrough = -0.3
+			build_cost_ic = -0.2
+			breakthrough = -0.1
 		}
 		build_cost_resources = {
 			steel = 4
@@ -718,12 +717,14 @@ equipment_modules = {
 		
 		add_stats = {
 			build_cost_ic = 6
+			
 		}
 
-		mmultiply_stats = {
+		multiply_stats = {
 			breakthrough = -0.2
 			build_cost_ic = -0.1
 		}
+
 		build_cost_resources = {
 			steel = 10
 		}
@@ -752,13 +753,13 @@ equipment_modules = {
 
 		
 		add_stats = {
-			build_cost_ic = 6
+			build_cost_ic = 4
 			hardness = -0.2
 		}
 
 		multiply_stats = {
 			breakthrough = -0.1
-			build_cost_ic = -0.1
+			build_cost_ic = -0.2
 		}
 		build_cost_resources = {
 			steel = 8
@@ -767,36 +768,36 @@ equipment_modules = {
 
 	}
 
-	tank_medium_superstructure_E50 = { ## S4 ##
-		abbreviation = "mfl"
-		category = tank_medium_turret_type_8
-		sfx = sfx_ui_sd_module_turret
-		forbid_equipment_type = anti_air
-		forbid_equipment_type = artillery
-		forbid_equipment_type_exact_match = armor
-
-		allowed_module_categories = {
-			main_armament_slot = {
-				tank_armament_tier_4
-				tank_armament_tier_5
-				tank_armament_tier_6
-				tank_armament_tier_7
-				tank_armament_tier_8
-				tank_armament_tier_9
-			}
-		}
-
-		
-		add_stats = {
-			build_cost_ic = 8
-		}
-
-		multiply_stats = {
-			breakthrough = -0.1
-			build_cost_ic = -0.1
-		}
-		dismantle_cost_ic = 12
-	}
+	#tank_medium_superstructure_E50 = { ## S4 ##
+	#	abbreviation = "mfl"
+	#	category = tank_medium_turret_type_8
+	#	sfx = sfx_ui_sd_module_turret
+	#	forbid_equipment_type = anti_air
+	#	forbid_equipment_type = artillery
+	#	forbid_equipment_type_exact_match = armor
+#
+#		allowed_module_categories = {
+#			main_armament_slot = {
+#				tank_armament_tier_4
+##				tank_armament_tier_5
+#				tank_armament_tier_6
+#				tank_armament_tier_7
+#				tank_armament_tier_8
+#				tank_armament_tier_9
+#			}
+#		}
+#
+#		
+#		add_stats = {
+#			build_cost_ic = 8
+##		}
+#
+#		multiply_stats = {
+#			breakthrough = -0.1
+#			build_cost_ic = -0.1
+#		}
+#		dismantle_cost_ic = 12
+#	}
 
 
 

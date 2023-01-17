@@ -388,7 +388,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_turret_4
-			tank_medium_superstructure_E50
 		}
 		
 		research_cost = 2.0
