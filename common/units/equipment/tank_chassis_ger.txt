@@ -56,6 +56,7 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -91,6 +92,7 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -127,6 +129,8 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -167,6 +171,8 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -205,6 +211,7 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -245,6 +252,7 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -325,6 +333,7 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -367,6 +376,8 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -405,7 +416,6 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
-			special_type_slot_3 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -424,7 +434,7 @@ equipments = {
 	ger_heavy_tank_chassis_p6 = {
 		abbreviation = "pz6"
 		visual_level = 1
-		year = 1941
+		year = 1940
 		archetype = heavy_tank_chassis
 		priority = 2000
 		module_slots = 	{
@@ -487,6 +497,7 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -529,6 +540,7 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
@@ -538,6 +550,7 @@ equipments = {
 		build_cost_ic = 30
 		reliability = 0.9
 		armor_value = 5
+		hardness = 0.85
 		defense = 12
 		breakthrough = 90
 	}
@@ -569,6 +582,8 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
