@@ -12,9 +12,6 @@ state=
 		}
 		owner = ENG
 		buildings = {
-			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 7
 		}
 
 		add_core_of = EGY
