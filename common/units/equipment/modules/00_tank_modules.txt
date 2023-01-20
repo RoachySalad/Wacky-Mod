@@ -423,7 +423,6 @@ equipment_modules = {
 				tank_armament_tier_3
 				tank_armament_tier_4
 				tank_armament_tier_5
-				tank_armament_tier_6
 			}
 		}
 
@@ -456,7 +455,6 @@ equipment_modules = {
 				tank_armament_tier_3
 				tank_armament_tier_4
 				tank_armament_tier_5
-				tank_armament_tier_6
 			}
 		}
 
@@ -710,7 +708,6 @@ equipment_modules = {
 				tank_armament_tier_6
 				tank_armament_tier_7
 				tank_armament_tier_8
-				tank_armament_tier_9
 			}
 		}
 
@@ -747,7 +744,6 @@ equipment_modules = {
 				tank_armament_tier_6
 				tank_armament_tier_7
 				tank_armament_tier_8
-				tank_armament_tier_9
 			}
 		}
 
@@ -768,36 +764,40 @@ equipment_modules = {
 
 	}
 
-	#tank_medium_superstructure_E50 = { ## S4 ##
-	#	abbreviation = "mfl"
-	#	category = tank_medium_turret_type_8
-	#	sfx = sfx_ui_sd_module_turret
-	#	forbid_equipment_type = anti_air
-	#	forbid_equipment_type = artillery
-	#	forbid_equipment_type_exact_match = armor
-#
-#		allowed_module_categories = {
-#			main_armament_slot = {
-#				tank_armament_tier_4
-##				tank_armament_tier_5
-#				tank_armament_tier_6
-#				tank_armament_tier_7
-#				tank_armament_tier_8
-#				tank_armament_tier_9
-#			}
-#		}
-#
-#		
-#		add_stats = {
-#			build_cost_ic = 8
-##		}
-#
-#		multiply_stats = {
-#			breakthrough = -0.1
-#			build_cost_ic = -0.1
-#		}
-#		dismantle_cost_ic = 12
-#	}
+	tank_medium_superstructure_E50 = { ## S4 ##
+		abbreviation = "mfl"
+		category = tank_medium_turret_type_8
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = artillery
+		forbid_equipment_type_exact_match = armor
+
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_armament_tier_4
+				tank_armament_tier_5
+				tank_armament_tier_6
+				tank_armament_tier_7
+				tank_armament_tier_8
+				tank_armament_tier_9
+			}
+		}
+
+		
+		add_stats = {
+			build_cost_ic = 8
+		}
+
+		build_cost_resources = {
+			steel = 12
+		}
+
+		multiply_stats = {
+			breakthrough = -0.1
+			build_cost_ic = -0.1
+		}
+		dismantle_cost_ic = 12
+	}
 
 
 
@@ -907,9 +907,10 @@ equipment_modules = {
 			build_cost_ic = 10
 		}
 
-		mmultiply_stats = {
+		multiply_stats = {
 			breakthrough = -0.2
 			build_cost_ic = -0.1
+
 		}
 		build_cost_resources = {
 			steel = 14
@@ -2198,7 +2199,7 @@ equipment_modules = {
 
 	extra_ammo_storage1 = {
 		abbreviation = "extra"
-		category = tank_special_module
+		category = tank_special_ammo
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2212,7 +2213,7 @@ equipment_modules = {
 
 	extra_ammo_storage2 = {
 		abbreviation = "extra"
-		category = tank_special_module
+		category = tank_special_ammo
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
@@ -2227,7 +2228,7 @@ equipment_modules = {
 
 	wet_ammo_storage = {
 		abbreviation = "wet"
-		category = tank_special_module
+		category = tank_special_ammo
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {

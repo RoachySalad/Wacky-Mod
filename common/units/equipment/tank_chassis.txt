@@ -56,6 +56,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
+					tank_special_ammo
 				}
 			}
 			special_type_slot_3 = {
@@ -83,6 +84,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_special_ammo
 			count < 2
 		}
 		module_count_limit = {
@@ -189,6 +194,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_armor_type
 				}
+
 			}
 			engine_type_slot = {
 				required = yes
@@ -206,6 +212,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
+					tank_special_ammo
 				}
 			}
 			special_type_slot_3 = {
@@ -231,6 +238,10 @@ equipments = {
 			module = sloped_armor
 			count < 2
 		}	
+		module_count_limit = {
+			category = tank_special_ammo
+			count < 2
+		}
 		module_count_limit = {
 			category = tank_radio_module
 			count < 2
@@ -359,6 +370,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
+					tank_special_ammo
 				}
 			}
 			special_type_slot_3 = {
@@ -382,6 +394,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = amphibious_drive
+			count < 2
+		}
+		module_count_limit = {
+			category = tank_special_ammo
 			count < 2
 		}
 		module_count_limit = {

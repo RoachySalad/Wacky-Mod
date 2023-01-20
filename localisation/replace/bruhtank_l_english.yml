@@ -56,6 +56,7 @@
  EQ_MOD_CAT_tank_medium_turret_type_5_TITLE:0 "Medium Open Turret"
  EQ_MOD_CAT_tank_medium_turret_type_6_TITLE:0 "Medium Casemate"
  EQ_MOD_CAT_tank_medium_turret_type_7_TITLE:0 "Medium Superstructure"
+ EQ_MOD_CAT_tank_medium_turret_type_8_TITLE:0 "Advanced Medium Superstructure"
  EQ_MOD_CAT_tank_medium_turret_type_navy_TITLE:0 "Gun Platforms"
  EQ_MOD_CAT_tank_heavy_turret_type_1_TITLE:0 "Heavy Turret 1"
  EQ_MOD_CAT_tank_heavy_turret_type_2_TITLE:0 "Heavy Turret 2"
@@ -181,9 +182,9 @@
  tank_light_turret_open:0 "Light Open Turret"
  tank_light_turret_open_desc:0 "Enables Light AA Guns and Tier 4 §3Basic§! §OMedium§! Armanents"
  tank_light_superstructure:0 "Fixed Light Casemate"
- tank_light_superstructure_desc:0 "Enables Tier 6 §6Advanced§! §OMedium§! Armanents"
+ tank_light_superstructure_desc:0 "Enables Tier 5 §CImproved§! §OMedium§! Armanents"
  tank_light_open_superstructure:0 "Light Open Superstructure"
- tank_light_open_superstructure_desc:0 "Enables Tier 6 §6Advanced§! §OMedium§! Armanents"
+ tank_light_open_superstructure_desc:0 "Enables Tier 5 §CImproved§! §OMedium§! Armanents"
  tank_light_superstructure_hetzer:0 "Advanced Light Casemate"
  tank_light_superstructure_hetzer_desc:0 "Enables Tier 7 §3Basic§! §RHeavy§! Armanents"
 
@@ -204,9 +205,11 @@
  tank_medium_turret_open:0 "Medium Open Turret"
  tank_medium_turret_open_desc:0 "Enables Heavy AA Guns and Tier 7 §3Basic§! §RHeavy§! Armanents"
  tank_medium_superstructure:0 "Fixed Medium Casemate"
- tank_medium_superstructure_desc:0 "Enables Tier 9 §6Advanced§! §RHeavy§! Armanents"
+ tank_medium_superstructure_desc:0 "Enables Tier 8 §CImproved§! §RHeavy§! Armanents"
  tank_medium_open_superstructure:0 "Medium Open Superstructure"
- tank_medium_open_superstructure_desc:0 "Enables Tier 9 §6Advanced§! §RHeavy§! Armanents"
+ tank_medium_open_superstructure_desc:0 "Enables Tier 8 §CImproved§! §RHeavy§! Armanents"
+ tank_medium_superstructure_E50:0 "Advanced Medium Superstructure"
+ tank_medium_superstructure_E50_desc:0 "Enables Tier 9 §6Advanced§! §RHeavy§! Armanents"
 
 
  #tank_medium_superstructure_navy:0 "Gun Platform"

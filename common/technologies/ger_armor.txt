@@ -255,12 +255,9 @@ technologies = {
 			ger_medium_tank_chassis_p4
 		}
 		enable_equipment_modules = {
-			tank_medium_turret_2
 		}
 	
 		path = {
-			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
-			research_cost_coeff = 1
 		}
 		
 		research_cost = 2.0
@@ -287,7 +284,8 @@ technologies = {
 			custom_effect_tooltip = p34_upgrade_1_tt
 		}
 		enable_equipment_modules = {
-			tank_medium_turret_type_2
+			tank_medium_turret_2
+			armor_skirts
 		}
 		
 		show_effect_as_desc = yes
@@ -302,10 +300,10 @@ technologies = {
 		}
 		
 		research_cost = 1.0
-		start_year = 1940
+		start_year = 1939
 		folder = {
 			name = ger_armour_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 6 }
 		}
 		
 		categories = {
@@ -322,7 +320,7 @@ technologies = {
 	ger_p34_tank_3 = {
 
 		enable_equipment_modules = {
-			armor_skirts
+			sloped_armor
 		}
 		on_research_complete = {
 			custom_effect_tooltip = p34_upgrade_2_tt
@@ -330,10 +328,10 @@ technologies = {
 		show_effect_as_desc = yes
 		
 		research_cost = 1.0
-		start_year = 1942
+		start_year = 1941
 		folder = {
 			name = ger_armour_folder
-			position = { x = -1 y = 12 }
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = {
@@ -353,7 +351,6 @@ technologies = {
 			ger_medium_tank_chassis_p5
 		}
 		enable_equipment_modules = {
-			sloped_armor
 			tank_medium_turret_3
 			tank_large_medium_superstructure
 		}
@@ -388,6 +385,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_turret_4
+			tank_medium_superstructure_E50
 		}
 		
 		research_cost = 2.0
@@ -517,7 +515,7 @@ technologies = {
 			ger_heavy_tank_chassis_p7
 		}
 		enable_equipment_modules = {
-			tank_heavy_turret_3
+			tank_heavy_turret_2
 		}
 		
 		path = {

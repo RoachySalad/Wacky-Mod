@@ -124,6 +124,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_superstructure.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_turret_type_8"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fixed_superstructure.dds"
+	}
+
+	spriteType = {
 		name = "GFX_EMI_tank_large_medium_superstructure"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_superstructure.dds"
 	}
@@ -149,7 +154,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_superstructure"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_fixed_superstructure.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_fixed_superstructure.dds"
 	}
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_open_superstructure"

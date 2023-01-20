@@ -80,14 +80,17 @@ upgrades = {
 			1 = {
 				OR = {
 					has_tech = ger_p34_tank_2 # Second Wave Upgrade
-					has_tech = sov_t26_upgrade 
+					has_tech = sov_medium_tank_2
 					has_tech = eng_crusader_upgrade
 					has_tech = usa_medium_tank_5 
 					has_tech = fra_light_tank_tur3
 				}
 			}
 			6 = {
-				has_tech = ger_p34_tank_3 # Third Wave Upgrade (name not up)
+				OR = {
+					has_tech = ger_p34_tank_3 # Third Wave Upgrade (name not up)
+					has_tech = sov_medium_tank_3
+				}
 			}
 		}
 
@@ -145,14 +148,17 @@ upgrades = {
 			1 = {
 				OR = {
 					has_tech = ger_p34_tank_2 # Second Wave Upgrade
-					has_tech = sov_t26_upgrade 
+					has_tech = sov_medium_tank_2
 					has_tech = eng_crusader_upgrade
 					has_tech = usa_medium_tank_5 
 					has_tech = fra_light_tank_tur3
 				}
 			}
 			6 = {
-				has_tech = ger_p34_tank_3 # Third Wave Upgrade (name not up)
+				OR = {
+					has_tech = ger_p34_tank_3 # Third Wave Upgrade (name not up)
+					has_tech = sov_medium_tank_3
+				}
 			}
 		}
 
