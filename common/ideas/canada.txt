@@ -40,9 +40,8 @@ ideas = {
 			
 			equipment_bonus = {
 				mechanized_equipment = {
-					armor_value = 0.2 instant = yes
+					hardness = 0.05 instant = yes
 					build_cost_ic = -0.05 instant = yes
-					maximum_speed = -0.1 instant = yes
 				}
 			}
 		}
@@ -772,7 +771,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			traits = { fast_tank_manufacturer }
 			
 			# quite the useless tanks the vickers 6-ton
 		}
@@ -800,6 +799,7 @@ ideas = {
 				armor = 0.15
 			}
 			
+			traits = { medium_tank_manufacturer }
 			traits = { nuffield_trait }
 
 		}
@@ -827,6 +827,7 @@ ideas = {
 				armor = 0.15
 			}
 			
+			traits = { medium_tank_manufacturer }
 			traits = { vauxhall_trait }
 
 		}
@@ -879,6 +880,30 @@ ideas = {
 	materiel_manufacturer = {
 			
 		designer = yes
+
+		CAN_kangaroo_designer = {
+			
+			picture = generic_motorized_equipment_manufacturer_2
+
+			allowed = {
+				original_TAG = CAN
+				has_dlc = "Together for Victory"
+			}
+			
+			available = {
+				has_completed_focus = CAN_a_motorized_army
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { CAN_kangaroo_trait }
+			
+			
+		}	
+
+
 		
 		inglis_company = {
 			

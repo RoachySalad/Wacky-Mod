@@ -587,7 +587,7 @@ ideas = {
 				
 			}
 			available = {
-				has_completed_focus = SOV_heavy_tank2
+				has_completed_focus = MON_appoint_okmo
 			}
 			
 			research_bonus = {

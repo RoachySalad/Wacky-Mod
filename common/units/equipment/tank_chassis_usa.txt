@@ -225,11 +225,7 @@ equipments = {
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
-			special_type_slot_2 = {
-				required = yes
-				allowed_module_categories = {
-					tank_secondary_turret
-				}
+			special_type_slot_2 = inherit
 			}
 
 		}

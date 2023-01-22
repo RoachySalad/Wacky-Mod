@@ -2484,7 +2484,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { medium_tank_manufacturer }
+			traits = { fast_tank_manufacturer }
 			traits = { vauxhall_trait }
 			
 			modifier = {

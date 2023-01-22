@@ -2743,7 +2743,7 @@ ideas = {
 				motorized_equipment = 0.15
 			}
 			
-			traits = { motorized_equipment_manufacturer }
+			traits = { GER_opel_trait }
 		}
 	}
 	
