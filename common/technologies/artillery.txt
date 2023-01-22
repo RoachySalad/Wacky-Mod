@@ -335,6 +335,10 @@ technologies = {
 		medium_armor = {
 			hard_attack = 0.05
 			soft_attack = 0.05
+		}
+		amphibious_medium_armor = {
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}	
 		heavy_armor = {
 			hard_attack = 0.05
@@ -515,7 +519,11 @@ technologies = {
 		medium_armor = {
 			hard_attack = 0.05
 			soft_attack = 0.05
-		}	
+		}
+		amphibious_medium_armor = {
+			hard_attack = 0.05
+			soft_attack = 0.05
+		}		
 		heavy_armor = {
 			hard_attack = 0.05
 			soft_attack = 0.05
@@ -646,7 +654,11 @@ technologies = {
 		medium_armor = {
 			hard_attack = 0.05
 			soft_attack = 0.05
-		}	
+		}
+			amphibious_medium_armor = {
+		hard_attack = 0.05
+		soft_attack = 0.05
+		}		
 		heavy_armor = {
 			hard_attack = 0.05
 			soft_attack = 0.05
