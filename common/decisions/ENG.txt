@@ -636,6 +636,75 @@ political_actions = {
 		}
 	}
 
+	ENG_invite_greece = {
+
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war = yes
+			GRE = {
+				is_in_faction = no
+			}
+			GER = {
+			has_war_with = SOV
+			}
+			is_faction_leader = yes
+		}
+
+		cost = 0
+		
+		visible = {
+			has_war = yes
+			NOT = { has_war_with = GRE }
+			country_exists = GRE
+		}
+		
+		complete_effect = {
+			GRE = { 
+				country_event = generic.5
+			
+			}
+		}
+	}
+	ENG_invite_norway = {
+
+		icon = generic_prepare_civil_war
+	
+		allowed = {
+			tag = ENG
+		}
+		
+		available = {
+			has_war = yes
+			NOR = {
+				is_in_faction = no
+			}
+			GER = {
+			has_war_with = SOV
+			}
+			is_faction_leader = yes
+		}
+
+		cost = 0
+		
+		visible = {
+			has_war = yes
+			NOT = { has_war_with = NOR }
+			country_exists = GRE
+		}
+		
+		complete_effect = {
+			NOR = { 
+				country_event = generic.5
+			
+			}
+		}
+	}
+	
 	ENG_abdication_crisis = { # timer for the player to see when the event chain ends
 
 		icon = eng_abdication_crisis
