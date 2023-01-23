@@ -6330,7 +6330,7 @@ SOV_land_air_coordination_spirit = {
 			}
 
 			available = {
-				has_completed_focus = SOV_combined_arms
+				has_completed_focus = SOV_ger4
 			}
 			
 			research_bonus = {
