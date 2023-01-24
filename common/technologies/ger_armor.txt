@@ -352,7 +352,6 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_turret_3
-			tank_large_medium_superstructure
 		}
 		
 		path = {

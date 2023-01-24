@@ -598,3 +598,4 @@ equipments = {
 		defense = 14
 		breakthrough = 120
 	}
+}
