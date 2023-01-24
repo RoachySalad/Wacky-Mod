@@ -218,10 +218,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1939
+		start_year = 1934
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = 6 }
+			position = { x = 3 y = 8 }
 		}
 	
 		categories = {
@@ -800,8 +800,10 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
+			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
+			tank_petrol_electric_engine
 			tank_light_turret_1
 			tank_light_turret_2
 			tank_light_turret_open
@@ -846,11 +848,11 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
-		research_cost = 2.5
-		start_year = 1941
+		research_cost = 2
+		start_year = 1939
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 10 }
+			position = { x = -2 y = 6 }
 		}
 
 		categories = {
@@ -859,6 +861,32 @@ technologies = {
 			cat_light_armor
 		}
 	}
+
+	hun_light_tank_3 = {
+
+		enable_equipment_modules = {
+			tank_light_turret_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = 38m_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -2 y = 16 }
+		}
+
+		categories = {
+			generic
+			armor
+			cat_light_armor
+		}
+	}
+
+
 	
 	hun_medium_tank_1 = {
 
@@ -867,13 +895,19 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
+			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
+			tank_petrol_electric_engine
+			tank_light_turret_1
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
 			tank_medium_turret_1
+			tank_medium_turret_2
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
-			
 		}
 		
 		path = {
@@ -906,7 +940,7 @@ technologies = {
 	hun_medium_tank_2 = {
 
 		enable_equipment_modules = {
-			tank_medium_turret_2
+			tank_medium_turret_3
 		}
 		
 		path = {
@@ -915,10 +949,10 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1942
+		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 12 }
+			position = { x = 2 y = 14 }
 		}
 
 		categories = {
@@ -935,14 +969,14 @@ technologies = {
 			hun_medium_tank_chassis_44m
 		}
 		enable_equipment_modules = {
-			tank_medium_turret_3
+			tank_medium_turret_4
 		}
 
 		research_cost = 2
-		start_year = 1943
+		start_year = 1945
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 14 }
+			position = { x = 2 y = 18 }
 		}
 
 		categories = {
@@ -956,20 +990,17 @@ technologies = {
 
 		enable_equipments = {
 			jap_light_tank_chassis_t95
-			jap_medium_tank_chassis_t89
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
+			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
+			tank_petrol_electric_engine
 			tank_light_turret_1
 			tank_light_turret_open
 			tank_light_superstructure
 			tank_light_open_superstructure
-			tank_medium_turret_1
-			tank_medium_turret_open
-			tank_medium_superstructure
-			tank_medium_open_superstructure
 		}
 
 		path = {
@@ -1017,10 +1048,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1940
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 8 }
+			position = { x = -2 y = 4 }
 		}
 
 		categories = {
@@ -1035,10 +1066,10 @@ technologies = {
 			tank_light_turret_3
 		}
 		research_cost = 2
-		start_year = 1942
+		start_year = 1939
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 6 }
 		}
 
 		categories = {
@@ -1054,6 +1085,12 @@ technologies = {
 
 		enable_equipments = {
 			jap_medium_tank_chassis_t97
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
 		}
 		
 		path = {
@@ -1137,7 +1174,7 @@ technologies = {
 			jap_medium_tank_chassis_t04
 		}
 		enable_equipment_modules = {
-			tank_modern_tank_turret
+			tank_medium_turret_4
 		}
 
 		research_cost = 2
