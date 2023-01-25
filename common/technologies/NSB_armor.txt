@@ -218,7 +218,7 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1934
+		start_year = 1940
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = 8 }
@@ -561,9 +561,14 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
+			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
-			tank_light_superstructure_cv33
+			tank_petrol_electric_engine
+			tank_light_turret_1
+			tank_light_turret_open
+			tank_light_superstructure
+			tank_light_open_superstructure
 		}
 
 		path = {
@@ -599,21 +604,17 @@ technologies = {
 			ita_light_tank_chassis_l6
 		}
 		enable_equipment_modules = {
-			tank_light_turret_1
 			tank_light_turret_2
-			tank_light_turret_open
-			tank_light_superstructure
-			tank_light_open_superstructure
 		}
 		path = {
 			leads_to_tech = ita_light_tank_3
 			research_cost_coeff = 1
 		}
 		research_cost = 2
-		start_year = 1940
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 8 }
+			position = { x = -2 y = 4 }
 		}
 
 		categories = {
@@ -629,11 +630,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1939
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -2 y = 12 }
+			position = { x = -2 y = 6 }
 		}
 
 		categories = {
@@ -659,12 +660,16 @@ technologies = {
 			leads_to_tech = ita_medium_tank_2
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = ita_heavy_tank_1
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
-		start_year = 1939
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 6 }
+			position = { x = 2 y = 4 }
 		}
 
 		categories = {
@@ -679,17 +684,15 @@ technologies = {
 		enable_equipments = {
 			ita_medium_tank_chassis_m13
 		}
-		
+		enable_equipment_modules = {
+			tank_medium_turret_2
+		}
 		
 		path = {
 			leads_to_tech = ita_medium_tank_3
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = ita_heavy_tank_1
-			research_cost_coeff = 1
-		}
 
 		research_cost = 2
 		start_year = 1940
@@ -711,35 +714,12 @@ technologies = {
 			ita_medium_tank_chassis_m15
 		}
 		enable_equipment_modules = {
-			tank_medium_turret_2
+			tank_medium_turret_3
 		}
 		
 		path = {
 			leads_to_tech = ita_medium_tank_4
 			research_cost_coeff = 1
-		}
-
-		research_cost = 2
-		start_year = 1942
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = 12 }
-		}
-
-		categories = {
-			generic
-			armor
-			cat_medium_armor
-		}
-	}
-	
-	ita_medium_tank_4 = {
-
-		enable_equipments = {
-			ita_medium_tank_chassis_p26
-		}
-		enable_equipment_modules = {
-			tank_medium_turret_3
 		}
 
 		research_cost = 2
@@ -755,18 +735,62 @@ technologies = {
 			cat_medium_armor
 		}
 	}
+	
+	ita_medium_tank_4 = {
+
+		enable_equipments = {
+			ita_medium_tank_chassis_p26
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_4
+		}
+
+		research_cost = 2
+		start_year = 1945
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = 18 }
+		}
+
+		categories = {
+			generic
+			armor
+			cat_medium_armor
+		}
+	}
 
 	ita_heavy_tank_1 = {
 		enable_equipments = {
 			ita_heavy_tank_chassis_p43
 		}
 		enable_equipment_modules = {
-			tank_heavy_superstructure
 			tank_heavy_turret_1
+			tank_heavy_superstructure
+			tank_heavy_open_superstructure
+
 		}
 
 		path = {
 			leads_to_tech = ita_heavy_tank_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year	= 1940
+		folder	= {
+			name = nsb_armour_folder
+			position = { x = 6 y = 8 }
+		}
+	}
+
+	ita_heavy_tank_2 = {
+	
+		enable_equipment_modules = {
+			tank_heavy_turret_2
+		}
+
+		path = {
+			leads_to_tech = ita_heavy_tank_3
 			research_cost_coeff = 1
 		}
 
@@ -778,20 +802,19 @@ technologies = {
 		}
 	}
 
-	ita_heavy_tank_2 = {
+	ita_heavy_tank_3 = {
 	
 		enable_equipment_modules = {
-			tank_heavy_turret_2
+			tank_heavy_turret_3
 		}
 
 		research_cost = 2
-		start_year	= 1944
+		start_year	= 1945
 		folder	= {
 			name = nsb_armour_folder
-			position = { x = 6 y = 16 }
+			position = { x = 6 y = 18 }
 		}
 	}
-
 	
 	hun_light_tank_1 = {
 

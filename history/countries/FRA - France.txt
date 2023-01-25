@@ -36,7 +36,6 @@ set_technology = {
 	fra_heavy_tank_1 = 1
 	
 
-	armor_tech_1 = 1
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1

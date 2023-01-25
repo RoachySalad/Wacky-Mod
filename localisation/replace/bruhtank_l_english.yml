@@ -38,6 +38,13 @@
  EQ_MOD_CAT_tank_armament_tier_7_TITLE:0 "§3Basic§! §RHeavy§! Armanents"
  EQ_MOD_CAT_tank_armament_tier_8_TITLE:0 "§CImproved§! §RHeavy§! Armanents"
  EQ_MOD_CAT_tank_armament_tier_9_TITLE:0 "§6Advanced§! §RHeavy§! Armanents"
+ EQ_MOD_CAT_tank_armament_tier_aa_TITLE:0 "Light AA Guns"
+ EQ_MOD_CAT_tank_armament_tier_heavy_aa_TITLE:0 "Medium AA Guns"
+
+ EQ_MOD_CAT_tank_special_ammo_TITLE:0 "Ammo Storage"
+ extra_ammo_storage1:0 "Extra HE Ammo"
+ extra_ammo_storage2:0 "Extra AP Ammo"
+
  EQ_MOD_CAT_tank_ac_turret_type_TITLE:0 "Armoured Car Turrets"
  EQ_MOD_CAT_tank_light_turret_type_1_TITLE:0 "Light Turret 1"
  EQ_MOD_CAT_tank_light_turret_type_2_TITLE:0 "Light Turret 2"
