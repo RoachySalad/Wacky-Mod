@@ -125,6 +125,7 @@ technologies = {
 
 		enable_equipments = {
 			medium_tank_chassis_1
+			fra_heavy_tank_chassis_2c
 		}
 		enable_equipment_modules = {
 			tank_medium_turret_1
@@ -259,16 +260,15 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_riveted_armor
+			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
+			tank_petrol_electric_engine
 			tank_light_turret_1
+			tank_light_turret_2
 			tank_light_turret_open
 			tank_light_superstructure
 			tank_light_open_superstructure
-			tank_medium_turret_1
-			tank_medium_turret_open
-			tank_medium_superstructure
-			tank_medium_open_superstructure
 		}
 
 		path = {
@@ -308,7 +308,10 @@ technologies = {
 	fra_light_tank_2 = {
 
 		enable_equipment_modules = {
-			tank_light_turret_2
+			tank_light_turret_3
+		}
+		enable_equipments = {
+			fra_light_tank_chassis_x13
 		}
 		path = {
 			leads_to_tech = fra_light_tank_tur3
@@ -332,7 +335,7 @@ technologies = {
 
 		
 		enable_equipment_modules = {
-			tank_light_turret_3
+			tank_light_turret_4
 		}
 		on_research_complete = {
 			custom_effect_tooltip = h41_upgrade_tt
@@ -358,16 +361,15 @@ technologies = {
 	
 	fra_light_tank_3 = {
 
-		enable_equipments = {
-			fra_light_tank_chassis_x13
+		enable_equipment_modules = {
+			tank_light_superstructure_hetzer
 		}
 
-
 		research_cost = 1
-		start_year = 1945
+		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -4 y = 18 }
+			position = { x = -4 y = 14 }
 		}
 
 		categories = {
@@ -381,6 +383,12 @@ technologies = {
 
 		enable_equipments = {
 			fra_medium_tank_chassis_s35
+		}
+		enable_equipment_modules = {
+			tank_medium_turret_1
+			tank_medium_turret_open
+			tank_medium_superstructure
+			tank_medium_open_superstructure
 		}
 		
 		
@@ -446,10 +454,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 14 }
 		}
 
 		categories = {
@@ -465,7 +473,7 @@ technologies = {
 			fra_medium_tank_chassis_x4
 		}
 		enable_equipment_modules = {
-			tank_modern_tank_turret
+			tank_medium_turret_4
 		}
 
 		research_cost = 2
@@ -487,16 +495,22 @@ technologies = {
 		enable_equipments = {
 			fra_heavy_tank_chassis_b1
 		}
+		enable_equipment_modules = {
+			tank_heavy_turret_1
+			tank_heavy_superstructure
+			tank_heavy_open_superstructure
+
+		}
 		path = {
 			leads_to_tech = fra_heavy_tank_2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
-		start_year = 1937
+		start_year = 1940
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 4 y = 2 }
+			position = { x = 4 y = 8 }
 		}
 
 		categories = {
@@ -511,8 +525,7 @@ technologies = {
 			fra_heavy_tank_chassis_arl
 		}
 		enable_equipment_modules = {
-			tank_heavy_turret_1
-			tank_heavy_superstructure
+			tank_heavy_turret_2
 		}
 
 		path = {
@@ -521,10 +534,10 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 4 y = 12 }
+			position = { x = 4 y = 14 }
 		}
 
 		categories = {
@@ -537,14 +550,14 @@ technologies = {
 	fra_heavy_tank_3 = {
 
 		enable_equipment_modules = {
-			tank_heavy_turret_2
+			tank_heavy_turret_3
 		}
 
 		research_cost = 2
-		start_year = 1944
+		start_year = 1945
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 4 y = 16 }
+			position = { x = 4 y = 18 }
 		}
 
 		categories = {

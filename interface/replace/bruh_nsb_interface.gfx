@@ -1181,7 +1181,15 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_fra_light_tank_3_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_light_tank_2_medium"
 		texturefile = "gfx/interface/technologies/tanks/fra/fra_x13_hull.dds"
+	}
+	SpriteType = {
+		name = "GFX_fra_light_tank_tur3_medium"
+		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_fra_medium_tank_1_medium"
@@ -1211,14 +1219,7 @@ spriteTypes = {
 		name = "GFX_fra_heavy_tank_3_medium"
 		texturefile = "gfx/interface/technologies/tanks/fra/fra_x50_hull.dds"
 	}
-	SpriteType = {
-		name = "GFX_fra_light_tank_2_medium"
-		texturefile = "gfx/interface/technologies/nsb_armor_tech_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_fra_light_tank_tur3_medium"
-		texturefile = "gfx/interface/technologies/nsb_armor_tech_2.dds"
-	}
+	
 	
 	##### HUN #####
 	

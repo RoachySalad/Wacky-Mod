@@ -371,7 +371,6 @@ equipments = {
 					tank_light_turret_type_1
 					tank_light_turret_type_2
 					tank_light_turret_type_3
-					tank_light_turret_type_5
 					tank_light_turret_type_6
 					tank_light_turret_type_7
 				}
