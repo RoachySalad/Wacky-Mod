@@ -1262,7 +1262,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 4
-			tungsten = 2
+			tungsten = 6
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1286,7 +1286,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 4
+			tungsten = 8
 			steel = 8
 		}
 		dismantle_cost_ic = 1
@@ -1309,7 +1309,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 6
+			tungsten = 10
 			steel = 12
 		}
 		dismantle_cost_ic = 1
@@ -1332,7 +1332,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 3
+			tungsten = 7
 			steel = 3
 		}
 		dismantle_cost_ic = 1
@@ -1355,7 +1355,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 6
+			tungsten = 10
 			steel = 6
 		}
 		dismantle_cost_ic = 1
@@ -1378,7 +1378,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 9
+			tungsten = 13
 			steel = 9
 		}
 		dismantle_cost_ic = 2
@@ -1408,6 +1408,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 6
+			tungsten = 4
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1432,6 +1433,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 8
+			tungsten = 6
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1456,6 +1458,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 10
+			tungsten = 8
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1478,7 +1481,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 6
-			tungsten = 6
+			tungsten = 10
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1500,7 +1503,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 10
-			tungsten = 10
+			tungsten = 14
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1522,7 +1525,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 14
-			tungsten = 14
+			tungsten = 16
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1543,7 +1546,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 6
+			tungsten = 10
 			steel = 10
 		}
 		dismantle_cost_ic = 2
@@ -1566,7 +1569,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 9
+			tungsten = 13
 			steel = 15
 		}
 		dismantle_cost_ic = 2
@@ -1589,7 +1592,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 14
+			tungsten = 18
 			steel = 20
 		}
 		dismantle_cost_ic = 2
@@ -1612,7 +1615,7 @@ equipment_modules = {
 #		}
 #		
 #		build_cost_resources = {
-#			tungsten = 17
+#			tungsten = 19
 #			steel = 25
 #		}
 #		dismantle_cost_ic = 2
@@ -1635,7 +1638,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 9
+			tungsten = 13
 			steel = 9
 		}
 		dismantle_cost_ic = 2
@@ -1658,7 +1661,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 12
+			tungsten = 16
 			steel = 12
 		}
 		dismantle_cost_ic = 2
@@ -1681,7 +1684,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 17
+			tungsten = 21
 			steel = 17
 		}
 		dismantle_cost_ic = 2
@@ -1706,7 +1709,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 10
-			tungsten = 6
+			tungsten = 10
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1730,7 +1733,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 14
-			tungsten = 8
+			tungsten = 12
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1754,7 +1757,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 18
-			tungsten = 10
+			tungsten = 14
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1778,7 +1781,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 15
+			tungsten = 19
 			steel = 15
 			chromium = 5
 		}
@@ -1802,7 +1805,7 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			tungsten = 18
+			tungsten = 22
 			steel = 18
 			chromium = 8
 		}
@@ -1827,7 +1830,7 @@ equipment_modules = {
 	# 		maximum_speed = -0.35
 	# 	}
 	# 	build_cost_resources = {
-	# 		tungsten = 5
+	# 		tungsten = 7
 	# 		steel = 15
 	# 		chromium = 5
 	# 	}
@@ -1835,7 +1838,7 @@ equipment_modules = {
 
 	tank_heavy_hv_gun_1 = { ###8
 		abbreviation = "hh1"
-		category = tank_armament_tier_9
+		category = tank_armament_tier_7
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		forbid_equipment_type = amphibious 
@@ -1850,7 +1853,7 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			tungsten = 15
+			tungsten = 19
 			steel = 15
 			chromium = 5
 		}
@@ -1874,7 +1877,7 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			tungsten = 22
+			tungsten = 26
 			steel = 22
 			chromium = 8
 		}
@@ -1899,7 +1902,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 12
-			tungsten = 6
+			tungsten = 10
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1923,7 +1926,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 18
-			tungsten = 9
+			tungsten = 13
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1946,7 +1949,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 15
-			tungsten = 15
+			tungsten = 19
 			chromium = 5
 		}
 		dismantle_cost_ic = 3
@@ -1971,7 +1974,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 18
-			tungsten = 15
+			tungsten = 21
 			chromium = 8
 		}
 		dismantle_cost_ic = 3
@@ -1993,7 +1996,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 16
-			tungsten = 16
+			tungsten = 20
 			chromium = 5
 		}
 		dismantle_cost_ic = 3
@@ -2016,7 +2019,7 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 18
-			tungsten = 18
+			tungsten = 22
 			chromium = 8
 		}
 		dismantle_cost_ic = 3
@@ -2219,7 +2222,7 @@ equipment_modules = {
 			reliability = -0.05
 		}
 		multiply_stats = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 	}
 
@@ -2233,7 +2236,7 @@ equipment_modules = {
 			reliability = -0.05
 		}
 		multiply_stats = {
-			hard_attack = 0.05
+			hard_attack = 0.1
 		}
 		
 	}
@@ -2294,7 +2297,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 5
+			soft_attack = 3
 			air_attack = 0.5
 			defense = 1
 			build_cost_ic = 1
@@ -2311,7 +2314,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 10
+			soft_attack = 6
 			air_attack = 1
 			defense = 2
 			build_cost_ic = 2

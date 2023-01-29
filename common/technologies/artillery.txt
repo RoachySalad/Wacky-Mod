@@ -261,6 +261,12 @@ technologies = {
 	# Stat Buff Research
 	artillery2 = {
 
+		enable_equipment_modules = {
+			tank_med_gun_1
+			tank_med_hv_gun_1
+		}
+
+
 		artillery_brigade = {
 			soft_attack = 0.05
 		}
@@ -312,11 +318,7 @@ technologies = {
 	# Stat Buff Research
 	artillery3 = {
 
-		enable_equipment_modules = {
-			tank_med_gun_1
-			tank_med_hv_gun_1
-		}
-
+		
 		artillery_brigade = {
 			soft_attack = 0.05
 		}
@@ -615,6 +617,12 @@ technologies = {
 	# Stat Buff Research
 	artillery7 = {
 
+		enable_equipment_modules = {
+			tank_med_gun_3
+			tank_med_hv_gun_3
+		}
+
+
 		artillery_brigade = {
 			soft_attack = 0.05
 			fort = {
@@ -696,7 +704,6 @@ technologies = {
 			artillery_equipment_4
 		}
 		enable_equipment_modules = {
-			tank_med_gun_3
 		}
 		
 		research_cost = 2.0
@@ -722,8 +729,6 @@ technologies = {
 			anti_tank_equipment_4
 		}	
 		enable_equipment_modules = {
-			
-			tank_med_hv_gun_3
 		}
 		research_cost = 2.0
 

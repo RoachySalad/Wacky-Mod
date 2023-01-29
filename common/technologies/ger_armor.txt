@@ -331,7 +331,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = ger_armour_folder
-			position = { x = -1 y = 10 }
+			position = { x = -2 y = 10 }
 		}
 		
 		categories = {
@@ -360,10 +360,10 @@ technologies = {
 		}
 		
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = ger_armour_folder
-			position = { x = 1 y = 14 }
+			position = { x = 1 y = 12 }
 		}
 		
 		categories = {
