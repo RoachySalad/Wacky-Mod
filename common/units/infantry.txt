@@ -197,7 +197,21 @@ sub_units = {
 		
 		supply_consumption = 0.17
 		supply_consumption_factor = 0.02
-	
+		forest = {
+			attack = 0.10
+			defence = 0.10
+			movement = 0.05
+		}
+		urban = {
+			defence = 0.1
+		}
+		dense_urban = {
+			defence = 0.15
+		}
+		town = {
+			defence = 0.1
+		}
+		
 		need = {
 			infantry_equipment = 70
 			squad_equipment = 14
