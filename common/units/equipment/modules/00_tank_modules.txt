@@ -69,7 +69,7 @@ equipment_modules = {
 
 		add_stats = {
 			reliability = -0.1
-			hardness = -0.05
+			hardness = -0.1
 		}
 		
 		multiply_stats = {
@@ -92,7 +92,8 @@ equipment_modules = {
 			
 		}
 		build_cost_resources = {
-			chromium = 10
+			chromium = 5
+			steel = 5
 		}
 		dismantle_cost_ic = 1
 	}
@@ -108,7 +109,7 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			chromium = 5
+			steel = 5
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1238,7 +1239,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 5
+			steel = 2
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1260,7 +1261,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 5
+			steel = 4
+			tungsten = 2
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1284,8 +1286,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 5
-			steel = 5
+			tungsten = 4
+			steel = 8
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1307,8 +1309,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 10
-			steel = 8
+			tungsten = 6
+			steel = 12
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1330,8 +1332,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 15
-			steel = 8
+			tungsten = 3
+			steel = 3
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1353,8 +1355,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 15
-			steel = 10
+			tungsten = 6
+			steel = 6
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1376,8 +1378,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 20
-			steel = 15
+			tungsten = 9
+			steel = 9
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1405,7 +1407,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 5
+			steel = 6
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1475,7 +1477,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 8
+			steel = 6
+			tungsten = 6
 		}
 		dismantle_cost_ic = 1
 	}
@@ -1497,6 +1500,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 10
+			tungsten = 10
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1517,7 +1521,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 12
+			steel = 14
+			tungsten = 14
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1538,7 +1543,7 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 5
+			tungsten = 6
 			steel = 10
 		}
 		dismantle_cost_ic = 2
@@ -1561,8 +1566,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 10
-			steel = 10
+			tungsten = 9
+			steel = 15
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1584,34 +1589,34 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 15
+			tungsten = 14
 			steel = 20
 		}
 		dismantle_cost_ic = 2
 	}
 
-	tank_med_gun_4 = { ###6
-		abbreviation = "mg4"
-		category = tank_armament_tier_6
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = anti_tank
-		parent = tank_med_gun_2
-
-		add_stats = {
-			soft_attack = 49
-			hard_attack = 39
-			ap_attack = 85
-			build_cost_ic = 8
-		}
-		multiply_stats = {
-		}
-		
-		build_cost_resources = {
-			tungsten = 15
-			steel = 20
-		}
-		dismantle_cost_ic = 2
-	}
+#	tank_med_gun_4 = { ###6
+#		abbreviation = "mg4"
+#		category = tank_armament_tier_6
+#		sfx = sfx_ui_sd_module_turret
+#		allow_equipment_type = anti_tank
+#		parent = tank_med_gun_2
+#
+#		add_stats = {
+#			soft_attack = 55
+#			hard_attack = 45
+#			ap_attack = 85
+#			build_cost_ic = 12
+#		}
+#		multiply_stats = {
+#		}
+#		
+#		build_cost_resources = {
+#			tungsten = 17
+#			steel = 25
+#		}
+#		dismantle_cost_ic = 2
+#	}
 
 	tank_med_hv_gun_1 = { ###5
 		abbreviation = "mh1"
@@ -1630,8 +1635,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 10
-			steel = 10
+			tungsten = 9
+			steel = 9
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1653,8 +1658,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 15
-			steel = 15
+			tungsten = 12
+			steel = 12
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1676,13 +1681,13 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			tungsten = 20
-			steel = 20
+			tungsten = 17
+			steel = 17
 		}
 		dismantle_cost_ic = 2
 	}
 
-
+	
 	tank_med_cs_gun_1 = { ###4
 		abbreviation = "cs1"
 		category = tank_armament_tier_4
@@ -1701,6 +1706,7 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			steel = 10
+			tungsten = 6
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1723,7 +1729,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 12
+			steel = 14
+			tungsten = 8
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1746,7 +1753,8 @@ equipment_modules = {
 		}
 		
 		build_cost_resources = {
-			steel = 14
+			steel = 18
+			tungsten = 10
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1771,8 +1779,8 @@ equipment_modules = {
 		
 		build_cost_resources = {
 			tungsten = 15
-			steel = 10
-			chromium = 3
+			steel = 15
+			chromium = 5
 		}
 		dismantle_cost_ic = 3
 	}
@@ -1794,9 +1802,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			tungsten = 15
-			steel = 15
-			chromium = 3
+			tungsten = 18
+			steel = 18
+			chromium = 8
 		}
 		dismantle_cost_ic = 3
 	}
@@ -1842,9 +1850,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			tungsten = 20
+			tungsten = 15
 			steel = 15
-			chromium = 3
+			chromium = 5
 		}
 		dismantle_cost_ic = 3
 	}
@@ -1866,9 +1874,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			tungsten = 20
-			steel = 20
-			chromium = 3
+			tungsten = 22
+			steel = 22
+			chromium = 8
 		}
 		dismantle_cost_ic = 3
 	}
@@ -1890,8 +1898,8 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 10
-			chromium = 3
+			steel = 12
+			tungsten = 6
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1914,8 +1922,8 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 15
-			chromium = 3
+			steel = 18
+			tungsten = 9
 		}
 		dismantle_cost_ic = 2
 	}
@@ -1937,8 +1945,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 10
-			chromium = 3
+			steel = 15
+			tungsten = 15
+			chromium = 5
 		}
 		dismantle_cost_ic = 3
 	}
@@ -1961,8 +1970,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 15
-			chromium = 3
+			steel = 18
+			tungsten = 15
+			chromium = 8
 		}
 		dismantle_cost_ic = 3
 	}
@@ -1982,8 +1992,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 10
-			chromium = 3
+			steel = 16
+			tungsten = 16
+			chromium = 5
 		}
 		dismantle_cost_ic = 3
 	}
@@ -2004,8 +2015,9 @@ equipment_modules = {
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 15
-			chromium = 3
+			steel = 18
+			tungsten = 18
+			chromium = 8
 		}
 		dismantle_cost_ic = 3
 	}

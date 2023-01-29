@@ -48,14 +48,12 @@ equipments = {
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_radio_module
 				}
 			}
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_special_ammo
 				}
 			}
@@ -211,7 +209,6 @@ equipments = {
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_special_ammo
 				}
 			}
@@ -306,9 +303,7 @@ equipments = {
 		armor_value = 15
 		hardness = 0
 		resources = {
-			steel = 15
-			tungsten = 10
-			chromium = 10
+			steel = 20
 		}
 
 	}
@@ -369,7 +364,6 @@ equipments = {
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_module
 					tank_special_ammo
 				}
 			}
@@ -459,9 +453,7 @@ equipments = {
 		armor_value = 25
 		hardness = 0
 		resources = {
-			steel = 20
-			tungsten = 20
-			chromium = 15
+			steel = 30
 		}
 
 	}
