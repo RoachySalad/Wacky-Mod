@@ -1774,7 +1774,7 @@ technologies = {
 			arditi
 		}		
 	}
-	conscript_tech = {
+	militia_tech = {
 		
 		allow = {
 			always = no
@@ -1784,7 +1784,7 @@ technologies = {
 		start_year = 1936
 
 		enable_subunits = {
-			conscript
+			militia
 		}		
 	}
 	waffen_ss_tech = {

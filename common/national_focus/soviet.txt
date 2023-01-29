@@ -5513,7 +5513,7 @@
 			}
 			hidden_effect = {
 				set_technology = {
-					conscript_tech = 1
+					militia_tech = 1
 				}
 			}
 			swap_ideas  = {
