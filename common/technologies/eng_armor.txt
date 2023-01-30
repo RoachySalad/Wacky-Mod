@@ -344,17 +344,10 @@ technologies = {
 			
 		}
 		path = {
-			leads_to_tech = eng_medium_tank_6
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = eng_medium_tank_7
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = eng_heavy_tank_7
-			research_cost_coeff = 1
-		}
+		
 		research_cost = 2.0
 		start_year = 1942
 		folder = {
@@ -543,7 +536,6 @@ technologies = {
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure
-
 		}
 	
 		path = {
@@ -551,7 +543,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = eng_valentine_upgrade
+			leads_to_tech = eng_heavy_tank_5
 			research_cost_coeff = 1
 		}
 		
@@ -580,12 +572,11 @@ technologies = {
 			eng_heavy_tank_chassis_a22
 		}
 		enable_equipment_modules = {
-			tank_heavy_superstructure
-			tank_heavy_turret_1
+			tank_heavy_turret_2
 		}
-
+		
 		path = {
-			leads_to_tech = eng_heavy_tank_5
+			leads_to_tech = eng_heavy_tank_8
 			research_cost_coeff = 1
 		}
 		
@@ -614,12 +605,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_turret_2
-			tank_heavy_open_superstructure
 		}
-		path = {
-			leads_to_tech = eng_heavy_tank_6
-			research_cost_coeff = 1
-		}
+		
 		path = {
 			leads_to_tech = eng_heavy_tank_8
 			research_cost_coeff = 1
@@ -628,7 +615,7 @@ technologies = {
 		start_year = 1943
 		folder = {
 			name = eng_armour_folder
-			position = { x = 6 y = 14 }
+			position = { x = 9 y = 14 }
 		}
 		
 		categories = {
@@ -642,28 +629,28 @@ technologies = {
 		}
 	}
 
-	eng_heavy_tank_6 = {
-
-		enable_equipments = {
-			eng_heavy_tank_chassis_a39
-		}		
-		research_cost = 2
-		start_year = 1944
-		folder = {
-			name = eng_armour_folder
-			position = { x = 8 y = 16 }
-		}
-		
-		categories = {
-			generic
-			armor
-			cat_heavy_armor
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	}
+#	eng_heavy_tank_6 = {
+#
+#		enable_equipments = {
+#			eng_heavy_tank_chassis_a39
+#		}		
+#		research_cost = 2
+#		start_year = 1944
+#		folder = {
+#			name = eng_armour_folder
+#			position = { x = 8 y = 16 }
+#		}
+#		
+#		categories = {
+#			generic
+#			armor
+#			cat_heavy_armor
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
 	
 	eng_heavy_tank_8 = {
 
@@ -671,7 +658,7 @@ technologies = {
 			eng_heavy_tank_chassis_a45
 		}
 		enable_equipment_modules = {
-			tank_modern_tank_turret
+			tank_heavy_turret_3
 		}
 		
 		research_cost = 2
@@ -812,10 +799,7 @@ technologies = {
 			armor
 			cat_medium_armor
 		}
-		path = {
-			leads_to_tech = eng_medium_tank_7
-			research_cost_coeff = 1
-		}
+		
 		
 		ai_will_do = {
 			factor = 0

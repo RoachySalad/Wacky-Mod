@@ -261,7 +261,7 @@ technologies = {
 		}
 		
 		research_cost = 2.0
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = ger_armour_folder
 			position = { x = 2 y = 4 }
@@ -445,7 +445,6 @@ technologies = {
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure
-
 		}
 	
 		path = {
