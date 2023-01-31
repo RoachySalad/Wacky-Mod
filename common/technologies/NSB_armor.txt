@@ -125,7 +125,6 @@ technologies = {
 
 		enable_equipments = {
 			medium_tank_chassis_1
-			fra_heavy_tank_chassis_2c
 		}
 		enable_equipment_modules = {
 			tank_medium_turret_1
@@ -281,6 +280,11 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = fra_heavy_tank_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = fra_heavy_tank_alt 
 			research_cost_coeff = 1
 		}
 
@@ -519,6 +523,33 @@ technologies = {
 			cat_heavy_armor
 		}
 	}
+
+	fra_heavy_tank_alt = {
+
+		enable_equipments = {
+			fra_heavy_tank_chassis_2c
+		}
+		enable_equipment_modules = {
+		}
+
+		path = {
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = 4 }
+		}
+
+		categories = {
+			generic
+			armor
+			cat_heavy_armor
+		}
+	}
+
+
 	fra_heavy_tank_2 = {
 
 		enable_equipments = {
@@ -1006,6 +1037,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_medium_turret_4
+			tank_medium_superstructure_E50
 		}
 
 		research_cost = 2

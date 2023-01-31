@@ -750,7 +750,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ger_cze_spg_equipment_1:0 "Grille Ausf. K"
  ger_cze_spaa_equipment_1:0 "Flakpanzer 38(t)"
  ger_cze_tank_equipment_1_short_tt:0 "§RThis will automatically unlock after the 'Fate of Czechoslovakia' Focus§!"
- ger_cze_tank_equipment_2_short_tt:0 "This Light Tank Chassis is able to use Tier 6 §6Advanced§! §OMedium§! Armanents!"
+ ger_cze_tank_equipment_2_short_tt:0 "This Light Tank Chassis is able to use Tier 6 §6Advanced§! §OMedium§! Armaments!"
  
  ger_assault_gun_equipment_1:0 "StuG III Ausf. A"
  ger_assault_gun_equipment_2_short:0 "StuH 42"
@@ -872,7 +872,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
 
  usa_assault_gun_equipment_1:0 "T28"
  
- usa_m24_short_tt:0 "This Light Tank Chassis is able to use Tier 4 §3Basic§! §OMedium§! Armanents"
+ usa_m24_short_tt:0 "This Light Tank Chassis is able to use Tier 4 §3Basic§! §OMedium§! Armaments"
  #ITA#
  ita_light_tank_equipment_1:0 "L3/35"
  ita_light_tank_equipment_2:0 "L3/38"
