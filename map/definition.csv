@@ -990,7 +990,7 @@
 989;5;0;190;land;true;hills;5
 990;5;0;232;sea;true;ocean;0
 991;5;2;240;sea;true;ocean;0
-992;5;3;5;land;false;desert;5
+992;5;3;5;land;false;hills;5
 993;5;3;155;land;false;plains;6
 994;5;3;210;land;true;plains;6
 995;5;4;244;sea;true;ocean;0
@@ -10125,7 +10125,7 @@
 10124;131;204;74;land;true;hills;6
 10125;131;204;224;land;true;urban;6
 10126;131;207;39;land;true;mountain;5
-10127;131;210;4;land;false;desert;5
+10127;131;210;4;land;false;hills;5
 10128;131;210;154;land;true;mountain;6
 10129;131;210;209;land;false;plains;6
 10130;132;0;24;land;false;mountain;6
