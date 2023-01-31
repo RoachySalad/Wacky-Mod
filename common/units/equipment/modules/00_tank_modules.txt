@@ -2130,6 +2130,7 @@ equipment_modules = {
 			build_cost_ic = 2
 			reliability = -0.10
 			breakthrough = 5
+		}
 	}
 
 	secondary_turret_hmg = {
@@ -2143,8 +2144,6 @@ equipment_modules = {
 			build_cost_ic = 2
 		}
 		
-		multiply_stats = {
-		}
 	}
 
 	secondary_turret_small_cannon = {
