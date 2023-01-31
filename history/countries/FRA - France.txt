@@ -36,7 +36,6 @@ set_technology = {
 	fra_heavy_tank_1 = 1
 	
 
-	armor_tech_1 = 1
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_early_fighter = 1
@@ -222,21 +221,7 @@ create_equipment_variant = {
 	}
 	obsolete = yes #used for oob
 }
-create_equipment_variant = {
-	name = "Char 2C"
-	type = fra_heavy_tank_chassis_2c
-	parent_version = 0
-	modules = {
-		main_armament_slot = tank_med_cs_gun_1
-		turret_type_slot = tank_medium_turret_1
-		armor_type_slot = tank_riveted_armor
-		engine_type_slot = tank_gasoline_engine
-		special_type_slot_2 = secondary_turret_hmg
-		special_type_slot_3 = secondary_turret_hmg
-	}
-	icon = "gfx/interface/technologies/tanks/fra/fra_super_1.dds"
-	obsolete = yes #used for oob
-}
+
 
 if = {
 	limit = { has_dlc = "La Resistance" }

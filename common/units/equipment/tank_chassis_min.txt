@@ -8,22 +8,30 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = {
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 		}
-		maximum_speed = 4.0
-		build_cost_ic = 10
-		reliability = 0.75
-		armor_value = 15
-		defense = 4
-		breakthrough = 10
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 4
+		build_cost_ic = 6
+		reliability = 0.5
+		armor_value = 5
+		hardness = 0.4
+		defense = 6
+		breakthrough = 15
 	}
 
 	fra_light_tank_chassis_h35 = {
@@ -37,25 +45,28 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
-					tank_light_turret_type_alt
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 		}
 		upgrades = {
+			tank_nsb_med_engine_1_upgrade
 			tank_nsb_med_armor_1_upgrade
 		}
-		maximum_speed = 5.0
-		build_cost_ic = 12
-		reliability = 0.85
-		armor_value = 30
-		defense = 5
+		maximum_speed = 5
+		build_cost_ic = 10
+		reliability = 0.6
+		armor_value = 5
+		hardness = 0.5
+		defense = 8
 		breakthrough = 20
 	}
 
@@ -70,52 +81,71 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
-					tank_light_turret_type_3
-					tank_light_turret_type_alt
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
 		}
 		upgrades = {
+			tank_nsb_med_engine_1_upgrade
 			tank_nsb_med_armor_1_upgrade
 		}
-		maximum_speed = 4.5
-		build_cost_ic = 12
-		reliability = 0.85
-		armor_value = 35
-		defense = 5
-		breakthrough = 25
+		maximum_speed = 6
+		build_cost_ic = 10
+		reliability = 0.6
+		armor_value = 5
+		hardness = 0.5
+		defense = 4
+		breakthrough = 20
 	}
 
 	fra_light_tank_chassis_x13 = {
 		abbreviation = "x13"
 		visual_level = 2
-		year = 1945
+		year = 1939
 		archetype = light_tank_chassis
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type_alt
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_light_turret_type_4
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
+					tank_light_turret_type_8
 				}
+	
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
-		maximum_speed = 8.0
-		build_cost_ic = 18
-		reliability = 0.85
-		armor_value = 40
-		defense = 8
-		breakthrough = 50
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 14
+		reliability = 1
+		armor_value = 5
+		hardness = 0.75
+		defense = 6
+		breakthrough = 35
 	}
 
 	fra_medium_tank_chassis_s35 = {
@@ -126,12 +156,16 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{	
-				required = yes	
+			turret_type_slot = 	{		
+				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_medium_turret_type_1
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
@@ -139,12 +173,17 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 		}
-		maximum_speed = 5.5
-		build_cost_ic = 22
-		reliability = 0.8
-		armor_value = 45
-		defense = 6
-		breakthrough = 40
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 16
+		reliability = 0.7
+		armor_value = 5
+		hardness = 0.7
+		defense = 8
+		breakthrough = 35
 	}
 
 	fra_medium_tank_chassis_s40 = {
@@ -155,27 +194,36 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{	
-				required = yes	
+			turret_type_slot = 	{		
+				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
-		maximum_speed = 6.0
-		build_cost_ic = 26
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 18
 		reliability = 0.8
-		armor_value = 55
-		defense = 7
-		breakthrough = 45
+		armor_value = 5
+		hardness = 0.75
+		defense = 8
+		breakthrough = 40
 	}
 
 	fra_medium_tank_chassis_s42 = {
@@ -186,26 +234,37 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
-		maximum_speed = 6.0
-		build_cost_ic = 28
-		reliability = 0.8
-		armor_value = 60
-		defense = 8
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 20
+		reliability = 0.9
+		armor_value = 5
+		hardness = 0.8
+		defense = 10
 		breakthrough = 50
 	}
 
@@ -217,92 +276,136 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_modern_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
+					tank_medium_turret_type_8
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
 		}
-		maximum_speed = 6.5
-		build_cost_ic = 32
-		reliability = 0.85
-		armor_value = 60
-		defense = 8
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5.5
+		build_cost_ic = 22
+		reliability = 1
+		armor_value = 5
+		hardness = 0.85
+		defense = 10
 		breakthrough = 60
 	}
 
 	fra_heavy_tank_chassis_b1 = {
 		abbreviation = "fb1"
 		visual_level = 0
-		year = 1937
+		year = 1940
 		archetype = heavy_tank_chassis
 		priority = 2000
-		module_slots = {
-			main_armament_slot = {
-				required = yes
+		module_slots = 	{
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_armament_tier_1
-				}
-			}
-			turret_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_light_turret_type
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_heavy_turret_type_1
+					tank_heavy_turret_type_4
+					tank_heavy_turret_type_5
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
-			special_type_slot_2 = {
-				required = yes
-				allowed_module_categories = {
-					tank_secondary_turret
-				}
-			}
+			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
 		}
-		maximum_speed = 4.5
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 4
 		build_cost_ic = 26
-		reliability = 0.7
-		armor_value = 65
-		defense = 8
-		breakthrough = 50
+		reliability = 0.75
+		armor_value = 5
+		hardness = 0.8
+		defense = 10
+		breakthrough = 60
 	}
 
 	fra_heavy_tank_chassis_arl = {
 		abbreviation = "arl"
 		visual_level = 0
-		year = 1944
+		year = 1943
 		archetype = heavy_tank_chassis
 		priority = 2000
-		module_slots = inherit
-		maximum_speed = 5.0
-		build_cost_ic = 36
-		reliability = 0.75
-		armor_value = 75
-		defense = 8
-		breakthrough = 70
+		module_slots = 	{
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_heavy_turret_type_1
+					tank_heavy_turret_type_2
+					tank_heavy_turret_type_3
+					tank_heavy_turret_type_4
+					tank_heavy_turret_type_5
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 30
+		reliability = 0.9
+		armor_value = 5
+		hardness = 0.85
+		defense = 16
+		breakthrough = 80
 	}
 	
-	fra_heavy_tank_chassis_x50 = {
-		abbreviation = "a50"
-		visual_level = 0
-		year = 1945
-		archetype = heavy_tank_chassis
-		priority = 2000
-		module_slots = inherit
-		maximum_speed = 5.5
-		build_cost_ic = 42
-		reliability = 0.75
-		armor_value = 95
-		defense = 8
-		breakthrough = 85
-	}
+	#fra_heavy_tank_chassis_x50 = {
+	#	abbreviation = "a50"
+	#	visual_level = 0
+	#	year = 1945
+	#	archetype = heavy_tank_chassis
+	#	priority = 2000
+	#	module_slots = inherit
+	#	maximum_speed = 5.5
+	#	build_cost_ic = 42
+	#	reliability = 0.75
+	#	armor_value = 95
+	#	defense = 8
+	#	breakthrough = 85
+	#}
 
 	fra_heavy_tank_chassis_2c = {
 		abbreviation = "f2c"
@@ -311,41 +414,43 @@ equipments = {
 		archetype = heavy_tank_chassis
 		priority = 2000
 		module_slots = 	{
-			main_armament_slot = {
-				required = yes
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_armament_tier_1
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
-			turret_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_medium_turret_type
-					tank_medium_turret_type_1
-				}
-			}
+			
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
-			special_type_slot_2 = {
-				required = yes
-				allowed_module_categories = {
-					tank_secondary_turret
-				}
-			}
+			special_type_slot_2 = inherit
+			
 			special_type_slot_3 = {
 				required = yes
 				allowed_module_categories = {
 					tank_secondary_turret
 				}
 			}
+			special_type_slot_4 = {
+				required = yes
+				allowed_module_categories = {
+					tank_secondary_turret
+				}
+			}
 		}
-		maximum_speed = 4.0
-		build_cost_ic = 38
+		maximum_speed = 4
+		build_cost_ic = 25
 		reliability = 0.6
-		armor_value = 40
+		armor_value = 5
+		hardness = 0.5
 		defense = 8
-		breakthrough = 55
+		breakthrough = 50
 	}
 
 	ita_light_tank_chassis_cv33 = {
@@ -356,19 +461,28 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = {
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type_cv33
+					tank_light_turret_type_1
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
+			special_type_slot_1 = inherit
 		}
-		maximum_speed = 6.0
-		build_cost_ic = 7
-		reliability = 0.85
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 8
+		reliability = 0.5
 		armor_value = 5
+		hardness = 0.5
 		defense = 4
 		breakthrough = 15
 	}
@@ -381,26 +495,35 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
 					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
-		maximum_speed = 5.5
-		build_cost_ic = 13
-		reliability = 0.85
-		armor_value = 30
-		defense = 4
-		breakthrough = 30
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 12
+		reliability = 0.8
+		armor_value = 5
+		hardness = 0.6
+		defense = 6
+		breakthrough = 35
 	}
 
 	ita_medium_tank_chassis_m11 = {
@@ -414,10 +537,13 @@ equipments = {
 			turret_type_slot = 	{		
 				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_medium_turret_type_1
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
@@ -425,11 +551,16 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 		}
-		maximum_speed = 4.5
-		build_cost_ic = 14
-		reliability = 0.75
-		armor_value = 25
-		defense = 5
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 16
+		reliability = 0.7
+		armor_value = 5
+		hardness = 0.7
+		defense = 6
 		breakthrough = 35
 	}
 
@@ -441,27 +572,36 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
-		maximum_speed = 5.0
-		build_cost_ic = 16
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 20
 		reliability = 0.8
-		armor_value = 30
-		defense = 6
-		breakthrough = 40
+		armor_value = 5
+		hardness = 0.7
+		defense = 8
+		breakthrough = 45
 	}
 	
 	ita_medium_tank_chassis_m15 = {
@@ -472,14 +612,18 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
@@ -487,13 +631,19 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
-		maximum_speed = 5.0
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5.5
 		build_cost_ic = 20
 		reliability = 0.8
-		armor_value = 40
-		defense = 7
-		breakthrough = 45
+		armor_value = 5
+		hardness = 0.75
+		defense = 8
+		breakthrough = 50
 	}
 
 	ita_medium_tank_chassis_p26 = {
@@ -504,14 +654,20 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
 					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
+					tank_medium_turret_type_8
 				}
 			}
 			armor_type_slot = inherit
@@ -519,13 +675,20 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
 		}
-		maximum_speed = 5.0
-		build_cost_ic = 24
-		reliability = 0.8
-		armor_value = 55
-		defense = 8
-		breakthrough = 50
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 22
+		reliability = 1
+		armor_value = 5
+		hardness = 0.8
+		defense = 6
+		breakthrough = 55
 	}
 
 	ita_heavy_tank_chassis_p43 = {
@@ -534,13 +697,39 @@ equipments = {
 		year = 1942
 		archetype = heavy_tank_chassis
 		priority = 2000
-		module_slots = inherit
-		maximum_speed = 5.0
-		build_cost_ic = 36
+		module_slots = 	{
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_medium_turret_type_1
+					tank_medium_turret_type_2
+					tank_medium_turret_type_3
+					tank_heavy_turret_type_1
+					tank_heavy_turret_type_2
+					tank_heavy_turret_type_3
+					tank_heavy_turret_type_4
+					tank_heavy_turret_type_5
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 4.5
+		build_cost_ic = 28
 		reliability = 0.75
-		armor_value = 80
-		defense = 8
-		breakthrough = 70
+		armor_value = 5
+		hardness = 0.8
+		defense = 10
+		breakthrough = 60
 	}
 
 	hun_light_tank_chassis_38m = {
@@ -554,24 +743,32 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_light_turret_type
 					tank_light_turret_type_1
 					tank_light_turret_type_2
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
+					tank_light_turret_type_4
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
+	
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
+			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
 		upgrades = {
-			tank_nsb_med_armor_3_upgrade
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
 		}
-		maximum_speed = 6.0
-		build_cost_ic = 12
-		reliability = 0.85
-		armor_value = 20
+		maximum_speed = 5.5
+		build_cost_ic = 16
+		reliability = 0.9
+		armor_value = 5
+		hardness = 0.7
 		defense = 5
 		breakthrough = 30
 	}
@@ -587,11 +784,15 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
@@ -599,13 +800,19 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
 		}
-		maximum_speed = 6.0
-		build_cost_ic = 22
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 20
 		reliability = 0.8
-		armor_value = 45
-		defense = 8
-		breakthrough = 45
+		armor_value = 5
+		hardness = 0.75
+		defense = 6
+		breakthrough = 40
 	}
 
 	hun_medium_tank_chassis_44m = {
@@ -619,12 +826,17 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
 					tank_medium_turret_type_4
-					tank_modern_turret_type
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
+					tank_medium_turret_type_8
 				}
 			}
 			armor_type_slot = inherit
@@ -633,11 +845,17 @@ equipments = {
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
 			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
 		}
 		maximum_speed = 5.5
-		build_cost_ic = 36
-		reliability = 0.8
-		armor_value = 90
+		build_cost_ic = 22
+		reliability = 1
+		armor_value = 5
+		hardness = 0.85
 		defense = 8
 		breakthrough = 55
 	}
@@ -648,19 +866,38 @@ equipments = {
 		year = 1934
 		archetype = light_tank_chassis
 		priority = 2000
-		module_slots = inherit
-		maximum_speed = 5.0
-		build_cost_ic = 10
-		reliability = 0.85
-		armor_value = 10
-		defense = 5
+		module_slots = {
+			main_armament_slot = inherit
+			turret_type_slot = 	{	
+				required = yes	
+				allowed_module_categories = {
+					tank_light_turret_type_1
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
+				}
+			}
+			armor_type_slot = inherit
+			engine_type_slot = inherit
+			special_type_slot_1 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 8
+		reliability = 0.5
+		armor_value = 5
+		hardness = 0.5
+		defense = 4
 		breakthrough = 15
 	}
 
 	jap_light_tank_chassis_t98 = {
 		abbreviation = "t98"
 		visual_level = 1
-		year = 1940
+		year = 1939
 		archetype = light_tank_chassis
 		priority = 2000
 		module_slots = {
@@ -672,51 +909,31 @@ equipments = {
 					tank_light_turret_type_1
 					tank_light_turret_type_2
 					tank_light_turret_type_3
-					tank_light_turret_type_alt
+					tank_light_turret_type_5
+					tank_light_turret_type_6
+					tank_light_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
-		maximum_speed = 5.5
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 6
 		build_cost_ic = 12
-		reliability = 0.85
-		armor_value = 15
+		reliability = 0.8
+		armor_value = 5
+		hardness = 0.6
 		defense = 6
 		breakthrough = 35
 	}
 	
-	jap_medium_tank_chassis_t89 = {
-		abbreviation = "t89"
-		visual_level = 0
-		year = 1928
-		archetype = medium_tank_chassis
-		priority = 2000
-		module_slots = {
-			main_armament_slot = inherit
-			turret_type_slot = 	{	
-				required = yes	
-				allowed_module_categories = {
-					tank_medium_turret_type
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-				}
-			}
-			armor_type_slot = inherit
-			engine_type_slot = inherit
-			special_type_slot_1 = inherit
-			special_type_slot_2 = inherit
-		}
-		maximum_speed = 4.5
-		build_cost_ic = 12
-		reliability = 0.8
-		armor_value = 15
-		defense = 5
-		breakthrough = 35
-	}
-
+	
 	jap_medium_tank_chassis_t97 = {
 		abbreviation = "t97"
 		visual_level = 0
@@ -725,13 +942,16 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{	
-				required = yes	
+			turret_type_slot = 	{		
+				required = yes
 				allowed_module_categories = {
-					tank_medium_turret_type
-					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
+					tank_medium_turret_type_1
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
@@ -739,12 +959,17 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 		}
-		maximum_speed = 5.0
-		build_cost_ic = 14
-		reliability = 0.8
-		armor_value = 20
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 16
+		reliability = 0.7
+		armor_value = 5
+		hardness = 0.7
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	jap_medium_tank_chassis_t01 = {
@@ -758,23 +983,32 @@ equipments = {
 			turret_type_slot = 	{	
 				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
-					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
+			special_type_slot_3 = inherit
 		}
-		maximum_speed = 5.0
-		build_cost_ic = 18
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 5
+		build_cost_ic = 20
 		reliability = 0.8
-		armor_value = 40
-		defense = 6
+		armor_value = 5
+		hardness = 0.7
+		defense = 8
 		breakthrough = 45
 	}
 	
@@ -786,14 +1020,18 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
-					tank_medium_turret_type_4
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
 				}
 			}
 			armor_type_slot = inherit
@@ -801,12 +1039,18 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+		}
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
 		}
 		maximum_speed = 5.5
 		build_cost_ic = 20
 		reliability = 0.8
-		armor_value = 50
-		defense = 6
+		armor_value = 5
+		hardness = 0.75
+		defense = 8
 		breakthrough = 50
 	}
 
@@ -818,15 +1062,20 @@ equipments = {
 		priority = 2000
 		module_slots = {
 			main_armament_slot = inherit
-			turret_type_slot = 	{		
-				required = yes
+			turret_type_slot = 	{	
+				required = yes	
 				allowed_module_categories = {
-					tank_medium_turret_type
+					tank_light_turret_type_1
+					tank_light_turret_type_2
+					tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
 					tank_medium_turret_type_3
 					tank_medium_turret_type_4
-					tank_modern_turret_type
+					tank_medium_turret_type_5
+					tank_medium_turret_type_6
+					tank_medium_turret_type_7
+					tank_medium_turret_type_8
 				}
 			}
 			armor_type_slot = inherit
@@ -834,12 +1083,19 @@ equipments = {
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
 			special_type_slot_3 = inherit
+			special_type_slot_4 = inherit
+			special_type_slot_5 = inherit
 		}
-		maximum_speed = 5.5
-		build_cost_ic = 32
-		reliability = 0.8
-		armor_value = 75
-		defense = 8
+		upgrades = {
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
+		}
+		maximum_speed = 6
+		build_cost_ic = 22
+		reliability = 1
+		armor_value = 5
+		hardness = 0.8
+		defense = 6
 		breakthrough = 55
 	}
 }

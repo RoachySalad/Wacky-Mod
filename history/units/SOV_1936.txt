@@ -2341,14 +2341,10 @@ instant_effect = {
 	}
 	add_equipment_to_stockpile = {
 		type = sov_medium_tank_chassis_t28
-		amount = 400
+		amount = 500
 		producer = SOV
 	}
-	add_equipment_to_stockpile = {
-		type = sov_heavy_tank_chassis_t35
-		amount = 50
-		producer = SOV
-	}
+	
 	add_equipment_to_stockpile = {
 		type = horse_equipment_0
 		amount = 3000

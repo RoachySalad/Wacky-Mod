@@ -9,12 +9,12 @@ sub_units = {
 		
 		type = {
 			armor
-			anti_tank
 		}
 		
-		group = artillery
+		group = armor
 		
 		categories = {
+			category_tanks
 			category_front_line
 			category_all_armor
 			category_army
@@ -34,10 +34,9 @@ sub_units = {
 		supply_consumption = 0.15
 		supply_consumption_factor = 0.05
 		
-		soft_attack = -0.8
+		soft_attack = -0.9
 		hard_attack = -0.3
-		breakthrough = -0.85
-		defense = 0.2
+		breakthrough = -0.9
 
 		plains = {
 			attack = 0.05 
@@ -100,12 +99,12 @@ sub_units = {
 		
 		type = {
 			armor
-			anti_tank
 		}
 		
-		group = artillery
+		group = armor
 		
 		categories = {
+			category_tanks
 			category_front_line
 			category_all_armor
 			category_army
@@ -126,10 +125,9 @@ sub_units = {
 		supply_consumption = 0.24
 		supply_consumption_factor = 0.06
 		
-		soft_attack = -0.8
+		soft_attack = -0.9
 		hard_attack = -0.3
-		breakthrough = -0.85
-		defense = 0.2
+		breakthrough = -0.9
 
 		plains = {
 			attack = 0.05 
@@ -194,12 +192,12 @@ sub_units = {
 		
 		type = {
 			armor
-			anti_tank
 		}
 		
-		group = artillery
+		group = armor
 		
 		categories = {
+			category_tanks
 			category_front_line
 			category_all_armor
 			category_army
@@ -219,10 +217,9 @@ sub_units = {
 		supply_consumption = 0.28
 		supply_consumption_factor = 0.08
 		
-		soft_attack = -0.8
+		soft_attack = -0.9
 		hard_attack = -0.3
-		breakthrough = -0.85
-		defense = 0.2
+		breakthrough = -0.9
 
 		plains = {
 			attack = 0.05 
