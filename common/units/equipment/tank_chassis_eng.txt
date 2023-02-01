@@ -532,7 +532,7 @@ equipments = {
 		build_cost_ic = 25
 		reliability = 0.6
 		armor_value = 5
-		hardness = 0.5
+		hardness = 0.6
 		defense = 6
 		breakthrough = 50
 	}
