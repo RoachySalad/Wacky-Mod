@@ -2051,7 +2051,7 @@ equipment_modules = {
 		abbreviation = "rcs"
 		category = tank_armament_tier_9
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = artillery
+		allow_equipment_type = artillery	
 		forbid_equipment_type_exact_match = armor
 		forbid_equipment_type = amphibious
 		add_stats = {
@@ -2361,8 +2361,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 20
-			breakthrough = 5
+			soft_attack = 12
+			hardness = -0.1
+			reliability = -0.1
 			build_cost_ic = 2
 		}
 		
