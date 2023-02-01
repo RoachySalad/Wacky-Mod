@@ -194,7 +194,7 @@ sub_units = {
 		
 		transport =	infantry_equipment
 		
-		supply_consumption = 0.25
+		supply_consumption = 0.23
 		supply_consumption_factor = 0.02
 		forest = {
 			defence = 0.1
