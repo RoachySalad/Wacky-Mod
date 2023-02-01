@@ -1,0 +1,346 @@
+technologies = {
+	### MEDIUM ###
+	
+	medium_tank_1 = {
+
+		enable_equipments = {
+			medium_tank_equipment_1
+		}
+	
+		path = {
+			leads_to_tech = medium_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		
+		categories = {
+			generic
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	medium_tank_2 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_2
+		}
+	
+		path = {
+			leads_to_tech = medium_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940	
+
+		categories = {
+			generic
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	medium_tank_3 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_3
+		}
+	
+		path = {
+			leads_to_tech = medium_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		
+		categories = {
+			generic
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	medium_tank_4 = { 
+
+		enable_equipments = {
+			medium_tank_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1944
+		
+		categories = {
+			generic
+			armor
+			cat_medium_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	#### LIGHT ####
+	
+	light_tank_1 = {
+
+		enable_equipments = {
+			light_tank_chassis_1
+		}
+	
+		path = {
+			leads_to_tech = light_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1918
+		
+		categories = {
+			generic
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	light_tank_2 = { 
+
+		enable_equipments = {
+			light_tank_chassis_2
+		}
+	
+		path = {
+			leads_to_tech = light_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1938
+		
+		categories = {
+			generic
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	light_tank_3 = { 
+
+		enable_equipments = {
+			light_tank_chassis_3
+		}
+	
+		path = {
+			leads_to_tech = light_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		
+		categories = {
+			generic
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	light_tank_4 = { 
+
+		enable_equipments = {
+			light_tank_chassis_4
+		}
+		
+		research_cost = 2
+		start_year = 1942
+		
+		categories = {
+			generic
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}	
+	
+	### HEAVY ###
+	
+	heavy_tank_1 = {
+
+		enable_equipments = {
+			heavy_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = heavy_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		
+		categories = {
+			generic
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	heavy_tank_2 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = heavy_tank_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1941
+		
+		categories = {
+			generic
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	heavy_tank_3 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = heavy_tank_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1943
+		
+		categories = {
+			generic
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	heavy_tank_4 = { 
+
+		enable_equipments = {
+			heavy_tank_equipment_4
+		}
+		
+		research_cost = 2
+		start_year = 1945
+		
+		categories = {
+			generic
+			armor
+			cat_heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	# Japanese Terrain Buffs
+	adaptable_armor_designs = {
+
+		research_cost = 1
+
+		category_light_tanks = {
+			jungle = {
+				attack = 0.25
+				movement = 0.2
+			}
+			mountain = {
+				attack = 0.15
+				movement = 0.1
+			}
+		}
+		
+	}
+
+#	jap_secret_super_heavy = { 
+#
+#		enable_equipments = {
+#			wunder_super_heavy_tank_chassis
+#		}
+#
+#		enable_subunits = {
+#			super_heavy_armor
+#		}
+#
+#		enable_equipment_modules = {
+#			tank_heavy_turret_1
+#			tank_heavy_turret_2
+#			tank_heavy_superstructure
+#			tank_super_heavy_turret
+#		}
+#
+#		allow = {
+#			always = no
+#		}
+#
+#		research_cost = 2.0
+#		start_year = 1945
+#		
+#		categories = {
+#			generic
+#			armor
+#			cat_heavy_armor
+#		}
+#		
+#		ai_will_do = {
+#			factor = 0
+#		}
+#	}
+	
+}
