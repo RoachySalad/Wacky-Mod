@@ -334,18 +334,18 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
 		}	
-		light_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}	
-		medium_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}	
-		heavy_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}
+	#	light_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}	
+	#	medium_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}	
+	#	heavy_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}
 		path = {
 			leads_to_tech = artillery5
 			research_cost_coeff = 1
@@ -520,18 +520,18 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
 		}	
-		light_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}	
-		medium_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}	
-		heavy_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}
+	#	light_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}	
+	#	medium_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}	
+	#	heavy_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}
 		path = {
 			leads_to_tech = artillery4
 			research_cost_coeff = 1
@@ -657,18 +657,18 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
 		}	
-		light_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}	
-		medium_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}	
-		heavy_armor = {
-			hard_attack = 0.05
-			soft_attack = 0.05
-		}
+	#	light_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}	
+	#	medium_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}	
+	#	heavy_armor = {
+	#		hard_attack = 0.05
+	#		soft_attack = 0.05
+	#	}
 		enable_equipment_modules = {
 
 		}
