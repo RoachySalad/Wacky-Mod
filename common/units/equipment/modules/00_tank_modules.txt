@@ -1396,7 +1396,7 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			air_attack = 16
+			air_attack = 21
 			soft_attack = 6
 			hard_attack = 2
 			ap_attack = 15
@@ -1422,7 +1422,7 @@ equipment_modules = {
 		parent = tank_anti_air_gun_1
 
 		add_stats = {
-			air_attack = 22
+			air_attack = 27
 			soft_attack = 10
 			hard_attack = 4
 			ap_attack = 20
@@ -2033,6 +2033,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = amphibious
 
 		add_stats = {
 			soft_attack = 80
@@ -2050,8 +2051,9 @@ equipment_modules = {
 		abbreviation = "rcs"
 		category = tank_armament_tier_9
 		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = flame
+		allow_equipment_type = artillery	
 		forbid_equipment_type_exact_match = armor
+		forbid_equipment_type = amphibious
 		add_stats = {
 			soft_attack = 150
 			build_cost_ic = 20
@@ -2130,6 +2132,7 @@ equipment_modules = {
 			build_cost_ic = 2
 			reliability = -0.10
 			breakthrough = 5
+		}
 	}
 
 	secondary_turret_hmg = {
@@ -2143,8 +2146,6 @@ equipment_modules = {
 			build_cost_ic = 2
 		}
 		
-		multiply_stats = {
-		}
 	}
 
 	secondary_turret_small_cannon = {
@@ -2360,8 +2361,9 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 20
-			breakthrough = 5
+			soft_attack = 11
+			hardness = -0.1
+			reliability = -0.1
 			build_cost_ic = 2
 		}
 		

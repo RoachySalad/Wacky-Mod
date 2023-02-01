@@ -2834,8 +2834,6 @@ focus_tree = {
 				category = land_doctrine
 			}
 		}
-		custom_effect_tooltip = available_designer
-		show_ideas_tooltip = HUN_discord_sex_designer
 	}
 	
 	focus = {

@@ -724,7 +724,7 @@ technologies = {
 	
 	inf_factory1 = {
 		
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		
 		research_cost = 2.0
 		
@@ -749,7 +749,7 @@ technologies = {
 		dependencies = {
 			inf_factory1 = 1
 		}
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		
 		research_cost = 2.0
 		
@@ -777,7 +777,7 @@ technologies = {
 		dependencies = {
 			inf_factory2 = 1
 		}
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		
 		research_cost = 2.0
 		
@@ -806,7 +806,7 @@ technologies = {
 		dependencies = {
 			inf_factory3 = 1
 		}
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		
 		research_cost = 2.0
 		
@@ -831,7 +831,7 @@ technologies = {
 		dependencies = {
 			inf_factory4 = 1
 		}
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.05
 		
 		research_cost = 2.0
 		
