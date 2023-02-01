@@ -151,8 +151,9 @@ leader_traits = {
 	discord_sex_trait = {
 			random = no
 			equipment_bonus = {
-			light_tank_chassis = {
-				soft_attack = 0.01
+				light_tank_chassis = {
+					soft_attack = 0.01
+				}
 			}
 
 			ai_will_do = {
