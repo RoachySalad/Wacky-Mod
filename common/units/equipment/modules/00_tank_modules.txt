@@ -467,6 +467,8 @@ equipment_modules = {
 		multiply_stats = {
 			build_cost_ic = -0.2
 			breakthrough = -0.1
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 		build_cost_resources = {
 			steel = 4
@@ -752,11 +754,14 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 4
 			hardness = -0.2
+			
 		}
 
 		multiply_stats = {
 			breakthrough = -0.1
 			build_cost_ic = -0.2
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 		build_cost_resources = {
 			steel = 8
@@ -944,6 +949,8 @@ equipment_modules = {
 		multiply_stats = {
 			breakthrough = -0.1
 			build_cost_ic = -0.1
+			hard_attack = 0.05
+			soft_attack = 0.05
 		}
 		build_cost_resources = {
 			steel = 12
