@@ -179,41 +179,28 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 20
+		max_organisation = 45
 		default_morale = 0.3
-		manpower = 2000
+		manpower = 1200
 		maximum_speed = -0.25
 		
+		soft_attack = -0.35
+		hard_attack = -0.35
+
 		#Misc Abilities
 		training_time = 60
 		suppression = 1
 		weight = 0.5
-		soft_attack = 0.13
-		hard_attack = 0.13
 		
 		transport =	infantry_equipment
 		
-		supply_consumption = 0.17
+		supply_consumption = 0.06
 		supply_consumption_factor = 0.02
-		forest = {
-			defence = 0.1
-			movement = 0.05
-		}
-		urban = {
-			defence = 0.1
-		}
-		dense_urban = {
-			defence = 0.15
-		}
-		town = {
-			defence = 0.1
-		}
-		
+	
 		need = {
-			infantry_equipment = 70
-			squad_equipment = 14
-			horse_equipment = 15
+			infantry_equipment = 60
+			horse_equipment = 5
 		}
 	}
 	
