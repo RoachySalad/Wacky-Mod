@@ -384,6 +384,7 @@ country_event = {
 							is_core_of = LAO
 							is_core_of = LEB
 							is_core_of = SYR
+							is_core_of = MOR
 						}
 					}
 					event_target:vichy_france = { transfer_state = PREV }
