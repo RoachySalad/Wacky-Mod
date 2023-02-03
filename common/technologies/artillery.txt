@@ -779,6 +779,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
+			leads_to_tech = heavy_antitank
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = heavy_artillery2
 			research_cost_coeff = 1
 		}
@@ -897,10 +901,7 @@ technologies = {
 			leads_to_tech = heavy_artillery3
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = heavy_antitank
-			research_cost_coeff = 1
-		}
+		
 		path = {
 			leads_to_tech = heavy_antiair2
 			research_cost_coeff = 1
@@ -961,6 +962,10 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 12 y = 10 }
+		}
+		path = {
+			leads_to_tech = heavy_antitank2
+			research_cost_coeff = 1
 		}
 		
 		categories = {
@@ -1032,10 +1037,7 @@ technologies = {
 			leads_to_tech = heavy_artillery4
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = heavy_antitank2
-			research_cost_coeff = 1
-		}
+		
 
 		enable_equipment_modules = {
 		}
