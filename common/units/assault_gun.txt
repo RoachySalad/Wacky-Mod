@@ -35,6 +35,7 @@ sub_units = {
 		supply_consumption_factor = 0.06
 
 		breakthrough = 0.2
+		soft_attack = 0.2
 
 		plains = {
 			attack = 0.05 
