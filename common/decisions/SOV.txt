@@ -9265,7 +9265,7 @@ operations = {
 		}
 
 		cancel_trigger = {
-			NOT = { has_war_with = SOV }
+			NOT = { has_war_with = FIN }
 		}
 
 		days_remove = 7
