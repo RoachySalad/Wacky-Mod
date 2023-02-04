@@ -1,20 +1,7 @@
 characters={
 	BRA_eurico_gaspar_dutra={
 		name="Eurico Gaspar Dutra"
-		advisor={
-			slot = army_chief
-			idea_token = BRA_eurico_gaspar_dutra
-			allowed  = {
-				original_tag  = BRA
-			}
-			traits  = {
-				army_chief_morale_2 
-			}
-			cost = 100
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
+		
 		portraits={
 			army={
 				small="GFX_idea_generic_army_south_america_3"
@@ -35,6 +22,7 @@ characters={
 	}
 	BRA_mascarenhas_de_morais={
 		name="Mascarenhas de Morais"
+		
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_south_america_generic_land_5.dds"
@@ -550,12 +538,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ naval_invader invader_ii }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
+			traits={ naval_invader cavalry_leader}
+			skill=4
+			attack_skill=6
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
 		}
 	}
 }
