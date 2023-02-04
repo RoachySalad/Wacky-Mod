@@ -32,7 +32,7 @@ equipments = {
 		hardness = 0.5
 		armor_value = 5
 		defense = 4
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	sov_light_tank_chassis_bt5 = {
@@ -66,7 +66,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.6
 		defense = 4
-		breakthrough = 20
+		breakthrough = 10
 	}
 
 	sov_light_tank_chassis_bt7 = {
@@ -103,7 +103,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 6
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	sov_light_tank_chassis_t50 = {
@@ -142,7 +142,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.65
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	sov_light_tank_chassis_t70 = {
@@ -182,7 +182,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 6
-		breakthrough = 40
+		breakthrough = 25
 	}
 
 	sov_light_tank_chassis_zis30 = {
@@ -266,7 +266,7 @@ equipments = {
 		hardness = 0.75
 		armor_value = 5
 		defense = 6
-		breakthrough = 35
+		breakthrough = 15
 	}
 	
 	sov_medium_tank_chassis_t34 = {
@@ -308,7 +308,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 8
-		breakthrough = 50
+		breakthrough = 30
 	}
 
 	sov_medium_tank_chassis_t44 = {
@@ -353,7 +353,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.85
 		defense = 8
-		breakthrough = 60
+		breakthrough = 45
 	}
 	
    # Heavy Tanks
@@ -400,7 +400,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.5
 		defense = 8
-		breakthrough = 50
+		breakthrough = 25
 	}
 
 #	sov_heavy_tank_chassis_t100 = {
@@ -488,7 +488,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 8
-		breakthrough = 70
+		breakthrough = 40
 	}
 
 	sov_heavy_tank_chassis_is = {

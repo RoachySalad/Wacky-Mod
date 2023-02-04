@@ -21,10 +21,10 @@ sub_units = {
 			category_army
 		}	
 
-		combat_width = 1
+		combat_width = 2
 
 		need = {
-			light_tank_artillery_chassis = 24
+			light_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 5
@@ -35,10 +35,9 @@ sub_units = {
 		supply_consumption = 0.18
         supply_consumption_factor = 0.05
 
-		soft_attack = -0.3
+		soft_attack = 0.5
 		hard_attack = -0.9
-		breakthrough = -0.9
-		defence = -0.9
+		breakthrough = -1
 
 		plains = {
 			attack = 0.05 
@@ -109,10 +108,10 @@ sub_units = {
 			category_all_armor
 			category_army
 		}	
-		combat_width = 1
+		combat_width = 2
 
 		need = {
-			medium_tank_artillery_chassis = 24
+			medium_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 5
@@ -123,10 +122,9 @@ sub_units = {
 		supply_consumption = 0.22
         supply_consumption_factor = 0.06
 		
-		soft_attack = -0.3
+		soft_attack = 0.5
 		hard_attack = -0.9
-		breakthrough = -0.9
-		defence = -0.9
+		breakthrough = -1
 
 		plains = {
 			attack = 0.05 
@@ -202,10 +200,10 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 1
+		combat_width = 2
 
 		need = {
-			heavy_tank_artillery_chassis = 24
+			heavy_tank_artillery_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 5
@@ -215,10 +213,9 @@ sub_units = {
 		supply_consumption = 0.26
         supply_consumption_factor = 0.07
 
-		soft_attack = -0.3
+		soft_attack = 0.5
 		hard_attack = -0.9
-		breakthrough = -0.9
-		defence = -0.9
+		breakthrough = -1
 
 		plains = {
 			attack = 0.05 

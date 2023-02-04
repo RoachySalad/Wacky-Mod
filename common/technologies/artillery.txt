@@ -790,6 +790,10 @@ technologies = {
 			leads_to_tech = heavy_antiair1
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = heavy_antitank
+			research_cost_coeff = 1
+		}
 		
 		research_cost = 1
 		start_year = 1938
@@ -836,6 +840,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_aa_gun_1
+			tank_heavy_gun_early
 		}
 		
 		research_cost = 2.0
@@ -954,6 +959,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_gun_1
 			tank_heavy_hv_gun_1
+		}
+		path = {
+			leads_to_tech = heavy_antitank2
+			research_cost_coeff = 1
 		}
 		
 		research_cost = 2.0

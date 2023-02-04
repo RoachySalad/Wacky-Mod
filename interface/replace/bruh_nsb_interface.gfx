@@ -263,6 +263,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_gun_1.dds"
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_heavy_gun_early"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_gun_1.dds"
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_heavy_gun_2"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/heavy_gun_2.dds"
 	}
