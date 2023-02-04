@@ -1764,6 +1764,32 @@ equipment_modules = {
 	
 	### LARGE CAL ###
 	
+	tank_heavy_gun_early = { ###7
+		abbreviation = "hv0"
+		category = tank_armament_tier_7
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = anti_tank
+		forbid_equipment_type = amphibious 
+
+		add_stats = {
+			soft_attack = 45
+			hard_attack = 30
+			ap_attack = 90
+			build_cost_ic = 8
+		}
+		multiply_stats = {
+		}
+		
+		build_cost_resources = {
+			tungsten = 13
+			steel = 9
+			chromium = 2
+		}
+		dismantle_cost_ic = 3
+	}
+
+
+
 	tank_heavy_gun_1 = { ###7
 		abbreviation = "hv1"
 		category = tank_armament_tier_7

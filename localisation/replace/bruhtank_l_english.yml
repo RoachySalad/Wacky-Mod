@@ -128,6 +128,8 @@
  tank_med_cs_gun_2_desc:0 "Tier 5 §CImproved§! §OMedium§! Armanent"
  tank_med_cs_gun_3:0 "Medium Howitzer III - ~105mm Snubnose"
  tank_med_cs_gun_3_desc:0 "Tier 6 §6Advanced§! §OMedium§! Armanent"
+ tank_heavy_gun_early:0 "Converted Heavy AA Cannon - ~90mm"
+ tank_heavy_gun_early_desc:0 "Tier 7 §3Basic§! §RHeavy§! Armanent"
  tank_heavy_gun_1:0 "Heavy Cannon I - ~90mm"
  tank_heavy_gun_1_desc:0 "Tier 7 §3Basic§! §RHeavy§! Armanent"
  tank_heavy_gun_2:0 "Heavy Cannon II - ~120mm"
