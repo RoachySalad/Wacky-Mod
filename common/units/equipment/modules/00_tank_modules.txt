@@ -2069,13 +2069,14 @@ equipment_modules = {
 		forbid_equipment_type = amphibious
 
 		add_stats = {
-			soft_attack = 80
-			build_cost_ic = 6
+			soft_attack = 70
+			build_cost_ic = 9
 		}
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 5
+			steel = 12
+			tungsten = 15 
 		}
 		dismantle_cost_ic = 3
 	}
