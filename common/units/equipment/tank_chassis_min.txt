@@ -31,7 +31,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.4
 		defense = 6
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	fra_light_tank_chassis_h35 = {
@@ -67,7 +67,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.5
 		defense = 8
-		breakthrough = 20
+		breakthrough = 15
 	}
 
 	fra_light_tank_chassis_r35 = {
@@ -103,7 +103,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.5
 		defense = 4
-		breakthrough = 20
+		breakthrough = 15
 	}
 
 	fra_light_tank_chassis_x13 = {
@@ -145,7 +145,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 6
-		breakthrough = 35
+		breakthrough = 25
 	}
 
 	fra_medium_tank_chassis_s35 = {
@@ -183,7 +183,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 8
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	fra_medium_tank_chassis_s40 = {
@@ -223,7 +223,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 8
-		breakthrough = 40
+		breakthrough = 30
 	}
 
 	fra_medium_tank_chassis_s42 = {
@@ -265,7 +265,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 10
-		breakthrough = 50
+		breakthrough = 40
 	}
 
 	fra_medium_tank_chassis_x4 = {
@@ -310,7 +310,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.85
 		defense = 10
-		breakthrough = 60
+		breakthrough = 55
 	}
 
 	fra_heavy_tank_chassis_b1 = {
@@ -348,7 +348,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 10
-		breakthrough = 60
+		breakthrough = 40
 	}
 
 	fra_heavy_tank_chassis_arl = {
@@ -389,7 +389,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.85
 		defense = 16
-		breakthrough = 80
+		breakthrough = 90
 	}
 	
 	#fra_heavy_tank_chassis_x50 = {
@@ -484,7 +484,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.5
 		defense = 4
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	ita_light_tank_chassis_l6 = {
@@ -523,7 +523,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.6
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	ita_medium_tank_chassis_m11 = {
@@ -561,7 +561,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	ita_medium_tank_chassis_m13 = {
@@ -601,7 +601,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 8
-		breakthrough = 45
+		breakthrough = 30
 	}
 	
 	ita_medium_tank_chassis_m15 = {
@@ -643,7 +643,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 8
-		breakthrough = 50
+		breakthrough = 40
 	}
 
 	ita_medium_tank_chassis_p26 = {
@@ -729,7 +729,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 10
-		breakthrough = 60
+		breakthrough = 50
 	}
 
 	hun_light_tank_chassis_38m = {
@@ -770,7 +770,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 5
-		breakthrough = 30
+		breakthrough = 20
 	}
 
 	hun_medium_tank_chassis_40m = {
@@ -812,7 +812,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	hun_medium_tank_chassis_44m = {
@@ -891,7 +891,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.5
 		defense = 4
-		breakthrough = 15
+		breakthrough = 10
 	}
 
 	jap_light_tank_chassis_t98 = {
@@ -930,7 +930,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.6
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 	
 	
@@ -969,7 +969,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	jap_medium_tank_chassis_t01 = {
@@ -1009,7 +1009,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 8
-		breakthrough = 45
+		breakthrough = 30
 	}
 	
 	jap_medium_tank_chassis_t03 = {
@@ -1051,7 +1051,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 8
-		breakthrough = 50
+		breakthrough = 40
 	}
 
 	jap_medium_tank_chassis_t04 = {

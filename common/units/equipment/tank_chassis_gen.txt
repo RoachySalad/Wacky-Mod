@@ -31,7 +31,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.6
 		defense = 5
-		breakthrough = 25
+		breakthrough = 10
 	}
 
 	light_tank_chassis_2 = {
@@ -67,7 +67,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.65
 		defense = 6
-		breakthrough = 30
+		breakthrough = 15
 	}
 	
 	light_tank_chassis_3 = {
@@ -106,7 +106,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	medium_tank_chassis_1 = {
@@ -146,7 +146,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 6
-		breakthrough = 35
+		breakthrough = 20
 	}
 
 	medium_tank_chassis_2 = {
@@ -188,7 +188,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 8
-		breakthrough = 45
+		breakthrough = 30
 	}
 
 	medium_tank_chassis_3 = {
@@ -233,7 +233,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.85
 		defense = 8
-		breakthrough = 55
+		breakthrough = 45
 	}
 	
 

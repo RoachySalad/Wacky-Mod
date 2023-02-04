@@ -31,7 +31,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.6
 		defense = 5
-		breakthrough = 25
+		breakthrough = 10
 	}
 
 	usa_light_tank_chassis_lm3 = {
@@ -67,7 +67,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.65
 		defense = 6
-		breakthrough = 30
+		breakthrough = 15
 	}
 
 	usa_light_tank_chassis_lm5 = {
@@ -106,7 +106,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.7
 		defense = 6
-		breakthrough = 35
+		breakthrough = 25
 	}
 
 	usa_light_tank_chassis_m24 = {
@@ -144,7 +144,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 6
-		breakthrough = 40
+		breakthrough = 35
 	}
 
 	usa_light_tank_chassis_m18 = {
@@ -222,7 +222,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 6
-		breakthrough = 40
+		breakthrough = 20
 	}
 
 	usa_medium_tank_chassis_mm3 = {
@@ -262,7 +262,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.75
 		defense = 6
-		breakthrough = 45
+		breakthrough = 30
 	}
 
 	usa_medium_tank_chassis_mm4 = {
@@ -304,7 +304,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 8
-		breakthrough = 50
+		breakthrough = 40
 	}
 
 	usa_medium_tank_chassis_m26 = {
@@ -349,7 +349,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.85
 		defense = 8
-		breakthrough = 60
+		breakthrough = 55
 	}
 
 	usa_heavy_tank_chassis_hm6 = {
@@ -387,7 +387,7 @@ equipments = {
 		armor_value = 5
 		hardness = 0.8
 		defense = 8
-		breakthrough = 70
+		breakthrough = 40
 	}
 	
 	usa_heavy_tank_chassis_t29 = {
