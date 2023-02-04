@@ -1526,8 +1526,17 @@ focus_tree = {
 			army_experience = 50
 			add_to_tech_sharing_group = us_research
 			every_army_leader = {
+				add_skill level = 2
 				add_attack = 1
 				add_logistics = 1
+			}
+			BRA = {
+				BRA_capy_bara = {
+					add_unit_leader_trait = trait_engineer
+					add_unit_leader_trait = infantry_leader
+					add_unit_leader_trait = commando
+					add_unit_leader_trait = inflexible_strategist
+				}
 			}
 		}
 	}
@@ -1598,8 +1607,17 @@ focus_tree = {
 			army_experience = 50
 			add_to_tech_sharing_group = commonwealth_research
 			every_army_leader = {
+				add_skill level = 2
 				add_defense = 1
 				add_planning = 1
+			}
+			BRA = {
+				BRA_capy_bara = {
+					add_unit_leader_trait = trait_engineer
+					add_unit_leader_trait = infantry_leader
+					add_unit_leader_trait = trickster
+					add_unit_leader_trait = brilliant_strategist
+				}
 			}
 		}
 	}
@@ -1859,13 +1877,6 @@ focus_tree = {
 
 		cost = 10
 
-		available = {
-			is_in_faction_with = USA
-			USA = {
-				has_tech = usa_medium_tank_3
-			}
-		}
-
 		ai_will_do = {
 			factor = 8
 		}
@@ -1893,19 +1904,15 @@ focus_tree = {
 
 		completion_reward = {
 			every_army_leader = {
-				add_skill_level = 1
-				add_attack = 2
-				add_defense = -2
+				add_skill_level = 2
+				add_attack = 1
 				add_logistics = 1
 			}
 			BRA = {
-				random_army_leader = {
-					promote_leader = yes
+				BRA_eurico_gaspar_dutra = {
 					add_unit_leader_trait = panzer_leader
-					add_unit_leader_trait = panzer_expert
 					add_unit_leader_trait = trickster
-					add_unit_leader_trait = armor_officer
-					add_unit_leader_trait = trait_reckless
+					add_unit_leader_trait = urban_assault_specialist
 				}
 			}
 		}
@@ -1925,9 +1932,6 @@ focus_tree = {
 			factor = 8
 		}
 
-		available = {
-			has_idea = sao_paulo_arsenal
-		}
 
 		completion_reward = {
 			add_ideas = { USA_sherman }
@@ -1945,24 +1949,13 @@ focus_tree = {
 
 		cost = 10
 
-		available = {
-			is_in_faction_with = ENG
-			is_in_faction_with = CAN
-			has_tech = can_medium_tank_1
-		}
-
 		ai_will_do = {
 			factor = 8
 		}
 
 		completion_reward = {
-			create_production_license = {
-			    target = BRA
-			    equipment = {
-			        type = eng_medium_tank_chassis_ram
-			        version = 0
-			    }
-			    cost_factor = 0
+			set_technology = {
+				usa_heavy_tank_2 = 1
 			}
 		}
 	}
@@ -1984,17 +1977,13 @@ focus_tree = {
 		completion_reward = {
 			every_army_leader = {
 				add_skill_level = 2
-				add_attack = 1
-				add_defense = 2
-				add_planning = 2
+				add_defense = 1
+				add_planning = 1
 			}
 			BRA = {
-				random_army_leader = {
-					promote_leader = yes
+				BRA_eurico_gaspar_dutra = {
+					add_unit_leader_trait = panzer_leader
 					add_unit_leader_trait = organizer
-					add_unit_leader_trait = logistics_wizard
-					add_unit_leader_trait = offensive_doctrine
-					add_unit_leader_trait = trait_cautious
 					add_unit_leader_trait = brilliant_strategist
 				}
 			}
@@ -2011,9 +2000,6 @@ focus_tree = {
 
 		cost = 10
 
-		available = {
-			has_idea = vauxhall
-		}
 
 		ai_will_do = {
 			factor = 8

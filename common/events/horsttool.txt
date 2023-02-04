@@ -7,7 +7,7 @@ news_event = {
 	major = yes
 	is_triggered_only = yes
 	option = {
-		name = "Ja..."
+		name = "sToP ChEatInG"
 		clear_variable=this.selected_cheat
 		clear_variable=this.target_country
 	}

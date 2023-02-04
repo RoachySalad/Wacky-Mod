@@ -2070,7 +2070,7 @@ ideas = {
 			traits = { }
 			
 			equipment_bonus = {
-				medium_tank_chassis = {
+				armor = {
 					soft_attack = 0.05
 					hard_attack = 0.05
 					build_cost_ic = -0.05
