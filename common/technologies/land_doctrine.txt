@@ -557,7 +557,7 @@ technologies = {
 		
 		category_tanks = {
 			max_organisation = 3
-			breakthrough = 0.20
+			breakthrough = 0.15
 		}
 		category_all_armor = {
 			default_morale = 0.2
@@ -2199,11 +2199,11 @@ technologies = {
 
 		category_tanks = {
 			max_organisation = 1
-			breakthrough = 0.10
+			breakthrough = 0.15
 		}
 		category_all_infantry = {
 			max_organisation = 5
-			breakthrough = 0.20
+			breakthrough = 0.25
 		}
 		category_militia= {
 			max_organisation = 5
