@@ -600,7 +600,7 @@ ideas = {
 			
 			equipment_bonus = {
 			infantry_equipment = {
-				soft_attack = 0.01
+				soft_attack = 0.1
 				defense = 0.05
 				build_cost_ic = -0.10
 				reliability = 0.10

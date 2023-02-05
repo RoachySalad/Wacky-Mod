@@ -176,6 +176,7 @@
  BRA_copy_british_designs:0 "Innovate on British Infantry Tanks"
  BRA_learn_from_montgomery:0 "Learn From Montgomery"
  BRA_expand_vauxhall:0 "Expand Vauxhall"
+ bra_vauxhall:0 "Vauxhall Brazil"
  #### EVENTS ####
 
  ### IDEAS ###
@@ -235,7 +236,7 @@
  fabrica_nacional_de_motores:0 "Fábrica Nacional de Motores"
  #### TOOLTIP ####
  BRA_third_republic:0 "Third Brazilian Republic"
- BRA_vargas_path_warning:0 "§RWARNING! THIS PATH REQUIRES GOOD TIMING ON STABILITY AND CONSTANT DECISION CLICKING. DO NOT ATTEMPT FOLLOW THIS PATH IF YOU HAVEN'T PLAYED IT BEFORE. DON'T COME COMPLAINING ABOUT IT BEING HARD, YOU'VE BEEN WARNED!§!"
+ BRA_vargas_path_warning:0 "§RWARNING! THIS PATH REQUIRES GOOD TIMING ON STABILITY AND CONSTANT DECISION CLICKING. IF YOU DON'T KNOW WHAT YOU ARE DOING, TAKE THE OTHER SIDE.§!"
 
  #### EVENTS #####
  brazil.1.t:0 "The Referendum"
