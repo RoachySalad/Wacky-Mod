@@ -11,7 +11,7 @@ equipments = {
 		group_by = archetype
 		sprite = light_plane
 		air_map_icon_frame = 1
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# Fighter
@@ -24,6 +24,11 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+
 		air_superiority = 1
 		reliability = 0.8
 
@@ -34,7 +39,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 8
 		
-		build_cost_ic = 75
+		build_cost_ic = 88
 		resources = {
 			#oil = 1
 			aluminium = 30
@@ -58,7 +63,7 @@ equipments = {
 		carrier_capable = yes
 		default_carrier_composition_weight = 1
 		air_map_icon_frame = 1
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# Fighter
@@ -71,6 +76,11 @@ equipments = {
 			plane_reliability_upgrade
 		}
 
+		allow_mission_type = {
+			air_superiority
+			interception
+		}
+
 		air_superiority = 1
 		reliability = 0.8
 
@@ -81,7 +91,7 @@ equipments = {
 		#Space taken in convoy
 		lend_lease_cost = 8
 		
-		build_cost_ic = 85
+		build_cost_ic = 100
 		resources = {
 			#oil = 1
 			aluminium = 30
@@ -103,11 +113,18 @@ equipments = {
 		group_by = archetype
 		sprite = light_plane
 		air_map_icon_frame = 2
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# CAS
 		interface_overview_category_index = 0
+
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+			port_strike
+		}
 
 		upgrades = {
 			plane_cas_upgrade
@@ -127,7 +144,7 @@ equipments = {
 		naval_strike_targetting = 10
 		air_bombing = 4
 		
-		build_cost_ic = 80
+		build_cost_ic = 88
 		resources = {
 			#oil = 1
 			aluminium = 30
@@ -150,11 +167,18 @@ equipments = {
 		sprite = light_plane
 		carrier_capable = yes
 		air_map_icon_frame = 2
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# CAS
 		interface_overview_category_index = 0
+
+		allow_mission_type = {
+			cas
+			attack_logistics
+			naval_bomber
+			port_strike
+		}
 
 		upgrades = {
 			plane_cas_upgrade
@@ -173,7 +197,7 @@ equipments = {
 		naval_strike_attack = 4
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 95
+		build_cost_ic = 100
 		resources = {
 			#oil = 1
 			aluminium = 30
@@ -195,11 +219,16 @@ equipments = {
 		group_by = archetype
 		sprite = light_plane
 		air_map_icon_frame = 3
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# Naval bomber
 		interface_overview_category_index = 2
+
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+		}
 
 		upgrades = {
 			plane_naval_upgrade
@@ -215,7 +244,7 @@ equipments = {
 		naval_strike_attack = 15
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 99
+		build_cost_ic = 104
 		resources = {
 			#oil = 1
 			aluminium = 30
@@ -239,11 +268,16 @@ equipments = {
 		carrier_capable = yes
 		default_carrier_composition_weight = 1
 		air_map_icon_frame = 3
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# Naval bomber
 		interface_overview_category_index = 2
+
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+		}
 
 		upgrades = {
 			cv_plane_naval_upgrade
@@ -259,7 +293,7 @@ equipments = {
 		naval_strike_attack = 15
 		naval_strike_targetting = 7.5
 		
-		build_cost_ic = 110
+		build_cost_ic = 112
 		resources = {
 			#oil = 1
 			aluminium = 30
@@ -281,7 +315,7 @@ equipments = {
 		group_by = archetype
 		sprite = jet_plane
 		air_map_icon_frame = 4
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# Fighter
@@ -292,6 +326,11 @@ equipments = {
 			plane_range_upgrade
 			plane_engine_upgrade
 			plane_reliability_upgrade
+		}
+
+		allow_mission_type = {
+			air_superiority
+			interception
 		}
 
 		air_superiority = 1
@@ -345,7 +384,7 @@ equipments = {
 		air_attack = 24
 		air_defence = 10
 		
-		build_cost_ic = 82
+		build_cost_ic = 96
 
 		naval_strike_attack = 2
 		naval_strike_targetting = 10		
@@ -365,7 +404,7 @@ equipments = {
 		air_attack = 28
 		air_defence = 12		
 
-		build_cost_ic = 87
+		build_cost_ic = 102
 
 		naval_strike_attack = 4
 		naval_strike_targetting = 10
@@ -385,7 +424,7 @@ equipments = {
 		air_attack = 32
 		air_defence = 14	
 		
-		build_cost_ic = 95
+		build_cost_ic = 112
 
 		naval_strike_attack = 6
 		naval_strike_targetting = 10
@@ -404,7 +443,7 @@ equipments = {
 		air_attack = 36
 		air_defence = 16
 		
-		build_cost_ic = 110
+		build_cost_ic = 120
 
 		naval_strike_attack = 8
 		naval_strike_targetting = 10
@@ -457,7 +496,7 @@ equipments = {
 		air_attack = 20
 		air_defence = 8
 		
-		build_cost_ic =	100 # cv_version costs 20% more of base archetype
+		build_cost_ic =	104 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 2
 		naval_strike_targetting = 10
@@ -477,7 +516,7 @@ equipments = {
 		air_attack = 24
 		air_defence = 11
 		
-		build_cost_ic = 110 # cv_version costs 20% more of base archetype
+		build_cost_ic = 112 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 3
 		naval_strike_targetting = 10
@@ -517,7 +556,7 @@ equipments = {
 		air_attack = 32
 		air_defence = 15
 		
-		build_cost_ic = 125 # cv_version costs 20% more of base archetype
+		build_cost_ic = 128 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 8
 		naval_strike_targetting = 10
@@ -537,7 +576,7 @@ equipments = {
 		air_attack = 36
 		air_defence = 17
 		
-		build_cost_ic = 135 # cv_version costs 20% more of base archetype
+		build_cost_ic = 136 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 10
 		naval_strike_targetting = 10
@@ -578,7 +617,7 @@ equipments = {
 		air_ground_attack = 20
 		air_bombing = 5
 		
-		build_cost_ic = 90
+		build_cost_ic = 96
 		
 		naval_strike_attack = 5
 		naval_strike_targetting = 7.5
@@ -600,7 +639,7 @@ equipments = {
 		air_ground_attack = 22.5
 		air_bombing = 6
 		
-		build_cost_ic = 100	
+		build_cost_ic = 104	
 
 		naval_strike_attack = 10
 		naval_strike_targetting = 7.5
@@ -621,7 +660,7 @@ equipments = {
 		air_ground_attack = 25
 		air_bombing = 8
 		
-		build_cost_ic = 120		
+		build_cost_ic = 112		
 
 		naval_strike_attack = 12
 		naval_strike_targetting = 7.5
@@ -632,7 +671,7 @@ equipments = {
 
 		archetype = CAS_equipment
 		priority = 40
-	
+		allow_mission_type = training
 		air_range = 1300
 		maximum_speed = 900
 		air_agility = 55
@@ -663,7 +702,7 @@ equipments = {
 		air_ground_attack = 15
 		air_bombing = 4
 		
-		build_cost_ic = 100 # cv_version costs 20% more of base archetype
+		build_cost_ic = 104 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 7.5
 		naval_strike_targetting = 7.5
@@ -685,7 +724,7 @@ equipments = {
 		air_ground_attack = 20
 		air_bombing = 5
 		
-		build_cost_ic = 115 # cv_version costs 20% more of base archetype
+		build_cost_ic = 112 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 10
 		naval_strike_targetting = 7.5
@@ -729,7 +768,7 @@ equipments = {
 		air_ground_attack = 25
 		air_bombing = 8
 		
-		build_cost_ic = 130 # cv_version costs 20% more of base archetype
+		build_cost_ic = 128 # cv_version costs 20% more of base archetype
 
 		naval_strike_attack = 20
 		naval_strike_targetting = 7.5
@@ -765,7 +804,7 @@ equipments = {
 		naval_strike_attack = 20
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 95
+		build_cost_ic = 112
 		
 	}
 	# Advanced nav_bomber
@@ -784,7 +823,7 @@ equipments = {
 		naval_strike_attack = 25
 		naval_strike_targetting = 12.5
 	
-		build_cost_ic = 105	
+		build_cost_ic = 120	
 	}
 	
 	nav_bomber_equipment_4 = {
@@ -802,7 +841,7 @@ equipments = {
 		naval_strike_attack = 30
 		naval_strike_targetting = 15
 	
-		build_cost_ic = 120	
+		build_cost_ic = 128	
 	}
 	
 	# Basic Carrier nav_bomber
@@ -821,7 +860,7 @@ equipments = {
 		naval_strike_attack = 15
 		naval_strike_targetting = 10
 		
-		build_cost_ic = 110 # cv_version costs 20% more of base archetype
+		build_cost_ic = 124 # cv_version costs 20% more of base archetype
 	}
 	# Improved Carrier nav_bomber
 	cv_nav_bomber_equipment_2 = {
@@ -839,7 +878,7 @@ equipments = {
 		air_defence = 15
 		naval_strike_attack = 20
 		naval_strike_targetting = 10
-		build_cost_ic = 124 # cv_version costs 20% more of base archetype
+		build_cost_ic = 132 # cv_version costs 20% more of base archetype
 	}
 	# Advanced Carrier nav_bomber
 	cv_nav_bomber_equipment_3 = {
@@ -857,7 +896,7 @@ equipments = {
 		air_defence = 17
 		naval_strike_attack = 22.5
 		naval_strike_targetting = 10
-		build_cost_ic = 130 # cv_version costs 20% more of base archetype
+		build_cost_ic = 140 # cv_version costs 20% more of base archetype
 	}
 	
 	cv_nav_bomber_equipment_4 = {
@@ -875,7 +914,7 @@ equipments = {
 		air_defence = 21
 		naval_strike_attack = 25
 		naval_strike_targetting = 10
-		build_cost_ic = 140 # cv_version costs 20% more of base archetype
+		build_cost_ic = 148 # cv_version costs 20% more of base archetype
 	}
 	
 	scout_plane_equipment = {
@@ -889,12 +928,15 @@ equipments = {
 		group_by = archetype
 		sprite = scout_plane
 		air_map_icon_frame = 13
-		
+		carrier_capable = yes
+		allow_mission_type = training
 		interface_category = interface_category_air
 		
 		# scout_plane
 		interface_overview_category_index = 3
-		
+		allow_mission_type = {
+			recon
+		}
 		upgrades = {
 			plane_range_upgrade
 			plane_engine_upgrade
@@ -927,8 +969,7 @@ equipments = {
 		air_agility = 25
 		air_attack = 0
 		air_defence = 13
-		carrier_capable = yes
-		
+
 		build_cost_ic = 84
 		naval_strike_attack = 0
 		naval_strike_targetting = 0
@@ -946,7 +987,6 @@ equipments = {
 		air_agility = 30
 		air_attack = 0
 		air_defence = 15
-		carrier_capable = yes
 
 		build_cost_ic = 92
 		naval_strike_attack = 0
@@ -967,9 +1007,11 @@ equipments = {
 		sprite = light_plane
 		air_map_icon_frame = 5
 		manpower = 5
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
-
+		allow_mission_type = {
+            strategic_bomber
+        }
 		upgrades = {
 			plane_gun_upgrade
 			plane_range_upgrade
@@ -1071,9 +1113,11 @@ equipments = {
 		sprite = light_plane
 		air_map_icon_frame = 5
 		manpower = 15
-		
+		allow_mission_type = training
 		interface_category = interface_category_air
-
+		allow_mission_type = {
+			naval_kamikaze
+		}
 		upgrades = {
 		}
 

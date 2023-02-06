@@ -4,6 +4,8 @@
 #		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
 #		enable = { always = yes } #optional, the modifier won't apply if not enabled
 #		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
 #
 #		# list of modifiers
 #		fuel_cost = 321
@@ -107,6 +109,27 @@ kurdish_separatism = {
 	resistance_decay = -0.20
 	state_resources_factor = -0.33
 	disable_strategic_redeployment = 1
+}
+
+dense_rural_infrastructure = { #State Modifier
+	enable = { always = yes }
+	remove_trigger = { infrastructure > 4 }
+
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	
+	local_non_core_supply_impact_factor = 0.35
+}
+
+yellow_river_blown = { #State Modifier
+	enable = { always = yes }
+
+	icon = GFX_decision_hol_inundate_water_lines
+	
+	local_supply_impact_factor = 0.5
+	disable_strategic_redeployment = 1
+	state_resources_factor = -0.25
+	local_manpower = -0.5
+	army_speed_factor_for_controller = -0.25
 }
 
 kurdish_rebellion = {
@@ -476,11 +499,11 @@ SOV_increased_metals_production = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_increased_metal_production
-	
-	state_resource_steel = SOV_steel_bonus
+
 	state_resource_aluminium = SOV_aluminium_bonus
-	state_resource_chromium = SOV_chromium_bonus
 	state_resource_tungsten = SOV_tungsten_bonus
+	state_resource_steel = SOV_steel_bonus
+	state_resource_chromium = SOV_chromium_bonus
 }
 
 SOV_invaders_must_die = { #STATE MODIFIER
@@ -1236,7 +1259,7 @@ SOV_factionalism_modifier = {
 
 SOV_opposition_popular_support = { 
 	enable = { has_civil_war = yes }
-	icon = GFX_idea_POL_ideology_drift_defence # TODO_THOMAS Set correct icon
+	icon = GFX_idea_FRA_scw_intervention_republicans_focus
 	
 	surrender_limit = SOV_surrender_modifier
 	custom_modifier_tooltip = SOV_opposition_popular_support_tt 
@@ -1260,4 +1283,19 @@ SOV_capital_of_the_tsars = {
 	icon = GFX_modifiers_SOV_capital_of_the_tsars
 
 	state_production_speed_buildings_factor = 0.25
+}
+
+RAJ_agrarian_society_dynamic = { #NATIONAL SPIRIT
+	enable = { always = yes }
+
+	icon = GFX_idea_generic_agrarian_society
+	
+	conscription_factor = RAJ_agrarian_society_value
+}
+
+RAJ_industrialized_personnel = {
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_military_plans
+	state_resources_factor = 0.15
+	state_production_speed_buildings_factor = 0.15
 }

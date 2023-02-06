@@ -1,0 +1,30 @@
+Mongolia_Historical = {
+    enable = {
+        original_tag = MON
+    }
+
+	ai_national_focuses = {
+        MON_industrial_development
+        MON_forced_urbanisation
+        MON_soviet_investments
+        MON_soviet_model
+        MON_local_arms_production
+        MON_industrialised_nation
+        MON_collectivisation
+        MON_buddhist_prosecution
+        MON_trial_of_the_llamas
+        MON_crush_the_counter_revolutionaries
+        MON_sack_the_monastries
+        MON_the_purge
+        MON_follow_the_soviets
+        MON_finish_collectivisation
+        MON_collectivised_society
+        MON_choibalsan_university
+        MON_soviet_experts
+        MON_support_the_anti_fascist_war
+        MON_soviet_science
+        MON_support_pan_mongolism
+        MON_mobilize_the_steppes
+        #AI does whatever, army tree
+	}
+}

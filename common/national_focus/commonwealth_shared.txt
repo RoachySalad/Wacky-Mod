@@ -11,7 +11,7 @@
 		}
 	}
 	offset = {
-		x = -5
+		x = 0
 		y = 0
 		trigger = {
 			tag = AST
@@ -25,7 +25,7 @@
 		}
 	}
 	offset = {
-		x = -11
+		x = -5
 		y = 0
 		trigger = {
 			tag = SAF

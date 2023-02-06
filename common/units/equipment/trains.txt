@@ -26,9 +26,7 @@ equipments = {
 
 		archetype = train_equipment
 		active = yes
-		type = {
-			train
-		}
+
 
 		armor_value = 0 # HP = BASE_TRAIN_HP + armor_value
 
@@ -45,9 +43,7 @@ equipments = {
 
 		archetype = train_equipment
 		parent = train_equipment_1
-		type = {
-			train
-		}
+
 		priority = 20
 
 		build_cost_ic = 60
@@ -60,9 +56,7 @@ equipments = {
 		year = 1936
 		archetype = train_equipment
 		parent = train_equipment_1
-		type = {
-			train
-		}
+
 		armor_value = 250 # HP = BASE_TRAIN_HP + armor_value
 		priority = 30
 		build_cost_ic = 115

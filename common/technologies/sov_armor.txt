@@ -6,6 +6,24 @@ technologies = {
 			sov_light_tank_chassis_t26
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_welded_armor
+			#tank_gasoline_engine
+			#tank_petrol_electric_engine
+			#tank_diesel_engine
+			#tank_light_turret_1
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -25,14 +43,11 @@ technologies = {
 			leads_to_tech = sov_bt_tank_1
 			research_cost_coeff = 1
 		}
-		
-		
 		path = {
+			#leads_to_tech = sov_t26_upgrade
 			leads_to_tech = sov_medium_tank_2
 			research_cost_coeff = 1
 		}
-		
-		
 		
 		research_cost = 2
 		start_year = 1926
@@ -43,6 +58,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -52,33 +68,34 @@ technologies = {
 		}
 	}
 
-#	sov_t26_upgrade = {
-#
-#		on_research_complete = {
-#			custom_effect_tooltip = t26_upgrade_tt
-#		}
-#		show_effect_as_desc = yes
-#		enable_equipment_modules = {
-#			armor_skirts
-#		}
-#		
-#		research_cost = 2
-#		start_year = 1939
-#		folder = {
-#			name = sov_armour_folder
-#			position = { x = -2 y = 4 }
-#		}
-#		
-#		categories = {
-#			generic
-#			armor
-#			cat_light_armor
-#		}
-#		
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
+	#sov_t26_upgrade = {
+
+	#	on_research_complete = {
+	#		custom_effect_tooltip = t26_upgrade_tt
+	#	}
+	#	show_effect_as_desc = yes
+	#	enable_equipment_modules = {
+	#		armor_skirts
+	#	}
+		
+	#	research_cost = 2
+	#	start_year = 1939
+	#	folder = {
+	#		name = sov_armour_folder
+	#		position = { x = -2 y = 4 }
+	#	}
+		
+	#	categories = {
+	#		generic
+
+	#		armor
+	#		cat_light_armor
+	#	}
+		
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
 
 	sov_light_tank_2 = { 
 
@@ -86,6 +103,7 @@ technologies = {
 			sov_light_tank_chassis_t50
 		}
 		enable_equipment_modules = {
+			#tank_light_turret_2
 			tank_light_turret_3
 		}
 	
@@ -103,6 +121,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -130,6 +149,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -147,6 +167,7 @@ technologies = {
 			sov_light_tank_chassis_bt5
 		}
 		enable_equipment_modules = {
+			tank_light_turret_2
 		}
 		path = {
 			leads_to_tech = sov_bt_tank_2
@@ -162,6 +183,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -176,11 +198,8 @@ technologies = {
 		enable_equipments = {
 			sov_light_tank_chassis_bt7
 		}
-		enable_equipment_modules = {
-			tank_light_turret_2
-		}
 
-			path = {
+		path = {
 			leads_to_tech = sov_medium_tank_1
 			research_cost_coeff = 1
 		}
@@ -194,6 +213,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -211,14 +231,15 @@ technologies = {
 			sov_medium_tank_chassis_t34
 		}
 		enable_equipment_modules = {
+			#sloped_armor
 			tank_medium_turret_1
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
 		}
 	
-
 		path = {
+			#leads_to_tech = sov_medium_tank_2 #T-34 Model 40
 			leads_to_tech = sov_medium_tank_4
 			research_cost_coeff = 1
 		}
@@ -232,6 +253,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -244,18 +266,18 @@ technologies = {
 	#T-34 Model 40
 	sov_medium_tank_2 = { 
 
+		on_research_complete = {
+			custom_effect_tooltip = t34_upgrade_1_tt
+		}
 		enable_equipment_modules = {
 			tank_medium_turret_2
 			armor_skirts
-		}
-		
-		on_research_complete = {
-			custom_effect_tooltip = t34_upgrade_1_tt
 		}
 		show_effect_as_desc = yes
 		
 	
 		path = {
+			#leads_to_tech = sov_medium_tank_3 #T-34 Model 43
 			leads_to_tech = sov_medium_tank_3
 			research_cost_coeff = 1
 		}
@@ -266,9 +288,14 @@ technologies = {
 			name = sov_armour_folder
 			position = { x = -8 y = 6 }
 		}
+
+		#enable_equipment_modules = {
+		#	tank_medium_turret_2
+		#}
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -285,11 +312,16 @@ technologies = {
 			custom_effect_tooltip = t34_upgrade_2_tt
 		}
 		show_effect_as_desc = yes
-
 		enable_equipment_modules = {
+			#tank_large_medium_superstructure
 			sloped_armor
 		}
 	
+		#path = {
+		#	leads_to_tech = sov_medium_tank_4
+		#	research_cost_coeff = 1
+		#}
+		
 		research_cost = 2
 		start_year = 1941
 		folder = {
@@ -299,6 +331,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -313,15 +346,14 @@ technologies = {
 		enable_equipments = {
 			sov_medium_tank_chassis_t44
 		}
+		
 		enable_equipment_modules = {
 			tank_medium_turret_3
 		}
-
 		path = {
 			leads_to_tech = sov_medium_tank_5 #T-44 Model 46
 			research_cost_coeff = 1
 		}
-		
 
 		research_cost = 2
 		start_year = 1942
@@ -332,6 +364,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -348,8 +381,8 @@ technologies = {
 			custom_effect_tooltip = t44_upgrade_1_tt
 		}
 		show_effect_as_desc = yes
-
 		enable_equipment_modules = {
+			#tank_modern_tank_turret
 			tank_medium_turret_4
 			tank_medium_superstructure_E50
 		}
@@ -363,6 +396,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -378,9 +412,15 @@ technologies = {
 
 		enable_equipments = {
 			sov_medium_tank_chassis_t28
+			#sov_heavy_tank_chassis_t35
 		}
 		enable_equipment_modules = {
-			
+			#tank_medium_turret_1
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
+			#tank_multi_turret_1
+			#tank_multi_turret_2
 		}
 	
 		path = {
@@ -401,6 +441,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -413,7 +454,11 @@ technologies = {
 	sov_heavy_tank_alt = { 
 
 		enable_equipments = {
+			#sov_heavy_tank_chassis_t100
 			sov_heavy_tank_chassis_t35
+		}
+		enable_equipment_modules = {
+			tank_multi_turret_3
 		}
 		
 		research_cost = 2
@@ -425,6 +470,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -455,7 +501,8 @@ technologies = {
 	# 	}
 		
 	# 	categories = {
-	#	generic
+	#		generic
+
 	# 		armor
 	# 		cat_heavy_armor
 	# 	}
@@ -485,6 +532,7 @@ technologies = {
 		
 		#categories = {
 		#	generic
+
 		#	armor
 		#	cat_heavy_armor
 		#}
@@ -503,7 +551,7 @@ technologies = {
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure
-
+			
 		}
 	
 		path = {
@@ -511,16 +559,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
 		research_cost = 2
-		start_year = 1940
+		start_year = 1941
 		folder = {
 			name = sov_armour_folder
-			position = { x = 4 y = 6 }
+			position = { x = 4 y = 8 }
 		}
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -543,6 +591,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_heavy_turret_2
+			#sloped_armor
 		}
 		
 		research_cost = 2.0
@@ -554,6 +603,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -570,6 +620,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			#tank_super_heavy_turret
 			tank_heavy_turret_3
 		}
 		
@@ -582,6 +633,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -599,13 +651,29 @@ technologies = {
 		enable_equipment_modules = {
 			tank_light_superstructure_zis
 		}
+
+		allow = {
+			always = no
+		}
+
+		research_cost = 2.0
+		start_year = 1936
+		folder = {
+			name = sov_armour_folder
+			position = { x = -3 y = 8 }
+		}
 		
 		categories = {
 			generic
+
 			armor
-			cat_heavy_armor
+			cat_light_armor
 		}
-		
+
+		on_research_complete = {
+			custom_effect_tooltip = sov_zis_30_short_tt
+		}
+
 		ai_will_do = {
 			factor = 0
 		}

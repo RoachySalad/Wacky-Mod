@@ -301,10 +301,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -326,7 +326,20 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
-			not = { has_country_flag = USA_great_depression_cooldown }
+			OR = {
+				not = { has_country_flag = USA_great_depression_cooldown }
+				has_country_flag = {
+					flag = USA_great_depression_cooldown
+					days > 210
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_great_depression_timer_tt
+					has_country_flag = {
+						flag = USA_great_depression_cooldown
+						days > 210
+					}
+				}
+			}
 		}
 		
 		bypass = {
@@ -345,7 +358,7 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = USA_great_depression_cooldown
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 		}
 	}
@@ -712,7 +725,20 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
-			not = { has_country_flag = USA_great_depression_cooldown }
+			OR = {
+				not = { has_country_flag = USA_great_depression_cooldown }
+				has_country_flag = {
+					flag = USA_great_depression_cooldown
+					days > 210
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_great_depression_timer_tt
+					has_country_flag = {
+						flag = USA_great_depression_cooldown
+						days > 210
+					}
+				}
+			}
 		}
 
 		available_if_capitulated = yes
@@ -720,7 +746,7 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = USA_great_depression_cooldown
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 		}
 	}
@@ -1099,7 +1125,7 @@ focus_tree = {
 					has_war_support > 0.4
 					has_war = no
 				}
-				USA_congress_small_opposition = yes
+				USA_congress_medium_opposition = yes
 			}
 			else_if = {
 				limit = {
@@ -1107,9 +1133,6 @@ focus_tree = {
 					has_war = no
 				}
 				USA_congress_large_opposition = yes
-			}
-			else = {
-				USA_congress_medium_opposition = yes
 			}
 			USA_neutrality_level_up = yes
 			remove_ideas = USA_cash_and_carry_programme
@@ -1490,11 +1513,24 @@ focus_tree = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
 			OR = {
-				threat > 0.15
+				threat > 0.2
 				JAP  = { has_war_with = CHI }
 				date > 1938.1.1
 			}
-			not = { has_country_flag = USA_great_depression_cooldown }
+			OR = {
+				not = { has_country_flag = USA_great_depression_cooldown }
+				has_country_flag = {
+					flag = USA_great_depression_cooldown
+					days > 210
+				}
+				custom_trigger_tooltip = {
+					tooltip = USA_great_depression_timer_tt
+					has_country_flag = {
+						flag = USA_great_depression_cooldown
+						days > 210
+					}
+				}
+			}
 		}
 		
 		bypass = {
@@ -1514,7 +1550,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = USA_great_depression_cooldown
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -1536,9 +1572,19 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
-			not = { has_country_flag = USA_great_depression_cooldown }
+			has_country_flag = {
+				flag = USA_great_depression_cooldown
+				days > 210
+			}
+			custom_trigger_tooltip = {
+				tooltip = USA_great_depression_timer_tt
+				has_country_flag = {
+					flag = USA_great_depression_cooldown
+					days > 210
+				}
+			}
 			OR = {
-				threat > 0.35
+				threat > 0.5
 				ENG  = { has_war_with = GER }
 				date > 1940.1.1
 			}
@@ -1561,7 +1607,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = USA_great_depression_cooldown
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
@@ -1595,9 +1641,19 @@ focus_tree = {
 		available = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
-			not = { has_country_flag = USA_great_depression_cooldown }
+			has_country_flag = {
+				flag = USA_great_depression_cooldown
+				days > 210
+			}
+			custom_trigger_tooltip = {
+				tooltip = USA_great_depression_timer_tt
+				has_country_flag = {
+					flag = USA_great_depression_cooldown
+					days > 210
+				}
+			}
 			OR = {
-				threat > 0.75
+				threat > 0.99
 				FRA = { has_capitulated = yes }
 				date > 1941.1.1
 			}
@@ -1689,7 +1745,7 @@ focus_tree = {
 					set_state_flag = USA_federal_housing_act
 				}
 			}
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = USA_great_depression_cooldown
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 		}
 	}
@@ -1839,7 +1895,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			add_political_power = 200
-			add_ideas = USA_neutrality_act
+			add_ideas = USA_neutrality_act 
 			add_war_support = -0.05
 			custom_effect_tooltip = USA_lend_lease_act_neutrality_tt
 			unlock_decision_category_tooltip = USA_cash_and_carry
@@ -2290,34 +2346,6 @@ focus_tree = {
 				add_opinion_modifier = { target = USA modifier = war_plan_orange }
 			}
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_orange show_effect_tooltip = yes show_modifiers = yes }
-			set_technology = {
-				american_super_heavy_hull = 1
-			}
-			create_equipment_variant = {
-				name = "Pacific Fighter Class"
-				type = ship_hull_super_heavy_USA
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_super_heavy_battery_triple_2
-					fixed_ship_anti_air_slot = dp_ship_secondaries
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
-					fixed_ship_radar_slot = ship_radar_3
-					fixed_ship_engine_slot = heavy_ship_engine_4
-					fixed_ship_secondaries_slot = dp_ship_secondaries
-					fixed_ship_armor_slot = ship_armor_shbb
-					front_1_custom_slot = ship_super_heavy_battery_triple_2
-					front_2_custom_slot = dp_ship_secondaries
-					mid_1_custom_slot = dp_ship_secondaries
-					mid_2_custom_slot = dp_ship_secondaries
-					mid_3_custom_slot = ship_airplane_launcher_2
-					rear_1_custom_slot = ship_super_heavy_battery_triple_2
-				}
-			}
-			create_ship = {
-			    type = ship_hull_super_heavy_USA
-			    equipment_variant = "Pacific Fighter Class"
-			    name = "Pacific War Class"
-			}
 		}
 	}
 	
@@ -4164,7 +4192,7 @@ focus_tree = {
 				name = USA_advanced_mahanian_doctrine
 				cost_reduction = 0.25
 				uses = 2
-				category = cat_fleet_in_being
+				category = cat_base_strike
 			}
 		}
 	}

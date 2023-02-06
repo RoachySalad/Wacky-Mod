@@ -835,6 +835,21 @@ ideas = {
 			}
 		}
 
+		MAN_hoankyoku_idea = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = generic_intel_bonus
+			
+			modifier = {
+				operative_slot = 1
+			}
+		}
+
 		MAN_intervene_in_china_1 = {
 
 			name = MAN_intervene_in_china

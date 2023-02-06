@@ -43,7 +43,7 @@ German_historical = {
 		GER_second_vienna_award
 		GER_mech
 		GER_cas_air_effort
-		GER_air_doc
+		#GER_air_doc
 		GER_demand_memel
 		GER_autarky
 		GER_synthetic_rubber

@@ -3,9 +3,11 @@ state={
 	id=449
 	name="STATE_449" # El Agheila
 	manpower = 40431
+	
 	resources = {
 		oil = 100
 	}
+	
 	state_category = enclave
 
 	history={

@@ -9,6 +9,13 @@ if = {
 		set_naval_oob = "SPR_1936_naval_legacy"
 	}
 }
+# if = {
+# 	limit = { has_dlc = "By Blood Alone" }
+# 		set_air_oob = "SPR_1936_air_bba"
+# 	else = {
+# 		set_air_oob = "SPR_1936_air_legacy"
+# 	}
+# }
 
 if = {
 	limit = {
@@ -289,7 +296,6 @@ if = {
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_medium_battery = 1
-		basic_secondary_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		mtg_transport = 1
@@ -526,7 +532,9 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = empty
+			#mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
@@ -542,7 +550,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	create_equipment_variant = {
@@ -557,7 +566,9 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = empty
-			mid_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = empty
+			#mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	# Light Cruisers #
@@ -572,8 +583,10 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -590,7 +603,8 @@ if = {
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_battery_1
 		}
 		obsolete = yes
 	}
@@ -606,9 +620,10 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_torpedo_1
+			front_1_custom_slot = ship_light_battery_1
 			mid_1_custom_slot = ship_torpedo_1
-			rear_1_custom_slot = ship_light_medium_battery_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
 		}
 	}
 	# Heavy Cruisers #
@@ -623,8 +638,10 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_2
-			fixed_ship_armor_slot = empty
-			mid_1_custom_slot = ship_medium_battery_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}

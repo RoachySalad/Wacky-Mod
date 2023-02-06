@@ -10,6 +10,7 @@ sub_units = {
 		
 		type = {
 			armor
+			#artillery
 		}
 		
 		group = armor
@@ -36,7 +37,7 @@ sub_units = {
 
 		breakthrough = 0.2
 		soft_attack = 0.2
-
+		
 		plains = {
 			attack = 0.05 
 			movement = 0.05
@@ -100,6 +101,7 @@ sub_units = {
 		
 		type = {
 			armor
+			#artillery
 		}
 		
 		group = armor
@@ -166,13 +168,13 @@ sub_units = {
 			attack = -2.0
 		}
 		fort = {
-			attack = 0.65
+			attack = 0.70
 		}
 		urban = {
 			attack = 0.3
 		}
 		dense_urban = {
-			attack = 0.5
+			attack = 0.65
 		}
 		town = {
 			attack = 0.15
@@ -189,6 +191,7 @@ sub_units = {
 		
 		type = {
 			armor
+			#artillery
 		}
 		
 		group = armor
@@ -262,7 +265,7 @@ sub_units = {
 			attack = 0.4
 		}
 		dense_urban = {
-			attack = 0.9
+			attack = 0.95
 		}
 		town = {
 			attack = 0.2

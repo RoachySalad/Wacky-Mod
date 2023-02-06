@@ -58,7 +58,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 		}
 		
@@ -104,7 +103,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			engineers_tech
 		}
@@ -169,7 +167,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			engineers_tech
 		}
@@ -208,7 +205,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			engineers_tech
 		}
@@ -251,7 +247,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			engineers_tech
 		}
@@ -301,7 +296,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			engineers_tech
 		}
@@ -351,7 +345,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			engineers_tech
 		}
@@ -398,7 +391,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			recon_tech
 		}
@@ -556,7 +548,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			recon_tech
 		}
@@ -736,7 +727,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			recon_tech
 		}
@@ -879,7 +869,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			recon_tech
 		}
@@ -923,7 +912,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			military_police_tech
 		}
@@ -992,7 +980,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			military_police_tech
 		}
@@ -1026,7 +1013,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			military_police_tech
 		}
@@ -1055,7 +1041,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			military_police_tech
 		}
@@ -1067,6 +1052,20 @@ technologies = {
 				factor = 2
 				has_war = yes
 			}
+		}
+	}
+
+	camicie_nere_security_militias = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+		military_police = {
+			suppression_factor = 0.05
 		}
 	}
 
@@ -1089,7 +1088,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			maintenance_company_tech
 		}
@@ -1134,7 +1132,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			maintenance_company_tech
 		}
@@ -1179,7 +1176,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			maintenance_company_tech
 		}
@@ -1218,7 +1214,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			maintenance_company_tech
 		}
@@ -1266,7 +1261,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -1313,7 +1307,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -1359,7 +1352,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -1400,7 +1392,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			hospital_tech
 			motorized_equipment
@@ -1426,11 +1417,21 @@ technologies = {
 		}
 	}
 
+
+	SWI_saint_bernard_tech = { #Saint Bernard tech
+		allow = { always = no } #Only obtained through Focus
+		field_hospital = {
+			casualty_trickleback = 0.2 ## REMEMBER TO UPDATE THE TOOLTIP 
+			experience_loss_factor = -0.3
+		}
+	}
+
 	tech_logistics_company = {
 
 		enable_subunits = {
 			logistics_company
 			logistics_company_mot
+		
 		}
 		
 		path = {
@@ -1450,7 +1451,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1491,6 +1491,7 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 		
+		
 		path = {
 			leads_to_tech = tech_logistics_company3
 			research_cost_coeff = 1
@@ -1504,7 +1505,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1546,6 +1546,7 @@ technologies = {
 			fuel_consumption_factor = -0.05
 		}
 		
+		
 		path = {
 			leads_to_tech = tech_logistics_company4
 			research_cost_coeff = 1
@@ -1559,7 +1560,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1594,6 +1594,7 @@ technologies = {
 			supply_consumption_factor = -0.05
 			fuel_consumption_factor = -0.05
 		}
+		
 
 		research_cost = 1.5
 		start_year = 1945
@@ -1603,7 +1604,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			logistics_tech
 			motorized_equipment
@@ -1654,7 +1654,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			signal_company_tech
 			electronics
@@ -1693,7 +1692,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			signal_company_tech
 			electronics
@@ -1740,7 +1738,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			signal_company_tech
 			electronics
@@ -1781,7 +1778,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			support_tech
 			signal_company_tech
 			electronics
@@ -1819,7 +1815,6 @@ technologies = {
 		start_year = 1939
 		
 		categories = {
-			generic
 			support_tech
 			military_police_tech
 		}
@@ -1849,7 +1844,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			train_tech
 		}
 		
@@ -1892,7 +1886,6 @@ technologies = {
 			research_cost_coeff = 1	
 		}
 		categories = {
-			generic
 			train_tech
 			heavy_artillery
 		}
@@ -1928,7 +1921,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			train_tech
 		}
 		
@@ -1982,7 +1974,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			train_tech
 		}
 		
@@ -2027,7 +2018,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			train_tech
 			heavy_artillery
 		}

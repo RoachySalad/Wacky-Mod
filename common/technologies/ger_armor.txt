@@ -6,6 +6,29 @@ technologies = {
 			ger_light_tank_chassis_p1
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_welded_armor
+			#tank_gasoline_engine
+			#tank_diesel_engine
+			#tank_petrol_electric_engine
+			#tank_light_turret_1
+			#tank_light_turret_2
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#tank_medium_turret_1
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -15,6 +38,7 @@ technologies = {
 			tank_light_turret_open
 			tank_light_superstructure
 			tank_light_open_superstructure
+		
 		}
 	
 		path = {
@@ -39,6 +63,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -53,12 +78,9 @@ technologies = {
 		enable_equipments = {
 			ger_light_tank_chassis_p2
 		}
-	
 		enable_equipment_modules = {
 			tank_light_turret_2
 		}
-
-
 		path = {
 			leads_to_tech = ger_light_tank_3
 			research_cost_coeff = 1
@@ -73,6 +95,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -89,6 +112,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_light_turret_3
+			tank_multi_turret_3
 		}
 		
 		research_cost = 2.0
@@ -100,6 +124,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -134,6 +159,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -165,6 +191,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -186,7 +213,6 @@ technologies = {
 			tank_light_turret_4
 			tank_light_superstructure_hetzer
 		}
-
 		research_cost = 2.0
 		start_year = 1943
 		folder = {
@@ -196,6 +222,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -216,16 +243,12 @@ technologies = {
 		enable_equipments = {
 			ger_medium_tank_chassis_p3
 		}
-
-
 		enable_equipment_modules = {
 			tank_medium_turret_1
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
 		}
-		
-	
 		path = {
 			leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
 			research_cost_coeff = 1
@@ -240,6 +263,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -254,10 +278,10 @@ technologies = {
 		enable_equipments = {
 			ger_medium_tank_chassis_p4
 		}
-		enable_equipment_modules = {
-		}
 	
 		path = {
+			#leads_to_tech = ger_p34_tank_2  # Second Wave Upgrade
+			#research_cost_coeff = 1
 		}
 		
 		research_cost = 2.0
@@ -269,6 +293,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -280,15 +305,16 @@ technologies = {
 	
 	ger_p34_tank_2 = {
 	
-		on_research_complete = {
-			custom_effect_tooltip = p34_upgrade_1_tt
-		}
+		
 		enable_equipment_modules = {
 			tank_medium_turret_2
 			armor_skirts
 		}
+		on_research_complete = {
+			custom_effect_tooltip = p34_upgrade_1_tt
+		}
 		
-		show_effect_as_desc = yes
+		
 
 		path = {
 			leads_to_tech = ger_p34_tank_3
@@ -308,6 +334,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -320,6 +347,7 @@ technologies = {
 	ger_p34_tank_3 = {
 
 		enable_equipment_modules = {
+			#armor_skirts
 			sloped_armor
 		}
 		on_research_complete = {
@@ -336,6 +364,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -351,7 +380,9 @@ technologies = {
 			ger_medium_tank_chassis_p5
 		}
 		enable_equipment_modules = {
+			#sloped_armor
 			tank_medium_turret_3
+			#tank_large_medium_superstructure
 		}
 		
 		path = {
@@ -359,7 +390,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.0
+		research_cost = 3.0
 		start_year = 1942
 		folder = {
 			name = ger_armour_folder
@@ -368,6 +399,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -383,6 +415,7 @@ technologies = {
 			ger_medium_tank_chassis_e50
 		}
 		enable_equipment_modules = {
+			#tank_modern_tank_turret
 			tank_medium_turret_4
 			tank_medium_superstructure_E50
 		}
@@ -396,6 +429,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -410,6 +444,10 @@ technologies = {
 
 		enable_equipments = {
 			ger_heavy_tank_chassis_neub
+		}
+		enable_equipment_modules = {
+			tank_multi_turret_1
+			tank_multi_turret_2
 		}
 	
 		path = {
@@ -427,6 +465,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -465,6 +504,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -474,16 +514,16 @@ technologies = {
 		}
 	}
 	
-	
+	#ger_super_heavy_tank_1 = { 
 	ger_heavy_tank_2 = { 
-
 		enable_equipments = {
+			#ger_heavy_tank_chassis_p7
 			ger_heavy_tank_chassis_p6_b
 		}
 		enable_equipment_modules = {
-			tank_heavy_turret_2
+			tank_super_heavy_turret
 		}
-	
+		
 		path = {
 			leads_to_tech = ger_heavy_tank_3
 			research_cost_coeff = 1
@@ -498,6 +538,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -506,16 +547,17 @@ technologies = {
 			factor = 0
 		}
 	}
-
+	
+	#ger_heavy_tank_2 = { 
 	ger_super_heavy_tank_1 = { 
-
 		enable_equipments = {
+			#ger_heavy_tank_chassis_p6_b
 			ger_heavy_tank_chassis_p7
 		}
 		enable_equipment_modules = {
 			tank_heavy_turret_2
 		}
-		
+	
 		path = {
 			leads_to_tech = ger_heavy_tank_3
 			research_cost_coeff = 1
@@ -530,6 +572,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -539,14 +582,13 @@ technologies = {
 		}
 	}
 
-
-
 	ger_heavy_tank_3 = { 
 
 		enable_equipments = {
 			ger_heavy_tank_chassis_e100
 		}
 		enable_equipment_modules = {
+			#tank_super_heavy_turret
 			tank_heavy_turret_3
 		}
 		
@@ -559,6 +601,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -567,35 +610,5 @@ technologies = {
 			factor = 0
 		}
 	}
-
-#	ger_secret_super_heavy = { 
-#
-#		enable_equipments = {
-#			wunder_super_heavy_tank_chassis
-#		}
-#		enable_equipment_modules = {
-#			tank_heavy_turret_1
-#			tank_heavy_turret_2
-#			tank_heavy_superstructure
-#			tank_super_heavy_turret
-#		}
-#
-#		allow = {
-#			always = no
-#		}
-#
-#		research_cost = 2.0
-#		start_year = 1945
-#
-#		categories = {
-#			generic
-#			armor
-#			cat_heavy_armor
-#		}
-#		
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
-
+	
 }

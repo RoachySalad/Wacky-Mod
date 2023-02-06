@@ -22,6 +22,7 @@ add_ideas = {
 	IRE_ira_1
 	IRE_anglo_trade_war
 	neutrality_idea2
+	PACIFIC_COMMONWEALTH_controls_original
 	father_check
 }
 

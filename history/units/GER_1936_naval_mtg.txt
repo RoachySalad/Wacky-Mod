@@ -4,17 +4,17 @@ units= {
 	
 	fleet = {
 		name = "Kriegsmarine"			
-		naval_base = 241  # Wilhemshaven
+		naval_base = 6389  # Wilhemshaven
 		task_force = {				
 			name = "Hochseeflotte"
-			location = 241  # Wilhemshaven
+			location = 6389  # Wilhemshaven
 			ship = { name = "Deutschland" definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }	
 			ship = { name = "Admiral Scheer" pride_of_the_fleet = yes definition = heavy_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_panzerschiff = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Nürnberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } } 		
 			ship = { name = "Leipzig" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Leipzig Class" } } }		
-			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
-			ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
-			ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
+			ship = { name = "Königsberg" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
+			ship = { name = "Karlsruhe" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }	
+			ship = { name = "Köln" definition = light_cruiser start_experience_factor = 0.3 equipment = { ship_hull_cruiser_2 = { amount = 1 owner = GER version_name = "Königsberg Class" } } }			
 			ship = { name = "Emden" definition = light_cruiser start_experience_factor = 0.2 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Emden Class" } } }
 			# 1. Torpedobootflottille
 			ship = { name = "Jaguar" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = GER version_name = "Type 24 Class" } } }
@@ -24,7 +24,7 @@ units= {
 		}
 		task_force = {
 			name = "Ostseeflotte"
-			location = 241  # Wilhemshaven
+			location = 6389  # Konigsberg
 			ship = { name = "Schleswig-Holstein" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }
 			ship = { name = "Schlesien" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_pre_dreadnought = { amount = 1 owner = GER version_name = "Deutschland Class" } } }			
 			# 2. Torpedobootflottille
@@ -40,17 +40,17 @@ units= {
 		}
 		task_force = {
 			name = "Marineschule Kiel"
-			location = 241  # Wilhemshaven
+			location = 6389 	# Kiel
 			ship = { name = "Brummer" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }			
 			ship = { name = "Bremse" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = GER version_name = "Bremse Class" } } }
 		}
 	}
 	fleet = {
 		name = "Unterseeboots-Flotte "			
-		naval_base = 241  # Wilhemshaven
+		naval_base = 6389  # Kiel
 		task_force = {
 			name = "I. U-Boots Flottille Weddigen"
-			location = 241  # Wilhemshaven
+			location = 6389  # Kiel
 			# 1. Unterseebootsflottille
 			ship = { name = "U-7" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { name = "U-8" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
@@ -64,7 +64,7 @@ units= {
 		}
 		task_force = {
 			name = "II. U-Boots-Ausbildungs-Gruppe"
-			location = 241  # Wilhemshaven
+			location = 6389  # Wilhemshaven
 			# 2. Unterseebootsflottille
 			ship = { name = "U-1" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }
 			ship = { name = "U-2" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = GER version_name = "Type II Class" } } }

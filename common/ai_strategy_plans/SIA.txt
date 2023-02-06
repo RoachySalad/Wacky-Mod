@@ -1,0 +1,38 @@
+Siam_Historical = {
+    enable = {
+        original_tag = SIA
+    }
+
+	ai_national_focuses = {
+        SIA_industrialization_development
+        SIA_agricultural_mechanization
+        SIA_rapid_urbanization
+        SIA_invite_japanese_investors
+        SIA_defense_industry
+        SIA_arms_production
+        SIA_arms_industry
+        SIA_roads_to_bangkok
+        SIA_rail_investors
+        SIA_research_slot
+        SIA_our_new_lands
+        SIA_indochina_development
+        SIA_cambodian_steel
+        SIA_vietnamese_tungsten
+        SIA_shan_development
+        SIA_burmese_rubber
+        SIA_assamese_oil
+        SIA_thai_golden_era
+        SIA_khana_ratsadon
+        SIA_rise_of_phibun
+        SIA_monarchy_question
+        SIA_songsuradet_rebellion
+        SIA_curb_civilian_wing
+        SIA_military_dominance
+        SIA_prepare_for_expansion
+        SIA_solidify_the_dictatorship
+        SIA_cultural_mandates
+        SIA_alter_national_anthem
+        SIA_absolute_loyalty
+        SIA_great_thai_empire
+	}
+}

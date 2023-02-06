@@ -813,11 +813,6 @@ ideas = {
 
 			allowed = {
 				original_tag = SPR
-				SPR = {
-					has_navy_size = {
-					    size < 51
-					}
-				}
 			}
 
 			allowed_civil_war = {
@@ -825,13 +820,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				battle_cruiser = {
-					build_cost_ic = -0.2 instant = yes
-				}
-				battleship = {
-					build_cost_ic = -0.2 instant = yes
-				}
-				destroyer = {
+				ship_hull_heavy = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}

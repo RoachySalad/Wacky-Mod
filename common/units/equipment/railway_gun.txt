@@ -59,4 +59,23 @@ equipments = {
 			chromium = 15
 		}			
 	}
+
+	railway_gun_equipment_3 = {
+		year = 1943
+
+		archetype = railway_gun_equipment
+		priority = 50
+		visual_level = 0
+		active = no
+
+		build_cost_ic = 2200
+		
+		railway_gun_attack = 40
+
+		resources = {
+			steel = 70
+			tungsten = 25
+			chromium = 25
+		}			
+	}
 }

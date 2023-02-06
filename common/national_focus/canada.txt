@@ -583,6 +583,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAN_war_bonds_1
+			hidden_effect = {
+				CAN = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Areweatwar"
+					}
+				}
+			}
 		}
 	}
 
@@ -1977,6 +1990,7 @@ focus_tree = {
 				technology = mot_radio1
 				technology = mot_radio2
 				technology = mot_radio3
+			
 			}
 		}
 	}
@@ -2064,7 +2078,7 @@ focus_tree = {
 				technology = tech_signal_company3
 				technology = tech_signal_company4
 			}
-
+			
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = CAN_kangaroo_designer
 
@@ -2259,7 +2273,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
 				bonus = 0.75
-				ahead_reduction = 1
+				ahead_reduction = 0.5
 				uses = 1
 				technology = can_medium_tank_1
 				#technology = can_medium_tank_2

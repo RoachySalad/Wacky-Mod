@@ -1,0 +1,30 @@
+SIA_prio_military_factories = {
+	allowed = { original_tag = SIA }
+	enable = {
+		always = yes
+	}	
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50000
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 500
+	}
+}
+
+SIA_rubber_refs = {
+	allowed = { original_tag = SIA }
+	enable = {
+		always = yes
+	}	
+	abort = {
+		date > 1940.6.1
+	}
+	ai_strategy = {
+		type = building_target
+		id = synthetic_rubber_refinery
+		value = 1000
+	}
+}

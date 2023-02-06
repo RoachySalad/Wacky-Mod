@@ -161,7 +161,43 @@ debug_decisions = { #TODO_Manu: Comment these out
 	}
 }
 
+foreign_politics = {
+	SOV_annex_mon = {
 
+		allowed = {
+			original_tag = SOV
+		}
+
+		available = {
+			SOV = { has_completed_focus = SOV_claim_bessarabia }
+			MON = {is_ai = YES}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = { target = MON transfer_troops = yes }
+			287 = { set_compliance = 60 }
+			329 = { set_compliance = 60 }
+			330 = { set_compliance = 60 }
+			617 = { set_compliance = 60 }
+			618 = { set_compliance = 60 }
+			619 = { set_compliance = 60 }
+			759 = { set_compliance = 60 }
+			760 = { set_compliance = 60 }
+			817 = { set_compliance = 60 }
+			818 = { set_compliance = 60 }
+			819 = { set_compliance = 60 }
+			820 = { set_compliance = 60 }
+		}
+	}
+}
 
 ########     ###    ########     ###    ##    ##  #######  ####    ###    
 ##     ##   ## ##   ##     ##   ## ##   ###   ## ##     ##  ##    ## ##   
@@ -1855,7 +1891,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_motherland_calls = { # ID = 3
 		priority = 2
 
-		icon = eng_propaganda_campaigns
+		icon = generic_army_support
 
 		ai_will_do = {
 			base = 0
@@ -1937,7 +1973,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_victory_at_hand = { # ID = 4
 		priority = 3
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 1
@@ -2017,7 +2053,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_defend_moscow = { # ID = 5
 		priority = 4
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 500
@@ -2103,7 +2139,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_fight_to_the_last = { # ID = 6
 		priority = 5
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 0.75
@@ -2193,7 +2229,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_hit_of_hammer = { # ID = 7
 		priority = 6
 
-		icon = eng_propaganda_campaigns
+		icon = generic_factory
 
 		ai_will_do = {
 			base = 10
@@ -2262,7 +2298,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_transport = { # ID = 8
 		priority = 7
 
-		icon = eng_propaganda_campaigns
+		icon = generic_construction
 
 		ai_will_do = {
 			base = 0.7
@@ -2330,7 +2366,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_oil_for_the_motherland = { # ID = 9
 		priority = 8
 
-		icon = eng_propaganda_campaigns
+		icon = oil
 
 		ai_will_do = {
 			base = 1
@@ -2409,7 +2445,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_more_metal = { # ID = 10
 		priority = 9
 
-		icon = eng_propaganda_campaigns
+		icon = steel
 
 		ai_will_do = {
 			base = 0.8
@@ -2549,7 +2585,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_high_yield = { # ID = 11
 		priority = 10
 
-		icon = eng_propaganda_campaigns
+		icon = generic_construction
 
 		ai_will_do = {
 			base = 10
@@ -2617,7 +2653,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_for_the_motherland = { # ID = 12
 		priority = 11
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 1
@@ -2701,7 +2737,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_heroes_forward = { # ID = 13
 		priority = 12
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 10
@@ -3068,7 +3104,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_anti_fascism = { # ID = 15
 		priority = 14
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 1
@@ -3325,7 +3361,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_treacherous_enemy = { # ID = 16
 		priority = 15
 
-		icon = eng_propaganda_campaigns
+		icon = generic_political_actions
 
 		ai_will_do = {
 			base = 1
@@ -3401,7 +3437,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_do_not_blab = { # ID = 17
 		priority = 16
 
-		icon = eng_propaganda_campaigns
+		icon = generic_political_actions
 
 		ai_will_do = {
 			base = 1
@@ -3439,6 +3475,7 @@ SOV_propaganda_campaigns = {
 
 		available = {
 			SOV_propaganda_poster_slot_available = yes
+			has_completed_focus = SOV_order_270
 		}
 
 		visible = {
@@ -3455,10 +3492,10 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_do_not_blab_cost
 
 		modifier = {
-			army_intel_to_others = -30
-			navy_intel_to_others = -30
-			airforce_intel_to_others = -30
-			civilian_intel_to_others = -30
+			army_intel_to_others = -15
+			navy_intel_to_others = -15
+			airforce_intel_to_others = -15
+			civilian_intel_to_others = -15
 			foreign_subversive_activites = -0.20
 		}
 
@@ -3485,7 +3522,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_sweep_scum_out = { # ID = 18
 		priority = 17
 
-		icon = eng_propaganda_campaigns
+		icon = generic_prepare_civil_war
 
 		ai_will_do = {
 			base = 0.5
@@ -3725,7 +3762,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_glory_to_partisans = { # ID = 21
 		priority = 20
 
-		icon = eng_propaganda_campaigns
+		icon = generic_political_actions
 
 		ai_will_do = {
 			base = 0.1
@@ -3810,7 +3847,7 @@ SOV_propaganda_campaigns = {
 	SOV_propaganda_death_to_invaders = { # ID = 22
 		priority = 21
 
-		icon = eng_propaganda_campaigns
+		icon = generic_scorched_earth
 
 		ai_will_do = {
 			base = 1
@@ -7259,7 +7296,7 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 39 } #10 trains per factory
+			has_equipment = { train_equipment > 79 } #20 trains per factory
 			has_war_with = GER
 		}
 
@@ -9178,8 +9215,8 @@ operations = {
 		is_good = no
 
 		timeout_effect = {
-			add_war_support = -0.3
-			add_stability = -0.3
+			add_war_support = -0.15
+			add_stability = -0.15
 			add_timed_idea = {
 				idea = SOV_assure_competency
 				days = 150
