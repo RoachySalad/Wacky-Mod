@@ -210,22 +210,3 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
-	id = germany_share.4
-	title = germany_share.4.t
-	desc = germany_share.4.d
-	picture = GFX_report_event_german_inspect_troops
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = germany_share.4.a
-		add_timed_idea = {
-		    idea = JAP_wunderwaffen_projekt
-		    days = 180
-		}
-	}
-}

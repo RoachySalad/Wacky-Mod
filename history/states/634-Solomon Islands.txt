@@ -5,6 +5,7 @@ state={
 	history={
 		owner = AST
 		add_core_of = BAS
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 2
 			1269 = {

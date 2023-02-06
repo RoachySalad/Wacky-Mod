@@ -43,21 +43,6 @@ JAP_interservice_rivalry = {
 	}
 }
 
-JAP_strike_south_doctrine = {
-	
-	priority = 90
-
-	icon = GFX_decision_category_jap_southern_expansion
-
-	allowed = {
-		original_tag = JAP
-		OR = {
-			is_debug = yes
-			has_completed_focus = JAP_strike_the_west
-		}
-	}
-}
-
 JAP_propaganda_campaigns = {
 	priority = 100
 

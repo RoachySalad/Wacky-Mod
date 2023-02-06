@@ -81,6 +81,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
+			army_experience = 10
 			add_ideas = CZE_fortification_focus
 		}
 	}
@@ -116,7 +117,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 20
 			9 = {
 				add_building_construction = { type = bunker province = 6440 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 6418 level = 3 instant_build = yes }
@@ -209,7 +210,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 20
 			if = {
 				limit = { controls_state = 69 }
 				69 = {
@@ -363,7 +364,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 20
 			if = {
 				limit = { controls_state = 69 }
 				69 = {
@@ -517,7 +518,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_MANPOWER }
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 30
 			if = {
 				limit = { controls_state = 69 }
 				69 = {
@@ -597,7 +598,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -629,7 +630,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {       
-			army_experience = 5
+			army_experience = 30
 			664 = {
 				add_building_construction = { type = bunker province = 3565 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 3716 level = 3 instant_build = yes }
@@ -654,7 +655,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 50
@@ -678,7 +679,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 30
 			72 = {
 				add_building_construction = { type = bunker province = 9567 level = 2 instant_build = yes }
 				add_building_construction = { type = bunker province = 9551 level = 2 instant_build = yes }
@@ -723,7 +724,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			army_experience = 5
+			army_experience = 20
 			664 = {
 				add_building_construction = { type = bunker province = 6573 level = 2 instant_build = yes }
 			}

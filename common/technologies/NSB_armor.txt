@@ -20,7 +20,8 @@ technologies = {
 			light_tank_chassis_1
 		}
 		enable_equipment_modules = {
-			tank_riveted_armor
+		
+		tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
@@ -29,6 +30,23 @@ technologies = {
 			tank_light_turret_open
 			tank_light_superstructure
 			tank_light_open_superstructure
+			
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_diesel_engine
+			#tank_petrol_electric_engine
+			#tank_light_turret_1
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
 		}
 
 		path = {
@@ -64,6 +82,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -92,6 +111,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -116,6 +136,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -127,10 +148,16 @@ technologies = {
 			medium_tank_chassis_1
 		}
 		enable_equipment_modules = {
+		
 			tank_medium_turret_1
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
+		
+			#tank_medium_turret_1			
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
 		}
 
 		path = {
@@ -148,6 +175,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -159,6 +187,7 @@ technologies = {
 			medium_tank_chassis_2
 		}
 		enable_equipment_modules = {
+			#tank_medium_turret_2
 			tank_medium_turret_3
 		}
 
@@ -177,6 +206,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -188,6 +218,7 @@ technologies = {
 			medium_tank_chassis_3
 		}
 		enable_equipment_modules = {
+			#tank_medium_turret_3
 			tank_medium_turret_4
 		}
 
@@ -201,6 +232,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -208,6 +240,8 @@ technologies = {
 
 	armor_tech_1 = {
 		enable_equipment_modules = {
+			#tank_welded_armor
+			
 			tank_medium_turret_2
 			armor_skirts
 		}
@@ -226,6 +260,7 @@ technologies = {
 	
 		categories = {
 			generic
+
 			armor
 		}
 	}
@@ -233,6 +268,7 @@ technologies = {
 	armor_tech_2 = {
 
 		enable_equipment_modules = {
+			#armor_skirts
 			sloped_armor
 		}
 
@@ -245,9 +281,34 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 		}
 	}
+
+#	fra_light_tank_export = {
+#		enable_equipments = {
+	#		fra_light_tank_chassis_ft
+	#	}
+		#enable_equipment_modules = {
+		
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_diesel_engine
+			#tank_light_turret_1
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+	#	}
+#	}
 
 	fra_light_tank_1 = {
 
@@ -256,8 +317,10 @@ technologies = {
 			fra_light_tank_chassis_r35
 			fra_light_tank_chassis_h35
 			fra_light_tank_chassis_s35
+			#fra_heavy_tank_chassis_2c
 		}
 		enable_equipment_modules = {
+		
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -268,6 +331,27 @@ technologies = {
 			tank_light_turret_open
 			tank_light_superstructure
 			tank_light_open_superstructure
+		
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_diesel_engine
+			#tank_petrol_electric_engine
+			#tank_light_turret_1
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#tank_medium_turret_1
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
 		}
 
 		path = {
@@ -282,12 +366,10 @@ technologies = {
 			leads_to_tech = fra_heavy_tank_1
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = fra_heavy_tank_alt 
 			research_cost_coeff = 1
 		}
-
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -304,6 +386,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -312,6 +395,8 @@ technologies = {
 	fra_light_tank_2 = {
 
 		enable_equipment_modules = {
+			#tank_light_turret_2
+			
 			tank_light_turret_3
 		}
 		enable_equipments = {
@@ -330,6 +415,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -339,6 +425,7 @@ technologies = {
 
 		
 		enable_equipment_modules = {
+			#tank_light_turret_3
 			tank_light_turret_4
 		}
 		on_research_complete = {
@@ -358,6 +445,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -365,19 +453,25 @@ technologies = {
 	
 	fra_light_tank_3 = {
 
-		enable_equipment_modules = {
-			tank_light_superstructure_hetzer
+		#enable_equipments = {
+			#fra_light_tank_chassis_x13
+			
+			enable_equipment_modules = {
+			tank_light_superstructure_hetzer	
 		}
+
 
 		research_cost = 1
 		start_year = 1943
 		folder = {
 			name = nsb_armour_folder
+			#position = { x = -4 y = 18 }
 			position = { x = -4 y = 14 }
 		}
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -388,13 +482,13 @@ technologies = {
 		enable_equipments = {
 			fra_medium_tank_chassis_s35
 		}
+		
 		enable_equipment_modules = {
 			tank_medium_turret_1
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
 		}
-		
 		
 		path = {
 			leads_to_tech = fra_medium_tank_2
@@ -410,6 +504,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -438,6 +533,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -466,6 +562,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -477,6 +574,7 @@ technologies = {
 			fra_medium_tank_chassis_x4
 		}
 		enable_equipment_modules = {
+			#tank_modern_tank_turret
 			tank_medium_turret_4
 		}
 
@@ -489,6 +587,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -499,12 +598,18 @@ technologies = {
 		enable_equipments = {
 			fra_heavy_tank_chassis_b1
 		}
+		#enable_equipment_modules = {
+		#	tank_multi_turret_1
+		#	tank_multi_turret_2
+		#}
+		
 		enable_equipment_modules = {
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure
 
 		}
+		
 		path = {
 			leads_to_tech = fra_heavy_tank_2
 			research_cost_coeff = 1
@@ -519,6 +624,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -544,18 +650,19 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
 	}
-
-
 	fra_heavy_tank_2 = {
 
 		enable_equipments = {
 			fra_heavy_tank_chassis_arl
 		}
 		enable_equipment_modules = {
+			#tank_heavy_turret_1
+			#tank_heavy_superstructure
 			tank_heavy_turret_2
 		}
 
@@ -573,6 +680,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -581,6 +689,7 @@ technologies = {
 	fra_heavy_tank_3 = {
 
 		enable_equipment_modules = {
+			#tank_heavy_turret_2
 			tank_heavy_turret_3
 		}
 
@@ -593,6 +702,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -604,6 +714,20 @@ technologies = {
 			ita_light_tank_chassis_cv33
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_petrol_electric_engine
+			#tank_diesel_engine
+			#tank_light_superstructure_cv33
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -637,6 +761,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -648,6 +773,12 @@ technologies = {
 			ita_light_tank_chassis_l6
 		}
 		enable_equipment_modules = {
+			#tank_light_turret_1
+			#tank_light_turret_2
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			
 			tank_light_turret_2
 		}
 		path = {
@@ -663,6 +794,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -683,6 +815,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -708,7 +841,6 @@ technologies = {
 			leads_to_tech = ita_heavy_tank_1
 			research_cost_coeff = 1
 		}
-
 		research_cost = 2
 		start_year = 1938
 		folder = {
@@ -718,6 +850,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -728,16 +861,17 @@ technologies = {
 		enable_equipments = {
 			ita_medium_tank_chassis_m13
 		}
+		
 		enable_equipment_modules = {
 			tank_medium_turret_2
 		}
-		
 		path = {
 			leads_to_tech = ita_medium_tank_3
 			research_cost_coeff = 1
 		}
 
-
+		
+		
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -747,6 +881,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -758,6 +893,7 @@ technologies = {
 			ita_medium_tank_chassis_m15
 		}
 		enable_equipment_modules = {
+			#tank_medium_turret_2
 			tank_medium_turret_3
 		}
 		
@@ -775,6 +911,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -786,6 +923,7 @@ technologies = {
 			ita_medium_tank_chassis_p26
 		}
 		enable_equipment_modules = {
+			#tank_medium_turret_3
 			tank_medium_turret_4
 		}
 
@@ -798,6 +936,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -808,10 +947,12 @@ technologies = {
 			ita_heavy_tank_chassis_p43
 		}
 		enable_equipment_modules = {
+			#tank_heavy_superstructure
+			#tank_heavy_turret_1
+			
 			tank_heavy_turret_1
 			tank_heavy_superstructure
 			tank_heavy_open_superstructure
-
 		}
 
 		path = {
@@ -832,12 +973,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_turret_2
 		}
-
 		path = {
 			leads_to_tech = ita_heavy_tank_3
 			research_cost_coeff = 1
 		}
-
 		research_cost = 2
 		start_year	= 1942
 		folder	= {
@@ -845,7 +984,7 @@ technologies = {
 			position = { x = 6 y = 12 }
 		}
 	}
-
+	
 	ita_heavy_tank_3 = {
 	
 		enable_equipment_modules = {
@@ -866,6 +1005,24 @@ technologies = {
 			hun_light_tank_chassis_38m
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_diesel_engine
+			#tank_petrol_electric_engine
+			#tank_light_turret_1
+			#tank_light_turret_2
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -900,6 +1057,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -915,6 +1073,9 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 
+		#research_cost = 2.5
+		#start_year = 1941
+		
 		research_cost = 2
 		start_year = 1939
 		folder = {
@@ -924,6 +1085,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -941,6 +1103,7 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1943
+		
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -2 y = 16 }
@@ -948,12 +1111,11 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
 	}
-
-
 	
 	hun_medium_tank_1 = {
 
@@ -961,6 +1123,23 @@ technologies = {
 			hun_medium_tank_chassis_40m
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_petrol_electric_engine
+			#tank_diesel_engine
+			#tank_medium_turret_1
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			##tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension	
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -975,6 +1154,7 @@ technologies = {
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
+			
 		}
 		
 		path = {
@@ -999,6 +1179,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -1007,6 +1188,7 @@ technologies = {
 	hun_medium_tank_2 = {
 
 		enable_equipment_modules = {
+			#tank_medium_turret_2
 			tank_medium_turret_3
 		}
 		
@@ -1024,6 +1206,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -1036,6 +1219,7 @@ technologies = {
 			hun_medium_tank_chassis_44m
 		}
 		enable_equipment_modules = {
+			#tank_medium_turret_3
 			tank_medium_turret_4
 			tank_medium_superstructure_E50
 		}
@@ -1049,6 +1233,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -1058,8 +1243,30 @@ technologies = {
 
 		enable_equipments = {
 			jap_light_tank_chassis_t95
+			jap_medium_tank_chassis_t89
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_gasoline_engine
+			#tank_petrol_electric_engine
+			#tank_diesel_engine
+			#tank_light_turret_1
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#tank_medium_turret_1
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -1097,6 +1304,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -1124,6 +1332,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -1142,6 +1351,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -1160,7 +1370,6 @@ technologies = {
 			tank_medium_superstructure
 			tank_medium_open_superstructure
 		}
-		
 		path = {
 			leads_to_tech = jap_medium_tank_2
 			research_cost_coeff = 1
@@ -1175,6 +1384,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -1203,6 +1413,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -1231,6 +1442,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -1242,6 +1454,7 @@ technologies = {
 			jap_medium_tank_chassis_t04
 		}
 		enable_equipment_modules = {
+			#tank_modern_tank_turret
 			tank_medium_turret_4
 		}
 
@@ -1254,6 +1467,7 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}

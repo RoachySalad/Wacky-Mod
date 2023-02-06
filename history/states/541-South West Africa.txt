@@ -4,14 +4,13 @@ state={
 	name="STATE_541"
 	manpower = 462000
 	
-	state_category = city
+	state_category = rural
 
 	history={
 		owner = SAF
 		buildings = {
 			infrastructure = 3
 			arms_factory = 3
-			dockyard = 3
 		}
 		victory_points = {
 			4879 1

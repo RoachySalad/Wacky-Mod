@@ -1425,7 +1425,6 @@ USA_department_of_defense = {
 	}
 
 }
-
 war_measures = {
 
 	USA_homeland_defense = {
@@ -1682,6 +1681,85 @@ operations = {
 
 		remove_effect = {
 			SOV = {add_offsite_building = { type = arms_factory level = 30 }}
+		}
+	}
+	USA_annex_mex = {
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			MEX = {is_ai = YES}
+			OR = {
+				JAP = { has_war_with = ENG }
+				GER = { has_war_with = SOV }
+				USA = { has_war = yes }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = { target = MEX transfer_troops = yes }
+			484 = { set_compliance = 60 }
+			483 = { set_compliance = 60 }
+			482 = { set_compliance = 60 }
+			481 = { set_compliance = 60 }
+			479 = { set_compliance = 60 }
+			478 = { set_compliance = 60 }
+			485 = { set_compliance = 60 }
+			277 = { set_compliance = 60 }
+			477 = { set_compliance = 60 }
+			480 = { set_compliance = 60 }
+			476 = { set_compliance = 60 }
+			475 = { set_compliance = 60 }
+			474 = { set_compliance = 60 }
+		}
+	}
+	USA_annex_bra = {
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			BRA = {is_ai = YES}
+			OR = {
+				JAP = { has_war_with = ENG }
+				GER = { has_war_with = SOV }
+				USA = { has_war = yes }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = { target = BRA transfer_troops = yes }
+			495 = { set_compliance = 60 }
+			497 = { set_compliance = 60 }
+			498 = { set_compliance = 60 }
+			505 = { set_compliance = 60 }
+			499 = { set_compliance = 60 }
+			504 = { set_compliance = 60 }
+			501 = { set_compliance = 60 }
+			500 = { set_compliance = 60 }
+			503 = { set_compliance = 60 }
+			502 = { set_compliance = 60 }
+			280 = { set_compliance = 60 }
+			496 = { set_compliance = 60 }
 		}
 	}
 }
@@ -3256,7 +3334,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.1
+			industrial_capacity_dockyard = 0.15
 		}
 
 		complete_effect = {

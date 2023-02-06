@@ -1,19 +1,10 @@
 spriteTypes = {
 
 	##### IDEAS #####
-	SpriteType = {
-		name = "GFX_idea_SOV_hold_wargames"
-		textureFile = "gfx/interface/ideas/idea_sov_hold_wargames.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_SOV_soviet_blitzkrieg"
-		textureFile = "gfx/interface/ideas/idea_sov_hold_wargames.dds"
-	}
-
+	
 	SpriteType = {
 		name = "GFX_idea_sov_mech_2"
-		textureFile = "gfx/interface/ideas/idea_sov_soviet_blitzkrieg.dds"
+		textureFile = "gfx/interface/ideas/idea_sov_mech_2.dds"
 	}
 	
 	SpriteType = {
@@ -56,7 +47,7 @@ spriteTypes = {
 	}
 
 	##### FOCUSES #####
-
+	
 	SpriteType = {
 		name = "GFX_SOV_extra_tech_slot_early"
 		textureFile = "gfx/interface/goals/SOV/SOV_extra_tech_slot_early.dds"
@@ -81,7 +72,6 @@ spriteTypes = {
 		name = "GFX_SOV_spiritual_communism"
 		textureFile = "gfx/interface/goals/SOV/SOV_spiritual_communism.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_goal_socialist_realism"
 		textureFile = "gfx/interface/goals/sov/SOV_socialist_realism.dds"

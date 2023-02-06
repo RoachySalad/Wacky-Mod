@@ -322,9 +322,5 @@ spriteTypes = {
 		name = "GFX_portrait_King_Rama"
 		texturefile = "gfx/leaders/SIA/King_Rama.dds"
 	}
-		SpriteType = {
-		name = "GFX_portrait_cub_catzuh_large"
-		texturefile = "gfx/leaders/SWI/portrait_large_catzuh.dds"
-	}
 }
 

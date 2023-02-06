@@ -21,6 +21,32 @@
 units = {
 	division = {
 		name = "I Brigada Internacionales"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "II Brigada Internacionales"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "III Brigada Internacionales"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "IV Brigada Internacionales"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	division = {
+		name = "V Brigada Internacionales"
+		location = 3938  # Madrid
+		division_template = "Brigada Internacionales"
+	}
+	
+	division = {
+		name = "I Brigada Internacionales"
 		location = 1176  # Madrid
 		division_template = "Brigada Internacionales"
 	}
@@ -37,32 +63,6 @@ units = {
 	division = {
 		name = "IV Brigada Internacionales"
 		location = 7153  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "V Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	
-	division = {
-		name = "I Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "II Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "III Brigada Internacionales"
-		location = 3938  # Madrid
-		division_template = "Brigada Internacionales"
-	}
-	division = {
-		name = "IV Brigada Internacionales"
-		location = 3938  # Madrid
 		division_template = "Brigada Internacionales"
 	}
 	division = {
@@ -347,6 +347,6 @@ units = {
 		name = "LII Brigada Internacionales 25"
 		location = 11956  
 		division_template = "Brigada Internacionales"
-	}
+	}	
 
 }

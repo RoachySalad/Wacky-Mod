@@ -20,9 +20,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
 	trench_warfare = 1
 	support_weapons = 1
 	fuel_silos = 1
@@ -50,6 +47,25 @@ if = {
 		basic_depth_charges = 1
 	}
 }
+# if = {
+# 	limit = { has_dlc = "By Blood Alone" }
+# 		set_air_oob = "POL_1936_air_bba"
+# 		set_technology = {
+# 			aa_lmg = 1
+# 			#aa_cannon_1 = 1
+# 			iw_small_airframe = 1
+# 			basic_small_airframe = 1
+# 			#engines_1 = 1
+# 			early_bombs = 1
+# 		}
+# 	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+		}
+# 	}
+# }
 if = {
 	limit = { has_dlc = "No Step Back" }
 	set_variable = {
@@ -72,6 +88,7 @@ if = {
 		POL_looming_peasants_strike
 		POL_sanation_left_opposition_1
 		POL_sanation_right_opposition_1
+		PACIFIC_COMMONWEALTH_controls_original
 	}
 }
 
@@ -290,13 +307,13 @@ recruit_character = POL_zygmunt_buhusz_szysko
 recruit_character = POL_roman_dmowski
 recruit_character = POL_witold_pilecki
 recruit_character = POL_irena_anders
-
+#recruit_character = POL_mieczyslaw_michalowicz
 recruit_character = POL_boleslaw_bierut
 recruit_character = POL_edward_osobka_morawski
 recruit_character = POL_jozef_beck
-
+#recruit_character = POL_zdzislaw_lubomirski
 recruit_character = POL_aleksander_kakowski
-
+#recruit_character = POL_stanislaw_radkiewicz
 recruit_character = POL_jan_kowalewski
 recruit_character = POL_eugeniusz_kwiatkowiski
 recruit_character = POL_marian_rejewski
@@ -306,6 +323,8 @@ recruit_character = POL_sejmik_regency
 recruit_character = POL_pavel_bermondt_avalov
 recruit_character = POL_anna_andersson
 recruit_character = POL_friedrich_christian
+#recruit_character = POL_rudinger_von_der_goltz
+#recruit_character = POL_vladislav_korchits
 recruit_character = POL_wojtek
 
 if = {
@@ -317,6 +336,7 @@ if = {
 	}
 	recruit_character = POL_walery_slawek
 	recruit_character = POL_jan_mosdorf
+#	recruit_character = POL_tadeusz_bielecki
 	recruit_character = POL_joachim_stefan_bartoszewicz
 	recruit_character = POL_stanislaw_wojciechowski
 }
@@ -326,6 +346,7 @@ if = {
 		has_dlc = "No Step Back"
 	}
 	recruit_character = POL_henryk_floyar_rajchman
+#	recruit_character = POL_sejmik_regency
 }
 
 if = {
@@ -400,6 +421,42 @@ if = {
 		}
 	}
 }
+# if = {
+# 	limit = {
+# 		has_dlc = "By Blood Alone"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "PZL P.43"
+# 		type = small_plane_cas_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = bomb_locks
+# 			fixed_auxiliary_weapon_slot_1 = light_mg_2x
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = empty
+# 		}
+# 		obsolete = yes
+# 	}
+# 	create_equipment_variant = {
+# 		name = "PZL P.37"
+# 		type = medium_plane_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = medium_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+# 			engine_type_slot = engine_2_2x
+# 			special_type_slot_1 = lmg_defense_turret
+# 		}
+# 	}
+# 	create_equipment_variant = {
+# 		name = "PZL P.46"
+# 		type = small_plane_cas_airframe_2
+# 		modules = {
+# 			fixed_main_weapon_slot = bomb_locks
+# 			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+# 			engine_type_slot = engine_2_1x
+# 			special_type_slot_1 = lmg_defense_turret_2x
+# 		}
+# 	}
+# }
 
 
 # 1939 Start #

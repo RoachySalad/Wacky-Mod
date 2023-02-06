@@ -678,30 +678,6 @@ characters={
 		}
 	}
 
-
-    JAP_AntonFJ={
-            name=JAP_AntonFJ
-            portraits={
-                army={
-                    small="gfx/interface/ideas/idea_JAP_isoroku_yamamoto.dds"
-                }
-                army={
-                    large="gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
-                }
-            }
-            
-           corps_commander = {
-                traits = { murderer_of_the_chinese_innocents war_hero demoted hidden_sympathies disgruntled }
-                skill = 4
-                attack_skill = 4
-                defense_skill = 3
-                planning_skill = 4
-                logistics_skill = 3
-                legacy_id = -1
-            }
-
-        }
-
 	JAP_mineichi_koga={
 		name=JAP_mineichi_koga
 		portraits={
@@ -973,7 +949,7 @@ characters={
 		name="JAP_kingoro_hashimoto"
 		portraits={
 			army={
-				small="GFX_idea_JAP_kingoro_hashimoto"
+				small="GFX_idea_kingoro_hashimoto"
 			}
 		}
 		advisor={

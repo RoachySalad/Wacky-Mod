@@ -128,6 +128,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -141,6 +142,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_2
 		turret_type_slot = tank_light_turret_2
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 	}

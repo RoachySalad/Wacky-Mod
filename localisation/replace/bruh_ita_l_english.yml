@@ -349,9 +349,6 @@ ITA_arditi_camouflage_tactics_desc:0 "In order to negate the Allies their Air Su
  ITA_idea_esploratori:0 "Esploratori"
  ITA_german_occupation:0 "German Occupation"
  ITA_military_construction:0 "Italian Military Construction"
- twomin_attention_span:0 "2 minutes attention span"
- ITA_aludose:0 "Aludose"
- ITA_dz1:0 "Dz1"
  #### DECISIONS ####
  ITA_search_for_oil:0 "Search for Oil"
  ITA_unify_colonies:0 "Merge the East African Colonies"

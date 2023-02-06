@@ -466,7 +466,8 @@ on_actions = {
 				limit = {
 					has_country_flag = SPA_iberian_pact
 				}
-				save_event_target_as = iberian_pact_invitee
+				set_country_flag = SPA_iberian_pact_invitee
+				FROM = { set_country_flag = SPA_iberian_pact_faction_leader }
 				every_other_country = {
 					limit = {
 						OR = {
@@ -490,7 +491,8 @@ on_actions = {
 				limit = {
 					FROM = { has_country_flag = SPA_iberian_pact }
 				}
-				FROM = { save_event_target_as = iberian_pact_invitee }
+				set_country_flag = SPA_iberian_pact_faction_leader
+				FROM = { set_country_flag = SPA_iberian_pact_invitee }
 				every_country = {
 					limit = {
 						OR = {

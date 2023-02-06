@@ -29,6 +29,10 @@
 			factor = 1
 		}
 		
+		available = {
+			has_completed_focus = FRA_refus_absurde
+		}
+
 		bypass = {
 
 		}
@@ -484,7 +488,18 @@
 			factor = 1
 		}
 		available = {
-			
+			if = {
+				limit = {
+					has_global_flag = FRA_mainland
+				}
+			date > 1940.1.1
+			}
+			# if = {
+			# 	limit = {
+			# 		has_global_flag = FRA_mainland_2
+			# 	}
+			# date > 1941.1.1
+			# }
 		}
 		
 		bypass = {
@@ -789,7 +804,7 @@
 				}
 
 			}			
-			custom_effect_tooltip = FRA_increase_armor_tt
+			custom_effect_tooltip = FRA_increase_armor_tech_tt
 		}
 	}
 	focus = {
@@ -1405,7 +1420,7 @@
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_legitimacy > 40
+				has_legitimacy > 20
 			}
 			else = {
 				num_of_factories > 14
@@ -1413,13 +1428,31 @@
 		}
 		
 		bypass = {
-			not = { has_idea = FRA_defeatism }
+
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = FRA_remove_pre_cap_buffs
+			hidden_effect = {
 			remove_ideas = { FRA_defeatism }
+			remove_ideas = { FRA_workers_strikes_2 }
+			remove_ideas = { FRA_workers_strikes_1 }
+			remove_ideas = { FRA_inefficient_economy_2}
+			remove_ideas = { FRA_inefficient_economy_1 }
+			remove_ideas = { FRA_workers_strikes_1 }
+			remove_ideas = { FRA_compromise_with_the_workers_1 }
+			remove_ideas = { FRA_matignon_agreements_1 }
+			remove_ideas = { FRA_matignon_agreements_2 }
+			remove_ideas = { FRA_matignon_agreements_3 }
+			remove_ideas = { FRA_economic_collapse_2 }
+			remove_ideas = { FRA_economic_collapse_1 }
+			remove_ideas = { FRA_national_spirit }
+			remove_ideas = { FRA_entrepeneurship }
+			remove_ideas = { FRA_market_dynamism }
+			remove_ideas = { FRA_disjointed_government }
+			}
 		}
 	}
 	# focus = {
@@ -1685,6 +1718,44 @@
 				}
 			}
 			add_ideas = FRA_communist_cooperation_2
+		}
+	}
+	focus = {
+		id = FRA_arms_purchases_in_the_us
+		icon = GFX_goal_generic_build_tank
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = FRA_cooperation_with_the_communists
+		}
+		relative_position_id = FRA_cooperation_with_the_communists
+		cost = 6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			country_exists = USA
+			USA = {
+				OR = {
+					NOT = { has_completed_focus = USA_neutrality_act }
+					has_completed_focus = USA_lend_lease_act
+				}
+			}
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			USA = { country_event = lar_arms_purchases.1 }
+			unlock_decision_category_tooltip = FRA_weapons_purchases_category
 		}
 	}
 	focus = {

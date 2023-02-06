@@ -5674,7 +5674,7 @@ country_event = {
 							front_1_custom_slot = ship_anti_air_1
 							mid_1_custom_slot = ship_torpedo_1
 							mid_2_custom_slot = ship_airplane_launcher_1
-							rear_1_custom_slot = ship_light_medium_battery_2
+							rear_1_custom_slot = empty
 						}
 					}
 				}
@@ -5701,7 +5701,7 @@ country_event = {
 							front_1_custom_slot = ship_anti_air_1
 							mid_1_custom_slot = ship_torpedo_1
 							mid_2_custom_slot = ship_airplane_launcher_1
-							rear_1_custom_slot = ship_light_medium_battery_2
+							rear_1_custom_slot = empty
 						}
 					}
 				}
@@ -5727,7 +5727,7 @@ country_event = {
 							fixed_ship_armor_slot = empty
 							front_1_custom_slot = ship_anti_air_1
 							mid_1_custom_slot = ship_torpedo_1
-							rear_1_custom_slot = ship_light_medium_battery_2
+							rear_1_custom_slot = empty
 						}
 					}
 				}
@@ -5753,7 +5753,7 @@ country_event = {
 							fixed_ship_armor_slot = empty
 							front_1_custom_slot = ship_anti_air_1
 							mid_1_custom_slot = ship_torpedo_1
-							rear_1_custom_slot = ship_light_medium_battery_2
+							rear_1_custom_slot = empty
 						}
 					}
 				}
@@ -5775,7 +5775,7 @@ country_event = {
 						fixed_ship_armor_slot = empty
 						front_1_custom_slot = ship_anti_air_1
 						mid_1_custom_slot = ship_torpedo_1
-						rear_1_custom_slot = ship_light_medium_battery_2
+						rear_1_custom_slot = empty
 					}
 				}
 				create_ship = { type = ship_hull_cruiser_1 equipment_variant = "Sofia Class" creator = FROM.FROM }
@@ -5997,6 +5997,7 @@ country_event = {
 				limit = {
 					has_unit_leader_flag = BUL_scw_promotion_flag
 				}
+
 				add_skill_level = 1
 				add_attack = 1
 				add_defense = 1
@@ -6163,6 +6164,7 @@ country_event = {
 					is_field_marshal = no
 					is_assigned = no
 				}
+
 				add_skill_level = 1
 
 				if = {

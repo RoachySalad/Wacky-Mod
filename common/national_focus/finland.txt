@@ -624,6 +624,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = FIN_lahti
+			custom_effect_tooltip = FIN_lahti_tt
+			hidden_effect = {
+				GER = { add_ideas = no_meme_equipment }
+				HUN = { add_ideas = no_meme_equipment }
+				ROM = { add_ideas = no_meme_equipment }
+				BUL = { add_ideas = no_meme_equipment }
+				ITA = { add_ideas = no_meme_equipment }
+				YUG = { add_ideas = no_meme_equipment }
+				SPR = { add_ideas = no_meme_equipment }
+				JAP = { add_ideas = no_meme_equipment }
+				MAN = { add_ideas = no_meme_equipment }
+				SIA = { add_ideas = no_meme_equipment }
+			}
 		}
 	}
 	
@@ -1144,7 +1157,6 @@ focus_tree = {
 		id = FIN_join_axis
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = FIN_marshal_of_finland }
-		text = ROM_join_axis
 		x = -1
 		y = 1
 		relative_position_id = FIN_marshal_of_finland

@@ -9,6 +9,7 @@ sub_units = {
 		
 		type = {
 			armor
+
 		}
 		
 		group = armor
@@ -192,6 +193,7 @@ sub_units = {
 		
 		type = {
 			armor
+
 		}
 		
 		group = armor
@@ -204,7 +206,9 @@ sub_units = {
 		}
 
 
-		combat_width = 1
+		#combat_width = 1
+		#I think this was meant to be changed
+		combat_width = 2
 
 		need = {
 			heavy_tank_destroyer_chassis = 40
@@ -218,7 +222,8 @@ sub_units = {
 		supply_consumption_factor = 0.08
 		
 		soft_attack = -0.9
-		hard_attack = 0.5
+		hard_attack = 0.4
+		#again this one idk if this is intentional i changed it anyway
 		breakthrough = -1
 
 		plains = {

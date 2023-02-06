@@ -393,7 +393,7 @@ characters={
 				original_tag  = FIN
 			}
 			traits  = {
-				army_chief_organizational_2 
+				army_organizational_2 
 			}
 			cost = 100
 			ai_will_do  = {

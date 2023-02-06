@@ -1302,25 +1302,13 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			AND = {
-				GER = {
-					is_in_faction_with = ROM
-					has_war_with = SOV
-				}
-				ROM = {
-					is_in_faction_with = ROOT
-					has_war_with = SOV
-				}
-				46 = {
-					is_controlled_by = ROM
-				}
-			}
+			NOT = { has_war_with = ROM }
 		}
 
 		bypass = {
@@ -1379,7 +1367,7 @@ focus_tree = {
 				name = air_sup_bonus
 				cost_reduction = 0.40
 				uses = 2
-				category = battlefield_support_tree
+				category = air_doctrine
 			}
 
 			if = {
@@ -2123,7 +2111,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = tnk_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_heavy_armor
 			}
@@ -2166,6 +2154,7 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
+			set_global_flag = rhineland_remilitarized
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			custom_effect_tooltip = GER_rhineland_ultimatum
@@ -2330,6 +2319,19 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_waffen_ss_tt
+			hidden_effect = {
+				GER = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "LoweeeSS"
+					}
+				}
+			}
 		}
 	}
 	
@@ -3001,7 +3003,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = GER_barbarossa
-				days = 120
+				days = 150
 			}
 							
 			remove_ideas = GER_good_weather_army
@@ -3035,6 +3037,20 @@ focus_tree = {
 				}
 				add_compliance = 20
 			}
+			hidden_effect = {
+				GER = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "ger_roa"
+					}
+				}
+			}
+			
 		}
 	}
 	
@@ -3906,6 +3922,30 @@ focus_tree = {
 				custom_effect_tooltip = GER_mol_rib_pact_tt
 				custom_effect_tooltip = needs_approval
 			}
+			hidden_effect = {
+				# GER = {
+				# 	if = { 
+                #         limit = {
+                #             has_game_rule = {
+                #                 rule = allow_voice_lines
+                #                 option = ENABLED
+                #             }
+                #         }
+				# 	scoped_sound_effect = "Poland"
+				# 	}
+				# }
+				SOV = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "Poland"
+					}
+				}
+			}
 		}
 	}
 	
@@ -4069,7 +4109,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_operation_tannenbaum
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_attack_switzerland
 		prerequisite = { focus = GER_danzig_or_war }
 		mutually_exclusive = { focus = GER_swiss_banks }
 		available = {
@@ -5576,6 +5616,17 @@ focus_tree = {
 			}
 			hidden_effect = {
 				load_oob = GER_volk
+				GER = {
+					if = { 
+                        limit = {
+                            has_game_rule = {
+                                rule = allow_voice_lines
+                                option = ENABLED
+                            }
+                        }
+					scoped_sound_effect = "children"
+					}
+				}
 			}
 		}
 	}
@@ -5653,16 +5704,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			GER_felix_steiner = {
-				add_skill_level = 2
-				add_planning = 3
-				add_attack = 2
-			}
-			add_timed_idea = {
-				idea = GER_steiners_plan
-				days = 120
-			}
-			activate_mission = GER_execute_steiners_plan
 			hidden_effect = {
 				division_template = {
 					name = "Volksturm Battalions"
@@ -5689,6 +5730,7 @@ focus_tree = {
 						recon = { x = 0 y = 2 }
 						logistics_company  = { x = 0 y = 3 }
 						anti_air = { x = 1 y = 0 }
+
 					}
 				}
 				random_owned_controlled_state = {
@@ -6021,7 +6063,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 0.25
-		}
+		}	
 
 		available_if_capitulated = yes
 
@@ -6043,7 +6085,6 @@ focus_tree = {
 				}
 			}
 			add_ideas = GER_plan_z
-
 		}
 	}
 	
@@ -6063,7 +6104,7 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = available_chief_of_navy
-			show_ideas_tooltip = raeder
+			show_ideas_tooltip = GER_erich_raeder
 			add_tech_bonus = {
 				name = bb_bonus
 				bonus = 0.5
@@ -6275,7 +6316,7 @@ focus_tree = {
 	focus = {
 		id = GER_war_with_greece
 		prerequisite = { focus = GER_demand_slovenia }
-		icon = GFX_goal_generic_occupy_states_ongoing_war
+		icon = GFX_focus_generic_attack_greece
 		will_lead_to_war_with = GRE
 		available = {
 			GRE = { 

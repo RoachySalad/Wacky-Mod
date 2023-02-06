@@ -9,6 +9,7 @@ state={
 	history={
 		owner = CHI
 		add_core_of = CHI
+		set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1

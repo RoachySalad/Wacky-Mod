@@ -7,6 +7,29 @@ technologies = {
 			usa_light_tank_chassis_lm2
 		}
 		enable_equipment_modules = {
+			#tank_riveted_armor
+			#tank_welded_armor
+			#tank_gasoline_engine
+			#tank_diesel_engine
+			#tank_petrol_electric_engine
+			#tank_light_turret_1
+			#tank_light_turret_open
+			#tank_light_superstructure
+			#tank_light_open_superstructure
+			#tank_medium_turret_1
+			#tank_medium_turret_2
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
+			#interleaf_suspension
+			#boogie_suspension
+			#christie_suspension
+			#tank_christie_suspension
+			#tank_bogie_suspension
+			#tank_interleaved_suspension
+			#tank_horstmann_suspension
+			#tank_torsion_bar_suspension
+			
 			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
@@ -19,6 +42,7 @@ technologies = {
 		}
 	
 		path = {
+			#leads_to_tech = usa_light_tank_upgrade # M2 A4
 			leads_to_tech = usa_light_tank_2
 			research_cost_coeff = 1
 		}
@@ -26,14 +50,34 @@ technologies = {
 			leads_to_tech = usa_medium_tank_1
 			research_cost_coeff = 1
 		}
+	
+		path = {
+			#leads_to_tech = usa_light_tank_2
+			leads_to_tech = usa_armor_tech_1
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = usa_heavy_tank_1
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = usa_armor_tech_1
-			research_cost_coeff = 1
+		research_cost = 2
+		start_year = 1935
+		folder = {
+			name = usa_armour_folder
+			position = { x = 0 y = 0 }
 		}
+		
+		categories = {
+			generic
+
+			armor
+			cat_light_armor
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 		
 		research_cost = 2
 		start_year = 1935
@@ -44,6 +88,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -52,8 +97,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	
-#	# M2 A4
+	#	# M2 A4
 #	usa_light_tank_upgrade = {
 #
 #		enable_equipment_modules = {
@@ -73,6 +117,7 @@ technologies = {
 #		}
 #		
 #		categories = {
+
 #			generic
 #			armor
 #			cat_light_armor
@@ -82,13 +127,14 @@ technologies = {
 #			factor = 0
 #		}
 #	}
-
+	
 	usa_light_tank_2 = { 
 
 		enable_equipments = {
 			usa_light_tank_chassis_lm3
 		}
 		enable_equipment_modules = {
+			#tank_light_turret_3
 			tank_light_turret_2
 		}
 	
@@ -106,6 +152,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -120,11 +167,9 @@ technologies = {
 		enable_equipments = {
 			usa_light_tank_chassis_lm5
 		}
-		
 		enable_equipment_modules = {
 			tank_light_turret_3
 		}
-	
 		path = {
 			leads_to_tech = usa_light_tank_4
 			research_cost_coeff = 1
@@ -143,6 +188,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -160,7 +206,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_light_turret_4
 		}
-		
 		research_cost = 1
 		start_year = 1943
 		folder = {
@@ -170,6 +215,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -189,6 +235,7 @@ technologies = {
 			usa_light_tank_chassis_m18
 		}
 		enable_equipment_modules = {
+			#tank_light_turret_open_large
 			tank_light_superstructure_hetzer
 		}
 		
@@ -201,6 +248,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_light_armor
 		}
@@ -211,32 +259,47 @@ technologies = {
 	}
 
 	### MEDIUM ###
-
+	
 	usa_armor_tech_1 = {
+
+		#enable_equipments = {
+		#	usa_medium_tank_chassis_mm2
+		#}
 		enable_equipment_modules = {
+			#tank_multi_turret_1
+			#tank_multi_turret_2
 			tank_medium_turret_2
 			armor_skirts
 		}
-		
+	
+		#path = {
+			#leads_to_tech = usa_medium_tank_2
+		#	research_cost_coeff = 1
+		#}
 		path = {
+			#leads_to_tech = usa_heavy_tank_1
 			leads_to_tech = usa_armor_tech_2
 			research_cost_coeff = 1
 		}
-
+		
 		research_cost = 1
 		start_year = 1940
 		folder = {
 			name = usa_armour_folder
 			position = { x = 9 y = 8 }
 		}
-	
+		
 		categories = {
 			generic
+
 			armor
 		}
+		
+		ai_will_do = {
+			factor = 0
+		}
 	}
-
-	usa_armor_tech_2 = {
+usa_armor_tech_2 = {
 
 		enable_equipment_modules = {
 			sloped_armor
@@ -251,28 +314,30 @@ technologies = {
 
 		categories = {
 			generic
+
 			armor
 		}
 	}
-
-	
+	#usa_medium_tank_2 = {
 	usa_medium_tank_1 = {
-
 		enable_equipments = {
+			#usa_medium_tank_chassis_mm3
 			usa_medium_tank_chassis_mm2
 		}
 		enable_equipment_modules = {
+			#tank_multi_turret_3
 			tank_medium_turret_1
 			tank_medium_turret_open
 			tank_medium_superstructure
 			tank_medium_open_superstructure
+			
 		}
 	
 		path = {
+			#leads_to_tech = usa_medium_tank_3
 			leads_to_tech = usa_medium_tank_2
 			research_cost_coeff = 1
 		}
-		
 		
 		research_cost = 2
 		start_year = 1938
@@ -283,6 +348,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -290,18 +356,30 @@ technologies = {
 		ai_will_do = {
 			factor = 0
 		}
-	}
+	}	
+	
+	#usa_medium_tank_3 = {
 
 	usa_medium_tank_2 = {
-
 		enable_equipments = {
+			#usa_medium_tank_chassis_mm4
 			usa_medium_tank_chassis_mm3
 		}
 		enable_equipment_modules = {
+			#tank_medium_turret_1
+			#tank_medium_turret_open
+			#tank_medium_superstructure
+			#tank_medium_open_superstructure
 			tank_medium_turret_2
+			#sloped_armor
 		}
 	
+		#path = {
+		#	leads_to_tech = usa_medium_tank_4 # M4 HVSS
+		#	research_cost_coeff = 1
+		#}
 		path = {
+			#leads_to_tech = usa_medium_tank_5 # M4 Jumbo
 			leads_to_tech = usa_medium_tank_3
 			research_cost_coeff = 1
 		}
@@ -315,6 +393,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -324,12 +403,14 @@ technologies = {
 		}
 	}	
 	
+	# M4 HVSS
+	#usa_medium_tank_4 = {
 	usa_medium_tank_3 = {
-
 		enable_equipments = {
 			usa_medium_tank_chassis_mm4
 		}
 		enable_equipment_modules = {
+			#wet_ammo_storage
 			tank_medium_turret_3
 			
 		}
@@ -338,7 +419,6 @@ technologies = {
 			leads_to_tech = usa_medium_tank_6
 			research_cost_coeff = 1
 		}
-		
 		
 		research_cost = 2
 		start_year = 1942
@@ -349,6 +429,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -358,63 +439,32 @@ technologies = {
 		}
 	}	
 	
-#	# M4 HVSS
-#	usa_medium_tank_4 = {
-#
-#		enable_equipment_modules = {
-#			wet_ammo_storage
-#			tank_medium_turret_3
-#			
-#		}
-#	
-#		path = {
-#			leads_to_tech = usa_medium_tank_6
-#			research_cost_coeff = 1
-#		}
-#		
-#		research_cost = 2
-#		start_year = 1943
-#		folder = {
-#			name = usa_armour_folder
-#			position = { x = -2 y = 14 }
-#		}
-#		
-#		categories = {
-#			generic
-#			armor
-#			cat_medium_armor
-#		}
-#		
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}	
-#	
-#	#M4 Jumbo
-#	usa_medium_tank_5 = {
-#	
-#		on_research_complete = {
-#			custom_effect_tooltip = m4_upgrade_1_tt
-#		}
-#		show_effect_as_desc = yes
-#		
-#		research_cost = 2.0
-#		start_year = 1944
-#		folder = {
-#			name = usa_armour_folder
-#			position = { x = 2 y = 16 }
-#		}
-#		
-#		categories = {
-#			generic
-#			armor
-#			cat_medium_armor
-#		}
-#		
-#		ai_will_do = {
-#			factor = 0
-#		}
-#	}
+	#M4 Jumbo
+	#usa_medium_tank_5 = {
+	
+	#	on_research_complete = {
+	#		custom_effect_tooltip = m4_upgrade_1_tt
+	#	}
+	#	show_effect_as_desc = yes
+		
+	#	research_cost = 2.0
+	#	start_year = 1944
+	#	folder = {
+	#		name = usa_armour_folder
+	#		position = { x = 2 y = 16 }
+	#	}
+		
+	#	categories = {
+	#		generic
+
+	#		armor
+	#		cat_medium_armor
+	#	}
+		
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
 	
 	usa_medium_tank_6 = { 
 
@@ -425,13 +475,12 @@ technologies = {
 			tank_medium_turret_4
 			tank_medium_superstructure_E50
 		}
-		
 		path = {
 			leads_to_tech = usa_medium_tank_7 # T26E4 Super Pershing
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2.0
+			research_cost = 2.0
 		start_year = 1945
 		folder = {
 			name = usa_armour_folder
@@ -440,6 +489,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_medium_armor
 		}
@@ -448,8 +498,7 @@ technologies = {
 			factor = 0
 		}
 	}
-	
-#	# T26E4 Super Pershing
+	# T26E4 Super Pershing
 #	usa_medium_tank_7 = {
 #	
 #		on_research_complete = {
@@ -470,6 +519,7 @@ technologies = {
 #		}
 #		
 #		categories = {
+
 #			generic
 #			armor
 #			cat_medium_armor
@@ -479,7 +529,6 @@ technologies = {
 #			factor = 0
 #		}
 #	}
-	
 	### HEAVY ###
 	
 	usa_heavy_tank_1 = {
@@ -497,7 +546,10 @@ technologies = {
 			leads_to_tech = usa_heavy_tank_2
 			research_cost_coeff = 1
 		}
-		
+		#path = {
+		#	leads_to_tech = usa_heavy_tank_3
+		#	research_cost_coeff = 1
+		#}
 		
 		research_cost = 2
 		start_year = 1940
@@ -508,6 +560,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -524,12 +577,12 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_turret_2
+			tank_super_heavy_turret
 		}
 		path = {
 			leads_to_tech = usa_heavy_tank_3
 			research_cost_coeff = 1
-		}
-		
+			}
 		research_cost = 2
 		start_year = 1942
 		folder = {
@@ -539,6 +592,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}
@@ -556,7 +610,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_turret_3
 		}
-
 		research_cost = 2
 		start_year = 1945
 		folder = {
@@ -566,6 +619,7 @@ technologies = {
 		
 		categories = {
 			generic
+
 			armor
 			cat_heavy_armor
 		}

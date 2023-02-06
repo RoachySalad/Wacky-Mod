@@ -45,7 +45,6 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		coastal_defense_ships = 1
 	}
 }
@@ -59,6 +58,7 @@ add_ideas = {
 
 1939.1.1 = {
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -167,8 +167,6 @@ recruit_character = FIN_lauri_tiainen
 add_ideas = {
 	sisu
 }
-
-
 
 ### VARIANTS ###
 # 1936 Start #
