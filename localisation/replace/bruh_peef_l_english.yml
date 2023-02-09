@@ -80,7 +80,7 @@
  BRA_suppress_the_strikes:0 "Suppress The Strikes"
  BRA_suppress_the_strikes_desc:0 "The remnants of the communists continue to cause havoc among the Brazilian population."
  BRA_cafe_com_leite_politics:0 "Café com Leite"
- BRA_cafe_com_leite_politics_desc:0 "Vargas' politic of 'Café com Leite' unifies the paulistas, coffee oligarchs and minas gerairs' farmers to continue the process of Brazilian industrialization."
+ BRA_cafe_com_leite_politics_desc:0 "Vargas' politics of 'Café com Leite' unifies the paulistas, coffee oligarchs and minas gerairs' farmers to continue the process of Brazilian industrialization."
  BRA_settle_disputes_with_the_axis:0 "Settle Disputes With The Axis"
  BRA_settle_disputes_with_the_axis_desc:0 "The attack on our trade fleets by axis submarines has caused an uproar in the Brazilian population and with the pressure on the USA to help the Allies, we have no choice but to do our part in the war as well."
  BRA_our_part_against_fascism:0 "Our Part Against Fascism"
@@ -130,7 +130,7 @@
  BRA_synthetic_rubber_desc:0 "Using the latest techniques of oil processing we can produce our own rubber, a valuable raw material in several industries."
  BRA_expand_the_administration_department:0 "Expand The Administration Department"
  BRA_expand_the_administration_department_desc:0 "The ministries need to be reorganized to serve the economical and administrative needs of Brazil."
- BRA_politic_of_interior:0 "Politic of Interior"
+ BRA_politic_of_interior:0 "Interior Politics"
  BRA_politic_of_interior_desc:0 "A strong national industry and work for all Brazilians is of the highest priority."
  BRA_expand_the_metallurgic_industry:0 "Expand The Metallurgic Industry"
  BRA_expand_the_metallurgic_industry_desc:0 "Using the vast minerals found deep in the Brazilian jungle we can boost our trade even more."
@@ -176,6 +176,7 @@
  BRA_copy_british_designs:0 "Innovate on British Infantry Tanks"
  BRA_learn_from_montgomery:0 "Learn From Montgomery"
  BRA_expand_vauxhall:0 "Expand Vauxhall"
+ bra_vauxhall:0 "Vauxhall Brazil"
  #### EVENTS ####
 
  ### IDEAS ###
@@ -218,7 +219,7 @@
  BRA_BEF_special_forces:0 "BEF Special Forces Division"
  BRA_BEF_tanks:0 "BEF Armored Division"
  BRA_expanded_automotive:0 "Expanded Automobile Industry"
- BRA_politics_of_interior:0 "Politic of Interior"
+ BRA_politics_of_interior:0 "Interior Politics"
  el_uno:0 "El Uno"
  trade_treaty_BRA:0 "Brazilian Trade Treaty"
  BRA_pacific_incident:0 "Pacific trade incident"
@@ -235,7 +236,7 @@
  fabrica_nacional_de_motores:0 "Fábrica Nacional de Motores"
  #### TOOLTIP ####
  BRA_third_republic:0 "Third Brazilian Republic"
- BRA_vargas_path_warning:0 "§RWARNING! THIS PATH REQUIRES GOOD TIMING ON STABILITY AND CONSTANT DECISION CLICKING. DO NOT ATTEMPT FOLLOW THIS PATH IF YOU HAVEN'T PLAYED IT BEFORE. DON'T COME COMPLAINING ABOUT IT BEING HARD, YOU'VE BEEN WARNED!§!"
+ BRA_vargas_path_warning:0 "§RWARNING! THIS PATH REQUIRES GOOD TIMING ON STABILITY AND CONSTANT DECISION CLICKING. IF YOU DON'T KNOW WHAT YOU ARE DOING, TAKE THE OTHER SIDE.§!"
 
  #### EVENTS #####
  brazil.1.t:0 "The Referendum"
