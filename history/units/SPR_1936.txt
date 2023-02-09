@@ -281,7 +281,7 @@ instant_effect = {
 		requested_factories = 2
 		progress = 0.42
 		efficiency = 100
-    }
+	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -360,9 +360,4 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-	
-	add_equipment_to_stockpile = {
-        type = train_equipment_1
-        amount = 100
-        producer = SPR
 }
