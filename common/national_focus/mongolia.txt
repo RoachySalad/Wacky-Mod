@@ -1786,27 +1786,27 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			create_field_marshal = {
-				name = "Altan Khan"
+			create_corps_commander = {
+				name = "Savesta Khan"
 				picture = "altan_kahn.dds"
-				traits = { offensive_doctrine }
-				skill = 3
-				attack_skill = 2
-				defense_skill = 3
-				planning_skill = 1
-				logistics_skill = 1
+				traits = { brilliant_strategist }
+				skill = 4
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
 			}
 			create_corps_commander = {
 				name = "Grigory Semyonov"
 				picture = "portrait_SOV_grigory_semyonov.dds"
-				traits = { panzer_leader panzer_expert }
+				traits = { panzer_leader }
 				skill = 4
-				attack_skill = 4
+				attack_skill = 6
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 2
 			}
-			add_ideas = SOV_new_officers
+
 		}
 	}
 
