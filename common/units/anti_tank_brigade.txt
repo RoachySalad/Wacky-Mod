@@ -167,7 +167,7 @@ sub_units = {
 			category_line_artillery
 		}		
 		
-		combat_width = 2
+		combat_width = 1
 		transport = motorized_equipment
 		need = {
 			heavy_anti_tank_equipment = 12
