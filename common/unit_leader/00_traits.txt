@@ -409,7 +409,7 @@ leader_traits = {
 		attack_skill_factor = 1
 		logistics_skill_factor = 1
 	}
-	
+
 	armor_officer = { 
 		type = land
 		trait_type = personality_trait
@@ -550,6 +550,22 @@ leader_traits = {
 	    	 FROM = { tag = GER }
 	    }
 	}
+	
+	trait_soppi = { 
+		type = land
+		trait_type = personality_trait
+		
+		trait_xp_factor = {
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+
+		attack_skill_factor = 2
+
+	}
+	
 	cookie = { 
 	    type = all
 	    trait_type = status_trait

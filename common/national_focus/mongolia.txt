@@ -1787,11 +1787,11 @@ focus_tree = {
 
 		completion_reward = {
 			create_corps_commander = {
-				name = "Savesta Khan"
-				picture = "altan_kahn.dds"
-				traits = { brilliant_strategist }
+				name = "Savesta"
+				picture = "portrait_savesta.dds"
+				traits = { brilliant_strategist war_hero }
 				skill = 4
-				attack_skill = 5
+				attack_skill = 6
 				defense_skill = 2
 				planning_skill = 3
 				logistics_skill = 3
@@ -1799,7 +1799,7 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Grigory Semyonov"
 				picture = "portrait_SOV_grigory_semyonov.dds"
-				traits = { panzer_leader }
+				traits = { armor_officer panzer_leader }
 				skill = 4
 				attack_skill = 6
 				defense_skill = 2
@@ -2022,12 +2022,22 @@ focus_tree = {
 			add_ideas = MON_spirit_of_genghis_idea
 			add_corps_commander_role = {
 				character = MON_khan
-				traits = { cavalry_leader war_hero brilliant_strategist trait_engineer }
+				traits = { cavalry_officer cavalry_leader brilliant_strategist trait_engineer }
 				skill = 4
-				attack_skill = 4
-				defense_skill = 4
-				planning_skill = 6
-				logistics_skill = 6
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			create_corps_commander = {
+				name = "Soppi"
+				picture = "portrait_soppi.dds"
+				traits = { trait_soppi cavalry_officer cavalry_leader trait_engineer }
+				skill = 4
+				attack_skill = 6
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
 			}
 		}
 	}
