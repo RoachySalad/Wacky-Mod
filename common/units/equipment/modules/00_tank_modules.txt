@@ -1480,7 +1480,7 @@ equipment_modules = {
 		forbid_equipment_type_exact_match = armor
 
 		add_stats = {
-			soft_attack = 60
+			soft_attack = 55
 			build_cost_ic = 6
 		}
 		multiply_stats = {
@@ -1502,15 +1502,15 @@ equipment_modules = {
 		parent = tank_art_gun_1
 
 		add_stats = {
-			soft_attack = 70
+			soft_attack = 65
 			build_cost_ic = 8
 		}
 		multiply_stats = {
 		}
 		
 		build_cost_resources = {
-			steel = 10
-			tungsten = 14
+			steel = 9
+			tungsten = 12
 		}
 		dismantle_cost_ic = 2
 	}
