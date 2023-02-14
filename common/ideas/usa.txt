@@ -39,6 +39,9 @@ ideas = {
 				support_equipment = {
 					build_cost_ic = -0.15 instant = yes
 				}
+				radio_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
 				horse_equipment = {
 					build_cost_ic = -0.15 instant = yes
 				}
@@ -46,6 +49,9 @@ ideas = {
 					build_cost_ic = -0.15 instant = yes
 				}
 				train_equipment = {
+					build_cost_ic = -0.15 instant = yes
+				}
+				convoy = {
 					build_cost_ic = -0.15 instant = yes
 				}
 				motorized_equipment = {
@@ -1990,6 +1996,76 @@ ideas = {
 			modifier = {			
 				justify_war_goal_time = -0.35
 			}			
+		}
+		USA_cash_and_carry_purchase_ENG = {
+			
+			picture = aioc
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+
+			}
+					
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		USA_cash_and_carry_purchase_CAN = {
+			
+			picture = polymer_corporation
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+
+			}
+					
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		USA_cash_and_carry_purchase_SAF = {
+			
+			picture = generic_industrial_concern_3
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+
+			}
+					
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		USA_cash_and_carry_purchase_AST = {
+			
+			picture = bhp_steel
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+
+			}
+					
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		USA_cash_and_carry_purchase_RAJ = {
+			
+			picture = mazagon_dock_limited
+			allowed = {
+				original_tag = USA
+			}
+			available = {
+
+			}
+					
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
 		}
 		CSA_spirit_of_rebellion = {
 			allowed = { always = no	}

@@ -1,9 +1,6 @@
-version="1.02"
+version="1"
 tags={
-	"Historical"
-	"Gameplay"
-	"Balance"
+	"Alternative History"
 }
-name="Salads Wacky Mod"
+name="AlbaChamber2"
 supported_version="1.11.13"
-remote_file_id="2858409935"

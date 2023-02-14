@@ -32,7 +32,7 @@ USA_cash_and_carry = {
 			has_idea = USA_cash_and_carry_programme
 		}
 
-		days_re_enable = 0
+		days_remove = -1
 
 		complete_effect = {
 			if = {
@@ -53,12 +53,49 @@ USA_cash_and_carry = {
 			custom_effect_tooltip = USA_sells_guns
 		}
 	}
-	USA_allow_supeq_sales = {
+	USA_cancel_gun_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
-		icon = GFX_decision_generic_operation
+		icon = GFX_decision_generic_break_treaty
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			has_decision = USA_allow_gun_sales
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = USA_allow_gun_sales
+		}
+        remove_effect = {
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_guns
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_guns
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_guns
+				}
+			}
+			custom_effect_tooltip = USA_sells_guns
+		}
+	}	
+    USA_allow_supeq_sales = {
+		allowed = {
+			original_tag = USA
+		}
+
+		icon = GFX_decision_generic_cavalry
 
 		available = {
 			has_completed_focus = USA_neutrality_act
@@ -66,19 +103,70 @@ USA_cash_and_carry = {
 			has_idea = USA_cash_and_carry_programme
 		}
 
+		days_remove = -1
+
 		complete_effect = {
-			USA = {
-				set_country_flag = usa_sells_supeq
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_supeq
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_supeq
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_supeq
+				}
 			}
 			custom_effect_tooltip = USA_sells_supeq
 		}
 	}
+	USA_cancel_supeq_sales = {
+		allowed = {
+			original_tag = USA
+		}
+
+		icon = GFX_decision_generic_break_treaty
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			has_decision = USA_allow_supeq_sales
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = USA_allow_supeq_sales
+		}
+        remove_effect = {
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_supeq
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_supeq
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_supeq
+				}
+			}
+			custom_effect_tooltip = USA_sells_supeq
+		}
+	}	
 	USA_allow_truck_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
-		icon = GFX_decision_generic_wreckers
+		icon = GFX_decision_generic_merge_plant_materiel
 
 		available = {
 			has_completed_focus = USA_neutrality_act
@@ -86,13 +174,64 @@ USA_cash_and_carry = {
 			has_idea = USA_cash_and_carry_programme
 		}
 
+		days_remove = -1
+
 		complete_effect = {
-			USA = {
-				set_country_flag = usa_sells_trucks
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_trucks
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_trucks
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_trucks
+				}
 			}
 			custom_effect_tooltip = USA_sells_trucks
 		}
 	}
+		USA_cancel_truck_sales = {
+		allowed = {
+			original_tag = USA
+		}
+
+		icon = GFX_decision_generic_break_treaty
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			has_decision = USA_allow_truck_sales
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = USA_allow_truck_sales
+		}
+        remove_effect = {
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_trucks
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_trucks
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_trucks
+				}
+			}
+			custom_effect_tooltip = USA_sells_trucks
+		}
+	}	
 	USA_allow_mechanized_sales = {
 		allowed = {
 			original_tag = USA
@@ -105,21 +244,73 @@ USA_cash_and_carry = {
 			has_war = no
 			has_tech = mechanised_infantry
 			has_idea = USA_cash_and_carry_programme
+
 		}
 
+		days_remove = -1
+
 		complete_effect = {
-			USA = {
-				set_country_flag = usa_sells_mech
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_mech
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_mech
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_mech
+				}
 			}
 			custom_effect_tooltip = USA_sells_mech
 		}
 	}
+	USA_cancel_mechanized_sales = {
+		allowed = {
+			original_tag = USA
+		}
+
+		icon = GFX_decision_generic_break_treaty
+
+		available = {
+			has_war = no
+		}
+		visible = {
+			has_decision = USA_allow_mechanized_sales
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = USA_allow_mechanized_sales
+		}
+        remove_effect = {
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_mech
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_mech
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_mech
+				}
+			}
+			custom_effect_tooltip = USA_sells_mech
+		}
+	}	
 	USA_allow_arty_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {
 			has_completed_focus = USA_neutrality_act
@@ -127,55 +318,65 @@ USA_cash_and_carry = {
 			has_idea = USA_cash_and_carry_programme
 		}
 
+		days_remove = -1
+
 		complete_effect = {
-			USA = {
-				set_country_flag = usa_sells_arty
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = usa_sells_arty
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_arty
+				}
+			}
+			else = {
+				USA = {
+					set_country_flag = usa_sells_arty
+				}
 			}
 			custom_effect_tooltip = USA_sells_arty
 		}
 	}
-	USA_allow_at_sales = {
+	USA_cancel_arty_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
-		icon = GFX_decision_generic_tank
+		icon = GFX_decision_generic_break_treaty
 
 		available = {
-			has_completed_focus = USA_neutrality_act
 			has_war = no
-			has_idea = USA_cash_and_carry_programme
 		}
-
+		visible = {
+			has_decision = USA_allow_arty_sales
+		}
+		fire_only_once = no
+		cost = 0
 		complete_effect = {
-			USA = {
-				set_country_flag = usa_sells_at
+			remove_decision = USA_allow_arty_sales
+		}
+        remove_effect = {
+			if = {
+				limit = {
+					USA = {
+						has_country_flag = USA_sells_arty
+					}
+				}
+				USA = {
+					clr_country_flag = usa_sells_arty
+				}
 			}
-			custom_effect_tooltip = USA_sells_at
-		}
-	}
-	USA_allow_aa_sales = {
-		allowed = {
-			original_tag = USA
-		}
-
-		icon = GFX_decision_generic_air
-
-		available = {
-			has_completed_focus = USA_neutrality_act
-			has_war = no
-			has_idea = USA_cash_and_carry_programme
-		}
-
-		complete_effect = {
-			USA = {
-				set_country_flag = usa_sells_aa
+			else = {
+				USA = {
+					set_country_flag = usa_sells_arty
+				}
 			}
-			custom_effect_tooltip = USA_sells_aa
+			custom_effect_tooltip = USA_sells_arty
 		}
-	}
+	}	
 }
-
 USA_lend_lease_act = {
 	
 	send_equipment_to_ENG = {

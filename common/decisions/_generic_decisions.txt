@@ -1,18 +1,9 @@
 commonwealth_cash_and_carry = {
 	
-	CW_purchase_guns = {
+ENG_purchase_guns = {
 		allowed = {
 			OR = {
 				original_tag = ENG
-				original_tag = FRA
-				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
 			}
 		}
 
@@ -24,7 +15,10 @@ commonwealth_cash_and_carry = {
 				has_war = no
 				has_country_flag = usa_sells_guns
 				has_equipment = {
-				    infantry_equipment > 1000
+				    infantry_equipment > 1500
+				}
+				has_equipment = {
+					squad_equipment > 500
 				}
 			}
 			NOT = {
@@ -40,99 +34,10 @@ commonwealth_cash_and_carry = {
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = purchased_from_usa
-			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = purchased_from_usa
 			}
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = 1000
-			    producer = USA
-			}
-			USA = {
-				add_equipment_to_stockpile = {
-				    type = infantry_equipment
-				    amount = -1000
-				}
-				add_offsite_building = { type = industrial_complex level = -2 }
-			}
-		}
-	}
-
-	CW_purchase_supeq = {
-		allowed = {
-			OR = {
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
-			}
-		}
-
-		icon = GFX_decision_generic_operation
-
-		available = {
-			USA = {
-				has_completed_focus = USA_neutrality_act
-				has_war = no
-				has_country_flag = usa_sells_supeq
-				has_equipment = {
-				    support_equipment > 500
-				}
-				has_equipment = {
-				    horse_equipment > 250
-				}
-				has_equipment = {
-				    squad_equipment > 250
-				}
-				has_equipment = {
-				    train_equipment > 15
-				}
-			}
-			NOT = {
-				has_country_flag = purchased_from_usa
-			}
-		}
-
-		fire_only_once = no
-		days_remove = 90
-		modifier = {
-			civilian_factory_use = 2
-		}
-
-		complete_effect = {
-			hidden_effect = {
-				set_country_flag = purchased_from_usa
-			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = purchased_from_usa
-			}
-			add_equipment_to_stockpile = {
-			    type = support_equipment
-			    amount = 500
-			    producer = USA
-			}
-			add_equipment_to_stockpile = {
-			    type = horse_equipment
-			    amount = 250
+			    amount = 1500
 			    producer = USA
 			}
 			add_equipment_to_stockpile = {
@@ -140,50 +45,122 @@ commonwealth_cash_and_carry = {
 			    amount = 250
 			    producer = USA
 			}
-			add_equipment_to_stockpile = {
-			    type = train_equipment
-			    amount = 15
-			    producer = USA
-			}
 			USA = {
-				add_equipment_to_stockpile = {
-				    type = support_equipment
-				    amount = -500
-				}
-				add_equipment_to_stockpile = {
-				    type = horse_equipment
-				    amount = -250
-				}
-				add_equipment_to_stockpile = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+			}	
+			add_equipment_to_stockpile = {
 				    type = squad_equipment
 				    amount = -250
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_ENG
 				}
-				add_equipment_to_stockpile = {
-				    type = train_equipment
-				    amount = -15
-				}
-				add_offsite_building = { type = industrial_complex level = -2 }
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_ENG
 			}
 		}
 	}
 
-	CW_purchase_truck = {
+	ENG_purchase_supeq = {
 		allowed = {
 			OR = {
 				original_tag = ENG
-				original_tag = FRA
-				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
 			}
 		}
 
-		icon = GFX_decision_generic_wreckers
+		icon = GFX_decision_generic_cavalry
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_supeq
+				has_equipment = {
+				    support_equipment > 250
+				}
+				has_equipment = {
+				    radio_equipment > 250
+				}
+				has_equipment = {
+				    horse_equipment > 500
+				}
+
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+			    type = horse_equipment
+			    amount = 500
+			    producer = USA
+			}			
+			USA = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -250
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = -250	
+			}		
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = -500
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_ENG
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_ENG
+			}
+		}
+	}
+
+	ENG_purchase_truck = {
+		allowed = {
+			OR = {
+				original_tag = ENG
+			}
+		}
+
+		icon = GFX_decision_generic_merge_plant_materiel
 
 		available = {
 			USA = {
@@ -193,6 +170,12 @@ commonwealth_cash_and_carry = {
 				has_equipment = {
 					motorized_equipment > 500
 				}
+				has_equipment = {
+				train_equipment > 10
+				}
+				has_equipment = {
+					convoy > 10
+				}
 			}
 			NOT = {
 				has_country_flag = purchased_from_usa
@@ -204,48 +187,59 @@ commonwealth_cash_and_carry = {
 		modifier = {
 			civilian_factory_use = 2
 		}
-
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = purchased_from_usa
-			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = purchased_from_usa
 			}
 			add_equipment_to_stockpile = {
 			    type = motorized_equipment
 			    amount = 500
 			    producer = USA
 			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = 10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 10
+			}
 			USA = {
-				add_equipment_to_stockpile = {
-				    type = motorized_equipment
-				    amount = -500
-				    producer = USA
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -500
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -10
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_ENG
 				}
-				add_offsite_building = { type = industrial_complex level = -2 }
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_ENG
 			}
 		}
 	}
-	CW_purchase_mech = {
+
+	ENG_purchase_mech = {
 		allowed = {
 			OR = {
 				original_tag = ENG
-				original_tag = FRA
-				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
 			}
 		}
 
@@ -258,7 +252,7 @@ commonwealth_cash_and_carry = {
 				has_war = no
 				has_country_flag = usa_sells_mech
 				has_equipment = {
-					mechanized_equipment > 150
+					mechanized_equipment > 250
 				}
 			}
 			NOT = {
@@ -269,55 +263,48 @@ commonwealth_cash_and_carry = {
 		fire_only_once = no
 		days_remove = 90
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 2
 		}
 
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = purchased_from_usa
 			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 5 }
+			add_equipment_to_stockpile = {
+			    type = mechanized_equipment
+			    amount = 250
+			    producer = USA
 			}
+			USA = {
+			add_equipment_to_stockpile = {
+			 	type = mechanized_equipment
+				amount = -250
+				producer = USA
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_ENG
+				}
+			}	
 		}
 
 		remove_effect = {
 			hidden_effect = {
 				clr_country_flag = purchased_from_usa
 			}
-			add_equipment_to_stockpile = {
-			    type = mechanized_equipment
-			    amount = 150
-			    producer = USA
-			}
 			USA = {
-				add_equipment_to_stockpile = {
-				    type = mechanized_equipment
-				    amount = -150
-				    producer = USA
-				}
-				add_offsite_building = { type = industrial_complex level = -5 }
+				remove_ideas = USA_cash_and_carry_purchase_ENG
 			}
 		}
 	}
 
-	CW_purchase_arty = {
+	ENG_purchase_arty = {
 		allowed = {
 			OR = {
 				original_tag = ENG
-				original_tag = FRA
-				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
 			}
 		}
 
-		icon = GFX_decision_hol_drain_water_lines
+		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {
 			USA = {
@@ -325,7 +312,13 @@ commonwealth_cash_and_carry = {
 				has_war = no
 				has_country_flag = usa_sells_arty
 				has_equipment = {
-					artillery_equipment > 250
+					artillery_equipment > 150
+				}
+				has_equipment = {
+					anti_tank_equipment > 150
+				}
+				has_equipment = {
+					anti_air_equipment > 50
 				}
 			}
 			NOT = {
@@ -342,125 +335,307 @@ commonwealth_cash_and_carry = {
 		complete_effect = {
 			hidden_effect = {
 				set_country_flag = purchased_from_usa
-			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = purchased_from_usa
 			}
 			add_equipment_to_stockpile = {
-			    type = artillery_equipment
-			    amount = 250
-			    producer = USA
-			}
-			USA = {
-				add_equipment_to_stockpile = {
-				    type = artillery_equipment
-				    amount = -250
-				    producer = USA
-				}
-				add_offsite_building = { type = industrial_complex level = -2 }
-			}
-		}
-	}
-
-	CW_purchase_at = {
-		allowed = {
-			OR = {
-				original_tag = ENG
-				original_tag = FRA
-				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
-			}
-		}
-
-		icon = GFX_decision_generic_tank
-
-		available = {
-			USA = {
-				has_completed_focus = USA_neutrality_act
-				has_war = no
-				has_country_flag = usa_sells_at
-				has_equipment = {
-					anti_tank_equipment > 250
-				}
-			}
-			NOT = {
-				has_country_flag = purchased_from_usa
-			}
-		}
-
-		fire_only_once = no
-		days_remove = 90
-		modifier = {
-			civilian_factory_use = 2
-		}
-
-		complete_effect = {
-			hidden_effect = {
-				set_country_flag = purchased_from_usa
-			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-		}
-
-		remove_effect = {
-			hidden_effect = {
-				clr_country_flag = purchased_from_usa
+				type = artillery_equipment
+				amount = 150
+				producer = USA
 			}
 			add_equipment_to_stockpile = {
 			    type = anti_tank_equipment
-			    amount = 250
+			    amount = 150
 			    producer = USA
+			}			
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 50
+				producer = USA
 			}
 			USA = {
 				add_equipment_to_stockpile = {
-				    type = anti_tank_equipment
-				    amount = -250
-				    producer = USA
+				type = artillery_equipment
+				amount = -150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = -150
+			    producer = USA
+			}	
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -50
+				producer = USA	
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_ENG
 				}
-				add_offsite_building = { type = industrial_complex level = -2 }
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_ENG
 			}
 		}
 	}
 
-	CW_purchase_aa = {
+CAN_purchase_guns = {
 		allowed = {
 			OR = {
-				original_tag = ENG
-				original_tag = FRA
 				original_tag = CAN
-				original_tag = SAF
-				original_tag = RAJ
-				original_tag = AST
-				original_tag = NZL
-				original_tag = IRE
-				original_tag = BRA
-				original_tag = MEX
 			}
 		}
 
-		icon = GFX_decision_generic_air
-
+		icon = GFX_decision_ger_military_buildup
 
 		available = {
 			USA = {
 				has_completed_focus = USA_neutrality_act
 				has_war = no
-				has_country_flag = usa_sells_aa
+				has_country_flag = usa_sells_guns
 				has_equipment = {
-					anti_air_equipment > 250
+				    infantry_equipment > 1500
+				}
+				has_equipment = {
+					squad_equipment > 500
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = squad_equipment
+			    amount = 250
+			    producer = USA
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+			}	
+			add_equipment_to_stockpile = {
+				    type = squad_equipment
+				    amount = -250
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_CAN
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_CAN
+			}
+		}
+	}
+
+	CAN_purchase_supeq = {
+		allowed = {
+			OR = {
+				original_tag = CAN
+			}
+		}
+
+		icon = GFX_decision_generic_cavalry
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_supeq
+				has_equipment = {
+				    support_equipment > 250
+				}
+				has_equipment = {
+				    radio_equipment > 250
+				}
+				has_equipment = {
+				    horse_equipment > 500
+				}
+
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+			    type = horse_equipment
+			    amount = 500
+			    producer = USA
+			}			
+			USA = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -250
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = -250	
+			}		
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = -500
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_CAN
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_CAN
+			}
+		}
+	}
+
+	CAN_purchase_truck = {
+		allowed = {
+			OR = {
+				original_tag = CAN
+			}
+		}
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_trucks
+				has_equipment = {
+					motorized_equipment > 500
+				}
+				has_equipment = {
+				train_equipment > 10
+				}
+				has_equipment = {
+					convoy > 10
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = 500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = 10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 10
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -500
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -10
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_CAN
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_CAN
+			}
+		}
+	}
+
+	CAN_purchase_mech = {
+		allowed = {
+			OR = {
+				original_tag = CAN
+			}
+		}
+
+		icon = GFX_decision_generic_wreckers
+
+		available = {
+			USA = {
+				has_tech = mechanised_infantry
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_mech
+				has_equipment = {
+					mechanized_equipment > 250
 				}
 			}
 			NOT = {
@@ -478,30 +653,1258 @@ commonwealth_cash_and_carry = {
 			hidden_effect = {
 				set_country_flag = purchased_from_usa
 			}
-			USA = {
-				add_offsite_building = { type = industrial_complex level = 2 }
+			add_equipment_to_stockpile = {
+			    type = mechanized_equipment
+			    amount = 250
+			    producer = USA
 			}
+			USA = {
+			add_equipment_to_stockpile = {
+			 	type = mechanized_equipment
+				amount = -250
+				producer = USA
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_CAN
+				}
+			}	
 		}
 
 		remove_effect = {
 			hidden_effect = {
 				clr_country_flag = purchased_from_usa
 			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_CAN
+			}
+		}
+	}
+
+	CAN_purchase_arty = {
+		allowed = {
+			OR = {
+				original_tag = CAN
+			}
+		}
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_arty
+				has_equipment = {
+					artillery_equipment > 150
+				}
+				has_equipment = {
+					anti_tank_equipment > 150
+				}
+				has_equipment = {
+					anti_air_equipment > 50
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
 			add_equipment_to_stockpile = {
-			    type = anti_air_equipment
+				type = artillery_equipment
+				amount = 150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = 150
+			    producer = USA
+			}			
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 50
+				producer = USA
+			}
+			USA = {
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = -150
+			    producer = USA
+			}	
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -50
+				producer = USA	
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_CAN
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_CAN
+			}
+		}
+	}
+
+SAF_purchase_guns = {
+		allowed = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+
+		icon = GFX_decision_ger_military_buildup
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_guns
+				has_equipment = {
+				    infantry_equipment > 1500
+				}
+				has_equipment = {
+					squad_equipment > 500
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = squad_equipment
 			    amount = 250
 			    producer = USA
 			}
 			USA = {
-				add_equipment_to_stockpile = {
-				    type = anti_air_equipment
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+			}	
+			add_equipment_to_stockpile = {
+				    type = squad_equipment
 				    amount = -250
-				    producer = USA
-				}
 			}
-			add_offsite_building = { type = industrial_complex level = -2 }
+			add_ideas = {
+				USA_cash_and_carry_purchase_sAF
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_SAF
+			}
 		}
 	}
+
+	SAF_purchase_supeq = {
+		allowed = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+
+		icon = GFX_decision_generic_cavalry
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_supeq
+				has_equipment = {
+				    support_equipment > 250
+				}
+				has_equipment = {
+				    radio_equipment > 250
+				}
+				has_equipment = {
+				    horse_equipment > 500
+				}
+
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+			    type = horse_equipment
+			    amount = 500
+			    producer = USA
+			}			
+			USA = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -250
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = -250	
+			}		
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = -500
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_SAF
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_SAF
+			}
+		}
+	}
+
+	SAF_purchase_truck = {
+		allowed = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_trucks
+				has_equipment = {
+					motorized_equipment > 500
+				}
+				has_equipment = {
+				train_equipment > 10
+				}
+				has_equipment = {
+					convoy > 10
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = 500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = 10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 10
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -500
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -10
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_SAF
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_SAF
+			}
+		}
+	}
+
+	SAF_purchase_mech = {
+		allowed = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+
+		icon = GFX_decision_generic_wreckers
+
+		available = {
+			USA = {
+				has_tech = mechanised_infantry
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_mech
+				has_equipment = {
+					mechanized_equipment > 250
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = mechanized_equipment
+			    amount = 250
+			    producer = USA
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+			 	type = mechanized_equipment
+				amount = -250
+				producer = USA
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_SAF
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_SAF
+			}
+		}
+	}
+
+	SAF_purchase_arty = {
+		allowed = {
+			OR = {
+				original_tag = SAF
+			}
+		}
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_arty
+				has_equipment = {
+					artillery_equipment > 150
+				}
+				has_equipment = {
+					anti_tank_equipment > 150
+				}
+				has_equipment = {
+					anti_air_equipment > 50
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = 150
+			    producer = USA
+			}			
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 50
+				producer = USA
+			}
+			USA = {
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = -150
+			    producer = USA
+			}	
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -50
+				producer = USA	
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_SAF
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_SAF
+			}
+		}
+	}
+
+AST_purchase_guns = {
+		allowed = {
+			OR = {
+				original_tag = AST
+			}
+		}
+
+		icon = GFX_decision_ger_military_buildup
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_guns
+				has_equipment = {
+				    infantry_equipment > 1500
+				}
+				has_equipment = {
+					squad_equipment > 500
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = squad_equipment
+			    amount = 250
+			    producer = USA
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+			}	
+			add_equipment_to_stockpile = {
+				    type = squad_equipment
+				    amount = -250
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_AST
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_AST
+			}
+		}
+	}
+
+	AST_purchase_supeq = {
+		allowed = {
+			OR = {
+				original_tag = AST
+			}
+		}
+
+		icon = GFX_decision_generic_cavalry
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_supeq
+				has_equipment = {
+				    support_equipment > 250
+				}
+				has_equipment = {
+				    radio_equipment > 250
+				}
+				has_equipment = {
+				    horse_equipment > 500
+				}
+
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+			    type = horse_equipment
+			    amount = 500
+			    producer = USA
+			}			
+			USA = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -250
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = -250	
+			}		
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = -500
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_AST
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_AST
+			}
+		}
+	}
+
+	AST_purchase_truck = {
+		allowed = {
+			OR = {
+				original_tag = AST
+			}
+		}
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_trucks
+				has_equipment = {
+					motorized_equipment > 500
+				}
+				has_equipment = {
+				train_equipment > 10
+				}
+				has_equipment = {
+					convoy > 10
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = 500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = 10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 10
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -500
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -10
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_AST
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_AST
+			}
+		}
+	}
+
+	AST_purchase_mech = {
+		allowed = {
+			OR = {
+				original_tag = AST
+			}
+		}
+
+		icon = GFX_decision_generic_wreckers
+
+		available = {
+			USA = {
+				has_tech = mechanised_infantry
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_mech
+				has_equipment = {
+					mechanized_equipment > 250
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = mechanized_equipment
+			    amount = 250
+			    producer = USA
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+			 	type = mechanized_equipment
+				amount = -250
+				producer = USA
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_AST
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_AST
+			}
+		}
+	}
+
+	AST_purchase_arty = {
+		allowed = {
+			OR = {
+				original_tag = AST
+			}
+		}
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_arty
+				has_equipment = {
+					artillery_equipment > 150
+				}
+				has_equipment = {
+					anti_tank_equipment > 150
+				}
+				has_equipment = {
+					anti_air_equipment > 50
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = 150
+			    producer = USA
+			}			
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 50
+				producer = USA
+			}
+			USA = {
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = -150
+			    producer = USA
+			}	
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -50
+				producer = USA	
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_AST
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_AST
+			}
+		}
+	}
+
+RAJ_purchase_guns = {
+		allowed = {
+			OR = {
+				original_tag = RAJ
+			}
+		}
+
+		icon = GFX_decision_ger_military_buildup
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_guns
+				has_equipment = {
+				    infantry_equipment > 1500
+				}
+				has_equipment = {
+					squad_equipment > 500
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment
+			    amount = 1500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = squad_equipment
+			    amount = 250
+			    producer = USA
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1500
+			}	
+			add_equipment_to_stockpile = {
+				    type = squad_equipment
+				    amount = -250
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_RAJ
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_RAJ
+			}
+		}
+	}
+
+	RAJ_purchase_supeq = {
+		allowed = {
+			OR = {
+				original_tag = RAJ
+			}
+		}
+
+		icon = GFX_decision_generic_cavalry
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_supeq
+				has_equipment = {
+				    support_equipment > 250
+				}
+				has_equipment = {
+				    radio_equipment > 250
+				}
+				has_equipment = {
+				    horse_equipment > 500
+				}
+
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = support_equipment
+			    amount = 250
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = 250
+			}
+			add_equipment_to_stockpile = {
+			    type = horse_equipment
+			    amount = 500
+			    producer = USA
+			}			
+			USA = {
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = -250
+			}
+			add_equipment_to_stockpile = {
+				type = radio_equipment
+				amount = -250	
+			}		
+			add_equipment_to_stockpile = {
+				type = horse_equipment
+				amount = -500
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_RAJ
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_RAJ
+			}
+		}
+	}
+
+	RAJ_purchase_truck = {
+		allowed = {
+			OR = {
+				original_tag = RAJ
+			}
+		}
+
+		icon = GFX_decision_generic_merge_plant_materiel
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_trucks
+				has_equipment = {
+					motorized_equipment > 500
+				}
+				has_equipment = {
+				train_equipment > 10
+				}
+				has_equipment = {
+					convoy > 10
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = 500
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = 10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 10
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -500
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = train_equipment
+			    amount = -10
+			    producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -10
+			}
+			add_ideas = {
+				USA_cash_and_carry_purchase_RAJ
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_RAJ
+			}
+		}
+	}
+
+	RAJ_purchase_mech = {
+		allowed = {
+			OR = {
+				original_tag = RAJ
+			}
+		}
+
+		icon = GFX_decision_generic_wreckers
+
+		available = {
+			USA = {
+				has_tech = mechanised_infantry
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_mech
+				has_equipment = {
+					mechanized_equipment > 250
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+			    type = mechanized_equipment
+			    amount = 250
+			    producer = USA
+			}
+			USA = {
+			add_equipment_to_stockpile = {
+			 	type = mechanized_equipment
+				amount = -250
+				producer = USA
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_RAJ
+				}
+			}	
+		}
+
+		remove_effect = {
+			hidden_effect = {
+				clr_country_flag = purchased_from_usa
+			}
+			USA = {
+				remove_ideas = USA_cash_and_carry_purchase_RAJ
+			}
+		}
+	}
+
+	RAJ_purchase_arty = {
+		allowed = {
+			OR = {
+				original_tag = RAJ
+			}
+		}
+
+		icon = GFX_decision_generic_ignite_civil_war
+
+		available = {
+			USA = {
+				has_completed_focus = USA_neutrality_act
+				has_war = no
+				has_country_flag = usa_sells_arty
+				has_equipment = {
+					artillery_equipment > 150
+				}
+				has_equipment = {
+					anti_tank_equipment > 150
+				}
+				has_equipment = {
+					anti_air_equipment > 50
+				}
+			}
+			NOT = {
+				has_country_flag = purchased_from_usa
+			}
+		}
+
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = purchased_from_usa
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = 150
+			    producer = USA
+			}			
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 50
+				producer = USA
+			}
+			USA = {
+				add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = -150
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+			    type = anti_tank_equipment
+			    amount = -150
+			    producer = USA
+			}	
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = -50
+				producer = USA	
+			}	
+			add_ideas = {
+				USA_cash_and_carry_purchase_RAJ
+				}
+			}	
+		}
+    }
 }
 
 host_decisions = {
