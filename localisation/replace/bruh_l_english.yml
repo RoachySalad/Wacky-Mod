@@ -1203,6 +1203,10 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ## Mexico ##
  tooltip_mexico_reform_the_cristero_guard:2 "Reform the §YCristero Guard§!:\nDeploy §Y8 Divisions§! of §Y10 Infantry§! battalions"
  ## FRANCE ##
+
+ trait_soppi:0 "Femboy"
+ trait_soppi_desc:0 "UwU"
+
  FRA_revoke_the_matignon_agreements_desc:0 "Revoking these agreements with more than 25% communism will trigger a loss of either -50PP or, -5% Stability and adding 2.5% Communism Popularity.\n\n§RRemoving this before January of 1938 will also cause strikes.§!"
  FRA_matignon_agreements_desc:0 "Removing this before January of 1938 will also cause strikes."
  the_promised_coop:0 "The Promised Coop"

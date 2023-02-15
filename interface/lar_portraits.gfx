@@ -6,6 +6,15 @@ spriteTypes = {
 	#}
 	
 	SpriteType = {
+		name = "GFX_portrait_Soppi"
+		texturefile = "gfx/leaders/MON/portrait_soppi.dds"
+	}
+	SpriteType = {
+		name = "GFX_portrait_Savesta"
+		texturefile = "gfx/leaders/MON/portrait_savesta.dds"
+	}
+
+	SpriteType = {
 		name = "GFX_portrait_fra_francois_de_la_rocque"
 		texturefile = "gfx/leaders/FRA/portrait_fra_francois_de_la_rocque.dds"
 	}

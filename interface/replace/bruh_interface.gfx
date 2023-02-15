@@ -248,6 +248,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/ideas_BRA_BEF_tanks.dds"
 	}
 	spriteType = {
+		name = "GFX_trait_trait_soppi"
+		texturefile = "gfx/interface/traits/trait_soppi.dds"
+	}
+	spriteType = {
 		name = "GFX_trait_bavarian"
 		texturefile = "gfx/interface/traits/trait_bavarian.dds"
 	}

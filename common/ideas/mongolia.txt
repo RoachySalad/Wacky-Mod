@@ -14,7 +14,8 @@ ideas = {
 			
 			modifier = {
 				cavalry_attack_factor = 0.1
-				cavalry_defence_factor = 0.1
+				motorized_attack_factor = 0.05
+				mechanized_attack_factor = 0.05
 			}		
 
 		}
@@ -527,13 +528,13 @@ ideas = {
 
 			equipment_bonus = {
 				motorized = {
-					soft_attack = 0.1
-					ap_attack = 0.05
+					hardness = 0.05
+					build_cost_ic = -0.05
 					maximum_speed = 0.1
 				}
 				mechanized = {
-					soft_attack = 0.1
-					ap_attack = 0.05
+					hardness = 0.05
+					build_cost_ic = -0.05
 					maximum_speed = 0.1				
 				}
 			}
