@@ -2199,11 +2199,11 @@ technologies = {
 
 		category_tanks = {
 			max_organisation = 1
-			breakthrough = 0.15
+			breakthrough = 0.1
 		}
 		category_all_infantry = {
 			max_organisation = 5
-			breakthrough = 0.25
+			breakthrough = 0.2
 		}
 		category_militia= {
 			max_organisation = 5
