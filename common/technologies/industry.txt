@@ -2346,7 +2346,7 @@ technologies = {
 		local_resources_factor = 0.10
 		enable_building = {
 			building = steel_refinery
-			level = 1
+			level = 3
 		}
 		
 		path = {
