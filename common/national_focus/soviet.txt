@@ -5574,13 +5574,13 @@
 				bonus = 0.5
 				uses = 2
 				category = artillery
+				}
 			add_tech_bonus = {
-				name = doc_bonus
+				name = art_bonus
 				bonus = 1
 				uses = 1
 				category = heavy_artillery
-			}
-			}
+				}
 		}
 	}
 
@@ -6245,12 +6245,12 @@
 				bonus = 0.5
 				uses = 2
 				category = artillery
+				}
 			add_tech_bonus = {
-				name = doc_bonus
+				name = art_bonus
 				bonus = 0.5
 				uses = 2
 				category = heavy_artillery
-			}
 			}
 		}
 	}
