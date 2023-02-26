@@ -1878,8 +1878,8 @@ equipment_modules = {
 		parent = tank_heavy_gun_1
 
 		add_stats = {
-			soft_attack = 30
-			hard_attack = 80
+			soft_attack = 33
+			hard_attack = 77
 			ap_attack = 110
 			build_cost_ic = 12
 		}
@@ -2070,13 +2070,13 @@ equipment_modules = {
 
 		add_stats = {
 			soft_attack = 70
-			build_cost_ic = 10
+			build_cost_ic = 12
 		}
 		multiply_stats = {
 		}
 		build_cost_resources = {
-			steel = 12
-			tungsten = 15 
+			steel = 14
+			tungsten = 16 
 		}
 		dismantle_cost_ic = 3
 	}
