@@ -17,15 +17,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-                political_power_cost = 100
-                consumer_goods_factor = 1
-                conscription_factor = -100
-                industrial_capacity_factory = -10
-                industrial_capacity_dockyard = -10
-                line_change_production_efficiency_factor = -10
-                production_factory_efficiency_gain_factor = -10
-                #global_building_slots_factor = -10
-                production_factory_max_efficiency_factor = -10
+                pocket_penalty = -0.1
 			}
 		}
 	
