@@ -2062,15 +2062,15 @@ equipment_modules = {
 
 	tank_rocket_launcher = { ###5
 		abbreviation = "rk1"
-		category = tank_armament_tier_4
+		category = tank_armament_tier_5
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
 		forbid_equipment_type_exact_match = armor
 		forbid_equipment_type = amphibious
 
 		add_stats = {
-			soft_attack = 75
-			build_cost_ic = 9
+			soft_attack = 70
+			build_cost_ic = 10
 		}
 		multiply_stats = {
 		}
