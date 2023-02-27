@@ -8,6 +8,7 @@ state={
 	
 	history={
 		owner = NZL
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 8
 			arms_factory = 4
@@ -23,7 +24,7 @@ state={
 			}
 		}
 		victory_points = {
-			1814 10
+			1814 5
 		}
 		victory_points = {
 			4543 5 

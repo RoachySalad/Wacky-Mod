@@ -12,6 +12,7 @@ state= {
 	history= {
 		owner = INS
 		add_core_of = INS
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		victory_points = {
 			10237 3 
 		}

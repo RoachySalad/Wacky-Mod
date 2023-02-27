@@ -289,8 +289,6 @@ characters={
 		}
 	}
 
-	
-
 	ITA_rodolfo_graziani={
 		name=ITA_rodolfo_graziani
 		portraits={
@@ -326,29 +324,6 @@ characters={
 			legacy_id=0
 		}
 	}
-	
-	ITA_Thomas45={
-    name=ITA_Thomas45
-    portraits={
-        army={
-            small="gfx/interface/ideas/idea_ITA_Thomas45.dds"
-        }
-        army={
-            large="gfx/leaders/ITA/Portrait_Italy_Thomas45.dds"
-        }
-    }
-    
-    corps_commander={
-        traits={ twomin_attention_span the_promised_coop disgruntled harsh_leader substance_abuser substance_addict prince_of_eriteria  }
-        skill=3
-        attack_skill=3
-        defense_skill=2
-        maneuvering_skill=3
-        coordination_skill=3
-        legacy_id=-1
-    }
-} 
-
 
 	ITA_inigo_campioni={
 		name=ITA_inigo_campioni
@@ -438,7 +413,6 @@ characters={
 		}
 	}
 
-
 	ITA_carlo_bergamini={
 		name=ITA_carlo_bergamini
 		portraits={
@@ -521,9 +495,9 @@ characters={
 	# Political Advisors
 	ITA_amadeo_bordiga={
 		name="ITA_amadeo_bordiga"
-		portraits={
-			army={
-				small="GFX_idea_ITA_amadeo_bordiga"
+		portraits = {
+			army = {
+				small = GFX_idea_amadeo_bordiga
 			}
 		}
 		advisor={
@@ -549,9 +523,10 @@ characters={
 	}
 	ITA_ivanoe_bonomi={
 		name="ITA_ivanoe_bonomi"
-		portraits={
-			army={
-				small="GFX_idea_ITA_ivanoe_bonomi"
+		portraits = {
+			army = {
+				small = GFX_idea_ivanoe_bonomi
+				large = GFX_portrait_ITA_ivanoe_bonomi
 			}
 		}
 		advisor={
@@ -577,9 +552,9 @@ characters={
 	}
 	ITA_carlo_scorza={
 		name="ITA_carlo_scorza"
-		portraits={
-			army={
-				small="GFX_idea_ITA_carlo_scorza"
+		portraits = {
+			army = {
+				small = GFX_idea_carlo_scorza
 			}
 		}
 		advisor={

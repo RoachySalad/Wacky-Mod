@@ -35,6 +35,9 @@ equipments = {
 		}
 		
 		fuel_consumption = 1.2
+		# WARNING - If you change/remove the below line you need to change the fuel capacity/consumption of
+		# HQ's, Field Hospitals, Logistics Companies, Motorized Logistic Companies, and Signal Companies
+		fuel_capacity = 200
 		supply_truck = yes
 	}
 

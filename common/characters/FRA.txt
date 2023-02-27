@@ -1138,39 +1138,34 @@ characters={
 		}
 	}
 
-	FRA_georges_bonnet={
-		name=FRA_georges_bonnet
-		portraits={
-			army={
-				small="GFX_idea_georges_bonnet"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = georges_bonnet
-			allowed  = {
-				original_tag  = FRA
-			}
-			available  = {
-				OR = {
-					AND = {
-						has_completed_focus = FRA_buy_time 
-						has_government = democratic 
-					}
-					has_capitulated = yes
-				}
-			}
-			cost  = 75.000
-			traits  = {
-				appeaser 
-			}
-			do_effect  = {
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
-	}
+#	FRA_georges_bonnet={
+#		name=FRA_georges_bonnet
+#		portraits={
+#			army={
+#				small="GFX_idea_georges_bonnet"
+#			}
+#		}
+#		advisor={
+#			slot = political_advisor
+#			idea_token = georges_bonnet
+#			allowed  = {
+#				original_tag  = FRA
+#			}
+#			available  = {
+#				has_completed_focus  = FRA_buy_time 
+#				has_government  = democratic 
+#			}
+#			cost  = 75.000
+#			traits  = {
+#				appeaser 
+#			}
+#			do_effect  = {
+#			}
+#			ai_will_do  = {
+#				factor  = 1.000
+#			}
+#		}
+#	}
 
 	FRA_pierre_pucheu={
 		name=FRA_pierre_pucheu
@@ -1291,10 +1286,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				OR = {
-				has_completed_focus = FRA_form_the_popular_front 
-				has_capitulated = yes
-				}
+				has_completed_focus  = FRA_form_the_popular_front 
 			}
 			traits  = {
 				financial_expert 

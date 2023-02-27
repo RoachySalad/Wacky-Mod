@@ -11,7 +11,7 @@ if = {
 
 add_ideas = {
 	DEN_surrender
-	stupid_ai
+	#stupid_ai
 }
 
 set_research_slots = 0
@@ -44,7 +44,7 @@ if = {
 		early_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
+		#basic_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
@@ -56,6 +56,7 @@ if = {
 1939.1.1 = {
 
 	add_political_power = 1198
+	add_command_power = 100
 	
 	#generic focuses
 	complete_national_focus = army_effort
@@ -217,6 +218,7 @@ recruit_character = DEN_viggo_kampman
 recruit_character = DEN_poul_sommer
 recruit_character = DEN_william_wain_prior
 recruit_character = DEN_wilhelm_prior
+recruit_character = DEN_bokoen1 #the man himself
 
 ### VARIANTS ###
 # 1936 Start #
@@ -235,6 +237,7 @@ if = {
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
 		}
 	}
 	# Heavy Cruisers #
@@ -272,7 +275,7 @@ if = {
 			fixed_ship_secondaries_slot = empty
 			mid_1_custom_slot = ship_anti_air_1
 			mid_2_custom_slot = empty
-			rear_1_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = empty
 		}
 	}
 }

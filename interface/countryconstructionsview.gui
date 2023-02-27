@@ -382,12 +382,14 @@ guiTypes = {
 			quadTextureSprite ="GFX_construction_entry_bg"
 			pdx_tooltip = "PRODUCTION_DRAG_N_DROP"
 		}
+
 		iconType = {
 			name = "new_glow"
 			position = { x = 0 y = 2 }
 			spriteType = "GFX_construction_line_glow"
 			alwaystransparent = yes
 		}
+
 		buttonType = {
 			name = "relative_flag"
 			quadTextureSprite ="GFX_construction_flag"
@@ -395,19 +397,19 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 		
-		#iconType ={
-		#	name ="country_flag_frame"
-		#	spriteType = "GFX_flag_small_golden_frame"
-		#	position = { x= 142 y = 4 }
-		#	Orientation = "UPPER_LEFT"
-		#	alwaystransparent = yes
-		#}
+#		iconType ={
+#			name ="country_flag_frame"
+#			spriteType = "GFX_flag_small_golden_frame"
+#			position = { x= 142 y = 4 }
+#			Orientation = "UPPER_LEFT"
+#			alwaystransparent = yes
+#		}
 		
-		#buttonType = {
-		#	name = "relative_flag"
-		#	quadTextureSprite ="GFX_flag_small2"
-		#	position = { x= 10 y = 12 }
-		#}
+#		buttonType = {
+#			name = "relative_flag"
+#			quadTextureSprite ="GFX_flag_small2"
+#			position = { x= 10 y = 12 }
+#		}
 
 		instantTextboxType = {
 			name = "location"
@@ -428,8 +430,7 @@ guiTypes = {
 			name = "picture"
 			position = { x = 172 y = 5 }
 			spriteType = "GFX_buildings_strip"
-		}
-		
+		}		
 		iconType = {
 			name = "overlay"
 			position = { x = 172 y = 5 }

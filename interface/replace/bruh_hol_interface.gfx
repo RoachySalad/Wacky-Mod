@@ -1,0 +1,33 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_HOL_sumatra"
+		textureFile = "gfx/interface/goals/hol/sumatra2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_java2"
+		textureFile = "gfx/interface/goals/hol/java2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_oil"
+		textureFile = "gfx/interface/goals/hol/invest_in_the_west.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_ship_day"
+		textureFile = "gfx/interface/goals/hol/ship_a_day.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_singapore"
+		textureFile = "gfx/interface/goals/hol/singapore_conferences.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HOL_randstad"
+		textureFile = "gfx/interface/goals/hol/randstad.dds"
+	}
+
+}

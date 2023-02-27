@@ -68,7 +68,7 @@ bookmarks = {
 			ideology = fascism
 			ideas = {
 				vittoria_mutilata
-				victor_emmanuel
+				vittorio_emanuele
 				ITA_mare_nostrum
 			}	
 			focuses = {
@@ -186,6 +186,21 @@ bookmarks = {
 				RAJ_the_smiling_buddha
 			}
 		}
+		"IRE"={
+			minor = yes
+			history = "IRE_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				IRE_anglo_trade_war
+				IRE_ira_1
+				IRE_ira_army_2
+			}
+			focuses = {
+				IRE_empower_the_ira
+				IRE_integrate_the_north
+				IRE_incorporate_the_ira
+			}
+		}
 		"BRA"={
 			minor = yes
 			history = "BRA_GATHERING_STORM_DESC"
@@ -242,7 +257,7 @@ bookmarks = {
 			}
 			focuses = {
 				POL_complete_april_constitution
-				POL_niech_zyje_opor
+				POL_baltic_navy
 				POL_the_four_year_plan
 			}
 		}

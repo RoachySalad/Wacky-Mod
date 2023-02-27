@@ -267,7 +267,7 @@ focus_tree = {
 						all_provinces = yes
 						limit_to_naval_base = yes
 					}
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -288,7 +288,7 @@ focus_tree = {
 						all_provinces = yes
 						limit_to_naval_base = yes
 					}
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}

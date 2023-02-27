@@ -1320,12 +1320,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 7
 		}
-
-		available = {
-			has_tech = pack_artillery_2
-		}
         
-        cost = 10
+        cost = 5
 
         completion_reward = {
             add_tech_bonus = {
@@ -1333,9 +1329,6 @@ focus_tree = {
 				bonus = 0.75
 				uses = 2
 				category = artillery
-			}
-			set_technology = {
-				mountain_arty = 1
 			}
         }
 
@@ -1390,7 +1383,8 @@ focus_tree = {
     focus = {
         id = SIA_western_military
         icon = GFX_focus_hol_the_fourth_ally
-        prerequisite = { focus = SIA_small_arms_experiments focus = SIA_artillery_experiments }
+        prerequisite = { focus = SIA_small_arms_experiments }
+        prerequisite = { focus = SIA_artillery_experiments }
         mutually_exclusive = { focus = SIA_japanese_military }
         x = 0
         y = 1
@@ -1455,7 +1449,8 @@ focus_tree = {
     focus = {
         id = SIA_japanese_military
         icon = GFX_focus_chi_collaboration_with_the_japanese
-        prerequisite = { focus = SIA_small_arms_experiments focus = SIA_artillery_experiments }
+        prerequisite = { focus = SIA_small_arms_experiments }
+        prerequisite = { focus = SIA_artillery_experiments }
         mutually_exclusive = { focus = SIA_western_military }
         x = 0
         y = 1

@@ -1,282 +1,4 @@
 #Category allowed for JAP
-
-JAP_strike_south_doctrine = {
-	
-	JAP_control_the_philippines = {
-
-		visible = {
-			OR = {
-				AND = {
-					has_completed_focus = JAP_strike_the_west
-					has_war_with = USA
-				}
-				is_debug = yes
-			}
-		}
-
-		available = {
-			AND = {
-				OR = {
-					PHI = {
-						has_capitulated = yes
-					}
-					AND = {
-						623 = {
-							OR = {
-								is_controlled_by = JAP
-								controller = {
-									is_subject_of = JAP
-									is_in_faction_with = JAP
-								}
-							}
-						}
-						327 = {
-							OR = {
-								is_controlled_by = JAP
-								controller = {
-									is_subject_of = JAP
-									is_in_faction_with = JAP
-								}
-							}
-						}
-						624 = {
-							OR = {
-								is_controlled_by = JAP
-								controller = {
-									is_subject_of = JAP
-									is_in_faction_with = JAP
-								}
-							}
-						}
-						625 = {
-							OR = {
-								is_controlled_by = JAP
-								controller = {
-									is_subject_of = JAP
-									is_in_faction_with = JAP
-								}
-							}
-						}
-						627 = {
-							OR = {
-								is_controlled_by = JAP
-								controller = {
-									is_subject_of = JAP
-									is_in_faction_with = JAP
-								}
-							}
-						}
-					}
-				}
-				has_idea = JAP_tora_tora_tora_idea
-			}
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-		    add_ideas = JAP_phi_control
-		    USA = {
-		    	add_stability = -0.1
-		    	add_war_support = -0.1
-		    }
-		}
-	}
-
-	JAP_control_singapore = {
-
-		visible = {
-			OR = {
-				is_debug = yes
-				AND = {
-					has_completed_focus = JAP_strike_the_west
-					has_war_with = ENG
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		available = {
-			JAP = {
-				AND = {
-					336 = {
-						is_controlled_by = ROOT
-					}
-					333 = {
-						is_controlled_by = ROOT
-					}
-					has_idea = JAP_tora_tora_tora_idea
-				}
-			}
-		}
-
-		complete_effect = {
-		    add_ideas = JAP_sing_control
-	    	ENG = {
-	    		add_timed_idea = {
-	    		    idea = ENG_lost_the_pacific
-	    		    days = 1095
-	    		}
-	     	}
-	     	SAF = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	CAN = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	RAJ = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	AST = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	NZL = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	FRA = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	BRA = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	MEX = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	IRE = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-	     	HOL = {
-	     		add_timed_idea = {
-	     		    idea = ASN_ALLIES_lost_the_pacific
-	     		    days = 1095
-	     		}
-	     	}
-		}
-	}
-
-	JAP_control_DEI = {
-
-		available = {
-			JAP = {
-				AND = {
-					672 = {
-						is_controlled_by = ROOT
-					}
-					334 = {
-						is_controlled_by = ROOT
-					}
-					335 = {
-						is_controlled_by = ROOT
-					}
-					673 = {
-						is_controlled_by = ROOT
-					}
-					669 = {
-						is_controlled_by = ROOT
-					}
-					has_idea = JAP_tora_tora_tora_idea
-				}
-			}
-		}
-
-		fire_only_once = yes
-
-		complete_effect = {
-		    add_ideas = JAP_dei_control
-		}
-	}
-
-	JAP_control_papua = {
-
-		activation = {
-		    AND = {
-		    	has_completed_focus = JAP_strike_the_west
-		    	has_war_with = AST
-		    }
-		}
-
-		fire_only_once = yes
-
-		available = {
-			JAP = {
-				AND = {
-					523 = {
-						is_controlled_by = ROOT
-					}
-					737 = {
-						is_controlled_by = ROOT
-					}
-					has_idea = JAP_tora_tora_tora_idea
-				}
-			}
-		}
-
-		complete_effect = {
-		    add_ideas = JAP_papua_control
-		}
-	}
-
-	JAP_form_japanese_empire = {
-		visible = {
-			OR = {
-				has_completed_focus = JAP_strike_the_west
-				is_debug = yes
-			}
-		}
-
-		fire_only_once = yes
-
-		available = {
-			AND = {
-				has_completed_focus = JAP_strike_the_west
-				has_idea = JAP_phi_control
-				has_idea = JAP_sing_control
-				has_idea = JAP_dei_control
-				has_idea = JAP_papua_control
-			}
-		}
-
-		complete_effect = {
-			set_cosmetic_tag = JAP_empire
-			remove_ideas = {
-			    JAP_phi_control
-			    JAP_sing_control
-			    JAP_dei_control
-			    JAP_papua_control
-			}
-			add_ideas = JAP_new_japanese_empire
-		}
-	}
-}
-
 JAP_intervene_in_china = {
 
 	JAP_china_step_up_war_effort = {
@@ -430,6 +152,34 @@ JAP_intervene_in_china = {
 }
 
 JAP_interservice_rivalry = {
+
+	JAP_rivalry_cooldown = {
+		priority = 100
+		allowed = { tag = JAP }
+
+		#icon = generic_prepare_civil_war
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = 179
+		is_good = no
+		fire_only_once = no
+
+		cancel_trigger = {
+			NOT = {has_country_flag = JAP_war_conferences_cd}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		activation = {
+			has_country_flag = JAP_war_conferences_cd
+		}
+		
+	}
 	JAP_steel_for_guns = {
 
 		icon = generic_tank
@@ -1752,50 +1502,6 @@ political_actions = {
 }
 
 operations = {
-
-#	invent_the_sht = {
-#
-#		icon = GFX_decision_generic_research
-#
-#		available = {
-#			original_tag = JAP
-#			has_completed_focus = JAP_tank_lessons
-#		}
-#
-#		visible = {
-#			AND = {
-#				original_tag = JAP
-#				has_completed_focus = JAP_tank_lessons
-#			}
-#		}
-#
-#		cost = 50
-#		fire_only_once = yes
-#
-#		ai_will_do = {
-#		    factor = 0
-#		}
-#		visible = {
-#			OR = {
-#			original_tag = JAP
-#			has_completed_focus = JAP_tank_lessons
-#			is_debug = yes
-#			}
-#		}
-#		days_remove = 180
-#		modifier = {
-#		    civilian_factory_use = 10
-#		}
-#		remove_effect = {
-#		   JAP = {
-#		   	   set_technology = { heavy_tank_1 = 1 popup = no }
-#		       set_technology = { jap_secret_super_heavy = 1 }
-#		   }
-#		}
-#		complete_effect = {
-#		    set_country_flag = { flag = GER_wunderwaffe_flag value = 1 days = 180 }
-#		}
-#	}
 
 	
 	# SOV_border_war_JAP = {
@@ -3521,6 +3227,7 @@ JAP_propaganda_campaigns = {
 		}
 	}
 }
+
 political_actions = {
 
 	JAP_go_to_war_with_China = {

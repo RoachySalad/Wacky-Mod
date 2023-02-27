@@ -177,7 +177,7 @@ characters={
 		name="MAN_nobusuke_kishi"
 		portraits={
 			army={
-				small="GFX_idea_MAN_nobusuke_kishi"
+				small="GFX_idea_generic_political_advisor_asia_1"
 			}
 		}
 		advisor={

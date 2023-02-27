@@ -14,7 +14,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
-	early_fighter = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 	basic_train = 1
@@ -37,12 +36,10 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		mtg_transport = 1
-		smoke_generator = 1
 		sonar = 1
 		improved_sonar = 1
-		basic_ship_hull_light = 1
 		improved_depth_charges = 1
+		mtg_transport = 1
 	}
 }
 
@@ -51,6 +48,23 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
+# if = {
+# 	limit = { has_dlc = "By Blood Alone" }
+# 	set_technology = {
+# 		aa_lmg = 1
+# 		#engines_1 = 1
+# 		iw_small_airframe = 1
+# 		early_bombs = 1
+# 	}
+# 	else = {
+		
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
+
+		}
+# 	}
+# }
 
 set_politics = {
 	ruling_party = democratic
@@ -94,12 +108,28 @@ recruit_character = NZL_peter_fraser
 
 add_ideas = {
 	ASN_ALLIES_the_sun_never_sets_idea_1
+	PACIFIC_COMMONWEALTH_controls_original
 	father_check
 }
 
 set_variable = { COM_poster_center_icon_frame = 1 }
 
 set_convoys = 70
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = democratic
+		last_election = "1938.10.15"
+		election_frequency = 60
+		elections_allowed = yes
+	}
+
+	# Didn't take office until '40, added for flavor
+	promote_character = NZL_peter_fraser
+	retire_character = NZL_michael_joseph_savage
+	set_convoys = 80
+}
+
 
 ### VARIANTS ###
 # 1936 Start #
@@ -131,7 +161,9 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
 		}
 	}
@@ -159,7 +191,8 @@ if = {
 				fixed_ship_armor_slot = ship_armor_cruiser_1
 				front_1_custom_slot = ship_anti_air_1
 				mid_1_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_light_medium_battery_1
+				mid_2_custom_slot = ship_airplane_launcher_1
+				rear_1_custom_slot = empty
 			}
 		}
 	}

@@ -154,6 +154,9 @@ if = {
 	# recruit_character = SOV_anton_denikin
 }
 
+set_variable = { SOV_RG_division_cap = 0 }
+set_variable = { SOV_RG_cap_increase = 2 }
+set_variable = { SOV_RG_cap_increase_double = 4 }
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
@@ -616,7 +619,7 @@ set_variable = { SOV_merge_designers_time = 90 } #The time to complete merge des
 
 #INDUSTRIAL RELOCATION
 set_variable = { SOV_industrial_relocation_max_factories = 10 } #Max amount of factories that will be relocated by a decision
-set_variable = { SOV_industrial_relocation_days = 15 } #Decision duration (can be halved by focus)
+set_variable = { SOV_industrial_relocation_days = 30 } #Decision duration (can be halved by focus)
 set_variable = { SOV_industrial_relocation_trains_focus = 120 } #Trains to be used by the focus (20 trains / factory)
 set_variable = { SOV_industrial_relocation_trains_focus_negative = -120 } #Trains to be used by the focus (20 trains / factory)
 set_variable = { SOV_industrial_relocation_trains_decision = 80 } #Trains to be used by the generic decision (20 trains / factory)
@@ -714,18 +717,15 @@ set_technology = { #WARNING: Do not just remove techs from here -> It can impact
 	
 	electronic_mechanical_engineering = 1
 	radio = 1
-	
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	naval_bomber1 = 1
-	strategic_bomber1 = 1
+
 	mass_assault = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
 }
+
+RG_armored_division_standard = yes
 
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -743,22 +743,50 @@ if = {
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		#basic_naval_mines = 1
-		#submarine_mine_laying = 1
+		# basic_naval_mines = 1
+		# submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		mtg_transport = 1
 	}
 }
+
+# if = {
+# 	limit = { has_dlc = "By Blood Alone" }
+# 		set_air_oob = "SOV_1936_air_bba"
+# 		set_technology = {
+# 			iw_small_airframe = 1
+# 			aa_lmg = 1
+# 			#aa_cannon_1 = 1
+# 			early_bombs = 1
+# 			#engines_1 = 1
+# 			#engines_2 = 1
+# 			iw_medium_airframe = 1
+# 			iw_large_airframe = 1
+# 			basic_small_airframe = 1
+# 			basic_medium_airframe = 1
+# 			aircraft_construction = 1
+# 		}
+# 	else = {
+ 		set_air_oob = "SOV_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			naval_bomber1 = 1
+		}
+# 	}
+# }
 
 set_country_flag = SOV_TEST_REMOVE_VANILLA_ADVISORS_flag
 
@@ -771,11 +799,6 @@ add_ideas = {
 
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
-
-#add_timed_idea = {
-#	idea = anti_tradeboosting
-#	days = 1460
-#}
 
 1939.1.1 = {
 
@@ -1197,6 +1220,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_heavy_machine_gun
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -1210,6 +1234,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -1223,6 +1248,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_christie_suspension
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -1236,6 +1262,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_christie_suspension
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -1248,12 +1275,26 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 		special_type_slot_3 = secondary_turret_hmg
 	}
 }
-
+#create_equipment_variant = {
+#	name = "T-35"
+#	type = sov_heavy_tank_chassis_t35
+#	parent_version = 0
+#	modules = {
+#		main_armament_slot = tank_small_gun_1
+#		turret_type_slot = tank_multi_turret_2
+#		suspension_type_slot = tank_bogie_suspension
+#		armor_type_slot = tank_riveted_armor
+#		engine_type_slot = tank_gasoline_engine
+#		special_type_slot_2 = secondary_turret_small_cannon
+#		special_type_slot_3 = secondary_turret_small_cannon
+#	}
+#}
 
 ### VARIANTS ###
 # 1936 Start #
@@ -1327,6 +1368,7 @@ if = {
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
 			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
 			#rear_1_custom_slot = ship_mine_layer_sub
 		}
 	}
@@ -1378,6 +1420,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
@@ -1394,6 +1437,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 		obsolete = yes
 	}
@@ -1409,7 +1453,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	create_equipment_variant = {
@@ -1424,14 +1469,17 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
 			#mid_1_custom_slot = ship_mine_layer_1
+			#rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
 		name = "Komintern Class"
 		type = ship_hull_cruiser_1
-		name_group = SOV_CL_HISTORICAL
+		name_group = SOV_MINELAYERS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -1439,7 +1487,10 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			mid_1_custom_slot = ship_light_medium_battery_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
 			#rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
@@ -1455,8 +1506,10 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			front_1_custom_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_light_medium_battery_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
 			#rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
@@ -1471,14 +1524,17 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			mid_1_custom_slot = empty
+			mid_2_custom_slot = ship_light_battery_1
+			rear_1_custom_slot = empty
 			#rear_1_custom_slot = ship_mine_layer_1
 		}
 	}
 	# Heavy Cruisers #
 		create_equipment_variant = {
 			name = "Kirov Class"
-			type = ship_hull_cruiser_1
+			type = ship_hull_cruiser_2
 			name_group = SOV_CA_HISTORICAL
 			parent_version = 0
 			modules = {
@@ -1488,9 +1544,10 @@ if = {
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_1
-				front_1_custom_slot = ship_anti_air_1
+				front_1_custom_slot = empty
 				mid_1_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_medium_battery_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = empty
 			}
 		}
 	# Battleships #
@@ -1514,6 +1571,64 @@ if = {
 		}
 	}
 }
+# if = {
+# 	limit = {
+# 		has_dlc = "By Blood Alone"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "I-15" #
+# 		type = small_plane_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = light_mg_4x
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = empty
+# 		}
+# 		obsolete = yes
+# 	}
+# 	create_equipment_variant = {
+# 		name = "I-16" #
+# 		type = small_plane_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = light_mg_2x
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = empty
+# 		}
+# 		icon = "GFX_SOV_fighter1_medium"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "DB-3" #
+# 		type = medium_plane_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = medium_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
+# 			engine_type_slot = engine_1_2x
+# 			special_type_slot_1 = lmg_defense_turret
+# 		}
+# 		icon = "GFX_SOV_early_bomber_medium"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "TB-3" #
+# 		type = large_plane_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = large_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = empty
+# 			engine_type_slot = engine_1_4x
+# 			special_type_slot_1 = lmg_defense_turret_2x
+# 		}
+# 		icon = "GFX_SOV_transport_plane_equipment_1_medium"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "ANT-40" #
+# 		type = medium_plane_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = medium_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
+# 			engine_type_slot = engine_1_2x
+# 			special_type_slot_1 = lmg_defense_turret_2x
+# 		}
+# 		icon = "GFX_SOV_tactical_bomber1_medium"
+# 	}
+# }
 
 # 1939 Start #
 1939.1.1 = {

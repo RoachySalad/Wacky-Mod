@@ -349,10 +349,6 @@ SOV_has_active_tank_designer_morozov = {
 	}
 }
 
-
-
-
-
 SOV_has_active_tank_designer_astrov = {
 	OR = {
 		has_idea = SOV_astrov_design_bureau
@@ -371,9 +367,6 @@ SOV_has_active_tank_designer_SOV_tank_destroyer_board = {
 		has_idea = SOV_tank_destroyer_board
 	}
 }
-
-
-
 
 SOV_has_active_tank_designer_okmo = {
 	OR = {
@@ -1007,6 +1000,10 @@ SOV_basic_pressure_government_triggers = { #Used in foreign politics targeted de
 	country_exists = FROM
 	NOT = { has_war_with = FROM }
 	NOT = { FROM = { is_subject_of = ROOT } }
+	OR = {
+		NOT = { is_in_faction_with = FROM }
+		NOT = { has_government = FROM }
+	}
 }
 
 SOV_basic_promote_rallies_triggers = { #Used in foreign politics targeted decs - Expected Scope: ROOT = SOV // FROM = Target

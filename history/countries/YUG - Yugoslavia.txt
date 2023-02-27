@@ -40,6 +40,7 @@ set_technology = {
 	superior_firepower = 1
 	support_weapons = 1
 	basic_train = 1
+	fra_light_tank_export = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -243,6 +244,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_riveted_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -254,7 +256,7 @@ if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
 	create_equipment_variant = {
-		name = "Cervantes Class"
+		name = "Dubrovnik Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 1
@@ -264,7 +266,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Veinticinco de Mayo Class"
+		name = "Dalmacija Class"
 		type = heavy_cruiser_1
 		upgrades = {
 			ship_reliability_upgrade = 1
@@ -302,7 +304,9 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_depth_charge_1
+			mid_1_custom_slot = empty
+			#mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	# Cruisers #
@@ -317,7 +321,7 @@ if = {
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = empty
+			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_secondaries_slot = empty
 			mid_1_custom_slot = empty
 			mid_2_custom_slot = empty

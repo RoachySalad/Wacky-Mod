@@ -466,6 +466,33 @@ ideas = {
 
 		}
 
+		SAF_heavy_artillery2 = {
+		
+			picture = generic_artillery_regiments
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				artillery_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
+				squad_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
+				heavy_artillery_equipment = {
+					soft_attack = 0.1
+					instant = yes
+				}
+			}
+		}
+	
+
 		SAF_joint_air_training_scheme = {
 			
 			allowed = {
@@ -538,36 +565,43 @@ ideas = {
 		}
 	}
 	tank_manufacturer = {
+
 		# iscor = {
 			
-		# 	picture = generic_tank_manufacturer_3
+			# 	picture = generic_tank_manufacturer_3
 
-		# 	allowed = {
-		# 		original_TAG = SAF
-		# 		has_dlc = "Together for Victory"
-		# 	}
+			# 	allowed = {
+			# 		original_TAG = SAF
+			# 		has_dlc = "Together for Victory"
+			# 	}
 			
 
 			
-		# 	research_bonus = {
-		# 		armor = 0.15
-		# 	}
+			# 	research_bonus = {
+			# 		armor = 0.15
+			# 	}
 			
-		# 	traits = { medium_tank_manufacturer }
+			# 	traits = { medium_tank_manufacturer }
 			
-		# 	modifier = {
-		# 	}
-		# }
-		cape_cope ={
+			# 	modifier = {
+			# 	}
+			# }
+			
+		cape_cope = {
 
 			picture = generic_tank_manufacturer_1
 
 			allowed = {
 				original_tag = SAF
+				
+			}
+
+			available = {
+	 			has_completed_focus = SAF_queen_of_the_desert
 			}
 
 			research_bonus = {
-				armor = 0.15
+					armor = 0.15
 			}
 
 			traits = {
@@ -575,6 +609,8 @@ ideas = {
 			}
 		}
 	}
+	
+	
 	
 	industrial_concern = {
 		SAF_south_african_railways = {
@@ -600,5 +636,4 @@ ideas = {
 			}
 		}
 	}
-
 }

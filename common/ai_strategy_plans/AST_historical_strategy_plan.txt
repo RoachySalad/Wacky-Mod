@@ -46,7 +46,7 @@ AST_historical = {
 		AST_volunteer_defence_corps						#1940
 		AST_expand_lithgow_small_arms_factory			#1940
 		AST_expand_the_northern_railway					#1940s
-		AST_specialize_equipment						#1940s
+		#AST_specialize_equipment						#1940s
 		AST_army_inventions_directorate					#1942
 		AST_hmas_assault								#1942
 		AST_fund_owen_gun_research						#1939
@@ -69,7 +69,7 @@ AST_historical = {
 		AST_squash_the_squanderbugs						#1940
 		AST_rationing_and_recycling						#1940
 		AST_royal_australian_submarine_service			#1943
-		AST_airborne_defence							#1940s
+		#AST_airborne_defence							#1940s
 		AST_introduce_unconventional_warfare			#1940s
 		AST_rats_of_tobruk								#1941
 		AST_australian_army_catering_corps				#1943

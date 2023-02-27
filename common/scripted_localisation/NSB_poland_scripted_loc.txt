@@ -67,6 +67,61 @@ defined_text = { # Country
 	}
 }
 
+defined_text = { # Country
+	name = GetPolRoyalClaimStrength
+	# text = {
+	# 	trigger = {
+	# 		POL = { has_completed_focus = POL_support_monarchism_in_LIT }
+	# 	}
+	# 	localization_key = lithuania_strength
+	# }
+	# text = {
+	# 	trigger = {
+	# 		POL = { has_completed_focus = POL_internal_romanian_support }
+	# 	}
+	# 	localization_key = romania_strength
+	# }
+	# text = {
+	# 	trigger = {
+	# 		POL = { has_completed_focus = POL_support_monarchy_in_CZE }
+	# 	}
+	# 	localization_key = bohemia_strength
+	# }
+	text = {
+		trigger = {
+			LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
+		}
+		localization_key = poland_strength
+	}
+}
+
+defined_text = { # Country
+	name = GetRoyalClaim
+	# text = {
+	# 	trigger = {
+	# 		POL = { has_completed_focus = POL_support_monarchism_in_LIT }
+	# 	}
+	# 	localization_key = LIT_neutrality
+	# }
+	# text = {
+	# 	trigger = {
+	# 		POL = { has_completed_focus = POL_internal_romanian_support }
+	# 	}
+	# 	localization_key = ROM_neutrality
+	# }
+	# text = {
+	# 	trigger = {
+	# 		POL = { has_completed_focus = POL_support_monarchy_in_CZE }
+	# 	}
+	# 	localization_key = CZE_neutrality
+	# }
+	text = {
+		trigger = {
+			LIT = { has_completed_focus = LIT_support_monarchism_in_POL }
+		}
+		localization_key = POL_neutrality
+	}
+}
 defined_text = { #Choosing descriptions for Dismantle the Soviet Empire focus
 	name = GetDismantleSovietEmpireDesc
 	text = {
@@ -113,5 +168,18 @@ defined_text = { #Choosing Description for Polish People's Republic Focus
 	}
 	text = {
 		localization_key = POL_polish_peoples_republic_desc_default
+	}
+}
+
+defined_text = { #MM: So that focus description in bookmark talks about actual Polish leader and not Adolf Hitler
+	name = GetAppropriateLeaderNameInBookmark
+	text = {
+		trigger = {
+			original_tag = POL
+		}
+		localization_key = [ROOT.GetLeader]
+	}
+	text = {
+		localization_key = POL_ignacy_moscicki
 	}
 }

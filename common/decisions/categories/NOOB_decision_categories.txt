@@ -1,0 +1,8 @@
+NEW_player_decisions = {
+	priority = 10000
+
+	icon = generic_propaganda
+
+	visible = {
+	}
+}

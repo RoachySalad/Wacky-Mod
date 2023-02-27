@@ -1,0 +1,7 @@
+spriteTypes = {	#Engi icon because i'm lazy
+	spriteType = {
+		name = "GFX_trait_piss_bomb_official"
+		texturefile = "gfx/interface/traits/personal/trait_officer_engineer.dds"
+		legacy_lazy_load = no
+	}
+}
