@@ -10,6 +10,7 @@ sub_units = {
 		
 		type = {
 			armor
+			#artillery
 		}
 		
 		group = armor
@@ -36,7 +37,7 @@ sub_units = {
 
 		breakthrough = 0.2
 		soft_attack = 0.2
-
+		
 		plains = {
 			attack = 0.05 
 			movement = 0.05
@@ -55,9 +56,12 @@ sub_units = {
 			movement = -0.05
 		}
 		mountain = 	{
-		    attack = -0.6
+		
+		#### I am reducing the amount by 50% than that in barbarossa patch because 1: it was not voted on, 2: this made tanks impossible to push anything on a mountain, 3: that was not the intention of this it was to make it harder not impossible. This will go for all of them since all was done was set it to 0.6.
+		
+		    attack = -0.4
 			movement = -0.3
-			defence = -0.6
+			defence = -0.4
 		}
 		jungle = {
 		    attack = -0.15
@@ -100,6 +104,7 @@ sub_units = {
 		
 		type = {
 			armor
+			#artillery
 		}
 		
 		group = armor
@@ -144,9 +149,9 @@ sub_units = {
 			defence = -0.05
 		}
 		mountain = 	{
-		    attack = -0.6
+		    attack = -0.5
 			movement = -0.4
-			defence = -0.6
+			defence = -0.5
 		}
 		jungle = {
 		    attack = -0.25
@@ -166,13 +171,13 @@ sub_units = {
 			attack = -2.0
 		}
 		fort = {
-			attack = 0.65
+			attack = 0.70
 		}
 		urban = {
 			attack = 0.3
 		}
 		dense_urban = {
-			attack = 0.5
+			attack = 0.65
 		}
 		town = {
 			attack = 0.15
@@ -189,6 +194,7 @@ sub_units = {
 		
 		type = {
 			armor
+			#artillery
 		}
 		
 		group = armor
@@ -234,9 +240,9 @@ sub_units = {
 			defence = -0.1
 		}
 		mountain = 	{
-		    attack = -0.6
+		    attack = -0.5
 			movement = -0.5
-			defence = -0.6
+			defence = -0.5
 		}
 		jungle = {
 		    attack = -0.4
@@ -262,7 +268,7 @@ sub_units = {
 			attack = 0.4
 		}
 		dense_urban = {
-			attack = 0.9
+			attack = 0.95
 		}
 		town = {
 			attack = 0.2

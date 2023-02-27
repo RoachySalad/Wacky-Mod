@@ -90,6 +90,7 @@ units = {
 		location = 9800  # Valladolid
 		division_template = "Brigada Legionario"
 	}
+	
 	division = {
 		name = "12a Brigada Legionario"
 		location = 11707  # Oviedo

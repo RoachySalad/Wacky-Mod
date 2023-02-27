@@ -598,3 +598,50 @@ SOV_the_nkvd_is_all_the_intel_we_need = {
 		value = -20
 	}
 }
+
+
+SOV_prio_civilian_factories = {
+	allowed = { original_tag = SOV }
+	enable = {
+		NOT = { has_completed_focus = SOV_finish_2_plan }
+	}	
+    abort = {
+		date > 1936.10.1
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 500
+	}
+}
+
+SOV_prio_military_factories = {
+	allowed = { original_tag = SOV }
+	enable = {
+		date > 1936.10.1
+	}	
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50000
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 501
+	}
+}
+
+SOV_steel_refs = {
+	allowed = { original_tag = SOV }
+	enable = {
+		always = yes
+	}	
+    abort = {
+		date > 1940.1.1
+	}
+	ai_strategy = {
+		type = building_target
+		id = steel_refinery
+		value = 1000
+	}
+}

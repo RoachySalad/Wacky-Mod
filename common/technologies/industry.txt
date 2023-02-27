@@ -31,7 +31,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -71,7 +70,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -107,7 +105,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -153,7 +150,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -187,7 +183,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -221,7 +216,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -263,7 +257,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -295,7 +288,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 		}
 	}
@@ -306,7 +298,6 @@ technologies = {
 		industrial_capacity_factory = 0.10
 		industrial_capacity_dockyard = 0.10
 		global_building_slots_factor = 0.10
-		production_lack_of_resource_penalty_factor = -0.05
 		
 		path = {
 			leads_to_tech = concentrated_industry2 
@@ -333,7 +324,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			concentrated_industry_category
 		}
@@ -348,8 +338,6 @@ technologies = {
 		industrial_capacity_factory = 0.10
 		industrial_capacity_dockyard = 0.10
 		global_building_slots_factor = 0.10
-		production_lack_of_resource_penalty_factor = -0.05
-
 		
 		path = {
 			leads_to_tech = concentrated_industry3 
@@ -374,7 +362,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			concentrated_industry_category
 		}
@@ -389,8 +376,6 @@ technologies = {
 		industrial_capacity_factory = 0.10
 		industrial_capacity_dockyard = 0.10
 		global_building_slots_factor = 0.10
-		production_lack_of_resource_penalty_factor = -0.05
-
 		
 		path = {
 			leads_to_tech = concentrated_industry4 
@@ -414,7 +399,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			concentrated_industry_category
 		}
@@ -429,7 +413,6 @@ technologies = {
 		industrial_capacity_factory = 0.10
 		industrial_capacity_dockyard = 0.10
 		global_building_slots_factor = 0.10
-		production_lack_of_resource_penalty_factor = -0.05
 		
 		path = {
 			leads_to_tech = concentrated_industry5
@@ -453,7 +436,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			concentrated_industry_category
 		}
@@ -468,7 +450,6 @@ technologies = {
 		industrial_capacity_factory = 0.10
 		industrial_capacity_dockyard = 0.10
 		global_building_slots_factor = 0.10
-		production_lack_of_resource_penalty_factor = -0.05
 		
 		research_cost = 2
 		start_year = 1944
@@ -502,7 +483,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			concentrated_industry_category
 		}
@@ -517,7 +497,6 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
 		line_change_production_efficiency_factor = 0.10
-		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
 		
@@ -546,7 +525,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -589,7 +567,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -631,7 +608,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -673,7 +649,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -688,7 +663,6 @@ technologies = {
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
 		line_change_production_efficiency_factor = 0.10
-		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.15
 		
@@ -710,7 +684,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -734,7 +707,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -759,7 +731,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -787,7 +758,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -816,7 +786,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -841,7 +810,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -863,7 +831,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -889,7 +856,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -915,7 +881,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -941,7 +906,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -967,7 +931,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			dispersed_industry_category
 		}
@@ -1007,7 +970,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1077,6 +1039,14 @@ technologies = {
 				factor = 0.4
 				date < "1938.1.1"
 			}
+			modifier = {
+				factor = 1200
+				OR = {
+					tag = SIA
+					tag = BRA
+					tag = GER
+				}
+			}
 		}
 	}
 
@@ -1098,7 +1068,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1164,7 +1133,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1221,7 +1189,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1269,7 +1236,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1313,7 +1279,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1344,458 +1309,452 @@ technologies = {
 		}		
 	}
 	
-	aviation_fuel = {
+	# aviation_fuel = {
 
-		air_fuel_consumption_factor = 0.05
+	# 	air_fuel_consumption_factor = 0.05
 		
-		category_fighter = {
-			maximum_speed = 0.04
-			air_agility = 0.04
-			fuel_consumption_factor = 0.05
-		}
-		category_heavy_fighter = {
-			maximum_speed = 0.04
-			air_agility = 0.04
-			fuel_consumption_factor = 0.05
-		}
+	# 	category_fighter = {
+	# 		maximum_speed = 0.04
+	# 		air_agility = 0.04
+	# 		fuel_consumption_factor = 0.05
+	# 	}
+	# 	category_heavy_fighter = {
+	# 		maximum_speed = 0.04
+	# 		air_agility = 0.04
+	# 		fuel_consumption_factor = 0.05
+	# 	}
 					
 		
-		path = {
-			leads_to_tech = aviation_fuel2 
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = aviation_fuel2 
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 2
-		start_year = 1937
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 3 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1937
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 5 y = 3 }
+	# 	}
 		
-		categories = {
-			generic
-			industry
-			synth_resources
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 	}
 		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				tag = USA
-				factor = 0.5
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0.25
-			}
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 30
-			}	
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 		modifier = {
+	# 			tag = USA
+	# 			factor = 0.5
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.25
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 30
+	# 		}	
 
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 30
-			}
-		}	
-	}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 30
+	# 		}
+	# 	}	
+	# }
 
-	aviation_fuel2 = {
+	# aviation_fuel2 = {
 
-		air_fuel_consumption_factor = 0.05
+	# 	air_fuel_consumption_factor = 0.05
 		
-		category_fighter = {
-			maximum_speed = 0.04
-			air_agility = 0.04
-			fuel_consumption_factor = 0.05
-		}
-		category_heavy_fighter = {
-			maximum_speed = 0.04
-			air_agility = 0.04
-			fuel_consumption_factor = 0.05
-		}
+	# 	category_fighter = {
+	# 		maximum_speed = 0.04
+	# 		air_agility = 0.04
+	# 		fuel_consumption_factor = 0.05
+	# 	}
+	# 	category_heavy_fighter = {
+	# 		maximum_speed = 0.04
+	# 		air_agility = 0.04
+	# 		fuel_consumption_factor = 0.05
+	# 	}
 					
 	
-		path = {
-			leads_to_tech = aviation_fuel3 
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = aviation_fuel3 
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 2
-		start_year = 1939
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 5 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1939
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 5 y = 5 }
+	# 	}
 		
-		categories = {
-			generic
-			industry
-			synth_resources
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 	}
 		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				tag = USA
-				factor = 0.5
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0.25
-			}
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 30
-			}	
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 		modifier = {
+	# 			tag = USA
+	# 			factor = 0.5
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.25
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 30
+	# 		}	
 
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 30
-			}
-		}	
-	}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 30
+	# 		}
+	# 	}	
+	# }
 	
-	aviation_fuel3 = {
+	# aviation_fuel3 = {
 
-		air_fuel_consumption_factor = 0.10
+	# 	air_fuel_consumption_factor = 0.10
 		
-		category_fighter = {
-			maximum_speed = 0.04
-			air_agility = 0.04
-			fuel_consumption_factor = 0.05
-		}
-		category_heavy_fighter = {
-			maximum_speed = 0.04
-			air_agility = 0.04
-			fuel_consumption_factor = 0.05
-		}
+	# 	category_fighter = {
+	# 		maximum_speed = 0.04
+	# 		air_agility = 0.04
+	# 		fuel_consumption_factor = 0.05
+	# 	}
+	# 	category_heavy_fighter = {
+	# 		maximum_speed = 0.04
+	# 		air_agility = 0.04
+	# 		fuel_consumption_factor = 0.05
+	# 	}
 					
 
-		path = {
-			leads_to_tech = aviation_fuel4 
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = water_methanol 
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = aviation_fuel4 
+	# 		research_cost_coeff = 1
+	# 	}
+	# 	path = {
+	# 		leads_to_tech = water_methanol 
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 2
-		start_year = 1941
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 7 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1941
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 5 y = 7 }
+	# 	}
 		
-		categories = {
-			generic
-			industry
-			synth_resources
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 	}
 		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				tag = USA
-				factor = 0.5
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0.25
-			}
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 30
-			}	
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 		modifier = {
+	# 			tag = USA
+	# 			factor = 0.5
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.25
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 30
+	# 		}	
 
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 30
-			}
-		}	
-	}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 30
+	# 		}
+	# 	}	
+	# }
 
-	aviation_fuel4 = {
+	# aviation_fuel4 = {
 
-		air_fuel_consumption_factor = 0.10
+	# 	air_fuel_consumption_factor = 0.10
 		
-		category_fighter = {
-			maximum_speed = 0.06
-			air_agility = 0.06
-			fuel_consumption_factor = 0.05
-		}
-		category_heavy_fighter = {
-			maximum_speed = 0.06
-			air_agility = 0.06
-			fuel_consumption_factor = 0.05
-		}
+	# 	category_fighter = {
+	# 		maximum_speed = 0.06
+	# 		air_agility = 0.06
+	# 		fuel_consumption_factor = 0.05
+	# 	}
+	# 	category_heavy_fighter = {
+	# 		maximum_speed = 0.06
+	# 		air_agility = 0.06
+	# 		fuel_consumption_factor = 0.05
+	# 	}
 					
-		path = {
-			leads_to_tech = aviation_fuel5 
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = aviation_fuel5 
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 2
-		start_year = 1943
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 9 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1943
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 5 y = 9 }
+	# 	}
 		
-		categories = {
-			generic
-			industry
-			synth_resources
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 	}
 		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				tag = USA
-				factor = 0.5
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0.25
-			}
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 30
-			}	
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 		modifier = {
+	# 			tag = USA
+	# 			factor = 0.5
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.25
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 30
+	# 		}	
 
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 30
-			}
-		}	
-	}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 30
+	# 		}
+	# 	}	
+	# }
 
-	aviation_fuel5 = {
+	# aviation_fuel5 = {
 
-		air_fuel_consumption_factor = 0.15
+	# 	air_fuel_consumption_factor = 0.15
 		
-		category_fighter = {
-			maximum_speed = 0.06
-			air_agility = 0.06
-			fuel_consumption_factor = 0.05
-		}
-		category_heavy_fighter = {
-			maximum_speed = 0.06
-			air_agility = 0.06
-			fuel_consumption_factor = 0.05
-		}
+	# 	category_fighter = {
+	# 		maximum_speed = 0.06
+	# 		air_agility = 0.06
+	# 		fuel_consumption_factor = 0.05
+	# 	}
+	# 	category_heavy_fighter = {
+	# 		maximum_speed = 0.06
+	# 		air_agility = 0.06
+	# 		fuel_consumption_factor = 0.05
+	# 	}
 					
-		path = {
-			leads_to_tech = aviation_fuel5 
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = aviation_fuel5 
+	# 		research_cost_coeff = 1
+	# 	}
 		
-		research_cost = 2
-		start_year = 1945
-		folder = {
-			name = industry_folder
-			position = { x = 5 y = 11 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1945
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 5 y = 11 }
+	# 	}
 		
-		categories = {
-			generic
-			industry
-			synth_resources
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 	}
 		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				tag = USA
-				factor = 0.5
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0.25
-			}
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 30
-			}	
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 		modifier = {
+	# 			tag = USA
+	# 			factor = 0.5
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.25
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 30
+	# 		}	
 
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 30
-			}
-		}	
-	}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 30
+	# 		}
+	# 	}	
+	# }
 
-	water_methanol = {
+	# water_methanol = {
 
-		category_fighter = {
-			maximum_speed = 0.08
-			air_agility = 0.08
-			air_defence = -0.15
-			reliability = -0.15
-		}
-		category_heavy_fighter = {
-			maximum_speed = 0.08
-			air_agility = 0.08
-			air_defence = -0.15
-			reliability = -0.15
-		}
+	# 	category_fighter = {
+	# 		maximum_speed = 0.08
+	# 		air_agility = 0.08
+	# 		air_defence = -0.15
+	# 		reliability = -0.15
+	# 	}
+	# 	category_heavy_fighter = {
+	# 		maximum_speed = 0.08
+	# 		air_agility = 0.08
+	# 		air_defence = -0.15
+	# 		reliability = -0.15
+	# 	}
 					
 		
-		research_cost = 2
-		start_year = 1944
-		folder = {
-			name = industry_folder
-			position = { x = 6 y = 10 }
-		}
+	# 	research_cost = 2
+	# 	start_year = 1944
+	# 	folder = {
+	# 		name = industry_folder
+	# 		position = { x = 6 y = 10 }
+	# 	}
 		
-		categories = {
-			generic
-			industry
-			synth_resources
-		}
+	# 	categories = {
+	# 		industry
+	# 		synth_resources
+	# 	}
 		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				tag = USA
-				factor = 0.5
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-			modifier = {
-				is_major = no
-				factor = 0.25
-			}
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_military_factories > 30
-			}	
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 		modifier = {
+	# 			tag = USA
+	# 			factor = 0.5
+	# 		}
+	# 		modifier = {
+	# 			has_war = yes
+	# 			factor = 2
+	# 		}
+	# 		modifier = {
+	# 			is_major = no
+	# 			factor = 0.25
+	# 		}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_military_factories > 30
+	# 		}	
 
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 10
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 20
-			}	
-			modifier = {
-				factor = 1.5
-				num_of_naval_factories > 30
-			}
-		}	
-	}
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 10
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 20
+	# 		}	
+	# 		modifier = {
+	# 			factor = 1.5
+	# 			num_of_naval_factories > 30
+	# 		}
+	# 	}	
+	# }
 
 	synth_oil_experiments = {
 
@@ -1821,7 +1780,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1848,7 +1806,15 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				oil > 30
-			}			
+			}	
+			modifier = {
+				factor = 1200
+				OR = {
+					tag = SIA
+					tag = BRA
+					tag = GER
+				}
+			}
 		}
 		
 		ai_research_weights = {
@@ -1875,7 +1841,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1930,7 +1895,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -1990,7 +1954,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -2040,7 +2003,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -2090,7 +2052,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -2116,7 +2077,15 @@ technologies = {
 			modifier = {
 				factor = 0.5
 				rubber > 30
-			}			
+			}	
+			modifier = {
+				factor = 1200
+				OR = {
+					tag = SIA
+					tag = BRA
+					tag = GER
+				}
+			}		
 		}
 		
 		ai_research_weights = {
@@ -2150,7 +2119,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -2210,7 +2178,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -2265,7 +2232,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			industry
 			synth_resources
 		}
@@ -2321,7 +2287,6 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1936
 		categories = {
-			generic
 			industry
 			construction_tech
 		}
@@ -2338,6 +2303,11 @@ technologies = {
 				factor = 5
 				date > "1937.1.1"
 			}
+
+			modifier = {
+				factor = 1200
+				tag = SOV
+			}
 		}
 	}
 
@@ -2346,7 +2316,7 @@ technologies = {
 		local_resources_factor = 0.10
 		enable_building = {
 			building = steel_refinery
-			level = 3
+			level = 1
 		}
 		
 		path = {
@@ -2356,7 +2326,6 @@ technologies = {
 		research_cost = 2
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 			excavation_tech
@@ -2393,6 +2362,10 @@ technologies = {
 					chromium > 8
 				}
 			}
+			modifier = {
+				factor = 1200
+				tag = SOV
+			}
 		}
 	}
 	
@@ -2424,7 +2397,6 @@ technologies = {
 		start_year = 1938
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 		}
@@ -2463,7 +2435,6 @@ technologies = {
 		start_year = 1938
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 			excavation_tech
@@ -2532,7 +2503,6 @@ technologies = {
 		start_year = 1940
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 		}
@@ -2587,7 +2557,6 @@ technologies = {
 		start_year = 1940
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 			excavation_tech
@@ -2655,7 +2624,6 @@ technologies = {
 		start_year = 1942
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 		}
@@ -2704,7 +2672,6 @@ technologies = {
 		start_year = 1942
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 			excavation_tech
@@ -2763,7 +2730,6 @@ technologies = {
 		start_year = 1944
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 		}
@@ -2808,7 +2774,6 @@ technologies = {
 		start_year = 1944
 		
 		categories = {
-			generic
 			industry
 			construction_tech
 			excavation_tech

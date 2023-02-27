@@ -11,7 +11,7 @@ if = {
 
 add_ideas = {
 	limited_conscription
-	stupid_ai
+	#stupid_ai
 }
 # IF = {
 # 	limit = { has_dlc = "No Step Back" }
@@ -74,7 +74,7 @@ if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
 		basic_torpedo = 1
-		submarine_mine_laying = 1
+		#submarine_mine_laying = 1
 		early_ship_hull_submarine = 1
 	}
 }

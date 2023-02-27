@@ -22,7 +22,6 @@ characters={
 	}
 	BRA_mascarenhas_de_morais={
 		name="Mascarenhas de Morais"
-		
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_south_america_generic_land_5.dds"

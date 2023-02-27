@@ -7,6 +7,7 @@ state=
 	state_category = town
 	history={
 		set_state_flag = ASN_ALLIES_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		owner = PHI
 		buildings = {
 			infrastructure = 5

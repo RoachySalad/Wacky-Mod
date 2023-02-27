@@ -1,0 +1,48 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_BRA_tanks"
+		textureFile = "gfx/interface/goals/bra/snake_armor4.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_arms"
+		textureFile = "gfx/interface/goals/bra/bra_usa_arms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_guns"
+		textureFile = "gfx/interface/goals/bra/gun_imports.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_republic"
+		textureFile = "gfx/interface/goals/bra/second_brazilian_republic.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_coffee"
+		textureFile = "gfx/interface/goals/bra/coronelismo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_mech"
+		textureFile = "gfx/interface/goals/bra/copacabana.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_research"
+		textureFile = "gfx/interface/goals/bra/keep_tenetes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_constituion"
+		textureFile = "gfx/interface/goals/bra/new_constitution2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_navy"
+		textureFile = "gfx/interface/goals/bra/minas_geraes9.dds"
+	}
+
+}

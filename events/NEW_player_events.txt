@@ -1,0 +1,229 @@
+###########################
+# New Player Events
+###########################
+
+add_namespace = newPlayer
+
+# Combat Width and Templates
+news_event = {
+	id = newPlayer.1
+	title = newPlayer.1.t
+	desc = newPlayer.1.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Navy
+news_event = {
+	id = newPlayer.2
+	title = newPlayer.2.t
+	desc = newPlayer.2.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Tanks
+news_event = {
+	id = newPlayer.3
+	title = newPlayer.3.t
+	desc = newPlayer.3.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Air
+news_event = {
+	id = newPlayer.4
+	title = newPlayer.4.t
+	desc = newPlayer.4.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# China Waves
+news_event = {
+	id = newPlayer.5
+	title = newPlayer.5.t
+	desc = newPlayer.5.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Winter War Finland
+news_event = {
+	id = newPlayer.6
+	title = newPlayer.6.t
+	desc = newPlayer.6.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+# Winter War Conditions
+news_event = {
+	id = newPlayer.12
+	title = newPlayer.12.t
+	desc = newPlayer.12.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Winter War Soviets
+news_event = {
+	id = newPlayer.7
+	title = newPlayer.7.t
+	desc = newPlayer.7.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Hungary Getting Tanks
+news_event = {
+	id = newPlayer.8
+	title = newPlayer.8.t
+	desc = newPlayer.8.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Mountain Gun
+news_event = {
+	id = newPlayer.9
+	title = newPlayer.9.t
+	desc = newPlayer.9.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Spanish Civil War
+news_event = {
+	id = newPlayer.10
+	title = newPlayer.10.t
+	desc = newPlayer.10.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Bulgarian Rearmament
+news_event = {
+	id = newPlayer.11
+	title = newPlayer.11.t
+	desc = newPlayer.11.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# French Paths
+news_event = {
+	id = newPlayer.13
+	title = newPlayer.13.t
+	desc = newPlayer.13.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# French Cap
+news_event = {
+	id = newPlayer.14
+	title = newPlayer.14.t
+	desc = newPlayer.14.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}
+
+# Free France
+news_event = {
+	id = newPlayer.15
+	title = newPlayer.15.t
+	desc = newPlayer.15.d
+	picture = GFX_news_event_001
+	
+	is_triggered_only = yes
+	major = no
+	
+	option = {
+		name = startingevent.999.a
+	}
+}

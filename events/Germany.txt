@@ -4,25 +4,25 @@
 
 add_namespace = germany
 
-country_event = {
-	id = germany.mefoair
-	title = germany.mefoair.t
-	desc = germany.mefoair.d
-	picture = GFX_report_event_german_speech
+# country_event = {
+# 	id = germany.mefoair
+# 	title = germany.mefoair.t
+# 	desc = germany.mefoair.d
+# 	picture = GFX_report_event_german_speech
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
- 	immediate = {		
- 	}
+#  	immediate = {		
+#  	}
 
-	option = {
-		name = germany.mefoair.a
-		add_timed_idea = { idea = GER_mefo_air days = 1340 }
-	}
-}
+# 	option = {
+# 		name = germany.mefoair.a
+# 		add_timed_idea = { idea = GER_mefo_air days = 1340 }
+# 	}
+# }
 
 
 # Austrian Anschluss Completed
@@ -5757,6 +5757,9 @@ country_event = {
 	option = {
 		name = germany.501.b
 		add_ideas = GER_hjalmar_schacht
+		ai_chance = {
+			factor = 100
+		}
 	}
 }
 
@@ -5821,5 +5824,21 @@ country_event = {
 
 	option = {
 		name = germany.2002.a
+	}
+}
+
+country_event = {
+	id = germany.2003
+	title = germany.2003.t
+	desc = germany.2003.d
+	picture = GFX_report_event_generic_sign_treaty3
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+
+	option = {
+		name = germany.2003.a
 	}
 }

@@ -15,6 +15,7 @@ state={
 
 	history={
 		set_state_flag = RAJ_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		owner = MAL
 		victory_points = {
 			12299 10

@@ -171,7 +171,7 @@ ideas = {
 			anti_tank = {
 				hard_attack = 0.05 instant = yes
 				}
-			heavy_artillery = {
+			heavy_artillery_equipment = {
 				soft_attack = 0.05 instant = yes
 				}
 			heavy_anti_tank_equipment = {
@@ -231,7 +231,7 @@ ideas = {
 
 			picture = man_militarism
 			
-			modifier =
+			modifier = {
 				training_time_army_factor = 0.10
 				attrition = -0.1
 				supply_consumption_factor = -0.05

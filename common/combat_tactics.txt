@@ -774,6 +774,7 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 		tag = JAP
 		is_attacker = yes
 		phase = no
+		NOT = { has_combat_modifier = amphibious_attack }
 	}
 	
 	active = yes

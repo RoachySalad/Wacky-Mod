@@ -71,7 +71,9 @@ focus_tree = {
 		relative_position_id = BRA_dissolve_the_legislature
 
 		cost = 10
-
+		ai_will_do = {
+			factor = 10
+		}
 		completion_reward = {
 			hidden_effect = {
 				BRA_corruption_level_up = yes
@@ -1877,6 +1879,8 @@ focus_tree = {
 
 		cost = 10
 
+		
+
 		ai_will_do = {
 			factor = 8
 		}
@@ -1933,6 +1937,7 @@ focus_tree = {
 		}
 
 
+
 		completion_reward = {
 			add_ideas = { USA_sherman }
 		}
@@ -1949,13 +1954,15 @@ focus_tree = {
 
 		cost = 10
 
+
+
 		ai_will_do = {
 			factor = 8
 		}
 
 		completion_reward = {
 			set_technology = {
-				usa_heavy_tank_2 = 1
+			usa_heavy_tank_2 = 1
 			}
 		}
 	}
@@ -1999,7 +2006,6 @@ focus_tree = {
 		relative_position_id = BRA_learn_from_montgomery
 
 		cost = 10
-
 
 		ai_will_do = {
 			factor = 8

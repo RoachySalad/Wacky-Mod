@@ -32,6 +32,7 @@ USA_cash_and_carry = {
 			has_idea = USA_cash_and_carry_programme
 		}
 
+
 		days_remove = -1
 
 		complete_effect = {
@@ -54,6 +55,7 @@ USA_cash_and_carry = {
 		}
 	}
 	USA_cancel_gun_sales = {
+
 		allowed = {
 			original_tag = USA
 		}
@@ -106,6 +108,7 @@ USA_cash_and_carry = {
 		days_remove = -1
 
 		complete_effect = {
+
 			if = {
 				limit = {
 					USA = {
@@ -166,6 +169,7 @@ USA_cash_and_carry = {
 			original_tag = USA
 		}
 
+
 		icon = GFX_decision_generic_merge_plant_materiel
 
 		available = {
@@ -177,6 +181,7 @@ USA_cash_and_carry = {
 		days_remove = -1
 
 		complete_effect = {
+
 			if = {
 				limit = {
 					USA = {
@@ -250,6 +255,7 @@ USA_cash_and_carry = {
 		days_remove = -1
 
 		complete_effect = {
+
 			if = {
 				limit = {
 					USA = {
@@ -268,22 +274,28 @@ USA_cash_and_carry = {
 			custom_effect_tooltip = USA_sells_mech
 		}
 	}
+
 	USA_cancel_mechanized_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
+
 		icon = GFX_decision_generic_break_treaty
 
 		available = {
+			
 			has_war = no
+			
 		}
+
 		visible = {
 			has_decision = USA_allow_mechanized_sales
 		}
 		fire_only_once = no
 		cost = 0
 		complete_effect = {
+
 			remove_decision = USA_allow_mechanized_sales
 		}
         remove_effect = {
@@ -297,6 +309,7 @@ USA_cash_and_carry = {
 					clr_country_flag = usa_sells_mech
 				}
 			}
+			
 			else = {
 				USA = {
 					set_country_flag = usa_sells_mech
@@ -304,12 +317,14 @@ USA_cash_and_carry = {
 			}
 			custom_effect_tooltip = USA_sells_mech
 		}
+	
 	}	
 	USA_allow_arty_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
+		
 		icon = GFX_decision_generic_ignite_civil_war
 
 		available = {
@@ -321,6 +336,7 @@ USA_cash_and_carry = {
 		days_remove = -1
 
 		complete_effect = {
+		
 			if = {
 				limit = {
 					USA = {
@@ -336,25 +352,32 @@ USA_cash_and_carry = {
 					set_country_flag = usa_sells_arty
 				}
 			}
+		
 			custom_effect_tooltip = USA_sells_arty
 		}
 	}
+
 	USA_cancel_arty_sales = {
 		allowed = {
 			original_tag = USA
 		}
 
+	
 		icon = GFX_decision_generic_break_treaty
 
 		available = {
+		
 			has_war = no
+		
 		}
+
 		visible = {
 			has_decision = USA_allow_arty_sales
 		}
 		fire_only_once = no
 		cost = 0
 		complete_effect = {
+		
 			remove_decision = USA_allow_arty_sales
 		}
         remove_effect = {
@@ -373,10 +396,13 @@ USA_cash_and_carry = {
 					set_country_flag = usa_sells_arty
 				}
 			}
+		
 			custom_effect_tooltip = USA_sells_arty
-		}
-	}	
-}
+				}
+			}
+		}	
+
+
 USA_lend_lease_act = {
 	
 	send_equipment_to_ENG = {
@@ -1278,12 +1304,11 @@ USA_lend_lease_act = {
 				    type = artillery_equipment
 				    amount = 500
 				    producer = USA
+					}
 				}
 			}
 		}
 	}
-
-}
 
 USA_department_of_defense = {
 	
@@ -1516,11 +1541,11 @@ USA_department_of_defense = {
 				create_unit = {
 				    division = "name = \"American Desert Corps\" division_template = \"American Desert Corps\" start_experience_factor = 0.25 start_equipment_factor = 0 start_manpower_factor = 0"
 				    owner = USA
+					}
 				}
 			}
 		}
-	}
-
+	
 	USA_operation_husky = {
 
 		icon = GFX_decision_generic_operation
@@ -1626,7 +1651,6 @@ USA_department_of_defense = {
 	}
 
 }
-
 war_measures = {
 
 	USA_homeland_defense = {
@@ -1883,6 +1907,85 @@ operations = {
 
 		remove_effect = {
 			SOV = {add_offsite_building = { type = arms_factory level = 30 }}
+		}
+	}
+	USA_annex_mex = {
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			MEX = {is_ai = YES}
+			OR = {
+				JAP = { has_war_with = ENG }
+				GER = { has_war_with = SOV }
+				USA = { has_war = yes }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = { target = MEX transfer_troops = yes }
+			484 = { set_compliance = 60 }
+			483 = { set_compliance = 60 }
+			482 = { set_compliance = 60 }
+			481 = { set_compliance = 60 }
+			479 = { set_compliance = 60 }
+			478 = { set_compliance = 60 }
+			485 = { set_compliance = 60 }
+			277 = { set_compliance = 60 }
+			477 = { set_compliance = 60 }
+			480 = { set_compliance = 60 }
+			476 = { set_compliance = 60 }
+			475 = { set_compliance = 60 }
+			474 = { set_compliance = 60 }
+		}
+	}
+	USA_annex_bra = {
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			BRA = {is_ai = YES}
+			OR = {
+				JAP = { has_war_with = ENG }
+				GER = { has_war_with = SOV }
+				USA = { has_war = yes }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			always = yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+			annex_country = { target = BRA transfer_troops = yes }
+			495 = { set_compliance = 60 }
+			497 = { set_compliance = 60 }
+			498 = { set_compliance = 60 }
+			505 = { set_compliance = 60 }
+			499 = { set_compliance = 60 }
+			504 = { set_compliance = 60 }
+			501 = { set_compliance = 60 }
+			500 = { set_compliance = 60 }
+			503 = { set_compliance = 60 }
+			502 = { set_compliance = 60 }
+			280 = { set_compliance = 60 }
+			496 = { set_compliance = 60 }
 		}
 	}
 }
@@ -3457,7 +3560,7 @@ USA_propaganda_campaigns = {
 		cost = 25
 
 		modifier = {
-			industrial_capacity_dockyard = 0.1
+			industrial_capacity_dockyard = 0.15
 		}
 
 		complete_effect = {

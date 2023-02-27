@@ -31,7 +31,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			light_fighter
 			air_equipment
@@ -53,7 +52,6 @@ technologies = {
 		start_year = 1933
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -85,7 +83,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			light_fighter
 			air_equipment
@@ -121,7 +118,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -156,7 +152,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			light_fighter
 			air_equipment
@@ -192,7 +187,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -224,7 +218,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			light_fighter
 			air_equipment
@@ -256,7 +249,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -287,7 +279,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			light_fighter
 			air_equipment
@@ -319,7 +310,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -350,7 +340,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			jet_technology
 		}
@@ -372,7 +361,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			jet_technology
 		}
@@ -407,7 +395,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			cas_bomber
 			air_equipment
@@ -425,7 +412,6 @@ technologies = {
 		start_year = 1936
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -456,7 +442,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			cas_bomber
 			air_equipment
@@ -474,7 +459,6 @@ technologies = {
 		start_year = 1939
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -504,7 +488,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			cas_bomber
 			air_equipment
@@ -522,7 +505,6 @@ technologies = {
 		start_year = 1942
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -552,7 +534,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			light_air
 			cas_bomber
 			air_equipment
@@ -570,7 +551,6 @@ technologies = {
 		start_year = 1945
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -601,7 +581,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			naval_bomber
 			air_equipment
@@ -628,7 +607,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 			naval_bomber
@@ -655,7 +633,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			naval_bomber
 			air_equipment
@@ -682,7 +659,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_air
 			naval_bomber
 			air_equipment
@@ -700,7 +676,6 @@ technologies = {
 		start_year = 1945
 		
 		categories = {
-			generic
 			naval_air
 			air_equipment
 		}
@@ -729,7 +704,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			tactical_bomber
 			air_equipment
@@ -759,7 +733,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			air_equipment
 			cat_heavy_fighter
@@ -789,7 +762,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			air_equipment
 			cat_heavy_fighter
@@ -819,7 +791,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			air_equipment
 			cat_heavy_fighter
@@ -844,7 +815,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			air_equipment
 			cat_heavy_fighter
@@ -875,7 +845,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			tactical_bomber
 			air_equipment
@@ -902,7 +871,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			tactical_bomber
 			air_equipment
@@ -929,7 +897,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			tactical_bomber
 			air_equipment
@@ -956,7 +923,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			tactical_bomber
 			air_equipment
@@ -1002,7 +968,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			medium_air
 			jet_technology
 			tactical_bomber
@@ -1033,7 +998,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
@@ -1060,7 +1024,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
@@ -1087,7 +1050,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
@@ -1114,7 +1076,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			heavy_air
 			air_equipment
 			cat_strategic_bomber
@@ -1141,7 +1102,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			heavy_air
 			jet_technology
 			cat_strategic_bomber
@@ -1203,7 +1163,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_bomber
 			air_equipment
 		}
@@ -1229,7 +1188,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			air_equipment
 			naval_bomber
 		}
@@ -1250,7 +1208,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			naval_bomber
 			air_equipment
 		}
@@ -1266,7 +1223,6 @@ technologies = {
 	}
 	
 	hs132 = {
-
 		enable_equipments = {
 			jet_CAS_equipment
 		}
@@ -1284,7 +1240,6 @@ technologies = {
 		start_year = 1936
 		
 		categories = {
-			generic
 			medium_air
 			air_equipment
 			cat_scout_plane
@@ -1303,7 +1258,6 @@ technologies = {
 		start_year = 1939
 		
 		categories = {
-			generic
 			medium_air
 			air_equipment
 			cat_scout_plane

@@ -2899,10 +2899,7 @@ focus_tree = {
 	focus = {
 		id = SPA_italian_shipbuilding_expertise
 		available = {
-			AND = {
-				is_in_faction_with = ITA
-				has_tech = basic_ship_hull_heavy
-			}
+			is_in_faction_with = ITA
 		}
 		bypass = {
 		}
@@ -2923,35 +2920,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = bb_tech
-			}
-			create_equipment_variant = {
-				name = "Reina Victoria Eugenia"
-				type = ship_hull_heavy_2
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_heavy_battery_twin_5
-					fixed_ship_anti_air_slot = ship_anti_air_2
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-					fixed_ship_radar_slot = ship_radar_1
-					fixed_ship_engine_slot = heavy_ship_engine_4
-					fixed_ship_secondaries_slot = dp_ship_secondaries
-					fixed_ship_armor_slot = ship_armor_bb_2
-					front_1_custom_slot = ship_heavy_battery_triple_4
-					mid_1_custom_slot = dp_ship_secondaries
-					mid_2_custom_slot = ship_airplane_launcher_1
-					mid_3_custom_slot = ship_anti_air_2
-					rear_1_custom_slot = ship_heavy_battery_triple_4
-				}
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_heavy_2
-					creator = "SPA"
-					version_name = "Reina Victoria Eugenia"
-				}
-				requested_factories = 5
-				progress = 0.75
-				amount = 1 #Tooltip purposes
 			}
 		}
 	}
@@ -3259,6 +3227,45 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = SPA_expand_the_axis_gold_trade
+		}
+
+		completion_reward = {
+			hidden_effect = {
+				GER = {
+					if = { 
+						limit = {
+							has_game_rule = {
+								rule = allow_voice_lines
+								option = ENABLED
+							}
+						}
+					scoped_sound_effect = "20000dollars"
+					}
+					country_event = {id = germany.2003} 
+				}
+				SPA = {
+					if = { 
+						limit = {
+							has_game_rule = {
+								rule = allow_voice_lines
+								option = ENABLED
+							}
+						}
+					scoped_sound_effect = "20000dollars"
+					}
+				}
+				SPR = {
+					if = { 
+						limit = {
+							has_game_rule = {
+								rule = allow_voice_lines
+								option = ENABLED
+							}
+						}
+					scoped_sound_effect = "20000dollars"
+					}
+				}
+			}
 		}
 	}
 
@@ -4798,14 +4805,6 @@ focus_tree = {
 	focus = {
 		id = SPA_the_plan_imperial
 		available = {
-			SPR = {
-				AND = {
-					has_completed_focus = SPA_unite_iberia
-					has_navy_size = {
-					    size < 51
-					}
-				}
-			}
 		}
 		bypass = {
 		}
@@ -4833,18 +4832,6 @@ focus_tree = {
 				bonus = 0.5
 				uses = 1
 				category = cv_tech
-			}
-			add_tech_bonus = {
-				name = SPA_glory_and_wealth_on_the_sea_lanes
-				ahead_reduction = 0.5
-				uses = 2
-				category = cl_tech
-			}
-			add_tech_bonus = {
-				name = SPA_glory_and_wealth_on_the_sea_lanes
-				ahead_reduction = 0.5
-				uses = 2
-				category = dd_tech
 			}
 		}
 	}

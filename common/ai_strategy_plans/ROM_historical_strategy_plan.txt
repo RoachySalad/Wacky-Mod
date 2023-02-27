@@ -46,6 +46,7 @@ ROM_historical = {
 		ROM_agrarian_reform
 		ROM_danubian_transport_network
 		ROM_army_maneuvers
+		ROM_expand_the_air_force
 		ROM_army_war_college	
 		ROM_malaxa
 		ROM_expand_the_galati_shipyards
@@ -68,6 +69,9 @@ ROM_historical = {
 		ROM_modern_destroyers
 		ROM_the_maresal
 		ROM_local_development
+		ROM_air_superiority
+		ROM_iar_80
+		ROM_cas
 	}
 
 	research = {

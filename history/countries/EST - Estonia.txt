@@ -6,7 +6,7 @@ set_research_slots = 3
 
 add_ideas = {
 	limited_conscription
-	stupid_ai
+	#stupid_ai
 }
 # IF = {
 # 	limit = { has_dlc = "No Step Back" }
@@ -15,7 +15,7 @@ add_ideas = {
 # 		EST_vaps_idea_1
 # 	}
 # }
-
+recruit_character = EST_Quak
 recruit_character = EST_konstantin_pats
 recruit_character = EST_artur_sirk
 recruit_character = EST_johannes_kabin
