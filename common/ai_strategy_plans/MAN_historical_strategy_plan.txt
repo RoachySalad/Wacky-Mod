@@ -2,6 +2,52 @@ Manchuko_Historical = {
     enable = {
         original_tag = MAN
     }
+
+	ai_national_focuses = {
+		MAN_second_five_plan
+		MAN_meeting_of_the_gac
+		MAN_crush_the_bandits
+		MAN_5_year_plan
+		MAN_zaibatsu_alliance
+		MAN_expand_the_industrial_centres
+		MAN_forced_urbanisation
+		MAN_expand_the_civilian_industry
+		MAN_textile_industry_investments
+		MAN_expand_the_mukden_arsenal
+		MAN_establish_the_daqing_arsenal
+		MAN_industrial_heart
+		MAN_forced_collectivisation
+		MAN_increase_soy_production
+		MAN_expand_opium_plantations
+		MAN_supply_empire
+		MAN_expand_the_mines
+		MAN_rare_metals_expansion
+		MAN_increase_refining_capacity
+		MAN_petroleum_investments
+		MAN_showa_steel
+		MAN_port_expansion
+		MAN_expand_the_railways
+		MAN_national_works
+		MAN_expand_eastern_railways
+		MAN_national_defence_state
+		MAN_yakuza_alliance
+		MAN_emergency_labour_act
+		MAN_expand_the_workforce
+		MAN_manchurian_passage
+		MAN_invite_settlers
+		MAN_alliance_with_kwantung
+		MAN_vassalise_meng
+		MAN_restore_order
+		MAN_invite_settlers
+		MAN_land_grants
+		MAN_encourage_experts
+		MAN_army_settlements
+		MAN_follow_the_japanese_model
+		MAN_japanese_officers
+		MAN_embrace_bushido
+		MAN_japanese_warfare
+	}
+
     ai_strategy = {
 		type = prepare_for_war
 		id = CHI

@@ -346,6 +346,63 @@ ideas = {
 				production_speed_dockyard_factor = 0.05
 			}
 		}
+
+		FRA_national_spirit = {
+			picture = chi_hyper_inflation2
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		FRA_raise_taxes1 = {
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.1
+			}
+		}
+
+		FRA_democratic_drift ={
+			picture = generic_foreign_capital
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.5
+			}
+		}
+	
 		FRA_market_dynamism = {
 			
 			allowed = {
@@ -1448,6 +1505,7 @@ ideas = {
 				max_planning = 0.25
 				planning_speed = -0.25
 				lend_lease_tension = 1000
+				conversion_cost_civ_to_mil_factor = 10
 			}
 		}
 
@@ -1675,7 +1733,7 @@ ideas = {
 			}
 		}
 
-		FRA_matignon_agreements = {
+		FRA_matignon_agreements_1 = {
 			picture = generic_production_bonus
 			allowed = {
 				always = no
@@ -1692,6 +1750,130 @@ ideas = {
 				industrial_capacity_dockyard = -0.1
 				stability_factor = 0.1
 				consumer_goods_factor = 0.05
+			}
+		}
+			
+		FRA_matignon_agreements_2 = {
+			picture = generic_production_bonus
+			name = FRA_matignon_agreements_1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				stability_factor = 0.1
+			}
+		}
+		FRA_matignon_agreements_3 = {
+			picture = generic_production_bonus
+			name = FRA_matignon_agreements_1
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		FRA_workers_strikes_1 = {
+			picture = generic_production_bonus
+			name = FRA_workers_strikes_1
+			allowed = {
+				original_tag = FRA
+			}
+	
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+	
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+			}
+		}
+	
+		FRA_workers_strikes_2 = {
+			picture = generic_production_bonus
+			name= FRA_workers_strikes_1
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+	
+			modifier = {
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				stability_factor = -0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+	
+		FRA_compromise_with_the_workers_1 = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+	
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+	
+			modifier = {
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.10
+				stability_factor = 0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+
+
+		FRA_economic_collapse_1 = {
+			picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+		FRA_economic_collapse_2 = {
+			name = FRA_economic_collapse_1
+			picture = usa_great_depression
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
 			}
 		}
 
@@ -2098,6 +2280,5 @@ ideas = {
 			traits = { industrial_concern }
 		}
 	}
-	
-	
+
 }

@@ -246,7 +246,6 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 50
 			add_stability = 0.1
 			add_war_support = 0.2
 		}
@@ -335,7 +334,7 @@
 				ideology = fascism
 				popularity = 0.2
 			}
-			add_timed_idea = { idea = JAP_purged_bureaucracy days = 180 }
+			add_timed_idea = { idea = JAP_purged_bureaucracy days = 365 }
 		}
 	}
 	
@@ -1082,7 +1081,6 @@
 			hidden_effect = { set_technology = { adaptable_armor_designs = 1 } }
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_tank2_prop
-			unlock_decision_tooltip = invent_the_sht
 		}
 	}
 	
@@ -1143,7 +1141,7 @@
 				technology = fighter3
 				technology = fighter4
 			}
-			army_experience = -25
+			air_experience = -25
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_air2_prop
 		}
@@ -1177,7 +1175,7 @@
 				uses = 2
 				category = cas_bomber
 			}
-			army_experience = -25
+			air_experience = -25
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = JAP_air2_prop
 		}
@@ -1500,7 +1498,7 @@
 				target = RAJ
 				type = annex_everything
 			}
-			declare_war_on = {
+			create_wargoal = {
 				target = CAN
 				type = annex_everything
 			}
@@ -1530,7 +1528,7 @@
 					}
 				}	
 			}
-			declare_war_on = {
+			create_wargoal = {
 				target = FRA
 				type = annex_everything
 			}
@@ -2065,7 +2063,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = -3
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2073,33 +2071,25 @@
 
 		completion_reward = {
 			add_timed_idea = { idea = JAP_break_yasuda_idea days = 730 }
+		}
+	}
+	
+	focus = {
+		id = JAP_imperial_bank
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		prerequisite = { focus = JAP_break_yasuda }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_break_yasuda
+
+		available = {
+		}
+
+		completion_reward = {
 			swap_ideas = {
 				add_idea = JAP_zaibatsus_challenged2
 				remove_idea = JAP_zaibatsus_challenged
-			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
-					}
-					free_building_slots = {
-						building = industrial_complex
-						size > 3
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 8
-				add_building_construction = {
-					type = industrial_complex
-					level = 8
-					instant_build = yes
-				}
 			}
 		}
 	}
@@ -2110,7 +2100,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2118,6 +2108,22 @@
 
 		completion_reward = {
 			add_timed_idea = { idea = JAP_break_sumitomo_idea days = 730 }
+		}
+	}
+	
+	focus = {
+		id = JAP_imperial_mines
+		icon = GFX_focus_generic_aluminum
+		prerequisite = { focus = JAP_break_sumitomo }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_break_sumitomo
+
+		available = {
+		}
+
+		completion_reward = {
 			528 = {
 				add_resource = {
 					type = aluminium
@@ -2137,7 +2143,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2145,6 +2151,22 @@
 
 		completion_reward = {
 			add_timed_idea = { idea = JAP_break_mitsui_idea days = 500 }
+		}
+	}
+	
+	focus = {
+		id = JAP_imperial_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = JAP_break_mitsui }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_break_mitsui
+
+		available = {
+		}
+
+		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -2178,7 +2200,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = 3
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2186,6 +2208,22 @@
 
 		completion_reward = {
 			add_timed_idea = { idea = JAP_break_mitsubishi_idea days = 500 }
+		}
+	}
+	
+	focus = {
+		id = JAP_imperial_factories
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = JAP_break_mitsubishi }
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = JAP_break_mitsubishi
+
+		available = {
+		}
+
+		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -2216,13 +2254,13 @@
 	focus = {
 		id = JAP_imperial_economy
 		icon = GFX_goal_JAP_yen
-		prerequisite = { focus = JAP_break_yasuda }
-		prerequisite = { focus = JAP_break_sumitomo }
-		prerequisite = { focus = JAP_break_mitsui }
-		prerequisite = { focus = JAP_break_mitsubishi }
+		prerequisite = { focus = JAP_imperial_factories }
+		prerequisite = { focus = JAP_imperial_mines }
+		prerequisite = { focus = JAP_imperial_bank }
+		prerequisite = { focus = JAP_imperial_dockyards }
 		x = 0
-		y = 2
-		cost = 10
+		y = 3
+		cost = 5
 		relative_position_id = JAP_break_up_big_four
 
 		available = {

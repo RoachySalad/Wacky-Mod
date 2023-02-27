@@ -651,7 +651,6 @@ characters={
 			legacy_id=35
 		}
 	}
-	
 	GER_erich_raeder={
 		name=GER_erich_raeder
 		portraits={
@@ -689,28 +688,6 @@ characters={
 			}
 		}
 	}
-	GER_Henrik_XLVI={
-	        name=ger_Henrik_XLVI
-	        portraits={
-	            army={
-	                small="gfx/interface/ideas/idea_JAP_isoroku_yamamoto.dds"
-	            }
-	            army={
-	                large="gfx/leaders/JAP/Portrait_Japan_Isoroku_Yamamoto.dds"
-	            }
-	        }
-	        
-	        navy_leader={
-	            traits={ naval_lineage Cruiser_Captain fly_swatter craven Gentlemanly }
-	            skill=2
-	            attack_skill=2
-	            defense_skill=1
-	            maneuvering_skill=2
-	            coordination_skill=1
-	            legacy_id=-1
-	        }
-
-	    }
 
 	GER_hermann_boehm={
 		name=GER_hermann_boehm
@@ -990,7 +967,7 @@ characters={
 		name="GER_hjalmar_schacht"
 		portraits={
 			army={
-				small="GFX_idea_GER_hjalmar_schacht"
+				small="GFX_idea_hjalmar_schacht"
 			}
 		}
 		advisor={
@@ -1093,7 +1070,7 @@ characters={
 		name="GER_rudolf_hess"
 		portraits={
 			army={
-				small="GFX_idea_GER_rudolf_hess"
+				small="GFX_idea_rudolf_hess"
 			}
 		}
 		advisor={
@@ -1169,7 +1146,7 @@ characters={
 		name="GER_joachim_von_ribbentrop"
 		portraits={
 			army={
-				small="GFX_idea_GER_joachim_von_ribbentrop"
+				small="GFX_idea_joachim_von_ribbentrop"
 			}
 		}
 		advisor={
@@ -1196,7 +1173,7 @@ characters={
 		name="GER_konstantin_von_neurath"
 		portraits={
 			army={
-				small="GFX_idea_GER_konstantin_von_neurath"
+				small="GFX_idea_konstantin_von_neurath"
 			}
 		}
 		advisor={

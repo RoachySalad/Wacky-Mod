@@ -789,8 +789,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	
-	
 	USA_chester_w._nimitz={
 		name="Chester W. Nimitz"
 		advisor={

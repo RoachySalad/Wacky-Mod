@@ -434,6 +434,8 @@ war_measures = {
 			any_owned_state = {
 				is_controlled_by = ROOT
 				infrastructure > 0
+				NOT = { state = 601 }
+				NOT = { state = 604 }
 				any_neighbor_state = {
 					NOT = { is_fully_controlled_by = ROOT }
 					controller = { has_war_with = CHI }
@@ -458,6 +460,8 @@ war_measures = {
 				limit = {
 					is_controlled_by = CHI
 					infrastructure > 0
+					NOT = { state = 601 }
+					NOT = { state = 604 }
 					any_neighbor_state = {
 						NOT = { is_fully_controlled_by = CHI }
 						controller = { has_war_with = CHI }
@@ -477,7 +481,371 @@ war_measures = {
 			}			
 		}
 	}
+
+	CHI_wave_1 = {
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		available = {
+			tag = CHI
+			has_war_with = JAP
+			casualties > 500000
+			surrender_progress > 0.15
+			is_ai = yes
+			NOT = { JAP = { is_ai = yes } }
+			OR = {
+				has_game_rule = {
+					rule = allow_china_waves
+					option = ONEWAVES
+				}
+				has_game_rule = {
+					rule = allow_china_waves
+					option = TWOWAVES
+				}
+				has_game_rule = {
+					rule = allow_china_waves
+					option = THREEWAVES
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			#CHI = {is_ai = YES}
+		}
+		fire_only_once = yes
+		days_remove = 3
+		priority = 10
+		remove_effect = {
+			division_template = {
+				name = "Juntuan"
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+	
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+	
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+	
+				}
+			}
+			every_state = {
+				limit = {	
+					NOT = {
+						OR = {
+							state = 616
+							state = 756
+						}
+					}
+					AND = {
+						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+						is_controlled_by = CHI
+					}
+									
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+			}
+			add_ideas = CHI_wave1
+		}
+	}
+
+	CHI_wave_2 = {
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		available = {
+			tag = CHI
+			has_war_with = JAP		
+			casualties > 1250000
+			surrender_progress > 0.3
+			is_ai = yes
+			NOT = { JAP = { is_ai = yes } }
+			OR = {
+				has_game_rule = {
+					rule = allow_china_waves
+					option = TWOWAVES
+				}
+				has_game_rule = {
+					rule = allow_china_waves
+					option = THREEWAVES
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			#CHI = {is_ai = YES}
+		}
+		fire_only_once = yes
+		days_remove = 3
+		priority = 9
+		remove_effect = {
+			division_template = {
+				name = "Juntuan"
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+	
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+	
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+	
+				}
+			}
+			every_state = {
+				
+				limit = {	
+					NOT = {
+						OR = {
+							state = 616
+							state = 756
+						}
+					}
+					AND = {
+						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+						is_controlled_by = CHI
+					}
+					
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+			}
+			add_ideas = CHI_wave2
+		}
+	}
+
+	CHI_wave_3 = {
+
+		allowed = {
+			original_tag = CHI
+		}
+
+		available = {
+			tag = CHI
+			has_war_with = JAP
+			OR = {
+				casualties > 3500000
+				surrender_progress > 0.6
+			}
+			is_ai = yes
+			NOT = { JAP = { is_ai = yes } }
+			has_game_rule = {
+				rule = allow_china_waves
+				option = THREEWAVES
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			#CHI = {is_ai = YES}
+		}
+		fire_only_once = yes
+		days_remove = 3
+		priority = 8
+		remove_effect = {
+			division_template = {
+				name = "Juntuan"
+				priority = 0
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+	
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+	
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+	
+				}
+			}
+			every_state = {
+				limit = {
+					NOT = {
+						OR = {
+							state = 616
+							state = 756
+						}
+					}	
+					AND = {
+						any_neighbor_state = { OR = { is_controlled_by = JAP is_controlled_by = MAN is_controlled_by = MEN } }
+						is_controlled_by = CHI
+					}
+					
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+				create_unit = {
+					division = "division_template = \"Juntuan\" start_experience_factor = 0.1 start_equipment_factor = 1.0"
+					owner = CHI
+				}
+			}
+			add_ideas = CHI_wave3
+		}
+	}
 }
+
 
 
 ### #  # ###  #  #  ### ### ###  #   #    #### #   #  ##   ##  #  #  ##  ### ###  ##  #  #
@@ -2658,7 +3026,6 @@ political_actions = {
 		}
 	}
 }
-
 # CHI_xian_incident = {
 # 	CHI_instigate_xian_incident = {
 # 		icon = generic_political_discourse

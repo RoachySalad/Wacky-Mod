@@ -36,7 +36,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -64,7 +63,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -107,7 +105,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -155,7 +152,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -193,7 +189,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -223,9 +218,9 @@ technologies = {
 		category_all_infantry = {
 			soft_attack = 0.05
 		}
-		category_militia = {
-			soft_attack = 0.05
-		}
+
+		
+		
 		path = {
 			leads_to_tech = improved_infantry_weapons_2
 			research_cost_coeff = 1
@@ -239,7 +234,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -272,9 +266,9 @@ technologies = {
 		category_all_infantry = {
 			soft_attack = 0.05
 		}
-		category_militia = {
-			soft_attack = 0.05
-		}
+		
+		
+		
 		path = {
 			leads_to_tech = infantry_at
 			research_cost_coeff = 1
@@ -288,7 +282,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -315,11 +308,11 @@ technologies = {
 	infantry_at = {
 
 		category_all_infantry = {
-			hard_attack = 0.1
+			defense = 0.10
 		}
-		category_militia = {
-			hard_attack = 0.1
-		}
+		
+		
+		
 		path = {
 			leads_to_tech = infantry_at2
 			research_cost_coeff = 1
@@ -333,7 +326,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -360,11 +352,11 @@ technologies = {
 	infantry_at2 = {
 
 		category_all_infantry = {
-			hard_attack = 0.1
+			soft_attack = 0.05
 		}
-		category_militia = {
-			hard_attack = 0.1
-		}
+		
+			
+
 		research_cost = 1.5
 		start_year = 1944
 		folder = {
@@ -373,7 +365,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -420,7 +411,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -446,7 +436,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -467,7 +456,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -504,8 +492,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -547,8 +535,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -586,8 +574,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -642,8 +630,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			marine_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -689,8 +677,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			marine_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -731,8 +719,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			marine_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -781,9 +769,9 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_tech
 			mountaineers_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -810,9 +798,9 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_tech
 			mountaineers_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -833,9 +821,9 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_tech
 			mountaineers_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -876,10 +864,10 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mountaineers_tech
 			marine_tech
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -914,10 +902,10 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mountaineers_tech
 			marine_tech
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -946,10 +934,10 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mountaineers_tech
 			marine_tech
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -981,10 +969,10 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mountaineers_tech
 			marine_tech
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -1015,10 +1003,10 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mountaineers_tech
 			marine_tech
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
@@ -1046,15 +1034,73 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mountaineers_tech
 			marine_tech
 			para_tech
+			cat_special_forces_generic
 		}
 		
 		ai_will_do = {
 			factor = 0.7
 		}
+	}
+
+	jungle_warfare = {
+
+		research_cost = 1
+
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: RAJ_jungle_training_effect
+		marine = {
+			jungle = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			jungle = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
+
+	SWI_mountaineer_paratroopers_tech = { #Unlocked in Swiss Focus SWI_mountaneer_paratroopers
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		paratrooper = {  # CHANGE TOOLTIP WHEN NEEDED
+			mountain = {
+				attack = 0.35
+				defence = 0.1
+				movement = 0.2
+			}
+			hills = {
+				attack = 0.2
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+
 	}
 
 	HUN_light_infantry_tech = {
@@ -1082,6 +1128,49 @@ technologies = {
 		}
 	}
 
+	mountain_warfare = {
+
+		research_cost = 1
+
+		# only from focus!
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: GRE_mountain_training_effect
+		infantry = {
+			mountain = {
+				defence = 0.05
+				movement = 0.05
+			}
+		}
+
+		marine = {
+			mountain = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			mountain = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
+
 	night_vision = {
 
 		land_night_attack = 0.1
@@ -1099,7 +1188,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			night_vision
 		}
 		
@@ -1140,7 +1228,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			night_vision
 		}
 		
@@ -1188,7 +1275,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
@@ -1213,10 +1299,49 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+
+				OR = {
+					tag = CHI
+					tag = PRC
+					tag = XSM
+					tag = SIK
+					tag = GXC
+					tag = SHX
+					tag = YUN
+				}
+			}
+			modifier = {
+				factor = 2
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
 	}
 	
 	support_weapons3 = {
@@ -1241,10 +1366,36 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
 	}
 	
 	support_weapons4 = {
@@ -1261,10 +1412,36 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			infantry_weapons
 		}
 		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
 	}
 	
 	motorised_infantry = {
@@ -1276,6 +1453,10 @@ technologies = {
 
 		enable_equipments = {
 			motorized_equipment_1
+		}
+
+		enable_equipment_modules = {
+			tank_wheeled_suspension
 		}
 
 		on_research_complete_limit = {
@@ -1308,7 +1489,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 		}
@@ -1336,7 +1516,6 @@ technologies = {
 			}
 		}
 	}
-	
 	motorized_rocket_unit = {
 
 		enable_subunits = {
@@ -1359,7 +1538,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mot_rockets
 		}
 	}
@@ -1383,16 +1561,18 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mot_rockets
-			cat_mechanized_equipment
 		}
 	}
-	
+
 	mechanised_infantry = {
 
 		enable_equipments = {
 			mechanized_equipment_1
+		}
+
+		enable_equipment_modules = {
+			tank_half_track_suspension
 		}
 		
 		motorized = {
@@ -1426,7 +1606,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1461,8 +1640,8 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			mot_rockets
+			cat_mechanized_equipment
 		}
 	}
 
@@ -1498,7 +1677,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1520,6 +1698,8 @@ technologies = {
 			amphibious_mechanized_equipment_2
 		}
 
+		
+
 		research_cost = 2
 		start_year = 1943
 		folder = {
@@ -1528,7 +1708,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1554,7 +1733,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1587,7 +1765,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1617,7 +1794,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			infantry_tech
 			cat_mechanized_equipment
@@ -1658,7 +1834,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			armor
 		}
@@ -1692,7 +1867,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			armor
 		}
@@ -1722,7 +1896,6 @@ technologies = {
 		}
 		
 		categories = {
-			generic
 			motorized_equipment
 			armor
 		}
@@ -1741,7 +1914,7 @@ technologies = {
 
 		enable_subunits = {
 			bicycle_battalion
-		}		
+		}
 	}
 	
 	commandos = {
@@ -1782,19 +1955,9 @@ technologies = {
 			arditi
 		}		
 	}
-	militia_tech = {
-		
-		allow = {
-			always = no
-		}
-
-		research_cost = 1
-		start_year = 1936
-
-		enable_subunits = {
-			militia
-		}		
-	}
+	
+	
+	
 	waffen_ss_tech = {
 		
 		allow = {
@@ -1878,7 +2041,7 @@ technologies = {
 		start_year = 1942
 		
 	}
-
+	
 	mechanised_artillery = {
 
 	research_cost = 1
@@ -1892,9 +2055,7 @@ technologies = {
 	enable_subunits = {
 		mech_artillery_brigade
 	}
-
 	}
-	
 	jungle_warfare = {
 
 		research_cost = 1
@@ -2008,6 +2169,56 @@ technologies = {
 
 		enable_subunits = {
 			penal_battalion
+		}
+	}
+
+	######### FROM ITALIAN FOCUS ##########
+	blackshirt_assault_battalion_tech = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			blackshirt_assault_battalion
+		}
+	}
+
+	mountain_warfare_militias_tech = { #Hidden tech showed as part of ITA_grande_rivolta_rurale_ns national spirit
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		militia = {
+			hills = {
+				attack = 0.05 
+				movement = 0.1
+			}
+			mountain = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+	}
+
+	### Improved Irregular Infantry Organization 
+
+	ETH_improved_irregular_infantry_tech = {
+		research_cost = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		irregular_infantry = {
+			max_organisation = 10
+			maximum_speed = 1.25 #TODO_TA for testing only, remove
 		}
 	}
 }

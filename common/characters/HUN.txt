@@ -150,7 +150,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	
 	# Political Advisor
 	HUN_kalman_kanya={
 		name="HUN_kalman_kanya"

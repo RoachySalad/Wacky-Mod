@@ -1,0 +1,68 @@
+RG_armored_division_standard = {
+	set_country_flag = RG_armored_division_standard
+	division_template = {
+			name = "Red Guards Tanks"
+			priority = 2
+			division_names_group = SOV_GTC_01
+			is_locked = yes
+			force_allow_recruiting = yes
+			template_counter = 69
+		regiments = {
+			medium_armor = { x = 0 y = 0 }
+			medium_armor = { x = 0 y = 1 }
+			medium_armor = { x = 0 y = 2 }
+			medium_armor = { x = 0 y = 3 }
+
+			medium_armor = { x = 1 y = 0 }
+			medium_armor = { x = 1 y = 1 }
+			medium_armor = { x = 1 y = 2 }
+
+			mechanized = { x = 2 y = 0 }
+			mechanized = { x = 2 y = 1 }
+			mechanized = { x = 2 y = 2 }
+
+			mechanized = { x = 3 y = 0 }
+			mechanized = { x = 3 y = 1 }
+			mechanized = { x = 3 y = 2 }
+			mechanized = { x = 3 y = 3 }
+
+			medium_tank_destroyer_brigade = { x = 4 y = 0 }
+			medium_tank_destroyer_brigade = { x = 4 y = 1 }
+
+		}
+		support = {
+			logistics_company = { x = 0 y = 0 }
+			logistics_company_mot = { x = 0 y = 1 }
+			light_tank_recon  = { x = 0 y = 2 }
+			light_sp_anti_air_brigade  = { x = 0 y = 3 }
+
+			rg_hq_company = { x = 1 y = 0 }
+			assault_engineer = { x = 1 y = 1 }
+			signal_company = { x = 1 y = 2 }
+			maintenance_company = { x = 1 y = 3 }
+		}
+		division_cap = 0 
+	}
+}
+
+SOV_increase_RG_cap = { 
+	custom_effect_tooltip = SOV_RG_div_cap_2_tt
+	hidden_effect = {
+		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase }
+		set_division_template_cap = { 
+			division_template = "Red Guards Tanks" 
+			division_cap = SOV_RG_division_cap
+		}
+	}
+}
+
+SOV_increase_RG_cap_double = { 
+	custom_effect_tooltip = SOV_RG_div_cap_4_tt
+	hidden_effect = {
+		add_to_variable = { SOV_RG_division_cap = SOV_RG_cap_increase_double }
+		set_division_template_cap = { 
+			division_template = "Red Guards Tanks" 
+			division_cap = SOV_RG_division_cap
+		}
+	}
+}

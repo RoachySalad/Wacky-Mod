@@ -106,18 +106,17 @@ SOV_historical_plan = {
 		SOV_inheritor_of_the_mantle_of_lenin
 		SOV_capitals_of_socialism
 		SOV_modernize_aircraft_facilities
-		SOV_deep_operations
-		SOV_tank1
-		SOV_tank2
-		SOV_medium_tank1
-		SOV_medium_tank2
-		SOV_arty1
-		SOV_arty2
-		SOV_arty3
-		SOV_infantry1
-		SOV_infantry2
-		SOV_rehabilitated_army
+		SOV_expand_deep_operations
+		SOV_traditional_ideas
+		SOV_deep1
+		SOV_deep2
+		SOV_deep3
+		SOV_deep4
+		SOV_deep5
+		SOV_deep6
 		SOV_stavka
+		SOV_NKVD
+		SOV_remove_purge
 		SOV_brilliant_genius
 		SOV_leader_of_the_party_and_the_people
 		SOV_great_commander

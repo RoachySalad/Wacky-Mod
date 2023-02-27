@@ -40,8 +40,9 @@ ideas = {
 			
 			equipment_bonus = {
 				mechanized_equipment = {
-					hardness = 0.05 instant = yes
+				hardness = 0.05 instant = yes
 					build_cost_ic = -0.05 instant = yes
+
 				}
 			}
 		}
@@ -798,7 +799,6 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			
 			traits = { medium_tank_manufacturer }
 			traits = { nuffield_trait }
 
@@ -826,7 +826,6 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			
 			traits = { medium_tank_manufacturer }
 			traits = { vauxhall_trait }
 
@@ -877,10 +876,12 @@ ideas = {
 
 	}
 
+
 	materiel_manufacturer = {
 			
 		designer = yes
-
+		
+		
 		CAN_kangaroo_designer = {
 			
 			picture = generic_motorized_equipment_manufacturer_2
@@ -902,8 +903,7 @@ ideas = {
 			
 			
 		}	
-
-
+		
 		
 		inglis_company = {
 			

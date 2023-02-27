@@ -792,53 +792,53 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = HUN_trade_deal_with_germany
-		icon = GFX_goal_generic_trade
-		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
-		x = 1
-		y = 1
-		relative_position_id = HUN_renounce_the_treaty_of_trianon
+	# focus = {
+	# 	id = HUN_trade_deal_with_germany
+	# 	icon = GFX_goal_generic_trade
+	# 	prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 5
+	# 	cost = 5
 
-		ai_will_do = {
-			factor = 80
-		}
+	# 	ai_will_do = {
+	# 		factor = 80
+	# 	}
 
-		available = {
-			NOT = { has_war_with = GER }
-			NOT = { GER = { has_government = communism } }
-		}
+	# 	available = {
+	# 		NOT = { has_war_with = GER }
+	# 		NOT = { GER = { has_government = communism } }
+	# 	}
 
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
 
-		complete_tooltip = {
+	# 	complete_tooltip = {
 
-		}
+	# 	}
 
-		completion_reward = {
-			add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
-			reverse_add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
-			swap_ideas = {
-				add_idea = HUN_interventionism_2
-				remove_idea = HUN_interventionism
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
+	# 		reverse_add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
+	# 		swap_ideas = {
+	# 			add_idea = HUN_interventionism_2
+	# 			remove_idea = HUN_interventionism
+	# 		}
+	# 	}
+	# }
 
 	focus = {
 		id = HUN_joint_aluminum_mining_company
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = HUN_trade_deal_with_germany }
+		prerequisite = { focus = HUN_renounce_the_treaty_of_trianon }
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
 		cost = 5
@@ -870,6 +870,8 @@ focus_tree = {
 					amount = 250
 				}
 			}
+			add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
+	 		reverse_add_opinion_modifier = { target = GER modifier = HUN_trade_deal_with_germany }
 		}
 	}
 
@@ -878,7 +880,7 @@ focus_tree = {
 		icon = GFX_focus_chi_mission_to_germany
 		prerequisite = { focus = HUN_joint_aluminum_mining_company }
 		x = 1
-		y = 3
+		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
 		cost = 5
@@ -950,7 +952,7 @@ focus_tree = {
 		icon = GFX_focus_generic_license_production
 		prerequisite = { focus = HUN_join_axis }
 		x = 1
-		y = 4
+		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 		cost = 5
 		ai_will_do = {
@@ -1392,8 +1394,7 @@ focus_tree = {
 	focus = {
 		id = HUN_institute_for_industrial_techniques
 		icon = GFX_focus_research
-		prerequisite = { focus = HUN_support_urbanization }
-		prerequisite = { focus = HUN_support_domestic_industry }
+		prerequisite = { focus = HUN_support_urbanization focus = HUN_support_domestic_industry }
 		x = 0
 		y = 3
 		relative_position_id = HUN_industrial_revitalization
@@ -2833,6 +2834,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+		
 		}
 	}
 	

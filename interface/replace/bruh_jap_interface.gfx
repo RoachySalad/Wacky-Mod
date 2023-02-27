@@ -6,52 +6,6 @@ spriteTypes = {
 		name = "GFX_idea_jap_island_hopping"
 		textureFile = "gfx/interface/ideas/ideas_jap_island_hopping.dds"
 	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_phi_control"
-		textureFile = "gfx/interface/ideas/ideas_jap_phi_control.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_dei_control"
-		textureFile = "gfx/interface/ideas/ideas_jap_dei_control.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_sing_control"
-		textureFile = "gfx/interface/ideas/ideas_jap_sing_control.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_papua_control"
-		textureFile = "gfx/interface/ideas/ideas_jap_papua_control.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_phi_failure"
-		textureFile = "gfx/interface/ideas/ideas_jap_phi_failure.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_dei_failure"
-		textureFile = "gfx/interface/ideas/ideas_jap_dei_failure.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_sing_failure"
-		textureFile = "gfx/interface/ideas/ideas_jap_sing_failure.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_papua_failure"
-		textureFile = "gfx/interface/ideas/ideas_jap_papua_failure.dds"
-	}
-
-	SpriteType = {
-		name = "GFX_idea_JAP_new_japanese_empire"
-		textureFile = "gfx/interface/ideas/ideas_jap_new_japanese_empire.dds"
-	}
-
 	
 	SpriteType = {
 		name = "GFX_idea_usa_island_hopping"

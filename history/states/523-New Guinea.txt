@@ -6,6 +6,7 @@ state={
 		owner = AST
 		add_core_of = BAS
 		set_state_flag = ASN_ALLIES_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_controls
 		buildings = {
 			infrastructure = 2
 			air_base = 3

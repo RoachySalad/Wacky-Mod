@@ -602,7 +602,11 @@ air_wings = {
 		# 4a Divisione Aerea 'Drago'
 		# 6a Divisione Aerea 'Falco'
 		tac_bomber_equipment_0 = { 
-			amount = 128 
+			amount = 100 
+			owner = "ITA" 
+		} 
+		tac_bomber_equipment_0 = { 
+			amount = 28 
 			owner = "ITA" 
 		} 
 	} 

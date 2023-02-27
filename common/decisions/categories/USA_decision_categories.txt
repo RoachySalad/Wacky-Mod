@@ -1,7 +1,6 @@
 ################
 ##### USA ######
 ################
-
 USA_cash_and_carry = {
 	priority = 100
 	icon = GFX_decision_category_generic_arms_trade

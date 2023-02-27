@@ -555,7 +555,7 @@ units = {
 ### Air oob
 air_wings = {
 	### I. Luftkreiskommando -- Konigsberg ###
-	763 = { 
+	64 = { 
 		# Jagdgeschwader 232 	
 		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 
@@ -602,29 +602,48 @@ air_wings = {
 	}
 
 	### III. Luftkreiskommando -- Breslau ###
-	66 = { 
+	64 = { 
 		# Kampfgeschwader 253 'General Wever'		
 		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
 			owner = "GER" 
-			amount = 200
+			amount = 100
+		}
+		start_experience_factor = 1
+		name = "Kampfgeschwader 254"
+		tac_bomber_equipment_0 = {		# He 45 or Do 23 ?
+			owner = "GER" 
+			amount = 100
 		}
 		start_experience_factor = 1
 		name = "Kampfgeschwader 253"
 		# Sturzkampfgeschwader 162		
 		CAS_equipment_1 =  {			# Hs 123
 			owner = "GER" 
-			amount = 200
+			amount = 100
 		}
 		start_experience_factor = 1
-		name = "Sturzkampfgeschwader 162"	
+		name = "Sturzkampfgeschwader 162"
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+		}
+		start_experience_factor = 1
+		name = "Sturzkampfgeschwader 163"	
 	}
 
 	### IV. Luftkreiskommando -- Kassel ###
-	57 = { 
+	64 = { 
 		# Jagdgeschwader 134 'Horst Wessel'		
 		fighter_equipment_0 =  {		# He 51 # Ar 68
 			owner = "GER" 
-			amount = 200
+			amount = 100
+		}
+		start_experience_factor = 1
+		name = "Jagdgeschwader 134"
+		# Jagdgeschwader 134 'Horst Wessel'		
+		fighter_equipment_0 =  {		# He 51 # Ar 68
+			owner = "GER" 
+			amount = 100
 		}
 		start_experience_factor = 1
 		name = "Jagdgeschwader 134"
@@ -645,7 +664,7 @@ air_wings = {
 	}
 
 	### V. Luftkreiskommando -- Munich ###
-	52 = { 
+	64 = { 
 		# Jagdgeschwader 136		
 		fighter_equipment_0 =  {		# He 51
 			owner = "GER" 

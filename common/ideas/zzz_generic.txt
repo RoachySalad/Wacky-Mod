@@ -2,6 +2,21 @@ ideas = {
 
 	hidden_ideas = {
 	
+		league_of_nations_member_idea = { 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
+		
 		stupid_ai = {
 
 			picture = FRA_factory_strikes
@@ -148,8 +163,8 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-
-		fix_production_idea = { modifier = { production_factory_start_efficiency_factor = 1.3 } }
+	
+	fix_production_idea = { modifier = { production_factory_start_efficiency_factor = 1.3 } }
 
 		spirit_of_bozo = {
 
@@ -167,11 +182,60 @@ ideas = {
 				war_support_factor = -0.15
 			}
 		}
+		
+		TO_chose_neutrality = {
 
+			picture = generic_pp_unity_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			#on_add = {
+			#	set_rule = { can_join_factions = no }
+			#}
+			#
+			#on_remove = {
+			#	set_rule = { can_join_factions = yes }
+			#}
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				democratic_acceptance = -300
+				communism_acceptance = 100
+				#custom_modifier_tooltip = SOV_shocked_by_surprise_attack_cant_join_factions_tt
+			}
+		}
+		
+		TO_nato_ratified = {
+
+			picture = generic_democratic_drift_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via event
+			}
+
+			modifier = {
+				operative_slot = 1
+				communism_acceptance = -15
+			}
+		}
+		
 		father_check = {	
 
 			picture = eng_tackle_capitalism
 			removal_cost = -1	
+
+			cancel = {
+				has_game_rule = {
+					rule = fatherless_spirit
+					option = DISABLED
+				}
+			}
 			
 			allowed = {
 				always = no
@@ -189,7 +253,7 @@ ideas = {
 				}
 				cv_nav_bomber_equipment = {
 					instant = yes
-					build_cost_ic = 2.00
+					build_cost_ic = 1.00
 				}
 				flying_boat_equipment = {
 					instant = yes
@@ -1222,8 +1286,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 12500
-				production_cost_max_ship_hull_carrier = 9750
+				production_cost_max_ship_hull_heavy = 10000
+				production_cost_max_ship_hull_carrier = 9500
 				industrial_capacity_dockyard = -0.25
 			}
 		}
@@ -1242,8 +1306,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 15000
-				production_cost_max_ship_hull_carrier = 11000
+				production_cost_max_ship_hull_heavy = 12000
+				production_cost_max_ship_hull_carrier = 10500
 				industrial_capacity_dockyard = -0.15
 			}
 		}
@@ -1262,8 +1326,8 @@ ideas = {
 			picture = MTG_naval_treaty_adherent
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 14000
-				production_cost_max_ship_hull_carrier = 10500
+				production_cost_max_ship_hull_heavy = 11500
+				production_cost_max_ship_hull_carrier = 10250
 				industrial_capacity_dockyard = -0.20
 			}
 		}
@@ -1282,74 +1346,27 @@ ideas = {
 			picture = MTG_naval_treaty_adherent_reduced
 			
 			modifier = {
-				production_cost_max_ship_hull_heavy = 16000
-				production_cost_max_ship_hull_carrier = 12000
+				production_cost_max_ship_hull_heavy = 14000
+				production_cost_max_ship_hull_carrier = 10750
 				industrial_capacity_dockyard = -0.10
 			}
 		}
-#		anti_tradeboosting = {
+		
+		organization_of_african_unity_member_idea = { 
+			allowed = {
+				always = no
+			}
 
-#			allowed = {
-#				always = no
-#			}
-
-#			allowed_civil_war = {
-#				always = yes
-#			}
-
-#			removal_cost = -1
-
-#			picture = generic_exploit_mines
-
-#			targeted_modifier = {
-#				tag = ENG
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = FRA
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = SAF
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = CAN
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = AST
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = NZL
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = RAJ
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = BRA
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = MEX
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = HOL
-#				trade_cost_for_target_factor = 4
-#			}
-#			targeted_modifier = {
-#				tag = USA
-#				trade_cost_for_target_factor = 7
-#			}
-#			targeted_modifier = {
-#				tag = INS
-#				trade_cost_for_target_factor = 4
-#			}
-#		}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			picture = generic_pp_unity_bonus
+			#TODO_ASD: Set correct icon - idea_generic_org_of_african_unity
+			modifier = {
+			}
+		}
 	}
 
 	# TECHNOLOGY
@@ -1775,6 +1792,6 @@ ideas = {
 			
 			traits = { artillery_manufacturer }
 		}
-
 	}
+
 }

@@ -1,0 +1,425 @@
+NEW_player_decisions = {
+
+	hide_new_player_help = {
+		icon = generic_propaganda
+
+		allowed = {
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			set_country_flag = new_player_help_disabled
+		}
+	}
+
+	# show_new_player_help = {
+	# 	icon = generic_propaganda
+
+	# 	allowed = {
+
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 		has_country_flag = new_player_help_disabled
+	# 	}
+
+	# 	fire_only_once = no
+	# 	cost = 0
+
+	# 	complete_effect = {
+	# 		clr_country_flag = new_player_help_disabled
+	# 	}
+	# }
+
+	explain_standard_things = {
+		icon = generic_propaganda
+
+		allowed = {
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.1 }}
+		}
+	}
+	# explain_tfb_navy = {
+	# 	icon = generic_propaganda
+
+	# 	allowed = {
+	# 		is_ai = no
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	#  		NOT = { has_country_flag = new_player_help_disabled }
+	# 	}
+
+	# 	fire_only_once = no
+	# 	cost = 0
+
+	# ai_will_do = {
+	# 	base = 0
+	# }
+
+	# 	complete_effect = {
+	# 		FROM = {news_event = { id = newPlayer.2 }}
+	# 	}
+	# }
+	# explain_tfb_tanks = {
+	# 	icon = generic_propaganda
+
+	# 	allowed = {
+	# 		is_ai = no
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 		NOT = { has_country_flag = new_player_help_disabled }
+	# 	}
+
+	# 	fire_only_once = no
+	# 	cost = 0
+
+	# ai_will_do = {
+	# 	base = 0
+	# }
+
+	# 	complete_effect = {
+	# 		FROM = {news_event = { id = newPlayer.3 }}
+	# 	}
+	# }
+	# explain_tfb_air = {
+	# 	icon = generic_propaganda
+
+	# 	allowed = {
+	# 		is_ai = no
+	# 	}
+
+	# 	visible = {
+	# 		always = yes
+	# 		NOT = { has_country_flag = new_player_help_disabled }
+	# 	}
+
+	# 	fire_only_once = no
+	# 	cost = 0
+
+	# ai_will_do = {
+	# 	base = 0
+	# }
+
+	# 	complete_effect = {
+	# 		FROM = {news_event = { id = newPlayer.4 }}
+	# 	}
+	# }
+	explain_china_waves = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = JAP
+				original_tag = CHI
+				original_tag = MAN
+				original_tag = SIA
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.5 }}
+		}
+	}
+	explain_ww_finland = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = SOV
+				original_tag = MON
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.6 }}
+		}
+	}
+	explain_ww_conditions = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = SOV
+				original_tag = MON
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.12 }}
+		}
+	}
+	explain_ww_soviets = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = FIN
+				original_tag = SOV
+				original_tag = MON
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.7 }}
+		}
+	}
+	explain_hungarian_tanks = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = HUN
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.8 }}
+		}
+	}
+	explain_mountain_gun = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = RAJ
+				original_tag = ROM
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.9 }}
+		}
+	}
+	explain_spr_civil_war = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = SPR
+			}
+
+		}
+
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.10 }}
+		}
+	}
+	explain_bul_rearm = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = BUL
+			}
+
+		}
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.11 }}
+		}
+	}
+
+	explain_fra_paths = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = FRA
+			}
+
+		}
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.13 }}
+		}
+	}
+
+	explain_fra_cap = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = FRA
+			}
+
+		}
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.14 }}
+		}
+	}
+
+	explain_free_fra = {
+		icon = generic_propaganda
+
+		allowed = {
+			OR = {
+				original_tag = FRA
+			}
+
+		}
+		visible = {
+			always = yes
+			NOT = { has_country_flag = new_player_help_disabled }
+		}
+
+		fire_only_once = no
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			FROM = {news_event = { id = newPlayer.15 }}
+		}
+	}
+}

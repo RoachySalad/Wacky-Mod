@@ -1,0 +1,70 @@
+﻿l_english:
+  NEW_player_decisions:0 "New Player Help"
+  NEW_player_decisions_dec:0 "Section with decisions to help newer Players to explain certain parts of the mod. Some are generic to all nations and others are for a specific nation."
+
+  hide_new_player_help:0 "Hide New Player Help"
+  hide_new_player_help_desc:0 "§RTHIS ACTION MIGHT NOT BE REVERTABLE!"
+
+  show_new_player_help:0 "Show New Player Help"
+
+  new_player_help_disabled:0 "New Player Help Hidden" # country flag
+
+  explain_standard_things:0 "Combat Width and Templates"
+  newPlayer.1.t:0 "Combat Width and Templates"
+  newPlayer.1.d:0 "TFB uses the older combat width system with multiples of 10, leading to good defending divisions being 20 width and good attacking divisions being 30 width (in general).\n\n Note that there are more support companies and unit types in TFB than in Vanilla, but a template of 8 infantry brigades, 2 artillery brigades, and 2 anti-tank brigades is a decent generic template for infantry. Some may choose 2 less artillery/at for an extra infantry brigade depending on their opponent."
+
+  explain_tfb_navy:0 "TFB Navy"
+  newPlayer.2.t:0 "TFB Navy"
+  newPlayer.2.d:0 ""
+
+  explain_tfb_tanks:0 "TFB Tanks"
+  newPlayer.3.t:0 "TFB Tanks"
+  newPlayer.3.d:0 ""
+
+  explain_tfb_air:0 "TFB Air"
+  newPlayer.4.t:0 "TFB Air"
+  newPlayer.4.d:0 ""
+
+  explain_china_waves:0 "AI China Waves"
+  newPlayer.5.t:0 "AI China Waves"
+  newPlayer.5.d:0 "If you are playing against an AI China, then China will spawn 3 different waves of conscript divisions.\n\nWave 1: 15% Surrender Progress and 500K casualties\nWave 2: 30% Surrender Progress and 1.25M casualties\nWave 3: 60% Surrender Progress OR 3.5M casualties\n\nIn order to best combat this as you push in China each attack should be done with the goal of killing divisions or taking supply hubs, and only at the very very end can you snake for VP's. Building Collaboration governments is important to completing China in a decent amount of time."
+
+  explain_ww_finland:0 "Winter War (Finland)"
+  newPlayer.6.t:0 "Winter War (Finland)"
+  newPlayer.6.d:0 "The Soviets will attack you during the Winter War, which unlocks the right side of your focus tree. During the Winter War your goal is to deal as much damage to the soviets as you can without taking too much damage yourself. If you are struggling you have a decision which will give you a small stat boost against Finland after a certain amount of casualties.\n\nYour primary goal should be to not have any divisions encircled, as it is expected you will lose and you need to conserve strength for the Eastern Front. Retreat and surrender as soon as it looks like you will start losing divisions."
+
+  explain_ww_conditions:0 "Winter War (Conditions)"
+  newPlayer.12.t:0 "Winter War (Conditions)"
+  newPlayer.12.d:0 "In order for Finland to win they must do one of the following:\n1) Deal 350k Casualties to the soviets\n2) Survive 7 months\n3) Take Leningrad\n\nFinland has a decision to surrender which they can click if one of:\n1) They have taken 65k casualties\n2) They have 20% surrender Progress\n3) They have lost control of Viipuri (The city in the state of Karjalla)\n\nThe Soviets can force a peace deal (via decision) on Finland if one of:\n1) Dealt 100k casualties to the finns\n2) Get the Finns above 30% Surrender Progress"
+
+  explain_ww_soviets:0 "Winter War (Soviets)"
+  newPlayer.7.t:0 "Winter War (Soviets)"
+  newPlayer.7.d:0 "The Soviets Baltic Focus will attack Finland automatically during the Winter War, which unlocks the army path of your focus tree. During the Winter War your goal is to break Finland with minimal casualties. If possible, try to encircle and kill as many finnish divisions as possible as they will be back for round 2 soon.\n\nBe warned that losing the winter war will incur a penalty to Consumer Goods, Stability, and War Support. It is advised to have finished the rail focuses in your industry tree before going to war, and lining up divisions along Finland's entire border"
+
+  explain_hungarian_tanks:0 "Hungarian Tanks"
+  newPlayer.8.t:0 "Hungarian Tanks"
+  newPlayer.8.d:0 "In order to get your tanks, you need to license them from Sweden. In order to do this make sure to do the focus in the army branch of your focus tree and improve relations with them."
+
+  explain_mountain_gun:0 "The Mountain Gun"
+  newPlayer.9.t:0 "The Mountain Gun"
+  newPlayer.9.d:0 "The Mountain Gun, which is exclusive to India and Romania, is a Pack Artillery 3 that you can use or let others purchase from you. Its the best Pack Artillery in the game and worth doing for many players or teams."
+
+  explain_spr_civil_war:0 "Spanish Civil War"
+  newPlayer.10.t:0 "Spanish Civil War"
+  newPlayer.10.d:0 "The Spanish Civil War does not require any prep work before it kicks off besides completing your focuses. When the civil war triggers make sure to pause the game before clicking the event that way you can set up front lines before the Republican AI starts to move. Upon conclusion of the civil war all of the militia divisions will be auto deleted."
+
+  explain_bul_rearm:0 "Bulgarian Rearmament"
+  newPlayer.11.t:0 "Bulgarian Rearmament"
+  newPlayer.11.d:0 "Bulgaria can't make any Armored Cars, Tanks, Ships, or Aircraft until they have finished rearming first, which is done by decision either when Bulgaria is at war, is in a faction, or there is 50% world tension. Until then you can't design them either."
+
+  explain_fra_paths:0 "France Paths"
+  newPlayer.13.t:0 "France Paths"
+  newPlayer.13.d:0 "France has 3 paths you can go down from left to right: Democratic, Socialist, Conservative. Going Left Left to 'Nationalize Key Industry' for the Democratic Path is Historical. Socialist path provides some extra industry in Africa for after capping but a weaker pre-cap. Conservative France provides a stronger France at the expense of a weaker Free-France, as you don't get to use the Industry tree on the left side."
+
+  explain_fra_cap:0 "France Capitulation"
+  newPlayer.14.t:0 "France Capitulation"
+  newPlayer.14.d:0 "France is designed to keep all of their forces in Europe before they capitulate, and will be given troops based on how well they fought Germany. Some rulesets may allow you to withdraw troops but this is not as was originally designed. You should focus on dealing as much damage to Germany and Italy as possible before you capitulate."
+
+  explain_free_fra:0 "Free France"
+  newPlayer.15.t:0 "Free France"
+  newPlayer.15.d:0 "Based on your army path you picked as regular France, this will determine which army path you may go down for free as Free France. Note that going Democratic or Conservative will prevent you from reaching your army path until January of 1940."
