@@ -187,8 +187,8 @@ technologies = {
 			medium_tank_chassis_2
 		}
 		enable_equipment_modules = {
-			#tank_medium_turret_2
-			tank_medium_turret_3
+			tank_medium_turret_2
+			#tank_medium_turret_3
 		}
 
 		path = {
@@ -197,11 +197,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1942
+		start_year = 1940
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 14 }
+			position = { x = 2 y = 10 }
 		}
 
 		categories = {
@@ -218,16 +218,16 @@ technologies = {
 			medium_tank_chassis_3
 		}
 		enable_equipment_modules = {
-			#tank_medium_turret_3
-			tank_medium_turret_4
+			tank_medium_turret_3
+			#tank_medium_turret_4
 		}
 
 		research_cost = 2
-		start_year = 1945
+		start_year = 1942
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = 18 }
+			position = { x = 2 y = 14 }
 		}
 
 		categories = {
