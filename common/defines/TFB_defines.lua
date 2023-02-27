@@ -251,6 +251,9 @@ NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 72             	-- default capa
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.2				--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 10
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 5
+NDefines.NMilitary.PIERCING_THRESHOLDS = {1.00, 0.90, 0.80, 0.70, 0.60, 0.50, 0.00}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {1.00, 0.90, 0.80, 0.70, 0.60, 0.50, 0.30}
+
 
 NDefines.NAir.AIR_WING_MAX_STATS_ATTACK = 300
 NDefines.NAir.AIR_WING_MAX_STATS_DEFENCE = 300
