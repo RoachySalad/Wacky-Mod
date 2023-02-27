@@ -437,7 +437,10 @@ technologies = {
 		enable_equipments = {
 			pack_artillery_equipment_2
 		}
-		
+		enable_equipment_modules = {
+			tank_art_gun_3
+		}
+
 		
 		research_cost = 1.0
 		start_year = 1940
@@ -567,7 +570,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_med_cs_gun_3
-			tank_art_gun_3
+			
 			#tank_med_gun_2
 		}
 		
@@ -909,7 +912,7 @@ technologies = {
 			heavy_artillery_equipment_3
 		}
 		enable_equipment_modules = {
-			#tank_heavy_art_gun_1
+			tank_heavy_art_gun_1
 			
 		}
 		
