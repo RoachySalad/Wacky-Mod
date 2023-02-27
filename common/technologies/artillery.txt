@@ -874,7 +874,7 @@ technologies = {
 		
 		enable_equipment_modules = {
 		tank_heavy_cs_gun_1
-		tank_heavy_art_gun_1
+		
 		}
 
 		path = {
