@@ -198,69 +198,75 @@ guiTypes = {
 				format = center	
 			}
 			
-			containerWindowType = {	
-				name = "resistance_container"	
-				position = { x = 20 y = 196}		
-				size = { width = 519 height = 100 }	
-					
-				iconType ={	
-					name ="state_resistance_icon"	
-					spriteType = "GFX_resistance_icon"	
-					position = { x = 0 y = 0 }	
-				}	
-					
-				positionType = {	
-					name = "resistance_status_pos"	
-					position = { x = 36 y = 6 }	
-				}	
-					
-				iconType ={	
-					name ="state_compliance_icon"	
-					spriteType = "GFX_compliance_icon"	
-					position = { x = 0 y = 37 }	
-				}	
-					
-				positionType = {	
-					name = "compliance_status_pos"	
-					position = { x = 36 y = 38 }	
-				}	
-					
-				containerWindowType = {	
-					name = "law_and_template_container"	
-					position = { x = 0 y = 0}		
-					size = { width = 0 height = 0 }	
-					buttonType = {	
-						name = "select_law_button"	
-						position = { x = 0 y = 68 }	
-						quadTextureSprite = "GFX_occupation_state_select_law_button"	
-						buttonFont = "hoi_18mbs"	
-						Orientation = "UPPER_LEFT"	
-					}	
-					iconType = {	
-						name ="select_law_icon"	
-						spriteType = "GFX_occupation_policy_icon_strip"	
-						position = { x = 2 y = 69 }	
-						alwaystransparent = yes	
-					}	
-					buttonType = {	
-						name = "template_garrison_button"		
-						position = { x = 34 y = 69 }		
-						spriteType = "GFX_unitlist_unitinfo_button_small"	
-					}	
-					instantTextBoxType = {	
-						name ="template_need_text"	
-						position = { x = 100 y = 75 }	
-						font = "hoi_16mbs"	
-						text = "42"	
-						maxWidth = 57	
-						maxHeight = 24	
-					}	
-					iconType = {	
-						name = "template_garrison"	
-						position = { x = 29 y = 63 }	
-						spriteType = "GFX_locked_icon" # Will be replaced by the current template	
-						alwaystransparent = yes	
-					}	
+			containerWindowType = {
+				name = "resistance_container"
+				position = { x = 20 y = 196}	
+				size = { width = 519 height = 100 }
+				
+				iconType ={
+					name ="state_resistance_icon"
+					spriteType = "GFX_resistance_icon"
+					position = { x = 0 y = 0 }
+				}
+				
+				positionType = {
+					name = "resistance_status_pos"
+					position = { x = 36 y = 6 }
+				}
+				
+				iconType ={
+					name ="state_compliance_icon"
+					spriteType = "GFX_compliance_icon"
+					position = { x = 0 y = 37 }
+				}
+				
+				positionType = {
+					name = "compliance_status_pos"
+					position = { x = 36 y = 38 }
+				}
+				
+				containerWindowType = {
+					name = "law_and_template_container"
+					position = { x = 0 y = 0}	
+					size = { width = 0 height = 0 }
+
+					buttonType = {
+						name = "select_law_button"
+						position = { x = 0 y = 68 }
+						quadTextureSprite = "GFX_occupation_state_select_law_button"
+						buttonFont = "hoi_18mbs"
+						Orientation = "UPPER_LEFT"
+					}
+
+					iconType = {
+						name ="select_law_icon"
+						spriteType = "GFX_occupation_policy_icon_strip"
+						position = { x = 2 y = 69 }
+						alwaystransparent = yes
+					}
+
+
+					buttonType = {
+						name = "template_garrison_button"	
+						position = { x = 34 y = 69 }	
+						spriteType = "GFX_unitlist_unitinfo_button_small"
+					}
+
+					instantTextBoxType = {
+						name ="template_need_text"
+						position = { x = 100 y = 75 }
+						font = "hoi_16mbs"
+						text = "42"
+						maxWidth = 57
+						maxHeight = 24
+					}
+
+					iconType = {
+						name = "template_garrison"
+						position = { x = 29 y = 63 }
+						spriteType = "GFX_locked_icon" # Will be replaced by the current template
+						alwaystransparent = yes
+					}
 				}
 			}
 		}
@@ -316,7 +322,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 				frame = 1
 			}
-			
+
 			iconType = {
 				name = "modifiers_weather_icons"
 				position = { x = 0 y= 0 }
@@ -339,7 +345,7 @@ guiTypes = {
 				spriteType = "GFX_impassable_icon"
 				Orientation = "UPPER_LEFT"
 			}
-				
+			
 			gridBoxType = {
 				name = "dynamic_modifiers_grid"	
 				position = { x = 423 y = -7 }	
@@ -348,8 +354,7 @@ guiTypes = {
 				slotsize = { width = 40 height = 47 }	
 				max_slots_vertical = 1				
 			}
-			###
-
+			
 			containerWindowType = {
 				name = "custom_icon_container"
 				size = { width=100% height=100% }
@@ -359,13 +364,14 @@ guiTypes = {
 					name = "flooded_icon"
 					spriteType = "GFX_modifiers_flooded_icon"
 					position = { x = 0 y = 0 }
-					Orientation = "UPPER_LEFT"	
-				}	
-				iconType = {	
-					name = "unplanned_offensive_icon"	
-					spriteType = "GFX_modifiers_unplanned_offensive_icon"	
-					position = { x = 0 y = 0 }	
-					Orientation = "UPPER_LEFT"					
+					Orientation = "UPPER_LEFT"			
+				}
+
+				iconType = {
+					name = "unplanned_offensive_icon"
+					spriteType = "GFX_modifiers_unplanned_offensive_icon"
+					position = { x = 0 y = 0 }
+					Orientation = "UPPER_LEFT"			
 				}	
 			}
 			

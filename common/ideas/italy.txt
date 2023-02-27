@@ -719,7 +719,7 @@ ideas = {
 			}
 		}
 	
-		victor_emmanuel = {
+		vittorio_emanuele = {
 			
 			
 			allowed = {
@@ -944,6 +944,10 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+
+			available = {
+				has_completed_focus = ITA_naval_strike
+			}
 						
 			research_bonus = {
 				air_equipment = 0.15
@@ -967,7 +971,44 @@ ideas = {
 	}
 	
 	industrial_concern = {
-	
+		ITA_ferrovie_dello_stato_italiane = {
+
+			picture = ITA_ferrovie_dello_stato_italiane
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_completed_focus = ITA_railway_expansion
+			}
+			
+			cost = 75
+
+			research_bonus = {
+				train_tech = 0.15
+			}
+			
+			traits = { railway_company }
+		}
+
+		ITA_agip = {
+
+			picture = ITA_agip
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05
+			}
+			
+			traits = { refinery_concern }
+		}		
+
+
 		danieli = {
 			
 			allowed = {
@@ -980,7 +1021,43 @@ ideas = {
 			}
 			
 			traits = { industrial_concern }
-		}		
+		}	
+		
+		ITA_italcementi = { #NORTH
+
+			picture = ITA_italcementi
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				controls_state = 158 #PIEDMONT
+				ITA_is_northern_designer = yes
+			}
+
+			traits = { construction_company }
+		}
+
+		ITA_ducati_energia = { #NORTH
+
+			picture = ITA_ducati_energia
+			
+			allowed = {
+				original_tag = ITA
+			}
+
+
+			available = {
+
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+		}
 	}
 	
 	
@@ -1000,6 +1077,82 @@ ideas = {
 			
 			traits = { naval_manufacturer }
 		}
+
+		
+		ITA_cantiere_oto = { #NORTH
+			picture	= ITA_oto
+
+			allowed = {
+				original_tag = ITA
+			}
+
+
+			available = {
+				has_completed_focus = ITA_green_water_navy
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { mediterranean_naval_manufacturer }
+		}
+
+		ITA_navalmeccanica = { #SOUTH
+			picture	= ITA_navalmeccanica
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_completed_focus = ITA_convoy_defence
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+		}
+
+		ITA_cantiere_navale_di_ancona = { #SOUTH
+			picture	= ITA_cantera_navale_di_ancona
+
+			allowed = {
+				original_tag = ITA
+			}
+
+
+			available = {
+				has_completed_focus = ITA_new_cruisers
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { raiding_fleet_naval_manufacturer }
+		}
+
+		ITA_cantieri_navali_tosi = { #SOUTH
+			picture	= ITA_cantieri_navali_tosi
+
+			allowed = {
+				original_tag = ITA
+			}
+
+			available = {
+				has_completed_focus = ITA_sub_raiders
+			}
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { submarine_manufacturer }
+		}
+
 	}
 	
 }	

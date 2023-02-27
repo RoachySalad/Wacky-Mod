@@ -1,0 +1,143 @@
+### Air Wings
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	219 = { 
+		# 15ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		# 18ya Bombardirovochnye Aviabrigada
+		tac_bomber_equipment_0 =  {
+			owner = "SOV" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "SOV" 
+			amount = 100
+		}
+	}
+
+	# MVO Aviatsya Komandovaniya
+	219 = {
+		# 2ya Istrebitel'nye Aviabrigada
+		fighter_equipment_0 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_0 = {
+			owner = "SOV" 
+			amount = 100
+		}
+	}
+
+	# BOVO Aviatsya Komandovaniya -- Minsk
+	219 = {
+		# 14ya Istrebitel'nye Aviabrigada
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		# 16ya Bombardirovochnye Aviabrigada
+		tac_bomber_equipment_0 =  {
+			owner = "SOV" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "SOV" 
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "SOV" 
+			amount = 100
+		}
+	}
+
+	# KOVO Aviatsya Komandovaniya -- Kiev
+	219 = {
+		# 17ya Istrebitel'nye Aviabrigada
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+	}
+
+	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
+	219 = {
+		# 12ya Istrebitel'nye Aviabrigada
+		# 20ya Istrebitel'nye Aviabrigada
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+		fighter_equipment_1 = {
+			owner = "SOV" 
+			amount = 100
+		}
+	}
+
+}

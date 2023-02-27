@@ -1,0 +1,235 @@
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+
+#######
+# Ireland
+#######
+
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+
+	entity = {
+		clone = "commonwealth_gfx_light_armor_entity"
+		pdxmesh = "ENG_tank_light_mesh"
+		name = "IRE_light_armor_0_entity"
+	}
+	
+
+	entity = {
+		clone = "ENG_light_armor_1_entity"
+		pdxmesh = "ENG_light_armor_1_mesh"
+		name = "IRE_light_armor_1_entity"
+	}
+	
+	entity = {
+		clone = "ENG_light_armor_2_entity"
+		pdxmesh = "ENG_light_armor_2_mesh"
+		name = "IRE_light_armor_2_entity"
+	}
+	
+
+	
+	entity = {
+		clone = "USA_medium_armor_0_entity"
+		name = "IRE_medium_armor_0_entity"
+		pdxmesh = "USA_medium_armor_0_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "medium_armor_entity"
+		name = "IRE_medium_armor_1_entity"
+		pdxmesh = "USA_tank_medium_mesh"
+		scale = 1.1
+
+	}
+	
+	entity = {
+		clone = "ENG_medium_armor_2_entity"
+		pdxmesh = "ENG_medium_armor_2_mesh"
+		name = "IRE_medium_armor_2_entity"
+	}
+	
+	entity = {
+		clone = "commonwealth_gfx_heavy_armor_entity"
+		pdxmesh = "ENG_tank_heavy_mesh"
+		name = "IRE_heavy_armor_0_entity"
+	}
+	
+		entity = {
+		clone = "ENG_heavy_armor_0_entity"
+		pdxmesh = "ENG_heavy_armor_0_mesh"
+		name = "IRE_heavy_armor_1_entity"
+	}
+	
+	entity = {
+		clone = "ENG_heavy_armor_2_entity"
+		pdxmesh = "ENG_heavy_armor_2_mesh"
+		name = "IRE_heavy_armor_2_entity"
+	}
+	
+	entity = {
+		clone = "ENG_super_heavy_armor_entity"
+		pdxmesh = "ENG_super_heavy_armor_mesh"
+		name = "IRE_super_heavy_armor_entity"
+	}
+	
+	
+	entity = {
+		clone = "ENG_modern_armor_entity"
+		pdxmesh = "ENG_modern_armor_mesh"
+		name = "IRE_modern_armor_entity"
+	}
+	
+
+#######
+# Mexico
+#######
+	entity = {
+		clone = "USA_light_armor_0_entity"
+		pdxmesh = "USA_light_armor_0_mesh"
+		name = "MEX_light_armor_0_entity"
+	}
+	
+
+	entity = {
+		clone = "USA_light_armor_entity"
+		pdxmesh = "USA_tank_light_mesh"
+		name = "MEX_light_armor_1_entity"
+	}
+	
+	entity = {
+		clone = "USA_light_armor_2_entity"
+		pdxmesh = "USA_light_armor_2_mesh"
+		name = "MEX_light_armor_2_entity"
+	}
+	
+	entity = {
+		clone = "USA_medium_armor_0_entity"
+		name = "MEX_medium_armor_0_entity"
+		pdxmesh = "USA_medium_armor_0_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "USA_medium_armor_entity"
+		name = "MEX_medium_armor_1_entity"
+		pdxmesh = "USA_tank_medium_mesh"
+		scale = 1.3
+
+	}
+	
+	entity = {
+		clone = "USA_medium_armor_2_entity"
+		pdxmesh = "USA_medium_armor_2_mesh"
+		name = "MEX_medium_armor_2_entity"
+	}
+
+
+	entity = {
+		clone = "USA_heavy_armor_entity"
+		pdxmesh = "USA_tank_heavy_mesh"
+		name = "MEX_heavy_armor_0_entity"
+	}
+	
+		entity = {
+		clone = "USA_heavy_armor_0_entity"
+		pdxmesh = "USA_heavy_armor_0_mesh"
+		name = "MEX_heavy_armor_1_entity"
+	}
+	
+	entity = {
+		clone = "USA_heavy_armor_1_entity"
+		pdxmesh = "USA_heavy_armor_1_mesh"
+		name = "MEX_heavy_armor_2_entity"
+	}
+	
+	entity = {
+		clone = "USA_super_heavy_armor_entity"
+		pdxmesh = "USA_super_heavy_armor_mesh"
+		name = "MEX_super_heavy_armor_entity"
+	}
+	
+	
+	entity = {
+		clone = "USA_modern_armor_entity"
+		pdxmesh = "USA_modern_armor_mesh"
+		name = "MEX_modern_armor_entity"
+	}
+
+
+
+#######
+# Brazil
+#######
+	entity = {
+		clone = "USA_light_armor_0_entity"
+		pdxmesh = "USA_light_armor_0_mesh"
+		name = "BRA_light_armor_0_entity"
+	}
+	
+
+	entity = {
+		clone = "USA_light_armor_entity"
+		pdxmesh = "USA_tank_light_mesh"
+		name = "BRA_light_armor_1_entity"
+	}
+	
+	entity = {
+		clone = "USA_light_armor_2_entity"
+		pdxmesh = "USA_light_armor_2_mesh"
+		name = "BRA_light_armor_2_entity"
+	}
+	
+	entity = {
+		clone = "USA_medium_armor_0_entity"
+		name = "BRA_medium_armor_0_entity"
+		pdxmesh = "USA_medium_armor_0_mesh"
+		scale = 0.8
+	}
+	
+	entity = {
+		clone = "USA_medium_armor_entity"
+		name = "BRA_medium_armor_1_entity"
+		pdxmesh = "USA_tank_medium_mesh"
+		scale = 1.3
+
+	}
+	
+	entity = {
+		clone = "USA_medium_armor_2_entity"
+		pdxmesh = "USA_medium_armor_2_mesh"
+		name = "BRA_medium_armor_2_entity"
+	}
+
+
+	entity = {
+		clone = "USA_heavy_armor_entity"
+		pdxmesh = "USA_tank_heavy_mesh"
+		name = "BRA_heavy_armor_0_entity"
+	}
+	
+		entity = {
+		clone = "USA_heavy_armor_0_entity"
+		pdxmesh = "USA_heavy_armor_0_mesh"
+		name = "BRA_heavy_armor_1_entity"
+	}
+	
+	entity = {
+		clone = "USA_heavy_armor_1_entity"
+		pdxmesh = "USA_heavy_armor_1_mesh"
+		name = "BRA_heavy_armor_2_entity"
+	}
+	
+	entity = {
+		clone = "USA_super_heavy_armor_entity"
+		pdxmesh = "USA_super_heavy_armor_mesh"
+		name = "BRA_super_heavy_armor_entity"
+	}
+	
+	
+	entity = {
+		clone = "USA_modern_armor_entity"
+		pdxmesh = "USA_modern_armor_mesh"
+		name = "BRA_modern_armor_entity"
+	}

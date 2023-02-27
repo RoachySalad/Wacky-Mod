@@ -29,15 +29,9 @@ set_technology = {
 	ger_light_tank_1 = 1
 	ger_light_tank_2 = 1
 	ger_p3_tank_1 = 1
+	
 	ger_heavy_tank_0 = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	naval_bomber1 = 1
 	basic_train = 1
-	tactical_bomber1 = 1
-	strategic_bomber1 = 1
-	CAS1 = 1
 	
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -96,23 +90,44 @@ if = {
 		basic_light_battery = 1
 		basic_medium_battery = 1
 		basic_heavy_battery = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
 		basic_depth_charges = 1
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
-		basic_heavy_armor_scheme = 1
-		improved_heavy_armor_scheme = 1
-		improved_heavy_battery = 1
-		advanced_heavy_battery = 1
-		improved_airplane_launcher = 1
-		improved_medium_battery = 1
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }
+# if = {
+# 	limit =  { has_dlc = "By Blood Alone" }
+# 		set_air_oob = "GER_1936_air_bba"
+# 		set_technology = {
+# 			aa_lmg = 1
+# 			#aa_cannon_1 = 1
+# 			#engines_1 = 1
+# 			#engines_2 = 1
+# 			early_bombs = 1
+# 			aircraft_construction = 1
+# 			iw_small_airframe = 1
+# 			basic_small_airframe = 1
+# 			iw_medium_airframe = 1
+# 			basic_medium_airframe = 1
+# 			iw_large_airframe = 1
+# 		}
+# 	else = {
+# 		set_air_oob = "GER_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+			CAS1 = 1
+			naval_bomber1 = 1
+		}
+# 	}
+# }
 
 set_variable = { var = ger_gateway_to_europe_influence value = 0 }
-
+add_timed_idea = { idea = GER_mefo_air days = 1340 }
 set_variable = { var = wehrmacht_anger value = 0 }
 set_variable = { var = ss_anger value = 0 }
 #set_variable = { GER_poster_center_icon_frame = 1 }
@@ -256,6 +271,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_heavy_machine_gun
 		turret_type_slot = tank_light_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -269,6 +285,7 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_auto_cannon
 		turret_type_slot = tank_light_turret_2
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 	}
@@ -281,12 +298,25 @@ create_equipment_variant = {
 	modules = {
 		main_armament_slot = tank_small_gun_1
 		turret_type_slot = tank_medium_turret_1
+		#suspension_type_slot = tank_bogie_suspension
 		armor_type_slot = tank_welded_armor
 		engine_type_slot = tank_gasoline_engine
 	}
 	icon = "gfx/interface/technologies/tanks/ger/ger_p3_tank_1.dds"
 }
-
+#create_equipment_variant = {
+#	name = "PzKpfw IV A"
+#	type = medium_assault_gun_chassisger_medium_tank_chassis_p4
+#	parent_version = 0
+#	modules = {
+#		main_armament_slot = tank_med_cs_gun_1
+#		turret_type_slot = tank_medium_turret_1
+#		suspension_type_slot = tank_bogie_suspension
+#		armor_type_slot = tank_welded_armor
+#		engine_type_slot = tank_gasoline_engine
+#	}
+#	icon = "gfx/interface/technologies/tanks/ger/ger_p4_tank_1.dds"
+#}
 
 if = {
 	limit = {
@@ -329,15 +359,14 @@ if = {
 		parent_version = 0
 		modules = {
         	fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_battery_slot = ship_heavy_battery_twin_1
-			fixed_ship_secondaries_slot = ship_anti_air_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			front_1_custom_slot = ship_heavy_battery_twin_1
-			mid_1_custom_slot = ship_light_medium_battery_2
-			mid_2_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_torpedo_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_airplane_launcher_1
+			mid_2_custom_slot = ship_torpedo_1
     	}
 	}
 	create_equipment_variant = {
@@ -352,7 +381,8 @@ if = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = light_ship_engine_1
 			fixed_ship_torpedo_slot = ship_torpedo_1
-			#mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = empty
+			#rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -369,6 +399,8 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+			#rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -385,6 +417,7 @@ if = {
 			fixed_ship_engine_slot = light_ship_engine_2
 			fixed_ship_torpedo_slot = ship_torpedo_1
 			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
 	create_equipment_variant = {
@@ -412,19 +445,20 @@ if = {
 	}
 	create_equipment_variant = {
 		name = "Königsberg Class"
-		type = ship_hull_cruiser_1
+		type = ship_hull_cruiser_2
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			mid_1_custom_slot = ship_torpedo_2
-			front_1_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+			#rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -434,14 +468,14 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = empty
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_light_battery_1
-			mid_1_custom_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
@@ -452,15 +486,17 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_light_battery_1
-			mid_1_custom_slot = ship_torpedo_2
+			mid_1_custom_slot = ship_light_battery_1
+			mid_2_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = empty
+			#mid_2_custom_slot = ship_mine_layer_1
+			#rear_1_custom_slot = ship_mine_layer_1
 		}
 		obsolete = yes
 	}
@@ -470,15 +506,17 @@ if = {
 		name_group = GER_CL_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_battery_slot = ship_light_medium_battery_1
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_secondaries_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_armor_slot = ship_armor_cruiser_1
-			front_1_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_torpedo_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_airplane_launcher_1
 		}
 	}
 	create_equipment_variant = {
@@ -487,16 +525,16 @@ if = {
 		name_group = GER_CA_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_2
-			fixed_ship_secondaries_slot = ship_anti_air_2
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_engine_slot = cruiser_ship_engine_2
 			fixed_ship_armor_slot = ship_armor_cruiser_2
-			mid_1_custom_slot = ship_torpedo_2
-			rear_1_custom_slot = ship_airplane_launcher_1
-			front_1_custom_slot = ship_torpedo_2
+			front_1_custom_slot = ship_anti_air_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_airplane_launcher_1
+			rear_1_custom_slot = empty
 		}
 	}
 	create_equipment_variant = {
@@ -505,38 +543,17 @@ if = {
 		name_group = GER_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_triple_1
+			fixed_ship_battery_slot = ship_heavy_battery_2
 			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_2
-			front_1_custom_slot = ship_heavy_battery_triple_1
-			mid_1_custom_slot = ship_secondaries_1
-			mid_2_custom_slot = ship_anti_air_1
-			mid_3_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_heavy_battery_triple_1
-		}
-	}
-	create_equipment_variant = {
-		name = "Bismarck Class"
-		type = ship_hull_heavy_2
-		name_group = GER_BB_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_triple_3
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_2
-			fixed_ship_secondaries_slot = ship_secondaries_1
-			fixed_ship_armor_slot = ship_armor_bb_3
-			front_1_custom_slot = ship_heavy_battery_triple_3
-			mid_1_custom_slot = ship_secondaries_2
-			mid_2_custom_slot = ship_anti_air_1
-			mid_3_custom_slot = ship_airplane_launcher_1
-			rear_1_custom_slot = ship_heavy_battery_twin_4
+			fixed_ship_armor_slot = ship_armor_bc_1
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_anti_air_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = ship_heavy_battery_2
 		}
 	}
 	create_equipment_variant = {
@@ -545,20 +562,140 @@ if = {
 		name_group = GER_BB_HISTORICAL
 		parent_version = 0
 		modules = {
-			fixed_ship_battery_slot = ship_heavy_battery_twin_1
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
 			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_engine_slot = heavy_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			fixed_ship_armor_slot = ship_armor_bb_1
-			front_1_custom_slot = ship_heavy_battery_twin_1
+			front_1_custom_slot = ship_anti_air_1
 			mid_1_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
 	}
 }
+
+# if = {
+# 	limit = {
+# 		has_dlc = "By Blood Alone"
+# 	}
+
+# 	create_equipment_variant = {
+# 		name = "Do 23"
+# 		type = medium_plane_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = medium_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
+# 			fixed_auxiliary_weapon_slot_2 = empty
+			
+# 			engine_type_slot = engine_1_2x
+# 			special_type_slot_1 = empty
+# 			special_type_slot_2 = empty
+# 			special_type_slot_3 = empty
+# 			special_type_slot_4 = empty
+# 		}
+# 		obsolete = yes
+# 	}
+# 	create_equipment_variant = {
+# 		name = "Ju 86"
+# 		type = medium_plane_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = medium_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
+# 			fixed_auxiliary_weapon_slot_2 = empty
+			
+# 			engine_type_slot = engine_1_2x
+# 			special_type_slot_1 = lmg_defense_turret_2x
+# 			special_type_slot_2 = fuel_tanks_medium
+# 			special_type_slot_3 = empty
+# 			special_type_slot_4 = empty
+# 		}
+# 		obsolete = yes
+# 	}
+
+# 	create_equipment_variant = {
+# 		name = "He 111"
+# 		type = medium_plane_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = medium_bomb_bay
+# 			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay_extra
+# 			fixed_auxiliary_weapon_slot_2 = medium_bomb_bay_extra
+			
+# 			engine_type_slot = engine_1_2x
+# 			special_type_slot_1 = lmg_defense_turret_2x
+# 			special_type_slot_2 = lmg_defense_turret_2x
+# 			special_type_slot_3 = empty
+# 			special_type_slot_4 = empty
+# 		}
+# 		icon = "GFX_GER_tactical_bomber1_medium"
+# 	}
+	
+# 	create_equipment_variant = {
+# 		name = "Do 17"
+# 		type = small_plane_cas_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = small_bomb_bay
+# 			engine_type_slot = engine_iw_2x
+# 			special_type_slot_1 = lmg_defense_turret_2x
+# 		}
+# 		icon = "GFX_GER_medium_plane_1_medium"
+# 	}
+
+# 	create_equipment_variant = {
+# 		name = "He 51" #also covers Ar 68
+# 		type = small_plane_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = light_mg_2x
+# 			engine_type_slot = engine_iw_1x
+# 			special_type_slot_1 = empty
+# 		}
+# 		obsolete = yes
+# 	}
+# 	create_equipment_variant = {
+# 		name = "Hs 123"
+# 		type = small_plane_cas_airframe_0
+# 		modules = {
+# 			fixed_main_weapon_slot = small_bomb_bay
+# 			engine_type_slot = engine_iw_1x
+# 			special_type_slot_1 = empty
+# 		}
+# 		obsolete = yes
+# 	}
+# 	create_equipment_variant = {
+# 		name = "Bf 109 D"
+# 		type = small_plane_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = light_mg_4x
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = empty
+# 		}
+# 		icon = "GFX_GER_fighter1_medium"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "Ju 87"
+# 		type = small_plane_cas_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = small_bomb_bay
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = lmg_defense_turret
+# 			special_type_slot_2 = dive_brakes_small
+# 		}
+# 		icon = "GFX_GER_CAS1_medium"
+# 	}
+# 	create_equipment_variant = {
+# 		name = "Do 22"
+# 		type = small_plane_naval_bomber_airframe_1
+# 		modules = {
+# 			fixed_main_weapon_slot = torpedo_mounting
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = lmg_defense_turret
+# 			special_type_slot_2 = floats
+# 		}
+# 		icon = "GFX_GER_naval_bomber1_medium"
+# 	}
+# }
 
 create_equipment_variant = {
 	name = "Ju 86"

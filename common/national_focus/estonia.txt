@@ -1803,13 +1803,15 @@ focus_tree = {
 		}
 
 		available = {
-			FIN = {
+			all_country_with_original_tag = {
+				original_tag_to_check = FIN
 				has_government = fascism
 			}
 		}
 
 		bypass = {
-			FIN = {
+			all_country_with_original_tag = {
+				original_tag_to_check = FIN
 				OR = {
 					exists = no
 					is_subject = yes
@@ -1873,13 +1875,15 @@ focus_tree = {
 		}
 
 		available = {
-			FIN = {
+			all_country_with_original_tag = {
+				original_tag_to_check = FIN
 				has_government = fascism
 			}
 		}
 
 		bypass = {
-			FIN = {
+			all_country_with_original_tag = {
+				original_tag_to_check = FIN
 				OR = {
 					exists = no
 					is_subject = yes
@@ -2087,7 +2091,7 @@ focus_tree = {
 			if = {
 				limit = {
 					NOR = { 
-						is_ai = no 
+						is_ai = yes 
 						is_subject_of = ROOT 
 					}
 				}
@@ -2099,7 +2103,7 @@ focus_tree = {
 			if = {
 				limit = {
 					SWE = { 		
-						is_ai = no 
+						is_ai = yes 
 						is_subject_of = ROOT 
 					}
 				}
@@ -2111,7 +2115,7 @@ focus_tree = {
 			if = {
 				limit = {
 					DEN = { 
-						is_ai = no
+						is_ai = yes
 						is_subject_of = ROOT 
 					}
 				}

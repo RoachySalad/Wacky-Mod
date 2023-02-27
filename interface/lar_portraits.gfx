@@ -4,7 +4,6 @@ spriteTypes = {
 	#	name = "GFX_portrait_fra_leon_blum"
 	#	texturefile = "gfx/leaders/FRA/portrait_fra_leon_blum.dds"
 	#}
-	
 	SpriteType = {
 		name = "GFX_portrait_Soppi"
 		texturefile = "gfx/leaders/MON/portrait_soppi.dds"
@@ -13,7 +12,6 @@ spriteTypes = {
 		name = "GFX_portrait_Savesta"
 		texturefile = "gfx/leaders/MON/portrait_savesta.dds"
 	}
-
 	SpriteType = {
 		name = "GFX_portrait_fra_francois_de_la_rocque"
 		texturefile = "gfx/leaders/FRA/portrait_fra_francois_de_la_rocque.dds"
@@ -330,10 +328,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_King_Rama"
 		texturefile = "gfx/leaders/SIA/King_Rama.dds"
-	}
-		SpriteType = {
-		name = "GFX_portrait_cub_catzuh_large"
-		texturefile = "gfx/leaders/SWI/portrait_large_catzuh.dds"
 	}
 }
 

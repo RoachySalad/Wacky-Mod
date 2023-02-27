@@ -29,7 +29,7 @@ GER_share_tanks = {
 
 	allowed = {
 		OR = {
-			tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA
+			tag = ROM tag = JAP tag = SPR tag = HUN tag = BUL tag = FIN tag = MAN tag = ITA tag = SIA
 		}
 	}
 }

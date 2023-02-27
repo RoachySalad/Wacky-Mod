@@ -594,6 +594,9 @@ shared_focus = {
 	}
 }
 
+
+
+
 shared_focus = {
 	id = CHI_combined_arms_warfare
 	icon = GFX_goal_generic_army_doctrines

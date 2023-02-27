@@ -91,15 +91,12 @@ technologies = {
 	
 	elastic_defence = {
 
-		land_reinforce_rate = 0.02
-
-		category_tanks = {
-			max_organisation = 4
-			max_strength = 1
-		}
+		land_reinforce_rate = 0.02		
 
 		category_all_armor = {
 			maximum_speed = 0.1
+			max_organisation = 4
+			max_strength = 1
 		}
 			
 		enable_tactic = tactic_elastic_defense
@@ -150,10 +147,6 @@ technologies = {
 			default_morale = 0.2
 		}
 		mechanized = {
-			maximum_speed = 0.1
-			default_morale = 0.2
-		}
-		mech_artillery_brigade = {
 			maximum_speed = 0.1
 			default_morale = 0.2
 		}
@@ -235,14 +228,11 @@ technologies = {
 		mechanized = {
 			max_organisation = 10
 		}
-		mech_artillery_brigade = {
-			max_organisation = 10
-		}
 		amphibious_mechanized = {
 			max_organisation = 10
 		}
 		
-		category_tanks = {
+		category_all_armor = {
 			max_organisation = 3
 		}
 	
@@ -326,7 +316,7 @@ technologies = {
 	
 	schwerpunk = {
 
-		category_tanks = {
+		category_all_armor = {
 			max_organisation = 3
 			max_strength = 3
 		}
@@ -379,9 +369,6 @@ technologies = {
 		mechanized = {
 			max_organisation = 5
 		}
-		mech_artillery_brigade = {
-			max_organisation = 5
-		}
 		amphibious_mechanized = {
 			max_organisation = 5
 		}
@@ -416,14 +403,20 @@ technologies = {
 		
 	}
 	
-	kampfgruppe = {
-		
-	    no_supply_grace = 24
-		
-		army_fuel_capacity_factor  = 0.20
-		
+	kampfgruppe = {		
+	   		
 		category_all_armor = {
 		    default_morale = 0.1
+			max_strength = 1
+		}
+		motorized = {
+			max_strength = 3
+		}
+		mechanized = {
+			max_strength = 3
+		}
+		amphibious_mechanized = {
+			max_strength = 3
 		}
 		
 		org_loss_when_moving = -0.05
@@ -482,8 +475,8 @@ technologies = {
 		category_militia = {
 			max_organisation = 5
 		}
-		category_tanks = {
-			max_organisation = 2
+		category_all_armor = {
+			max_organisation = 3
 		}
 
 		
@@ -555,12 +548,11 @@ technologies = {
 	
 	modern_blitzkrieg = {
 		
-		category_tanks = {
-			max_organisation = 3
-			breakthrough = 0.15
-		}
+		
 		category_all_armor = {
 			default_morale = 0.2
+			max_organisation = 3
+			breakthrough = 0.15
 		}
 		org_loss_when_moving = -0.15
 		air_cas_present_factor = 0.05
@@ -1484,9 +1476,6 @@ technologies = {
 		mechanized = {
 			max_organisation = 10
 		}
-		mech_artillery_brigade = {
-			max_organisation = 10
-		}
 		amphibious_mechanized = {
 			max_organisation = 10
 		}
@@ -1851,11 +1840,12 @@ technologies = {
 	}
 	
 	attritional_containment = {
+
 		category_light_infantry = {
 			max_organisation = 10
+		
 		}
 		experience_loss_factor = -0.111
-
 		enable_tactic = tactic_elastic_defense
 		
 		path = {
@@ -1961,7 +1951,7 @@ technologies = {
 		
 		pocket_penalty = -0.1
 		
-		no_supply_grace = 48
+		no_supply_grace = 36
 
 		path = {
 			leads_to_tech = defence_in_depth
@@ -2082,7 +2072,7 @@ technologies = {
 	deep_operations = {
 	
 		category_all_armor = {
-			max_organisation = 5
+			max_organisation = 4
 			max_strength = 1
 		}
 		
@@ -2254,10 +2244,6 @@ technologies = {
 			max_organisation = 5
 			default_morale = 0.1
 		}
-		mech_artillery_brigade = {
-			max_organisation = 5
-			default_morale = 0.1
-		}
 		motorized = {
 			max_organisation = 5
 			default_morale = 0.1
@@ -2301,7 +2287,7 @@ technologies = {
 		}
 		army_fuel_capacity_factor = 0.10
 		
-		no_supply_grace = 48
+		no_supply_grace = 36
 		
 		enable_tactic = tactic_backhand_blow
 

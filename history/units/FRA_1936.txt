@@ -964,69 +964,6 @@ units = {
 	}
 }
 
-### Air Wings
-air_wings = {
-	# Z.d'Op. Aériennes Nord -- Lille
-	18 = { 
-		# Groupement de Chasse 21 
-		# Groupement de Chasse 23
-		fighter_equipment_0 = {
-			owner = "FRA" 
-			amount = 192
-		}
-		# Groupement de Bombardment 6
-		# Groupement de Bombardment 9
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 60
-		}
-	}
-
-	# Z.d'Op. Aériennes Est -- Reims
-	18 = {
-		# Groupement de Chasse 22
-		fighter_equipment_0 = {
-			owner = "FRA" 
-			amount = 96
-		}
-	}
-
-	# Z.d'Op. Aériennes du Alps -- Marseille
-	18 = {
-		# Groupement de Chasse d'Alps
-		fighter_equipment_0 = {
-			owner = "FRA" 
-			amount = 96
-		}
-		# Groupement de Bombardment 1
-		# Groupement de Bombardment 6
-		# Groupement de Bombardment 9
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 90
-		}
-		# Groupement de Bombardment d'Assault 19
-		tac_bomber_equipment_0 =  {
-			owner = "FRA" 
-			amount = 24
-		}
-	}
-
-	# Z.d'Op. Aériennes Africain -- Tunis
-	18 = {
-		# Groupement de Chasse du Nord-Africain
-		fighter_equipment_0 = {
-			owner = "FRA" 
-			amount = 48
-		}
-		# Groupement de Bombardment du Nord-Africain
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 30
-		}
-	}
-}
-
 #########################
 ## STARTING PRODUCTION ##
 #########################
@@ -1081,7 +1018,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = horse_equipment_0
@@ -1121,7 +1057,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0
 		amount = 6000

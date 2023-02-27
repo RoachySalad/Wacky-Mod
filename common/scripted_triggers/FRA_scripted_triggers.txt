@@ -206,46 +206,6 @@ FRA_controls_west_africa = {
 			}
 		}
 	}
-	718 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	295 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	583 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	768 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	769 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
 }
 
 FRA_controls_central_africa = {
@@ -282,46 +242,6 @@ FRA_controls_central_africa = {
 		}
 	}
 	539 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	718 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	295 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	538 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	768 = {
-		OR = {
-			is_controlled_by = ROOT
-			CONTROLLER = {
-				is_subject_of = ROOT
-			}
-		}
-	}
-	769 = {
 		OR = {
 			is_controlled_by = ROOT
 			CONTROLLER = {
@@ -372,4 +292,8 @@ has_any_occupation_cost_trigger = {
 		has_idea = FRA_occupation_costs_3
 		has_idea = FRA_occupation_costs_4
 	}
+}
+
+is_vichy_france = {
+	has_country_flag = vichy_france	
 }

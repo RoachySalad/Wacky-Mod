@@ -1,65 +1,6 @@
 ideas = {
 
 	country = {
-		ENG_lost_the_pacific = {
-
-			picture = generic_air_research
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			targeted_modifier = {
-				tag = GER
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-
-			targeted_modifier = {
-				tag = ITA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = SPA
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = BUL
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = HUN
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = VIC
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-			targeted_modifier = {
-				tag = ROM
-				attack_bonus_against = -0.1
-				defense_bonus_against = -0.1
-			}
-
-			modifier = {
-				extra_trade_to_overlord_factor = -0.1
-				fuel_gain_factor = -0.1
-				base_fuel_gain_factor = -0.1
-				invasion_preparation = 0.1
-				naval_invasion_planning_bonus_speed = -0.1
-			}
-		}
 		ENG_tallboys = {
 
 			picture = generic_air_research
@@ -183,7 +124,7 @@ ideas = {
 			removal_cost = -1
 						
 			modifier = {
-				navy_refit_ic_cost = -0.1
+				refit_ic_cost = -0.1
 				refit_speed = 0.2
 			}
 		}

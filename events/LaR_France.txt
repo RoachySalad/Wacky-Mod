@@ -334,6 +334,7 @@ country_event = {
 		original_tag = FRA
 		NOT = {
 			has_completed_focus = FRA_ban_the_leagues
+			has_completed_focus = FRA_break_up_the_league
 		}
 		not = { has_idea = FRA_political_violence }
 		has_stability < 0.5
@@ -659,15 +660,6 @@ country_event = {
 			}
 			annex_country = { target = TOG }
 		}
-		if = {
-			limit = {
-				ZIM = {
-					exists = yes
-					is_subject_of = ROOT
-				}
-			}
-			annex_country = { target = ZIM }
-		}
 		every_owned_state = {
 			limit = {
 				OR = {
@@ -680,7 +672,6 @@ country_event = {
 					is_core_of = NGR
 					is_core_of = DAH
 					is_core_of = TOG
-					is_core_of = ZIM
 				}
 			}
 			add_core_of = ROOT
@@ -1721,11 +1712,6 @@ country_event = {
 					state = 778
 					state = 781
 					state = 776
-					state = 295
-					state = 718
-					state = 538
-					state = 769
-					state = 768
 				}
 			}
 			event_target:free_france = {
@@ -1757,11 +1743,6 @@ country_event = {
 						state = 778
 						state = 781
 						state = 776
-						state = 295
-						state = 718
-						state = 538
-						state = 769
-						state = 768
 					}
 				}
 				event_target:free_france = {
@@ -3112,7 +3093,7 @@ country_event = {
 				}
 			}
 		}
-		has_stability < 0.25
+		has_stability < 0.15
 		not = { has_completed_focus = FRA_form_the_popular_front }
 	}
 	mean_time_to_happen = { days = 180 }
@@ -3147,7 +3128,7 @@ country_event = {
 				}
 			}
 		}
-		has_stability < 0.25
+		has_stability < 0.15
 		has_completed_focus = FRA_form_the_popular_front
 	}
 	mean_time_to_happen = { days = 180 }

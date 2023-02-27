@@ -5,25 +5,25 @@
 add_namespace = italy
 
 
-country_event = {
-	id = italy.air
-	title = italy.air.t
-	desc = italy.air.d
-	picture = GFX_report_event_german_speech
+# country_event = {
+# 	id = italy.air
+# 	title = italy.air.t
+# 	desc = italy.air.d
+# 	picture = GFX_report_event_german_speech
 	
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 	
 	
-	fire_only_once = yes
+# 	fire_only_once = yes
 	
- 	immediate = {		
- 	}
+#  	immediate = {		
+#  	}
 
-	option = {
-		name = italy.air.a
-		add_ideas = ITA_outdated_industry
-	}
-}
+# 	option = {
+# 		name = italy.air.a
+# 		add_ideas = ITA_outdated_industry
+# 	}
+# }
 
 
 # Albania Yields

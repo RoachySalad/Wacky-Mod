@@ -4,7 +4,7 @@ ideas = {
 	
 		ROM_resita75 = {
 
-			picture = idea_generic_artillery_regiments
+			picture = generic_artillery_regiments
 			
 			removal_cost = -1
 
@@ -776,6 +776,25 @@ ideas = {
 					torpedo_attack = 0.2
 					instant = yes
 				}
+			}
+		}
+
+		ROM_white_squadron = {
+
+			picture = generic_air_bonus
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				experience_loss_factor = -0.1
 			}
 		}
 	}

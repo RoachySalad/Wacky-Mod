@@ -33,6 +33,13 @@ equipments = {
 					tank_light_turret_type_3
 				}
 			}
+			#suspension_type_slot = {
+			#	required = yes
+			#	allowed_module_categories = {
+			#		tank_suspension_type
+			#		tank_non_tracked_suspension_type
+			#	}
+			#}
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -132,6 +139,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = additional_heavy_machine_guns
+			count < 2
+		}
+		module_count_limit = {
+			module = apcr_round
 			count < 2
 		}
 
@@ -190,12 +201,18 @@ equipments = {
 					tank_medium_turret_type_4
 				}
 			}
+			#suspension_type_slot = {
+			#	required = yes
+			#	allowed_module_categories = {
+			#		tank_suspension_type
+			#		tank_non_tracked_suspension_type
+			#	}
+			#}
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_armor_type
 				}
-
 			}
 			engine_type_slot = {
 				required = yes
@@ -207,13 +224,14 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_radio_module
+					
 				}
 			}
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_ammo
 					tank_special_module
+					tank_special_ammo
 				}
 			}
 			special_type_slot_3 = {
@@ -234,6 +252,7 @@ equipments = {
 					tank_special_module
 				}
 			}
+			
 		}
 		module_count_limit = {
 			module = sloped_armor
@@ -290,6 +309,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = additional_heavy_machine_guns
+			count < 2
+		}
+		module_count_limit = {
+			module = apcr_round
 			count < 2
 		}
 
@@ -349,6 +372,13 @@ equipments = {
 					tank_heavy_turret_type_1
 				}
 			}
+			#suspension_type_slot = {
+			#	required = yes
+			#	allowed_module_categories = {
+			#		tank_suspension_type
+			#		tank_non_tracked_suspension_type
+			#	}
+			#}
 			armor_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -370,8 +400,8 @@ equipments = {
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
-					tank_special_ammo
 					tank_special_module
+					tank_special_ammo
 				}
 			}
 			special_type_slot_3 = {
@@ -443,6 +473,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = secondary_turret_howitzer
+			count < 2
+		}
+		module_count_limit = {
+			module = apcr_round
 			count < 2
 		}
 		
@@ -589,6 +623,10 @@ equipments = {
 			module = additional_heavy_machine_guns
 			count < 2
 		}
+		module_count_limit = {
+			module = apcr_round
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -612,20 +650,20 @@ equipments = {
 
 	}
 
-	modern_tank_chassis_1 = {
-		abbreviation = "mbt0"
-		derived_variant_name = modern_tank_equipment_1
-		visual_level = 0
-		year = 1948
-		archetype = modern_tank_chassis
-		priority = 2000
-		module_slots = inherit
+	#modern_tank_chassis_1 = {
+	#	abbreviation = "mbt0"
+	#	derived_variant_name = modern_tank_equipment_1
+	#	visual_level = 0
+	#	year = 1948
+	#	archetype = modern_tank_chassis
+	#	priority = 2000
+	#	module_slots = inherit
 
-		upgrades = {
-			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
-		}
-	}
+	#	upgrades = {
+	#		tank_nsb_engine_upgrade
+	#		tank_nsb_armor_upgrade
+	#	}
+	#}
 
 	super_heavy_tank_chassis = {
 		year = 1948
@@ -758,8 +796,8 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		upgrades = {
-			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
 		}
 	}
 
@@ -795,12 +833,12 @@ equipments = {
 				}
 			}
 
-			suspension_type_slot = {
-				required = yes
-				allowed_module_categories = {
-					tank_suspension_type
-				}
-			}
+			#suspension_type_slot = {
+			#	required = yes
+			#	allowed_module_categories = {
+			#		tank_suspension_type
+			#	}
+			#}
 
 			armor_type_slot = {
 				required = yes
@@ -925,8 +963,8 @@ equipments = {
 		archetype = amphibious_tank_chassis
 		priority = 2000
 		upgrades = {
-			tank_nsb_engine_upgrade
-			tank_nsb_armor_upgrade
+			tank_nsb_med_engine_1_upgrade
+			tank_nsb_med_armor_1_upgrade
 		}
 		module_slots = inherit
 	}

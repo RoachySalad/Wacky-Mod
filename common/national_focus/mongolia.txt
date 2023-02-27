@@ -1806,7 +1806,7 @@ focus_tree = {
 				planning_skill = 3
 				logistics_skill = 2
 			}
-
+			#add_ideas = SOV_new_officers
 		}
 	}
 

@@ -1,0 +1,26 @@
+Ireland_Historical = {
+    enable = {
+        original_tag = IRE
+    }
+
+	ai_national_focuses = {
+        IRE_modernisation
+        IRE_agrarian_reform
+        IRE_farming_modernisation
+        IRE_heavy_industry_expansion
+        IRE_develop_defence_industry
+        IRE_arms_factory_investments
+        IRE_extra_research_teams
+        IRE_abolish_free_state
+        IRE_coal_cattle_pact
+        IRE_confirmation_of_agreements
+        IRE_repayment_of_land
+        IRE_return_of_treaty_ports
+        IRE_election_1937
+        IRE_fianna_fail
+        IRE_constitution_of_ireland
+        IRE_establish_the_presidency
+        IRE_emergency_power_act
+        IRE_island_defence
+	}
+}

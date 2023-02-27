@@ -28,7 +28,7 @@ equipments = {
 		defense = 4
 		breakthrough = 8
 		hardness = 0.6
-		armor_value = 5
+		armor_value = 15
 
 
 		#Space taken in convoy
@@ -36,12 +36,13 @@ equipments = {
 		
 		build_cost_ic = 11
 		resources = {
-			steel = 25
+			steel = 30
 			#oil = 1
 			rubber = 10
 		}
 		
 		fuel_consumption = 2.4
+		fuel_capacity = 400
 		supply_truck = no
 	}
 
@@ -69,7 +70,7 @@ equipments = {
 		defense = 6
 		breakthrough = 10
 		hardness = 0.7
-		armor_value = 5
+		armor_value = 20
 
 		
 		build_cost_ic = 12
@@ -90,7 +91,7 @@ equipments = {
 		defense = 8
 		breakthrough = 12
 		hardness = 0.8
-		armor_value = 5
+		armor_value = 30
 
 		
 		build_cost_ic = 12

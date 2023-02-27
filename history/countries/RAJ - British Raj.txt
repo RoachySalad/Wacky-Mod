@@ -32,6 +32,7 @@ if = {
 	}	
 	set_technology = {	
 		transport = 1	
+		early_destroyer = 1
 	}	
 }	
 if = {	
@@ -39,17 +40,11 @@ if = {
 		has_dlc = "Man the Guns"	
 	}	
 	set_technology = {	
-		mtg_transport = 1
-		early_ship_hull_light = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		mtg_transport = 1
-		smoke_generator = 1
+		mtg_transport = 1	
 		basic_depth_charges = 1
 		sonar = 1
 		improved_sonar = 1
 		improved_depth_charges = 1
-		basic_ship_hull_light = 1		
 	}	
 }
 if = {
@@ -61,10 +56,27 @@ if = {
 		RAJ_agrarian_society
 		RAJ_risk_of_famine
 		RAJ_the_sun_never_sets_idea_1
+		PACIFIC_COMMONWEALTH_controls_original
 	}
 
 	add_to_tech_sharing_group = commonwealth_research
 }
+# if = {
+# 	limit = { has_dlc = "By Blood Alone" }
+# 		set_air_oob = "RAJ_1936_air_bba"
+# 		set_technology = {
+# 			aa_lmg = 1
+# 			#engines_1 = 1
+# 			aircraft_construction = 1
+# 			iw_small_airframe = 1
+# 		}
+# 	else = {
+# 		set_technology = {
+# 			CAS1 = 1
+# 			early_fighter = 1
+# 		}
+# 	}
+# }
 
 set_convoys = 50
 

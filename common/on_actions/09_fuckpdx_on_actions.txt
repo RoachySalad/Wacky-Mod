@@ -1,24 +1,24 @@
 on_actions = {
    on_startup = {
 		effect = {
-			every_country = { 
-				limit = { tag = GER }
-				country_event = { 
-					id = germany.mefoair 
-				}
-			}
-			every_country = { 
-				limit = { tag = MON }
-				country_event = { 
-					id = mongolia.start 
-				}
-			}	
-			every_country = { 
-				limit = { tag = ITA }
-				country_event = { 
-					id = italy.air 
-				}
-			}	
+			# every_country = { 
+			# 	limit = { tag = GER }
+			# 	country_event = { 
+			# 		id = germany.mefoair 
+			# 	}
+			# }
+			# every_country = { 
+			# 	limit = { tag = MON }
+			# 	country_event = { 
+			# 		id = mongolia.start 
+			# 	}
+			# }	
+			# every_country = { 
+			# 	limit = { tag = ITA }
+			# 	country_event = { 
+			# 		id = italy.air 
+			# 	}
+			# }	
 			if = {
 				limit = {
 					is_historical_focus_on = no
@@ -62,7 +62,11 @@ on_actions = {
 					}
 				}
 			}
-		
+			every_country = { 
+				country_event = { 
+					id = startingevent.1001
+				}
+			}
 		}
 	}
 }

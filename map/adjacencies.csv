@@ -263,4 +263,13 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6012;9203;impassable;-1;-1;-1;-1;-1;;Finland
 6012;142;impassable;-1;-1;-1;-1;-1;;Finland
 5838;5864;;-1;-1;-1;-1;-1;OTRANTO_STRAIT;Otranto
+13052;13255;sea;8908;-1;-1;-1;-1;;Midway
+13047;13256;sea;7247;-1;-1;-1;-1;;Wake North
+13257;13258;sea;8264;-1;-1;-1;-1;;Wake South 
+5539;5960;;-1;-1;-1;-1;-1;SINGAPORE_CORRIDOR;Singapore
+2737;2714;;-1;-1;-1;-1;-1;JAVA_STRAIT;Java
+2776;2800;;-1;-1;-1;-1;-1;DJIBOUTI_STRAIT;Djibouti
+2431;2382;;-1;-1;-1;-1;-1;ORESUND_STRAIT;ORESUND
+2431;2408;;-1;-1;-1;-1;-1;THE_BELTS;TheBelts
+2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 -1;-1;;-1;-1;-1;-1;-1;-1

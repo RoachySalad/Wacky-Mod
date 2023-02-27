@@ -1128,7 +1128,6 @@
 
 		available = {
 			is_subject = no
-			has_government = democratic
 			NOT = {
 				has_war_with = ENG
 			}
@@ -1654,7 +1653,6 @@
 
 		available = {
 			is_subject = no
-			has_government = communism
 			NOT = {
 				has_war_with = SOV
 			}
@@ -1883,7 +1881,6 @@
 
 		available = {
 			is_subject = no
-			has_government = democratic
 			NOT = {
 				has_war_with = USA
 			}
@@ -2415,7 +2412,7 @@
 				create_corps_commander = {
 					name = "Pablo González Garza"
 					id = 710
-					gfx = "GFX_portrait_mex_pablo_gonzalez"
+					#gfx = "GFX_portrait_MEX_pablo_gonzalez"
 					traits = { harsh_leader } # Prince of terror, led assassination of Pancho Villa
 					skill = 3
 					attack_skill = 3
@@ -2427,7 +2424,7 @@
 					create_corps_commander = {
 						name = "Pablo González Garza"
 						id = 710
-						gfx = "GFX_portrait_mex_pablo_gonzalez"
+						#gfx = "GFX_portrait_MEX_pablo_gonzalez"
 						traits = { harsh_leader } # Prince of terror, led assassination of Pancho Villa
 						skill = 3
 						attack_skill = 3
@@ -2873,7 +2870,7 @@
 			create_country_leader = {
 				name = "Luis María Martínez"
 				desc = "POLITICS_LUIS_MARIA_MARTINEZ_DESC"
-				picture = GFX_Portrait_MEX_Luis_Maria_Martinez
+				picture = "gfx/leaders/MEX/portrait_MEX_Luis_Maria_Martinez.dds"
 				expire = "1965.1.1"
 				ideology = socialism
 				traits = {
