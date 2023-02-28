@@ -1420,7 +1420,7 @@
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_legitimacy > 20
+				has_legitimacy > 40
 			}
 			else = {
 				num_of_factories > 14
@@ -1428,7 +1428,7 @@
 		}
 		
 		bypass = {
-
+			not = { has_idea = FRA_defeatism }
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

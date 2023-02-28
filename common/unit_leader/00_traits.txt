@@ -432,7 +432,7 @@ leader_traits = {
 				FROM = { 
 					has_idea = mass_assault_academy_spirit
 				}
-				factor = 2
+				factor = 1.5
 			}
 			
 			modifier = {
@@ -561,7 +561,7 @@ leader_traits = {
 				FROM = { 
 					has_idea = mobile_warfare_academy_spirit
 				}
-				factor = 2
+				factor = 1.5
 			}
 			
 			modifier = {
@@ -736,7 +736,18 @@ leader_traits = {
 		attack_skill_factor = 1
 		planning_skill_factor = 1
 	}
-
+trait_soppi = { 
+		type = land
+		trait_type = personality_trait
+		
+		trait_xp_factor = {
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+		attack_skill_factor = 2
+	}
 	ascari_officer = { 
 		type = corps_commander
 
@@ -3174,6 +3185,9 @@ leader_traits = {
 		defense_skill = -1
 		logistics_skill = -1
 		planning_skill = -1
+		maneuvering_skill = -1
+		coordination_skill = -1
+
 	}
 	
 	substance_abuser = { 
@@ -3191,6 +3205,8 @@ leader_traits = {
 		defense_skill = -2
 		logistics_skill = -2
 		planning_skill = -2
+		maneuvering_skill = -2
+		coordination_skill = -2
 	}
 
 	hidden_sympathies = {

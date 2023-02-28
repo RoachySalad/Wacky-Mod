@@ -171,13 +171,13 @@ sub_units = {
 			attack = -2.0
 		}
 		fort = {
-			attack = 0.70
+			attack = 0.65
 		}
 		urban = {
 			attack = 0.3
 		}
 		dense_urban = {
-			attack = 0.65
+			attack = 0.5
 		}
 		town = {
 			attack = 0.15
@@ -240,9 +240,9 @@ sub_units = {
 			defence = -0.1
 		}
 		mountain = 	{
-		    attack = -0.5
+		    attack = -0.6
 			movement = -0.5
-			defence = -0.5
+			defence = -0.6
 		}
 		jungle = {
 		    attack = -0.4
@@ -268,7 +268,7 @@ sub_units = {
 			attack = 0.4
 		}
 		dense_urban = {
-			attack = 0.95
+			attack = 0.9
 		}
 		town = {
 			attack = 0.2

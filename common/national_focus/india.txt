@@ -1077,7 +1077,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			army_experience = 30
+			army_experience = 20
 
 			add_autonomy_ratio = {
 				value = -0.12
@@ -2901,7 +2901,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_integrate_princely_railways
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25

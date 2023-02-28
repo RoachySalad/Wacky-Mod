@@ -394,9 +394,7 @@
  RAJ_jungle_training_effect:0 "Enables §HJungle Training§!\n§HAll Infantry:\n    Jungle§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
  mountain_training_effect:0 "Enables §HMountain Training§!\n§HAll Infantry:\n    Mountain§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
  motti_tactic:0 "Enables §HMotti Tactics§!\n§HAll Infantry:\n    Forest§!\n      Attack: §G+5%§!\n      Defence: §G+5%§!\n      Movement: §G+10%§!"
- JAP_adaptable_armor_designs:0 "Enables §HAdaptable Light Armor Designs§!\n§HLight Tanks and Variants:\n    Jungle§!\n     Attack: §G+10%§!\n      Movement: §G+15%§!\n    §HMountain§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!"
- MON_adaptable_cavalry_designs:0 "Enables §HCavalry Designs§!\n§HCavalry:\n    Plains§!\n      Attack: §G+5%§!\n      Movement: §G+5%§!\n "
-
+ JAP_adaptable_armor_designs:0 "Enables §HAdaptable Light Armor Designs§!\n§HLight Tanks and Variants:\n    Jungle§!\n     Attack: §G+25%§!\n      Movement: §G+20%§!\n    §HMountain§!\n      Attack: §G+25%§!\n      Movement: §G+20%§!"
 officer_training_flag:0 "Officer Training in Progress"
 
 superior_firepower_academy_spirit_tt:1 "§G50% chance§! that new officers are created with the §Y"Engineer Officer"§! trait.\n\nEnables §YArmy Engineering Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Engineer"§!"
@@ -404,8 +402,8 @@ mobile_warfare_academy_spirit_tt:1 "New Officers: §G50% chance§! to begin with
 theatre_training_academy_spirit_tt:0 "§G50% chance§! that new officers are created with the §Y"Brilliant Strategist"§! or §Y"Inflexible Strategist"§! trait.\n\nEnables §YColonial Training Academy§! which will give a random §YSkill 2§! or lower General a §Y"Terrain Trait"§!"
 bold_attack_spirit_tt:2 "Enables §YArmy Elan Academy§! which will give a random General with §Y2 Attack§! or less §Y1 Attack§!"
 tenacious_defense_spirit_tt:2 "Enables §YArmy Traditional Academy§! which will give a random General with §Y2 Defense§! or less §Y1 Defense§!"
-meticulous_preparation_spirit_tt:2 "Enables §YArmy Staff Academy§! which will give a random General with §Y2 Planning§! or less §Y1 Planning§!. They will also gain §Y"Organizer"§!"
-best_of_the_best_spirit_tt:1 "Enables §YArmy Elite Academy§! which will give a random General with §YSkill 2§! or less §Y1 Skill Level§!"
+meticulous_preparation_spirit_tt:2 "Enables §YArmy Staff Academy§! which will give a random General with §Y2 Planning§! or less §Y1 Planning§!. They also have a §G50% chance§! to also gain §Y"Organizer"§!"
+best_of_the_best_spirit_tt:1 "Enables §YArmy Elite Academy§! which will give a random General with §YSkill 2§! or less §Y1 Skill Level§!""
 mass_assault_academy_spirit_tt:2 "New Officers: §G50% chance§! to begin with §Y"Infantry Officer"§! trait.\n\nEnables §YArmy Infantry Academy§! which will give a random §YSkill 3§! or lower General with the trait §Y"Infantry Officer"§! the trait §Y"Infantry Leader"§!"
 inventive_leadership_spirit_tt:2 "New Officers: §G50% chance§! to begin with §Y"Commando"§!, §Y"Trickster"§!, or §Y"Invader"§! traits.\n\nEnables §YCombined Branch Academy§! which will give a random §YSkill 3§! or lower General the trait §Y"Commando"§!, §Y"Trickster"§!, or §Y"Invader"§!"
 
@@ -431,6 +429,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  heavy_anti_tank_brigade:0 "Heavy Anti-Tank"
  siege_artillery:0 "Siege Artillery"
  heavy_artillery_brigade:0 "Heavy Artillery"
+ mech_artillery_brigade:0 "Mechanized Artillery"
  assault_gun_brigade:0 "Assault Gun"
  pack_artillery_brigade:0 "Pack Artillery"
  pack_antitank_brigade:0 "Pack Anti-Tank"
@@ -471,6 +470,9 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  static_eng:0 "Construction Battalion"
  med_anti_tank_brigade:0 "Medium Anti-Tank"
  mot_med_anti_tank_brigade:0 "Motorised Medium Anti-Tank"
+ mech_artillery:0 "Mechanized Artillery"
+ mechanized_artillery:0 "Mechanized Artillery"
+ mechanised_artillery:0 "Mechanized Artillery"
  #### EQUIPMENT ####
  artillery_equipment:0 "Towed Artillery"
  artillery_equipment_short:0 "Artillery"
@@ -798,7 +800,7 @@ off_superior_tt:0 "A random §YSkill 3§! or lower General will gain §Y"Enginee
  ger_cze_td_equipment_2:0 "Jagdpanzer 38"
  ger_cze_spg_equipment_1:0 "Grille Ausf. K"
  ger_cze_spaa_equipment_1:0 "Flakpanzer 38(t)"
- ger_cze_tank_equipment_1_short_tt:0 "\n§RThis will automatically unlock after the 'Fate of Czechoslovakia' Focus and can only be unlocked with it.§!"
+ ger_cze_tank_equipment_1_short_tt:0 "§RThis will automatically unlock after the 'Fate of Czechoslovakia' Focus§!"
  ger_cze_tank_equipment_2_short_tt:0 "This Light Tank Chassis is able to use Tier 6 §6Advanced§! §OMedium§! Armaments!"
  sov_zis_30_short_tt:0 "\n§RThis will automatically unlock after the 'Tankograd' Focus and can only be unlocked with it.§!\n\n§OYou can only make Tank Destroyers, Self Propelled AA, and Self Propelled Guns with this chassis.§!"
  

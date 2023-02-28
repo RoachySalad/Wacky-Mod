@@ -220,7 +220,11 @@ ENG_purchase_guns = {
 			hidden_effect = {
 				set_country_flag = purchased_from_usa
 			}
-			
+			add_equipment_to_stockpile = {
+			    type = motorized_equipment
+			    amount = 500
+			    producer = USA
+			}
 			add_equipment_to_stockpile = {
 			    type = train_equipment
 			    amount = 10
@@ -231,8 +235,11 @@ ENG_purchase_guns = {
 				amount = 10
 			}
 			USA = {
-
-			
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = -500
+				producer = USA
+			}
 			add_equipment_to_stockpile = {
 			    type = train_equipment
 			    amount = -10
@@ -252,17 +259,11 @@ ENG_purchase_guns = {
 			hidden_effect = {
 				clr_country_flag = purchased_from_usa
 			}
-			add_equipment_to_stockpile = {
-			    type = motorized_equipment
-			    amount = 500
-			    producer = USA
-			}
-			
+			USA = {
 				remove_ideas = USA_cash_and_carry_purchase_ENG
 			}
 		}
-	
-	
+	}
 
 	ENG_purchase_mech = {
 		allowed = {
@@ -281,8 +282,7 @@ ENG_purchase_guns = {
 				has_war = no
 				has_country_flag = usa_sells_mech
 				has_equipment = {
-					mechanized_equipment > 150
-
+					mechanized_equipment > 250
 				}
 			}
 			NOT = {
@@ -2006,7 +2006,46 @@ host_decisions = {
 		}
 
 	}
+
+	end_sino_japanese_war = {
+
+		icon = GFX_decision_generic_break_treaty
+
+		allowed = {
+			always = yes
 }
+
+		available = {
+			JAP = {
+				has_war_with = CHI
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				JAP = {
+					add_timed_idea = {
+						idea = spirit_of_bozo
+						days = 365
+					}
+				}			
+			}
+			JAP = {
+				annex_country = {
+					target = CHI
+					transfer_troops = no
+				}
+			}
+
+			USA = {
+				add_offsite_building = { type = arms_factory level = 30 }
+			}
+		}
+
+	}
+
+}
+
 political_actions = {
 
 	
@@ -2267,8 +2306,9 @@ propaganda_efforts = {
 
 		available = {
 			NOT = { has_country_flag = war_propaganda_campaign_running }
+			threat > 0.5
 			has_war_support < 0.5
-			
+			has_offensive_war = no
 			if = {
 				limit = {
 					tag = SPR
@@ -2308,7 +2348,7 @@ propaganda_efforts = {
 		cost = 150
 
 		modifier = {
-			war_support_weekly = 0.005
+			war_support_weekly = 0.01
 		}
 
 		complete_effect = {

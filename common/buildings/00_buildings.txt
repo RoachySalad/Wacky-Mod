@@ -54,7 +54,7 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 8000
+		base_cost = 6000
 		#Cost Reduction?
 		provincial = yes
 		disabled_in_dmz = yes
@@ -160,7 +160,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		
 		#this can be edited to 0.01 but lower will reduce the damage done to rubber refs.
-		damage_factor = 0.025
+		#damage_factor = 0.025
 		
 		show_modifier = yes
 		fuel_gain_from_states = 5.0 
@@ -176,6 +176,9 @@ buildings = {
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
+		
+		#this can be edited to 0.01 but lower will reduce the damage done to rubber refs.
+		damage_factor = 0.025
 		
 		show_modifier = yes
 	}

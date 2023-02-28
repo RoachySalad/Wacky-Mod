@@ -1274,7 +1274,7 @@ discord_sex_trait = {
 	speer_idea = {
 		sprite = 10
 		random = yes
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.05
 		production_factory_efficiency_gain_factor = 0.1
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.1
@@ -1319,10 +1319,10 @@ discord_sex_trait = {
 		random = no
 		equipment_bonus = {
 			armor = {
-				armor_value = 0.05
-				maximum_speed = 0.1
-				build_cost_ic = -0.1
-				maximum_speed = 0.1
+				build_cost_ic = -0.15
+				soft_attack = -0.05
+				hard_attack = -0.05
+				reliability = -0.1
 			}
 		}
 		
@@ -1335,7 +1335,7 @@ discord_sex_trait = {
 		random = no
 		equipment_bonus = {
 						armor = {
-				build_cost_ic = -0.15
+				build_cost_ic = -0.2
 				soft_attack = -0.05
 				hard_attack = -0.05
 				breakthrough = -0.05
@@ -1365,7 +1365,7 @@ discord_sex_trait = {
 	
 	deep_battle_expert = {
 		sprite = 14
-		#experience_gain_army = 0.05 #TODO
+		experience_gain_army = 0.05
 		no_supply_grace = 48
 		org_loss_when_moving = -0.05
 		
@@ -4378,6 +4378,7 @@ discord_sex_trait = {
 		# Boosts Communism
 		sprite = 13
 		communism_drift = 0.1
+		stability_weekly = 0.001
 		
 	}
 	
@@ -4423,6 +4424,7 @@ discord_sex_trait = {
 
 		democratic_drift = 0.1
 		stability_factor = 0.15
+		stability_weekly = 0.001
 		
 		ai_will_do = {
 			factor = 1
@@ -4448,6 +4450,7 @@ discord_sex_trait = {
 
 		communism_drift = 0.1
 		consumer_goods_factor = -0.05
+		stability_weekly = 0.001
 		
 		ai_will_do = {
 			factor = 1
@@ -5699,7 +5702,7 @@ discord_sex_trait = {
 	
 	military_theorist = {
 		sprite = 14
-		#experience_gain_army = 0.05
+		experience_gain_army = 0.05
 		land_doctrine_cost_factor = -0.1
 		
 		ai_will_do = {
@@ -5709,7 +5712,7 @@ discord_sex_trait = {
 	
 	mobile_warfare_expert = { 
 		sprite = 14
-		#experience_gain_army = 0.05
+		experience_gain_army = 0.05
 		cat_mobile_warfare_cost_factor = -0.15
 		planning_speed = 0.20
 		
@@ -5720,7 +5723,7 @@ discord_sex_trait = {
 	
 	superior_firepower_expert = {
 		sprite = 14
-		#experience_gain_army = 0.05
+		experience_gain_army = 0.05
 		cat_superior_firepower_cost_factor = -0.15
 		army_attack_factor = 0.025
 		
@@ -5731,7 +5734,7 @@ discord_sex_trait = {
 	
 	grand_battle_plan_expert = {
 		sprite = 14
-		#experience_gain_army = 0.05
+		experience_gain_army = 0.05
 		cat_grand_battle_plan_cost_factor = -0.15
 		max_planning = 0.05
 		
@@ -5742,7 +5745,7 @@ discord_sex_trait = {
 	
 	mass_assault_expert = {
 		sprite = 14
-		#experience_gain_army = 0.05
+		experience_gain_army = 0.05
 		cat_mass_assault_cost_factor = -0.15
 		army_org_factor = 0.05
 		
@@ -5753,7 +5756,7 @@ discord_sex_trait = {
 	
 	air_warfare_theorist = {
 		sprite = 14
-		#experience_gain_air = 0.05
+		experience_gain_air = 0.05
 		air_doctrine_cost_factor = -0.1
 		
 		ai_will_do = {
@@ -5856,7 +5859,7 @@ discord_sex_trait = {
 			}
 		}
 		planning_speed = 0.20
-		#experience_gain_army = 0.05
+		experience_gain_army = 0.05
 		
 		ai_will_do = {
 			factor = 500
@@ -6619,7 +6622,7 @@ discord_sex_trait = {
 	army_chief_defensive_1 = { # +5 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.06
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -6635,7 +6638,7 @@ discord_sex_trait = {
 	army_chief_defensive_2 = { # +10 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.08
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -6651,7 +6654,7 @@ discord_sex_trait = {
 	army_chief_defensive_3 = { # +15 Defensive efficiency
 		sprite = 9
 		army_defence_factor = 0.1
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -6668,7 +6671,7 @@ discord_sex_trait = {
 	army_chief_offensive_1 = { # +5 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.06
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -6684,7 +6687,7 @@ discord_sex_trait = {
 	army_chief_offensive_2 = { # +10 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.08
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -6700,7 +6703,7 @@ discord_sex_trait = {
 	army_chief_offensive_3 = { # +15 Offensive efficiency
 		sprite = 7
 		army_attack_factor = 0.1
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -6715,7 +6718,7 @@ discord_sex_trait = {
 
 	army_chief_old_guard = { # Rate at which field experience is gained decreases by 10%
 		sprite = 5 # Should not need sprite, should mostly be secondary
-		experience_gain_army_factor = @chief_experience_gain_medium
+		experience_gain_army_factor = -0.1
 		political_power_factor = 0.1
 		
 		ai_will_do = {
@@ -6730,7 +6733,7 @@ discord_sex_trait = {
 	army_chief_drill_1 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.05
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -6746,7 +6749,7 @@ discord_sex_trait = {
 	army_chief_drill_2 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.1
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -6762,7 +6765,7 @@ discord_sex_trait = {
 	army_chief_drill_3 = { # Decreases training time for ground units
 		sprite = 5
 		training_time_army_factor = -0.15
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -6778,8 +6781,9 @@ discord_sex_trait = {
 	
 	army_chief_reform_1 = { # Rate at which field experience is gained increases by 5%
 		sprite = 5
-		experience_gain_army = @chief_experience_gain_low
+		
 		experience_gain_army_factor = 0.05
+		experience_gain_army = 0.12
 
 		command_cap = @tier1
 
@@ -6795,7 +6799,7 @@ discord_sex_trait = {
 	army_chief_reform_2 = { # Rate at which field experience is gained increases by 10%
 		sprite = 5
 		experience_gain_army_factor = 0.05
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.16
 		
 		command_cap = @tier2
 
@@ -6811,7 +6815,7 @@ discord_sex_trait = {
 	army_chief_reform_3 = { # Rate at which field experience is gained increases by 15%
 		sprite = 5
 		experience_gain_army_factor = 0.05
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.20
 		
 		command_cap = @tier3
 
@@ -6875,7 +6879,7 @@ discord_sex_trait = {
 	army_chief_organizational_1 = { # Ground units get 4 more Organization
 		sprite = 5
 		army_org_factor = 0.04
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -6891,7 +6895,7 @@ discord_sex_trait = {
 	army_chief_organizational_2 = { # Ground units get 8 more Organization
 		sprite = 5
 		army_org_factor = 0.08
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -6907,7 +6911,7 @@ discord_sex_trait = {
 	army_chief_organizational_3 = { # Ground units get 12 more Organization
 		sprite = 5
 		army_org_factor = 0.12
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -6923,7 +6927,7 @@ discord_sex_trait = {
 	army_chief_planning_1 = { # 
 		sprite = 5
 		planning_speed = 0.15
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -6939,7 +6943,7 @@ discord_sex_trait = {
 	army_chief_planning_2 = { # 
 		sprite = 5
 		planning_speed = 0.20
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -6955,7 +6959,7 @@ discord_sex_trait = {
 	army_chief_planning_3 = { # 
 		sprite = 5
 		planning_speed = 0.25
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -6971,7 +6975,7 @@ discord_sex_trait = {
 	army_chief_morale_1 = { # Ground units get 4 more Morale
 		sprite = 5
 		army_morale_factor = 0.04
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -6987,7 +6991,7 @@ discord_sex_trait = {
 	army_chief_morale_2 = { # Ground units get 8 more Morale
 		sprite = 5
 		army_morale_factor = 0.08
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -7003,7 +7007,7 @@ discord_sex_trait = {
 	army_chief_morale_3 = { # Ground units get 12 more Morale
 		sprite = 5
 		army_morale_factor = 0.12
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -7020,7 +7024,7 @@ discord_sex_trait = {
 	army_chief_maneuver_1 = { # Ground units move 5% faster
 		sprite = 5
 		army_speed_factor = 0.05
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 
 		command_cap = @tier1
 
@@ -7036,7 +7040,7 @@ discord_sex_trait = {
 	army_chief_maneuver_2 = { # Ground units move 10% faster
 		sprite = 5
 		army_speed_factor = 0.1
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 
 		command_cap = @tier2
 
@@ -7052,7 +7056,7 @@ discord_sex_trait = {
 	army_chief_maneuver_3 = { # Ground units move 15% faster
 		sprite = 5
 		army_speed_factor = 0.15
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 
 		command_cap = @tier3
 
@@ -7069,7 +7073,7 @@ discord_sex_trait = {
 	army_entrenchment_1 = { # Ground units entrench 4% faster
 		sprite = 9
 		max_dig_in_factor = 0.05
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7085,7 +7089,7 @@ discord_sex_trait = {
 	army_entrenchment_2 = { # Ground units entrench 8% faster
 		sprite = 9
 		max_dig_in_factor = 0.1
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7101,7 +7105,7 @@ discord_sex_trait = {
 	army_entrenchment_3 = { # Ground units entrench 12% faster
 		sprite = 9
 		max_dig_in_factor = 0.15
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7119,7 +7123,7 @@ discord_sex_trait = {
 		sprite = 5
 		max_dig_in = 3
 		mobilization_speed = -0.02
-		experience_gain_army = @chief_experience_gain_low
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 		
@@ -7131,7 +7135,7 @@ discord_sex_trait = {
 		sprite = 5
 		max_dig_in = 5
 		mobilization_speed = -0.04
-		experience_gain_army = @chief_experience_gain_medium
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 		
@@ -7143,7 +7147,7 @@ discord_sex_trait = {
 		sprite = 5
 		max_dig_in = 7
 		mobilization_speed = -0.06
-		experience_gain_army = @chief_experience_gain_high
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 		
@@ -7156,7 +7160,7 @@ discord_sex_trait = {
 		sprite = 8
 		army_armor_attack_factor = 0.03
 	    army_armor_defence_factor = 0.03
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7173,7 +7177,7 @@ discord_sex_trait = {
 		sprite = 8
 		army_armor_attack_factor = 0.06
 	    army_armor_defence_factor = 0.06
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7190,7 +7194,7 @@ discord_sex_trait = {
 		sprite = 8
 		army_armor_attack_factor = 0.10
 	    army_armor_defence_factor = 0.10
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7225,7 +7229,7 @@ discord_sex_trait = {
 		sprite = 8
 		army_artillery_attack_factor = 0.09
 		army_artillery_defence_factor = 0.09
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7312,7 +7316,7 @@ discord_sex_trait = {
 		sprite = 5
 		special_forces_attack_factor = 0.06
 	    special_forces_defence_factor = 0.06
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7329,7 +7333,7 @@ discord_sex_trait = {
 		sprite = 5
 		special_forces_attack_factor = 0.10
 	    special_forces_defence_factor = 0.10
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7346,7 +7350,7 @@ discord_sex_trait = {
 		sprite = 5
 		special_forces_attack_factor = 0.12
 	    special_forces_defence_factor = 0.12
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7368,7 +7372,7 @@ discord_sex_trait = {
 		motorized_defence_factor = 0.03
 		mechanized_attack_factor = 0.03
 		mechanized_defence_factor = 0.03
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7389,7 +7393,7 @@ discord_sex_trait = {
 		motorized_defence_factor = 0.06
 		mechanized_attack_factor = 0.06
 		mechanized_defence_factor = 0.06
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7410,7 +7414,7 @@ discord_sex_trait = {
 		motorized_defence_factor = 0.1
 		mechanized_attack_factor = 0.1
 		mechanized_defence_factor = 0.1
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7429,7 +7433,7 @@ discord_sex_trait = {
 		motorized_defence_factor = 0.05
 		mechanized_attack_factor = 0.05
 		mechanized_defence_factor = 0.05		
-		#experience_gain_army = 0.06
+	experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7448,7 +7452,7 @@ discord_sex_trait = {
 		motorized_defence_factor = 0.1
 		mechanized_attack_factor = 0.1
 		mechanized_defence_factor = 0.1		
-		#experience_gain_army = 0.09
+	experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7467,7 +7471,7 @@ discord_sex_trait = {
 		motorized_defence_factor = 0.15
 		mechanized_attack_factor = 0.15
 		mechanized_defence_factor = 0.15		
-		#experience_gain_army = 0.12
+	experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7484,7 +7488,7 @@ discord_sex_trait = {
 	army_regrouping_1 = { # Org regenerates 4% faster
 		sprite = 5
 		army_morale_factor = 0.04
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7500,7 +7504,7 @@ discord_sex_trait = {
 	army_regrouping_2 = { # Org regenerates 8% faster
 		sprite = 5
 		army_morale_factor = 0.08
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7516,7 +7520,7 @@ discord_sex_trait = {
 	army_regrouping_3 = { # Org regenerates 12% faster
 		sprite = 5
 		army_morale_factor = 0.12
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7533,7 +7537,7 @@ discord_sex_trait = {
 	army_concealment_1 = { # Ground units take less damage from air attacks
 		sprite = 9
 		enemy_army_bonus_air_superiority_factor = -0.10
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7549,7 +7553,7 @@ discord_sex_trait = {
 	army_concealment_2 = { # Ground units take less damage from air attacks
 		sprite = 9
 		enemy_army_bonus_air_superiority_factor = -0.15
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7565,7 +7569,7 @@ discord_sex_trait = {
 	army_concealment_3 = { # Ground units take less damage from air attacks
 		sprite = 9
 		enemy_army_bonus_air_superiority_factor = -0.20
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7583,7 +7587,7 @@ discord_sex_trait = {
 		sprite = 6
 		supply_consumption_factor = -0.03
 		supply_node_range = 0.05
-		#experience_gain_army = 0.06
+		experience_gain_army = 0.06
 		
 		command_cap = @tier1
 
@@ -7600,7 +7604,7 @@ discord_sex_trait = {
 		sprite = 6
 		supply_consumption_factor = -0.06
 		supply_node_range = 0.1
-		#experience_gain_army = 0.09
+		experience_gain_army = 0.09
 		
 		command_cap = @tier2
 
@@ -7617,7 +7621,7 @@ discord_sex_trait = {
 		sprite = 6
 		supply_consumption_factor = -0.10
 		supply_node_range = 0.15
-		#experience_gain_army = 0.12
+		experience_gain_army = 0.12
 		
 		command_cap = @tier3
 
@@ -7633,7 +7637,7 @@ discord_sex_trait = {
 
 	air_chief_reform_1 = {  # Rate at which air experience is gained increases by 5%
 		sprite = 5
-		experience_gain_air = @chief_experience_gain_low
+		experience_gain_air = 0.12
 		experience_gain_air_factor = 0.05
 
 		command_cap = @tier1
@@ -7649,7 +7653,7 @@ discord_sex_trait = {
 
 	air_chief_reform_2 = {  # Rate at which air experience is gained increases by 10%
 		sprite = 5
-		experience_gain_air = @chief_experience_gain_medium
+		experience_gain_air = 0.16
 		experience_gain_air_factor = 0.05
 		
 		command_cap = @tier2
@@ -7665,7 +7669,7 @@ discord_sex_trait = {
 
 	air_chief_reform_3 = {  # Rate at which air experience is gained increases by 15%
 		sprite = 5
-		experience_gain_air = @chief_experience_gain_high
+		experience_gain_air = 0.20
 		experience_gain_air_factor = 0.05
 		
 		command_cap = @tier3
@@ -7683,7 +7687,7 @@ discord_sex_trait = {
 	air_chief_safety_1 = {  # Rate of air accidents reduced by 5%
 		sprite = 1
 		air_accidents_factor = -0.05
-		experience_gain_air = @chief_experience_gain_low
+		experience_gain_air = 0.06
 
 		command_cap = @tier1
 
@@ -7699,7 +7703,7 @@ discord_sex_trait = {
 	air_chief_safety_2 = {  # Rate of air accidents reduced by 10%
 		sprite = 1
 		air_accidents_factor = -0.1
-		experience_gain_air = @chief_experience_gain_medium
+		experience_gain_air = 0.09
 
 		command_cap = @tier2
 
@@ -7715,7 +7719,7 @@ discord_sex_trait = {
 	air_chief_safety_3 = {  # Rate of air accidents reduced by 15%
 		sprite = 1
 		air_accidents_factor = -0.15
-		experience_gain_air = @chief_experience_gain_high
+		experience_gain_air = 0.12
 
 		command_cap = @tier3
 
@@ -7730,7 +7734,7 @@ discord_sex_trait = {
 
 	air_chief_old_guard = {
 		sprite = 1
-		experience_gain_air_factor = @chief_experience_gain_medium
+		experience_gain_air_factor = -0.1
 		political_power_factor = 0.1
 		
 		ai_will_do = {
@@ -7745,7 +7749,7 @@ discord_sex_trait = {
 	air_chief_night_operations_1 = {
 		sprite = 1
 		air_night_penalty = -0.1
-		experience_gain_air = @chief_experience_gain_low
+		experience_gain_air = 0.06
 
 		command_cap = @tier1
 
@@ -7761,7 +7765,7 @@ discord_sex_trait = {
 	air_chief_night_operations_2 = {
 		sprite = 1
 		air_night_penalty = -0.2
-		experience_gain_air = @chief_experience_gain_medium
+		experience_gain_air = 0.09
 
 		command_cap = @tier2
 
@@ -7777,7 +7781,7 @@ discord_sex_trait = {
 	air_chief_night_operations_3 = {
 		sprite = 1
 		air_night_penalty = -0.3
-		experience_gain_air = @chief_experience_gain_high
+		experience_gain_air = 0.12
 
 		command_cap = @tier3
 
@@ -7794,7 +7798,7 @@ discord_sex_trait = {
 	air_chief_ground_support_1 = {  # Air superiority impact on land units improved by 5%
 		sprite = 2
 		air_cas_present_factor = 0.1
-		experience_gain_air = @chief_experience_gain_low
+		experience_gain_air = 0.06
 
 		command_cap = @tier1
 
@@ -7810,7 +7814,7 @@ discord_sex_trait = {
 	air_chief_ground_support_2 = {  # Air superiority impact on land units improved by 10%
 		sprite = 2
 		air_cas_present_factor = 0.15
-		experience_gain_air = @chief_experience_gain_medium
+		experience_gain_air = 0.09
 
 		command_cap = @tier2
 
@@ -7826,7 +7830,7 @@ discord_sex_trait = {
 	air_chief_ground_support_3 = {  # Air superiority impact on land units improved by 15%
 		sprite = 2
 		air_cas_present_factor = 0.2
-		experience_gain_air = @chief_experience_gain_high
+		experience_gain_air = 0.12
 
 		command_cap = @tier3
 
@@ -7844,7 +7848,7 @@ discord_sex_trait = {
 	air_chief_all_weather_1 = {  # +5 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.1
-		experience_gain_air = @chief_experience_gain_low
+		experience_gain_air = 0.06
 
 		command_cap = @tier1
 
@@ -7860,7 +7864,7 @@ discord_sex_trait = {
 	air_chief_all_weather_2 = {  # +10 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.2
-		experience_gain_air = @chief_experience_gain_medium
+		experience_gain_air = 0.09
 
 		command_cap = @tier2
 
@@ -7876,7 +7880,7 @@ discord_sex_trait = {
 	air_chief_all_weather_3 = {  # +15 bad weather air efficiency
 		sprite = 1
 		air_weather_penalty = -0.3
-		experience_gain_air = @chief_experience_gain_high
+		experience_gain_air = 0.12
 
 		command_cap = @tier3
 
@@ -7893,7 +7897,7 @@ discord_sex_trait = {
 	air_air_combat_training_1 = {  # Chance of ace generating is increased by 5%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.1
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -7909,7 +7913,7 @@ discord_sex_trait = {
 	air_air_combat_training_2 = {  # Chance of ace generating is increased by 10%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.15
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -7925,7 +7929,7 @@ discord_sex_trait = {
 	air_air_combat_training_3 = {  # Chance of ace generating is increased by 15%
 		sprite = 1
 		air_ace_generation_chance_factor = 0.2
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -7944,7 +7948,7 @@ discord_sex_trait = {
 		naval_strike_attack_factor = 0.05
 		naval_strike_targetting_factor = 0.05
 		naval_strike_agility_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -7962,7 +7966,7 @@ discord_sex_trait = {
 		naval_strike_attack_factor = 0.08
 		naval_strike_targetting_factor = 0.08
 		naval_strike_agility_factor = 0.08
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -7980,7 +7984,7 @@ discord_sex_trait = {
 		naval_strike_attack_factor = 0.1
 		naval_strike_targetting_factor = 0.1
 		naval_strike_agility_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -7999,7 +8003,7 @@ discord_sex_trait = {
 		air_interception_attack_factor = 0.05
 		air_interception_defence_factor = 0.05
 		air_interception_agility_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -8017,7 +8021,7 @@ discord_sex_trait = {
 		air_interception_attack_factor = 0.08
 		air_interception_defence_factor = 0.08
 		air_interception_agility_factor = 0.08
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -8035,7 +8039,7 @@ discord_sex_trait = {
 		air_interception_attack_factor = 0.1
 		air_interception_defence_factor = 0.1
 		air_interception_agility_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -8054,7 +8058,7 @@ discord_sex_trait = {
 		air_air_superiority_attack_factor = 0.05
 		air_air_superiority_defence_factor = 0.05
 		air_air_superiority_agility_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -8072,7 +8076,7 @@ discord_sex_trait = {
 		air_air_superiority_attack_factor = 0.08
 		air_air_superiority_defence_factor = 0.08
 		air_air_superiority_agility_factor = 0.08
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -8090,7 +8094,7 @@ discord_sex_trait = {
 		air_air_superiority_attack_factor = 0.1
 		air_air_superiority_defence_factor = 0.1
 		air_air_superiority_agility_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 
 		command_cap = @tier3
 
@@ -8109,7 +8113,7 @@ discord_sex_trait = {
 		air_close_air_support_attack_factor = 0.05
 		air_close_air_support_defence_factor = 0.05
 		air_close_air_support_agility_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -8127,7 +8131,7 @@ discord_sex_trait = {
 		air_close_air_support_attack_factor = 0.08
 		air_close_air_support_defence_factor = 0.08
 		air_close_air_support_agility_factor = 0.08
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -8145,7 +8149,7 @@ discord_sex_trait = {
 		air_close_air_support_attack_factor = 0.1
 		air_close_air_support_defence_factor = 0.1
 		air_close_air_support_agility_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -8164,7 +8168,7 @@ discord_sex_trait = {
 		air_strategic_bomber_attack_factor = 0.05
 		air_strategic_bomber_defence_factor = 0.05
 		air_strategic_bomber_bombing_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -8182,7 +8186,7 @@ discord_sex_trait = {
 		air_strategic_bomber_attack_factor = 0.08
 		air_strategic_bomber_defence_factor = 0.08
 		air_strategic_bomber_bombing_factor = 0.08
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -8200,7 +8204,7 @@ discord_sex_trait = {
 		air_strategic_bomber_attack_factor = 0.1
 		air_strategic_bomber_defence_factor = 0.1
 		air_strategic_bomber_bombing_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -8218,7 +8222,7 @@ discord_sex_trait = {
 		sprite = 2
 		air_cas_present_factor = 0.05
 		air_strategic_bomber_bombing_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -8235,7 +8239,7 @@ discord_sex_trait = {
 		sprite = 2
 		air_cas_present_factor = 0.075
 		air_strategic_bomber_bombing_factor = 0.075
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -8252,7 +8256,7 @@ discord_sex_trait = {
 		sprite = 2
 		air_cas_present_factor = 0.1
 		air_strategic_bomber_bombing_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -8270,7 +8274,7 @@ discord_sex_trait = {
 		sprite = 1
 		extra_paratrooper_supply_grace = 48
 		air_paradrop_attack_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 		
 		command_cap = @tier1
 
@@ -8287,7 +8291,7 @@ discord_sex_trait = {
 		sprite = 1
 		extra_paratrooper_supply_grace = 72
 		air_paradrop_attack_factor = 0.08
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 		
 		command_cap = @tier2
 
@@ -8304,7 +8308,7 @@ discord_sex_trait = {
 		sprite = 1
 		extra_paratrooper_supply_grace = 96
 		air_paradrop_attack_factor = 0.1
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 		
 		command_cap = @tier3
 
@@ -8320,7 +8324,7 @@ discord_sex_trait = {
 	air_pilot_training_1 = {
 		sprite = 1
 		air_training_xp_gain_factor = 0.05
-		#experience_gain_air = 0.06
+		experience_gain_air = 0.06
 
 		command_cap = @tier1
 
@@ -8335,7 +8339,7 @@ discord_sex_trait = {
 	air_pilot_training_2 = {
 		sprite = 1
 		air_training_xp_gain_factor = 0.1
-		#experience_gain_air = 0.09
+		experience_gain_air = 0.09
 
 		command_cap = @tier2
 
@@ -8350,7 +8354,7 @@ discord_sex_trait = {
 	air_pilot_training_3 = {
 		sprite = 1
 		air_training_xp_gain_factor = 0.15
-		#experience_gain_air = 0.12
+		experience_gain_air = 0.12
 
 		command_cap = @tier3
 
@@ -8369,7 +8373,7 @@ discord_sex_trait = {
 		navy_carrier_air_attack_factor = 0.05
 		navy_carrier_air_targetting_factor = 0.05
 		navy_carrier_air_agility_factor = 0.05
-		experience_gain_navy = @chief_experience_gain_low
+		experience_gain_navy = 0.06
 
 		command_cap = @tier1
 
@@ -8387,7 +8391,7 @@ discord_sex_trait = {
 		navy_carrier_air_attack_factor = 0.08
 		navy_carrier_air_targetting_factor = 0.08
 		navy_carrier_air_agility_factor = 0.08
-		experience_gain_navy = @chief_experience_gain_medium
+		experience_gain_navy = 0.09
 
 		command_cap = @tier2
 
@@ -8405,7 +8409,7 @@ discord_sex_trait = {
 		navy_carrier_air_attack_factor = 0.1
 		navy_carrier_air_targetting_factor = 0.1
 		navy_carrier_air_agility_factor = 0.1
-		experience_gain_navy = @chief_experience_gain_high
+		experience_gain_navy = 0.12
 
 		command_cap = @tier3
 
@@ -8423,7 +8427,7 @@ discord_sex_trait = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.05
 		navy_screen_attack_factor = 0.05
-		experience_gain_navy = @chief_experience_gain_low
+		experience_gain_navy = 0.06
 
 		command_cap = @tier1
 
@@ -8440,7 +8444,7 @@ discord_sex_trait = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.1
 		navy_screen_attack_factor = 0.1
-		experience_gain_navy = @chief_experience_gain_medium
+		experience_gain_navy = 0.09
 
 		command_cap = @tier2
 
@@ -8457,7 +8461,7 @@ discord_sex_trait = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.15
 		navy_screen_attack_factor = 0.15
-		experience_gain_navy = @chief_experience_gain_high
+		experience_gain_navy = 0.12
 
 		command_cap = @tier3
 
@@ -8474,7 +8478,7 @@ discord_sex_trait = {
 	navy_chief_commerce_raiding_1 = {
 		sprite = 3
 		convoy_raiding_efficiency_factor = 0.1
-		experience_gain_navy = @chief_experience_gain_low
+		experience_gain_navy = 0.06
 
 		command_cap = @tier1
 
@@ -8490,7 +8494,7 @@ discord_sex_trait = {
 	navy_chief_commerce_raiding_2 = {
 		sprite = 3
 		convoy_raiding_efficiency_factor = 0.15
-		experience_gain_navy = @chief_experience_gain_medium
+		experience_gain_navy = 0.09
 
 		command_cap = @tier2
 
@@ -8506,7 +8510,7 @@ discord_sex_trait = {
 	navy_chief_commerce_raiding_3 = {
 		sprite = 3
 		convoy_raiding_efficiency_factor = 0.2
-		experience_gain_navy = @chief_experience_gain_high
+		experience_gain_navy = 0.12
 
 		command_cap = @tier3
 
@@ -8521,7 +8525,7 @@ discord_sex_trait = {
 
 	navy_chief_old_guard = {
 		sprite = 3
-		experience_gain_navy_factor = @chief_experience_gain_medium
+		experience_gain_navy_factor = -0.1
 		political_power_factor = 0.1
 		
 		ai_will_do = {
@@ -8535,8 +8539,9 @@ discord_sex_trait = {
 
 	navy_chief_reform_1 = {
 		sprite = 3
-		experience_gain_navy = @chief_experience_gain_low
+		#experience_gain_navy = @chief_experience_gain_low
 		experience_gain_navy_factor = 0.05
+		experience_gain_navy = 0.12
 
 		command_cap = @tier1
 
@@ -8552,7 +8557,7 @@ discord_sex_trait = {
 	navy_chief_reform_2 = {
 		sprite = 3
 		experience_gain_navy_factor = 0.05
-		experience_gain_navy = @chief_experience_gain_medium
+		experience_gain_navy = 0.16
 		
 		command_cap = @tier2
 
@@ -8568,7 +8573,7 @@ discord_sex_trait = {
 	navy_chief_reform_3 = {
 		sprite = 3
 		experience_gain_navy_factor = 0.05
-		experience_gain_navy = @chief_experience_gain_high
+		experience_gain_navy = 0.20
 		
 		command_cap = @tier3
 
@@ -8584,7 +8589,7 @@ discord_sex_trait = {
 	navy_chief_maneuver_1 = { # Naval units move 5% faster
 		sprite = 3
 		naval_speed_factor = 0.05
-		experience_gain_navy = @chief_experience_gain_low
+		experience_gain_navy = 0.06
 
 		command_cap = @tier1
 
@@ -8600,7 +8605,7 @@ discord_sex_trait = {
 	navy_chief_maneuver_2 = { # Naval units move 10% faster
 		sprite = 3
 		naval_speed_factor = 0.1
-		experience_gain_navy = @chief_experience_gain_medium
+		experience_gain_navy = 0.09
 
 		command_cap = @tier2
 
@@ -8616,7 +8621,7 @@ discord_sex_trait = {
 	navy_chief_maneuver_3 = { # Naval units move 15% faster
 		sprite = 3
 		naval_speed_factor = 0.15
-		experience_gain_navy = @chief_experience_gain_high
+		experience_gain_navy = 0.12
 
 		command_cap = @tier3
 
@@ -8633,7 +8638,7 @@ discord_sex_trait = {
 	navy_anti_submarine_1 = {
 		sprite = 4
 		navy_submarine_detection_factor = 0.1
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8649,7 +8654,7 @@ discord_sex_trait = {
 	navy_anti_submarine_2 = {
 		sprite = 4
 		navy_submarine_detection_factor = 0.15
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8665,8 +8670,10 @@ discord_sex_trait = {
 	navy_anti_submarine_3 = {
 		sprite = 4
 		navy_submarine_detection_factor = 0.2
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
+
+
 		command_cap = @tier3
 
 		ai_will_do = {
@@ -8718,7 +8725,7 @@ discord_sex_trait = {
 	navy_naval_air_defense_1 = {
 		sprite = 3
 		navy_anti_air_attack_factor = 0.08
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8734,7 +8741,7 @@ discord_sex_trait = {
 	navy_naval_air_defense_2 = {
 		sprite = 3
 		navy_anti_air_attack_factor = 0.15
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8750,7 +8757,7 @@ discord_sex_trait = {
 	navy_naval_air_defense_3 = {
 		sprite = 3
 		navy_anti_air_attack_factor = 0.2
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 
@@ -8767,7 +8774,7 @@ discord_sex_trait = {
 	navy_fleet_logistics_1 = {
 		sprite = 6
 		navy_max_range_factor = 0.05
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8783,7 +8790,7 @@ discord_sex_trait = {
 	navy_fleet_logistics_2 = {
 		sprite = 6
 		navy_max_range_factor = 0.10
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8799,7 +8806,7 @@ discord_sex_trait = {
 	navy_fleet_logistics_3 = {
 		sprite = 6
 		navy_max_range_factor = 0.15
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 
@@ -8816,7 +8823,7 @@ discord_sex_trait = {
 	navy_amphibious_assault_1 = {
 		sprite = 3
 		amphibious_invasion = 0.05
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8832,7 +8839,7 @@ discord_sex_trait = {
 	navy_amphibious_assault_2 = {
 		sprite = 3
 		amphibious_invasion = 0.1
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8848,7 +8855,7 @@ discord_sex_trait = {
 	navy_amphibious_assault_3 = {
 		sprite = 3
 		amphibious_invasion = 0.15
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 
@@ -8866,7 +8873,7 @@ discord_sex_trait = {
 		sprite = 4
 		navy_submarine_attack_factor = 0.1
 		navy_submarine_defence_factor = 0.05
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8883,7 +8890,7 @@ discord_sex_trait = {
 		sprite = 4
 		navy_submarine_attack_factor = 0.15
 		navy_submarine_defence_factor = 0.1
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8900,7 +8907,7 @@ discord_sex_trait = {
 		sprite = 4
 		navy_submarine_attack_factor = 0.2
 		navy_submarine_defence_factor = 0.15
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 
@@ -8917,7 +8924,7 @@ discord_sex_trait = {
 	navy_capital_ship_1 = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.1
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8933,7 +8940,7 @@ discord_sex_trait = {
 	navy_capital_ship_2 = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.15
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8949,7 +8956,7 @@ discord_sex_trait = {
 	navy_capital_ship_3 = {
 		sprite = 3
 		navy_capital_ship_attack_factor = 0.2
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 
@@ -8966,7 +8973,7 @@ discord_sex_trait = {
 	navy_screen_1 = {
 		sprite = 3
 		navy_screen_attack_factor = 0.1
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -8982,7 +8989,7 @@ discord_sex_trait = {
 	navy_screen_2 = {
 		sprite = 3
 		navy_screen_attack_factor = 0.15
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -8998,7 +9005,7 @@ discord_sex_trait = {
 	navy_screen_3 = {
 		sprite = 3
 		navy_screen_attack_factor = 0.2
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 
@@ -9014,7 +9021,7 @@ discord_sex_trait = {
 	navy_carrier_1 = {
 		sprite = 3
 		sortie_efficiency = 0.1
-		#experience_gain_navy = 0.06
+		experience_gain_navy = 0.06
 		
 		command_cap = @tier1
 
@@ -9030,7 +9037,7 @@ discord_sex_trait = {
 	navy_carrier_2 = {
 		sprite = 3
 		sortie_efficiency = 0.15
-		#experience_gain_navy = 0.09
+		experience_gain_navy = 0.09
 		
 		command_cap = @tier2
 
@@ -9046,7 +9053,7 @@ discord_sex_trait = {
 	navy_carrier_3 = {
 		sprite = 3
 		sortie_efficiency = 0.2
-		#experience_gain_navy = 0.12
+		experience_gain_navy = 0.12
 		
 		command_cap = @tier3
 

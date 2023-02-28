@@ -598,7 +598,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 60
@@ -655,7 +655,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = CZE_sudeten_1
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 50

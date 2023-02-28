@@ -1302,7 +1302,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -2111,7 +2111,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = tnk_bonus
-				bonus = 0.5
+				bonus = 1
 				uses = 2
 				category = cat_heavy_armor
 			}
@@ -3003,7 +3003,7 @@ focus_tree = {
 			}
 			add_timed_idea = {
 				idea = GER_barbarossa
-				days = 150
+				days = 120
 			}
 							
 			remove_ideas = GER_good_weather_army

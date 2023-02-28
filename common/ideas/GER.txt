@@ -503,7 +503,7 @@ ideas = {
 				air_mission_xp_gain_factor = 0.1
 				air_training_xp_gain_factor = 0.25
 				army_bonus_air_superiority_factor = 0.1
-				air_cas_present_factor = 0.1
+				air_cas_present_factor = 0.2
 				air_ace_generation_chance_factor = 0.5
 			}
 
@@ -807,7 +807,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 
 			modifier = {
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.03
 			}
 		}
 		

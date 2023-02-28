@@ -218,9 +218,9 @@ technologies = {
 		category_all_infantry = {
 			soft_attack = 0.05
 		}
-
-		
-		
+		category_militia = {
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = improved_infantry_weapons_2
 			research_cost_coeff = 1
@@ -266,9 +266,9 @@ technologies = {
 		category_all_infantry = {
 			soft_attack = 0.05
 		}
-		
-		
-		
+		category_militia = {
+			soft_attack = 0.05
+		}
 		path = {
 			leads_to_tech = infantry_at
 			research_cost_coeff = 1
@@ -308,11 +308,11 @@ technologies = {
 	infantry_at = {
 
 		category_all_infantry = {
-			defense = 0.10
+			hard_attack = 0.1
 		}
-		
-		
-		
+		category_militia = {
+			hard_attack = 0.1
+		}
 		path = {
 			leads_to_tech = infantry_at2
 			research_cost_coeff = 1
@@ -352,11 +352,11 @@ technologies = {
 	infantry_at2 = {
 
 		category_all_infantry = {
-			soft_attack = 0.05
+			hard_attack = 0.1
 		}
-		
-			
-
+		category_militia = {
+			hard_attack = 0.1
+		}
 		research_cost = 1.5
 		start_year = 1944
 		folder = {
@@ -1562,6 +1562,7 @@ technologies = {
 		
 		categories = {
 			mot_rockets
+			cat_mechanized_equipment
 		}
 	}
 
@@ -1955,9 +1956,19 @@ technologies = {
 			arditi
 		}		
 	}
+	militia_tech = {
 	
+		allow = {
+			always = no
+		}
 	
+		research_cost = 1
+		start_year = 1936
 	
+		enable_subunits = {
+			militia
+		}		
+	}
 	waffen_ss_tech = {
 		
 		allow = {

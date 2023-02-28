@@ -1,0 +1,1009 @@
+default = {
+	light_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/gwtank.dds"
+			}
+		}
+	}
+	light_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_5.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_2.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_3.dds"
+			}
+		}
+	}
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_5.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_td_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_3.dds"
+			}
+		}
+	}
+	light_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_2.dds"
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+			}
+		}
+	}
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_ass_gun_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spaa_1.dds"
+			}
+		}
+	}
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_6.dds"
+			}
+		}
+	}
+	# heavy_tank_chassis_spg = {
+	# 	pool = {
+	# 		icons = {
+	# 			"gfx/interface/technologies/com_heavy_arty_3.dds"
+	# 			"gfx/interface/technologies/com_heavy_arty_4.dds"
+	# 		}
+	# 	}
+	# }
+	ger_light_tank_chassis_p1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_1.dds"
+			}
+		}
+	}
+	ger_light_tank_chassis_p2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_5.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_td_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_3.dds"
+			}
+		}
+	}
+	ger_light_tank_chassis_luchs = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_light_tank_4.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_td_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_light_spg_3.dds"
+			}
+		}
+	}
+	ger_light_tank_chassis_p35 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_cze_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_spg_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_td_1.dds"
+			}
+		}
+	}
+	ger_light_tank_chassis_p38 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_cze_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_spg_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_cze_td_1.dds"
+			}
+		}
+	}
+	ger_light_tank_chassis_hetzer = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_cze_td_2.dds"
+			}
+		}
+	}
+	ger_medium_tank_chassis_p3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_tank_4.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_spg_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p3_td_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p34_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_ag_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_ag_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_1.dds"
+			}
+		}
+	}
+	ger_medium_tank_chassis_p4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_4.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_tank_5.dds"
+				"gfx/interface/technologies/tanks/ger/fin_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_td_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p34_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spaa_3.dds"
+				"gfx/interface/technologies/tanks/ger/ger_amph_tank_1.dds"
+			}
+		}
+	}
+	ger_medium_tank_chassis_p5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_p5_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p5_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p5_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p5_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_p4_spg_1.dds"
+			}
+		}
+	}
+	ger_medium_tank_chassis_e50 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_p5_tank_3.dds"
+			}
+		}
+	}
+	ger_heavy_tank_chassis_neub = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_heavy_tank_0.dds"
+			}
+		}
+	}
+	ger_heavy_tank_chassis_p6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_heavy_tank_4.dds"
+				"gfx/interface/technologies/tanks/ger/FIN_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_heavy_td_1.dds"
+				"gfx/interface/technologies/tanks/ger/ger_ag_3.dds"
+			}
+		}
+	}
+	ger_heavy_tank_chassis_p6_b = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_heavy_tank_3.dds"
+				"gfx/interface/technologies/tanks/ger/FIN_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_heavy_td_2.dds"
+				"gfx/interface/technologies/tanks/ger/ger_ag_3.dds"
+			}
+		}
+	}
+	ger_heavy_tank_chassis_e100 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_2.dds"
+			}
+		}
+	}
+	ger_heavy_tank_chassis_p7 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ger/ger_sheavy_tank_1.dds"
+			}
+		}
+	}
+	eng_light_tank_chassis_mk6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_light_tank_5.dds"
+				"gfx/interface/technologies/tanks/eng/eng_light_td_1.dds"
+			}
+		}
+	}
+	eng_light_tank_chassis_mk7 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_light_td_1.dds"
+			}
+		}
+	}
+	eng_light_tank_chassis_mk8 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_light_tank_4.dds"
+				"gfx/interface/technologies/tanks/eng/eng_light_td_1.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_a10 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_a13 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_7.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	# eng_medium_tank_chassis_cov = {
+	# 	pool = {
+	# 		icons = {
+	# 			"gfx/interface/technologies/tanks/eng/eng_medium_tank_2.dds"
+	# 			"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+	# 			"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+	# 			"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+	# 		}
+	# 	}
+	# }
+	eng_medium_tank_chassis_a15 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_8.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_9.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_a27 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_2.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_a34 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_5.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_2.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_a41 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_medium_tank_6.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_ac1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/ast_tank_1.dds"
+				"gfx/interface/technologies/tanks/eng/ast_tank_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_ac3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/ast_tank_3.dds"
+				"gfx/interface/technologies/tanks/eng/ast_tank_4.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	eng_medium_tank_chassis_ram = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/can_tank_1.dds"
+				"gfx/interface/technologies/tanks/eng/can_tank_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_ass_gun_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spaa_1.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a11 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a12 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_val = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_6.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_7.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_amph_tank_1.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a22 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_4.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_5.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_8.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_td_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_amph_tank_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_amph_tank_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_assault_gun_1.dds"
+				"gfx/interface/technologies/tanks/eng/eng_assault_gun_2.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a43 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_9.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_td_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_assault_gun_2.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a45 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_12.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a39 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_assault_gun_3.dds"
+			}
+		}
+	}
+	eng_heavy_tank_chassis_a33 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_10.dds"
+				"gfx/interface/technologies/tanks/eng/eng_heavy_tank_11.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spaa_3.dds"
+				"gfx/interface/technologies/tanks/eng/eng_medium_spg_2.dds"
+			}
+		}
+	}
+	fra_light_tank_chassis_ft = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_1.dds"
+			}
+		}
+	}
+	fra_light_tank_chassis_h35 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_5.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_2.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_3.dds"
+			}
+		}
+	}
+	fra_light_tank_chassis_r35 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_4.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_2.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_3.dds"
+			}
+		}
+	}
+	fra_light_tank_chassis_x13 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_light_tank_6.dds"
+			}
+		}
+	}
+	fra_medium_tank_chassis_s35 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_medium_tank_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_mediuM_td_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_3.dds"
+			}
+		}
+	}
+	fra_medium_tank_chassis_s40 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_medium_tank_2.dds"
+				"gfx/interface/technologies/tanks/fra/fra_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/fra/fra_mediuM_td_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_3.dds"
+			}
+		}
+	}
+	fra_medium_tank_chassis_s42 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/fra/fra_mediuM_td_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_light_td_3.dds"
+			}
+		}
+	}
+	fra_medium_tank_chassis_x4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_medium_tank_5.dds"
+			}
+		}
+	}
+	fra_heavy_tank_chassis_b1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_heavy_tank_3.dds"
+			}
+		}
+	}
+	fra_heavy_tank_chassis_2c = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_super_1.dds"
+				"gfx/interface/technologies/tanks/fra/fra_super_2.dds"
+			}
+		}
+	}
+	fra_heavy_tank_chassis_arl = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_heavy_tank_4.dds"
+				"gfx/interface/technologies/tanks/fra/fra_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/fra/fra_heavy_td_1.dds"
+			}
+		}
+	}
+	fra_heavy_tank_chassis_x50 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/fra/fra_heavy_tank_5.dds"
+				"gfx/interface/technologies/tanks/fra/fra_heavy_td_1.dds"
+			}
+		}
+	}
+	ita_light_tank_chassis_cv33 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_light_tank_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_light_td_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_gun_2.dds"
+			}
+		}
+	}
+	ita_light_tank_chassis_l6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_light_td_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_light_td_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_gun_1.dds"
+			}
+		}
+	}
+	ita_medium_tank_chassis_m11 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_medium_tank_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_4.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spaa_1.dds"
+			}
+		}
+	}
+	ita_medium_tank_chassis_m13 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_medium_tank_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_1.dds"
+			}
+		}
+	}
+	ita_medium_tank_chassis_m15 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spaa_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_1.dds"
+			}
+		}
+	}
+	ita_medium_tank_chassis_p26 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_td_3.dds"
+				"gfx/interface/technologies/tanks/ita/ita_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_1.dds"
+			}
+		}
+	}
+	ita_heavy_tank_chassis_p43 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/ita/ita_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/ita/ita_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/ita/ita_ass_1.dds"
+			}
+		}
+	}
+	hun_light_tank_chassis_38m = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/hun/hun_light_tank_1.dds"
+				"gfx/interface/technologies/tanks/hun/hun_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/hun/hun_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/hun/hun_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/hun/hun_light_td_1.dds"
+			}
+		}
+	}
+	hun_medium_tank_chassis_40m = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/hun/hun_cze_tank_1.dds"
+				"gfx/interface/technologies/tanks/hun/hun_cze_tank_2.dds"
+				"gfx/interface/technologies/tanks/hun/hun_cze_tank_3.dds"
+				"gfx/interface/technologies/tanks/hun/hun_ass_1.dds"
+				"gfx/interface/technologies/tanks/hun/hun_cze_td_1.dds"
+			}
+		}
+	}
+	hun_medium_tank_chassis_44m = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/hun/hun_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/hun/hun_ass_1.dds"
+				"gfx/interface/technologies/tanks/hun/hun_cze_td_1.dds"
+			}
+		}
+	}
+	jap_light_tank_chassis_t95 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_light_tank_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_td_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_spaa_1.dds"
+			}
+		}
+	}
+	jap_light_tank_chassis_t98 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_td_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_spaa_1.dds"
+			}
+		}
+	}
+	jap_medium_tank_chassis_t89 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_medium_tank_1.dds"
+			}
+		}
+	}
+	jap_medium_tank_chassis_t97 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_medium_tank_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_ass_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_navy_spg.dds"
+			}
+		}
+	}
+	jap_medium_tank_chassis_t01 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_ass_1.dds"
+			}
+		}
+	}
+	jap_medium_tank_chassis_t03 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_ass_2.dds"
+			}
+		}
+	}
+	jap_medium_tank_chassis_t04 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/jap/jap_medium_tank_5.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/jap/jap_medium_spg_2.dds"
+				"gfx/interface/technologies/tanks/jap/jap_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/jap/jap_ass_2.dds"
+			}
+		}
+	}
+	sov_light_tank_chassis_t26 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_light_tank_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_tank_6.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_tank_7.dds"
+				"gfx/interface/technologies/tanks/sov/sov_ass_gun_1.dds"
+			}
+		}
+	}
+	sov_light_tank_chassis_bt5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_bt_tank_1.dds"
+			}
+		}
+	}
+	sov_light_tank_chassis_bt7 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_bt_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_3.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_spaa_1.dds"
+			}
+		}
+	}
+	sov_light_tank_chassis_t50 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_spaa_1.dds"
+			}
+		}
+	}
+	sov_light_tank_chassis_t70 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_spaa_2.dds"
+			}
+		}
+	}
+	sov_light_tank_chassis_zis30 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/SOV_light_tank_td_zis30.dds"
+			}
+		}
+	}
+	sov_medium_tank_chassis_t28 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_1.dds"
+			}
+		}
+	}
+	sov_medium_tank_chassis_t34 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_tank_5.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_medium_td_2.dds"
+			}
+		}
+	}
+	sov_medium_tank_chassis_t44 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_t44_tank_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_t44_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_t44_tank_3.dds"
+			}
+		}
+	}
+	sov_heavy_tank_chassis_t35 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_1.dds"
+			}
+		}
+	}
+	sov_heavy_tank_chassis_t100 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_sheavy_1.dds"
+			}
+		}
+	}
+	sov_heavy_tank_chassis_kv1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_3.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_6.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_7.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_td_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_assault_gun_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_assault_gun_2.dds"
+				"gfx/interface/technologies/tanks/sov/sov_assault_gun_4.dds"
+			}
+		}
+	}
+	sov_heavy_tank_chassis_is = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_4.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_8.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_assault_gun_3.dds"
+			}
+		}
+	}
+	sov_heavy_tank_chassis_is3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/sov/sov_heavy_tank_5.dds"
+				"gfx/interface/technologies/tanks/sov/sov_heavy_td_1.dds"
+				"gfx/interface/technologies/tanks/sov/sov_assault_gun_3.dds"
+			}
+		}
+	}
+	usa_light_tank_chassis_lm2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_light_tank_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_2.dds"
+			}
+		}
+	}
+	usa_light_tank_chassis_lm3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_light_tank_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_2.dds"
+			}
+		}
+	}
+	usa_light_tank_chassis_lm5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_2.dds"
+			}
+		}
+	}
+	usa_light_tank_chassis_m24 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_light_tank_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spg_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_2.dds"
+			}
+		}
+	}
+	usa_light_tank_chassis_m18 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_light_td_1.dds"
+			}
+		}
+	}
+	usa_medium_tank_chassis_mm2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_light_spaa_1.dds"
+			}
+		}
+	}
+	usa_medium_tank_chassis_mm2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_2.dds"
+			}
+		}
+	}
+	usa_medium_tank_chassis_mm4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_3.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_4.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_5.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_7.dds"
+				"gfx/interface/technologies/tanks/usa/usa_jumbo_tank_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_jumbo_tank_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_td_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spg_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_ass_gun_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_medium_spaa_1.dds"
+			}
+		}
+	}
+	usa_medium_tank_chassis_m26 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_medium_tank_6.dds"
+				"gfx/interface/technologies/tanks/usa/usa_heavy_tank_3.dds"
+			}
+		}
+	}
+	usa_heavy_tank_chassis_hm6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_heavy_tank_1.dds"
+				"gfx/interface/technologies/tanks/usa/usa_heavy_td_1.dds"
+			}
+		}
+	}
+	usa_heavy_tank_chassis_t29 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_heavy_tank_2.dds"
+				"gfx/interface/technologies/tanks/usa/usa_heavy_tank_4.dds"
+				"gfx/interface/technologies/tanks/usa/usa_heavy_tank_5.dds"
+				"gfx/interface/technologies/tanks/usa/usa_heavy_tank_6.dds"
+			}
+		}
+	}
+	usa_heavy_tank_chassis_t28 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/tanks/usa/usa_assault_gun_1.dds"
+			}
+		}
+	}
+}

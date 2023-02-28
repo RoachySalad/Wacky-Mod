@@ -590,7 +590,7 @@ technologies = {
 			#tank_horstmann_suspension
 			#tank_torsion_bar_suspension
 			
-			ank_riveted_armor
+			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
@@ -937,7 +937,7 @@ technologies = {
 		}	
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = eng_armour_folder
 			position = { x = -3 y = 12 }

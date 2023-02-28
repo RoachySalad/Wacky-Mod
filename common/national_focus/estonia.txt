@@ -2091,7 +2091,7 @@ focus_tree = {
 			if = {
 				limit = {
 					NOR = { 
-						is_ai = yes 
+						is_ai = no 
 						is_subject_of = ROOT 
 					}
 				}
@@ -2103,7 +2103,7 @@ focus_tree = {
 			if = {
 				limit = {
 					SWE = { 		
-						is_ai = yes 
+						is_ai = no 
 						is_subject_of = ROOT 
 					}
 				}
@@ -2115,7 +2115,7 @@ focus_tree = {
 			if = {
 				limit = {
 					DEN = { 
-						is_ai = yes
+						is_ai = no
 						is_subject_of = ROOT 
 					}
 				}

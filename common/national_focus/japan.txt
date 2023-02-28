@@ -246,6 +246,7 @@
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			add_political_power = 50
 			add_stability = 0.1
 			add_war_support = 0.2
 		}
@@ -334,7 +335,7 @@
 				ideology = fascism
 				popularity = 0.2
 			}
-			add_timed_idea = { idea = JAP_purged_bureaucracy days = 365 }
+			add_timed_idea = { idea = JAP_purged_bureaucracy days = 180 }
 		}
 	}
 	
@@ -1498,7 +1499,7 @@
 				target = RAJ
 				type = annex_everything
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = CAN
 				type = annex_everything
 			}
@@ -1528,7 +1529,7 @@
 					}
 				}	
 			}
-			create_wargoal = {
+			declare_war_on = {
 				target = FRA
 				type = annex_everything
 			}
@@ -2063,7 +2064,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = -3
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2100,7 +2101,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = -1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2143,7 +2144,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = 1
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JAP_break_up_big_four
 
 		available = {
@@ -2200,7 +2201,7 @@
 		prerequisite = { focus = JAP_break_up_big_four }
 		x = 3
 		y = 1
-		cost = 5
+		cost = 10
 		relative_position_id = JAP_break_up_big_four
 
 		available = {

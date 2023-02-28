@@ -3901,9 +3901,9 @@
 				name = "Enrico Frattini"
 				picture = "Portrait_Italy_Generic_land_5.dds"
 				traits = { commando }
-				skill = 3
-				attack_skill = 3
-				defense_skill = 3
+				skill = 4
+				attack_skill = 5
+				defense_skill = 4
 				planning_skill = 2
 				logistics_skill = 2
 			}

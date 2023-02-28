@@ -633,7 +633,119 @@ focus_tree = {
 
 		completion_reward = {
 			add_state_core = 764
+			add_state_claim = 834
+			add_state_claim = 198
+			add_state_claim = 192
 		}
+	}
+	focus = {
+		id = ROM_Plunder_the_East
+		icon = GFX_GER_exploit_and_plunder
+		prerequisite = { focus = ROM_expand_greater_romania }
+		x = 0
+		y = 1
+		relative_position_id = ROM_expand_greater_romania
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_full_control_of_state = 192
+			has_full_control_of_state = 198
+			has_full_control_of_state = 197
+			has_full_control_of_state = 203
+			has_full_control_of_state = 834
+			has_full_control_of_state = 91
+			has_full_control_of_state = 199
+			has_full_control_of_state = 89
+		}
+		completion_reward = {
+			89 = {
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			91 = {
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			192 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			198 = {
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			197 = {
+				remove_building = {
+					type = dockyard
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+		}
+			203 = {
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 13 }
+			add_offsite_building = { type = industrial_complex level = 7 }
+	}
+}
+focus = {
+	id = ROM_victory_Southern_Buh
+	icon = GFX_goal_generic_territory_or_war
+	prerequisite = { focus = ROM_Plunder_the_East }
+	x = 0
+	y = 1
+	relative_position_id = ROM_Plunder_the_East
+	cost = 10
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+		has_full_control_of_state = 192
+		has_full_control_of_state = 198
+		has_full_control_of_state = 834
+	}
+	
+	completion_reward = {
+        192 = { add_compliance = 20 }
+		198 = { add_compliance = 20 }
+		834 = { add_compliance = 20 }
+	}
+	
 	}
 	
 
@@ -1233,6 +1345,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_exploit_the_baita_mines
+						add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 0.50
+				ahead_reduction = 0.5
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 
@@ -2951,6 +3076,19 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_acquire_modern_tanks
+						add_tech_bonus = {
+				name = HUN_motorized_support_bonus
+				bonus = 0.75
+				ahead_reduction = 0.50
+				uses = 1
+				technology = heavy_antitank
+				}
+				add_tech_bonus = {
+					name = doc_bonus
+					bonus = 0.75
+					uses = 1
+					category = heavy_artillery
+				}
 		}
 	}
 

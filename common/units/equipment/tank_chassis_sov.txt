@@ -333,7 +333,7 @@ equipments = {
 				required = yes	
 				allowed_module_categories = {
 					#tank_light_turret_type_1
-					tank_light_turret_type_2
+					#tank_light_turret_type_2
 					#tank_light_turret_type_3
 					tank_medium_turret_type_1
 					tank_medium_turret_type_2
@@ -410,7 +410,7 @@ equipments = {
 		build_cost_ic = 25
 		reliability = 0.6
 		armor_value = 30
-		hardness = 0.85
+		hardness = 0.5
 		hardness = 0.5
 		defense = 8
 		breakthrough = 25

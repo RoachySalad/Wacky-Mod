@@ -301,10 +301,10 @@ focus_tree = {
 					is_controlled_by = ROOT
 					is_core_of = ROOT
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -1125,7 +1125,7 @@ focus_tree = {
 					has_war_support > 0.4
 					has_war = no
 				}
-				USA_congress_medium_opposition = yes
+				USA_congress_small_opposition = yes
 			}
 			else_if = {
 				limit = {
@@ -1133,6 +1133,9 @@ focus_tree = {
 					has_war = no
 				}
 				USA_congress_large_opposition = yes
+			}
+			else = {
+				USA_congress_medium_opposition = yes
 			}
 			USA_neutrality_level_up = yes
 			remove_ideas = USA_cash_and_carry_programme
@@ -1513,7 +1516,7 @@ focus_tree = {
 			congress_medium_support_trigger = yes
 			has_government = democratic
 			OR = {
-				threat > 0.2
+				threat > 0.15
 				JAP  = { has_war_with = CHI }
 				date > 1938.1.1
 			}
@@ -1584,7 +1587,7 @@ focus_tree = {
 				}
 			}
 			OR = {
-				threat > 0.5
+				threat > 0.35
 				ENG  = { has_war_with = GER }
 				date > 1940.1.1
 			}
@@ -1653,7 +1656,7 @@ focus_tree = {
 				}
 			}
 			OR = {
-				threat > 0.99
+				threat > 0.75
 				FRA = { has_capitulated = yes }
 				date > 1941.1.1
 			}

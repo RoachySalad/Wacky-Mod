@@ -78,9 +78,9 @@ ideas = {
 			ledger = army
 			modifier = {
 				custom_modifier_tooltip = inventive_leadership_spirit_tt
-				trait_naval_invader_xp_gain_factor = 0.2
-				trait_commando_xp_gain_factor = 0.2
-				trait_trickster_xp_gain_factor = 0.2
+				trait_naval_invader_xp_gain_factor = 0.5
+				trait_commando_xp_gain_factor = 0.5
+				trait_trickster_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -91,7 +91,7 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			modifier = {
 				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
-				trait_panzer_leader_xp_gain_factor = 0.2
+				trait_panzer_leader_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -102,9 +102,9 @@ ideas = {
 			visible = { has_tech = superior_firepower }
 			modifier = {
 				custom_modifier_tooltip = superior_firepower_academy_spirit_tt
-				trait_engineer_xp_gain_factor = 0.2
-				trait_fortress_buster_xp_gain_factor = 0.1
-				trait_scavenger_xp_gain_factor = 0.1
+				trait_engineer_xp_gain_factor = 0.5
+				trait_fortress_buster_xp_gain_factor = 0.2
+				trait_scavenger_xp_gain_factor = 0.2
 			}
 			ai_will_do = {
 				factor = 1
@@ -115,7 +115,7 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			modifier = {
 				custom_modifier_tooltip = theatre_training_academy_spirit_tt
-				terrain_trait_xp_gain_factor = 0.2
+				terrain_trait_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -126,7 +126,7 @@ ideas = {
 			visible = { has_tech = mass_assault }
 			modifier = {
 				custom_modifier_tooltip = mass_assault_academy_spirit_tt
-				trait_infantry_leader_xp_gain_factor = 0.2
+				trait_infantry_leader_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -150,7 +150,7 @@ ideas = {
 		elevated_engineering_corps_spirit = {
 			ledger = army
 			modifier = {
-				trait_engineer_xp_gain_factor = 0.25
+				trait_engineer_xp_gain_factor = 0.5
 				dig_in_speed_factor = 0.25
 				railway_gun_bombardment_factor = 0.05
 			}
@@ -222,8 +222,7 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			ledger = army
 			modifier = {
-				no_supply_grace = 24
-				army_fuel_capacity_factor  = 0.3				
+				army_fuel_capacity_factor = 1.0
 				army_morale_factor = 0.06
 			}
 			ai_will_do = {
@@ -246,7 +245,7 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			ledger = army
 			modifier = {
-				special_forces_no_supply_grace = 168
+				special_forces_no_supply_grace = 240
 				special_forces_out_of_supply_factor = -0.2
 				amphibious_invasion_defence = 0.2
 			}
@@ -386,7 +385,7 @@ ideas = {
 			visible = { has_tech = mass_assault }
 			modifier = {
 				tactic_relentless_assault_preferred_weight_factor = 1
-				no_supply_grace = 72
+				no_supply_grace = 84
 				out_of_supply_factor = -0.2
 			}
 			ai_will_do = {

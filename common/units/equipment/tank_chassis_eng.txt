@@ -144,12 +144,13 @@ equipments = {
 			engine_type_slot = inherit
 			special_type_slot_1 = inherit
 			special_type_slot_2 = inherit
-			special_type_slot_3 = inherit
+			#special_type_slot_3 = inherit
 		}
 		upgrades = {
 			tank_nsb_med_engine_1_upgrade
 			tank_nsb_med_armor_1_upgrade
 		}
+		maximum_speed = 5.5
 		build_cost_ic = 16
 		reliability = 0.7
 		armor_value = 25
@@ -174,6 +175,7 @@ equipments = {
 					#tank_light_turret_type_2
 					#tank_light_turret_type_3
 					tank_medium_turret_type_1
+					tank_medium_turret_type_2
 					tank_medium_turret_type_5
 					tank_medium_turret_type_6
 					tank_medium_turret_type_7
@@ -671,6 +673,7 @@ equipments = {
 		build_cost_ic = 28
 		reliability = 0.75
 		armor_value = 80
+		hardness = 0.85
 		defense = 10
 		breakthrough = 60
 	}
