@@ -57,8 +57,7 @@ ideas = {
 			modifier = {
 				army_core_attack_factor = 0.05
 				army_core_defence_factor = 0.05
-				industry_air_damage_factor = -0.9
-				cas_damage_reduction = 0.5
+				cas_damage_reduction = 0.25
 				army_speed_factor = 0.1 
 				
 			}
@@ -208,7 +207,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					soft_attack = 0.2
+					soft_attack = 0.15
 				}
 			}
 		}
@@ -229,8 +228,8 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.10
 				attrition = -0.1
-				army_core_attack_factor = 0.05
-				army_core_defence_factor = 0.10
+				army_core_attack_factor = 0.025
+				army_core_defence_factor = 0.025
 				neutrality_drift = 0.25
 			}
 		}
@@ -253,8 +252,8 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.20
 				attrition = -0.1
-				army_core_attack_factor = 0.1
-				army_core_defence_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
 				acclimatization_cold_climate_gain_factor = 0.5
 				winter_attrition_factor = -0.25
 				neutrality_drift = 0.25
@@ -279,8 +278,8 @@ ideas = {
 			modifier = {
 				army_morale_factor = 0.20
 				attrition = -0.1
-				army_core_attack_factor = 0.15
-				army_core_defence_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
 				acclimatization_cold_climate_gain_factor = 0.5
 				winter_attrition_factor = -0.25
 				no_supply_grace = 48

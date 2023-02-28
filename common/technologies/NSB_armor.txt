@@ -21,7 +21,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 		
-		tank_riveted_armor
+			tank_riveted_armor
 			tank_welded_armor
 			tank_gasoline_engine
 			tank_diesel_engine
@@ -456,7 +456,7 @@ technologies = {
 		#enable_equipments = {
 			#fra_light_tank_chassis_x13
 			
-			enable_equipment_modules = {
+		enable_equipment_modules = {
 			tank_light_superstructure_hetzer	
 		}
 

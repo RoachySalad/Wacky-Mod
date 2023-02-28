@@ -5512,7 +5512,11 @@
 				category = cat_mass_assault
 			}
 			
-			
+			hidden_effect = {
+				set_technology = {
+					militia_tech = 1
+				}
+			}
 			
 			swap_ideas  = {
 				add_idea = SOV_simplified_guns2

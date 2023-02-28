@@ -2276,7 +2276,7 @@ ideas = {
 			traits = { }
 			
 			equipment_bonus = {
-				armor = {
+			armor = {
 				hard_attack = 0.20
 				reliability = 0.1
 				build_cost_ic = 0.05

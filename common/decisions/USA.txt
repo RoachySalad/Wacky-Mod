@@ -1305,7 +1305,6 @@ USA_lend_lease_act = {
 				    amount = 500
 				    producer = USA
 					}
-				}
 			}
 		}
 	}

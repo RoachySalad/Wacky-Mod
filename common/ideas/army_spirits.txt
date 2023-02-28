@@ -78,9 +78,9 @@ ideas = {
 			ledger = army
 			modifier = {
 				custom_modifier_tooltip = inventive_leadership_spirit_tt
-				trait_naval_invader_xp_gain_factor = 0.2
-				trait_commando_xp_gain_factor = 0.2
-				trait_trickster_xp_gain_factor = 0.2
+				trait_naval_invader_xp_gain_factor = 0.5
+				trait_commando_xp_gain_factor = 0.5
+				trait_trickster_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -91,7 +91,7 @@ ideas = {
 			visible = { has_tech = mobile_warfare }
 			modifier = {
 				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
-				trait_panzer_leader_xp_gain_factor = 0.2
+				trait_panzer_leader_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -102,9 +102,9 @@ ideas = {
 			visible = { has_tech = superior_firepower }
 			modifier = {
 				custom_modifier_tooltip = superior_firepower_academy_spirit_tt
-				trait_engineer_xp_gain_factor = 0.2
-				trait_fortress_buster_xp_gain_factor = 0.1
-				trait_scavenger_xp_gain_factor = 0.1
+				trait_engineer_xp_gain_factor = 0.5
+				trait_fortress_buster_xp_gain_factor = 0.5
+				trait_scavenger_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -115,7 +115,7 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			modifier = {
 				custom_modifier_tooltip = theatre_training_academy_spirit_tt
-				terrain_trait_xp_gain_factor = 0.2
+				terrain_trait_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -126,7 +126,7 @@ ideas = {
 			visible = { has_tech = mass_assault }
 			modifier = {
 				custom_modifier_tooltip = mass_assault_academy_spirit_tt
-				trait_infantry_leader_xp_gain_factor = 0.2
+				trait_infantry_leader_xp_gain_factor = 0.5
 			}
 			ai_will_do = {
 				factor = 1
@@ -246,7 +246,7 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			ledger = army
 			modifier = {
-				special_forces_no_supply_grace = 168
+				special_forces_no_supply_grace = 240
 				special_forces_out_of_supply_factor = -0.2
 				amphibious_invasion_defence = 0.2
 			}
