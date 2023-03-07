@@ -20,8 +20,8 @@
  startingevent.1000.t:0 "Possible Ghost Player"
  startingevent.1000.d:0 "The game believes there is a player on a nation that is typically not for players.\nThis list includes Venezuela, Portugal, Belgium, Luxembourg, Switzerland, Austria, Czechoslovakia, Sweden, Denmark, Norway, Yugoslavia, Greece, Lithuania, Latvia, Estonia,  China, Dutch East Indies, Philippines, Malaya,  Turkey, Iraq, or Iran.\nPlease ensure that all non-player nations show up as such. You can tell if a nation has it's AI off by wether or not when you open the diplomatic screen you see the player logo on things like 'ask for military access' instead of the number telling you the AI will or won't accept."
  startingevent.1000.a:0 "Ok"
- startingevent.1001.t:0 "TFB Mods"
- startingevent.1001.d:0 "TFB recently removed it's Air Designer, but if you wish to continue using it you may search on the workshop for 'TFB Plane Designer' and download the sub mod.\nIf you wish to play on NSB then search for 'TFB No Step Back'.\nTo play on BTFB patch pre tank designer, search for 'TFB Battle for the Bosporus'."
+ startingevent.1001.t:0 "Salad's Wacky Mod"
+ startingevent.1001.d:0 "Great Mod frfr"
  startingevent.1001.a:0 "Ok"
  #### LEVELS ####
  UNIT_LEVEL_0:0 "Fresh"

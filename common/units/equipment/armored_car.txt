@@ -25,7 +25,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_ac_turret_type
-					#tank_ac_advanced_turret_type
+					tank_ac_advanced_turret_type
 				}
 			}
 			armor_type_slot = {
