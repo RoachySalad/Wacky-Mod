@@ -28,7 +28,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 23
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1000
@@ -76,7 +76,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 23
 		max_organisation = 65
 		default_morale = 0.3
 		manpower = 1000
@@ -236,7 +236,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 24
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -307,7 +307,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 24
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -389,7 +389,7 @@ sub_units = {
 		breakthrough = 0.15
 
 		#Misc Abilities
-		training_time = 160
+		training_time = 180
 		suppression = 1
 		weight = 0.5
 		
@@ -410,10 +410,10 @@ sub_units = {
 		    attack = -0.10
 		}
 		urban = {
-			defence = 0.2
+			defence = 0.1
 		}
 		dense_urban = {
-			defence = 0.3
+			defence = 0.15
 		}
 		town = {
 			defence = 0.1
@@ -613,7 +613,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 23
 		max_organisation = 60
 		default_morale = 0.3
 		maximum_speed = 0.6
@@ -728,7 +728,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 24
 		max_organisation = 70
 		default_morale = 0.5
 		manpower = 1000
@@ -794,7 +794,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 24
 		max_organisation = 75
 		default_morale = 0.5
 		manpower = 1000

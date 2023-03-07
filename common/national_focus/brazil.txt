@@ -1962,7 +1962,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-			usa_heavy_tank_2 = 1
+				usa_heavy_tank_2 = 1
 			}
 		}
 	}

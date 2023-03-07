@@ -7296,7 +7296,7 @@ SOV_industry_relocation = {
 				is_fully_controlled_by = ROOT
 				infrastructure > 2
 			}
-			has_equipment = { train_equipment > 79 } #20 trains per factory
+			has_equipment = { train_equipment > 39 } #10 trains per factory
 			has_war_with = GER
 		}
 

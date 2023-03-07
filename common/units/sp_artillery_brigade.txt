@@ -11,7 +11,6 @@ sub_units = {
 			armor
 		}
 		
-		group = artillery
 		group = armor
 
 		categories = {
@@ -145,7 +144,7 @@ sub_units = {
 			defence = -0.05
 		}
 		mountain = 	{
-		    attack = -0.53
+		    attack = -0.5
 			movement = -0.4
 			defence = -0.5
 		}

@@ -1316,12 +1316,15 @@ focus_tree = {
         x = 0
         y = 1
         relative_position_id = SIA_artillery_modernization
-
 		ai_will_do = {
 			factor = 7
 		}
-        
-        cost = 5
+
+		available = {
+			has_tech = pack_artillery_2
+		}
+
+        cost = 10
 
         completion_reward = {
             add_tech_bonus = {
@@ -1330,10 +1333,12 @@ focus_tree = {
 				uses = 2
 				category = artillery
 			}
+			set_technology = {
+				mountain_arty = 1
+			}
         }
 
     }
-
     focus = {
         id = SIA_new_small_arms
         icon = GFX_goal_generic_small_arms
@@ -1341,9 +1346,7 @@ focus_tree = {
         x = -2
         y = 1
         relative_position_id = SIA_military_modernization
-
         cost = 5
-
 		ai_will_do = {
 			factor = 7
 		}
@@ -1356,9 +1359,7 @@ focus_tree = {
 				category = infantry_weapons
 			}
         }
-
     }
-
     focus = {
         id = SIA_small_arms_experiments
         icon = GFX_focus_secret_rearmament
@@ -1366,9 +1367,7 @@ focus_tree = {
         x = 0
         y = 1
         relative_position_id = SIA_new_small_arms
-
         cost = 5
-
         completion_reward = {
             add_tech_bonus = {
 				name = doc_bonus
@@ -1377,33 +1376,26 @@ focus_tree = {
 				category = infantry_weapons
 			}
         }
-
     }
-
     focus = {
         id = SIA_western_military
         icon = GFX_focus_hol_the_fourth_ally
-        prerequisite = { focus = SIA_small_arms_experiments }
-        prerequisite = { focus = SIA_artillery_experiments }
+        prerequisite = { focus = SIA_small_arms_experiments focus = SIA_artillery_experiments }
         mutually_exclusive = { focus = SIA_japanese_military }
         x = 0
         y = 1
         relative_position_id = SIA_small_arms_experiments
-
 		ai_will_do = {
 			factor = 20
 		}
         
         cost = 5
-
         completion_reward = {
             army_experience = 50
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = SIA_air_superiority
         }
-
     }
-
     focus = {
         id = SIA_jungle_training
         icon = GFX_goal_generic_military_sphere
@@ -1411,20 +1403,16 @@ focus_tree = {
         x = -1
         y = 1
         relative_position_id = SIA_western_military
-
 		ai_will_do = {
 			factor = 20
 		}
         
         cost = 5
-
         completion_reward = {
 			custom_effect_tooltip = RAJ_jungle_training_effect
 			hidden_effect = { set_technology = { jungle_warfare = 1 } }
         }
-
     }
-
     focus = {
         id = SIA_mountain_training
         icon = GFX_goal_generic_special_forces
@@ -1432,9 +1420,7 @@ focus_tree = {
         x = 1
         y = 1
         relative_position_id = SIA_western_military
-
         cost = 5
-
 		ai_will_do = {
 			factor = 20
 		}
@@ -1443,21 +1429,16 @@ focus_tree = {
 			custom_effect_tooltip = mountain_training_effect 
 			hidden_effect = { set_technology = { mountain_warfare = 1 } }
         }
-
     }
-
     focus = {
         id = SIA_japanese_military
         icon = GFX_focus_chi_collaboration_with_the_japanese
-        prerequisite = { focus = SIA_small_arms_experiments }
-        prerequisite = { focus = SIA_artillery_experiments }
+        prerequisite = { focus = SIA_small_arms_experiments focus = SIA_artillery_experiments }
         mutually_exclusive = { focus = SIA_western_military }
         x = 0
         y = 1
         relative_position_id = SIA_artillery_experiments
-
         cost = 5
-
 		ai_will_do = {
 			factor = 0
 		}
@@ -1465,9 +1446,7 @@ focus_tree = {
         completion_reward = {
             army_experience = 50
         }
-
     }
-
     focus = {
         id = SIA_embrace_bushido
         icon = GFX_focus_generic_japanese_imperial_glory

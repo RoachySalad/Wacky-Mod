@@ -596,12 +596,8 @@ ideas = {
 				
 			}
 
-			available = {
-	 			has_completed_focus = SAF_queen_of_the_desert
-			}
-
 			research_bonus = {
-					armor = 0.15
+				armor = 0.15
 			}
 
 			traits = {

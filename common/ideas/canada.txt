@@ -40,7 +40,7 @@ ideas = {
 			
 			equipment_bonus = {
 				mechanized_equipment = {
-				hardness = 0.05 instant = yes
+					hardness = 0.05 instant = yes
 					build_cost_ic = -0.05 instant = yes
 
 				}
