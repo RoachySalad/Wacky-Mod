@@ -857,27 +857,6 @@ ideas = {
 
 		}
 
-		ENG_imperial_conscription_idea = {
-
-			name = ENG_imperial_conscription
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			modifier = {
-				non_core_manpower = 0.05
-			}
-
-			picture = eng_imperial_conscription
-			
-			removal_cost = -1	
-
-		}
 
 		ENG_imperial_conscription_subject_idea = {
 
@@ -1555,9 +1534,9 @@ ideas = {
 			removal_cost = -1
 		}
 
-		ENG_service_overseas_idea = {
+		ENG_imperial_service_training = {
 
-			name = uk_service_focus
+			name = ENG_imperial_service_training
 
 			allowed = {
 				always = no
@@ -1568,10 +1547,12 @@ ideas = {
 			}
 			
 			modifier = {
+				experience_gain_army = 0.1
 				heat_attrition = -0.25
 				acclimatization_hot_climate_gain_factor = 0.50
+				non_core_manpower = 0.05
 			}
-
+			
 			picture = por_colonial_assimilation
 
 			removal_cost = -1

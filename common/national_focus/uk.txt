@@ -2514,10 +2514,10 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = -2
+		x = 0
 		y = 1
 		relative_position_id = ENG_develop_the_empire
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -2526,6 +2526,7 @@ focus_tree = {
 			unlock_decision_tooltip = ENG_develop_can
 			unlock_decision_tooltip = ENG_develop_nzl
 			unlock_decision_tooltip = ENG_develop_saf
+			unlock_decision_tooltip = ENG_develop_raj
 		}
 	}
 	
@@ -2635,7 +2636,7 @@ focus_tree = {
 		icon = GFX_focus_eng_imperial_federation
 
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ENG_commonwealth_ties
 		cost = 5
 		search_filters = {FOCUS_FILTER_POLITICAL}	
@@ -2678,9 +2679,8 @@ focus_tree = {
 		id = ENG_british_commonwealth_air_training_plan
 		prerequisite = { focus = ENG_imperial_conference }
 		icon = GFX_goal_generic_air_fighter2
-		x = 0
-		y = 2
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = ENG_imperial_conference
 		cost = 5
 		ai_will_do = {
@@ -2721,69 +2721,23 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ENG_develop_colonies
-		prerequisite = { focus = ENG_develop_the_empire }
-		available = {
-			any_country = {
-				original_tag = RAJ
-				is_in_faction_with = ROOT
-			}
-		} 
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 2
-		y = 1
-		relative_position_id = ENG_develop_the_empire
-		cost = 5
-
-		available_if_capitulated = yes
-
-		bypass = {
-		}
-
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			unlock_decision_tooltip = ENG_develop_raj
-		}
-	}
-	
-	focus = {
-		id = ENG_service_overseas
-		prerequisite = { focus = ENG_develop_colonies }
+		id = ENG_imperial_service_training
+		prerequisite = { focus = ENG_imperial_conference }
 
 		continue_if_invalid = no
 
 		icon = GFX_focus_por_luso_tropicalism
 
-		x = -1
-		y = 2
-		relative_position_id = ENG_develop_colonies
+		x = 1
+		y = 1
+		relative_position_id = ENG_imperial_conference
 		cost = 5
 		
 		completion_reward = {
-			add_ideas = ENG_service_overseas_idea
+			add_ideas = ENG_imperial_service_training
 		}
 	}
 	
-	focus = {
-		id = ENG_imperial_conscription
-		prerequisite = { focus = ENG_develop_colonies }
-
-		available = { 	
-		}
-
-		continue_if_invalid = no
-
-		icon = GFX_focus_generic_military_mission
-
-		x = 1
-		y = 2
-		relative_position_id = ENG_develop_colonies
-		cost = 5
-		
-		completion_reward = {
-			add_ideas = ENG_imperial_conscription_idea
-		}
-	}
 
 	### DEMOCRATIC BRANCH - STEADY AS SHE GOES ###
 

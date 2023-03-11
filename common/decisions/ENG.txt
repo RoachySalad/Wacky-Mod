@@ -1449,160 +1449,6 @@ ENG_enforce_the_naval_treaties = {
 
 ENG_develop_the_empire = {
 
-	ENG_develop_ast = {
-		
-		icon = generic_construction
-
-		allowed = {
-			original_tag = ENG
-		}
-
-		available = {
-			AST = {
-				OR = {
-					is_in_faction_with = ENG
-					is_subject_of = ENG
-				}
-			}
-			has_completed_focus = ENG_commonwealth_ties
-		}
-
-		visible = {
-			has_completed_focus = ENG_develop_the_empire
-		}
-
-		fire_only_once = yes
-
-		days_remove = 120
-
-		modifier = {
-			civilian_factory_use = 5
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		remove_effect = {
-			AST = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						is_controlled_by = AST
-						is_core_of = AST
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						is_controlled_by = AST
-						is_core_of = AST
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_australia_focus
-				}
-			}
-		}
-	}
-	
-	ENG_develop_nzl = {
-		
-		icon = generic_construction
-
-		allowed = {
-			original_tag = ENG
-		}
-
-		available = {
-			NZL = {
-				OR = {
-					is_in_faction_with = ENG
-					is_subject_of = ENG
-				}
-			}
-			has_completed_focus = ENG_commonwealth_ties
-		}
-
-		visible = {
-			has_completed_focus = ENG_develop_the_empire
-		}
-
-		fire_only_once = yes
-
-		days_remove = 120
-
-		modifier = {
-			civilian_factory_use = 5
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		remove_effect = { 
-			NZL = {
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						is_controlled_by = NZL
-						is_core_of = NZL
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = industrial_complex
-							size > 1
-							include_locked = yes
-						}
-						is_controlled_by = NZL
-						is_core_of = NZL
-					}
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_new_zealand_focus
-				}
-			}
-		}
-	}
-	
 	ENG_develop_can = {
 		
 		icon = generic_construction
@@ -1612,6 +1458,9 @@ ENG_develop_the_empire = {
 		}
 
 		available = {
+
+		num_of_available_civilian_factories > 7
+
 			CAN = {
 				OR = {
 					is_in_faction_with = ENG
@@ -1630,7 +1479,7 @@ ENG_develop_the_empire = {
 		days_remove = 120
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -1648,10 +1497,10 @@ ENG_develop_the_empire = {
 						is_controlled_by = CAN
 						is_core_of = CAN
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1665,10 +1514,10 @@ ENG_develop_the_empire = {
 						is_controlled_by = CAN
 						is_core_of = CAN
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1689,6 +1538,9 @@ ENG_develop_the_empire = {
 		}
 
 		available = {
+		
+		num_of_available_civilian_factories > 7
+		
 			SAF = {
 				OR = {
 					is_in_faction_with = ENG
@@ -1707,7 +1559,7 @@ ENG_develop_the_empire = {
 		days_remove = 120
 
 		modifier = {
-			civilian_factory_use = 5
+			civilian_factory_use = 7
 		}
 
 		ai_will_do = {
@@ -1725,10 +1577,10 @@ ENG_develop_the_empire = {
 						is_controlled_by = SAF
 						is_core_of = SAF
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1742,16 +1594,95 @@ ENG_develop_the_empire = {
 						is_controlled_by = SAF
 						is_core_of = SAF
 					}
-					add_extra_state_shared_building_slots = 2
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 2
+						level = 4
 						instant_build = yes
 					}
 				}
 				add_autonomy_ratio = {
 					value = -0.05
 					localization = uk_south_africa_focus
+				}
+			}
+		}
+	}
+
+	ENG_develop_ast = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+		num_of_available_civilian_factories > 7
+
+			AST = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 7
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			AST = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = AST
+						is_core_of = AST
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = AST
+						is_core_of = AST
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_australia_focus
 				}
 			}
 		}
@@ -1766,13 +1697,16 @@ ENG_develop_the_empire = {
 		}
 
 		available = {
+		
+		num_of_available_civilian_factories > 7
+
 			RAJ = {
 				OR = {
 					is_in_faction_with = ENG
 					is_subject_of = ENG
 				}
 			}
-			has_completed_focus = ENG_develop_colonies
+			has_completed_focus = ENG_commonwealth_ties
 		}
 
 		visible = {
@@ -1784,7 +1718,7 @@ ENG_develop_the_empire = {
 		days_remove = 120
 
 		modifier = {
-			civilian_factory_use = 8
+			civilian_factory_use = 9
 		}
 
 		ai_will_do = {
@@ -1802,10 +1736,10 @@ ENG_develop_the_empire = {
 						is_controlled_by = RAJ
 						is_core_of = RAJ
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1819,10 +1753,27 @@ ENG_develop_the_empire = {
 						is_controlled_by = RAJ
 						is_core_of = RAJ
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 4
 					add_building_construction = {
 						type = industrial_complex
-						level = 3
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 2
+							include_locked = yes
+						}
+						is_controlled_by = RAJ
+						is_core_of = RAJ
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
 						instant_build = yes
 					}
 				}
@@ -1834,6 +1785,86 @@ ENG_develop_the_empire = {
 		}
 	}
 
+	ENG_develop_nzl = {
+		
+		icon = generic_construction
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+
+		num_of_available_civilian_factories > 7
+
+			NZL = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+			has_completed_focus = ENG_commonwealth_ties
+		}
+
+		visible = {
+			has_completed_focus = ENG_develop_the_empire
+		}
+
+		fire_only_once = yes
+
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 7
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = { 
+			NZL = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = NZL
+						is_core_of = NZL
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 1
+							include_locked = yes
+						}
+						is_controlled_by = NZL
+						is_core_of = NZL
+					}
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = uk_new_zealand_focus
+				}
+			}
+		}
+	}
+	
 }
 
 ENG_persian_corridor = {
